@@ -1,0 +1,114 @@
+[
+  {
+    "module": 1,
+    "theory": "Module_theory/Module 1_SDLC.md",
+    "lab": "Labs/guides/lab01.md",
+    "notebook": "Labs/notebooks/lab01.ipynb",
+    "solutions": "Labs/solutions/lab01.md",
+    "title": "Паспорт проекта и взаимодействие факторов"
+  },
+  {
+    "module": 2,
+    "theory": "Module_theory/Module 2_Setup Workharness.md",
+    "lab": "Labs/guides/lab02.md",
+    "notebook": "Labs/notebooks/lab02.ipynb",
+    "solutions": "Labs/solutions/lab02.md",
+    "title": "Проверяемый цифровой верстак"
+  },
+  {
+    "module": 3,
+    "theory": "Module_theory/Module 3_compound and reaction-representation.md",
+    "lab": "Labs/guides/lab03.md",
+    "notebook": "Labs/notebooks/lab03.ipynb",
+    "solutions": "Labs/solutions/lab03.md",
+    "title": "Идентичность, соли и таутомеры"
+  },
+  {
+    "module": 4,
+    "theory": "Module_theory/Module 4_Descriptor.md",
+    "lab": "Labs/guides/lab04.md",
+    "notebook": "Labs/notebooks/lab04.ipynb",
+    "solutions": "Labs/solutions/lab04.md",
+    "title": "Осмысленные дескрипторы"
+  },
+  {
+    "module": 5,
+    "theory": "Module_theory/Module 5_Fingerprinter_Farmacophore.md",
+    "lab": "Labs/guides/lab05.md",
+    "notebook": "Labs/notebooks/lab05.ipynb",
+    "solutions": "Labs/solutions/lab05.md",
+    "title": "Поиск аналогов и Танимото"
+  },
+  {
+    "module": 6,
+    "theory": "Module_theory/Module 6_Moleculr mechanics.md",
+    "lab": "Labs/guides/lab06.md",
+    "notebook": "Labs/notebooks/lab06.ipynb",
+    "solutions": "Labs/solutions/lab06.md",
+    "title": "Ансамбль конформеров бутана"
+  },
+  {
+    "module": 7,
+    "theory": "Module_theory/Module 7_Database.md",
+    "lab": "Labs/guides/lab07.md",
+    "notebook": "Labs/notebooks/lab07.ipynb",
+    "solutions": "Labs/solutions/lab07.md",
+    "title": "Кураторство активности и происхождение данных"
+  },
+  {
+    "module": 8,
+    "theory": "Module_theory/Module 8_Screening.md",
+    "lab": "Labs/guides/lab08.md",
+    "notebook": "Labs/notebooks/lab08.ipynb",
+    "solutions": "Labs/solutions/lab08.md",
+    "title": "Скрининг с журналом и контролями"
+  },
+  {
+    "module": 9,
+    "theory": "Module_theory/Module 9_Visualization.md",
+    "lab": "Labs/guides/lab09.md",
+    "notebook": "Labs/notebooks/lab09.ipynb",
+    "solutions": "Labs/solutions/lab09.md",
+    "title": "Отчёт, который можно прочитать без кода"
+  },
+  {
+    "module": 10,
+    "theory": "Module_theory/Module 10_docking.md",
+    "lab": "Labs/guides/lab10.md",
+    "notebook": "Labs/notebooks/lab10.ipynb",
+    "solutions": "Labs/solutions/lab10.md",
+    "title": "Реальный redocking 1IEP"
+  },
+  {
+    "module": 11,
+    "theory": "Module_theory/Module 11_QSAR.md",
+    "lab": "Labs/guides/lab11.md",
+    "notebook": "Labs/notebooks/lab11.ipynb",
+    "solutions": "Labs/solutions/lab11.md",
+    "title": "QSPR растворимости ESOL"
+  },
+  {
+    "module": 12,
+    "theory": "Module_theory/Module 12_quatium chemistry.md",
+    "lab": "Labs/guides/lab12.md",
+    "notebook": "Labs/notebooks/lab12.ipynb",
+    "solutions": "Labs/solutions/lab12.md",
+    "title": "Электронная энергия H2: исполняемый RHF/STO-3G"
+  },
+  {
+    "module": 13,
+    "theory": "Module_theory/Module 13_retrosynthesis.md",
+    "lab": "Labs/guides/lab13.md",
+    "notebook": "Labs/notebooks/lab13.ipynb",
+    "solutions": "Labs/solutions/lab13.md",
+    "title": "Шаблонный ретросинтез и выбор маршрута"
+  },
+  {
+    "module": 14,
+    "theory": "Module_theory/Module 14_SDLS-workflow development_web app.md",
+    "lab": "Labs/guides/lab14.md",
+    "notebook": "Labs/notebooks/lab14.ipynb",
+    "solutions": "Labs/solutions/lab14.md",
+    "title": "Передаваемый лабораторный конвейер"
+  }
+]

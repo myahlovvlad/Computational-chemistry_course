@@ -1,0 +1,60 @@
+{
+  "input_sha256": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+  "source_url": "https://raw.githubusercontent.com/deepchem/deepchem/master/datasets/delaney-processed.csv",
+  "run_utc": "2026-11-10T14:41:07.536879+00:00",
+  "python": "3.12.10",
+  "rdkit": "2026.09.1",
+  "sklearn": "1.9.1",
+  "rows": 1128,
+  "unique_identity": 1117,
+  "features": [
+    "MolWt",
+    "MolLogP",
+    "TPSA",
+    "HBD",
+    "HBA"
+  ],
+  "target": "measured log solubility in mols per litre",
+  "policy": "sanitized input graph; no salt neutralization or tautomer merging",
+  "seed": 42,
+  "test_fraction_groups": 0.2,
+  "model": {
+    "n_estimators": 200,
+    "min_samples_leaf": 2
+  },
+  "warning": "Single fixed holdout per scenario; no uncertainty calibration or tuning",
+  "splits": {
+    "identity": {
+      "train_rows": 901,
+      "test_rows": 227,
+      "metrics": {
+        "mean_baseline": {
+          "MAE_logS": 1.643599079828091,
+          "RMSE_logS": 2.0465800881298293,
+          "R2": -0.00017860770575928164
+        },
+        "random_forest": {
+          "MAE_logS": 0.49735626231938007,
+          "RMSE_logS": 0.7067682833961725,
+          "R2": 0.8807182020316056
+        }
+      }
+    },
+    "scaffold": {
+      "train_rows": 1009,
+      "test_rows": 119,
+      "metrics": {
+        "mean_baseline": {
+          "MAE_logS": 1.4675675975048097,
+          "RMSE_logS": 1.98414171005251,
+          "R2": -0.09545016455774924
+        },
+        "random_forest": {
+          "MAE_logS": 0.7162755385511053,
+          "RMSE_logS": 0.9478212809348558,
+          "R2": 0.7500229364099416
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+# Local environments and analysis artifacts
+.venv*/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.playwright-cli/
+tmp/
+output/
+tools/bin/
+*.log
+
+# Third-party reference library stays local; publish original course content.
+Books/
+Literature/converted/
+
+# Notebook execution and downloads
+Labs/executed/
+Labs/results/*
+!Labs/results/.gitkeep

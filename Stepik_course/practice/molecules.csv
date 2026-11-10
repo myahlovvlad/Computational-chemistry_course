@@ -1,0 +1,13 @@
+id,name,smiles
+M01,ethanol,CCO
+M02,ethanol_equivalent,OCC
+M03,sodium_acetate,CC(=O)[O-].[Na+]
+M04,acetic_acid,CC(=O)O
+M05,chlorobenzene,Clc1ccccc1
+M06,catechol,Oc1ccccc1O
+M07,benzene,c1ccccc1
+M08,invalid,not_a_smiles
+M09,empty,
+M10,stereo_a,C[C@H](O)C(=O)O
+M11,stereo_b,C[C@@H](O)C(=O)O
+M12,butane,CCCC

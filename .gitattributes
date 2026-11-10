@@ -1,0 +1,6 @@
+* text=auto eol=lf
+# Scientific snapshots are byte-hashed; preserve them on every platform.
+Labs/datasets/** -text
+*.png binary
+*.jpg binary
+*.pdf binary

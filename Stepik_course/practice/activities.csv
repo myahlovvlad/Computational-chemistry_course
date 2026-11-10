@@ -1,0 +1,9 @@
+record_id,molecule_id,target_id,assay_id,endpoint,value,unit,relation
+R01,M01,T1,A1,IC50,100,nM,=
+R02,M01,T1,A1,IC50,0.1,uM,=
+R03,M02,T1,A1,IC50,10,uM,>
+R04,M03,T1,A1,Ki,50,nM,=
+R05,M04,T2,A1,IC50,20,nM,=
+R06,M05,T1,A2,IC50,30,nM,=
+R07,M06,T1,A1,IC50,0,nM,=
+R08,M07,T1,A1,IC50,100,unknown,=

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "B01",
+    "source": "Artificial Intelligence for Chemical Sciences Concepts, Models, and Applications (Shrikaant Kulkarni, Shashikant Bhandari etc.) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+    "sha256": "fd09ce56c1774629bca4a41d313174e274dbeb23c85f3cb996c5684efaa9bdb0",
+    "pages": 413,
+    "markdown_page_markers": 413,
+    "figure_links": 125,
+    "missing_figure_links": [],
+    "facsimiles": 413,
+    "engine": "pdf-to-markdown skill / PyMuPDF4LLM",
+    "legacy_layout": true
+  },
+  {
+    "id": "B02",
+    "source": "chemoinformatics-concepts-methods-and-tools-for-drug-discovery_compress.pdf",
+    "sha256": "684270dc98298118c33ea63e0bf2140b03a97db2d83d63fd761ecacf42183df3",
+    "pages": 538,
+    "markdown_page_markers": 538,
+    "figure_links": 249,
+    "missing_figure_links": [],
+    "facsimiles": 538,
+    "engine": "pdf-to-markdown skill / PyMuPDF4LLM",
+    "legacy_layout": true
+  },
+  {
+    "id": "B03",
+    "source": "Co-Intelligence Living and Working with AI (Mollick, Ethan) (Z-Library).pdf",
+    "sha256": "9f5fbbfc0aabd0f030c8df0a9eba2630036d532ec25202cc34aa0c0cc497097f",
+    "pages": 226,
+    "markdown_page_markers": 226,
+    "figure_links": 28,
+    "missing_figure_links": [],
+    "facsimiles": 226,
+    "engine": "pdf-to-markdown skill / PyMuPDF4LLM",
+    "legacy_layout": true
+  },
+  {
+    "id": "B04",
+    "source": "Computational Chemistry A Practical Guide for Applying Techniques to Real World Problems (David Young) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+    "sha256": "71a6976d78914543ce61d8b91a7621f2d77687f0eb5bec41c711836624fd7e60",
+    "pages": 434,
+    "markdown_page_markers": 434,
+    "figure_links": 45,
+    "missing_figure_links": [],
+    "facsimiles": 434,
+    "engine": "pdf-to-markdown skill / PyMuPDF4LLM",
+    "legacy_layout": true
+  },
+  {
+    "id": "B05",
+    "source": "Essentials of Computational Chemistry, 2nd Ed. (Christopher J. Cramer) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+    "sha256": "8031edc5a72928edf20045fb2ebc136d3e899dcf67b97b62ec559f51d0c6d98f",
+    "pages": 607,
+    "markdown_page_markers": 607,
+    "figure_links": 183,
+    "missing_figure_links": [],
+    "facsimiles": 607,
+    "engine": "pdf-to-markdown skill / PyMuPDF4LLM",
+    "legacy_layout": true
+  },
+  {
+    "id": "B06",
+    "source": "Experimental_Design_in_Chemistry_a_Tutor.pdf",
+    "sha256": "c7870e16045c7376d7b9a4c3f35ec60cea6b67771c78a9d6819a8ccb28f27c66",
+    "pages": 12,
+    "markdown_page_markers": 12,
+    "figure_links": 16,
+    "missing_figure_links": [],
+    "facsimiles": 12,
+    "engine": "pdf-to-markdown skill / PyMuPDF4LLM",
+    "legacy_layout": true
+  },
+  {
+    "id": "B07",
+    "source": "Пиши, сокращай 2025 Как создавать сильный текст (Максим Ильяхов, Людмила Сарычева) (Z-Library).pdf",
+    "sha256": "e79bb0eb129346409c35a86b60049f6c9b7ed0871ec963326fcce6a9eb0e71e3",
+    "pages": 427,
+    "markdown_page_markers": 427,
+    "figure_links": 121,
+    "missing_figure_links": [],
+    "facsimiles": 427,
+    "engine": "pdf-to-markdown skill / PyMuPDF4LLM",
+    "legacy_layout": true
+  }
+]

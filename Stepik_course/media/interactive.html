@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Химера — три исследовательских решения</title>
+<link rel="icon" href="data:,">
+<style>
+:root{color-scheme:light;--ink:#182d3c;--teal:#096c68;--muted:#4b626e}
+*{box-sizing:border-box}body{margin:0;background:#edf3f1;color:var(--ink);font:17px/1.6 system-ui,sans-serif}
+main{max-width:920px;margin:auto;padding:30px 20px 60px}h1{font-size:clamp(27px,5vw,43px);line-height:1.2}h2{font-size:24px}
+.tag{letter-spacing:.12em;color:var(--teal);font-size:13px;font-weight:700}section{background:white;border:1px solid #b8ceca;border-radius:16px;padding:26px;margin:24px 0}
+input,select,button{font:inherit;padding:9px;border:1px solid #7e9994;border-radius:7px}input[type=number]{max-width:200px}button{background:var(--teal);color:white;cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #c67a16;outline-offset:3px}
+label{display:inline-block;margin:5px 14px 10px 0}.result{padding:15px;background:#e7f3ed;border-left:4px solid var(--teal);margin-top:16px}small,.muted{color:var(--muted)}fieldset{border:1px solid #b8ceca;border-radius:8px;margin:12px 0}fieldset label{margin:7px 12px}input[type=checkbox]{width:20px;height:20px;vertical-align:middle}code{background:#f1f4f4;padding:2px 6px}footer{font-size:14px;color:var(--muted)}
+</style>
+<main>
+<p class="tag">ОПЕРАЦИЯ ХИМЕРА · УЧЕБНЫЙ ТРЕНАЖЁР</p>
+<h1>Сначала прогноз.<br>Потом расчёт.</h1>
+<p>Три небольших решения исследователя. Данные условные, обработка идёт в браузере. Тренажёр работает без сети и не передаёт оценки в Stepik.</p>
+<section aria-labelledby="units-title">
+<h2 id="units-title">01 / Число без единиц ещё не активность</h2>
+<p>Две лаборатории сообщили 100 нМ и 0,1 мкМ. Прежде чем считать расхождение, приведите концентрации к моль/л.</p>
+<label>Концентрация<br><input id="value" type="number" value="100" min="0" step="any"></label>
+<label>Единица<br><select id="unit"><option value="1e-9">нМ</option><option value="1e-6">мкМ</option><option value="1e-3">мМ</option><option value="1">М</option></select></label>
+<label>Отношение<br><select id="relation"><option>=</option><option>&gt;</option><option>&lt;</option></select></label>
+<div id="units-out" class="result" role="status" aria-live="polite"></div>
+<p><small>pIC50 = −log10(IC50 в М). Для границы знак неравенства меняется. Величина IC50 зависит от условий ассая.</small></p>
+</section>
+<section aria-labelledby="bits-title">
+<h2 id="bits-title">02 / Сходство, которое можно разобрать</h2>
+<p>Перед изменением битов предскажите, что произойдёт с Танимото. Это учебные векторы, а не отпечатки конкретных молекул.</p>
+<fieldset id="bits-a"><legend>Вектор A</legend></fieldset>
+<fieldset id="bits-b"><legend>Вектор B</legend></fieldset>
+<div id="bits-out" class="result" role="status" aria-live="polite"></div>
+<p><small>T = общие биты / все уникальные биты. Высокое сходство не гарантирует одинаковую активность. Для двух пустых векторов в упражнении принято T=1.</small></p>
+</section>
+<section aria-labelledby="decision-title">
+<h2 id="decision-title">03 / Предупреждение — начало проверки</h2>
+<p>В вымышленном флуоресцентном тесте соединение показало эффект. Структура совпала с PAINS-паттерном. Какое решение обосновано?</p>
+<form id="decision-form">
+<label><input type="radio" name="decision" value="reject"> Безусловно исключить: интерференция доказана.</label><br>
+<label><input type="radio" name="decision" value="review"> Проверить сигнал и провести подходящий контрскрининг.</label><br>
+<label><input type="radio" name="decision" value="buy"> Заказать: высокая активность важнее предупреждений.</label><br>
+<button type="submit">Разобрать решение</button>
+</form>
+<div id="decision-out" class="result" role="status" aria-live="polite">Выберите действие и объясните его своими словами.</div>
+</section>
+<footer>Материалы курса: модули 5, 7 и 8. Для химических расчётов используйте notebook с RDKit. Тренажёр не определяет активность, безопасность или пригодность к закупке.</footer>
+</main>
+<script>
+'use strict';
+const byId=id=>document.getElementById(id);
+function updateUnits(){
+ const raw=byId('value').value, x=Number(raw), scale=Number(byId('unit').value);
+ if(raw.trim()===''||!Number.isFinite(x)||x<=0){byId('units-out').textContent='Введите положительную конечную концентрацию. Логарифм нуля или отрицательного числа здесь не определён.';return;}
+ const m=x*scale,p=-Math.log10(m),rel=byId('relation').value;
+ if(!Number.isFinite(p)){byId('units-out').textContent='Концентрация вне вычислимого диапазона. Измените значение.';return;}
+ const reversed=rel==='>'?'<':rel==='<'?'>':'=';
+ byId('units-out').textContent=`IC50 ${rel} ${m.toExponential(3)} М → pIC50 ${reversed} ${p.toFixed(3)}. ${rel==='='?'Это точное значение по условию упражнения.':'Это граница, не точное наблюдение для обычной регрессии.'}`;
+}
+for(const id of ['value','unit','relation'])byId(id).addEventListener('input',updateUnits);
+for(const key of ['a','b'])for(let i=1;i<=8;i++){
+ const label=document.createElement('label'),input=document.createElement('input');
+ input.type='checkbox'; input.value=i;input.checked=(key==='a'?[1,2,3]:[2,3,4]).includes(i);
+ input.addEventListener('change',updateBits);label.append(input,` ${i}`);byId('bits-'+key).append(label);
+}
+function updateBits(){
+ const sets=['a','b'].map(k=>new Set(Array.from(byId('bits-'+k).querySelectorAll('input:checked'),e=>e.value)));
+ const a=sets[0],b=sets[1],common=[...a].filter(x=>b.has(x)).length,union=new Set([...a,...b]).size;
+ const score=union?common/union:1;
+ byId('bits-out').textContent=`a=${a.size}, b=${b.size}, общих=${common}; уникальных=${union}. T=${score.toFixed(3)}${union?'':': соглашение для двух пустых множеств'}. Это сходство представлений, не процент совпадения активности.`;
+}
+byId('decision-form').addEventListener('submit',event=>{
+ event.preventDefault();const choice=new FormData(event.target).get('decision');
+ const feedback={review:'Обосновано. Совпадение с паттерном — сигнал риска. Контроль оптического сигнала без ферментативной реакции и другой способ детекции помогут проверить гипотезу. Сам паттерн ещё не указывает механизм.',reject:'Слишком сильный вывод. Структурный паттерн не доказывает интерференцию у этого соединения в данных условиях. Запланируйте проверку.',buy:'Данных недостаточно. Первичный сигнал мог возникнуть из-за помехи. Сначала разберите предупреждение и спланируйте контроль.'};
+ byId('decision-out').textContent=feedback[choice]||'Сначала выберите один из трёх вариантов.';
+});
+updateUnits();updateBits();
+</script>
+</html>

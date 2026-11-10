@@ -1,0 +1,352 @@
+{
+  "python": "3.12.10",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "runs": [
+    {
+      "lab": 1,
+      "status": "passed",
+      "notebook_wall_seconds": 10.034158299909905,
+      "calculation": {
+        "lab": 1,
+        "calculation_wall_seconds": 0.8364498999435455,
+        "result": {
+          "beta": [
+            50.0,
+            10.0,
+            5.0,
+            8.0
+          ],
+          "effects": [
+            20.0,
+            10.0,
+            16.0
+          ],
+          "residual_df": 0
+        }
+      }
+    },
+    {
+      "lab": 2,
+      "status": "passed",
+      "notebook_wall_seconds": 4.65770069998689,
+      "calculation": {
+        "lab": 2,
+        "calculation_wall_seconds": 2.8037292999215424,
+        "result": {
+          "python": "3.12.10",
+          "executable": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\.venv-course\\Scripts\\python.exe",
+          "rdkit": "2026.09.1",
+          "sha256": "f1904ebd8af5789d383f9593365bf5443abf7aa60106db0ecfb50d4fff628465"
+        }
+      }
+    },
+    {
+      "lab": 3,
+      "status": "passed",
+      "notebook_wall_seconds": 2.390350400004536,
+      "calculation": {
+        "lab": 3,
+        "calculation_wall_seconds": 0.6398591999895871,
+        "result": {
+          "rows": 12,
+          "invalid": 2,
+          "policy": "teaching-parent-v1;neutralize;tautomer=False"
+        }
+      }
+    },
+    {
+      "lab": 4,
+      "status": "passed",
+      "notebook_wall_seconds": 1.9485909999348223,
+      "calculation": {
+        "lab": 4,
+        "calculation_wall_seconds": 0.12940609990619123,
+        "result": {
+          "valid_rows": 10,
+          "ethanol": {
+            "MolWt": 46.069,
+            "MolLogP": -0.0014000000000000123,
+            "TPSA": 20.23,
+            "HBD": 1,
+            "HBA": 1,
+            "ro5_violations": 0
+          },
+          "polyol": {
+            "MolWt": 348.3010000000001,
+            "MolLogP": -7.4624999999999915,
+            "TPSA": 242.75999999999996,
+            "HBD": 12,
+            "HBA": 12,
+            "ro5_violations": 2
+          }
+        }
+      }
+    },
+    {
+      "lab": 5,
+      "status": "passed",
+      "notebook_wall_seconds": 2.2087809999939054,
+      "calculation": {
+        "lab": 5,
+        "calculation_wall_seconds": 0.3765119998715818,
+        "result": {
+          "radius": 2,
+          "fpSize": 2048,
+          "includeChirality": true,
+          "molecules": 10
+        }
+      }
+    },
+    {
+      "lab": 6,
+      "status": "passed",
+      "notebook_wall_seconds": 2.1679161000065506,
+      "calculation": {
+        "lab": 6,
+        "calculation_wall_seconds": 0.3886400999035686,
+        "result": {
+          "generated": 4,
+          "converged": 4,
+          "minimum": -5.075973340459498,
+          "seed": 42
+        }
+      }
+    },
+    {
+      "lab": 7,
+      "status": "passed",
+      "notebook_wall_seconds": 1.8966406001709402,
+      "calculation": {
+        "lab": 7,
+        "calculation_wall_seconds": 0.12885010009631515,
+        "result": {
+          "included": 2,
+          "excluded": 6,
+          "esol_rows": 1128,
+          "esol_sha256": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189"
+        }
+      }
+    },
+    {
+      "lab": 8,
+      "status": "passed",
+      "notebook_wall_seconds": 2.167108600027859,
+      "calculation": {
+        "lab": 8,
+        "calculation_wall_seconds": 0.4548609000630677,
+        "result": {
+          "Z_prime": 0.6666666666666667,
+          "EF_at_50": 5.0,
+          "statuses": {
+            "eligible": 9,
+            "invalid": 2,
+            "review": 1
+          }
+        }
+      }
+    },
+    {
+      "lab": 9,
+      "status": "passed",
+      "notebook_wall_seconds": 2.5846418000292033,
+      "calculation": {
+        "lab": 9,
+        "calculation_wall_seconds": 0.8467596999835223,
+        "result": {
+          "report": "report.html",
+          "rows": 12,
+          "structures": 10
+        }
+      }
+    },
+    {
+      "lab": 10,
+      "status": "passed",
+      "notebook_wall_seconds": 61.6747465999797,
+      "calculation": {
+        "lab": 10,
+        "calculation_wall_seconds": 59.94466869998723,
+        "result": {
+          "official_reference_rmsd_angstrom": 0.906728765427707,
+          "rmsd_definition": "mapped heavy atom serials, receptor frame, no symmetry optimization",
+          "reference_score": -13.234,
+          "mode": "executed-vina",
+          "wall_seconds": 59.909830999793485,
+          "score": -13.201,
+          "rmsd_angstrom": 0.9002324474597987,
+          "command": [
+            "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tools\\bin\\vina_1.2.7_win.exe",
+            "--receptor",
+            "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\Labs\\datasets\\docking\\1iep_receptor.pdbqt",
+            "--ligand",
+            "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\Labs\\datasets\\docking\\1iep_ligand.pdbqt",
+            "--config",
+            "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\Labs\\datasets\\docking\\1iep_receptor.box.txt",
+            "--seed",
+            "42",
+            "--cpu",
+            "1",
+            "--exhaustiveness",
+            "8",
+            "--num_modes",
+            "9",
+            "--out",
+            "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\Labs\\results\\lab10\\redocked.pdbqt"
+          ],
+          "binary_sha256": "e0c4b2715e0c1a74f6e92d0f3be0328ac97542eafbc111e6b1efad897a73cce5"
+        }
+      }
+    },
+    {
+      "lab": 11,
+      "status": "passed",
+      "notebook_wall_seconds": 13.855305100092664,
+      "calculation": {
+        "lab": 11,
+        "calculation_wall_seconds": 12.028995299944654,
+        "result": {
+          "input_sha256": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+          "source_url": "https://raw.githubusercontent.com/deepchem/deepchem/master/datasets/delaney-processed.csv",
+          "run_utc": "2026-11-10T15:23:51.972895+00:00",
+          "python": "3.12.10",
+          "rdkit": "2026.09.1",
+          "sklearn": "1.9.1",
+          "rows": 1128,
+          "unique_identity": 1117,
+          "features": [
+            "MolWt",
+            "MolLogP",
+            "TPSA",
+            "HBD",
+            "HBA"
+          ],
+          "target": "measured log solubility in mols per litre",
+          "policy": "sanitized input graph; no salt neutralization or tautomer merging",
+          "seed": 42,
+          "test_fraction_groups": 0.2,
+          "model": {
+            "n_estimators": 200,
+            "min_samples_leaf": 2
+          },
+          "warning": "Single fixed holdout per scenario; no uncertainty calibration or tuning",
+          "splits": {
+            "identity": {
+              "train_rows": 901,
+              "test_rows": 227,
+              "metrics": {
+                "mean_baseline": {
+                  "MAE_logS": 1.643599079828091,
+                  "RMSE_logS": 2.0465800881298293,
+                  "R2": -0.00017860770575928164
+                },
+                "random_forest": {
+                  "MAE_logS": 0.49735626231938007,
+                  "RMSE_logS": 0.7067682833961725,
+                  "R2": 0.8807182020316056
+                }
+              }
+            },
+            "scaffold": {
+              "train_rows": 1009,
+              "test_rows": 119,
+              "metrics": {
+                "mean_baseline": {
+                  "MAE_logS": 1.4675675975048097,
+                  "RMSE_logS": 1.98414171005251,
+                  "R2": -0.09545016455774924
+                },
+                "random_forest": {
+                  "MAE_logS": 0.7162755385511053,
+                  "RMSE_logS": 0.9478212809348558,
+                  "R2": 0.7500229364099416
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "lab": 12,
+      "status": "passed",
+      "notebook_wall_seconds": 2.229396800044924,
+      "calculation": {
+        "lab": 12,
+        "calculation_wall_seconds": 0.5018741001840681,
+        "result": {
+          "single_point": {
+            "distance_angstrom": 0.74,
+            "energy_hartree": -1.1167593073781579,
+            "converged": true,
+            "cycles": 2,
+            "trace": [
+              {
+                "cycle": 1,
+                "energy_hartree": -1.116759307378158,
+                "density_change": 5.438959822042073e-16
+              },
+              {
+                "cycle": 2,
+                "energy_hartree": -1.1167593073781579,
+                "density_change": 2.7194799110210365e-16
+              }
+            ],
+            "method": "RHF/STO-3G; restricted H2 only"
+          },
+          "minimum_of_grid": -1.1173490349988597,
+          "DFT_executed": false
+        }
+      }
+    },
+    {
+      "lab": 13,
+      "status": "passed",
+      "notebook_wall_seconds": 1.8865173000376672,
+      "calculation": {
+        "lab": 13,
+        "calculation_wall_seconds": 0.09946809988468885,
+        "result": {
+          "precursors": [
+            "CC(=O)O",
+            "CO"
+          ],
+          "routes": [
+            {
+              "route": "A",
+              "yield1": 0.8,
+              "yield2": 0.7,
+              "assumed_cost": 600,
+              "overall_yield": 0.5599999999999999,
+              "normalized_cost": 1071.4285714285716
+            },
+            {
+              "route": "B",
+              "yield1": 0.95,
+              "yield2": 0.9,
+              "assumed_cost": 750,
+              "overall_yield": 0.855,
+              "normalized_cost": 877.1929824561404
+            }
+          ],
+          "scope": "one ester template, not general AI retrosynthesis"
+        }
+      }
+    },
+    {
+      "lab": 14,
+      "status": "passed",
+      "notebook_wall_seconds": 2.713730900082737,
+      "calculation": {
+        "lab": 14,
+        "calculation_wall_seconds": 0.9012551999185234,
+        "result": {
+          "input_sha256": "f1904ebd8af5789d383f9593365bf5443abf7aa60106db0ecfb50d4fff628465",
+          "python": "3.12.10",
+          "rdkit": "2026.09.1",
+          "rows": 12,
+          "policy": "teaching-parent-v1;neutralize;tautomer=False"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+name: Course checks
+on:
+  push:
+  pull_request:
+jobs:
+  laboratory-contracts:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: Labs/requirements.txt
+      - run: python -m pip install -r Labs/requirements.txt
+      - run: python tools/validate_course.py
+      - run: python -m unittest discover -s Labs -p test_labs.py -v

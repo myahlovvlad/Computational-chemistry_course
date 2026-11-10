@@ -1,0 +1,5 @@
+# Tested teaching chemistry core on Python 3.12 / Windows x64.
+rdkit==2026.9.1
+numpy==2.5.4
+Pillow==13.0.0
+# Jupyter is optional and intentionally separate from the core.

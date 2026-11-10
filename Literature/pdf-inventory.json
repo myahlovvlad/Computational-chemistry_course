@@ -1,0 +1,51 @@
+[
+  {
+    "file": "Books\\Artificial Intelligence for Chemical Sciences Concepts, Models, and Applications (Shrikaant Kulkarni, Shashikant Bhandari etc.) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+    "pages": 413,
+    "chars": 830997,
+    "text_pages": 399,
+    "index": "book_01.txt"
+  },
+  {
+    "file": "Books\\chemoinformatics-concepts-methods-and-tools-for-drug-discovery_compress.pdf",
+    "pages": 538,
+    "chars": 1151617,
+    "text_pages": 528,
+    "index": "book_02.txt"
+  },
+  {
+    "file": "Books\\Co-Intelligence Living and Working with AI (Mollick, Ethan) (Z-Library).pdf",
+    "pages": 226,
+    "chars": 351895,
+    "text_pages": 216,
+    "index": "book_03.txt"
+  },
+  {
+    "file": "Books\\Computational Chemistry A Practical Guide for Applying Techniques to Real World Problems (David Young) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+    "pages": 434,
+    "chars": 950791,
+    "text_pages": 434,
+    "index": "book_04.txt"
+  },
+  {
+    "file": "Books\\Essentials of Computational Chemistry, 2nd Ed. (Christopher J. Cramer) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+    "pages": 607,
+    "chars": 1654457,
+    "text_pages": 606,
+    "index": "book_05.txt"
+  },
+  {
+    "file": "Books\\Experimental_Design_in_Chemistry_a_Tutor.pdf",
+    "pages": 12,
+    "chars": 59316,
+    "text_pages": 12,
+    "index": "book_06.txt"
+  },
+  {
+    "file": "Books\\Пиши, сокращай 2025 Как создавать сильный текст (Максим Ильяхов, Людмила Сарычева) (Z-Library).pdf",
+    "pages": 427,
+    "chars": 559683,
+    "text_pages": 410,
+    "index": "book_07.txt"
+  }
+]
