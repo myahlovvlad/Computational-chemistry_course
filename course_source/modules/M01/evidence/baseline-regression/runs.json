@@ -1,0 +1,33 @@
+[
+  {
+    "id": "course-structure",
+    "argv": [
+      "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe",
+      "tools/validate_course.py"
+    ],
+    "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117",
+    "utc": "2026-11-17T12:32:35.528049+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "scope": "unchanged full Labs environment, separate from minimal M01"
+  },
+  {
+    "id": "existing-labs",
+    "argv": [
+      "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "Labs",
+      "-p",
+      "test_labs.py",
+      "-v"
+    ],
+    "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117",
+    "utc": "2026-11-17T12:32:35.770090+00:00",
+    "exit_code": 0,
+    "status": "PASS",
+    "scope": "unchanged full Labs environment, separate from minimal M01"
+  }
+]

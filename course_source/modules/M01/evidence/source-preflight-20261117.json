@@ -1,0 +1,157 @@
+{
+  "commit": "455d07f3e17e880a4d980b5b0365e4a02b417e14",
+  "retrieved_utc": "2026-11-17T12:05:52.142009+00:00",
+  "files": {
+    "datasets/delaney-processed.csv": {
+      "url": "https://raw.githubusercontent.com/deepchem/deepchem/455d07f3e17e880a4d980b5b0365e4a02b417e14/datasets/delaney-processed.csv",
+      "sha256": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+      "bytes": 96699
+    },
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/deepchem/deepchem/455d07f3e17e880a4d980b5b0365e4a02b417e14/LICENSE",
+      "sha256": "e93ec2f869cea11536743939feb7943e195096ea363e16298620d4622046631f",
+      "bytes": 1047
+    }
+  },
+  "rows": 1128,
+  "columns": [
+    "Compound ID",
+    "ESOL predicted log solubility in mols per litre",
+    "Minimum Degree",
+    "Molecular Weight",
+    "Number of H-Bond Donors",
+    "Number of Rings",
+    "Number of Rotatable Bonds",
+    "Polar Surface Area",
+    "measured log solubility in mols per litre",
+    "smiles"
+  ],
+  "summary": {
+    "None": {
+      "rows": 1128,
+      "MAE": 0.6978617021276595,
+      "RMSE": 0.9101322725549837,
+      "largest": [
+        {
+          "row_id": 939,
+          "name": "bromadiolone",
+          "measured": -4.445,
+          "predicted": -7.877000000000001,
+          "error": -3.4320000000000004
+        },
+        {
+          "row_id": 852,
+          "name": "uric acid",
+          "measured": -3.93,
+          "predicted": -0.541,
+          "error": 3.3890000000000002
+        },
+        {
+          "row_id": 819,
+          "name": "Napthacene",
+          "measured": -8.6,
+          "predicted": -5.568,
+          "error": 3.032
+        },
+        {
+          "row_id": 292,
+          "name": "Dimecron",
+          "measured": 0.523,
+          "predicted": -2.426,
+          "error": -2.9490000000000003
+        },
+        {
+          "row_id": 918,
+          "name": "guanine",
+          "measured": -3.583,
+          "predicted": -0.67,
+          "error": 2.9130000000000003
+        }
+      ]
+    },
+    "0": {
+      "rows": 282,
+      "MAE": 0.7690035460992907,
+      "RMSE": 1.0037640277496775,
+      "largest": [
+        {
+          "row_id": 852,
+          "name": "uric acid",
+          "measured": -3.93,
+          "predicted": -0.541,
+          "error": 3.3890000000000002
+        },
+        {
+          "row_id": 292,
+          "name": "Dimecron",
+          "measured": 0.523,
+          "predicted": -2.426,
+          "error": -2.9490000000000003
+        },
+        {
+          "row_id": 220,
+          "name": "Perylene",
+          "measured": -8.804,
+          "predicted": -6.007000000000001,
+          "error": 2.7969999999999997
+        },
+        {
+          "row_id": 788,
+          "name": "1-Octadecanol",
+          "measured": -8.4,
+          "predicted": -5.649,
+          "error": 2.7510000000000003
+        },
+        {
+          "row_id": 1100,
+          "name": "4-hydroxypyridine",
+          "measured": 1.02,
+          "predicted": -1.655,
+          "error": -2.675
+        }
+      ]
+    },
+    "1": {
+      "rows": 282,
+      "MAE": 0.6410035460992908,
+      "RMSE": 0.8536171742308398,
+      "largest": [
+        {
+          "row_id": 733,
+          "name": "alloxantin",
+          "measured": -1.99,
+          "predicted": 0.919,
+          "error": 2.909
+        },
+        {
+          "row_id": 845,
+          "name": "Benzo(b)fluorene",
+          "measured": -8.04,
+          "predicted": -5.189,
+          "error": 2.850999999999999
+        },
+        {
+          "row_id": 637,
+          "name": "Benzo(a)pyrene",
+          "measured": -8.699,
+          "predicted": -6.007000000000001,
+          "error": 2.6919999999999993
+        },
+        {
+          "row_id": 141,
+          "name": "2,6-Dimethylpyridine",
+          "measured": 0.45,
+          "predicted": -2.0980000000000003,
+          "error": -2.5480000000000005
+        },
+        {
+          "row_id": 497,
+          "name": "Benzo(k)fluoranthene",
+          "measured": -8.49,
+          "predicted": -6.007000000000001,
+          "error": 2.4829999999999997
+        }
+      ]
+    }
+  }
+}

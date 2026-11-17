@@ -1,0 +1,20 @@
+{
+  "id": "02_independent_lab",
+  "argv": [
+    "/home/miakhlov/course-notebooks/course_source/modules/M01/.venv/bin/python",
+    "/home/miakhlov/course-notebooks/course_source/modules/M01/run_checks.py",
+    "--book",
+    "/home/miakhlov/course-notebooks/course_source/modules/M01/02_independent_lab.ipynb",
+    "--executed",
+    "/home/miakhlov/m01-issue4-evidence/linux-20261117-inline/02_independent_lab/executed.ipynb"
+  ],
+  "cwd": "/home/miakhlov/course-notebooks/course_source/modules/M01",
+  "started_utc": "2026-11-17T12:35:03.568419+00:00",
+  "seconds": 2.1691438560010283,
+  "exit_code": 0,
+  "status": "PASS",
+  "scope": "empty scaffold execution; learner tasks NOT_RUN",
+  "environment": "../environment.json",
+  "data_sha256": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+  "M01_WORK_DIR": "/home/miakhlov/m01-issue4-evidence/linux-20261117-inline/learner_work"
+}

@@ -1,0 +1,327 @@
+[
+  {
+    "path": "linux-20261117/01_guided_case/executed.ipynb",
+    "bytes": 167927,
+    "sha256": "58d6a68565085e27817477345e683abe10b6f2a269c1743d568912765655dd15"
+  },
+  {
+    "path": "linux-20261117/01_guided_case/input.ipynb",
+    "bytes": 23023,
+    "sha256": "60307c66aca363d12948c85111d427ba33a1f35726a40fe6828c305d70cdf554"
+  },
+  {
+    "path": "linux-20261117/01_guided_case/run.json",
+    "bytes": 873,
+    "sha256": "b019ca13555be54381b00d5b0612d4de60facf7feb296ca9f86395bd9b6c954e"
+  },
+  {
+    "path": "linux-20261117/01_guided_case/stderr.txt",
+    "bytes": 283,
+    "sha256": "3f2b766f08dfd18a853f26878cf7e0d8cad05ab72687a30d2e374da957f6a5a5"
+  },
+  {
+    "path": "linux-20261117/01_guided_case/stdout.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "linux-20261117/02_independent_lab/executed.ipynb",
+    "bytes": 25651,
+    "sha256": "456654b37a005f7492604481da2a9907323a2dfb69bf8fe88db38e01138cfb87"
+  },
+  {
+    "path": "linux-20261117/02_independent_lab/input.ipynb",
+    "bytes": 18953,
+    "sha256": "caaae880063001277f26b596acb39880e58ff14d8d43f302ac077f5e127475cd"
+  },
+  {
+    "path": "linux-20261117/02_independent_lab/run.json",
+    "bytes": 901,
+    "sha256": "543d9d3366be65e4f039f6771948b4cb7aa7d3ca0e49a6317930039af692137e"
+  },
+  {
+    "path": "linux-20261117/02_independent_lab/stderr.txt",
+    "bytes": 283,
+    "sha256": "3f2b766f08dfd18a853f26878cf7e0d8cad05ab72687a30d2e374da957f6a5a5"
+  },
+  {
+    "path": "linux-20261117/02_independent_lab/stdout.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "linux-20261117/environment.json",
+    "bytes": 3988,
+    "sha256": "7d68757db937843c67f043d70610ed25cdf3fbc8ca97f8f6a8aa973fc0c1d56e"
+  },
+  {
+    "path": "linux-20261117/inputs.json",
+    "bytes": 2614,
+    "sha256": "ef85637e955d3552f5ec38813340f2dd98a48fb563164ee7bf4c7f17b2c0d57f"
+  },
+  {
+    "path": "linux-20261117/instructor/artifacts/case1_parity.png",
+    "bytes": 69081,
+    "sha256": "448a74354e0d44df767d8864d0e841dc127529134adecfd50a904018bb67afb3"
+  },
+  {
+    "path": "linux-20261117/instructor/artifacts/reference_results.json",
+    "bytes": 4145,
+    "sha256": "973f30ccca24584406522d75493e7cc4fd3c743116df306611609d43a75d0028"
+  },
+  {
+    "path": "linux-20261117/instructor/run.json",
+    "bytes": 816,
+    "sha256": "612b4c44b1ffa06fc878dc199cb666e1e2f8339832cfb6e5f23cb5bda7192f7e"
+  },
+  {
+    "path": "linux-20261117/instructor/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "linux-20261117/instructor/stdout.txt",
+    "bytes": 4146,
+    "sha256": "866d70ceeda8ee26e6ab83892a47398f942855e6b7d9f913bff704e3adebdb8f"
+  },
+  {
+    "path": "linux-20261117/learner_work/guided/absolute_errors.png",
+    "bytes": 23588,
+    "sha256": "7feffe6533ba229612d498d89afebf5c15f4981f58f6c8ba7a5e85bebbd36f76"
+  },
+  {
+    "path": "linux-20261117/learner_work/guided/guided_result.json",
+    "bytes": 1057,
+    "sha256": "e9a57f2dded822d52d1c3e8672b86e3ae6b9ee1a9baf6cf255cecdffed822e29"
+  },
+  {
+    "path": "linux-20261117/learner_work/guided/parity.png",
+    "bytes": 80927,
+    "sha256": "e0b0b89922cb24aab38e00f63309ce455d48768545fb001612e4f2d8109f6a97"
+  },
+  {
+    "path": "linux-20261117/learner_work/independent/my_research/concept_map.json",
+    "bytes": 139,
+    "sha256": "ce6ad28dbbc9e655e0f1f49bcbc7216694e4eafaf4c865ad3f848cadc22aec3b"
+  },
+  {
+    "path": "linux-20261117/learner_work/independent/my_research/decisions.md",
+    "bytes": 198,
+    "sha256": "52e2d37c44d222c8de8469573f2ca9623ded8993e0a46362a86234ca890e6503"
+  },
+  {
+    "path": "linux-20261117/learner_work/independent/my_research/README.md",
+    "bytes": 7929,
+    "sha256": "c1fca11dd269dfcd620c59c5a69bdc7c39537728719a9e4cbcc0346d3a4603be"
+  },
+  {
+    "path": "linux-20261117/learner_work/independent/my_research/research_question.md",
+    "bytes": 241,
+    "sha256": "be33f8f49a5a7b9635d7f8998c93622e9c486230467fa8da9d7b014c413b3fdd"
+  },
+  {
+    "path": "linux-20261117/summary.json",
+    "bytes": 3978,
+    "sha256": "6f28efac4e44288c20717489a529a3de78c14efb737aa5a7ddf884d2d8d502d1"
+  },
+  {
+    "path": "linux-20261117/unit-tests/run.json",
+    "bytes": 770,
+    "sha256": "3529c7ea97eaab5eca1ba100307c57cc181dc9c2b7a8f5e16c0022cd0382b686"
+  },
+  {
+    "path": "linux-20261117/unit-tests/stderr.txt",
+    "bytes": 1580,
+    "sha256": "dfbdab00d68c138dd75d0cef04d35754bf0c7d065e0baacc6916e7cb709dddd1"
+  },
+  {
+    "path": "linux-20261117/unit-tests/stdout.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "source-online-20261117.json",
+    "bytes": 2071,
+    "sha256": "efb44a05e795aca7b40af00cdc25faa2b1ba13476c684fda5b4b0a7aecfc93c6"
+  },
+  {
+    "path": "source-preflight-20261117.json",
+    "bytes": 4263,
+    "sha256": "3a10cc67cdee963b967d9f17e765ca02e31c0ba1be84189e27eefe3ddfe2a0ca"
+  },
+  {
+    "path": "windows-20261117/01_guided_case/executed.ipynb",
+    "bytes": 152995,
+    "sha256": "c86d2b176a8b4a3058cc400d6fbe4a8b51a88d0131d4fbd0b265a863415c4b10"
+  },
+  {
+    "path": "windows-20261117/01_guided_case/input.ipynb",
+    "bytes": 23023,
+    "sha256": "60307c66aca363d12948c85111d427ba33a1f35726a40fe6828c305d70cdf554"
+  },
+  {
+    "path": "windows-20261117/01_guided_case/run.json",
+    "bytes": 1414,
+    "sha256": "60d0bddf0a297c0a2d9367191c4cbad4ec3495fdfb5a24ecb1f67315f903f8c6"
+  },
+  {
+    "path": "windows-20261117/01_guided_case/stderr.txt",
+    "bytes": 747,
+    "sha256": "16c54828d4354f815306870271f21876ca4c4f82bbfba98ea9eb8c26ae57283d"
+  },
+  {
+    "path": "windows-20261117/01_guided_case/stdout.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "windows-20261117/02_independent_lab/executed.ipynb",
+    "bytes": 26276,
+    "sha256": "52ee7c54a0b12daf4f535656bbec4497ee60b89707185d96a995a7ff2e5d1813"
+  },
+  {
+    "path": "windows-20261117/02_independent_lab/input.ipynb",
+    "bytes": 18953,
+    "sha256": "caaae880063001277f26b596acb39880e58ff14d8d43f302ac077f5e127475cd"
+  },
+  {
+    "path": "windows-20261117/02_independent_lab/run.json",
+    "bytes": 1441,
+    "sha256": "1199b7b248b459c2a0e4fcb4155b30867e8d15b79e9b7e0931d236a69097b443"
+  },
+  {
+    "path": "windows-20261117/02_independent_lab/stderr.txt",
+    "bytes": 747,
+    "sha256": "16c54828d4354f815306870271f21876ca4c4f82bbfba98ea9eb8c26ae57283d"
+  },
+  {
+    "path": "windows-20261117/02_independent_lab/stdout.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "windows-20261117/environment.json",
+    "bytes": 4649,
+    "sha256": "1e0f84ae7fce1e89ce4ecef678349c38aa81c3bc443233e14a0cb55351e85c8e"
+  },
+  {
+    "path": "windows-20261117/inputs.json",
+    "bytes": 3699,
+    "sha256": "77c23a740b44d0167bd629f7a007a9aac3ff6cd9c8c1f2e9b5a2ad097a9db0dc"
+  },
+  {
+    "path": "windows-20261117/instructor/artifacts/case1_parity.png",
+    "bytes": 63050,
+    "sha256": "bcbb3ec140cad9e816d4a1914fc7f2c8fbc20bc3d9ef3bf61b0c5c044f6dd8fe"
+  },
+  {
+    "path": "windows-20261117/instructor/artifacts/reference_results.json",
+    "bytes": 4462,
+    "sha256": "0c5b71be12cf405a56f5beb1fe034c278acd9f80ee394e16a6e14950c4ed5ebd"
+  },
+  {
+    "path": "windows-20261117/instructor/run.json",
+    "bytes": 1277,
+    "sha256": "a3e3546c460c17d59bd009dac331002aa9af821d55e16139b142aa4eecc0ebbd"
+  },
+  {
+    "path": "windows-20261117/instructor/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "windows-20261117/instructor/stdout.txt",
+    "bytes": 4464,
+    "sha256": "617ea51cf0708deba5d64f05e78f1c0c1efe78c456c6d76334ff3d076ce61f2d"
+  },
+  {
+    "path": "windows-20261117/learner_work/guided/absolute_errors.png",
+    "bytes": 20873,
+    "sha256": "b945ec2212def1e34527d5c3dc297e40bf8ec8c39e18b530b628591fd4e8992d"
+  },
+  {
+    "path": "windows-20261117/learner_work/guided/guided_result.json",
+    "bytes": 1209,
+    "sha256": "b0488d8743f29c6795dd61395afd53361bf3ae91dc256365e53b69dc049640e4"
+  },
+  {
+    "path": "windows-20261117/learner_work/guided/parity.png",
+    "bytes": 71914,
+    "sha256": "07168bbfa0e2a6e12eb454049b174d74253078a80af0f3a46402fd7384237b66"
+  },
+  {
+    "path": "windows-20261117/learner_work/independent/my_research/concept_map.json",
+    "bytes": 143,
+    "sha256": "84e5eb742e97ab151c149adda92359a7d305ed903561fb51105c54a6d0c0e7a8"
+  },
+  {
+    "path": "windows-20261117/learner_work/independent/my_research/decisions.md",
+    "bytes": 205,
+    "sha256": "e85777f7fedf94e512f7a5bc2cc043b3b8ee6ebbd132b13053c4d9abbf89fd3a"
+  },
+  {
+    "path": "windows-20261117/learner_work/independent/my_research/README.md",
+    "bytes": 7929,
+    "sha256": "c1fca11dd269dfcd620c59c5a69bdc7c39537728719a9e4cbcc0346d3a4603be"
+  },
+  {
+    "path": "windows-20261117/learner_work/independent/my_research/research_question.md",
+    "bytes": 248,
+    "sha256": "c6e8b39f5f850132d7141475fbc3ebc77a194a9280d0a4843abd3b03f6096ec3"
+  },
+  {
+    "path": "windows-20261117/summary.json",
+    "bytes": 5897,
+    "sha256": "94ce16a3925b8d3e9faffbdc8a9b6923f4f441b9176c8eb35155153ff639e0b8"
+  },
+  {
+    "path": "windows-20261117/unit-tests/run.json",
+    "bytes": 1134,
+    "sha256": "0288ab96b627db3a18156c8dc0eaef0375562c1b08e4fea9739aab8b20086546"
+  },
+  {
+    "path": "windows-20261117/unit-tests/stderr.txt",
+    "bytes": 1596,
+    "sha256": "4c043b7384b57123a2e5a20014a91294b582f3e30963f52f12074505fefba6a9"
+  },
+  {
+    "path": "windows-20261117/unit-tests/stdout.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "baseline-regression/course-structure.stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "baseline-regression/course-structure.stdout.txt",
+    "bytes": 96,
+    "sha256": "43cb5edd0e7689dee22156eb5e0c413b91200242e76ccbbb43545c557ea0469a"
+  },
+  {
+    "path": "baseline-regression/existing-labs.stderr.txt",
+    "bytes": 1182,
+    "sha256": "9dcaa4a854d41b6232b8d52a9c2a766da783551188bbc45d509ac44895494ef6"
+  },
+  {
+    "path": "baseline-regression/existing-labs.stdout.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "baseline-regression/packages.txt",
+    "bytes": 1379,
+    "sha256": "e99ab26d18333ef3036d966f61daf61bf3b500e82453088d6db9c06cb7323ba7"
+  },
+  {
+    "path": "baseline-regression/python.txt",
+    "bytes": 16,
+    "sha256": "6a5d9f6462ca5dfc6788cfd216ba579fffd7875776ab9d9b35659be78858f73a"
+  },
+  {
+    "path": "baseline-regression/runs.json",
+    "bytes": 1171,
+    "sha256": "37394538f3300fb9b929af695afaa5d885c683ae2f9f0d23c219875186fd0e1b"
+  }
+]

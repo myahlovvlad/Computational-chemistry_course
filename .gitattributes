@@ -1,6 +1,8 @@
 * text=auto eol=lf
 # Scientific snapshots are byte-hashed; preserve them on every platform.
 Labs/datasets/** -text
+# Preserve byte hashes of captured runtime evidence on either platform.
+course_source/modules/M01/evidence/** -text -whitespace
 *.png binary
 *.jpg binary
 *.pdf binary

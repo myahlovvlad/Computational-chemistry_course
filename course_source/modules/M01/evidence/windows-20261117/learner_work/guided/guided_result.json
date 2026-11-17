@@ -1,0 +1,32 @@
+{
+  "source": "DELANEY_DEEPCHEM_455d07f",
+  "source_sha256": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+  "subset_rule": "row_id % 4 == 0",
+  "rows": 282,
+  "MAE_logS": 0.7690035460992907,
+  "RMSE_logS": 1.0037640277496775,
+  "worst_row": {
+    "row_id": 852,
+    "name": "uric acid",
+    "smiles": "O=c2[nH]c(=O)c1[nH]c(=O)[nH]c1[nH]2 ",
+    "measured": -3.93,
+    "predicted": -0.541
+  },
+  "worst_residual_logS": 3.3890000000000002,
+  "fold_gap": 2449.0632418447467,
+  "audit": {
+    "source_sha256": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+    "unit": "log10(S / (mol L^-1))",
+    "missing_conditions": [
+      "pH",
+      "temperature",
+      "solid form",
+      "individual measurement uncertainty"
+    ],
+    "claim": "archive comparison, not independent model validation",
+    "raw_unchanged": true
+  },
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "executable": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\.venv\\Scripts\\python.exe",
+  "experiment_performed": false
+}

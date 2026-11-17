@@ -1,0 +1,50 @@
+{
+  "argv": [
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\.venv\\Scripts\\python.exe",
+    "course_source/modules/M01/verify_sources.py",
+    "--output",
+    "tmp/m01-local-evidence/source-online-20261117.json"
+  ],
+  "utc": "2026-11-17T12:28:14.759850+00:00",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "checks": [
+    {
+      "name": "snapshot",
+      "url": "https://raw.githubusercontent.com/deepchem/deepchem/455d07f3e17e880a4d980b5b0365e4a02b417e14/datasets/delaney-processed.csv",
+      "expected_sha256": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+      "actual_sha256": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+      "bytes": 96699,
+      "http_status": 200,
+      "status": "PASS",
+      "rows": 1128,
+      "columns": [
+        "Compound ID",
+        "ESOL predicted log solubility in mols per litre",
+        "Minimum Degree",
+        "Molecular Weight",
+        "Number of H-Bond Donors",
+        "Number of Rings",
+        "Number of Rotatable Bonds",
+        "Polar Surface Area",
+        "measured log solubility in mols per litre",
+        "smiles"
+      ],
+      "numeric_columns": [
+        "measured log solubility in mols per litre",
+        "ESOL predicted log solubility in mols per litre"
+      ]
+    },
+    {
+      "name": "repository_license",
+      "url": "https://raw.githubusercontent.com/deepchem/deepchem/455d07f3e17e880a4d980b5b0365e4a02b417e14/LICENSE",
+      "expected_sha256": "e93ec2f869cea11536743939feb7943e195096ea363e16298620d4622046631f",
+      "actual_sha256": "e93ec2f869cea11536743939feb7943e195096ea363e16298620d4622046631f",
+      "bytes": 1047,
+      "http_status": 200,
+      "status": "PASS"
+    }
+  ],
+  "scope": "official byte identity and repository license only; not an independent ACS reuse grant",
+  "status": "PASS"
+}
