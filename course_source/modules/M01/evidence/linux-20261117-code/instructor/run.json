@@ -1,0 +1,18 @@
+{
+  "id": "instructor",
+  "argv": [
+    "/home/miakhlov/course-notebooks/course_source/modules/M01/.venv/bin/python",
+    "/home/miakhlov/course-notebooks/course_source/modules/M01/instructor/solution.py",
+    "--output",
+    "/home/miakhlov/m01-issue4-evidence/linux-20261117-code/instructor/artifacts"
+  ],
+  "cwd": "/home/miakhlov/course-notebooks/course_source/modules/M01",
+  "started_utc": "2026-11-17T15:14:22.525126+00:00",
+  "seconds": 0.5198388780008827,
+  "exit_code": 0,
+  "status": "PASS",
+  "scope": "author numeric solutions C1/C2; learner/independent scientific review C3 NOT_RUN",
+  "environment": "../environment.json",
+  "data_sha256": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+  "M01_WORK_DIR": "/home/miakhlov/m01-issue4-evidence/linux-20261117-code/learner_work"
+}

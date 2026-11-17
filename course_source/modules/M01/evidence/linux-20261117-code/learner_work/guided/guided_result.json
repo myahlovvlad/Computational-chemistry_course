@@ -1,0 +1,70 @@
+{
+  "source": "DELANEY_DEEPCHEM_455d07f",
+  "source_sha256": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+  "subset_rule": "row_id % 4 == 0",
+  "rows": 282,
+  "MAE_logS": 0.7690035460992907,
+  "RMSE_logS": 1.0037640277496775,
+  "worst_row": {
+    "row_id": 852,
+    "name": "uric acid",
+    "smiles": "O=c2[nH]c(=O)c1[nH]c(=O)[nH]c1[nH]2 ",
+    "measured": -3.93,
+    "predicted": -0.541
+  },
+  "worst_residual_logS": 3.3890000000000002,
+  "fold_gap": 2449.0632418447467,
+  "audit": {
+    "source_sha256": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+    "unit": "log10(S / (mol L^-1))",
+    "missing_conditions": [
+      "pH",
+      "temperature",
+      "solid form",
+      "individual measurement uncertainty"
+    ],
+    "claim": "archive comparison, not independent model validation",
+    "raw_unchanged": true
+  },
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "executable": "/home/miakhlov/course-notebooks/course_source/modules/M01/.venv/bin/python",
+  "experiment_performed": false,
+  "instructional_criterion": {
+    "factor_limit": 10.0,
+    "tau_logS": 1.0,
+    "fraction_within": 0.7340425531914894,
+    "outside_rows": 75
+  },
+  "reflections": {
+    "P01": null,
+    "P02": null,
+    "P03": null,
+    "P04": null,
+    "P05": null,
+    "P06": null,
+    "P07": null,
+    "P08": null,
+    "P09": null,
+    "P10": null,
+    "P11": null,
+    "P12": null
+  },
+  "residual_table": "/home/miakhlov/m01-issue4-evidence/linux-20261117-code/learner_work/guided/guided_residuals.csv",
+  "criterion_sensitivity": [
+    {
+      "factor_limit": 3.0,
+      "within": 114,
+      "fraction_within": 0.40425531914893614
+    },
+    {
+      "factor_limit": 10.0,
+      "within": 207,
+      "fraction_within": 0.7340425531914894
+    },
+    {
+      "factor_limit": 30.0,
+      "within": 247,
+      "fraction_within": 0.875886524822695
+    }
+  ]
+}

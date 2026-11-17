@@ -1,0 +1,26 @@
+{
+  "source_id": "DELANEY_DEEPCHEM_455d07f",
+  "paper_doi": "10.1021/ci034243x",
+  "source_kind": "secondary_processed_snapshot",
+  "repository": "https://github.com/deepchem/deepchem",
+  "commit": "455d07f3e17e880a4d980b5b0365e4a02b417e14",
+  "url": "https://raw.githubusercontent.com/deepchem/deepchem/455d07f3e17e880a4d980b5b0365e4a02b417e14/datasets/delaney-processed.csv",
+  "sha256": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+  "bytes": 96699,
+  "rows": 1128,
+  "verified_utc": "2026-11-17T12:05:52.142009+00:00",
+  "measured_column": "measured log solubility in mols per litre",
+  "predicted_column": "ESOL predicted log solubility in mols per litre",
+  "units": "log10(S / (mol L^-1))",
+  "missing_conditions": ["pH", "temperature", "solid form", "individual measurement uncertainty"],
+  "license": {
+    "repository_declared": "MIT",
+    "url": "https://raw.githubusercontent.com/deepchem/deepchem/455d07f3e17e880a4d980b5b0365e4a02b417e14/LICENSE",
+    "sha256": "e93ec2f869cea11536743939feb7943e195096ea363e16298620d4622046631f",
+    "original_ACS_supplement_redistribution": "NOT_VERIFIED; no new raw CSV copy distributed by M01",
+    "acquisition": "download official secondary snapshot or verify local bytes; local cache excluded from Git"
+  },
+  "partitions": {"guided": "row_id % 4 == 0", "independent": "row_id % 4 == 1"},
+  "partition_scope": "instructional allocation, not independent train/test or chemical identity split",
+  "fault_injection": "C2 only: reported_logS contains 10**predicted_logS; original measured data unchanged"
+}

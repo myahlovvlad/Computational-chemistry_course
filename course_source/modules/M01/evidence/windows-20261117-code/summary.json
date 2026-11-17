@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "id": "unit-tests",
+      "argv": [
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\.venv\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\tests",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01",
+      "started_utc": "2026-11-17T15:14:17.682629+00:00",
+      "seconds": 1.0577061000003596,
+      "exit_code": 0,
+      "status": "PASS",
+      "scope": "source, numeric and safeguard tests, not pedagogy certification",
+      "environment": "../environment.json",
+      "data_sha256": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+      "M01_WORK_DIR": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\tmp\\m01-local-evidence\\windows-20261117-code\\learner_work"
+    },
+    {
+      "id": "01_guided_case",
+      "argv": [
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\run_checks.py",
+        "--book",
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\01_guided_case.ipynb",
+        "--executed",
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\tmp\\m01-local-evidence\\windows-20261117-code\\01_guided_case\\executed.ipynb"
+      ],
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01",
+      "started_utc": "2026-11-17T15:14:18.740628+00:00",
+      "seconds": 6.357432599997992,
+      "exit_code": 0,
+      "status": "PASS",
+      "scope": "full guided reference execution",
+      "environment": "../environment.json",
+      "data_sha256": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+      "M01_WORK_DIR": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\tmp\\m01-local-evidence\\windows-20261117-code\\learner_work"
+    },
+    {
+      "id": "02_independent_lab",
+      "argv": [
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\run_checks.py",
+        "--book",
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\02_independent_lab.ipynb",
+        "--executed",
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\tmp\\m01-local-evidence\\windows-20261117-code\\02_independent_lab\\executed.ipynb"
+      ],
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01",
+      "started_utc": "2026-11-17T15:14:25.100324+00:00",
+      "seconds": 2.570882399999391,
+      "exit_code": 0,
+      "status": "PASS",
+      "scope": "empty scaffold execution; learner tasks NOT_RUN",
+      "environment": "../environment.json",
+      "data_sha256": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+      "M01_WORK_DIR": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\tmp\\m01-local-evidence\\windows-20261117-code\\learner_work"
+    },
+    {
+      "id": "instructor",
+      "argv": [
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\instructor\\solution.py",
+        "--output",
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\tmp\\m01-local-evidence\\windows-20261117-code\\instructor\\artifacts"
+      ],
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01",
+      "started_utc": "2026-11-17T15:14:27.666063+00:00",
+      "seconds": 0.57756039999731,
+      "exit_code": 0,
+      "status": "PASS",
+      "scope": "author numeric solutions C1/C2; learner/independent scientific review C3 NOT_RUN",
+      "environment": "../environment.json",
+      "data_sha256": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+      "M01_WORK_DIR": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\tmp\\m01-local-evidence\\windows-20261117-code\\learner_work"
+    }
+  ],
+  "scope": "M01 technical and author-reference validation only",
+  "learner_cases": "NOT_RUN",
+  "student_pilot": "NOT_RUN",
+  "independent_scientific_review": "NOT_RUN",
+  "source_rights": "See RESEARCH_SOURCE.md; new full CSV not redistributed"
+}

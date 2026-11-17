@@ -19,7 +19,7 @@ def build():
             if kind=='code':
                 if tail:raise ValueError('Unmarked text following code '+identifier)
                 cell=nbformat.v4.new_code_cell(codes[identifier])
-                if identifier in {'g-setup','l-setup'}:cell.metadata['jupyter']={'source_hidden':True}
+                if identifier=='l-setup':cell.metadata['jupyter']={'source_hidden':True}
             else:
                 if not tail:raise ValueError('Empty markdown cell '+identifier)
                 cell=nbformat.v4.new_markdown_cell(tail.replace('](../',']('))
@@ -27,7 +27,7 @@ def build():
         book=nbformat.v4.new_notebook(cells=cells,metadata={
           'kernelspec':{'name':'course-m01-evidence','display_name':'M01 · scientific evidence · uv (no RDKit)','language':'python'},
           'language_info':{'name':'python'},
-          'course':{'module':'M01','role':role,'version':'research-v2-context',
+          'course':{'module':'M01','role':role,'version':'research-v3-code-walkthrough',
                     'narrative_source':'content/'+stem+'.md','code_source':'lesson_code.json'}})
         nbformat.validate(book)
         nbformat.write(book,ROOT/(stem+'.ipynb'))

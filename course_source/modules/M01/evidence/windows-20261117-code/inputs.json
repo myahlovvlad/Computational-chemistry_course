@@ -1,0 +1,102 @@
+[
+  {
+    "path": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\data\\provenance.json",
+    "sha256": "af1cdcce00a0b38b91b27c057afa19cf79abd1676c59af2fc6c452f26cd13c4b",
+    "bytes": 1579
+  },
+  {
+    "path": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\data\\evidence_cards.json",
+    "sha256": "58909366c16935395df6a3340ce86bca252aab77a0f676c33f22a45665c9a2de",
+    "bytes": 1324
+  },
+  {
+    "path": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\m01.py",
+    "sha256": "f9140d6ef50a7e46ed18f314031a4aef49b670458c5d46cefa2ebcf3926a7c2e",
+    "bytes": 5822
+  },
+  {
+    "path": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\instructor\\solution.py",
+    "sha256": "283ac51aec201b5da362cb37b97db9a224e70f700e5aa99724bdc129e2013719",
+    "bytes": 3608
+  },
+  {
+    "path": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\uv.lock",
+    "sha256": "1ca6ca5e2f3a1561e2df7fd7c66c851a36d586d5d29883f8ede6ee8b20251056",
+    "bytes": 225902
+  },
+  {
+    "path": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\pyproject.toml",
+    "sha256": "bedf6d4b4bc08280a60449eca46a0eef1da0376678e45ef738db361359fc73bf",
+    "bytes": 305
+  },
+  {
+    "path": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\build_notebooks.py",
+    "sha256": "e7d72c2d62446bd75a78eabf2d2ca50ccd1def7cc104bdc273afce987ac0346a",
+    "bytes": 1928
+  },
+  {
+    "path": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\run_checks.py",
+    "sha256": "93fcbe3ac033c4ef3c03622131e66c24af8055a0fb782e3bd192951f6b99ffec",
+    "bytes": 6052
+  },
+  {
+    "path": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\register_kernel.py",
+    "sha256": "b4da54ba362f3136ee74291dfb6915919e4b8f37a22b671eb1003cf3fb19f594",
+    "bytes": 1341
+  },
+  {
+    "path": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\tests\\test_notebooks.py",
+    "sha256": "86e5d6980b06fde39498ea5382196003f0c90271c84ea9304b1aeb7ee1ee6f74",
+    "bytes": 6815
+  },
+  {
+    "path": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\01_guided_case.ipynb",
+    "sha256": "0bdd161631f8c005dc3d6fad2891f343d2b4ac66c4f8189441e207a8e582312e",
+    "bytes": 74697
+  },
+  {
+    "path": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\02_independent_lab.ipynb",
+    "sha256": "0ecb784c09463c09a2c2664be2806260120416534f37181c669221bb9f46ecf5",
+    "bytes": 30365
+  },
+  {
+    "path": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\lesson_code.json",
+    "sha256": "93bb802253596735f901cecd514076427f2c8acc41e5bb931a093178b450099a",
+    "bytes": 11031
+  },
+  {
+    "path": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\formative.py",
+    "sha256": "c72bba30cbde1f96720c75255125dcf08f8515fb1b9ea07417314845b681b08f",
+    "bytes": 2893
+  },
+  {
+    "path": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\GLOSSARY.md",
+    "sha256": "96c17eeff2657a383de96502ab5f8f8146bb6d41088da860adb8f9e1c3ae3bdd",
+    "bytes": 11150
+  },
+  {
+    "path": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\MATHEMATICAL_PROTOCOL.md",
+    "sha256": "1b4c48b0aaea0738703fd7a0754ba53a152ae3a5fc647799beefdf39630edc55",
+    "bytes": 10277
+  },
+  {
+    "path": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\PROMPT_DESIGN.md",
+    "sha256": "e249e947a5201ec9376e3c16078bc15684ae727da1c9f382265335cf8f438cf1",
+    "bytes": 7320
+  },
+  {
+    "path": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\content\\01_guided_case.md",
+    "sha256": "32037fe94eea8445f72bb5f81a38916e4ce3fbeb13bb028fce02486449caa84b",
+    "bytes": 57277
+  },
+  {
+    "path": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\content\\02_independent_lab.md",
+    "sha256": "412b928d9e9d575b17cf3440b5df55e8e503dab2f6b91c579e0be58f67cff1b9",
+    "bytes": 24159
+  },
+  {
+    "path": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\local_data\\esol.csv",
+    "sha256": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+    "bytes": 96699
+  }
+]

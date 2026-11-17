@@ -1,12 +1,13 @@
 {
-  "revision": "research-v2-context",
+  "revision": "research-v3-code-walkthrough",
   "platforms": [
-    "windows-20261117-context",
-    "linux-20261117-context"
+    "windows-20261117-code",
+    "linux-20261117-code"
   ],
   "historical_platforms": [
     "windows-20261117",
-    "linux-20261117"
-  ],
-  "note": "Earlier captures preserved; only selected captures describe the current narrative and code."
+    "linux-20261117",
+    "windows-20261117-context",
+    "linux-20261117-context"
+  ]
 }

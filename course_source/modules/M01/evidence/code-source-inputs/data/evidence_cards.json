@@ -1,0 +1,9 @@
+{
+  "version": "2026-11-17",
+  "kind": "authored summaries of checked public sources; not new measurements",
+  "cards": [
+    {"id":"A-LABEL","object":"istradefylline / A2A","source":"https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a7d008cb-b273-4049-a5d2-9c6902910d58","fact":"Label describes istradefylline as an adenosine A2A receptor antagonist.","does_not_establish":"BBB, affinity or clinical efficacy of another xanthine; ESOL does not measure these endpoints."},
+    {"id":"B-STRUCTURE","object":"atorvastatin / catalytic portion of human HMG-CoA reductase","source":"https://www.rcsb.org/structure/1HWK","publication":"https://pubmed.ncbi.nlm.nih.gov/11349148/","fact":"1HWK is an experimental crystal structure of this complex.","does_not_establish":"Hepatic intracellular exposure, transporter contribution, clinical efficacy of a new molecule or aqueous solubility under unspecified conditions."},
+    {"id":"B-EXPOSURE-GAP","object":"atorvastatin, specified chemical form and experimental conditions still to be selected by learner","source":"instructional question, not an experimental record","fact":"No hepatic concentration or transport measurement is supplied in this M01 packet.","does_not_establish":"A value or positive conclusion for liver exposure; next measurement must be proposed."}
+  ]
+}
