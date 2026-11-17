@@ -59,7 +59,7 @@ python3 -m venv .venv
 В новой ячейке Jupyter:
 
 ```python
-import sys, matplotlib, notebook, IPython
+import sys, matplotlib, IPython
 print(sys.executable)
 print(sys.version)
 print(matplotlib.__version__)
