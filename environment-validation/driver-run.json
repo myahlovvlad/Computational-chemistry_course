@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "wsl.exe",
+    "-d",
+    "Ubuntu-24.04",
+    "-u",
+    "miakhlov",
+    "--",
+    "bash",
+    "/mnt/c/Users/Miakhlov/Documents/GitHub/Computational chemistry_course/tmp/wsl-setup/check-copy-all.sh"
+  ],
+  "started_utc": "2026-11-17T09:53:55.440774+00:00",
+  "duration_seconds": 86.11227110000027,
+  "exit_code": 0
+}

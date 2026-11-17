@@ -1,0 +1,200 @@
+{
+  "status": "PASS",
+  "argv": [
+    "tools/check_notebook_environment.py",
+    "--all",
+    "--output",
+    "tmp/kernel-smoke-all-02"
+  ],
+  "interpreter": "/home/miakhlov/course-notebooks/.venv/bin/python",
+  "kernel_argv": [
+    "/home/miakhlov/.local/bin/uv",
+    "run",
+    "--frozen",
+    "--project",
+    "/home/miakhlov/course-notebooks",
+    "python",
+    "-m",
+    "ipykernel_launcher",
+    "-f",
+    "{connection_file}"
+  ],
+  "checks": [
+    {
+      "source": "Labs/extensions/dft_pyscf.ipynb",
+      "kernel": "chemistry-course-uv",
+      "status": "PASS"
+    },
+    {
+      "source": "Labs/notebooks/lab01.ipynb",
+      "kernel": "chemistry-course-uv",
+      "status": "PASS"
+    },
+    {
+      "source": "Labs/notebooks/lab02.ipynb",
+      "kernel": "chemistry-course-uv",
+      "status": "PASS"
+    },
+    {
+      "source": "Labs/notebooks/lab03.ipynb",
+      "kernel": "chemistry-course-uv",
+      "status": "PASS"
+    },
+    {
+      "source": "Labs/notebooks/lab04.ipynb",
+      "kernel": "chemistry-course-uv",
+      "status": "PASS"
+    },
+    {
+      "source": "Labs/notebooks/lab05.ipynb",
+      "kernel": "chemistry-course-uv",
+      "status": "PASS"
+    },
+    {
+      "source": "Labs/notebooks/lab06.ipynb",
+      "kernel": "chemistry-course-uv",
+      "status": "PASS"
+    },
+    {
+      "source": "Labs/notebooks/lab07.ipynb",
+      "kernel": "chemistry-course-uv",
+      "status": "PASS"
+    },
+    {
+      "source": "Labs/notebooks/lab08.ipynb",
+      "kernel": "chemistry-course-uv",
+      "status": "PASS"
+    },
+    {
+      "source": "Labs/notebooks/lab09.ipynb",
+      "kernel": "chemistry-course-uv",
+      "status": "PASS"
+    },
+    {
+      "source": "Labs/notebooks/lab10.ipynb",
+      "kernel": "chemistry-course-uv",
+      "status": "PASS"
+    },
+    {
+      "source": "Labs/notebooks/lab11.ipynb",
+      "kernel": "chemistry-course-uv",
+      "status": "PASS"
+    },
+    {
+      "source": "Labs/notebooks/lab12.ipynb",
+      "kernel": "chemistry-course-uv",
+      "status": "PASS"
+    },
+    {
+      "source": "Labs/notebooks/lab13.ipynb",
+      "kernel": "chemistry-course-uv",
+      "status": "PASS"
+    },
+    {
+      "source": "Labs/notebooks/lab14.ipynb",
+      "kernel": "chemistry-course-uv",
+      "status": "PASS"
+    },
+    {
+      "source": "Stepik_course/practice/quickstart.ipynb",
+      "kernel": "chemistry-course-uv",
+      "status": "PASS"
+    },
+    {
+      "source": "Labs/extensions/dft_pyscf.ipynb",
+      "sha256": "53fd2aa0c82ec32198e0ae3ad16913d01480e0c2c90c3c4b82c672a1f2e95cec",
+      "status": "PASS",
+      "check": "metadata-selected kernel, isolated interpreter and original notebook assertions"
+    },
+    {
+      "source": "Labs/notebooks/lab01.ipynb",
+      "sha256": "2acd49b3548f816f2fddcb2120f17e576418cb4fab63e3264413100c3a4d02fe",
+      "status": "PASS",
+      "check": "metadata-selected kernel, isolated interpreter and original notebook assertions"
+    },
+    {
+      "source": "Labs/notebooks/lab02.ipynb",
+      "sha256": "c2e85c429b98f9e0da6ea0ae2f5c92822853eb1b4df274410ca270d7abd8e5df",
+      "status": "PASS",
+      "check": "metadata-selected kernel, isolated interpreter and original notebook assertions"
+    },
+    {
+      "source": "Labs/notebooks/lab03.ipynb",
+      "sha256": "91e61cf78b725cc05d18ffea72c4dedc470a8b06819ba8277ef33fe8ff10f0d2",
+      "status": "PASS",
+      "check": "metadata-selected kernel, isolated interpreter and original notebook assertions"
+    },
+    {
+      "source": "Labs/notebooks/lab04.ipynb",
+      "sha256": "753ef843dce0a47d028d1764f1e9d69a9e8f868fecee5693281fee58c93e50d8",
+      "status": "PASS",
+      "check": "metadata-selected kernel, isolated interpreter and original notebook assertions"
+    },
+    {
+      "source": "Labs/notebooks/lab05.ipynb",
+      "sha256": "9868abe0fc721c62325bb60a1c1fd21357165dc4996485f9948c43278cf6e812",
+      "status": "PASS",
+      "check": "metadata-selected kernel, isolated interpreter and original notebook assertions"
+    },
+    {
+      "source": "Labs/notebooks/lab06.ipynb",
+      "sha256": "f7d117e357ae98466cbfc2c2288c736f6ded1558a67ef6dbaee482622dcb3529",
+      "status": "PASS",
+      "check": "metadata-selected kernel, isolated interpreter and original notebook assertions"
+    },
+    {
+      "source": "Labs/notebooks/lab07.ipynb",
+      "sha256": "5e7a1c1b8dae1c7fbff97f313e1e9fb034beee5171de6de537770ec3b8ee1291",
+      "status": "PASS",
+      "check": "metadata-selected kernel, isolated interpreter and original notebook assertions"
+    },
+    {
+      "source": "Labs/notebooks/lab08.ipynb",
+      "sha256": "30875eddb035c7f2c6b3384ee618f510a32b302aae19eee72bea90217a862b6f",
+      "status": "PASS",
+      "check": "metadata-selected kernel, isolated interpreter and original notebook assertions"
+    },
+    {
+      "source": "Labs/notebooks/lab09.ipynb",
+      "sha256": "e4cfec54869029507a2737e872350a2777cbc22506dc2537f2de320df1602b4f",
+      "status": "PASS",
+      "check": "metadata-selected kernel, isolated interpreter and original notebook assertions"
+    },
+    {
+      "source": "Labs/notebooks/lab10.ipynb",
+      "sha256": "3afb7a117121c9a90886312db4976b0535b3ac7a4567eb370a6e53ab2b6d37e1",
+      "status": "PASS",
+      "check": "metadata-selected kernel, isolated interpreter and original notebook assertions"
+    },
+    {
+      "source": "Labs/notebooks/lab11.ipynb",
+      "sha256": "ff68b02c2a5ffe4cbd85964bb1f9c8c07ab759bff361a53518badcccbfa2d2ba",
+      "status": "PASS",
+      "check": "metadata-selected kernel, isolated interpreter and original notebook assertions"
+    },
+    {
+      "source": "Labs/notebooks/lab12.ipynb",
+      "sha256": "74a8fb700d090a3a55cb38ab0148fa064b9445bb75ecb07e64c419598e5ea52f",
+      "status": "PASS",
+      "check": "metadata-selected kernel, isolated interpreter and original notebook assertions"
+    },
+    {
+      "source": "Labs/notebooks/lab13.ipynb",
+      "sha256": "7b0fa81f58f1c9ae32439c9db8f1b59698620a5714d51c2d10e2b690037a87ba",
+      "status": "PASS",
+      "check": "metadata-selected kernel, isolated interpreter and original notebook assertions"
+    },
+    {
+      "source": "Labs/notebooks/lab14.ipynb",
+      "sha256": "59ec817bb68a4727c91e1a9912f8fcab117f968fe1cbeac7cd6f64b84b279b60",
+      "status": "PASS",
+      "check": "metadata-selected kernel, isolated interpreter and original notebook assertions"
+    },
+    {
+      "source": "Stepik_course/practice/quickstart.ipynb",
+      "sha256": "2e55f57b007886ca4b4e18b370300e7dff342c2f916251d720d72bbafe347003",
+      "status": "PASS",
+      "check": "metadata-selected kernel, isolated interpreter and original notebook assertions"
+    }
+  ]
+}

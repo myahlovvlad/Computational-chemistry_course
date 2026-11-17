@@ -1,4 +1,5 @@
-"""Verify all metadata and launch two representative notebooks by stored kernel name."""
+"""Verify metadata and launch two representative notebooks, or all with --all."""
+import argparse
 import hashlib
 import json
 from pathlib import Path
@@ -12,7 +13,11 @@ NAME='chemistry-course-uv'
 
 
 def main():
-    target=ROOT/'tmp/kernel-smoke'
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--all',action='store_true',help='Execute all 16 notebooks by stored kernel name')
+    parser.add_argument('--output',default='tmp/kernel-smoke')
+    args=parser.parse_args()
+    target=ROOT/args.output
     target.mkdir(parents=True,exist_ok=False)
     paths=sorted((ROOT/'Labs').rglob('*.ipynb'))+[ROOT/'Stepik_course/practice/quickstart.ipynb']
     checks=[]
@@ -24,7 +29,8 @@ def main():
     spec=KernelSpecManager().get_kernel_spec(NAME)
     assert spec.argv[1:3]==['run','--frozen'],spec.argv
     assert spec.env['UV_PROJECT_ENVIRONMENT']==str(ROOT/'.venv'),spec.env
-    for path in [ROOT/'Stepik_course/practice/quickstart.ipynb',ROOT/'Labs/extensions/dft_pyscf.ipynb']:
+    selected=paths if args.all else [ROOT/'Stepik_course/practice/quickstart.ipynb',ROOT/'Labs/extensions/dft_pyscf.ipynb']
+    for path in selected:
         book=nbformat.read(path,as_version=4)
         for cell in book.cells:
             if cell.cell_type=='code':cell.outputs=[];cell.execution_count=None

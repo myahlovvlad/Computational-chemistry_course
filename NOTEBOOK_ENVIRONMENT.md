@@ -22,7 +22,13 @@ uv run --frozen jupyter lab --ip=127.0.0.1 --no-browser
 
 Изменения notebooks ограничены `metadata.kernelspec`; химические входы, код, эталоны и учебный текст сохраняются.
 
-Проверено 17.11.2026 на этом ПК: WSL 3.0.5 / Ubuntu 24.04, uv 0.13.8, Python 3.12.3, PySCF 2.15.1. Полный свежий прогон 16 notebooks и 25 существующих unit tests сохранён в отдельном аудите Issue #1. В самостоятельной копии `/home/miakhlov/course-notebooks` созданы новая `.venv` и регистрация ядра; [контроль автоматического выбора](environment-validation/kernel-smoke.json) проверяет метаданные всех 16 файлов и реально исполняет quickstart и DFT без явного переопределения имени ядра. Семантическое сравнение исходных JSON подтвердило, что в 16 notebooks изменён только kernelspec.
+Проверено 17.11.2026 на этом ПК: WSL 3.0.5 / Ubuntu 24.04, uv 0.13.8, Python 3.12.3, PySCF 2.15.1. Полный свежий прогон 16 notebooks и 25 существующих unit tests сохранён в отдельном аудите Issue #1. В самостоятельной копии `/home/miakhlov/course-notebooks` созданы новая `.venv` и регистрация ядра; [первичный контроль](environment-validation/kernel-smoke.json) проверил quickstart и DFT. Затем [все 16 notebooks выполнены в этой копии](environment-validation/kernel-all.json) без переопределения имени ядра, с проверкой пути интерпретатора и исходных assertions. Свежие исполненные копии — в `environment-validation/executed/`. Семантическое сравнение исходных JSON подтвердило, что в учебных файлах изменён только kernelspec.
+
+Повтор полной проверки (каталог output должен отсутствовать):
+
+```bash
+uv run --frozen python tools/check_notebook_environment.py --all --output tmp/kernel-replay-01
+```
 
 Для этой установленной копии из Windows PowerShell:
 
