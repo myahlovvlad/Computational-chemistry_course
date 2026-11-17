@@ -1,0 +1,92 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "id": "core-tests",
+      "status": "PASS"
+    },
+    {
+      "id": "labs-tests",
+      "status": "PASS"
+    },
+    {
+      "id": "vina-version",
+      "status": "PASS"
+    },
+    {
+      "id": "kernel",
+      "status": "PASS"
+    },
+    {
+      "id": "quickstart",
+      "status": "PASS"
+    },
+    {
+      "id": "lab01",
+      "status": "PASS"
+    },
+    {
+      "id": "lab02",
+      "status": "PASS"
+    },
+    {
+      "id": "lab03",
+      "status": "PASS"
+    },
+    {
+      "id": "lab04",
+      "status": "PASS"
+    },
+    {
+      "id": "lab05",
+      "status": "PASS"
+    },
+    {
+      "id": "lab06",
+      "status": "PASS"
+    },
+    {
+      "id": "lab07",
+      "status": "PASS"
+    },
+    {
+      "id": "lab08",
+      "status": "PASS"
+    },
+    {
+      "id": "lab09",
+      "status": "PASS"
+    },
+    {
+      "id": "lab10",
+      "status": "PASS"
+    },
+    {
+      "id": "lab11",
+      "status": "PASS"
+    },
+    {
+      "id": "lab12",
+      "status": "PASS"
+    },
+    {
+      "id": "lab13",
+      "status": "PASS"
+    },
+    {
+      "id": "lab14",
+      "status": "PASS"
+    },
+    {
+      "id": "dft_pyscf",
+      "status": "PASS"
+    },
+    {
+      "id": "module12-pyscf",
+      "status": "PASS"
+    }
+  ],
+  "docking_mode": "executed-vina",
+  "notebooks": 16,
+  "scope": "existing reference notebooks/tests; no Stepik or independent learner evidence"
+}

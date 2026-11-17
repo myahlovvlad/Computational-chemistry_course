@@ -1,0 +1,15 @@
+INFO:standardized with teaching-parent-v1;neutralize;tautomer=False
+INFO:standardized with teaching-parent-v1;neutralize;tautomer=False
+INFO:standardized with teaching-parent-v1;neutralize;tautomer=False
+INFO:standardized with teaching-parent-v1;neutralize;tautomer=False
+INFO:standardized with teaching-parent-v1;neutralize;tautomer=False
+INFO:standardized with teaching-parent-v1;neutralize;tautomer=False
+INFO:standardized with teaching-parent-v1;neutralize;tautomer=False
+[11:54:38] SMILES Parse Error: syntax error while parsing: not_a_smiles
+[11:54:38] SMILES Parse Error: check for mistakes around position 3:
+[11:54:38] not_a_smiles
+[11:54:38] ~~^
+[11:54:38] SMILES Parse Error: Failed parsing SMILES 'not_a_smiles' for input: 'not_a_smiles'
+INFO:standardized with teaching-parent-v1;neutralize;tautomer=False
+INFO:standardized with teaching-parent-v1;neutralize;tautomer=False
+INFO:standardized with teaching-parent-v1;neutralize;tautomer=False

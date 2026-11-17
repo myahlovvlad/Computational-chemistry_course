@@ -1,0 +1,18 @@
+{
+  "lab": 1,
+  "calculation_wall_seconds": 0.1390478759999496,
+  "result": {
+    "beta": [
+      50.0,
+      10.0,
+      5.0,
+      8.0
+    ],
+    "effects": [
+      20.0,
+      10.0,
+      16.0
+    ],
+    "residual_df": 0
+  }
+}

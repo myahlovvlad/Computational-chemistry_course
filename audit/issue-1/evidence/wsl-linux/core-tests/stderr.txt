@@ -1,0 +1,27 @@
+test_activity_units_and_failures (test_practice.ChemistryTests.test_activity_units_and_failures) ... ok
+test_all_four_ro5_conditions (test_practice.ChemistryTests.test_all_four_ro5_conditions) ... ok
+test_conformer (test_practice.ChemistryTests.test_conformer) ... ok
+test_covalent_chlorine_survives (test_practice.ChemistryTests.test_covalent_chlorine_survives) ... ok
+test_curated_rows (test_practice.ChemistryTests.test_curated_rows) ... ok
+test_equivalent_serializations (test_practice.ChemistryTests.test_equivalent_serializations) ... ok
+test_expected_descriptors (test_practice.ChemistryTests.test_expected_descriptors) ... ok
+test_invalid_and_empty (test_practice.ChemistryTests.test_invalid_and_empty) ... [12:37:42] SMILES Parse Error: syntax error while parsing: not_a_smiles
+[12:37:42] SMILES Parse Error: check for mistakes around position 3:
+[12:37:42] not_a_smiles
+[12:37:42] ~~^
+[12:37:42] SMILES Parse Error: Failed parsing SMILES 'not_a_smiles' for input: 'not_a_smiles'
+ok
+test_morgan_properties (test_practice.ChemistryTests.test_morgan_properties) ... ok
+test_no_alert_is_not_activity (test_practice.ChemistryTests.test_no_alert_is_not_activity) ... ok
+test_pains_is_review (test_practice.ChemistryTests.test_pains_is_review) ... ok
+test_salt_retains_raw_and_matches_acid_parent (test_practice.ChemistryTests.test_salt_retains_raw_and_matches_acid_parent) ... ok
+test_stereochemistry_not_collapsed (test_practice.ChemistryTests.test_stereochemistry_not_collapsed) ... ok
+test_tautomer_canonicalization_is_explicit (test_practice.ChemistryTests.test_tautomer_canonicalization_is_explicit) ... ok
+test_enrichment (test_practice.PurePythonTests.test_enrichment) ... ok
+test_tanimoto_cases (test_practice.PurePythonTests.test_tanimoto_cases) ... ok
+test_z_prime (test_practice.PurePythonTests.test_z_prime) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.066s
+
+OK

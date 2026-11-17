@@ -1,0 +1,1 @@
+Installed kernelspec practice-audit-issue1 in C:\Users\Miakhlov\Documents\GitHub\Computational chemistry_course\tmp\practice-audit-issue1-20261117\.venv-audit\share\jupyter\kernels\practice-audit-issue1

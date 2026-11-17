@@ -1,0 +1,59 @@
+{
+  "kernelspecs": {
+    "python3": {
+      "resource_dir": "/home/miakhlov/Computational-chemistry_course/.venv/share/jupyter/kernels/python3",
+      "spec": {
+        "argv": [
+          "python",
+          "-m",
+          "ipykernel_launcher",
+          "-f",
+          "{connection_file}"
+        ],
+        "env": {},
+        "display_name": "Python 3 (ipykernel)",
+        "language": "python",
+        "interrupt_mode": "signal",
+        "metadata": {
+          "debugger": true,
+          "supported_encryption": [
+            "curve"
+          ]
+        },
+        "kernel_protocol_version": "5.5"
+      }
+    },
+    "chemistry-course-uv": {
+      "resource_dir": "/home/miakhlov/.local/share/jupyter/kernels/chemistry-course-uv",
+      "spec": {
+        "argv": [
+          "/home/miakhlov/.local/bin/uv",
+          "run",
+          "--frozen",
+          "--project",
+          "/home/miakhlov/Computational-chemistry_course",
+          "python",
+          "-m",
+          "ipykernel_launcher",
+          "-f",
+          "{connection_file}"
+        ],
+        "env": {
+          "VIRTUAL_ENV": "/home/miakhlov/Computational-chemistry_course/.venv",
+          "UV_PROJECT_ENVIRONMENT": "/home/miakhlov/Computational-chemistry_course/.venv",
+          "PYTHONNOUSERSITE": "1",
+          "PYTHONPATH": "",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1"
+        },
+        "display_name": "Chemistry course (uv / WSL / Python 3.12)",
+        "language": "python",
+        "interrupt_mode": "signal",
+        "metadata": {
+          "debugger": true
+        },
+        "kernel_protocol_version": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "lab": 8,
+  "calculation_wall_seconds": 0.3977252000477165,
+  "result": {
+    "Z_prime": 0.6666666666666667,
+    "EF_at_50": 5.0,
+    "statuses": {
+      "eligible": 9,
+      "invalid": 2,
+      "review": 1
+    }
+  }
+}

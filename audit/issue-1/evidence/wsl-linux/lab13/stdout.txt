@@ -1,0 +1,4 @@
+Учебные предшественники: ['CC(=O)O', 'CO']
+
+
+Запуск сохранён: /home/miakhlov/Computational-chemistry_course/Labs/results/lab13/benchmark.json

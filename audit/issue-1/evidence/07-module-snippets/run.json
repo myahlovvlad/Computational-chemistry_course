@@ -1,0 +1,95 @@
+{
+  "id": "07-module-snippets",
+  "argv": [
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe",
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\audit\\issue-1\\check.py",
+    "snippets"
+  ],
+  "command_windows": "\"C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe\" \"C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\audit\\issue-1\\check.py\" snippets",
+  "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117",
+  "started_utc": "2026-11-17T08:54:47.474483+00:00",
+  "duration_seconds": 0.12398250005207956,
+  "exit_code": 1,
+  "status": "FAIL",
+  "reason": "",
+  "environment": {
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONPATH": "unset",
+    "python": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe",
+    "stage_versions": "../core-environment/stdout.txt or ../labs-environment/stdout.txt"
+  },
+  "inputs": [
+    {
+      "path": "Stepik_course/modules/01_design.md",
+      "sha256": "2e8577bd88c17c3d9a8233f552b544571fb7e58c4014c454c7dd7a11a5af6cb6",
+      "bytes": 7602
+    },
+    {
+      "path": "Stepik_course/modules/02_environment.md",
+      "sha256": "679d59854fd0d4bb47988a5353cf50938fff2be3bf7b32f9e2a754a370d4084d",
+      "bytes": 7085
+    },
+    {
+      "path": "Stepik_course/modules/03_representations.md",
+      "sha256": "529c001ecff36c04335437d58f018cf8286f32d22ec253354c84b8402134322d",
+      "bytes": 6891
+    },
+    {
+      "path": "Stepik_course/modules/04_descriptors.md",
+      "sha256": "a94864fe2ca5ee52429d39425094e9b97adbd162e20c887d3367896ba9a12e72",
+      "bytes": 6608
+    },
+    {
+      "path": "Stepik_course/modules/05_similarity.md",
+      "sha256": "e887e04411b195cf8785718e644e8f0af323116134457ee8d392af94b32d994b",
+      "bytes": 6864
+    },
+    {
+      "path": "Stepik_course/modules/06_mechanics.md",
+      "sha256": "d1ca554aa455888a9c5d6c9e6c2957114bd2abc6a980427958b3fc68f7ec7fd4",
+      "bytes": 6671
+    },
+    {
+      "path": "Stepik_course/modules/07_databases.md",
+      "sha256": "21bc4c20c9ca8092df77d1450ac24c5f3c3e9765f72bd8773e5cbf95fa34394c",
+      "bytes": 6201
+    },
+    {
+      "path": "Stepik_course/modules/08_screening.md",
+      "sha256": "06c683ed0c543686929d8556b3d7c98533e0970f6631c34b2987239c6f0af659",
+      "bytes": 7468
+    },
+    {
+      "path": "Stepik_course/modules/09_visualization.md",
+      "sha256": "91e1a279b2e15481f7a6b9d485a5672b772a091e5b0b0937180fb2ce0f6cc599",
+      "bytes": 6254
+    },
+    {
+      "path": "Stepik_course/modules/10_docking.md",
+      "sha256": "c181b49333ccc44d9f639f441fc0186c8bd33d6c0a8cba59230b360da957ee0b",
+      "bytes": 7123
+    },
+    {
+      "path": "Stepik_course/modules/11_qsar.md",
+      "sha256": "8eccd1ca90cbe88885cb8b95abcb21ba3336d56451a932d46e7174b5d35cf1ae",
+      "bytes": 10030
+    },
+    {
+      "path": "Stepik_course/modules/12_quantum.md",
+      "sha256": "72218bfabe80b0456b08e7cf7c0e3465468aeba86c68fa8a5aae0bb9d8bdef1c",
+      "bytes": 7137
+    },
+    {
+      "path": "Stepik_course/modules/13_retrosynthesis.md",
+      "sha256": "7e7e9982b3bf4e913ee168ad4dd4fd13df002514d8ba5e73f4a78fd64d134df4",
+      "bytes": 6980
+    },
+    {
+      "path": "Stepik_course/modules/14_delivery.md",
+      "sha256": "89dde7785c026bf88b29db5e22bd12f4dd9b73f1d93925e2e0f6aa4d45f2edcf",
+      "bytes": 7616
+    }
+  ],
+  "stdout": "stdout.txt",
+  "stderr": "stderr.txt"
+}

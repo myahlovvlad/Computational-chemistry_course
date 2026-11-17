@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "C:\Users\Miakhlov\Documents\GitHub\Computational chemistry_course\tmp\practice-audit-issue1-20261117\audit\issue-1\check.py", line 170, in <module>
+    {"environment":environment,"numerics":numerics,"notebook":notebook,"vina":vina,
+KeyError: 'snippets'

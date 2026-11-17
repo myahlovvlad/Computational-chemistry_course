@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tools\\bin\\vina_1.2.7_win.exe",
+  "target": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\tools\\bin\\vina_1.2.7_win.exe",
+  "sha256": "e0c4b2715e0c1a74f6e92d0f3be0328ac97542eafbc111e6b1efad897a73cce5",
+  "version_command": [
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tools\\bin\\vina_1.2.7_win.exe",
+    "--version"
+  ],
+  "version_stdout": "AutoDock Vina v1.2.7\n",
+  "origin": "Previously downloaded official v1.2.7 binary, explicitly hashed external dependency"
+}

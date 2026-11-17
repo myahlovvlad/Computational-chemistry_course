@@ -1,0 +1,2 @@
+converged SCF energy = -1.15207279515909
+True -1.152072795159092

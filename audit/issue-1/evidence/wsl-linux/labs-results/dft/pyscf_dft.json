@@ -1,0 +1,14 @@
+{
+  "pyscf": "2.15.1",
+  "geometry_A": "H 0 0 0; H 0 0 0.74",
+  "basis": "sto-3g",
+  "charge": 0,
+  "spin_Nalpha_minus_Nbeta": 0,
+  "functional": "PBE",
+  "grid_level": 4,
+  "RHF_energy_hartree": -1.1167593073964255,
+  "DFT_energy_hartree": -1.1520727955617502,
+  "HF_converged": true,
+  "DFT_converged": true,
+  "scope": "single points, no optimization, frequencies or thermochemical corrections"
+}

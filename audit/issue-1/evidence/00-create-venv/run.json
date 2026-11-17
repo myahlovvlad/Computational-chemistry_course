@@ -1,0 +1,25 @@
+{
+  "id": "00-create-venv",
+  "argv": [
+    "C:\\Users\\Miakhlov\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "-m",
+    "venv",
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit"
+  ],
+  "command_windows": "C:\\Users\\Miakhlov\\AppData\\Local\\Programs\\Python\\Python312\\python.exe -m venv \"C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\"",
+  "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117",
+  "started_utc": "2026-11-17T08:53:50.029482+00:00",
+  "duration_seconds": 7.122866600053385,
+  "exit_code": 0,
+  "status": "PASS",
+  "reason": "",
+  "environment": {
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONPATH": "unset",
+    "python": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe",
+    "stage_versions": "../core-environment/stdout.txt or ../labs-environment/stdout.txt"
+  },
+  "inputs": [],
+  "stdout": "stdout.txt",
+  "stderr": "stderr.txt"
+}

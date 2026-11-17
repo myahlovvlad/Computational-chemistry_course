@@ -1,0 +1,13 @@
+﻿id,raw_smiles,parent_smiles,policy,MolWt,MolLogP,TPSA,HBD,HBA,ro5_violations,alerts,status,reason
+M01,CCO,CCO,teaching-parent-v1;neutralize;tautomer=False,46.069,-0.0014000000000000123,20.23,1,1,0,[],eligible,No listed alert; activity remains unknown
+M02,OCC,CCO,teaching-parent-v1;neutralize;tautomer=False,46.069,-0.0014000000000000123,20.23,1,1,0,[],eligible,No listed alert; activity remains unknown
+M03,CC(=O)[O-].[Na+],CC(=O)O,teaching-parent-v1;neutralize;tautomer=False,60.05200000000001,0.09089999999999993,37.3,1,1,0,[],eligible,No listed alert; activity remains unknown
+M04,CC(=O)O,CC(=O)O,teaching-parent-v1;neutralize;tautomer=False,60.05200000000001,0.09089999999999993,37.3,1,1,0,[],eligible,No listed alert; activity remains unknown
+M05,Clc1ccccc1,Clc1ccccc1,teaching-parent-v1;neutralize;tautomer=False,112.55899999999997,2.34,0.0,0,0,0,[],eligible,No listed alert; activity remains unknown
+M06,Oc1ccccc1O,Oc1ccccc1O,teaching-parent-v1;neutralize;tautomer=False,110.11199999999998,1.0977999999999999,40.46,2,2,0,['catechol_A(92)'],review,PAINS:catechol_A(92)
+M07,c1ccccc1,c1ccccc1,teaching-parent-v1;neutralize;tautomer=False,78.11399999999999,1.6866,0.0,0,0,0,[],eligible,No listed alert; activity remains unknown
+M08,not_a_smiles,,,,,,,,,,invalid,Invalid SMILES
+M09,,,,,,,,,,,invalid,SMILES must be a nonempty string
+M10,C[C@H](O)C(=O)O,C[C@H](O)C(=O)O,teaching-parent-v1;neutralize;tautomer=False,90.07799999999999,-0.5482,57.53,2,2,0,[],eligible,No listed alert; activity remains unknown
+M11,C[C@@H](O)C(=O)O,C[C@@H](O)C(=O)O,teaching-parent-v1;neutralize;tautomer=False,90.07799999999999,-0.5482,57.53,2,2,0,[],eligible,No listed alert; activity remains unknown
+M12,CCCC,CCCC,teaching-parent-v1;neutralize;tautomer=False,58.123999999999995,1.8064,0.0,0,0,0,[],eligible,No listed alert; activity remains unknown

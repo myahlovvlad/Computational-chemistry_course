@@ -1,0 +1,666 @@
+[
+  {
+    "path": ".gitattributes",
+    "sha256": "96c66540f59f66e87f3473336a4f45144aef226421b4c3b265a1c0d163f61907"
+  },
+  {
+    "path": ".github/workflows/course-checks.yml",
+    "sha256": "7f9b3fb18348e9e0767104fc9c13da75a59d03a726bd4dd22c718633a5fec466"
+  },
+  {
+    "path": ".gitignore",
+    "sha256": "e81e35a899b0b6dcba83d197be315e5be679ee7c1cb9a9b43f1817102de7b037"
+  },
+  {
+    "path": "Couse organistaions.md",
+    "sha256": "dd325e12e2c978c7eb0ae9f58ae649f77105d533afd5e2917a29d1b7cc22647a"
+  },
+  {
+    "path": "INSTRUCTIONS.md",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "Labs/README.md",
+    "sha256": "b3039acb7ca0bad34e87ee9d850075bf7b479f19435588952f5ea2be576e3571"
+  },
+  {
+    "path": "Labs/app.py",
+    "sha256": "a67e617a1ba2be4c756974906d97d9744583d931ed24ff2a178367d5380feb15"
+  },
+  {
+    "path": "Labs/benchmarks/REPORT.md",
+    "sha256": "f95cf42f243357627e0f0f2140a5d85aa32ac0548ae58c187ea060bdca894f6e"
+  },
+  {
+    "path": "Labs/benchmarks/execution.json",
+    "sha256": "e0979e7b016f343418485a4ebbea637e80768378e36c9b9a144281fa85f1be25"
+  },
+  {
+    "path": "Labs/chemistry.py",
+    "sha256": "0aeb6e642ffe9a9197258c881c5f1d21db3572231b68de311e00271f90a4bd56"
+  },
+  {
+    "path": "Labs/datasets/DEEP_CHEM_LICENSE.txt",
+    "sha256": "e93ec2f869cea11536743939feb7943e195096ea363e16298620d4622046631f"
+  },
+  {
+    "path": "Labs/datasets/README.md",
+    "sha256": "b8e74bc92689d6fc4688147e118c9db14d6d78cbf3363b1bce9ba142901964dd"
+  },
+  {
+    "path": "Labs/datasets/activities.csv",
+    "sha256": "ecaaf3d2abf7eb4876acb5b0bc925198e2f862c31e4425cf1fc4f513ab7ea832"
+  },
+  {
+    "path": "Labs/datasets/docking/1iep_ligand.pdbqt",
+    "sha256": "15fb35648d8c18c70317842f3a0631b73a19429c710a037ab07310084d579bb8"
+  },
+  {
+    "path": "Labs/datasets/docking/1iep_ligand.sdf",
+    "sha256": "051b8742c32adc05c07fb486a4e7c9327f84e131cee33ac4e6a568d07553eb38"
+  },
+  {
+    "path": "Labs/datasets/docking/1iep_ligand_vina_out.pdbqt",
+    "sha256": "4137e1960b3491f17a24579d991f32a2c0cb254af1f58d7278f77579fc27d93f"
+  },
+  {
+    "path": "Labs/datasets/docking/1iep_receptor.box.txt",
+    "sha256": "3dff08200b5b9c2ca0932c832c9dffc5823b39caec6c92f76be5f7c5ea49d8de"
+  },
+  {
+    "path": "Labs/datasets/docking/1iep_receptor.pdbqt",
+    "sha256": "f13cf3b36f61d87c3b58983e0b8ecf1c3456a685eb86dfe9ccfb139c7bdc2586"
+  },
+  {
+    "path": "Labs/datasets/docking/UPSTREAM_LICENSE.txt",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  {
+    "path": "Labs/datasets/docking/provenance.json",
+    "sha256": "297afb200c060307e94cfb42bc9a1d46b0e0f34a189361b2692d36def14c7c61"
+  },
+  {
+    "path": "Labs/datasets/esol.csv",
+    "sha256": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189"
+  },
+  {
+    "path": "Labs/datasets/factorial.csv",
+    "sha256": "01208a741de90faaaa2a33381f1854539e3d9e97f6679e6169cc8a2ac7ab8a41"
+  },
+  {
+    "path": "Labs/datasets/manifest.json",
+    "sha256": "680fd50d4216ab27590261a53239c5bc54767911a6b2e00c2bc14206d6c2c89a"
+  },
+  {
+    "path": "Labs/datasets/molecules.csv",
+    "sha256": "f1904ebd8af5789d383f9593365bf5443abf7aa60106db0ecfb50d4fff628465"
+  },
+  {
+    "path": "Labs/datasets/routes.csv",
+    "sha256": "c3ddf027fcb04b233b0d2c12e7cdc2059028e31982e2a9981acf04644d58244d"
+  },
+  {
+    "path": "Labs/docking.py",
+    "sha256": "41d1c3b3ea1491d62abfc5c3b27a777686f7bf19bb0298b69dd9dcf31d9f88a8"
+  },
+  {
+    "path": "Labs/environment-lock.txt",
+    "sha256": "538a7ad2ea98dbd1d23b8fc01e48f7395f5204fb1901ecb55f28c05b820fd1ca"
+  },
+  {
+    "path": "Labs/extensions/README.md",
+    "sha256": "4b89d81cca62030917cd4e68388a5cb564932e36d6de944051957c935f573152"
+  },
+  {
+    "path": "Labs/extensions/dft_pyscf.ipynb",
+    "sha256": "0737454a8b93ea81f3402827e45c533fa32dd4304607db9cd5f7a7c02ae5ebac"
+  },
+  {
+    "path": "Labs/guides/lab01.md",
+    "sha256": "b5d56f785c48053867f50670f71b9ec4abeef064be7a639342c67cc0093c6b5d"
+  },
+  {
+    "path": "Labs/guides/lab02.md",
+    "sha256": "af2ba33408356f63329850fd2b69f3b74bb167dae2b518965b211310fb18463b"
+  },
+  {
+    "path": "Labs/guides/lab03.md",
+    "sha256": "d9b4a6c6c075b02ba853847af2f270e1ad9daa6c65ea15ba0f0c4b61f0f46875"
+  },
+  {
+    "path": "Labs/guides/lab04.md",
+    "sha256": "f3f15e4d221a712e588a5dfc14417ff99b34c665dc101e5ce6c368781ff748fa"
+  },
+  {
+    "path": "Labs/guides/lab05.md",
+    "sha256": "0fd9ec5a35a22c3babe6336748886067ccaca3dce3614a330db098d8e267936a"
+  },
+  {
+    "path": "Labs/guides/lab06.md",
+    "sha256": "98e2665f03c2cf96f30fe8f30345c3cc6ee8f1bda6aebe62256e196b3edc6edb"
+  },
+  {
+    "path": "Labs/guides/lab07.md",
+    "sha256": "3d7ad01f4df37c8be3fe81ff27c80c2f254e4235a83f62b3d6a213f2438e1d6d"
+  },
+  {
+    "path": "Labs/guides/lab08.md",
+    "sha256": "39da934bcec763001707c71d4e9526e5dea837d43f6b957b7fa1d09b36e48689"
+  },
+  {
+    "path": "Labs/guides/lab09.md",
+    "sha256": "04bbe081916c7a5ddbe4064208546f29f992897bc5c9adf57ceaa252d03d150b"
+  },
+  {
+    "path": "Labs/guides/lab10.md",
+    "sha256": "06405567a94865aa609ba9b117cfbc347a4913c1d74f18bc21ce011e0c85bc11"
+  },
+  {
+    "path": "Labs/guides/lab11.md",
+    "sha256": "cc9745c3fad288fdc4ed6a809496dfccca66593c4df103d1e90db89270ff0e9e"
+  },
+  {
+    "path": "Labs/guides/lab12.md",
+    "sha256": "d1e46da470a23110443f94294faf5c7777ecc291e7e77ec100bc24935260d9a1"
+  },
+  {
+    "path": "Labs/guides/lab13.md",
+    "sha256": "9287740ff18f5d64ddd46dd5aa2c05b6f743ee5900921708a77a67edc7cc4a86"
+  },
+  {
+    "path": "Labs/guides/lab14.md",
+    "sha256": "87ab6bbb020c7cd19df644e35e54dc41ecb838f04fabd2a84d97b16a30954a48"
+  },
+  {
+    "path": "Labs/h2_scf.py",
+    "sha256": "2d5cfa788ae3d33b514bd5470a78ef1eb9dc929a552fc08483ede097e7f7289c"
+  },
+  {
+    "path": "Labs/metrics.py",
+    "sha256": "4b88ba52348b806026d67f5c5f5195e6d478d36b58e358ade8921f9424e388c9"
+  },
+  {
+    "path": "Labs/notebooks/lab01.ipynb",
+    "sha256": "460d739e3c06f87b041d3f1ca8c1333a34c9a13bf5d9541ab1be4bf272f96dcd"
+  },
+  {
+    "path": "Labs/notebooks/lab02.ipynb",
+    "sha256": "f7a394bed48f88cb14ebbc35825e7268d73a98b22917626a9b83081249d12691"
+  },
+  {
+    "path": "Labs/notebooks/lab03.ipynb",
+    "sha256": "6e82db2e0356938da1c3fcbc5ac3c5eef66f45d59011d6f85ca9f21efe3d3447"
+  },
+  {
+    "path": "Labs/notebooks/lab04.ipynb",
+    "sha256": "772637e2c43efdcf508d58b896cd617f9e73d34a5d54bfb3d76e54597a5b46af"
+  },
+  {
+    "path": "Labs/notebooks/lab05.ipynb",
+    "sha256": "f33fbeb679a96cd911ec83a18474db046c99b39c62b7a3eba0b3abfcae59377f"
+  },
+  {
+    "path": "Labs/notebooks/lab06.ipynb",
+    "sha256": "ab2677ffed66829ce1a8f4b8d6178952708eccb19ef3446d2e3a75cd9e264ea3"
+  },
+  {
+    "path": "Labs/notebooks/lab07.ipynb",
+    "sha256": "dbd9103b9165487229d34d836e7c33d4a362d3c267548fc896ea5d51ebde8498"
+  },
+  {
+    "path": "Labs/notebooks/lab08.ipynb",
+    "sha256": "d7c15db7899ce3ab9abafcc945c306bd02f454a5b5b133eef9ea4678ea2bcf19"
+  },
+  {
+    "path": "Labs/notebooks/lab09.ipynb",
+    "sha256": "c56c5a956e64188391bb5fd96149e166d779223a110015e9d4904b99f627479e"
+  },
+  {
+    "path": "Labs/notebooks/lab10.ipynb",
+    "sha256": "709093445748caa3bbef81df8b9a2ca35c5a310f18b2e026f896298b87d2ee3e"
+  },
+  {
+    "path": "Labs/notebooks/lab11.ipynb",
+    "sha256": "9ed39c5cd9323f483c79af559def251a0075a8239b354ebaf999c8ab6d34da26"
+  },
+  {
+    "path": "Labs/notebooks/lab12.ipynb",
+    "sha256": "4cae2b297391312d51ff23f4630f18e5392a3b60d5ff3265847d3e86da6a5212"
+  },
+  {
+    "path": "Labs/notebooks/lab13.ipynb",
+    "sha256": "83440b620dcef7ff31025d26296698283c09bf7f6c58a32e181579c4bd04eb49"
+  },
+  {
+    "path": "Labs/notebooks/lab14.ipynb",
+    "sha256": "eed1d41de83ddaf0ccba9fba38d95c02cbf016571cae91ca420a32284e3a9cd1"
+  },
+  {
+    "path": "Labs/pipeline.py",
+    "sha256": "2d2de821179734e7e539c14fc72e5d9e5ce52ff695af0b27cf203415846003a4"
+  },
+  {
+    "path": "Labs/pyscf_dft.py",
+    "sha256": "a6dea989b38fa51bf68e2372bcdf6fb04c571d658bcf28955fd2445f18df52d1"
+  },
+  {
+    "path": "Labs/requirements.txt",
+    "sha256": "6212e57eba33d813842831b13b9754327c94417094830a3553f8024754f00205"
+  },
+  {
+    "path": "Labs/results/.gitkeep",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "Labs/solutions/lab01.md",
+    "sha256": "8eb2ca48e9b60233578c04654f77c706283fa9415229397c9c03d60d3d8129a5"
+  },
+  {
+    "path": "Labs/solutions/lab02.md",
+    "sha256": "4d669569b9d87d6e9106cac9de6c2d995d5af36250edccd041898b46469fdd21"
+  },
+  {
+    "path": "Labs/solutions/lab03.md",
+    "sha256": "9d44c03ce3ba883423d60dd24acc4bebda7edddfa90e753b05293dd60ace7c5a"
+  },
+  {
+    "path": "Labs/solutions/lab04.md",
+    "sha256": "a4c95c6d698c4eb2b08598deea2419b17f7836d7337b79e101e4721e8587830d"
+  },
+  {
+    "path": "Labs/solutions/lab05.md",
+    "sha256": "4c29a34ef15cc2beb1c5c8dc7276dc49cb6ae2b3d1b9c3bf18ec6b97bbc65824"
+  },
+  {
+    "path": "Labs/solutions/lab06.md",
+    "sha256": "48ae72642c43c2288d91a5af7ab7292c33ba5019aad1acb242b3bcc856c832b6"
+  },
+  {
+    "path": "Labs/solutions/lab07.md",
+    "sha256": "17a14eeab0deb4ec309653d61d774b53e34b0282364410d0cb9a324e6ca08886"
+  },
+  {
+    "path": "Labs/solutions/lab08.md",
+    "sha256": "9bb96a9286ed7593730292f7684313d1929f0e71bde325d458ed8c5c860ee43e"
+  },
+  {
+    "path": "Labs/solutions/lab09.md",
+    "sha256": "25e103666353b8f2f2aa3808bf3b475ef04d54d2ea0b556940dfc18f59f064ab"
+  },
+  {
+    "path": "Labs/solutions/lab10.md",
+    "sha256": "ea16c646cece7f9479d8c5148fd744e09879e2afe955f5b4a162ad107463835d"
+  },
+  {
+    "path": "Labs/solutions/lab11.md",
+    "sha256": "88ecbd9a0b632f200c925648163cc175c6cdff10285bbfbb84361145c74d9260"
+  },
+  {
+    "path": "Labs/solutions/lab12.md",
+    "sha256": "3f274fc14e4ac076c3b22cb3758060262b2425491e5928e5cf261c4af996a41e"
+  },
+  {
+    "path": "Labs/solutions/lab13.md",
+    "sha256": "35c491c3ccb946297ffbe8c01c69421eb118f3661cb8e79cdb31482b87d71e0f"
+  },
+  {
+    "path": "Labs/solutions/lab14.md",
+    "sha256": "86f804c19a297251edf6a5c19b7b9627018e7d1d207922af9d4e8c27d57c80ab"
+  },
+  {
+    "path": "Labs/test_labs.py",
+    "sha256": "c91d9e18f97764c7682d1503de2b5e98f768d8093305129ca20e9bfd1c9fe135"
+  },
+  {
+    "path": "Labs/train_esol.py",
+    "sha256": "00970bd9ddf55e4b1f781d023a859a1b091dd3e6d883f2334ca92336b0944d56"
+  },
+  {
+    "path": "Literature/READING_MAP.md",
+    "sha256": "a109dd36d18f7b4881be4482237cc3317404d52482a859d38d06f0279ceb3c6d"
+  },
+  {
+    "path": "Literature/README.md",
+    "sha256": "fc82e22089301f4804931c01085f443b8ddf79487e03433c326cbd68e76e6f4b"
+  },
+  {
+    "path": "Literature/conversion-summary.json",
+    "sha256": "a87dce3c9c1b189329afe2b43f00063addd06f4f54525167744c351c36b43bbe"
+  },
+  {
+    "path": "Literature/pdf-inventory.json",
+    "sha256": "762ad46d92487175d17f9525fc3085c94a1d6dba48e0a2b0a2e11fa322cbddc1"
+  },
+  {
+    "path": "Module_theory/Module 10_docking.md",
+    "sha256": "52cc26b054d88dde0d47d75614628eff334d2be2d592df04a3836c575c98bb8f"
+  },
+  {
+    "path": "Module_theory/Module 11_QSAR.md",
+    "sha256": "bd62c95579d104b0bfb87b2ac3533bce017229b3215432654e958fd13b7a82e8"
+  },
+  {
+    "path": "Module_theory/Module 12_quatium chemistry.md",
+    "sha256": "0b72d6ae21babefec2b3497dec4aa3ac700ad54165ca5ada387e6332c807596e"
+  },
+  {
+    "path": "Module_theory/Module 13_retrosynthesis.md",
+    "sha256": "25818a29afd68ac70093e53719d1f469ee2114dbe9db21de46d01c7468ce59b6"
+  },
+  {
+    "path": "Module_theory/Module 14_SDLS-workflow development_web app.md",
+    "sha256": "a2a27146b5291dfa46f64cafe9ba10088cc76d2904246072d73ee8ca095c1e17"
+  },
+  {
+    "path": "Module_theory/Module 1_SDLC.md",
+    "sha256": "4ce50c0c9117b97714118730f7348b487cb3710bec6e53cad0d7e9b5bea27423"
+  },
+  {
+    "path": "Module_theory/Module 2_Setup Workharness.md",
+    "sha256": "3eb89b235977e8a56b2eaa2ebd367bc6e5be0def9c6b0d31ee767bdad5515d9b"
+  },
+  {
+    "path": "Module_theory/Module 3_compound and reaction-representation.md",
+    "sha256": "a3cac160902fd97f56b5f696a7a4d36bd3a794e1b30b8401e78020889ad882cf"
+  },
+  {
+    "path": "Module_theory/Module 4_Descriptor.md",
+    "sha256": "8b744561f93f21c99baa2048b87f7e3688d13cf4e737703a5db01ff8eefa4ef8"
+  },
+  {
+    "path": "Module_theory/Module 5_Fingerprinter_Farmacophore.md",
+    "sha256": "532e8ca1db07d878c17ee1f146cd9973350b9d7dfa520a381404c67825f8c3ba"
+  },
+  {
+    "path": "Module_theory/Module 6_Moleculr mechanics.md",
+    "sha256": "82f12c788796ae3a34e59b841ea78331221fd4c868d53cded48a4efd1ed995ba"
+  },
+  {
+    "path": "Module_theory/Module 7_Database.md",
+    "sha256": "1eb7e842559f5f9b35ad6a8b92b8c7aa30298d155406ffdd9491cbd7603aef6f"
+  },
+  {
+    "path": "Module_theory/Module 8_Screening.md",
+    "sha256": "7f9de51d757dadcb4042755a7401e588cd7922f66a6703c0c26cc7c9f83b9e61"
+  },
+  {
+    "path": "Module_theory/Module 9_Visualization.md",
+    "sha256": "0afe361ccbeb8f93f641b76a7af24c1da5cf4379c12d5793079f7ced3a2196ba"
+  },
+  {
+    "path": "Module_theory/README.md",
+    "sha256": "4cfcdc96ce63cc241305cc1a90cf1c8f36a5746f158fdeea1dc58182135cd25e"
+  },
+  {
+    "path": "Programm/Matrix-course.md",
+    "sha256": "5254d510b02df4805142cb18496d103705cdadec6a276aa409ab8d2ee3875036"
+  },
+  {
+    "path": "README.md",
+    "sha256": "e7b76f4b348b3b829673880a53c158e6b670c3094680fea1d737ebb02b0b332a"
+  },
+  {
+    "path": "SYSTEM_PROMPT.md",
+    "sha256": "f5cb21630890328806aafac2f50ffa8b3d1400013fe2462d7097eee3f0c597ab"
+  },
+  {
+    "path": "Stepik_course/01_AUDIT.md",
+    "sha256": "f387a935a397665058f3072ed43aef8ca31a02a24ed9714324fc382097e5a2a0"
+  },
+  {
+    "path": "Stepik_course/02_PROGRAM.md",
+    "sha256": "be015f43ac2c1de0faa60adccd6f41a19d19d7ff360bd334a32852b8006d7456"
+  },
+  {
+    "path": "Stepik_course/03_STEPIK.md",
+    "sha256": "7d645f47e1d942569320284b8d157ffd3c14eeb3f9440707c452f97147429f61"
+  },
+  {
+    "path": "Stepik_course/04_CASES.md",
+    "sha256": "ec38def6af18345de9d43c68c4c58b0d97e796103e5bd060d8f835af01530a0d"
+  },
+  {
+    "path": "Stepik_course/05_MEDIA.md",
+    "sha256": "ca8646b261e2890f8581b7c801655b6737ac76b402949a99db9b31960aaabf80"
+  },
+  {
+    "path": "Stepik_course/06_SOURCES.md",
+    "sha256": "7961a9c324d23d2c80ff97367d3b37bc71d9bdc5f13f6a40918652589f8db4ea"
+  },
+  {
+    "path": "Stepik_course/07_VALIDATION.md",
+    "sha256": "c9b97afa32b59b6b57eb5d1a694094ed963ba682719fe965fa2f15cc0e110c30"
+  },
+  {
+    "path": "Stepik_course/08_FINALIZATION_GRILL.md",
+    "sha256": "c34eca21228c9adc6462defcbc7d2b97fb8cf1c1774609073fffbda7b7193056"
+  },
+  {
+    "path": "Stepik_course/09_EVOLVING_CONCEPT_MAP.md",
+    "sha256": "515755d52f40cc62854e1625f8ccfb9558db60200a7aec7cf316c37b179ee70c"
+  },
+  {
+    "path": "Stepik_course/10_LESSON_PRODUCTION_STANDARD.md",
+    "sha256": "d048f3cbc4f68492b1034fb3d41927de52158659ea8e3e138ab87b2f08e9ec67"
+  },
+  {
+    "path": "Stepik_course/11_RELEASE_VALIDATION_POLICY.md",
+    "sha256": "3b4264960ba144b3767fedf9cee4ce36d080bbc6b494d0b63b056f7ee749838b"
+  },
+  {
+    "path": "Stepik_course/12_PRACTICE_FIRST_GATE.md",
+    "sha256": "3d6f922c809c49457f2f80e7e4bf17e38d9b50b0b5042abac71a0a7488c5ae13"
+  },
+  {
+    "path": "Stepik_course/README.md",
+    "sha256": "d9ba00be4e070008bc1f2ac8b68b091e98d694120cc67ec387d031fe2b3ec6ff"
+  },
+  {
+    "path": "Stepik_course/media/interactive.html",
+    "sha256": "39e5db3b114460d4b3a46ae44d180d261d713486c3911a8089ffa9e0c949de90"
+  },
+  {
+    "path": "Stepik_course/modules/01_design.md",
+    "sha256": "2e8577bd88c17c3d9a8233f552b544571fb7e58c4014c454c7dd7a11a5af6cb6"
+  },
+  {
+    "path": "Stepik_course/modules/02_environment.md",
+    "sha256": "679d59854fd0d4bb47988a5353cf50938fff2be3bf7b32f9e2a754a370d4084d"
+  },
+  {
+    "path": "Stepik_course/modules/03_representations.md",
+    "sha256": "529c001ecff36c04335437d58f018cf8286f32d22ec253354c84b8402134322d"
+  },
+  {
+    "path": "Stepik_course/modules/04_descriptors.md",
+    "sha256": "a94864fe2ca5ee52429d39425094e9b97adbd162e20c887d3367896ba9a12e72"
+  },
+  {
+    "path": "Stepik_course/modules/05_similarity.md",
+    "sha256": "e887e04411b195cf8785718e644e8f0af323116134457ee8d392af94b32d994b"
+  },
+  {
+    "path": "Stepik_course/modules/06_mechanics.md",
+    "sha256": "d1ca554aa455888a9c5d6c9e6c2957114bd2abc6a980427958b3fc68f7ec7fd4"
+  },
+  {
+    "path": "Stepik_course/modules/07_databases.md",
+    "sha256": "21bc4c20c9ca8092df77d1450ac24c5f3c3e9765f72bd8773e5cbf95fa34394c"
+  },
+  {
+    "path": "Stepik_course/modules/08_screening.md",
+    "sha256": "06c683ed0c543686929d8556b3d7c98533e0970f6631c34b2987239c6f0af659"
+  },
+  {
+    "path": "Stepik_course/modules/09_visualization.md",
+    "sha256": "91e1a279b2e15481f7a6b9d485a5672b772a091e5b0b0937180fb2ce0f6cc599"
+  },
+  {
+    "path": "Stepik_course/modules/10_docking.md",
+    "sha256": "c181b49333ccc44d9f639f441fc0186c8bd33d6c0a8cba59230b360da957ee0b"
+  },
+  {
+    "path": "Stepik_course/modules/11_qsar.md",
+    "sha256": "8eccd1ca90cbe88885cb8b95abcb21ba3336d56451a932d46e7174b5d35cf1ae"
+  },
+  {
+    "path": "Stepik_course/modules/12_quantum.md",
+    "sha256": "72218bfabe80b0456b08e7cf7c0e3465468aeba86c68fa8a5aae0bb9d8bdef1c"
+  },
+  {
+    "path": "Stepik_course/modules/13_retrosynthesis.md",
+    "sha256": "7e7e9982b3bf4e913ee168ad4dd4fd13df002514d8ba5e73f4a78fd64d134df4"
+  },
+  {
+    "path": "Stepik_course/modules/14_delivery.md",
+    "sha256": "89dde7785c026bf88b29db5e22bd12f4dd9b73f1d93925e2e0f6aa4d45f2edcf"
+  },
+  {
+    "path": "Stepik_course/practice/DATA.md",
+    "sha256": "fbf42e8d070e94216180eeeaf17af8ee5ba61f4ec14d4790bfc9a6613ceafaa6"
+  },
+  {
+    "path": "Stepik_course/practice/activities.csv",
+    "sha256": "ecaaf3d2abf7eb4876acb5b0bc925198e2f862c31e4425cf1fc4f513ab7ea832"
+  },
+  {
+    "path": "Stepik_course/practice/chemistry.py",
+    "sha256": "0aeb6e642ffe9a9197258c881c5f1d21db3572231b68de311e00271f90a4bd56"
+  },
+  {
+    "path": "Stepik_course/practice/esol_results/identity_predictions.csv",
+    "sha256": "d6b957d9edf5052272f99d2b8ca6296a8b647a17dcf19ce790f2dc4a88f79a6e"
+  },
+  {
+    "path": "Stepik_course/practice/esol_results/identity_split.json",
+    "sha256": "dd95ff91042aed3386fbf6beb5669e248c4b5bf0df66a23d9ed783e2066d3569"
+  },
+  {
+    "path": "Stepik_course/practice/esol_results/report.json",
+    "sha256": "c007eefc1168ba4cd7ca7dd84394b9fead730a1cae971da4379ccfdb1ff53450"
+  },
+  {
+    "path": "Stepik_course/practice/esol_results/scaffold_predictions.csv",
+    "sha256": "c300f419417d493f097a26e846f1c82e70288afda659975036191f7cdf480f77"
+  },
+  {
+    "path": "Stepik_course/practice/esol_results/scaffold_split.json",
+    "sha256": "39ec6269f6b85e119570cbcae20d0bab80e70deb282c5becf020b6b0ad9d9241"
+  },
+  {
+    "path": "Stepik_course/practice/example_report.json",
+    "sha256": "6285794cbb6c664ea0b033c47d581e13677f15f9a28fd2bd3b81a2ee17433e96"
+  },
+  {
+    "path": "Stepik_course/practice/molecules.csv",
+    "sha256": "f1904ebd8af5789d383f9593365bf5443abf7aa60106db0ecfb50d4fff628465"
+  },
+  {
+    "path": "Stepik_course/practice/quickstart.ipynb",
+    "sha256": "febc2105d1c4e0e6f3fd57732ac079f53f40e42df24e11a2ea402bc35b1f9a75"
+  },
+  {
+    "path": "Stepik_course/practice/requirements-ml.txt",
+    "sha256": "8e221f9b402b458b5a88e591808ac1433f6c10ead9df3433c09791adc9711547"
+  },
+  {
+    "path": "Stepik_course/practice/requirements.txt",
+    "sha256": "7d1df1e1a3b101823174ee38f863a61e3e5c6165928f24c026fa4e3c84a6873b"
+  },
+  {
+    "path": "Stepik_course/practice/stepik_tasks.py",
+    "sha256": "4b88ba52348b806026d67f5c5f5195e6d478d36b58e358ade8921f9424e388c9"
+  },
+  {
+    "path": "Stepik_course/practice/test_practice.py",
+    "sha256": "be7db9ea3efee79ca3f50b400aa8f7ea1f37dd685185823b3b12171238890d86"
+  },
+  {
+    "path": "Stepik_course/practice/train_esol.py",
+    "sha256": "00970bd9ddf55e4b1f781d023a859a1b091dd3e6d883f2334ca92336b0944d56"
+  },
+  {
+    "path": "THIRD_PARTY_NOTICES.md",
+    "sha256": "da8848a5efec5e696b1f5dda21ea9cdd5694142150198e4a55552783756c7112"
+  },
+  {
+    "path": "archive/source-drafts/README.md",
+    "sha256": "81b29bfc877679fbb6f47b44eafa6b840f07adc6336a5c8f5472606b2cfcecab"
+  },
+  {
+    "path": "archive/source-drafts/module02-original.md",
+    "sha256": "d64c722d714e9c8bc4274a33d19d1c37e432df292085c37c93eafa68a920ec83"
+  },
+  {
+    "path": "archive/source-drafts/module08-original.md",
+    "sha256": "53b17ee157c3f18304d68ebcffebcfa672352e8b81fea6d1d07225f1745b2ba7"
+  },
+  {
+    "path": "brainstorm.md",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "course-manifest.json",
+    "sha256": "5d311adba823a7817c1374a33195f2df75f4c71ce375bcbc96e489d406827942"
+  },
+  {
+    "path": "course_source/README.md",
+    "sha256": "b575654021cad0711653cc78a09d16e023a37d91f0349c87d13857dd25e45171"
+  },
+  {
+    "path": "skills/storytelling.md",
+    "sha256": "008730c60935ea06aaa766b43e85fcc49242ce11c49eaf8f87969a24baa41473"
+  },
+  {
+    "path": "text.md",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "tools/build_course.py",
+    "sha256": "f728536d15ee1db21607ef17eabf8198f3ab672383f02bf79de1b57e8f06db59"
+  },
+  {
+    "path": "tools/build_index.py",
+    "sha256": "fc3652ebe6741f7772522f9bff6a789a349dc497b4bb150d790232988d233420"
+  },
+  {
+    "path": "tools/build_optional.py",
+    "sha256": "0b67b374b90a5911ce185db55798315741670d9f6b5bf96935d8bb6d9355aa6d"
+  },
+  {
+    "path": "tools/convert_books.py",
+    "sha256": "353241dc00e9cc11ccaf1d8c3c2eef23d30d3a80289271962e9941de079304f7"
+  },
+  {
+    "path": "tools/fetch_docking_data.py",
+    "sha256": "0bbe5fe5e768ddda876c32c3548a28c774c4c885f5946f8ce506a05f11883a48"
+  },
+  {
+    "path": "tools/lab_materials.py",
+    "sha256": "a9b9540abb922d3391f5b78bf823e61ca69afe7e8209e898941411f88629572c"
+  },
+  {
+    "path": "tools/report_benchmarks.py",
+    "sha256": "5be62d88d4b6efac85ed75e235419fd65a90744a8e8474d3b85f0ce39c302378"
+  },
+  {
+    "path": "tools/requirements-pdf.txt",
+    "sha256": "636f7f86df54422f6210119f8bebcb6e52cf863c4572f5b533950549cadd41ec"
+  },
+  {
+    "path": "tools/run_labs.py",
+    "sha256": "d932c4c8099a335f6ef7ab58455ee5cca9685ba758155ebc45c4e590280ea081"
+  },
+  {
+    "path": "tools/run_pdf_skill.py",
+    "sha256": "1fd7bb90c9ff2c3e168b3fee2635691b431ba7bd4b2ffdf72fc30bf65d74e699"
+  },
+  {
+    "path": "tools/theory_notes.py",
+    "sha256": "c46160d2bc7af136ec495d3c8b3c719c10c48c5b053005a38844bfed3481c089"
+  },
+  {
+    "path": "tools/validate_course.py",
+    "sha256": "af18b3186fcd975f7c4180ca2cf93e6a69dfc6e64821c80c095ca2acd4a39091"
+  }
+]

@@ -1,0 +1,29 @@
+installing to /home/miakhlov/.local/bin
+  uv
+  uvx
+everything's installed!
+
+To add $HOME/.local/bin to your PATH, either restart your shell or run:
+
+    source $HOME/.local/bin/env (sh, bash, zsh)
+    source $HOME/.local/bin/env.fish (fish)
+uv 0.13.8 (x86_64-unknown-linux-gnu)
+{
+  "kernel": "chemistry-course-uv",
+  "path": "/home/miakhlov/.local/share/jupyter/kernels/chemistry-course-uv",
+  "project": "/home/miakhlov/Computational-chemistry_course",
+  "argv": [
+    "/home/miakhlov/.local/bin/uv",
+    "run",
+    "--frozen",
+    "--project",
+    "/home/miakhlov/Computational-chemistry_course",
+    "python",
+    "-m",
+    "ipykernel_launcher",
+    "-f",
+    "{connection_file}"
+  ]
+}
+AutoDock Vina v1.2.7
+f31f774f723bba7bbe6e9d1c47577020eea9a8da16424284c043d22593570644  /home/miakhlov/.local/bin/vina

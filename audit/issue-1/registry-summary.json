@@ -1,0 +1,84 @@
+{
+  "rows": 513,
+  "statuses": {
+    "NOT_RUN": 339,
+    "BLOCKED": 17,
+    "PASS": 156,
+    "FAIL": 1
+  },
+  "types": {
+    "conceptual": 123,
+    "programming": 204,
+    "research": 150,
+    "calculation": 36
+  },
+  "modules": {
+    "1": {
+      "NOT_RUN": 23,
+      "BLOCKED": 1,
+      "PASS": 8
+    },
+    "2": {
+      "NOT_RUN": 21,
+      "PASS": 9
+    },
+    "3": {
+      "NOT_RUN": 32,
+      "PASS": 19
+    },
+    "4": {
+      "NOT_RUN": 18,
+      "BLOCKED": 1,
+      "PASS": 8
+    },
+    "5": {
+      "NOT_RUN": 22,
+      "PASS": 12,
+      "BLOCKED": 1
+    },
+    "6": {
+      "NOT_RUN": 20,
+      "BLOCKED": 1,
+      "PASS": 9
+    },
+    "7": {
+      "NOT_RUN": 33,
+      "PASS": 23,
+      "BLOCKED": 2
+    },
+    "8": {
+      "NOT_RUN": 28,
+      "PASS": 19,
+      "BLOCKED": 2
+    },
+    "9": {
+      "NOT_RUN": 19,
+      "PASS": 5
+    },
+    "10": {
+      "NOT_RUN": 24,
+      "PASS": 7,
+      "BLOCKED": 1
+    },
+    "11": {
+      "NOT_RUN": 30,
+      "BLOCKED": 1,
+      "PASS": 7
+    },
+    "12": {
+      "NOT_RUN": 24,
+      "BLOCKED": 2,
+      "PASS": 10
+    },
+    "13": {
+      "NOT_RUN": 23,
+      "PASS": 10
+    },
+    "14": {
+      "NOT_RUN": 22,
+      "BLOCKED": 5,
+      "PASS": 10,
+      "FAIL": 1
+    }
+  }
+}

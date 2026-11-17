@@ -1,0 +1,375 @@
+{
+  "status": "PASS",
+  "scope": "Audit arithmetic / reference function calls only, not learner interpretation or Stepik grader",
+  "checks": [
+    {
+      "id": "P1-1",
+      "input": [
+        100,
+        "nM"
+      ],
+      "expected": 7,
+      "actual": 7.0,
+      "status": "PASS",
+      "absolute_tolerance": 1e-05
+    },
+    {
+      "id": "P1-2",
+      "input": [
+        0.1,
+        "uM"
+      ],
+      "expected": 7,
+      "actual": 7.0,
+      "status": "PASS",
+      "absolute_tolerance": 1e-05
+    },
+    {
+      "id": "P1-3",
+      "input": [
+        1,
+        "mM"
+      ],
+      "expected": 3,
+      "actual": 3.0,
+      "status": "PASS",
+      "absolute_tolerance": 1e-05
+    },
+    {
+      "id": "P1-4",
+      "input": [
+        2,
+        "M"
+      ],
+      "expected": -0.3010299956639812,
+      "actual": -0.3010299956639812,
+      "status": "PASS",
+      "absolute_tolerance": 1e-05
+    },
+    {
+      "id": "P2-1",
+      "input": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      "expected": 0.5,
+      "actual": 0.5,
+      "status": "PASS",
+      "absolute_tolerance": 1e-05
+    },
+    {
+      "id": "P2-2",
+      "input": [
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "expected": 0,
+      "actual": 0.0,
+      "status": "PASS",
+      "absolute_tolerance": 1e-05
+    },
+    {
+      "id": "P2-3",
+      "input": [
+        [],
+        []
+      ],
+      "expected": 1,
+      "actual": 1.0,
+      "status": "PASS",
+      "absolute_tolerance": 1e-05
+    },
+    {
+      "id": "P2-4",
+      "input": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "expected": 0.5,
+      "actual": 0.5,
+      "status": "PASS",
+      "absolute_tolerance": 1e-05
+    },
+    {
+      "id": "P3-1",
+      "input": [
+        1000,
+        20,
+        50,
+        5
+      ],
+      "expected": 5,
+      "actual": 5.0,
+      "status": "PASS",
+      "absolute_tolerance": 1e-05
+    },
+    {
+      "id": "P3-2",
+      "input": [
+        100,
+        10,
+        10,
+        0
+      ],
+      "expected": 0,
+      "actual": 0.0,
+      "status": "PASS",
+      "absolute_tolerance": 1e-05
+    },
+    {
+      "id": "P3-3",
+      "input": [
+        100,
+        10,
+        100,
+        10
+      ],
+      "expected": 1,
+      "actual": 1.0,
+      "status": "PASS",
+      "absolute_tolerance": 1e-05
+    },
+    {
+      "id": "P4-1",
+      "input": [
+        100,
+        10,
+        5,
+        5
+      ],
+      "expected": 0.6666666666666666,
+      "actual": 0.6666666666666667,
+      "status": "PASS",
+      "absolute_tolerance": 1e-05
+    },
+    {
+      "id": "P4-2",
+      "input": [
+        10,
+        100,
+        5,
+        5
+      ],
+      "expected": 0.6666666666666666,
+      "actual": 0.6666666666666667,
+      "status": "PASS",
+      "absolute_tolerance": 1e-05
+    },
+    {
+      "id": "P4-3",
+      "input": [
+        100,
+        10,
+        20,
+        20
+      ],
+      "expected": -0.3333333333333333,
+      "actual": -0.33333333333333326,
+      "status": "PASS",
+      "absolute_tolerance": 1e-05
+    },
+    {
+      "id": "F-energy",
+      "input": [
+        -100.0,
+        -100.01,
+        2625.5
+      ],
+      "expected": -26.255,
+      "actual": -26.255000000013432,
+      "status": "PASS",
+      "absolute_tolerance": 1e-05
+    },
+    {
+      "id": "G-yield-A",
+      "input": [
+        0.8,
+        0.7
+      ],
+      "expected": 0.56,
+      "actual": 0.5599999999999999,
+      "status": "PASS",
+      "absolute_tolerance": 1e-05
+    },
+    {
+      "id": "G-yield-B",
+      "input": [
+        0.95,
+        0.9
+      ],
+      "expected": 0.855,
+      "actual": 0.855,
+      "status": "PASS",
+      "absolute_tolerance": 1e-05
+    },
+    {
+      "id": "G-cost-A",
+      "input": [
+        600,
+        0.8,
+        0.7
+      ],
+      "expected": 1071.4285714285713,
+      "actual": 1071.4285714285716,
+      "status": "PASS",
+      "absolute_tolerance": 1e-05
+    },
+    {
+      "id": "G-cost-B",
+      "input": [
+        750,
+        0.95,
+        0.9
+      ],
+      "expected": 877.1929824561404,
+      "actual": 877.1929824561404,
+      "status": "PASS",
+      "absolute_tolerance": 1e-05
+    },
+    {
+      "id": "E-MAE-A",
+      "input": [
+        [
+          -3,
+          -2,
+          -1
+        ],
+        [
+          -2.5,
+          -2.5,
+          -1
+        ]
+      ],
+      "expected": 0.3333333333333333,
+      "actual": 0.3333333333333333,
+      "status": "PASS",
+      "absolute_tolerance": 1e-05
+    },
+    {
+      "id": "E-MAE-B",
+      "input": [
+        [
+          -3,
+          -2,
+          -1
+        ],
+        [
+          -2,
+          -2,
+          -2
+        ]
+      ],
+      "expected": 0.6666666666666666,
+      "actual": 0.6666666666666666,
+      "status": "PASS",
+      "absolute_tolerance": 1e-05
+    },
+    {
+      "id": "H-effect-A",
+      "input": [
+        [
+          -1,
+          -1,
+          43
+        ],
+        [
+          1,
+          -1,
+          47
+        ],
+        [
+          -1,
+          1,
+          37
+        ],
+        [
+          1,
+          1,
+          73
+        ]
+      ],
+      "expected": 20,
+      "actual": 20.0,
+      "status": "PASS",
+      "absolute_tolerance": 1e-05
+    },
+    {
+      "id": "H-effect-B",
+      "input": [
+        [
+          -1,
+          -1,
+          43
+        ],
+        [
+          1,
+          -1,
+          47
+        ],
+        [
+          -1,
+          1,
+          37
+        ],
+        [
+          1,
+          1,
+          73
+        ]
+      ],
+      "expected": 10,
+      "actual": 10.0,
+      "status": "PASS",
+      "absolute_tolerance": 1e-05
+    },
+    {
+      "id": "H-effect-AB",
+      "input": [
+        [
+          -1,
+          -1,
+          43
+        ],
+        [
+          1,
+          -1,
+          47
+        ],
+        [
+          -1,
+          1,
+          37
+        ],
+        [
+          1,
+          1,
+          73
+        ]
+      ],
+      "expected": 16,
+      "actual": 16.0,
+      "status": "PASS",
+      "absolute_tolerance": 1e-05
+    }
+  ]
+}

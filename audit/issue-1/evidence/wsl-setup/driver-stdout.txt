@@ -1,0 +1,38 @@
+{
+  "kernel": "chemistry-course-uv",
+  "path": "/home/miakhlov/.local/share/jupyter/kernels/chemistry-course-uv",
+  "project": "/home/miakhlov/Computational-chemistry_course",
+  "argv": [
+    "/home/miakhlov/.local/bin/uv",
+    "run",
+    "--frozen",
+    "--project",
+    "/home/miakhlov/Computational-chemistry_course",
+    "python",
+    "-m",
+    "ipykernel_launcher",
+    "-f",
+    "{connection_file}"
+  ]
+}
+core-tests PASS
+labs-tests PASS
+vina-version PASS
+kernel PASS
+quickstart PASS
+lab01 PASS
+lab02 PASS
+lab03 PASS
+lab04 PASS
+lab05 PASS
+lab06 PASS
+lab07 PASS
+lab08 PASS
+lab09 PASS
+lab10 PASS
+lab11 PASS
+lab12 PASS
+lab13 PASS
+lab14 PASS
+dft_pyscf PASS
+module12-pyscf PASS

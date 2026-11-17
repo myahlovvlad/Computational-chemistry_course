@@ -1,0 +1,40 @@
+{
+  "id": "04-audit-numerics",
+  "argv": [
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe",
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\audit\\issue-1\\check.py",
+    "numerics"
+  ],
+  "command_windows": "\"C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe\" \"C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\audit\\issue-1\\check.py\" numerics",
+  "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117",
+  "started_utc": "2026-11-17T08:54:38.272087+00:00",
+  "duration_seconds": 0.13608220010064542,
+  "exit_code": 0,
+  "status": "PASS",
+  "reason": "",
+  "environment": {
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONPATH": "unset",
+    "python": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe",
+    "stage_versions": "../core-environment/stdout.txt or ../labs-environment/stdout.txt"
+  },
+  "inputs": [
+    {
+      "path": "Stepik_course/03_STEPIK.md",
+      "sha256": "7d645f47e1d942569320284b8d157ffd3c14eeb3f9440707c452f97147429f61",
+      "bytes": 9363
+    },
+    {
+      "path": "Stepik_course/04_CASES.md",
+      "sha256": "ec38def6af18345de9d43c68c4c58b0d97e796103e5bd060d8f835af01530a0d",
+      "bytes": 16453
+    },
+    {
+      "path": "Stepik_course/practice/stepik_tasks.py",
+      "sha256": "4b88ba52348b806026d67f5c5f5195e6d478d36b58e358ade8921f9424e388c9",
+      "bytes": 1261
+    }
+  ],
+  "stdout": "stdout.txt",
+  "stderr": "stderr.txt"
+}

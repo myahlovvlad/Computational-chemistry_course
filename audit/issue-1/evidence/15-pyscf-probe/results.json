@@ -1,0 +1,8 @@
+{
+  "status": "BLOCKED",
+  "reason": "PySCF absent from the isolated Windows environment; no supported Linux/WSL kernel provisioned",
+  "pyscf_importable": false,
+  "platform": "Windows-10-10.0.19045-SP0",
+  "executed_DFT": false,
+  "RHF_H2_is_not_PySCF_or_DFT": true
+}

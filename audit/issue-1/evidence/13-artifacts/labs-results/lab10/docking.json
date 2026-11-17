@@ -1,0 +1,29 @@
+{
+  "official_reference_rmsd_angstrom": 0.906728765427707,
+  "rmsd_definition": "mapped heavy atom serials, receptor frame, no symmetry optimization",
+  "reference_score": -13.234,
+  "mode": "executed-vina",
+  "wall_seconds": 62.55944099999033,
+  "score": -13.201,
+  "rmsd_angstrom": 0.9002324474597987,
+  "command": [
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\tools\\bin\\vina_1.2.7_win.exe",
+    "--receptor",
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\Labs\\datasets\\docking\\1iep_receptor.pdbqt",
+    "--ligand",
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\Labs\\datasets\\docking\\1iep_ligand.pdbqt",
+    "--config",
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\Labs\\datasets\\docking\\1iep_receptor.box.txt",
+    "--seed",
+    "42",
+    "--cpu",
+    "1",
+    "--exhaustiveness",
+    "8",
+    "--num_modes",
+    "9",
+    "--out",
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\Labs\\results\\lab10\\redocked.pdbqt"
+  ],
+  "binary_sha256": "e0c4b2715e0c1a74f6e92d0f3be0328ac97542eafbc111e6b1efad897a73cce5"
+}

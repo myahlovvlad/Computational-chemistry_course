@@ -1,0 +1,35 @@
+{
+  "id": "16-platform-capstone",
+  "argv": [
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe",
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\audit\\issue-1\\check.py",
+    "gaps"
+  ],
+  "command_windows": "\"C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe\" \"C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\audit\\issue-1\\check.py\" gaps",
+  "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117",
+  "started_utc": "2026-11-17T09:00:14.433310+00:00",
+  "duration_seconds": 0.134060800075531,
+  "exit_code": 0,
+  "status": "BLOCKED",
+  "reason": "No Stepik test-course/grader execution evidence, learner dossier/defense or implemented concept-map editor/export tests supplied",
+  "environment": {
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONPATH": "unset",
+    "python": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe",
+    "stage_versions": "../core-environment/stdout.txt or ../labs-environment/stdout.txt"
+  },
+  "inputs": [
+    {
+      "path": "Stepik_course/12_PRACTICE_FIRST_GATE.md",
+      "sha256": "3d6f922c809c49457f2f80e7e4bf17e38d9b50b0b5042abac71a0a7488c5ae13",
+      "bytes": 18172
+    },
+    {
+      "path": "Stepik_course/modules/14_delivery.md",
+      "sha256": "89dde7785c026bf88b29db5e22bd12f4dd9b73f1d93925e2e0f6aa4d45f2edcf",
+      "bytes": 7616
+    }
+  ],
+  "stdout": "stdout.txt",
+  "stderr": "stderr.txt"
+}

@@ -1,0 +1,1 @@
+{'MolWt': 46.069, 'MolLogP': -0.0014000000000000123, 'TPSA': 20.23, 'HBD': 1, 'HBA': 1, 'ro5_violations': 0}

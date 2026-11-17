@@ -1,0 +1,45 @@
+{
+  "id": "18-gui",
+  "argv": [
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe",
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\audit\\issue-1\\check.py",
+    "gui"
+  ],
+  "command_windows": "\"C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe\" \"C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\audit\\issue-1\\check.py\" gui",
+  "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117",
+  "started_utc": "2026-11-17T09:08:03.826983+00:00",
+  "duration_seconds": 2.249594199936837,
+  "exit_code": 0,
+  "status": "FAIL",
+  "reason": "",
+  "environment": {
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONPATH": "unset",
+    "python": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe",
+    "stage_versions": "../core-environment/stdout.txt or ../labs-environment/stdout.txt"
+  },
+  "inputs": [
+    {
+      "path": "Labs/app.py",
+      "sha256": "a67e617a1ba2be4c756974906d97d9744583d931ed24ff2a178367d5380feb15",
+      "bytes": 1768
+    },
+    {
+      "path": "Labs/pipeline.py",
+      "sha256": "2d2de821179734e7e539c14fc72e5d9e5ce52ff695af0b27cf203415846003a4",
+      "bytes": 1959
+    },
+    {
+      "path": "Stepik_course/modules/14_delivery.md",
+      "sha256": "89dde7785c026bf88b29db5e22bd12f4dd9b73f1d93925e2e0f6aa4d45f2edcf",
+      "bytes": 7616
+    },
+    {
+      "path": "Labs/datasets/molecules.csv",
+      "sha256": "f1904ebd8af5789d383f9593365bf5443abf7aa60106db0ecfb50d4fff628465",
+      "bytes": 303
+    }
+  ],
+  "stdout": "stdout.txt",
+  "stderr": "stderr.txt"
+}

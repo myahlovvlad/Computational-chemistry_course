@@ -1,0 +1,35 @@
+﻿{
+    "features":  [
+                     {
+                         "restartNeeded":  false,
+                         "name":  "Microsoft-Windows-Subsystem-Linux"
+                     },
+                     {
+                         "restartNeeded":  false,
+                         "name":  "VirtualMachinePlatform"
+                     }
+                 ],
+    "utc":  "2026-11-17T09:27:08.9858313Z",
+    "restartRequested":  false,
+    "after":  [
+                  {
+                      "FeatureName":  "VirtualMachinePlatform",
+                      "State":  2
+                  },
+                  {
+                      "FeatureName":  "Microsoft-Windows-Subsystem-Linux",
+                      "State":  2
+                  }
+              ],
+    "before":  [
+                   {
+                       "FeatureName":  "VirtualMachinePlatform",
+                       "State":  2
+                   },
+                   {
+                       "FeatureName":  "Microsoft-Windows-Subsystem-Linux",
+                       "State":  2
+                   }
+               ],
+    "msiExitCode":  0
+}

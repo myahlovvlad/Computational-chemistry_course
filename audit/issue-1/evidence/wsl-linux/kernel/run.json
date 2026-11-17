@@ -1,0 +1,17 @@
+{
+  "id": "kernel",
+  "argv": [
+    "/home/miakhlov/Computational-chemistry_course/.venv/bin/python",
+    "-m",
+    "jupyter",
+    "kernelspec",
+    "list",
+    "--json"
+  ],
+  "cwd": "/home/miakhlov/Computational-chemistry_course",
+  "started_utc": "2026-11-17T09:37:44.846498+00:00",
+  "duration_seconds": 0.2647381049999922,
+  "exit_code": 0,
+  "status": "PASS",
+  "environment": "../environment.json"
+}

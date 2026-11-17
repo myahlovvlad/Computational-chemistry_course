@@ -1,0 +1,9 @@
+{
+  "lab": 3,
+  "calculation_wall_seconds": 0.2860675120000451,
+  "result": {
+    "rows": 12,
+    "invalid": 2,
+    "policy": "teaching-parent-v1;neutralize;tautomer=False"
+  }
+}
