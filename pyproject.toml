@@ -1,0 +1,16 @@
+[project]
+name = "computational-chemistry-course"
+version = "0.1.0"
+description = "Reproducible WSL environment for all course notebooks, including PySCF"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "rdkit==2026.9.1", "numpy==2.5.4", "Pillow==13.0.0",
+  "pandas==3.1.1", "scipy==1.18.1", "scikit-learn==1.9.1",
+  "matplotlib==3.11.2", "nbformat==5.11.1", "nbclient==0.11.0",
+  "ipykernel==7.4.0", "networkx==3.7", "requests==2.34.2",
+  "streamlit==1.67.0", "jupyterlab>=4.4,<5", "pyscf>=2.8,<4",
+]
+
+[tool.uv]
+package = false
+environments = ["sys_platform == 'linux'"]
