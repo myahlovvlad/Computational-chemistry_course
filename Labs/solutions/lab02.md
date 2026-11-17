@@ -1,39 +1,44 @@
-# Ответы к лабораторной работе 2: Проверяемый цифровой верстак
+# Ключ преподавателя: модуль 2
 
-## Контрольный результат
+Решения самостоятельных кейсов. Открывать после собственной попытки. Численная проверка не оценивает научную интерпретацию; IDE-кейсы требуют запуска приложения и рецензии.
 
-100 nM = 0.1 uM → 7; ноль/неизвестная единица отклоняются; версии и hash сохранены.
 
-## Ответы на задания
+## M02-C1. Две единицы в одной поставке
 
-1. Коэффициент для uM равен 1e−6; 0,1 uM даёт pIC50=7.
-2. Нужно сравнить sys.executable ядра с интерпретатором, которому принадлежит pip.
-3. Hash изменится, но это не свидетельство улучшения химического качества.
+Одинаковая концентрация должна дать одинаковый результат; invalid остаётся отдельным состоянием.
 
-## Как разбирать расхождение
-
-Сначала сравните вход, единицы и режим выполнения. Затем проверьте версии и параметры, после этого — собственную интерпретацию. Для численного расхождения сохраните исходные значения и residual; для структурного — raw/parent и политику. Статус «получен эталонный выход из файла» нельзя подписывать «я выполнил расчёт».
-
-## Готовый скрипт
-
-Тот же скрипт полностью включён в notebook. Общие научные функции находятся в `Labs/chemistry.py`, `Labs/h2_scf.py`, `Labs/docking.py`, `Labs/train_esol.py` и `Labs/pipeline.py` в зависимости от работы.
 
 ```python
-from chemistry import p_activity
-import hashlib, platform, rdkit
-passport = {"python": platform.python_version(), "executable": sys.executable,
-            "rdkit": rdkit.__version__, "sha256": hashlib.sha256((DATA/"molecules.csv").read_bytes()).hexdigest()}
-print(passport)
-assert math.isclose(p_activity(100,"nM"),7)
-assert math.isclose(p_activity(0.1,"uM"),7)
-for value,unit in [(0,"nM"),(-1,"M"),(1,"unknown")]:
-    try:
-        p_activity(value,unit)
-    except ValueError:
-        continue
-    raise AssertionError("Некорректный ввод принят")
-artifact = passport
-
+case_input = {'values': [2.5, 2500, 0, 1], 'units': ['uM', 'nM', 'M', 'unknown']}
+scale={'M':1,'mM':1e-3,'uM':1e-6,'nM':1e-9}; p=[]; statuses=[]
+for v,u in zip(case_input['values'],case_input['units']):
+    valid=u in scale and math.isfinite(v) and v>0
+    p.append(-math.log10(v*scale[u]) if valid else None); statuses.append('ok' if valid else 'invalid')
+answer={'p_values':p,'statuses':statuses}
 ```
 
-**Рубеж понимания:** сумейте объяснить хотя бы один отрицательный контроль и одно недопустимое обобщение этого результата. Численный эталон описывает конкретную постановку, не универсальную гарантию.
+
+Ожидаемый численный контракт: `{"p_values": [5.6020599913279625, 5.6020599913279625, null, null], "statuses": ["ok", "ok", "invalid", "invalid"]}`.
+
+
+## M02-C2. Совпадает имя, различаются байты
+
+Различие hash подтверждает различие snapshot; химическое качество требуется оценить отдельно.
+
+
+```python
+case_input = {'text': 'id,smiles\nA,CCO\n', 'suffix': '\n'}
+import hashlib
+b=case_input['text'].encode(); original=hashlib.sha256(b).hexdigest(); copy=bytes(b); changed=b+case_input['suffix'].encode(); answer={'same_copy':hashlib.sha256(copy).hexdigest()==original,'changed_copy':hashlib.sha256(changed).hexdigest()!=original,'source_preserved':b==case_input['text'].encode()}
+```
+
+
+Ожидаемый численный контракт: `{"same_copy": true, "changed_copy": true, "source_preserved": true}`.
+
+
+## M02-C3. Импорт работает в терминале, но не в ядре
+
+Нужно доказать выбор одного окружения; само отсутствие сообщения об ошибке без пути интерпретатора недостаточно.
+
+
+Рубрика: проверить каждый из трёх пунктов условия по фактическому артефакту. Отдельно оценить происхождение входов, допустимость вывода и независимость переноса. Отсутствие результата — NOT_RUN; отсутствие необходимой среды/реализации — BLOCKED.

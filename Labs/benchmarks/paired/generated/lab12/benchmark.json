@@ -1,0 +1,20 @@
+{
+  "module": 12,
+  "scope": "worked reference execution",
+  "python": "/home/miakhlov/course-notebooks/.venv/bin/python",
+  "elapsed_seconds": 1.0348180340006365,
+  "result": {
+    "geometry_angstrom": "H 0 0 0; H 0 0 .74",
+    "charge": 0,
+    "spin": 0,
+    "basis": "sto-3g",
+    "pyscf": "2.15.1",
+    "functional": "PBE",
+    "grid_level": 4,
+    "RHF_energy_hartree": -1.1167593073964255,
+    "PBE_energy_hartree": -1.1520727955617502,
+    "HF_converged": true,
+    "DFT_converged": true,
+    "scope": "single-point electronic energies, not free energies or barriers"
+  }
+}

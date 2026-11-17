@@ -1,0 +1,20 @@
+{
+  "id": "M12-C2",
+  "scope": "author numeric reference only, not learner completion",
+  "status": "PASS",
+  "reason": "Совпадает только указанный численный контракт",
+  "started_utc": "2026-11-17T11:01:26.062523+00:00",
+  "wall_seconds": 0.21811406799952238,
+  "actual": {
+    "hf_converged": true,
+    "pbe_converged": true,
+    "finite": true,
+    "method_pair": [
+      "RHF",
+      "PBE"
+    ]
+  },
+  "reference": "reference.py",
+  "inputs": "input.json",
+  "command": "uv run --frozen python tools/run_labs.py --output <new-directory> (author-reference stage)"
+}

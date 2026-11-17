@@ -1,45 +1,42 @@
-# Ответы к лабораторной работе 6: Ансамбль конформеров бутана
+# Ключ преподавателя: модуль 6
 
-## Контрольный результат
+Решения самостоятельных кейсов. Открывать после собственной попытки. Численная проверка не оценивает научную интерпретацию; IDE-кейсы требуют запуска приложения и рецензии.
 
-Есть хотя бы один конформер; все записанные энергии конечны; статус несходимости не скрыт; минимальная энергия бутана около −5,1…−4 ккал/моль при найденном наборе, не жёсткая универсальная константа.
 
-## Ответы на задания
+## M06-C1. Другой seed — другая гипотеза поиска
 
-1. Меняется поиск; устойчивость исследуют несколькими стартами, а не обещают одинаковую выборку.
-2. С конечным числом стартов поверхность исследована неполно.
-3. Торсион измеряется по четырём атомам в координатах; камера координаты не меняет.
+Сходящийся найденный минимум не является доказательством глобального минимума.
 
-## Как разбирать расхождение
-
-Сначала сравните вход, единицы и режим выполнения. Затем проверьте версии и параметры, после этого — собственную интерпретацию. Для численного расхождения сохраните исходные значения и residual; для структурного — raw/parent и политику. Статус «получен эталонный выход из файла» нельзя подписывать «я выполнил расчёт».
-
-## Готовый скрипт
-
-Тот же скрипт полностью включён в notebook. Общие научные функции находятся в `Labs/chemistry.py`, `Labs/h2_scf.py`, `Labs/docking.py`, `Labs/train_esol.py` и `Labs/pipeline.py` в зависимости от работы.
 
 ```python
-from rdkit import Chem
-from rdkit.Chem import AllChem
-mol=Chem.AddHs(Chem.MolFromSmiles("CCCC"))
-assert AllChem.MMFFHasAllMoleculeParams(mol)
-params=AllChem.ETKDGv3();params.randomSeed=42;params.pruneRmsThresh=0.1
-ids=list(AllChem.EmbedMultipleConfs(mol,numConfs=20,params=params))
-optimization=AllChem.MMFFOptimizeMoleculeConfs(mol,numThreads=1,maxIters=500)
-ensemble=pd.DataFrame([{"conf_id":i,"status":status,"energy_kcal_mol":energy} for i,(status,energy) in zip(ids,optimization)])
-display(ensemble)
-assert len(ids)>0
-assert np.isfinite(ensemble.energy_kcal_mol).all()
-assert (ensemble.status==0).any()
-with Chem.SDWriter(str(OUT/"butane_conformers.sdf")) as writer:
-    for row in ensemble.itertuples():
-        mol.SetProp("MMFF_status",str(row.status));mol.SetProp("MMFF_energy_kcal_mol",str(row.energy_kcal_mol))
-        writer.write(mol,confId=int(row.conf_id))
-ensemble.to_csv(OUT/"energies.csv",index=False)
-plt.scatter(ensemble.conf_id,ensemble.energy_kcal_mol);plt.xlabel("Conformer ID");plt.ylabel("MMFF kcal/mol")
-plt.savefig(OUT/"conformers.png",dpi=150);plt.show()
-artifact={"generated":len(ids),"converged":int((ensemble.status==0).sum()),"minimum":float(ensemble.energy_kcal_mol.min()),"seed":42}
-
+case_input = {'smiles': 'CCCC', 'seed': 7}
+from chemistry import optimize_conformer
+r=optimize_conformer(case_input['smiles'],seed=case_input['seed']);answer={'has_converged':r['converged'],'finite_energy':math.isfinite(r['energy_kcal_mol']),'energy_unit':'kcal/mol'}
 ```
 
-**Рубеж понимания:** сумейте объяснить хотя бы один отрицательный контроль и одно недопустимое обобщение этого результата. Численный эталон описывает конкретную постановку, не универсальную гарантию.
+
+Ожидаемый численный контракт: `{"has_converged": true, "finite_energy": true, "energy_unit": "kcal/mol"}`.
+
+
+## M06-C2. Торсион или поворот камеры?
+
+Изменение внутреннего угла и жёсткий поворот всего объекта — разные преобразования.
+
+
+```python
+case_input = {'smiles': 'CCCC', 'atoms': [0, 1, 2, 3], 'target_degrees': 60}
+from rdkit import Chem
+from rdkit.Chem import AllChem,rdMolTransforms
+m=Chem.AddHs(Chem.MolFromSmiles('CCCC'));p=AllChem.ETKDGv3();p.randomSeed=7;assert AllChem.EmbedMolecule(m,p)==0;c=m.GetConformer();d=rdMolTransforms.GetBondLength(c,1,2);rdMolTransforms.SetDihedralDeg(c,0,1,2,3,case_input['target_degrees']);answer={'angle_degrees':rdMolTransforms.GetDihedralDeg(c,0,1,2,3),'bond_length_preserved':math.isclose(d,rdMolTransforms.GetBondLength(c,1,2))}
+```
+
+
+Ожидаемый численный контракт: `{"angle_degrees": 60, "bond_length_preserved": true}`.
+
+
+## M06-C3. Несошедшуюся геометрию назвали лучшей
+
+Нужны единый состав/метод, сходимость и покрытие пространства стартов; низкого числа недостаточно.
+
+
+Рубрика: проверить каждый из трёх пунктов условия по фактическому артефакту. Отдельно оценить происхождение входов, допустимость вывода и независимость переноса. Отсутствие результата — NOT_RUN; отсутствие необходимой среды/реализации — BLOCKED.

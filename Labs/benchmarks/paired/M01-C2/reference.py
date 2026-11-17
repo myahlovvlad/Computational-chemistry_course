@@ -1,0 +1,1 @@
+x=np.column_stack([np.ones(8),case_input['A'],case_input['B'],np.multiply(case_input['A'],case_input['B'])]); y=np.array(case_input['y']); b=np.linalg.lstsq(x,y,rcond=None)[0]; answer={'beta':b.tolist(),'pure_error_df':8-np.linalg.matrix_rank(x),'pure_error_ms':float(np.sum((y-x@b)**2)/4)}

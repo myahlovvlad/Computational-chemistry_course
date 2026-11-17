@@ -14,4 +14,4 @@ jobs:
           cache-dependency-path: Labs/requirements.txt
       - run: python -m pip install -r Labs/requirements.txt
       - run: python tools/validate_course.py
-      - run: python -m unittest discover -s Labs -p test_labs.py -v
+      - run: python -m unittest discover -s Labs -p 'test_*.py' -v

@@ -1,0 +1,1 @@
+y=np.array(case_input['y']);answer={'MAE_A':float(np.abs(y-case_input['A']).mean()),'MAE_B':float(np.abs(y-case_input['B']).mean()),'units':'logS'}

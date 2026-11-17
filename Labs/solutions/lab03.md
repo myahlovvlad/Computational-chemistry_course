@@ -1,40 +1,41 @@
-# Ответы к лабораторной работе 3: Идентичность, соли и таутомеры
+# Ключ преподавателя: модуль 3
 
-## Контрольный результат
+Решения самостоятельных кейсов. Открывать после собственной попытки. Численная проверка не оценивает научную интерпретацию; IDE-кейсы требуют запуска приложения и рецензии.
 
-12 строк на выходе; M08/M09 invalid; M01=M02 и M03=M04 по parent; M10≠M11.
 
-## Ответы на задания
+## M03-C1. Соль поменяла порядок компонентов
 
-1. Ковалентный Br должен сохраниться при parent-политике.
-2. Порядок компонентов не определяет parent; split по точке некорректен.
-3. Измерения относятся к физическим формам и условиям, которые parent-представление теряет.
+Компоненты соли и ковалентные атомы требуют разных решений.
 
-## Как разбирать расхождение
-
-Сначала сравните вход, единицы и режим выполнения. Затем проверьте версии и параметры, после этого — собственную интерпретацию. Для численного расхождения сохраните исходные значения и residual; для структурного — raw/parent и политику. Статус «получен эталонный выход из файла» нельзя подписывать «я выполнил расчёт».
-
-## Готовый скрипт
-
-Тот же скрипт полностью включён в notebook. Общие научные функции находятся в `Labs/chemistry.py`, `Labs/h2_scf.py`, `Labs/docking.py`, `Labs/train_esol.py` и `Labs/pipeline.py` в зависимости от работы.
 
 ```python
-from chemistry import screen, standardize, parse
-raw = pd.read_csv(DATA/"molecules.csv", keep_default_na=False)
-records = [{"id": row.id, **screen(row.smiles)} for row in raw.itertuples()]
-report = pd.DataFrame(records); display(report)
-report.to_csv(OUT/"curated.csv", index=False)
-by_id = {row["id"]:row for row in records}
-assert len(records)==12 and sum(row["status"]=="invalid" for row in records)==2
-assert by_id["M01"]["parent_smiles"]==by_id["M02"]["parent_smiles"]
-assert by_id["M03"]["parent_smiles"]==by_id["M04"]["parent_smiles"]
-assert "Cl" in by_id["M05"]["parent_smiles"]
-assert by_id["M10"]["parent_smiles"]!=by_id["M11"]["parent_smiles"]
-pair=["O=c1cccc[nH]1","Oc1ccccn1"]
-assert standardize(pair[0]).parent_smiles != standardize(pair[1]).parent_smiles
-assert standardize(pair[0],True).parent_smiles == standardize(pair[1],True).parent_smiles
-artifact={"rows":len(records),"invalid":2,"policy":by_id["M01"]["policy"]}
-
+case_input = {'smiles': ['CC(=O)[O-].[Na+]', '[Na+].CC(=O)[O-]', 'Brc1ccccc1']}
+from chemistry import standardize,parse
+p=[standardize(s).parent_smiles for s in case_input['smiles']]; answer={'same_parent':p[0]==p[1],'covalent_br_retained':any(a.GetSymbol()=='Br' for a in parse(p[2]).GetAtoms()),'rows':len(p)}
 ```
 
-**Рубеж понимания:** сумейте объяснить хотя бы один отрицательный контроль и одно недопустимое обобщение этого результата. Численный эталон описывает конкретную постановку, не универсальную гарантию.
+
+Ожидаемый численный контракт: `{"same_parent": true, "covalent_br_retained": true, "rows": 3}`.
+
+
+## M03-C2. Не схлопнуть стереопару
+
+Равенство представлений зависит от политики; стереоинформация здесь сохраняется.
+
+
+```python
+case_input = {'stereo': ['C[C@H](O)C(=O)O', 'C[C@@H](O)C(=O)O'], 'tautomers': ['O=c1cccc[nH]1', 'Oc1ccccn1']}
+from chemistry import standardize
+f=lambda s,t=False:standardize(s,t).parent_smiles; a,b=case_input['stereo']; x,y=case_input['tautomers']; answer={'stereo_distinct':f(a)!=f(b),'default_tautomers_distinct':f(x)!=f(y),'explicit_tautomers_equal':f(x,True)==f(y,True)}
+```
+
+
+Ожидаемый численный контракт: `{"stereo_distinct": true, "default_tautomers_distinct": true, "explicit_tautomers_equal": true}`.
+
+
+## M03-C3. Можно ли усреднить растворимость соли и кислоты?
+
+До проверки формы, pH, температуры и метода одинаковый parent не оправдывает усреднение.
+
+
+Рубрика: проверить каждый из трёх пунктов условия по фактическому артефакту. Отдельно оценить происхождение входов, допустимость вывода и независимость переноса. Отсутствие результата — NOT_RUN; отсутствие необходимой среды/реализации — BLOCKED.

@@ -1,0 +1,2 @@
+from chemistry import optimize_conformer
+r=optimize_conformer(case_input['smiles'],seed=case_input['seed']);answer={'has_converged':r['converged'],'finite_energy':math.isfinite(r['energy_kcal_mol']),'energy_unit':'kcal/mol'}

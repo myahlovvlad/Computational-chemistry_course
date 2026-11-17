@@ -5,7 +5,14 @@
     "lab": "Labs/guides/lab01.md",
     "notebook": "Labs/notebooks/lab01.ipynb",
     "solutions": "Labs/solutions/lab01.md",
-    "title": "Паспорт проекта и взаимодействие факторов"
+    "title": "Паспорт проекта и взаимодействие факторов",
+    "worked_notebook": "Labs/notebooks/lab01.ipynb",
+    "practice_notebook": "Labs/notebooks/lab01_practice.ipynb",
+    "practice_cases": [
+      "M01-C1",
+      "M01-C2",
+      "M01-C3"
+    ]
   },
   {
     "module": 2,
@@ -13,7 +20,14 @@
     "lab": "Labs/guides/lab02.md",
     "notebook": "Labs/notebooks/lab02.ipynb",
     "solutions": "Labs/solutions/lab02.md",
-    "title": "Проверяемый цифровой верстак"
+    "title": "Проверяемый цифровой верстак",
+    "worked_notebook": "Labs/notebooks/lab02.ipynb",
+    "practice_notebook": "Labs/notebooks/lab02_practice.ipynb",
+    "practice_cases": [
+      "M02-C1",
+      "M02-C2",
+      "M02-C3"
+    ]
   },
   {
     "module": 3,
@@ -21,7 +35,14 @@
     "lab": "Labs/guides/lab03.md",
     "notebook": "Labs/notebooks/lab03.ipynb",
     "solutions": "Labs/solutions/lab03.md",
-    "title": "Идентичность, соли и таутомеры"
+    "title": "Идентичность, соли и таутомеры",
+    "worked_notebook": "Labs/notebooks/lab03.ipynb",
+    "practice_notebook": "Labs/notebooks/lab03_practice.ipynb",
+    "practice_cases": [
+      "M03-C1",
+      "M03-C2",
+      "M03-C3"
+    ]
   },
   {
     "module": 4,
@@ -29,7 +50,14 @@
     "lab": "Labs/guides/lab04.md",
     "notebook": "Labs/notebooks/lab04.ipynb",
     "solutions": "Labs/solutions/lab04.md",
-    "title": "Осмысленные дескрипторы"
+    "title": "Осмысленные дескрипторы",
+    "worked_notebook": "Labs/notebooks/lab04.ipynb",
+    "practice_notebook": "Labs/notebooks/lab04_practice.ipynb",
+    "practice_cases": [
+      "M04-C1",
+      "M04-C2",
+      "M04-C3"
+    ]
   },
   {
     "module": 5,
@@ -37,7 +65,14 @@
     "lab": "Labs/guides/lab05.md",
     "notebook": "Labs/notebooks/lab05.ipynb",
     "solutions": "Labs/solutions/lab05.md",
-    "title": "Поиск аналогов и Танимото"
+    "title": "Поиск аналогов и Танимото",
+    "worked_notebook": "Labs/notebooks/lab05.ipynb",
+    "practice_notebook": "Labs/notebooks/lab05_practice.ipynb",
+    "practice_cases": [
+      "M05-C1",
+      "M05-C2",
+      "M05-C3"
+    ]
   },
   {
     "module": 6,
@@ -45,7 +80,14 @@
     "lab": "Labs/guides/lab06.md",
     "notebook": "Labs/notebooks/lab06.ipynb",
     "solutions": "Labs/solutions/lab06.md",
-    "title": "Ансамбль конформеров бутана"
+    "title": "Ансамбль конформеров бутана",
+    "worked_notebook": "Labs/notebooks/lab06.ipynb",
+    "practice_notebook": "Labs/notebooks/lab06_practice.ipynb",
+    "practice_cases": [
+      "M06-C1",
+      "M06-C2",
+      "M06-C3"
+    ]
   },
   {
     "module": 7,
@@ -53,7 +95,14 @@
     "lab": "Labs/guides/lab07.md",
     "notebook": "Labs/notebooks/lab07.ipynb",
     "solutions": "Labs/solutions/lab07.md",
-    "title": "Кураторство активности и происхождение данных"
+    "title": "Кураторство активности и происхождение данных",
+    "worked_notebook": "Labs/notebooks/lab07.ipynb",
+    "practice_notebook": "Labs/notebooks/lab07_practice.ipynb",
+    "practice_cases": [
+      "M07-C1",
+      "M07-C2",
+      "M07-C3"
+    ]
   },
   {
     "module": 8,
@@ -61,7 +110,14 @@
     "lab": "Labs/guides/lab08.md",
     "notebook": "Labs/notebooks/lab08.ipynb",
     "solutions": "Labs/solutions/lab08.md",
-    "title": "Скрининг с журналом и контролями"
+    "title": "Скрининг с журналом и контролями",
+    "worked_notebook": "Labs/notebooks/lab08.ipynb",
+    "practice_notebook": "Labs/notebooks/lab08_practice.ipynb",
+    "practice_cases": [
+      "M08-C1",
+      "M08-C2",
+      "M08-C3"
+    ]
   },
   {
     "module": 9,
@@ -69,7 +125,14 @@
     "lab": "Labs/guides/lab09.md",
     "notebook": "Labs/notebooks/lab09.ipynb",
     "solutions": "Labs/solutions/lab09.md",
-    "title": "Отчёт, который можно прочитать без кода"
+    "title": "Отчёт, который можно прочитать без кода",
+    "worked_notebook": "Labs/notebooks/lab09.ipynb",
+    "practice_notebook": "Labs/notebooks/lab09_practice.ipynb",
+    "practice_cases": [
+      "M09-C1",
+      "M09-C2",
+      "M09-C3"
+    ]
   },
   {
     "module": 10,
@@ -77,7 +140,14 @@
     "lab": "Labs/guides/lab10.md",
     "notebook": "Labs/notebooks/lab10.ipynb",
     "solutions": "Labs/solutions/lab10.md",
-    "title": "Реальный redocking 1IEP"
+    "title": "Реальный redocking 1IEP",
+    "worked_notebook": "Labs/notebooks/lab10.ipynb",
+    "practice_notebook": "Labs/notebooks/lab10_practice.ipynb",
+    "practice_cases": [
+      "M10-C1",
+      "M10-C2",
+      "M10-C3"
+    ]
   },
   {
     "module": 11,
@@ -85,7 +155,14 @@
     "lab": "Labs/guides/lab11.md",
     "notebook": "Labs/notebooks/lab11.ipynb",
     "solutions": "Labs/solutions/lab11.md",
-    "title": "QSPR растворимости ESOL"
+    "title": "QSPR растворимости ESOL",
+    "worked_notebook": "Labs/notebooks/lab11.ipynb",
+    "practice_notebook": "Labs/notebooks/lab11_practice.ipynb",
+    "practice_cases": [
+      "M11-C1",
+      "M11-C2",
+      "M11-C3"
+    ]
   },
   {
     "module": 12,
@@ -93,7 +170,14 @@
     "lab": "Labs/guides/lab12.md",
     "notebook": "Labs/notebooks/lab12.ipynb",
     "solutions": "Labs/solutions/lab12.md",
-    "title": "Электронная энергия H2: исполняемый RHF/STO-3G"
+    "title": "Электронная энергия H2: RHF и DFT/PBE",
+    "worked_notebook": "Labs/notebooks/lab12.ipynb",
+    "practice_notebook": "Labs/notebooks/lab12_practice.ipynb",
+    "practice_cases": [
+      "M12-C1",
+      "M12-C2",
+      "M12-C3"
+    ]
   },
   {
     "module": 13,
@@ -101,7 +185,14 @@
     "lab": "Labs/guides/lab13.md",
     "notebook": "Labs/notebooks/lab13.ipynb",
     "solutions": "Labs/solutions/lab13.md",
-    "title": "Шаблонный ретросинтез и выбор маршрута"
+    "title": "Шаблонный ретросинтез и выбор маршрута",
+    "worked_notebook": "Labs/notebooks/lab13.ipynb",
+    "practice_notebook": "Labs/notebooks/lab13_practice.ipynb",
+    "practice_cases": [
+      "M13-C1",
+      "M13-C2",
+      "M13-C3"
+    ]
   },
   {
     "module": 14,
@@ -109,6 +200,13 @@
     "lab": "Labs/guides/lab14.md",
     "notebook": "Labs/notebooks/lab14.ipynb",
     "solutions": "Labs/solutions/lab14.md",
-    "title": "Передаваемый лабораторный конвейер"
+    "title": "Передаваемый лабораторный конвейер",
+    "worked_notebook": "Labs/notebooks/lab14.ipynb",
+    "practice_notebook": "Labs/notebooks/lab14_practice.ipynb",
+    "practice_cases": [
+      "M14-C1",
+      "M14-C2",
+      "M14-C3"
+    ]
   }
 ]

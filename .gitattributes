@@ -1,6 +1,9 @@
 * text=auto eol=lf
 # Scientific snapshots are byte-hashed; preserve them on every platform.
 Labs/datasets/** -text
+Labs/datasets/practice_cases.json whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+Labs/datasets/manifest.json whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+Labs/benchmarks/paired/** -text -whitespace
 *.png binary
 *.jpg binary
 *.pdf binary

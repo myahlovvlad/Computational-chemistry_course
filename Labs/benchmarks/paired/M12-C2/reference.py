@@ -1,0 +1,2 @@
+from pyscf import gto,scf,dft
+m=gto.M(atom=f"H 0 0 0; H 0 0 {case_input['distance_angstrom']}",unit='Angstrom',basis='sto-3g',charge=0,spin=0,verbose=0);hf=scf.RHF(m);hf.conv_tol=1e-10;eh=hf.kernel();ks=dft.RKS(m);ks.xc='PBE';ks.grids.level=4;ks.conv_tol=1e-10;ed=ks.kernel();answer={'hf_converged':bool(hf.converged),'pbe_converged':bool(ks.converged),'finite':math.isfinite(eh) and math.isfinite(ed),'method_pair':['RHF','PBE']}

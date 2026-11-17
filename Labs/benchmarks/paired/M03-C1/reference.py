@@ -1,0 +1,2 @@
+from chemistry import standardize,parse
+p=[standardize(s).parent_smiles for s in case_input['smiles']]; answer={'same_parent':p[0]==p[1],'covalent_br_retained':any(a.GetSymbol()=='Br' for a in parse(p[2]).GetAtoms()),'rows':len(p)}

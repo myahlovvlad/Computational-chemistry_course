@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "wsl.exe",
+    "-d",
+    "Ubuntu-24.04",
+    "-u",
+    "miakhlov",
+    "--",
+    "bash",
+    "/mnt/c/Users/Miakhlov/Documents/GitHub/Computational chemistry_course/tmp/wsl-setup/run-paired.sh"
+  ],
+  "started_utc": "2026-11-17T10:59:42.689737+00:00",
+  "duration_seconds": 103.89217780000035,
+  "exit_code": 0
+}

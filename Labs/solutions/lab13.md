@@ -1,45 +1,46 @@
-# Ответы к лабораторной работе 13: Шаблонный ретросинтез и выбор маршрута
+# Ключ преподавателя: модуль 13
 
-## Контрольный результат
+Решения самостоятельных кейсов. Открывать после собственной попытки. Численная проверка не оценивает научную интерпретацию; IDE-кейсы требуют запуска приложения и рецензии.
 
-Продукты метилацетата: уксусная кислота и метанол; выходы A=0,56/B=0,855; приведённые затраты A≈1071,43/B≈877,19 при явно заданной модели.
 
-## Ответы на задания
+## M13-C1. Новый эфир вместо обучающего примера
 
-1. Кислота остаётся уксусной, спирт — этанол.
-2. Совместимость групп, селективность, выделение/очистка и условия требуют источников и опыта.
-3. SA Score — структурная эвристика без поставщика, даты, масштаба и проверенного синтеза.
+Полученные кислота и спирт — учебные предшественники, а не валидированный препаративный протокол.
 
-## Как разбирать расхождение
-
-Сначала сравните вход, единицы и режим выполнения. Затем проверьте версии и параметры, после этого — собственную интерпретацию. Для численного расхождения сохраните исходные значения и residual; для структурного — raw/parent и политику. Статус «получен эталонный выход из файла» нельзя подписывать «я выполнил расчёт».
-
-## Готовый скрипт
-
-Тот же скрипт полностью включён в notebook. Общие научные функции находятся в `Labs/chemistry.py`, `Labs/h2_scf.py`, `Labs/docking.py`, `Labs/train_esol.py` и `Labs/pipeline.py` в зависимости от работы.
 
 ```python
+case_input = {'smiles': 'CCOC(C)=O'}
 from rdkit import Chem
 from rdkit.Chem import rdChemReactions
-reaction=rdChemReactions.ReactionFromSmarts("[C:1](=[O:2])[O:3][C:4]>>[C:1](=[O:2])[OH:3].[OH][C:4]")
-products=reaction.RunReactants((Chem.MolFromSmiles("COC(C)=O"),))
-assert products
-names=[]
-for mol in products[0]:
-    Chem.SanitizeMol(mol)
-    for atom in mol.GetAtoms(): atom.SetAtomMapNum(0)
-    names.append(Chem.MolToSmiles(mol))
-print("Учебные предшественники:",names)
-assert set(names)=={"CC(=O)O","CO"}
-routes=pd.read_csv(DATA/"routes.csv")
-routes["overall_yield"]=routes.yield1*routes.yield2
-routes["normalized_cost"]=routes.assumed_cost/routes.overall_yield
-display(routes)
-assert np.allclose(routes.overall_yield,[0.56,0.855])
-assert routes.loc[1,"normalized_cost"]<routes.loc[0,"normalized_cost"]
-routes.to_csv(OUT/"route_comparison.csv",index=False)
-artifact={"precursors":names,"routes":routes.to_dict(orient="records"),"scope":"one ester template, not general AI retrosynthesis"}
-
+r=rdChemReactions.ReactionFromSmarts('[C:1](=[O:2])[O:3][C:4]>>[C:1](=[O:2])[OH:3].[OH][C:4]');p=r.RunReactants((Chem.MolFromSmiles(case_input['smiles']),));names=[]
+for m in p[0]:
+ Chem.SanitizeMol(m)
+ for a in m.GetAtoms():a.SetAtomMapNum(0)
+ names.append(Chem.MolToSmiles(m))
+answer={'precursors':sorted(names)}
 ```
 
-**Рубеж понимания:** сумейте объяснить хотя бы один отрицательный контроль и одно недопустимое обобщение этого результата. Численный эталон описывает конкретную постановку, не универсальную гарантию.
+
+Ожидаемый численный контракт: `{"precursors": ["CC(=O)O", "CCO"]}`.
+
+
+## M13-C2. Более дорогой вход — меньшая приведённая цена?
+
+Сравнение условно: нельзя выдавать assumed_cost за актуальный прайс-лист.
+
+
+```python
+case_input = {'A': {'yields': [0.8, 0.7], 'cost': 600}, 'B': {'yields': [0.95, 0.9], 'cost': 750}}
+ys=[math.prod(case_input[k]['yields']) for k in ['A','B']];answer={'yields':ys,'normalized_costs':[case_input[k]['cost']/y for k,y in zip(['A','B'],ys)]}
+```
+
+
+Ожидаемый численный контракт: `{"yields": [0.56, 0.855], "normalized_costs": [1071.4285714285713, 877.1929824561404]}`.
+
+
+## M13-C3. Шаблон не сработал на амиде
+
+Отсутствие совпадения одного правила не доказывает несинтезируемость.
+
+
+Рубрика: проверить каждый из трёх пунктов условия по фактическому артефакту. Отдельно оценить происхождение входов, допустимость вывода и независимость переноса. Отсутствие результата — NOT_RUN; отсутствие необходимой среды/реализации — BLOCKED.

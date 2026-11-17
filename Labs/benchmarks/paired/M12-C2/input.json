@@ -1,0 +1,8 @@
+{
+  "distance_angstrom": 1.0,
+  "basis": "sto-3g",
+  "charge": 0,
+  "spin": 0,
+  "functional": "PBE",
+  "grid_level": 4
+}

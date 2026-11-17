@@ -1,42 +1,44 @@
-# Ответы к лабораторной работе 5: Поиск аналогов и Танимото
+# Ключ преподавателя: модуль 5
 
-## Контрольный результат
+Решения самостоятельных кейсов. Открывать после собственной попытки. Численная проверка не оценивает научную интерпретацию; IDE-кейсы требуют запуска приложения и рецензии.
 
-T=0,5 на множествах; диагональ Morgan=1; симметрия и диапазон [0,1].
 
-## Ответы на задания
+## M05-C1. Проверить метрику без химической библиотеки
 
-1. Числа зависят от радиуса; сравнивать пороги разных представлений без калибровки нельзя.
-2. Хеширование допускает коллизии и может не кодировать часть стереоинформации.
-3. Возможна группировка по каркасам с последующим выбором представителя при сохранении критериев задачи.
+Размер объединения уже исключает двойной счёт общих битов.
 
-## Как разбирать расхождение
-
-Сначала сравните вход, единицы и режим выполнения. Затем проверьте версии и параметры, после этого — собственную интерпретацию. Для численного расхождения сохраните исходные значения и residual; для структурного — raw/parent и политику. Статус «получен эталонный выход из файла» нельзя подписывать «я выполнил расчёт».
-
-## Готовый скрипт
-
-Тот же скрипт полностью включён в notebook. Общие научные функции находятся в `Labs/chemistry.py`, `Labs/h2_scf.py`, `Labs/docking.py`, `Labs/train_esol.py` и `Labs/pipeline.py` в зависимости от работы.
 
 ```python
-from chemistry import standardize, similarity
-from metrics import tanimoto
-raw=pd.read_csv(DATA/"molecules.csv",keep_default_na=False)
-valid=[]
-for row in raw.itertuples():
-    try: valid.append((row.id,standardize(row.smiles).parent_smiles))
-    except ValueError: pass
-matrix=np.array([[similarity(a[1],b[1]) for b in valid] for a in valid])
-assert tanimoto({1,2,3},{2,3,4})==0.5
-assert np.allclose(matrix,matrix.T) and np.allclose(np.diag(matrix),1)
-assert matrix.min()>=0 and matrix.max()<=1
-ranking=pd.DataFrame({"id":[x[0] for x in valid],"T_to_ethanol":[similarity("CCO",x[1]) for x in valid]})
-display(ranking.sort_values("T_to_ethanol",ascending=False))
-pd.DataFrame(matrix,index=[x[0] for x in valid],columns=[x[0] for x in valid]).to_csv(OUT/"tanimoto.csv")
-plt.imshow(matrix,vmin=0,vmax=1);plt.colorbar(label="Morgan Tanimoto")
-plt.savefig(OUT/"similarity.png",dpi=150);plt.show()
-artifact={"radius":2,"fpSize":2048,"includeChirality":True,"molecules":len(valid)}
-
+case_input = {'A': [1, 2, 3], 'B': [2, 3, 4], 'C': [7, 8]}
+a,b,c=[set(case_input[k]) for k in ['A','B','C']]; f=lambda x,y:len(x&y)/len(x|y) if x|y else 1.;answer={'AB':f(a,b),'AC':f(a,c)}
 ```
 
-**Рубеж понимания:** сумейте объяснить хотя бы один отрицательный контроль и одно недопустимое обобщение этого результата. Численный эталон описывает конкретную постановку, не универсальную гарантию.
+
+Ожидаемый численный контракт: `{"AB": 0.5, "AC": 0}`.
+
+
+## M05-C2. Хиральность исчезла из поиска
+
+Сходство относится к заданным признакам, не к любому химическому свойству.
+
+
+```python
+case_input = {'smiles': ['C[C@H](O)C(=O)O', 'C[C@@H](O)C(=O)O'], 'radius': 2, 'fpSize': 2048}
+from rdkit import Chem,DataStructs
+from rdkit.Chem import rdFingerprintGenerator
+m=[Chem.MolFromSmiles(s) for s in case_input['smiles']]; fs=[]
+for chiral in [False,True]:
+ g=rdFingerprintGenerator.GetMorganGenerator(radius=2,fpSize=2048,includeChirality=chiral);fs.append([g.GetFingerprint(x) for x in m])
+f=DataStructs.TanimotoSimilarity; a,b=fs[1];answer={'achiral_score':f(*fs[0]),'chiral_score_below_one':f(a,b)<1,'symmetric':math.isclose(f(a,b),f(b,a)),'self_score':f(a,a)}
+```
+
+
+Ожидаемый численный контракт: `{"achiral_score": 1, "chiral_score_below_one": true, "symmetric": true, "self_score": 1}`.
+
+
+## M05-C3. Закупить разнообразные аналоги
+
+Оценивается воспроизводимость выбора и соответствие цели, а не единственный оптимальный список.
+
+
+Рубрика: проверить каждый из трёх пунктов условия по фактическому артефакту. Отдельно оценить происхождение входов, допустимость вывода и независимость переноса. Отсутствие результата — NOT_RUN; отсутствие необходимой среды/реализации — BLOCKED.

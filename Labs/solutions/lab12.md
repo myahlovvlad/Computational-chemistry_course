@@ -1,36 +1,40 @@
-# Ответы к лабораторной работе 12: Электронная энергия H2: исполняемый RHF/STO-3G
+# Ключ преподавателя: модуль 12
 
-## Контрольный результат
+Решения самостоятельных кейсов. Открывать после собственной попытки. Численная проверка не оценивает научную интерпретацию; IDE-кейсы требуют запуска приложения и рецензии.
 
-RHF/STO-3G при 0,74 Å: −1,116759307±5e−5 Hartree. Все точки должны сходиться. Это HF, не выполненный DFT.
 
-## Ответы на задания
+## M12-C1. Знак разности электронных энергий
 
-1. При коэффициенте 2625,5: −26,255 кДж/моль.
-2. Enuc=1/R в атомных единицах; без него электронная энергия не равна полной Born–Oppenheimer энергии.
-3. Одна ограниченная детерминанта не описывает статическую корреляцию растянутой связи; хорошая SCF-сходимость не исправляет модель.
+Сравнимость состава, метода и базиса обязательна; разность двух минимумов не задаёт переходное состояние.
 
-## Как разбирать расхождение
-
-Сначала сравните вход, единицы и режим выполнения. Затем проверьте версии и параметры, после этого — собственную интерпретацию. Для численного расхождения сохраните исходные значения и residual; для структурного — raw/parent и политику. Статус «получен эталонный выход из файла» нельзя подписывать «я выполнил расчёт».
-
-## Готовый скрипт
-
-Тот же скрипт полностью включён в notebook. Общие научные функции находятся в `Labs/chemistry.py`, `Labs/h2_scf.py`, `Labs/docking.py`, `Labs/train_esol.py` и `Labs/pipeline.py` в зависимости от работы.
 
 ```python
-from h2_scf import rhf_h2
-result=rhf_h2(0.74)
-print(result)
-assert result["converged"]
-assert abs(result["energy_hartree"]-(-1.116759307))<5e-5
-assert math.isclose(-0.010*2625.5,-26.255,abs_tol=1e-9)
-scan=pd.DataFrame([{"R_A":r,"E_hartree":rhf_h2(float(r))["energy_hartree"]} for r in np.linspace(0.5,2.5,11)])
-scan.to_csv(OUT/"h2_scan.csv",index=False)
-plt.plot(scan.R_A,scan.E_hartree,"o-");plt.xlabel("H-H distance, angstrom");plt.ylabel("RHF/STO-3G energy, Hartree")
-plt.savefig(OUT/"h2_energy.png",dpi=150);plt.show()
-artifact={"single_point":result,"minimum_of_grid":float(scan.E_hartree.min()),"DFT_executed":False}
-
+case_input = {'E_initial': -100.0, 'E_final': -100.01, 'kJ_per_Hartree': 2625.5}
+answer={'delta_kJ_mol':(case_input['E_final']-case_input['E_initial'])*case_input['kJ_per_Hartree']}
 ```
 
-**Рубеж понимания:** сумейте объяснить хотя бы один отрицательный контроль и одно недопустимое обобщение этого результата. Численный эталон описывает конкретную постановку, не универсальную гарантию.
+
+Ожидаемый численный контракт: `{"delta_kJ_mol": -26.255}`.
+
+
+## M12-C2. Повтор HF/DFT при новой геометрии
+
+Автотест проверяет только численный контракт; сами энергии, параметры и интерпретацию проверяют по артефактам.
+
+
+```python
+case_input = {'distance_angstrom': 1.0, 'basis': 'sto-3g', 'charge': 0, 'spin': 0, 'functional': 'PBE', 'grid_level': 4}
+from pyscf import gto,scf,dft
+m=gto.M(atom=f"H 0 0 0; H 0 0 {case_input['distance_angstrom']}",unit='Angstrom',basis='sto-3g',charge=0,spin=0,verbose=0);hf=scf.RHF(m);hf.conv_tol=1e-10;eh=hf.kernel();ks=dft.RKS(m);ks.xc='PBE';ks.grids.level=4;ks.conv_tol=1e-10;ed=ks.kernel();answer={'hf_converged':bool(hf.converged),'pbe_converged':bool(ks.converged),'finite':math.isfinite(eh) and math.isfinite(ed),'method_pair':['RHF','PBE']}
+```
+
+
+Ожидаемый численный контракт: `{"hf_converged": true, "pbe_converged": true, "finite": true, "method_pair": ["RHF", "PBE"]}`.
+
+
+## M12-C3. Сходимость есть, физика диссоциации спорная
+
+Один single-point не доказывает диссоциацию, свободную энергию или барьер.
+
+
+Рубрика: проверить каждый из трёх пунктов условия по фактическому артефакту. Отдельно оценить происхождение входов, допустимость вывода и независимость переноса. Отсутствие результата — NOT_RUN; отсутствие необходимой среды/реализации — BLOCKED.

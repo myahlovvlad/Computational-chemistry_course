@@ -14,22 +14,23 @@ NAME='chemistry-course-uv'
 
 def main():
     parser=argparse.ArgumentParser()
-    parser.add_argument('--all',action='store_true',help='Execute all 16 notebooks by stored kernel name')
+    parser.add_argument('--all',action='store_true',help='Execute all active paired notebooks by stored kernel name')
     parser.add_argument('--output',default='tmp/kernel-smoke')
     args=parser.parse_args()
     target=ROOT/args.output
     target.mkdir(parents=True,exist_ok=False)
-    paths=sorted((ROOT/'Labs').rglob('*.ipynb'))+[ROOT/'Stepik_course/practice/quickstart.ipynb']
+    manifest=json.loads((ROOT/'course-manifest.json').read_text())
+    paths=[ROOT/item[key] for item in manifest for key in ['worked_notebook','practice_notebook']]
     checks=[]
     for path in paths:
         book=nbformat.read(path,as_version=4)
         actual=book.metadata.kernelspec.name
         checks.append({'source':path.relative_to(ROOT).as_posix(),'kernel':actual,'status':'PASS' if actual==NAME else 'FAIL'})
-    assert len(paths)==16 and all(x['status']=='PASS' for x in checks),checks
+    assert len(paths)==28 and all(x['status']=='PASS' for x in checks),checks
     spec=KernelSpecManager().get_kernel_spec(NAME)
     assert spec.argv[1:3]==['run','--frozen'],spec.argv
     assert spec.env['UV_PROJECT_ENVIRONMENT']==str(ROOT/'.venv'),spec.env
-    selected=paths if args.all else [ROOT/'Stepik_course/practice/quickstart.ipynb',ROOT/'Labs/extensions/dft_pyscf.ipynb']
+    selected=paths if args.all else [ROOT/'Labs/notebooks/lab02.ipynb',ROOT/'Labs/notebooks/lab12.ipynb']
     for path in selected:
         book=nbformat.read(path,as_version=4)
         for cell in book.cells:

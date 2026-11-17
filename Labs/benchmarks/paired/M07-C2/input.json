@@ -1,0 +1,40 @@
+{
+  "records": [
+    {
+      "record_id": "S1",
+      "target_id": "T1",
+      "assay_id": "A1",
+      "endpoint": "IC50",
+      "value": "50",
+      "unit": "nM",
+      "relation": "="
+    },
+    {
+      "record_id": "S2",
+      "target_id": "T1",
+      "assay_id": "A1",
+      "endpoint": "Ki",
+      "value": "50",
+      "unit": "nM",
+      "relation": "="
+    },
+    {
+      "record_id": "S3",
+      "target_id": "T2",
+      "assay_id": "A1",
+      "endpoint": "IC50",
+      "value": "50",
+      "unit": "nM",
+      "relation": "="
+    },
+    {
+      "record_id": "S4",
+      "target_id": "T1",
+      "assay_id": "A1",
+      "endpoint": "IC50",
+      "value": "-2",
+      "unit": "nM",
+      "relation": "="
+    }
+  ]
+}

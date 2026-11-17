@@ -1,51 +1,28 @@
-# Лабораторный практикум «Операция Химера»
+# Практикум: два notebook на модуль
 
-У каждой главы есть руководство, рабочий Jupyter notebook, три задания для переноса навыка и ключ ответов. Основные notebooks содержат фактически выполненные выходы. [Benchmark](benchmarks/REPORT.md) отделяет результат запуска от обещаний точности метода. Искусственные данные, реальные измерения ESOL и подготовленный пример 1IEP имеют разные паспорта.
+[Установка и настройка среды](SETUP.md). [Разработка приложений через IDE](ide/README.md).
 
-## Установка и первый запуск
+Первый notebook сочетает пояснения с исполняемыми короткими шагами. Второй содержит три самостоятельных кейса без подставленных решений. Работа над приложением ведётся в IDE; notebook сохраняет постановку и доказательства.
 
-В корне репозитория, Python 3.12:
-
-```powershell
-python -m venv .venv-course
-.venv-course\Scripts\python.exe -m pip install -r Labs/requirements.txt
-.venv-course\Scripts\python.exe -m ipykernel install --prefix .venv-course --name course-chemistry --display-name "Chemistry course"
-.venv-course\Scripts\python.exe tools/run_labs.py --only 1
-```
-
-Для Linux/macOS используйте `python3` и `.venv-course/bin/python`. Среда проверена на Windows x64; совместимость всех комбинаций платформ и будущих версий не заявляется. В VS Code/Jupyter выберите установленное ядро этой среды. При отдельной установке JupyterLab добавьте его в ту же среду; он не нужен для автоматического запуска через nbclient.
-
-Запуск всех основных работ: `python tools/run_labs.py`. Каждая работа использует новое ядро. Для интерактивного изучения открывайте `notebooks/labXX.ipynb` и выполняйте сверху вниз. Автоматический запуск перезаписывает выходы учебных notebooks; свой вариант сохраните отдельным файлом.
-
-Проверка ядра: `python -m unittest discover -s Labs -p test_labs.py -v`. Проверка ссылок, порядка разделов и данных: `python tools/validate_course.py`.
-
-## Привязка к главам
-
-| Глава | Руководство | Исполняемый notebook | Ответы |
+| Модуль | Разбор | Самостоятельный практикум | Руководство |
 |---|---|---|---|
-| 1. Постановка и DoE | [ЛР 1](guides/lab01.md) | [lab01](notebooks/lab01.ipynb) | [ключ](solutions/lab01.md) |
-| 2. Среда | [ЛР 2](guides/lab02.md) | [lab02](notebooks/lab02.ipynb) | [ключ](solutions/lab02.md) |
-| 3. Представления | [ЛР 3](guides/lab03.md) | [lab03](notebooks/lab03.ipynb) | [ключ](solutions/lab03.md) |
-| 4. Дескрипторы | [ЛР 4](guides/lab04.md) | [lab04](notebooks/lab04.ipynb) | [ключ](solutions/lab04.md) |
-| 5. Сходство | [ЛР 5](guides/lab05.md) | [lab05](notebooks/lab05.ipynb) | [ключ](solutions/lab05.md) |
-| 6. Конформеры | [ЛР 6](guides/lab06.md) | [lab06](notebooks/lab06.ipynb) | [ключ](solutions/lab06.md) |
-| 7. Базы/измерения | [ЛР 7](guides/lab07.md) | [lab07](notebooks/lab07.ipynb) | [ключ](solutions/lab07.md) |
-| 8. Скрининг | [ЛР 8](guides/lab08.md) | [lab08](notebooks/lab08.ipynb) | [ключ](solutions/lab08.md) |
-| 9. Визуализация | [ЛР 9](guides/lab09.md) | [lab09](notebooks/lab09.ipynb) | [ключ](solutions/lab09.md) |
-| 10. Докинг | [ЛР 10](guides/lab10.md) | [lab10](notebooks/lab10.ipynb) | [ключ](solutions/lab10.md) |
-| 11. QSPR | [ЛР 11](guides/lab11.md) | [lab11](notebooks/lab11.ipynb) | [ключ](solutions/lab11.md) |
-| 12. Квантовая химия | [ЛР 12](guides/lab12.md) | [lab12](notebooks/lab12.ipynb) | [ключ](solutions/lab12.md) |
-| 13. Ретросинтез | [ЛР 13](guides/lab13.md) | [lab13](notebooks/lab13.ipynb) | [ключ](solutions/lab13.md) |
-| 14. Передача | [ЛР 14](guides/lab14.md) | [lab14](notebooks/lab14.ipynb) | [ключ](solutions/lab14.md) |
+| 1. Паспорт проекта и взаимодействие факторов | [lab01](notebooks/lab01.ipynb) | [lab01_practice](notebooks/lab01_practice.ipynb) | [Guideline](guides/lab01.md) |
+| 2. Проверяемый цифровой верстак | [lab02](notebooks/lab02.ipynb) | [lab02_practice](notebooks/lab02_practice.ipynb) | [Guideline](guides/lab02.md) |
+| 3. Идентичность, соли и таутомеры | [lab03](notebooks/lab03.ipynb) | [lab03_practice](notebooks/lab03_practice.ipynb) | [Guideline](guides/lab03.md) |
+| 4. Осмысленные дескрипторы | [lab04](notebooks/lab04.ipynb) | [lab04_practice](notebooks/lab04_practice.ipynb) | [Guideline](guides/lab04.md) |
+| 5. Поиск аналогов и Танимото | [lab05](notebooks/lab05.ipynb) | [lab05_practice](notebooks/lab05_practice.ipynb) | [Guideline](guides/lab05.md) |
+| 6. Ансамбль конформеров бутана | [lab06](notebooks/lab06.ipynb) | [lab06_practice](notebooks/lab06_practice.ipynb) | [Guideline](guides/lab06.md) |
+| 7. Кураторство активности и происхождение данных | [lab07](notebooks/lab07.ipynb) | [lab07_practice](notebooks/lab07_practice.ipynb) | [Guideline](guides/lab07.md) |
+| 8. Скрининг с журналом и контролями | [lab08](notebooks/lab08.ipynb) | [lab08_practice](notebooks/lab08_practice.ipynb) | [Guideline](guides/lab08.md) |
+| 9. Отчёт, который можно прочитать без кода | [lab09](notebooks/lab09.ipynb) | [lab09_practice](notebooks/lab09_practice.ipynb) | [Guideline](guides/lab09.md) |
+| 10. Реальный redocking 1IEP | [lab10](notebooks/lab10.ipynb) | [lab10_practice](notebooks/lab10_practice.ipynb) | [Guideline](guides/lab10.md) |
+| 11. QSPR растворимости ESOL | [lab11](notebooks/lab11.ipynb) | [lab11_practice](notebooks/lab11_practice.ipynb) | [Guideline](guides/lab11.md) |
+| 12. Электронная энергия H2: RHF и DFT/PBE | [lab12](notebooks/lab12.ipynb) | [lab12_practice](notebooks/lab12_practice.ipynb) | [Guideline](guides/lab12.md) |
+| 13. Шаблонный ретросинтез и выбор маршрута | [lab13](notebooks/lab13.ipynb) | [lab13_practice](notebooks/lab13_practice.ipynb) | [Guideline](guides/lab13.md) |
+| 14. Передаваемый лабораторный конвейер | [lab14](notebooks/lab14.ipynb) | [lab14_practice](notebooks/lab14_practice.ipynb) | [Guideline](guides/lab14.md) |
 
-## Дополнительный инструмент для докинга
+## Проверяемость
 
-Для собственного запуска ЛР 10 скачайте AutoDock Vina с [официальной страницы релизов](https://github.com/forlilab/AutoDock-Vina/releases). Проверенный вариант: v1.2.7, Windows x64, `vina_1.2.7_win.exe` в `tools/bin/`; на другой платформе команда `vina` должна быть в PATH. Бинарник в Git не включён. Данные tutorial уже находятся в datasets, сеть во время самого расчёта не нужна. Без Vina notebook разбирает официальный выход и явно указывает ограниченный режим.
+[Свежие запуски](benchmarks/paired-execution.json) разделяют исполнение разбора, проверку незаполненного каркаса и авторскую проверку эталонных решений. NOT_RUN у самостоятельного задания означает, что ученик его ещё не решил. PASS численного контракта не оценивает интерпретацию, приложение или защиту. Исторический аудит Issue #1 относится к исходному commit и не сертифицирует эту новую редакцию.
 
-## Итоговое приложение
-
-`python -m streamlit run Labs/app.py` открывает локальный интерфейс загрузки CSV. CLI: `python Labs/pipeline.py Labs/datasets/molecules.csv --out Labs/results/final`. Оба используют одну политику. Лимит приложения: 1 МБ / 500 строк. Полный отчёт включает ошибки, причины и паспорт. `eligible` означает только отсутствие перечисленных предупреждений.
-
-## Дидактический маршрут
-
-Сначала закрыть ответы и сделать прогноз. Затем выполнить разобранный пример, проверить отрицательный контроль и объяснить результат. После этого изменить вход самостоятельно и записать ограничение. На следующей неделе повторить первую тренировочную задачу без подсказки. Рубрика каждой работы оценивает исполнение и понимание отдельно.
+Quickstart в Stepik_course/practice и старое DFT-дополнение — вспомогательные материалы прежней версии; действующий маршрут состоит ровно из 28 notebooks в этой таблице. DFT включён в основной разбор модуля 12.

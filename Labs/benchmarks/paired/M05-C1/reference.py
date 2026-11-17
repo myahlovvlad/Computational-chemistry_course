@@ -1,0 +1,1 @@
+a,b,c=[set(case_input[k]) for k in ['A','B','C']]; f=lambda x,y:len(x&y)/len(x|y) if x|y else 1.;answer={'AB':f(a,b),'AC':f(a,c)}

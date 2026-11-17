@@ -204,7 +204,9 @@ print("Запуск сохранён:",OUT/"benchmark.json")
                      "lab":f"Labs/guides/lab{number:02d}.md","notebook":f"Labs/notebooks/lab{number:02d}.ipynb",
                      "solutions":f"Labs/solutions/lab{number:02d}.md","title":lab['title']})
  (ROOT/"course-manifest.json").write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding="utf-8")
- print("Built",len(manifest),"theory chapters, guides, answer keys and notebooks")
+ from build_paired_labs import build as build_pairs
+ build_pairs()
+ print("Built",len(manifest),"theory chapters and paired laboratory notebooks")
 
 
 if __name__=="__main__":main()

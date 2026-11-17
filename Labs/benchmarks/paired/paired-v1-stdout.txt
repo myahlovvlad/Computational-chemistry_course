@@ -1,0 +1,115 @@
+{
+  "source": "/mnt/c/Users/Miakhlov/Documents/GitHub/Computational chemistry_course/tmp/paired-case-notebooks-20261117",
+  "target": "/home/miakhlov/course-notebooks",
+  "backup": "/home/miakhlov/course-notebooks-before-pairs-20261117-135900",
+  "active_notebooks": 28
+}
+{
+  "kernel": "chemistry-course-uv",
+  "path": "/home/miakhlov/.local/share/jupyter/kernels/chemistry-course-uv",
+  "project": "/home/miakhlov/course-notebooks",
+  "argv": [
+    "/home/miakhlov/.local/bin/uv",
+    "run",
+    "--frozen",
+    "--project",
+    "/home/miakhlov/course-notebooks",
+    "python",
+    "-m",
+    "ipykernel_launcher",
+    "-f",
+    "{connection_file}"
+  ]
+}
+{
+  "status": "PASS",
+  "platform": "Linux-6.18.58.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "scope": "environment preflight only, not completed exercises",
+  "checks": [
+    {
+      "id": "linux",
+      "status": "PASS",
+      "actual": "linux"
+    },
+    {
+      "id": "python-3.12",
+      "status": "PASS",
+      "actual": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]"
+    },
+    {
+      "id": "project-venv",
+      "status": "PASS",
+      "actual": "/home/miakhlov/course-notebooks/.venv/bin/python"
+    },
+    {
+      "id": "rdkit",
+      "status": "PASS",
+      "actual": "2026.9.1"
+    },
+    {
+      "id": "numpy",
+      "status": "PASS",
+      "actual": "2.5.4"
+    },
+    {
+      "id": "pandas",
+      "status": "PASS",
+      "actual": "3.1.1"
+    },
+    {
+      "id": "scikit-learn",
+      "status": "PASS",
+      "actual": "1.9.1"
+    },
+    {
+      "id": "nbformat",
+      "status": "PASS",
+      "actual": "5.11.1"
+    },
+    {
+      "id": "nbclient",
+      "status": "PASS",
+      "actual": "0.11.0"
+    },
+    {
+      "id": "ipykernel",
+      "status": "PASS",
+      "actual": "7.4.0"
+    },
+    {
+      "id": "jupyterlab",
+      "status": "PASS",
+      "actual": "4.6.6"
+    },
+    {
+      "id": "pyscf",
+      "status": "PASS",
+      "actual": "2.15.1"
+    },
+    {
+      "id": "streamlit",
+      "status": "PASS",
+      "actual": "1.67.0"
+    },
+    {
+      "id": "uv",
+      "status": "PASS",
+      "actual": {
+        "path": "/home/miakhlov/.local/bin/uv",
+        "version": "uv 0.13.8 (x86_64-unknown-linux-gnu)"
+      }
+    },
+    {
+      "id": "vina",
+      "status": "PASS",
+      "actual": {
+        "path": "/home/miakhlov/.local/bin/vina",
+        "version": "AutoDock Vina v1.2.7"
+      }
+    }
+  ]
+}
+README.md -> Stepik_course/02_PROGRAM.md
+README.md -> Stepik_course/03_STEPIK.md
+README.md -> Stepik_course/05_MEDIA.md
+README.md -> Stepik_course/media/interactive.html

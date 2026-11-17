@@ -1,38 +1,41 @@
-# Ответы к лабораторной работе 11: QSPR растворимости ESOL
+# Ключ преподавателя: модуль 11
 
-## Контрольный результат
+Решения самостоятельных кейсов. Открывать после собственной попытки. Численная проверка не оценивает научную интерпретацию; IDE-кейсы требуют запуска приложения и рецензии.
 
-Identity:901/227, MAE RF≈0,497; scaffold:1009/119, MAE RF≈0,716 для зафиксированных зависимостей и seed. Эти значения не универсальная точность.
 
-## Ответы на задания
+## M11-C1. Выбрать ошибку, а не красивое R²
 
-1. Размеры групп различны; ациклические структуры собраны в одну группу.
-2. Нужно сохранить ID, measured/predicted и интерпретацию, а не перекраивать test после просмотра.
-3. Среднее и разброс нескольких заранее заданных splits лучше описывают устойчивость; настройка остаётся отдельно.
+Ошибка имеет единицы target; R² и MAE описывают разные аспекты.
 
-## Как разбирать расхождение
-
-Сначала сравните вход, единицы и режим выполнения. Затем проверьте версии и параметры, после этого — собственную интерпретацию. Для численного расхождения сохраните исходные значения и residual; для структурного — raw/parent и политику. Статус «получен эталонный выход из файла» нельзя подписывать «я выполнил расчёт».
-
-## Готовый скрипт
-
-Тот же скрипт полностью включён в notebook. Общие научные функции находятся в `Labs/chemistry.py`, `Labs/h2_scf.py`, `Labs/docking.py`, `Labs/train_esol.py` и `Labs/pipeline.py` в зависимости от работы.
 
 ```python
-from train_esol import run
-result=run(DATA/"esol.csv",OUT)
-display(pd.json_normalize(result["splits"],sep="."))
-assert result["rows"]==1128 and result["unique_identity"]==1117
-for split in result["splits"].values():
-    assert split["metrics"]["random_forest"]["MAE_logS"] < split["metrics"]["mean_baseline"]["MAE_logS"]
-predictions=pd.read_csv(OUT/"scaffold_predictions.csv")
-predictions["absolute_error"]=abs(predictions.measured_logS-predictions.predicted)
-display(predictions.nlargest(5,"absolute_error"))
-plt.scatter(predictions.measured_logS,predictions.predicted,alpha=0.6)
-plt.plot([-10,2],[-10,2],"k--");plt.xlabel("Measured logS");plt.ylabel("Predicted logS")
-plt.savefig(OUT/"parity.png",dpi=150);plt.show()
-artifact=result
-
+case_input = {'y': [-3, -2, -1], 'A': [-2.5, -2.5, -1], 'B': [-2, -2, -2]}
+y=np.array(case_input['y']);answer={'MAE_A':float(np.abs(y-case_input['A']).mean()),'MAE_B':float(np.abs(y-case_input['B']).mean()),'units':'logS'}
 ```
 
-**Рубеж понимания:** сумейте объяснить хотя бы один отрицательный контроль и одно недопустимое обобщение этого результата. Численный эталон описывает конкретную постановку, не универсальную гарантию.
+
+Ожидаемый численный контракт: `{"MAE_A": 0.3333333333333333, "MAE_B": 0.6666666666666666, "units": "logS"}`.
+
+
+## M11-C2. Сериализации протекли через split
+
+Identity-группировка устраняет этот вид утечки; каркасная и временная зависимость остаются отдельными вопросами.
+
+
+```python
+case_input = {'smiles': ['CCO', 'OCC', 'CCN', 'NCC'], 'train': [0, 2], 'test': [1, 3]}
+from rdkit import Chem
+from sklearn.model_selection import GroupShuffleSplit
+g=[Chem.MolToSmiles(Chem.MolFromSmiles(s),isomericSmiles=True) for s in case_input['smiles']]; overlap=sorted({g[i] for i in case_input['train']}&{g[i] for i in case_input['test']});tr,te=next(GroupShuffleSplit(n_splits=1,test_size=.5,random_state=42).split(np.zeros((4,1)),groups=g));answer={'leaked_identities':overlap,'group_split_has_overlap':bool({g[i] for i in tr}&{g[i] for i in te})}
+```
+
+
+Ожидаемый численный контракт: `{"leaked_identities": ["CCN", "CCO"], "group_split_has_overlap": false}`.
+
+
+## M11-C3. Пять крупнейших ошибок ESOL
+
+Рубрика требует сохранённые predictions, baseline и ограничения применимости; хорошее число не является оценкой переноса.
+
+
+Рубрика: проверить каждый из трёх пунктов условия по фактическому артефакту. Отдельно оценить происхождение входов, допустимость вывода и независимость переноса. Отсутствие результата — NOT_RUN; отсутствие необходимой среды/реализации — BLOCKED.

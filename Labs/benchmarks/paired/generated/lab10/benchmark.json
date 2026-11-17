@@ -1,0 +1,33 @@
+{
+  "module": 10,
+  "scope": "worked reference execution",
+  "python": "/home/miakhlov/course-notebooks/.venv/bin/python",
+  "elapsed_seconds": 52.59056038899962,
+  "result": {
+    "mode": "executed-vina",
+    "score": -13.286,
+    "rmsd_angstrom": 0.8968616151652141,
+    "rmsd_definition": "heavy atom serials, receptor frame, no symmetry correction",
+    "official_reference_rmsd_angstrom": 0.906728765427707,
+    "command": [
+      "/home/miakhlov/.local/bin/vina",
+      "--receptor",
+      "/home/miakhlov/course-notebooks/Labs/datasets/docking/1iep_receptor.pdbqt",
+      "--ligand",
+      "/home/miakhlov/course-notebooks/Labs/datasets/docking/1iep_ligand.pdbqt",
+      "--config",
+      "/home/miakhlov/course-notebooks/Labs/datasets/docking/1iep_receptor.box.txt",
+      "--seed",
+      "42",
+      "--cpu",
+      "1",
+      "--exhaustiveness",
+      "8",
+      "--num_modes",
+      "9",
+      "--out",
+      "/home/miakhlov/course-notebooks/Labs/results/lab10/worked/redocked.pdbqt"
+    ],
+    "binary_sha256": "f31f774f723bba7bbe6e9d1c47577020eea9a8da16424284c043d22593570644"
+  }
+}

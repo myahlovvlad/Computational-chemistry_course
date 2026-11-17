@@ -1,0 +1,1 @@
+ys=[math.prod(case_input[k]['yields']) for k in ['A','B']];answer={'yields':ys,'normalized_costs':[case_input[k]['cost']/y for k,y in zip(['A','B'],ys)]}

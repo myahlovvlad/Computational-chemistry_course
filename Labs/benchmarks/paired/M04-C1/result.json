@@ -1,0 +1,17 @@
+{
+  "id": "M04-C1",
+  "scope": "author numeric reference only, not learner completion",
+  "status": "PASS",
+  "reason": "Совпадает только указанный численный контракт",
+  "started_utc": "2026-11-17T11:01:25.177055+00:00",
+  "wall_seconds": 0.0010900630004471168,
+  "actual": {
+    "ethanol_MW": 46.069,
+    "ethanol_HBD": 1,
+    "ethanol_HBA": 1,
+    "benzene_TPSA": 0.0
+  },
+  "reference": "reference.py",
+  "inputs": "input.json",
+  "command": "uv run --frozen python tools/run_labs.py --output <new-directory> (author-reference stage)"
+}

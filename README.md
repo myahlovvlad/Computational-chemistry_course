@@ -8,22 +8,22 @@
 
 ## Читать и выполнять
 
-| № | Теория | Практикум | Jupyter notebook |
-|---|---|---|---|
-| 1 | [Модуль 1. Вычислительный эксперимент: от красивого результата к решению лаборатории](Module_theory/Module%201_SDLC.md) | [Guideline](Labs/guides/lab01.md) | [Рабочий пример](Labs/notebooks/lab01.ipynb) |
-| 2 | [Модуль 2. Цифровой верстак: от установки к первому проверенному результату](Module_theory/Module%202_Setup%20Workharness.md) | [Guideline](Labs/guides/lab02.md) | [Рабочий пример](Labs/notebooks/lab02.ipynb) |
-| 3 | [Модуль 3. Молекула в компьютере: от строки к химической идентичности](Module_theory/Module%203_compound%20and%20reaction-representation.md) | [Guideline](Labs/guides/lab03.md) | [Рабочий пример](Labs/notebooks/lab03.ipynb) |
-| 4 | [Модуль 4. Дескрипторы: от структуры к признакам с физическим смыслом](Module_theory/Module%204_Descriptor.md) | [Guideline](Labs/guides/lab04.md) | [Рабочий пример](Labs/notebooks/lab04.ipynb) |
-| 5 | [Модуль 5. Поиск аналогов: от отпечатка к проверяемой гипотезе](Module_theory/Module%205_Fingerprinter_Farmacophore.md) | [Guideline](Labs/guides/lab05.md) | [Рабочий пример](Labs/notebooks/lab05.ipynb) |
-| 6 | [Модуль 6. Конформеры: от плоской формулы к проверенной геометрии](Module_theory/Module%206_Moleculr%20mechanics.md) | [Guideline](Labs/guides/lab06.md) | [Рабочий пример](Labs/notebooks/lab06.ipynb) |
-| 7 | [Модуль 7. Химические данные: от скачанной таблицы к сопоставимым измерениям](Module_theory/Module%207_Database.md) | [Guideline](Labs/guides/lab07.md) | [Рабочий пример](Labs/notebooks/lab07.ipynb) |
-| 8 | [Модуль 8. Воронка скрининга: от предупреждения к обоснованной проверке](Module_theory/Module%208_Screening.md) | [Guideline](Labs/guides/lab08.md) | [Рабочий пример](Labs/notebooks/lab08.ipynb) |
-| 9 | [Модуль 9. Научный отчёт: от эффектной картинки к понятному решению](Module_theory/Module%209_Visualization.md) | [Guideline](Labs/guides/lab09.md) | [Рабочий пример](Labs/notebooks/lab09.ipynb) |
-| 10 | [Модуль 10. Докинг: от рейтинга score к проверке протокола](Module_theory/Module%2010_docking.md) | [Guideline](Labs/guides/lab10.md) | [Рабочий пример](Labs/notebooks/lab10.ipynb) |
-| 11 | [Модуль 11. QSAR/QSPR: от красивой метрики к честной оценке переноса](Module_theory/Module%2011_QSAR.md) | [Guideline](Labs/guides/lab11.md) | [Рабочий пример](Labs/notebooks/lab11.ipynb) |
-| 12 | [Модуль 12. Квантовая химия: от энергии в файле к физическому выводу](Module_theory/Module%2012_quatium%20chemistry.md) | [Guideline](Labs/guides/lab12.md) | [Рабочий пример](Labs/notebooks/lab12.ipynb) |
-| 13 | [Модуль 13. Ретросинтез: от предложенной стрелки к проверяемому маршруту](Module_theory/Module%2013_retrosynthesis.md) | [Guideline](Labs/guides/lab13.md) | [Рабочий пример](Labs/notebooks/lab13.ipynb) |
-| 14 | [Модуль 14. Передача инструмента: от рабочего ноутбука к воспроизводимому решению](Module_theory/Module%2014_SDLS-workflow%20development_web%20app.md) | [Guideline](Labs/guides/lab14.md) | [Рабочий пример](Labs/notebooks/lab14.ipynb) |
+| № | Теория | Руководство | Разбор кейсов | Самостоятельные кейсы |
+|---|---|---|---|---|
+| 1 | [Модуль 1. Вычислительный эксперимент: от красивого результата к решению лаборатории](Module_theory/Module%201_SDLC.md) | [Guideline](Labs/guides/lab01.md) | [Разбор](Labs/notebooks/lab01.ipynb) | [Практикум](Labs/notebooks/lab01_practice.ipynb) |
+| 2 | [Модуль 2. Цифровой верстак: от установки к первому проверенному результату](Module_theory/Module%202_Setup%20Workharness.md) | [Guideline](Labs/guides/lab02.md) | [Разбор](Labs/notebooks/lab02.ipynb) | [Практикум](Labs/notebooks/lab02_practice.ipynb) |
+| 3 | [Модуль 3. Молекула в компьютере: от строки к химической идентичности](Module_theory/Module%203_compound%20and%20reaction-representation.md) | [Guideline](Labs/guides/lab03.md) | [Разбор](Labs/notebooks/lab03.ipynb) | [Практикум](Labs/notebooks/lab03_practice.ipynb) |
+| 4 | [Модуль 4. Дескрипторы: от структуры к признакам с физическим смыслом](Module_theory/Module%204_Descriptor.md) | [Guideline](Labs/guides/lab04.md) | [Разбор](Labs/notebooks/lab04.ipynb) | [Практикум](Labs/notebooks/lab04_practice.ipynb) |
+| 5 | [Модуль 5. Поиск аналогов: от отпечатка к проверяемой гипотезе](Module_theory/Module%205_Fingerprinter_Farmacophore.md) | [Guideline](Labs/guides/lab05.md) | [Разбор](Labs/notebooks/lab05.ipynb) | [Практикум](Labs/notebooks/lab05_practice.ipynb) |
+| 6 | [Модуль 6. Конформеры: от плоской формулы к проверенной геометрии](Module_theory/Module%206_Moleculr%20mechanics.md) | [Guideline](Labs/guides/lab06.md) | [Разбор](Labs/notebooks/lab06.ipynb) | [Практикум](Labs/notebooks/lab06_practice.ipynb) |
+| 7 | [Модуль 7. Химические данные: от скачанной таблицы к сопоставимым измерениям](Module_theory/Module%207_Database.md) | [Guideline](Labs/guides/lab07.md) | [Разбор](Labs/notebooks/lab07.ipynb) | [Практикум](Labs/notebooks/lab07_practice.ipynb) |
+| 8 | [Модуль 8. Воронка скрининга: от предупреждения к обоснованной проверке](Module_theory/Module%208_Screening.md) | [Guideline](Labs/guides/lab08.md) | [Разбор](Labs/notebooks/lab08.ipynb) | [Практикум](Labs/notebooks/lab08_practice.ipynb) |
+| 9 | [Модуль 9. Научный отчёт: от эффектной картинки к понятному решению](Module_theory/Module%209_Visualization.md) | [Guideline](Labs/guides/lab09.md) | [Разбор](Labs/notebooks/lab09.ipynb) | [Практикум](Labs/notebooks/lab09_practice.ipynb) |
+| 10 | [Модуль 10. Докинг: от рейтинга score к проверке протокола](Module_theory/Module%2010_docking.md) | [Guideline](Labs/guides/lab10.md) | [Разбор](Labs/notebooks/lab10.ipynb) | [Практикум](Labs/notebooks/lab10_practice.ipynb) |
+| 11 | [Модуль 11. QSAR/QSPR: от красивой метрики к честной оценке переноса](Module_theory/Module%2011_QSAR.md) | [Guideline](Labs/guides/lab11.md) | [Разбор](Labs/notebooks/lab11.ipynb) | [Практикум](Labs/notebooks/lab11_practice.ipynb) |
+| 12 | [Модуль 12. Квантовая химия: от энергии в файле к физическому выводу](Module_theory/Module%2012_quatium%20chemistry.md) | [Guideline](Labs/guides/lab12.md) | [Разбор](Labs/notebooks/lab12.ipynb) | [Практикум](Labs/notebooks/lab12_practice.ipynb) |
+| 13 | [Модуль 13. Ретросинтез: от предложенной стрелки к проверяемому маршруту](Module_theory/Module%2013_retrosynthesis.md) | [Guideline](Labs/guides/lab13.md) | [Разбор](Labs/notebooks/lab13.ipynb) | [Практикум](Labs/notebooks/lab13_practice.ipynb) |
+| 14 | [Модуль 14. Передача инструмента: от рабочего ноутбука к воспроизводимому решению](Module_theory/Module%2014_SDLS-workflow%20development_web%20app.md) | [Guideline](Labs/guides/lab14.md) | [Разбор](Labs/notebooks/lab14.ipynb) | [Практикум](Labs/notebooks/lab14_practice.ipynb) |
 
 ## С чего начать
 
@@ -32,9 +32,9 @@
 3. Выполнить ЛР 1–3 с прогнозом до запуска и отрицательным контролем.
 4. Продолжить по номерам; докинг и квантовая химия имеют отдельные предпосылки. Завершить передачей конвейера в главе 14.
 
-Выполнены все 14 основных notebooks в отдельных ядрах. [Benchmark с фактическими результатами](Labs/benchmarks/REPORT.md) содержит режимы исполнения, параметры и ограничения. Реально запущены Vina 1IEP, Random Forest на ESOL, многоконформерный MMFF, RHF H2 и один шаблонный ретросинтетический шаг. Дополнительный PySCF/DFT notebook выделен отдельно и не входит в проверенные Windows-запуски.
+Действующий практикум состоит из 14 пар / 28 notebooks: объяснённые расчёты и 42 самостоятельных кейса. DFT входит в разбор модуля 12. Приложения модуля 14 создаются в [IDE](Labs/ide/README.md). [Журнал новой редакции](Labs/benchmarks/paired-execution.json) отделяет запуск разбора, пустого каркаса и авторскую проверку эталонных решений; самостоятельное выполнение учениками не заявляется.
 
-Проверенная среда: Python 3.12.10 / Windows x64. Основные зависимости закреплены в `Labs/requirements.txt`; для Vina нужен отдельный официальный бинарник. Наборы данных и их hash опубликованы с [паспортами](Labs/datasets/README.md). Искусственные значения не выдаются за экспериментальные измерения.
+Полный маршрут использует WSL/Ubuntu, Python 3.12 и uv с `uv.lock`. [Инструкция установки](Labs/SETUP.md) включает Jupyter и IDE. Для Vina нужен отдельный Linux-бинарник в PATH. Наборы данных и их hash опубликованы с [паспортами](Labs/datasets/README.md). Искусственные значения не выдаются за экспериментальные измерения.
 
 ## Книги и визуальные материалы
 

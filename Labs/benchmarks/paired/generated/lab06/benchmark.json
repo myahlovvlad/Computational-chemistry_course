@@ -1,0 +1,12 @@
+{
+  "module": 6,
+  "scope": "worked reference execution",
+  "python": "/home/miakhlov/course-notebooks/.venv/bin/python",
+  "elapsed_seconds": 0.18358672500016837,
+  "result": {
+    "generated": 4,
+    "converged": 4,
+    "minimum": -5.0759733404594956,
+    "seed": 42
+  }
+}

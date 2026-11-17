@@ -1,0 +1,10 @@
+{
+  "smiles": "CCCC",
+  "atoms": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "target_degrees": 60
+}

@@ -1,0 +1,912 @@
+{
+  "scope": "author reference and scaffold checks; no learner grading",
+  "argv": [
+    "tools/run_labs.py",
+    "--output",
+    "Labs/executed/paired-v1-01"
+  ],
+  "cwd": "/home/miakhlov/course-notebooks",
+  "environment": "environment.json",
+  "notebooks": [
+    {
+      "module": 1,
+      "role": "worked",
+      "status": "PASS",
+      "scope": "worked reference execution",
+      "source": "Labs/notebooks/lab01.ipynb",
+      "input_sha256": "9a6589d0a77e88ebf8d2b40db627a89efd94a05f28b92e46bb922740f6ebc12a",
+      "kernel": "chemistry-course-uv",
+      "started_utc": "2026-11-17T10:59:47.046046+00:00",
+      "wall_seconds": 1.9915566170002421,
+      "executed_copy": "lab01.ipynb",
+      "error": ""
+    },
+    {
+      "module": 1,
+      "role": "practice",
+      "status": "PASS",
+      "scope": "scaffold infrastructure only; learner cases NOT_RUN",
+      "source": "Labs/notebooks/lab01_practice.ipynb",
+      "input_sha256": "54f9f0a7476c29c08e0e1a796a0012d348cb58d83ee12d7d52fa8d73bc730656",
+      "kernel": "chemistry-course-uv",
+      "started_utc": "2026-11-17T10:59:49.039252+00:00",
+      "wall_seconds": 1.429541409000194,
+      "executed_copy": "lab01_practice.ipynb",
+      "error": ""
+    },
+    {
+      "module": 2,
+      "role": "worked",
+      "status": "PASS",
+      "scope": "worked reference execution",
+      "source": "Labs/notebooks/lab02.ipynb",
+      "input_sha256": "a0299a8fddba2093c931cf4ec359c5ea506affe2023d5cd07e28784edb568359",
+      "kernel": "chemistry-course-uv",
+      "started_utc": "2026-11-17T10:59:50.469720+00:00",
+      "wall_seconds": 1.3758421069996984,
+      "executed_copy": "lab02.ipynb",
+      "error": ""
+    },
+    {
+      "module": 2,
+      "role": "practice",
+      "status": "PASS",
+      "scope": "scaffold infrastructure only; learner cases NOT_RUN",
+      "source": "Labs/notebooks/lab02_practice.ipynb",
+      "input_sha256": "3f1e5c57a7e0d4f6a04ea6385bdc61b1fc1022fa1a2e4ee9ba20a360b54a3f33",
+      "kernel": "chemistry-course-uv",
+      "started_utc": "2026-11-17T10:59:51.847078+00:00",
+      "wall_seconds": 1.3309539570000197,
+      "executed_copy": "lab02_practice.ipynb",
+      "error": ""
+    },
+    {
+      "module": 3,
+      "role": "worked",
+      "status": "PASS",
+      "scope": "worked reference execution",
+      "source": "Labs/notebooks/lab03.ipynb",
+      "input_sha256": "f17d78fbe4f39e5f53912b02d457ec6fa38139613690b955d1943ad3e723266f",
+      "kernel": "chemistry-course-uv",
+      "started_utc": "2026-11-17T10:59:53.179078+00:00",
+      "wall_seconds": 1.6355299549995834,
+      "executed_copy": "lab03.ipynb",
+      "error": ""
+    },
+    {
+      "module": 3,
+      "role": "practice",
+      "status": "PASS",
+      "scope": "scaffold infrastructure only; learner cases NOT_RUN",
+      "source": "Labs/notebooks/lab03_practice.ipynb",
+      "input_sha256": "b120156e7a6a87416ed06b6352febcd0607b0a1eb078b32df5db730270f6ce00",
+      "kernel": "chemistry-course-uv",
+      "started_utc": "2026-11-17T10:59:54.816422+00:00",
+      "wall_seconds": 1.3411926190001395,
+      "executed_copy": "lab03_practice.ipynb",
+      "error": ""
+    },
+    {
+      "module": 4,
+      "role": "worked",
+      "status": "PASS",
+      "scope": "worked reference execution",
+      "source": "Labs/notebooks/lab04.ipynb",
+      "input_sha256": "68149da7929bba7312d8dea0f554035f14ba7cc9a05239485fff57c630dd02fc",
+      "kernel": "chemistry-course-uv",
+      "started_utc": "2026-11-17T10:59:56.158307+00:00",
+      "wall_seconds": 1.3022288500005743,
+      "executed_copy": "lab04.ipynb",
+      "error": ""
+    },
+    {
+      "module": 4,
+      "role": "practice",
+      "status": "PASS",
+      "scope": "scaffold infrastructure only; learner cases NOT_RUN",
+      "source": "Labs/notebooks/lab04_practice.ipynb",
+      "input_sha256": "0d6cbc7b21d0621a24de3f395198c3f45ac8b561441b95cdc4105833b9e3b406",
+      "kernel": "chemistry-course-uv",
+      "started_utc": "2026-11-17T10:59:57.461399+00:00",
+      "wall_seconds": 1.4515593969999827,
+      "executed_copy": "lab04_practice.ipynb",
+      "error": ""
+    },
+    {
+      "module": 5,
+      "role": "worked",
+      "status": "PASS",
+      "scope": "worked reference execution",
+      "source": "Labs/notebooks/lab05.ipynb",
+      "input_sha256": "d4f81c5cba9474f87913dd072fd730ab128c73c594df7fd1ab3eab43556be8e8",
+      "kernel": "chemistry-course-uv",
+      "started_utc": "2026-11-17T10:59:58.914224+00:00",
+      "wall_seconds": 1.4894488870004352,
+      "executed_copy": "lab05.ipynb",
+      "error": ""
+    },
+    {
+      "module": 5,
+      "role": "practice",
+      "status": "PASS",
+      "scope": "scaffold infrastructure only; learner cases NOT_RUN",
+      "source": "Labs/notebooks/lab05_practice.ipynb",
+      "input_sha256": "6971b64b72ce774630a681d2807df6f00b9fdbac5ad06b6a884e1d7dbd0e775f",
+      "kernel": "chemistry-course-uv",
+      "started_utc": "2026-11-17T11:00:00.405010+00:00",
+      "wall_seconds": 1.3806866280001486,
+      "executed_copy": "lab05_practice.ipynb",
+      "error": ""
+    },
+    {
+      "module": 6,
+      "role": "worked",
+      "status": "PASS",
+      "scope": "worked reference execution",
+      "source": "Labs/notebooks/lab06.ipynb",
+      "input_sha256": "a23c023e0e2a19124890910821db95c234458fe833046bc0ac473772bea21988",
+      "kernel": "chemistry-course-uv",
+      "started_utc": "2026-11-17T11:00:01.786408+00:00",
+      "wall_seconds": 1.3480760140000712,
+      "executed_copy": "lab06.ipynb",
+      "error": ""
+    },
+    {
+      "module": 6,
+      "role": "practice",
+      "status": "PASS",
+      "scope": "scaffold infrastructure only; learner cases NOT_RUN",
+      "source": "Labs/notebooks/lab06_practice.ipynb",
+      "input_sha256": "525687bf53141844de8fa24fc8b36b5e06f4b15ffc2672ee53e3036c5c659c6a",
+      "kernel": "chemistry-course-uv",
+      "started_utc": "2026-11-17T11:00:03.136772+00:00",
+      "wall_seconds": 1.3979795549994378,
+      "executed_copy": "lab06_practice.ipynb",
+      "error": ""
+    },
+    {
+      "module": 7,
+      "role": "worked",
+      "status": "PASS",
+      "scope": "worked reference execution",
+      "source": "Labs/notebooks/lab07.ipynb",
+      "input_sha256": "476d4d6c6fcab3945b97298778ba45ab9b8d8f2033fda38481be24abff01565d",
+      "kernel": "chemistry-course-uv",
+      "started_utc": "2026-11-17T11:00:04.535469+00:00",
+      "wall_seconds": 1.3481108270007098,
+      "executed_copy": "lab07.ipynb",
+      "error": ""
+    },
+    {
+      "module": 7,
+      "role": "practice",
+      "status": "PASS",
+      "scope": "scaffold infrastructure only; learner cases NOT_RUN",
+      "source": "Labs/notebooks/lab07_practice.ipynb",
+      "input_sha256": "24f5136b590b646c20b2f72219e32f77470294c4cfb5f0fe304f3f9a91a96ccd",
+      "kernel": "chemistry-course-uv",
+      "started_utc": "2026-11-17T11:00:05.885515+00:00",
+      "wall_seconds": 1.4826208280001083,
+      "executed_copy": "lab07_practice.ipynb",
+      "error": ""
+    },
+    {
+      "module": 8,
+      "role": "worked",
+      "status": "PASS",
+      "scope": "worked reference execution",
+      "source": "Labs/notebooks/lab08.ipynb",
+      "input_sha256": "f2dd6ee0dc2372b6c83204aad2690d5ada6c24bfd859c67783ffc6318632c0d9",
+      "kernel": "chemistry-course-uv",
+      "started_utc": "2026-11-17T11:00:07.369410+00:00",
+      "wall_seconds": 1.5352519440002652,
+      "executed_copy": "lab08.ipynb",
+      "error": ""
+    },
+    {
+      "module": 8,
+      "role": "practice",
+      "status": "PASS",
+      "scope": "scaffold infrastructure only; learner cases NOT_RUN",
+      "source": "Labs/notebooks/lab08_practice.ipynb",
+      "input_sha256": "bbd74ac51e66077536a8d82bbddafa32b88620b16c8c105a07a2681220c7536c",
+      "kernel": "chemistry-course-uv",
+      "started_utc": "2026-11-17T11:00:08.906557+00:00",
+      "wall_seconds": 1.3845395919997827,
+      "executed_copy": "lab08_practice.ipynb",
+      "error": ""
+    },
+    {
+      "module": 9,
+      "role": "worked",
+      "status": "PASS",
+      "scope": "worked reference execution",
+      "source": "Labs/notebooks/lab09.ipynb",
+      "input_sha256": "76d009c4756665d63544dd673772abfc976d5d0c0763767f1c2977d4d5265ab9",
+      "kernel": "chemistry-course-uv",
+      "started_utc": "2026-11-17T11:00:10.292394+00:00",
+      "wall_seconds": 1.5859277890003796,
+      "executed_copy": "lab09.ipynb",
+      "error": ""
+    },
+    {
+      "module": 9,
+      "role": "practice",
+      "status": "PASS",
+      "scope": "scaffold infrastructure only; learner cases NOT_RUN",
+      "source": "Labs/notebooks/lab09_practice.ipynb",
+      "input_sha256": "4ca4f578eff7dcd239c65e70dd726e8b74a5bb353a7e9084f6303df66afabf4a",
+      "kernel": "chemistry-course-uv",
+      "started_utc": "2026-11-17T11:00:11.880304+00:00",
+      "wall_seconds": 1.3396791650002342,
+      "executed_copy": "lab09_practice.ipynb",
+      "error": ""
+    },
+    {
+      "module": 10,
+      "role": "worked",
+      "status": "PASS",
+      "scope": "worked reference execution",
+      "source": "Labs/notebooks/lab10.ipynb",
+      "input_sha256": "3390f78b7084442e64b132e5da7f09baa035bb256db2bc2c34e4efe7fcdd9c2c",
+      "kernel": "chemistry-course-uv",
+      "started_utc": "2026-11-17T11:00:13.221520+00:00",
+      "wall_seconds": 53.74165984800038,
+      "executed_copy": "lab10.ipynb",
+      "error": ""
+    },
+    {
+      "module": 10,
+      "role": "practice",
+      "status": "PASS",
+      "scope": "scaffold infrastructure only; learner cases NOT_RUN",
+      "source": "Labs/notebooks/lab10_practice.ipynb",
+      "input_sha256": "42c5131bd33bb7cd1e9744d6df268af0228e4d90c40b5654cf5a0be89b8e594b",
+      "kernel": "chemistry-course-uv",
+      "started_utc": "2026-11-17T11:01:06.964111+00:00",
+      "wall_seconds": 1.329291693000414,
+      "executed_copy": "lab10_practice.ipynb",
+      "error": ""
+    },
+    {
+      "module": 11,
+      "role": "worked",
+      "status": "PASS",
+      "scope": "worked reference execution",
+      "source": "Labs/notebooks/lab11.ipynb",
+      "input_sha256": "57faa91998da65fb1d48338094c6860734690ce355ad180b477cb59c0e77799b",
+      "kernel": "chemistry-course-uv",
+      "started_utc": "2026-11-17T11:01:08.295084+00:00",
+      "wall_seconds": 5.994683738999811,
+      "executed_copy": "lab11.ipynb",
+      "error": ""
+    },
+    {
+      "module": 11,
+      "role": "practice",
+      "status": "PASS",
+      "scope": "scaffold infrastructure only; learner cases NOT_RUN",
+      "source": "Labs/notebooks/lab11_practice.ipynb",
+      "input_sha256": "0333adc780bb050045d82ac1012b166ce670de675b2d5746db8b373682113571",
+      "kernel": "chemistry-course-uv",
+      "started_utc": "2026-11-17T11:01:14.293501+00:00",
+      "wall_seconds": 1.2578757250003036,
+      "executed_copy": "lab11_practice.ipynb",
+      "error": ""
+    },
+    {
+      "module": 12,
+      "role": "worked",
+      "status": "PASS",
+      "scope": "worked reference execution",
+      "source": "Labs/notebooks/lab12.ipynb",
+      "input_sha256": "f2d803501604d6456a516c5c54d28503b85861e1c59ed5b61bf01309969a8950",
+      "kernel": "chemistry-course-uv",
+      "started_utc": "2026-11-17T11:01:15.552178+00:00",
+      "wall_seconds": 2.3009791800004677,
+      "executed_copy": "lab12.ipynb",
+      "error": ""
+    },
+    {
+      "module": 12,
+      "role": "practice",
+      "status": "PASS",
+      "scope": "scaffold infrastructure only; learner cases NOT_RUN",
+      "source": "Labs/notebooks/lab12_practice.ipynb",
+      "input_sha256": "a37ab31c4a53caedf8a294e5042dc8f64f6b04f5a6b0ba3f7226fd80f45793f7",
+      "kernel": "chemistry-course-uv",
+      "started_utc": "2026-11-17T11:01:17.854194+00:00",
+      "wall_seconds": 1.458396347999951,
+      "executed_copy": "lab12_practice.ipynb",
+      "error": ""
+    },
+    {
+      "module": 13,
+      "role": "worked",
+      "status": "PASS",
+      "scope": "worked reference execution",
+      "source": "Labs/notebooks/lab13.ipynb",
+      "input_sha256": "27c2a7cd16df712d453d0bdc5fabd2794826f9c6713a401d5576616631e42790",
+      "kernel": "chemistry-course-uv",
+      "started_utc": "2026-11-17T11:01:19.313617+00:00",
+      "wall_seconds": 1.320265882000058,
+      "executed_copy": "lab13.ipynb",
+      "error": ""
+    },
+    {
+      "module": 13,
+      "role": "practice",
+      "status": "PASS",
+      "scope": "scaffold infrastructure only; learner cases NOT_RUN",
+      "source": "Labs/notebooks/lab13_practice.ipynb",
+      "input_sha256": "f2012c6bf91e68e46397be32255f9012d0fc8296993c30d004c0d701160893cc",
+      "kernel": "chemistry-course-uv",
+      "started_utc": "2026-11-17T11:01:20.634823+00:00",
+      "wall_seconds": 1.346156147000329,
+      "executed_copy": "lab13_practice.ipynb",
+      "error": ""
+    },
+    {
+      "module": 14,
+      "role": "worked",
+      "status": "PASS",
+      "scope": "worked reference execution",
+      "source": "Labs/notebooks/lab14.ipynb",
+      "input_sha256": "65333750a990f0e5f5a1560e99eb9564f756fca1bfdcf2f5dfd7e07d5ec6d4f9",
+      "kernel": "chemistry-course-uv",
+      "started_utc": "2026-11-17T11:01:21.981833+00:00",
+      "wall_seconds": 1.5009743470000103,
+      "executed_copy": "lab14.ipynb",
+      "error": ""
+    },
+    {
+      "module": 14,
+      "role": "practice",
+      "status": "PASS",
+      "scope": "scaffold infrastructure only; learner cases NOT_RUN",
+      "source": "Labs/notebooks/lab14_practice.ipynb",
+      "input_sha256": "638f4f8a5b4ddbec2746fc3e1e1cb4b4f9700ddbe694cc8034e8d3d7d40a78cb",
+      "kernel": "chemistry-course-uv",
+      "started_utc": "2026-11-17T11:01:23.483794+00:00",
+      "wall_seconds": 1.3798256740001307,
+      "executed_copy": "lab14_practice.ipynb",
+      "error": ""
+    }
+  ],
+  "reference_cases": [
+    {
+      "id": "M01-C1",
+      "scope": "author numeric reference only, not learner completion",
+      "status": "PASS",
+      "reason": "Совпадает только указанный численный контракт",
+      "started_utc": "2026-11-17T11:01:25.051788+00:00",
+      "wall_seconds": 0.0020706400000563008,
+      "actual": {
+        "beta": [
+          50.0,
+          10.0,
+          5.0,
+          8.0
+        ],
+        "effects": [
+          20.0,
+          10.0,
+          16.0
+        ],
+        "residual_df": 0
+      },
+      "reference": "reference.py",
+      "inputs": "input.json",
+      "command": "uv run --frozen python tools/run_labs.py --output <new-directory> (author-reference stage)"
+    },
+    {
+      "id": "M01-C2",
+      "scope": "author numeric reference only, not learner completion",
+      "status": "PASS",
+      "reason": "Совпадает только указанный численный контракт",
+      "started_utc": "2026-11-17T11:01:25.054389+00:00",
+      "wall_seconds": 0.0005088369998702547,
+      "actual": {
+        "beta": [
+          50.99999999999999,
+          10.000000000000002,
+          4.999999999999999,
+          8.0
+        ],
+        "pure_error_df": 4,
+        "pure_error_ms": 2.0
+      },
+      "reference": "reference.py",
+      "inputs": "input.json",
+      "command": "uv run --frozen python tools/run_labs.py --output <new-directory> (author-reference stage)"
+    },
+    {
+      "id": "M01-C3",
+      "status": "NOT_RUN",
+      "scope": "requires independent research/IDE artifact and human rubric"
+    },
+    {
+      "id": "M02-C1",
+      "scope": "author numeric reference only, not learner completion",
+      "status": "PASS",
+      "reason": "Совпадает только указанный численный контракт",
+      "started_utc": "2026-11-17T11:01:25.055364+00:00",
+      "wall_seconds": 0.000272066000434279,
+      "actual": {
+        "p_values": [
+          5.6020599913279625,
+          5.6020599913279625,
+          null,
+          null
+        ],
+        "statuses": [
+          "ok",
+          "ok",
+          "invalid",
+          "invalid"
+        ]
+      },
+      "reference": "reference.py",
+      "inputs": "input.json",
+      "command": "uv run --frozen python tools/run_labs.py --output <new-directory> (author-reference stage)"
+    },
+    {
+      "id": "M02-C2",
+      "scope": "author numeric reference only, not learner completion",
+      "status": "PASS",
+      "reason": "Совпадает только указанный численный контракт",
+      "started_utc": "2026-11-17T11:01:25.056034+00:00",
+      "wall_seconds": 0.0001827769992814865,
+      "actual": {
+        "same_copy": true,
+        "changed_copy": true,
+        "source_preserved": true
+      },
+      "reference": "reference.py",
+      "inputs": "input.json",
+      "command": "uv run --frozen python tools/run_labs.py --output <new-directory> (author-reference stage)"
+    },
+    {
+      "id": "M02-C3",
+      "status": "NOT_RUN",
+      "scope": "requires independent research/IDE artifact and human rubric"
+    },
+    {
+      "id": "M03-C1",
+      "scope": "author numeric reference only, not learner completion",
+      "status": "PASS",
+      "reason": "Совпадает только указанный численный контракт",
+      "started_utc": "2026-11-17T11:01:25.056589+00:00",
+      "wall_seconds": 0.10893172299984144,
+      "actual": {
+        "same_parent": true,
+        "covalent_br_retained": true,
+        "rows": 3
+      },
+      "reference": "reference.py",
+      "inputs": "input.json",
+      "command": "uv run --frozen python tools/run_labs.py --output <new-directory> (author-reference stage)"
+    },
+    {
+      "id": "M03-C2",
+      "scope": "author numeric reference only, not learner completion",
+      "status": "PASS",
+      "reason": "Совпадает только указанный численный контракт",
+      "started_utc": "2026-11-17T11:01:25.166196+00:00",
+      "wall_seconds": 0.01027230999989115,
+      "actual": {
+        "stereo_distinct": true,
+        "default_tautomers_distinct": true,
+        "explicit_tautomers_equal": true
+      },
+      "reference": "reference.py",
+      "inputs": "input.json",
+      "command": "uv run --frozen python tools/run_labs.py --output <new-directory> (author-reference stage)"
+    },
+    {
+      "id": "M03-C3",
+      "status": "NOT_RUN",
+      "scope": "requires independent research/IDE artifact and human rubric"
+    },
+    {
+      "id": "M04-C1",
+      "scope": "author numeric reference only, not learner completion",
+      "status": "PASS",
+      "reason": "Совпадает только указанный численный контракт",
+      "started_utc": "2026-11-17T11:01:25.177055+00:00",
+      "wall_seconds": 0.0010900630004471168,
+      "actual": {
+        "ethanol_MW": 46.069,
+        "ethanol_HBD": 1,
+        "ethanol_HBA": 1,
+        "benzene_TPSA": 0.0
+      },
+      "reference": "reference.py",
+      "inputs": "input.json",
+      "command": "uv run --frozen python tools/run_labs.py --output <new-directory> (author-reference stage)"
+    },
+    {
+      "id": "M04-C2",
+      "scope": "author numeric reference only, not learner completion",
+      "status": "PASS",
+      "reason": "Совпадает только указанный численный контракт",
+      "started_utc": "2026-11-17T11:01:25.179178+00:00",
+      "wall_seconds": 0.0002804649993777275,
+      "actual": {
+        "Q1": 3,
+        "Q2": 0,
+        "Q3": 1
+      },
+      "reference": "reference.py",
+      "inputs": "input.json",
+      "command": "uv run --frozen python tools/run_labs.py --output <new-directory> (author-reference stage)"
+    },
+    {
+      "id": "M04-C3",
+      "status": "NOT_RUN",
+      "scope": "requires independent research/IDE artifact and human rubric"
+    },
+    {
+      "id": "M05-C1",
+      "scope": "author numeric reference only, not learner completion",
+      "status": "PASS",
+      "reason": "Совпадает только указанный численный контракт",
+      "started_utc": "2026-11-17T11:01:25.179822+00:00",
+      "wall_seconds": 0.0003193599995938712,
+      "actual": {
+        "AB": 0.5,
+        "AC": 0.0
+      },
+      "reference": "reference.py",
+      "inputs": "input.json",
+      "command": "uv run --frozen python tools/run_labs.py --output <new-directory> (author-reference stage)"
+    },
+    {
+      "id": "M05-C2",
+      "scope": "author numeric reference only, not learner completion",
+      "status": "PASS",
+      "reason": "Совпадает только указанный численный контракт",
+      "started_utc": "2026-11-17T11:01:25.180585+00:00",
+      "wall_seconds": 0.0005751279995820369,
+      "actual": {
+        "achiral_score": 1.0,
+        "chiral_score_below_one": true,
+        "symmetric": true,
+        "self_score": 1.0
+      },
+      "reference": "reference.py",
+      "inputs": "input.json",
+      "command": "uv run --frozen python tools/run_labs.py --output <new-directory> (author-reference stage)"
+    },
+    {
+      "id": "M05-C3",
+      "status": "NOT_RUN",
+      "scope": "requires independent research/IDE artifact and human rubric"
+    },
+    {
+      "id": "M06-C1",
+      "scope": "author numeric reference only, not learner completion",
+      "status": "PASS",
+      "reason": "Совпадает только указанный численный контракт",
+      "started_utc": "2026-11-17T11:01:25.181663+00:00",
+      "wall_seconds": 0.017950146000657696,
+      "actual": {
+        "has_converged": true,
+        "finite_energy": true,
+        "energy_unit": "kcal/mol"
+      },
+      "reference": "reference.py",
+      "inputs": "input.json",
+      "command": "uv run --frozen python tools/run_labs.py --output <new-directory> (author-reference stage)"
+    },
+    {
+      "id": "M06-C2",
+      "scope": "author numeric reference only, not learner completion",
+      "status": "PASS",
+      "reason": "Совпадает только указанный численный контракт",
+      "started_utc": "2026-11-17T11:01:25.200270+00:00",
+      "wall_seconds": 0.002264815999296843,
+      "actual": {
+        "angle_degrees": 59.99999999999996,
+        "bond_length_preserved": true
+      },
+      "reference": "reference.py",
+      "inputs": "input.json",
+      "command": "uv run --frozen python tools/run_labs.py --output <new-directory> (author-reference stage)"
+    },
+    {
+      "id": "M06-C3",
+      "status": "NOT_RUN",
+      "scope": "requires independent research/IDE artifact and human rubric"
+    },
+    {
+      "id": "M07-C1",
+      "scope": "author numeric reference only, not learner completion",
+      "status": "PASS",
+      "reason": "Совпадает только указанный численный контракт",
+      "started_utc": "2026-11-17T11:01:25.202999+00:00",
+      "wall_seconds": 0.0001899760000014794,
+      "actual": {
+        "p_bound": 5.0,
+        "p_relation": "<",
+        "exact_regression_eligible": false
+      },
+      "reference": "reference.py",
+      "inputs": "input.json",
+      "command": "uv run --frozen python tools/run_labs.py --output <new-directory> (author-reference stage)"
+    },
+    {
+      "id": "M07-C2",
+      "scope": "author numeric reference only, not learner completion",
+      "status": "PASS",
+      "reason": "Совпадает только указанный численный контракт",
+      "started_utc": "2026-11-17T11:01:25.203705+00:00",
+      "wall_seconds": 0.00041714800045156153,
+      "actual": {
+        "included_ids": [
+          "S1"
+        ],
+        "p_values": [
+          7.301029995663981
+        ],
+        "excluded_reasons": [
+          "endpoint",
+          "target_id",
+          "value_or_unit"
+        ],
+        "total_rows": 4
+      },
+      "reference": "reference.py",
+      "inputs": "input.json",
+      "command": "uv run --frozen python tools/run_labs.py --output <new-directory> (author-reference stage)"
+    },
+    {
+      "id": "M07-C3",
+      "status": "NOT_RUN",
+      "scope": "requires independent research/IDE artifact and human rubric"
+    },
+    {
+      "id": "M08-C1",
+      "scope": "author numeric reference only, not learner completion",
+      "status": "PASS",
+      "reason": "Совпадает только указанный численный контракт",
+      "started_utc": "2026-11-17T11:01:25.204585+00:00",
+      "wall_seconds": 0.0002610669998830417,
+      "actual": {
+        "z_good": 0.6666666666666667,
+        "z_bad": -0.33333333333333326,
+        "ef": 5.0
+      },
+      "reference": "reference.py",
+      "inputs": "input.json",
+      "command": "uv run --frozen python tools/run_labs.py --output <new-directory> (author-reference stage)"
+    },
+    {
+      "id": "M08-C2",
+      "scope": "author numeric reference only, not learner completion",
+      "status": "PASS",
+      "reason": "Совпадает только указанный численный контракт",
+      "started_utc": "2026-11-17T11:01:25.205296+00:00",
+      "wall_seconds": 0.03936645700014196,
+      "actual": {
+        "statuses": [
+          "review",
+          "eligible",
+          "invalid"
+        ]
+      },
+      "reference": "reference.py",
+      "inputs": "input.json",
+      "command": "uv run --frozen python tools/run_labs.py --output <new-directory> (author-reference stage)"
+    },
+    {
+      "id": "M08-C3",
+      "status": "NOT_RUN",
+      "scope": "requires independent research/IDE artifact and human rubric"
+    },
+    {
+      "id": "M09-C1",
+      "scope": "author numeric reference only, not learner completion",
+      "status": "PASS",
+      "reason": "Совпадает только указанный численный контракт",
+      "started_utc": "2026-11-17T11:01:25.247703+00:00",
+      "wall_seconds": 0.18291703299928486,
+      "actual": {
+        "rows": 12,
+        "valid_structures": 10,
+        "invalid_ids": [
+          "M08",
+          "M09"
+        ]
+      },
+      "reference": "reference.py",
+      "inputs": "input.json",
+      "command": "uv run --frozen python tools/run_labs.py --output <new-directory> (author-reference stage)"
+    },
+    {
+      "id": "M09-C2",
+      "scope": "author numeric reference only, not learner completion",
+      "status": "PASS",
+      "reason": "Совпадает только указанный численный контракт",
+      "started_utc": "2026-11-17T11:01:25.432726+00:00",
+      "wall_seconds": 0.0001415820006513968,
+      "actual": {
+        "escaped_label": "&lt;script&gt;alert(1)&lt;/script&gt;"
+      },
+      "reference": "reference.py",
+      "inputs": "input.json",
+      "command": "uv run --frozen python tools/run_labs.py --output <new-directory> (author-reference stage)"
+    },
+    {
+      "id": "M09-C3",
+      "status": "NOT_RUN",
+      "scope": "requires independent research/IDE artifact and human rubric"
+    },
+    {
+      "id": "M10-C1",
+      "status": "NOT_RUN",
+      "scope": "requires independent research/IDE artifact and human rubric"
+    },
+    {
+      "id": "M10-C2",
+      "scope": "author numeric reference only, not learner completion",
+      "status": "PASS",
+      "reason": "Совпадает только указанный численный контракт",
+      "started_utc": "2026-11-17T11:01:25.433260+00:00",
+      "wall_seconds": 0.0009862759998213733,
+      "actual": {
+        "same_reference": 0.0,
+        "translated": 5.0,
+        "official_prepared": 0.906728765427707
+      },
+      "reference": "reference.py",
+      "inputs": "input.json",
+      "command": "uv run --frozen python tools/run_labs.py --output <new-directory> (author-reference stage)"
+    },
+    {
+      "id": "M10-C3",
+      "status": "NOT_RUN",
+      "scope": "requires independent research/IDE artifact and human rubric"
+    },
+    {
+      "id": "M11-C1",
+      "scope": "author numeric reference only, not learner completion",
+      "status": "PASS",
+      "reason": "Совпадает только указанный численный контракт",
+      "started_utc": "2026-11-17T11:01:25.434648+00:00",
+      "wall_seconds": 0.00021307299994077766,
+      "actual": {
+        "MAE_A": 0.3333333333333333,
+        "MAE_B": 0.6666666666666666,
+        "units": "logS"
+      },
+      "reference": "reference.py",
+      "inputs": "input.json",
+      "command": "uv run --frozen python tools/run_labs.py --output <new-directory> (author-reference stage)"
+    },
+    {
+      "id": "M11-C2",
+      "scope": "author numeric reference only, not learner completion",
+      "status": "PASS",
+      "reason": "Совпадает только указанный численный контракт",
+      "started_utc": "2026-11-17T11:01:25.435523+00:00",
+      "wall_seconds": 0.6258484330001011,
+      "actual": {
+        "leaked_identities": [
+          "CCN",
+          "CCO"
+        ],
+        "group_split_has_overlap": false
+      },
+      "reference": "reference.py",
+      "inputs": "input.json",
+      "command": "uv run --frozen python tools/run_labs.py --output <new-directory> (author-reference stage)"
+    },
+    {
+      "id": "M11-C3",
+      "status": "NOT_RUN",
+      "scope": "requires independent research/IDE artifact and human rubric"
+    },
+    {
+      "id": "M12-C1",
+      "scope": "author numeric reference only, not learner completion",
+      "status": "PASS",
+      "reason": "Совпадает только указанный численный контракт",
+      "started_utc": "2026-11-17T11:01:26.061892+00:00",
+      "wall_seconds": 0.00023267100004886743,
+      "actual": {
+        "delta_kJ_mol": -26.255000000013432
+      },
+      "reference": "reference.py",
+      "inputs": "input.json",
+      "command": "uv run --frozen python tools/run_labs.py --output <new-directory> (author-reference stage)"
+    },
+    {
+      "id": "M12-C2",
+      "scope": "author numeric reference only, not learner completion",
+      "status": "PASS",
+      "reason": "Совпадает только указанный численный контракт",
+      "started_utc": "2026-11-17T11:01:26.062523+00:00",
+      "wall_seconds": 0.21811406799952238,
+      "actual": {
+        "hf_converged": true,
+        "pbe_converged": true,
+        "finite": true,
+        "method_pair": [
+          "RHF",
+          "PBE"
+        ]
+      },
+      "reference": "reference.py",
+      "inputs": "input.json",
+      "command": "uv run --frozen python tools/run_labs.py --output <new-directory> (author-reference stage)"
+    },
+    {
+      "id": "M12-C3",
+      "status": "NOT_RUN",
+      "scope": "requires independent research/IDE artifact and human rubric"
+    },
+    {
+      "id": "M13-C1",
+      "scope": "author numeric reference only, not learner completion",
+      "status": "PASS",
+      "reason": "Совпадает только указанный численный контракт",
+      "started_utc": "2026-11-17T11:01:26.281300+00:00",
+      "wall_seconds": 0.0006304210000962485,
+      "actual": {
+        "precursors": [
+          "CC(=O)O",
+          "CCO"
+        ]
+      },
+      "reference": "reference.py",
+      "inputs": "input.json",
+      "command": "uv run --frozen python tools/run_labs.py --output <new-directory> (author-reference stage)"
+    },
+    {
+      "id": "M13-C2",
+      "scope": "author numeric reference only, not learner completion",
+      "status": "PASS",
+      "reason": "Совпадает только указанный численный контракт",
+      "started_utc": "2026-11-17T11:01:26.282470+00:00",
+      "wall_seconds": 0.0002637670004332904,
+      "actual": {
+        "yields": [
+          0.5599999999999999,
+          0.855
+        ],
+        "normalized_costs": [
+          1071.4285714285716,
+          877.1929824561404
+        ]
+      },
+      "reference": "reference.py",
+      "inputs": "input.json",
+      "command": "uv run --frozen python tools/run_labs.py --output <new-directory> (author-reference stage)"
+    },
+    {
+      "id": "M13-C3",
+      "status": "NOT_RUN",
+      "scope": "requires independent research/IDE artifact and human rubric"
+    },
+    {
+      "id": "M14-C1",
+      "status": "NOT_RUN",
+      "scope": "requires independent research/IDE artifact and human rubric"
+    },
+    {
+      "id": "M14-C2",
+      "status": "NOT_RUN",
+      "scope": "requires independent research/IDE artifact and human rubric"
+    },
+    {
+      "id": "M14-C3",
+      "status": "NOT_RUN",
+      "scope": "requires independent research/IDE artifact and human rubric"
+    }
+  ],
+  "learner_cases": {
+    "status": "NOT_RUN",
+    "count": 42
+  }
+}

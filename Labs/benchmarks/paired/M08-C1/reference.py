@@ -1,0 +1,1 @@
+z=lambda s:1-3*sum(s)/abs(case_input['mu_pos']-case_input['mu_neg']);answer={'z_good':z(case_input['sd_good']),'z_bad':z(case_input['sd_bad']),'ef':(case_input['a']/case_input['k'])/(case_input['A']/case_input['N'])}

@@ -1,41 +1,40 @@
-# Ответы к лабораторной работе 4: Осмысленные дескрипторы
+# Ключ преподавателя: модуль 4
 
-## Контрольный результат
+Решения самостоятельных кейсов. Открывать после собственной попытки. Численная проверка не оценивает научную интерпретацию; IDE-кейсы требуют запуска приложения и рецензии.
 
-MW этанола 46,069±0,01; TPSA бензола 0; контрольный полиол нарушает HBD/HBA.
 
-## Ответы на задания
+## M04-C1. Ноль площади или пропуск?
 
-1. MW>500, MolLogP>5, HBD>5, HBA>10; TPSA отдельно.
-2. Масса и число тяжёлых атомов обычно связаны; причинный вывод из корреляции не следует.
-3. LogD учитывает распределение всех форм при заданном pH; MolLogP не является его прямым измерением.
+Масса в g/mol; TPSA в Å²; нулевое значение у валидного графа не равно ошибке вычисления.
 
-## Как разбирать расхождение
-
-Сначала сравните вход, единицы и режим выполнения. Затем проверьте версии и параметры, после этого — собственную интерпретацию. Для численного расхождения сохраните исходные значения и residual; для структурного — raw/parent и политику. Статус «получен эталонный выход из файла» нельзя подписывать «я выполнил расчёт».
-
-## Готовый скрипт
-
-Тот же скрипт полностью включён в notebook. Общие научные функции находятся в `Labs/chemistry.py`, `Labs/h2_scf.py`, `Labs/docking.py`, `Labs/train_esol.py` и `Labs/pipeline.py` в зависимости от работы.
 
 ```python
-from chemistry import standardize, descriptors
-raw=pd.read_csv(DATA/"molecules.csv",keep_default_na=False)
-table=[]
-for row in raw.itertuples():
-    try:
-        parent=standardize(row.smiles).parent_smiles
-    except ValueError:
-        continue
-    table.append({"id":row.id,"parent":parent,**descriptors(parent)})
-features=pd.DataFrame(table); display(features)
-features.to_csv(OUT/"features.csv",index=False)
-assert math.isclose(descriptors("CCO")["MolWt"],46.069,abs_tol=0.01)
-assert descriptors("c1ccccc1")["TPSA"]==0
-polyol=descriptors("OC(O)C(O)C(O)C(O)C(O)C(O)C(O)C(O)C(O)C(O)CO")
-assert polyol["HBD"]>5 and polyol["HBA"]>10 and polyol["ro5_violations"]==2
-artifact={"valid_rows":len(features),"ethanol":descriptors("CCO"),"polyol":polyol}
-
+case_input = {'ethanol': 'CCO', 'benzene': 'c1ccccc1'}
+from chemistry import descriptors
+a=descriptors(case_input['ethanol']);b=descriptors(case_input['benzene']);answer={'ethanol_MW':a['MolWt'],'ethanol_HBD':a['HBD'],'ethanol_HBA':a['HBA'],'benzene_TPSA':b['TPSA']}
 ```
 
-**Рубеж понимания:** сумейте объяснить хотя бы один отрицательный контроль и одно недопустимое обобщение этого результата. Численный эталон описывает конкретную постановку, не универсальную гарантию.
+
+Ожидаемый численный контракт: `{"ethanol_MW": 46.069, "ethanol_HBD": 1, "ethanol_HBA": 1, "benzene_TPSA": 0}`.
+
+
+## M04-C2. Пороговый фильтр забывает два условия
+
+Граничные равенства допустимы в данном контракте; правило не доказывает эффективность.
+
+
+```python
+case_input = {'profiles': [{'id': 'Q1', 'MW': 600, 'logP': 2, 'HBD': 6, 'HBA': 12}, {'id': 'Q2', 'MW': 500, 'logP': 5, 'HBD': 5, 'HBA': 10}, {'id': 'Q3', 'MW': 450, 'logP': 5.1, 'HBD': 0, 'HBA': 0}]}
+answer={r['id']:sum([r['MW']>500,r['logP']>5,r['HBD']>5,r['HBA']>10]) for r in case_input['profiles']}
+```
+
+
+Ожидаемый численный контракт: `{"Q1": 3, "Q2": 0, "Q3": 1}`.
+
+
+## M04-C3. Ионизируемый кандидат при двух pH
+
+Нужно согласовать форму и pH, а не подгонять расчётный признак к несопоставимому измерению.
+
+
+Рубрика: проверить каждый из трёх пунктов условия по фактическому артефакту. Отдельно оценить происхождение входов, допустимость вывода и независимость переноса. Отсутствие результата — NOT_RUN; отсутствие необходимой среды/реализации — BLOCKED.

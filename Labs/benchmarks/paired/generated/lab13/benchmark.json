@@ -1,0 +1,31 @@
+{
+  "module": 13,
+  "scope": "worked reference execution",
+  "python": "/home/miakhlov/course-notebooks/.venv/bin/python",
+  "elapsed_seconds": 0.09624606600027619,
+  "result": {
+    "precursors": [
+      "CC(=O)O",
+      "CO"
+    ],
+    "routes": [
+      {
+        "route": "A",
+        "yield1": 0.8,
+        "yield2": 0.7,
+        "assumed_cost": 600,
+        "overall_yield": 0.5599999999999999,
+        "normalized_cost": 1071.4285714285716
+      },
+      {
+        "route": "B",
+        "yield1": 0.95,
+        "yield2": 0.9,
+        "assumed_cost": 750,
+        "overall_yield": 0.855,
+        "normalized_cost": 877.1929824561404
+      }
+    ],
+    "scope": "one ester template, not general AI retrosynthesis"
+  }
+}
