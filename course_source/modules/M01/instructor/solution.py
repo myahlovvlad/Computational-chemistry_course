@@ -24,6 +24,10 @@ def run(output):
     worst=max(rows,key=lambda r:abs(r['predicted']-r['measured']))
     result.update(rows=len(rows),row_ids=[r['row_id'] for r in rows],largest_row_id=worst['row_id'],
                   largest_record=worst,fold_gap=10**abs(worst['predicted']-worst['measured']))
+    result['instructional_criterion']={'factor_limit':10.0,'tau_logS':1.0,
+          'fraction_within':sum(abs(e)<=1 for e in errors)/len(errors),
+          'outside_rows':sum(abs(e)>1 for e in errors),
+          'scope':'instructional description, not chemical quality standard'}
     with (output/'case1_residuals.csv').open('w',encoding='utf-8',newline='') as stream:
         writer=csv.DictWriter(stream,fieldnames=['row_id','name','measured','predicted','residual'])
         writer.writeheader()

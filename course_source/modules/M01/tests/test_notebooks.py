@@ -14,6 +14,7 @@ MODULE=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(MODULE))
 from m01 import (META,checksum,create_dossier,format_feedback,locate_snapshot,
                  metric_invariants,prepare_import_case,read_rows,verify)
+from formative import feedback
 
 
 class NotebookTests(unittest.TestCase):
@@ -94,6 +95,24 @@ class SourceAndCalculationTests(unittest.TestCase):
 
 
 class LearnerSafeguardsTests(unittest.TestCase):
+    def test_formative_empty_choice_is_not_completion(self):
+        for prompt in ['P04','P06','P09']:
+            self.assertEqual(feedback(prompt,None)['status'],'NOT_RUN')
+
+    def test_formative_choices_distinguish_misconceptions(self):
+        for prompt,right in [('P04','B'),('P06','C'),('P09','A')]:
+            self.assertEqual(feedback(prompt,right)['status'],'COMPONENT_CORRECT')
+            messages=[]
+            for wrong in set('ABC')-{right}:
+                response=feedback(prompt,wrong)
+                self.assertEqual(response['status'],'RECONSIDER');messages.append(response['message'])
+            self.assertNotEqual(*messages)
+            self.assertIn('not assessed',feedback(prompt,right)['scope'])
+
+    def test_formative_invalid_choice_does_not_crash_or_pass(self):
+        for choice in ['D','',3,{}]:
+            self.assertEqual(feedback('P04',choice)['status'],'RETRY')
+
     def test_empty_and_format_only_are_distinct(self):
         self.assertEqual(format_feedback(None,['claim'])['status'],'NOT_RUN')
         self.assertEqual(format_feedback({},['claim'])['status'],'FAIL')

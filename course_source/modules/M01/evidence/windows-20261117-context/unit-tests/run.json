@@ -1,0 +1,23 @@
+{
+  "id": "unit-tests",
+  "argv": [
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\.venv\\Scripts\\python.exe",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\tests",
+    "-p",
+    "test_*.py",
+    "-v"
+  ],
+  "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01",
+  "started_utc": "2026-11-17T14:51:36.365341+00:00",
+  "seconds": 1.611741400000028,
+  "exit_code": 0,
+  "status": "PASS",
+  "scope": "source, numeric and safeguard tests, not pedagogy certification",
+  "environment": "../environment.json",
+  "data_sha256": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+  "M01_WORK_DIR": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\tmp\\m01-local-evidence\\windows-20261117-context-math\\learner_work"
+}

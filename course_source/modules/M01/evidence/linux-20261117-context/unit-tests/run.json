@@ -1,0 +1,23 @@
+{
+  "id": "unit-tests",
+  "argv": [
+    "/home/miakhlov/course-notebooks/course_source/modules/M01/.venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "/home/miakhlov/course-notebooks/course_source/modules/M01/tests",
+    "-p",
+    "test_*.py",
+    "-v"
+  ],
+  "cwd": "/home/miakhlov/course-notebooks/course_source/modules/M01",
+  "started_utc": "2026-11-17T14:51:46.590371+00:00",
+  "seconds": 0.9166344459990796,
+  "exit_code": 0,
+  "status": "PASS",
+  "scope": "source, numeric and safeguard tests, not pedagogy certification",
+  "environment": "../environment.json",
+  "data_sha256": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+  "M01_WORK_DIR": "/home/miakhlov/m01-issue4-evidence/linux-20261117-context-math/learner_work"
+}

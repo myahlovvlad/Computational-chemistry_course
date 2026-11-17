@@ -1,0 +1,19 @@
+test_arithmetic_invariants_reject_wrong_numbers (test_notebooks.LearnerSafeguardsTests.test_arithmetic_invariants_reject_wrong_numbers) ... ok
+test_dossier_creation_preserves_existing_student_work (test_notebooks.LearnerSafeguardsTests.test_dossier_creation_preserves_existing_student_work) ... ok
+test_empty_and_format_only_are_distinct (test_notebooks.LearnerSafeguardsTests.test_empty_and_format_only_are_distinct) ... ok
+test_formative_choices_distinguish_misconceptions (test_notebooks.LearnerSafeguardsTests.test_formative_choices_distinguish_misconceptions) ... ok
+test_formative_empty_choice_is_not_completion (test_notebooks.LearnerSafeguardsTests.test_formative_empty_choice_is_not_completion) ... ok
+test_formative_invalid_choice_does_not_crash_or_pass (test_notebooks.LearnerSafeguardsTests.test_formative_invalid_choice_does_not_crash_or_pass) ... ok
+test_independent_does_not_import_reference_solution (test_notebooks.NotebookTests.test_independent_does_not_import_reference_solution) ... ok
+test_schema_compilation_and_minimal_imports (test_notebooks.NotebookTests.test_schema_compilation_and_minimal_imports) ... ok
+test_corrupted_source_is_rejected (test_notebooks.SourceAndCalculationTests.test_corrupted_source_is_rejected) ... ok
+test_fault_repair_restores_values_without_mutating_source (test_notebooks.SourceAndCalculationTests.test_fault_repair_restores_values_without_mutating_source) ... ok
+test_guided_numeric_reference (test_notebooks.SourceAndCalculationTests.test_guided_numeric_reference) ... ok
+test_independent_numeric_reference (test_notebooks.SourceAndCalculationTests.test_independent_numeric_reference) ... ok
+test_pinned_bytes_and_schema (test_notebooks.SourceAndCalculationTests.test_pinned_bytes_and_schema) ... ok
+test_preallocated_records_are_disjoint_not_chemical_split (test_notebooks.SourceAndCalculationTests.test_preallocated_records_are_disjoint_not_chemical_split) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.041s
+
+OK

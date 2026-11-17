@@ -30,6 +30,7 @@ jobs:
       - run: uv sync --project course_source/modules/M01 --frozen --python 3.12
       - run: uv run --project course_source/modules/M01 --frozen python course_source/modules/M01/fetch_data.py --from-file Labs/datasets/esol.csv
       - run: uv run --project course_source/modules/M01 --frozen python course_source/modules/M01/register_kernel.py
+      - run: uv run --project course_source/modules/M01 --frozen python course_source/modules/M01/verify_evidence.py
       - run: uv run --project course_source/modules/M01 --frozen python course_source/modules/M01/run_checks.py --output tmp/m01-ci-evidence
       - uses: actions/upload-artifact@v4
         if: always()

@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "argv": [
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\issue4-research-m01-20261117\\course_source\\modules\\M01\\.venv\\Scripts\\python.exe",
+    "course_source/modules/M01/review_presentation.py",
+    "--output",
+    "course_source/modules/M01/evidence/presentation/review.json"
+  ],
+  "utc": "2026-11-17T14:54:10.340479+00:00",
+  "versions": {
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "nbconvert": "7.17.2"
+  },
+  "scope": "local links, embedded images and TeX markup retention; no browser typesetting, remote-link validation or learner assessment",
+  "inputs": [
+    {
+      "file": "01_guided_case.ipynb",
+      "sha256": "3b9e83f8f907a491b5599393a7628154e90ef0a681aa43fe5861b05eaa821e18"
+    },
+    {
+      "file": "02_independent_lab.ipynb",
+      "sha256": "37e955eb816087d025ba5db65134b7ab5f484754973e80697d89974f5bf27d8c"
+    }
+  ],
+  "checks": [
+    {
+      "file": "01_guided_case.ipynb",
+      "missing_local_links": [],
+      "html_bytes": 546995,
+      "embedded_pngs": 3,
+      "tex_preserved": true
+    },
+    {
+      "file": "02_independent_lab.ipynb",
+      "missing_local_links": [],
+      "html_bytes": 328617
+    }
+  ]
+}

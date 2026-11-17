@@ -56,7 +56,8 @@ def main():
     if environment['rdkit_installed']:raise RuntimeError('Use the dedicated minimal M01 uv environment, not the full chemistry kernel')
     files=[MODULE/name for name in ['data/provenance.json','data/evidence_cards.json','m01.py','instructor/solution.py',
             'uv.lock','pyproject.toml','build_notebooks.py','run_checks.py','register_kernel.py','tests/test_notebooks.py',
-            '01_guided_case.ipynb','02_independent_lab.ipynb']]+[source]
+            '01_guided_case.ipynb','02_independent_lab.ipynb','lesson_code.json','formative.py',
+            'GLOSSARY.md','MATHEMATICAL_PROTOCOL.md','PROMPT_DESIGN.md']]+sorted((MODULE/'content').glob('*.md'))+[source]
     input_manifest=[{'path':str(p),'sha256':sha(p),'bytes':p.stat().st_size} for p in files]
     (output/'inputs.json').write_text(json.dumps(input_manifest,indent=2),encoding='utf-8')
     env=dict(os.environ,PYTHONNOUSERSITE='1',PYTHONIOENCODING='utf-8',MPLBACKEND='Agg',M01_ASSERT_MINIMAL='1',
