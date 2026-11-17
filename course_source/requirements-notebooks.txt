@@ -1,0 +1,6 @@
+# Пилотная среда ноутбуков; версии подлежат фиксации после проверки Windows/Linux
+jupyterlab
+matplotlib
+ipykernel
+nbformat
+nbclient
