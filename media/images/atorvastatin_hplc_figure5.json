@@ -1,0 +1,16 @@
+{
+  "url": "https://mdpi-res.com/d_attachment/molecules/molecules-18-02469/article_deploy/html/images/molecules-18-02469-g005.png",
+  "doi": "10.3390/molecules18032469",
+  "figure": "5",
+  "license": "CC BY 3.0",
+  "authors": "Crevar-Sakac et al. (2013)",
+  "sha256": "088ced1382b6a53559f63d14e6dbd225bf1e511bc4acaef89f9e6e78db52ed57",
+  "modified": false,
+  "scope": "one published chromatogram, no numeric raw trace or baseline widths",
+  "annotations_Rt_min": [
+    3.052,
+    4.78,
+    5.445,
+    7.064
+  ]
+}
