@@ -1,0 +1,1 @@
+answer={'delta_kJ_mol':(case_input['E_final']-case_input['E_initial'])*case_input['kJ_per_Hartree']}

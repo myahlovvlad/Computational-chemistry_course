@@ -1,0 +1,31 @@
+{
+  "id": "09-kernel",
+  "argv": [
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe",
+    "-m",
+    "ipykernel",
+    "install",
+    "--prefix",
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit",
+    "--name",
+    "practice-audit-issue1",
+    "--display-name",
+    "Issue 1 audit"
+  ],
+  "command_windows": "\"C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe\" -m ipykernel install --prefix \"C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\" --name practice-audit-issue1 --display-name \"Issue 1 audit\"",
+  "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117",
+  "started_utc": "2026-11-17T08:58:22.349257+00:00",
+  "duration_seconds": 0.45453580003231764,
+  "exit_code": 0,
+  "status": "PASS",
+  "reason": "",
+  "environment": {
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONPATH": "unset",
+    "python": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe",
+    "stage_versions": "../core-environment/stdout.txt or ../labs-environment/stdout.txt"
+  },
+  "inputs": [],
+  "stdout": "stdout.txt",
+  "stderr": "stderr.txt"
+}

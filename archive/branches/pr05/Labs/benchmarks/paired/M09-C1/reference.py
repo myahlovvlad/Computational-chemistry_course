@@ -1,0 +1,2 @@
+from chemistry import screen
+r=pd.read_csv(DATA/'molecules.csv',keep_default_na=False); t=[{'id':x.id,**screen(x.smiles)} for x in r.itertuples()];answer={'rows':len(t),'valid_structures':sum(x['status']!='invalid' for x in t),'invalid_ids':[x['id'] for x in t if x['status']=='invalid']}

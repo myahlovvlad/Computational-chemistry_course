@@ -1,0 +1,33 @@
+{
+  "id": "08-install-labs",
+  "argv": [
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe",
+    "-m",
+    "pip",
+    "install",
+    "-r",
+    "Labs/requirements.txt"
+  ],
+  "command_windows": "\"C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe\" -m pip install -r Labs/requirements.txt",
+  "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117",
+  "started_utc": "2026-11-17T08:56:50.145936+00:00",
+  "duration_seconds": 91.4939884999767,
+  "exit_code": 0,
+  "status": "PASS",
+  "reason": "",
+  "environment": {
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONPATH": "unset",
+    "python": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe",
+    "stage_versions": "../core-environment/stdout.txt or ../labs-environment/stdout.txt"
+  },
+  "inputs": [
+    {
+      "path": "Labs/requirements.txt",
+      "sha256": "6212e57eba33d813842831b13b9754327c94417094830a3553f8024754f00205",
+      "bytes": 290
+    }
+  ],
+  "stdout": "stdout.txt",
+  "stderr": "stderr.txt"
+}

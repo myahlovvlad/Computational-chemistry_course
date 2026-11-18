@@ -1,0 +1,17 @@
+{
+  "id": "M05-C2",
+  "scope": "author numeric reference only, not learner completion",
+  "status": "PASS",
+  "reason": "Совпадает только указанный численный контракт",
+  "started_utc": "2026-11-17T11:01:25.180585+00:00",
+  "wall_seconds": 0.0005751279995820369,
+  "actual": {
+    "achiral_score": 1.0,
+    "chiral_score_below_one": true,
+    "symmetric": true,
+    "self_score": 1.0
+  },
+  "reference": "reference.py",
+  "inputs": "input.json",
+  "command": "uv run --frozen python tools/run_labs.py --output <new-directory> (author-reference stage)"
+}

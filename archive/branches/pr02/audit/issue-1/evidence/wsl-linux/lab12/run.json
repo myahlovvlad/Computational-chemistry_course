@@ -1,0 +1,21 @@
+{
+  "id": "lab12",
+  "status": "PASS",
+  "source": "Labs/notebooks/lab12.ipynb",
+  "input_sha256": "4cae2b297391312d51ff23f4630f18e5392a3b60d5ff3265847d3e86da6a5212",
+  "started_utc": "2026-11-17T09:38:57.179335+00:00",
+  "duration_seconds": 1.4598464030000287,
+  "cwd": "/home/miakhlov/Computational-chemistry_course",
+  "kernel": "chemistry-course-uv",
+  "driver_argv": [
+    "/mnt/c/Users/Miakhlov/Documents/GitHub/Computational chemistry_course/tmp/practice-audit-issue1-20261117/audit/issue-1/linux_runner.py",
+    "--root",
+    "/home/miakhlov/Computational-chemistry_course",
+    "--output",
+    "/home/miakhlov/course-evidence-linux-02"
+  ],
+  "environment": "../environment.json",
+  "scope": "fresh reference execution, not learner transfer/interpretation",
+  "code_cells": 3,
+  "error": ""
+}

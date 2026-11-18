@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\Miakhlov\Documents\GitHub\Computational chemistry_course\tmp\practice-audit-issue1-20261117\Stepik_course\modules\12_quantum.md", line 1, in <module>
+    # Модуль 12. Квантовая химия: от энергии в файле к физическому выводу
+    ^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'pyscf'

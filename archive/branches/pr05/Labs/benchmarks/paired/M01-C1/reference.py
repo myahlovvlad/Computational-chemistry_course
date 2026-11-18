@@ -1,0 +1,1 @@
+x=np.column_stack([np.ones(4),case_input['A'],case_input['B'],np.multiply(case_input['A'],case_input['B'])]); b=np.linalg.solve(x,case_input['y']); answer={'beta':b.tolist(),'effects':(2*b[1:]).tolist(),'residual_df':4-np.linalg.matrix_rank(x)}

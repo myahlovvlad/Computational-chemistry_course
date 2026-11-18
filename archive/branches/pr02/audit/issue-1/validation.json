@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "scope": "audit packaging/integrity only",
+  "checks": [
+    {
+      "id": "unique-ids",
+      "status": "PASS",
+      "details": 513
+    },
+    {
+      "id": "all-14-modules",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "id": "valid-statuses",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "id": "control-questions-42",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "id": "reference-notebooks-14",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "id": "transfer-actions-42",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "id": "summary-matches",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "id": "executable-evidence-and-source-links",
+      "status": "PASS",
+      "details": []
+    },
+    {
+      "id": "no-text-only-pass",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "id": "original-tracked-files-unchanged",
+      "status": "PASS",
+      "details": []
+    }
+  ],
+  "manifest_files": 372
+}

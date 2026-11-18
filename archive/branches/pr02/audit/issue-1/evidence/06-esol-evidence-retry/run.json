@@ -1,0 +1,31 @@
+{
+  "id": "06-esol-evidence-retry",
+  "argv": [
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe",
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\audit\\issue-1\\check.py",
+    "esol",
+    "06-esol-evidence-retry"
+  ],
+  "command_windows": "\"C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe\" \"C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\audit\\issue-1\\check.py\" esol 06-esol-evidence-retry",
+  "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117",
+  "started_utc": "2026-11-17T08:56:46.092618+00:00",
+  "duration_seconds": 2.4712523999623954,
+  "exit_code": 0,
+  "status": "PASS",
+  "reason": "",
+  "environment": {
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONPATH": "unset",
+    "python": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe",
+    "stage_versions": "../core-environment/stdout.txt or ../labs-environment/stdout.txt"
+  },
+  "inputs": [
+    {
+      "path": "Labs/datasets/esol.csv",
+      "sha256": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+      "bytes": 96699
+    }
+  ],
+  "stdout": "stdout.txt",
+  "stderr": "stderr.txt"
+}

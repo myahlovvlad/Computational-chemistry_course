@@ -1,0 +1,10 @@
+{
+  "lab": 2,
+  "calculation_wall_seconds": 0.09808091599995805,
+  "result": {
+    "python": "3.12.3",
+    "executable": "/home/miakhlov/Computational-chemistry_course/.venv/bin/python",
+    "rdkit": "2026.09.1",
+    "sha256": "f1904ebd8af5789d383f9593365bf5443abf7aa60106db0ecfb50d4fff628465"
+  }
+}

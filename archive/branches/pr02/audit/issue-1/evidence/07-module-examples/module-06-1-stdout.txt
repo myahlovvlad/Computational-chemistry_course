@@ -1,0 +1,1 @@
+{'converged': True, 'status_code': 0, 'energy_kcal_mol': -4.293764268294335, 'seed': 42, 'n_conformers': 1}

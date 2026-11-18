@@ -1,0 +1,10 @@
+{
+  "stereo": [
+    "C[C@H](O)C(=O)O",
+    "C[C@@H](O)C(=O)O"
+  ],
+  "tautomers": [
+    "O=c1cccc[nH]1",
+    "Oc1ccccn1"
+  ]
+}

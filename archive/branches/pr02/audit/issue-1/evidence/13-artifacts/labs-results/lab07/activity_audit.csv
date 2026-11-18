@@ -1,0 +1,9 @@
+record_id,molecule_id,target_id,assay_id,endpoint,value,unit,relation,status,pIC50,reason
+R01,M01,T1,A1,IC50,100,nM,=,included,7.0,teaching rules satisfied
+R02,M01,T1,A1,IC50,0.1,uM,=,included,7.0,teaching rules satisfied
+R03,M02,T1,A1,IC50,10,uM,>,excluded,,relation
+R04,M03,T1,A1,Ki,50,nM,=,excluded,,endpoint
+R05,M04,T2,A1,IC50,20,nM,=,excluded,,target_id
+R06,M05,T1,A2,IC50,30,nM,=,excluded,,assay_id
+R07,M06,T1,A1,IC50,0,nM,=,excluded,,value_or_unit
+R08,M07,T1,A1,IC50,100,unknown,=,excluded,,value_or_unit

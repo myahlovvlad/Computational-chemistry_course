@@ -1,0 +1,16 @@
+{
+  "id": "M06-C1",
+  "scope": "author numeric reference only, not learner completion",
+  "status": "PASS",
+  "reason": "Совпадает только указанный численный контракт",
+  "started_utc": "2026-11-17T11:01:25.181663+00:00",
+  "wall_seconds": 0.017950146000657696,
+  "actual": {
+    "has_converged": true,
+    "finite_energy": true,
+    "energy_unit": "kcal/mol"
+  },
+  "reference": "reference.py",
+  "inputs": "input.json",
+  "command": "uv run --frozen python tools/run_labs.py --output <new-directory> (author-reference stage)"
+}

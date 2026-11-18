@@ -1,0 +1,208 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "id": "B-R01",
+      "input": {
+        "record_id": "R01",
+        "molecule_id": "M01",
+        "target_id": "T1",
+        "assay_id": "A1",
+        "endpoint": "IC50",
+        "value": "100",
+        "unit": "nM",
+        "relation": "="
+      },
+      "expected": [
+        "included",
+        7.0,
+        "teaching rules satisfied"
+      ],
+      "actual": [
+        "included",
+        7.0,
+        "teaching rules satisfied"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "B-R02",
+      "input": {
+        "record_id": "R02",
+        "molecule_id": "M01",
+        "target_id": "T1",
+        "assay_id": "A1",
+        "endpoint": "IC50",
+        "value": "0.1",
+        "unit": "uM",
+        "relation": "="
+      },
+      "expected": [
+        "included",
+        7.0,
+        "teaching rules satisfied"
+      ],
+      "actual": [
+        "included",
+        7.0,
+        "teaching rules satisfied"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "B-R03",
+      "input": {
+        "record_id": "R03",
+        "molecule_id": "M02",
+        "target_id": "T1",
+        "assay_id": "A1",
+        "endpoint": "IC50",
+        "value": "10",
+        "unit": "uM",
+        "relation": ">"
+      },
+      "expected": [
+        "excluded",
+        null,
+        "relation"
+      ],
+      "actual": [
+        "excluded",
+        null,
+        "relation"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "B-R04",
+      "input": {
+        "record_id": "R04",
+        "molecule_id": "M03",
+        "target_id": "T1",
+        "assay_id": "A1",
+        "endpoint": "Ki",
+        "value": "50",
+        "unit": "nM",
+        "relation": "="
+      },
+      "expected": [
+        "excluded",
+        null,
+        "endpoint"
+      ],
+      "actual": [
+        "excluded",
+        null,
+        "endpoint"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "B-R05",
+      "input": {
+        "record_id": "R05",
+        "molecule_id": "M04",
+        "target_id": "T2",
+        "assay_id": "A1",
+        "endpoint": "IC50",
+        "value": "20",
+        "unit": "nM",
+        "relation": "="
+      },
+      "expected": [
+        "excluded",
+        null,
+        "target_id"
+      ],
+      "actual": [
+        "excluded",
+        null,
+        "target_id"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "B-R06",
+      "input": {
+        "record_id": "R06",
+        "molecule_id": "M05",
+        "target_id": "T1",
+        "assay_id": "A2",
+        "endpoint": "IC50",
+        "value": "30",
+        "unit": "nM",
+        "relation": "="
+      },
+      "expected": [
+        "excluded",
+        null,
+        "assay_id"
+      ],
+      "actual": [
+        "excluded",
+        null,
+        "assay_id"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "B-R07",
+      "input": {
+        "record_id": "R07",
+        "molecule_id": "M06",
+        "target_id": "T1",
+        "assay_id": "A1",
+        "endpoint": "IC50",
+        "value": "0",
+        "unit": "nM",
+        "relation": "="
+      },
+      "expected": [
+        "excluded",
+        null,
+        "value_or_unit"
+      ],
+      "actual": [
+        "excluded",
+        null,
+        "value_or_unit"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "B-R08",
+      "input": {
+        "record_id": "R08",
+        "molecule_id": "M07",
+        "target_id": "T1",
+        "assay_id": "A1",
+        "endpoint": "IC50",
+        "value": "100",
+        "unit": "unknown",
+        "relation": "="
+      },
+      "expected": [
+        "excluded",
+        null,
+        "value_or_unit"
+      ],
+      "actual": [
+        "excluded",
+        null,
+        "value_or_unit"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "C-nominal-cost",
+      "input": [
+        5,
+        20000
+      ],
+      "expected": 100000,
+      "actual": 100000,
+      "status": "PASS",
+      "scope": "nominal arithmetic only, no net economic benefit proven"
+    }
+  ]
+}

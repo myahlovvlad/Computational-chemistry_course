@@ -1,0 +1,2 @@
+import hashlib
+b=case_input['text'].encode(); original=hashlib.sha256(b).hexdigest(); copy=bytes(b); changed=b+case_input['suffix'].encode(); answer={'same_copy':hashlib.sha256(copy).hexdigest()==original,'changed_copy':hashlib.sha256(changed).hexdigest()!=original,'source_preserved':b==case_input['text'].encode()}

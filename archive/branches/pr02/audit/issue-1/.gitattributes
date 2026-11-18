@@ -1,0 +1,3 @@
+# Preserve exact bytes of hash-verified logs, datasets and executed notebooks.
+# Generated scientific formats intentionally contain whitespace.
+* -text -whitespace

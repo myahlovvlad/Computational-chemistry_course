@@ -1,0 +1,20 @@
+{
+  "module": 1,
+  "scope": "worked reference execution",
+  "python": "/home/miakhlov/course-notebooks/.venv/bin/python",
+  "elapsed_seconds": 0.14902233199973125,
+  "result": {
+    "beta": [
+      50.0,
+      10.0,
+      5.0,
+      8.0
+    ],
+    "effects": [
+      20.0,
+      10.0,
+      16.0
+    ],
+    "residual_df": 0
+  }
+}

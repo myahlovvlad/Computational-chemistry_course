@@ -1,0 +1,2 @@
+from chemistry import curate_activity
+r=[curate_activity(x) for x in case_input['records']];answer={'included_ids':[x['record_id'] for x in r if x['status']=='included'],'p_values':[x['pIC50'] for x in r if x['status']=='included'],'excluded_reasons':[x['reason'] for x in r if x['status']=='excluded'],'total_rows':len(r)}

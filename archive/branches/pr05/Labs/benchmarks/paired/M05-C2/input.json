@@ -1,0 +1,8 @@
+{
+  "smiles": [
+    "C[C@H](O)C(=O)O",
+    "C[C@@H](O)C(=O)O"
+  ],
+  "radius": 2,
+  "fpSize": 2048
+}

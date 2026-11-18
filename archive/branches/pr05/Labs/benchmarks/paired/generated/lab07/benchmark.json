@@ -1,0 +1,12 @@
+{
+  "module": 7,
+  "scope": "worked reference execution",
+  "python": "/home/miakhlov/course-notebooks/.venv/bin/python",
+  "elapsed_seconds": 0.13031678900006227,
+  "result": {
+    "included": 2,
+    "excluded": 6,
+    "esol_rows": 1128,
+    "esol_sha256": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189"
+  }
+}

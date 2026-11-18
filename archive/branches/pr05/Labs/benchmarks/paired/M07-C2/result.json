@@ -1,0 +1,25 @@
+{
+  "id": "M07-C2",
+  "scope": "author numeric reference only, not learner completion",
+  "status": "PASS",
+  "reason": "Совпадает только указанный численный контракт",
+  "started_utc": "2026-11-17T11:01:25.203705+00:00",
+  "wall_seconds": 0.00041714800045156153,
+  "actual": {
+    "included_ids": [
+      "S1"
+    ],
+    "p_values": [
+      7.301029995663981
+    ],
+    "excluded_reasons": [
+      "endpoint",
+      "target_id",
+      "value_or_unit"
+    ],
+    "total_rows": 4
+  },
+  "reference": "reference.py",
+  "inputs": "input.json",
+  "command": "uv run --frozen python tools/run_labs.py --output <new-directory> (author-reference stage)"
+}

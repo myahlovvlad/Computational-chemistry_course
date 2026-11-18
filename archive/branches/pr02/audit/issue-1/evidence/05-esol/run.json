@@ -1,0 +1,38 @@
+{
+  "id": "05-esol",
+  "argv": [
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe",
+    "Stepik_course/practice/train_esol.py",
+    "--csv",
+    "Labs/datasets/esol.csv",
+    "--out",
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\audit\\issue-1\\evidence\\05-esol\\results"
+  ],
+  "command_windows": "\"C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe\" Stepik_course/practice/train_esol.py --csv Labs/datasets/esol.csv --out \"C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\audit\\issue-1\\evidence\\05-esol\\results\"",
+  "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117",
+  "started_utc": "2026-11-17T08:54:38.418720+00:00",
+  "duration_seconds": 8.926018900005147,
+  "exit_code": 0,
+  "status": "PASS",
+  "reason": "",
+  "environment": {
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONPATH": "unset",
+    "python": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe",
+    "stage_versions": "../core-environment/stdout.txt or ../labs-environment/stdout.txt"
+  },
+  "inputs": [
+    {
+      "path": "Labs/datasets/esol.csv",
+      "sha256": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+      "bytes": 96699
+    },
+    {
+      "path": "Stepik_course/practice/train_esol.py",
+      "sha256": "00970bd9ddf55e4b1f781d023a859a1b091dd3e6d883f2334ca92336b0944d56",
+      "bytes": 6229
+    }
+  ],
+  "stdout": "stdout.txt",
+  "stderr": "stderr.txt"
+}

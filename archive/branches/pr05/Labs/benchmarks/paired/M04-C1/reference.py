@@ -1,0 +1,2 @@
+from chemistry import descriptors
+a=descriptors(case_input['ethanol']);b=descriptors(case_input['benzene']);answer={'ethanol_MW':a['MolWt'],'ethanol_HBD':a['HBD'],'ethanol_HBA':a['HBA'],'benzene_TPSA':b['TPSA']}

@@ -1,0 +1,3 @@
+from rdkit import Chem
+from rdkit.Chem import AllChem,rdMolTransforms
+m=Chem.AddHs(Chem.MolFromSmiles('CCCC'));p=AllChem.ETKDGv3();p.randomSeed=7;assert AllChem.EmbedMolecule(m,p)==0;c=m.GetConformer();d=rdMolTransforms.GetBondLength(c,1,2);rdMolTransforms.SetDihedralDeg(c,0,1,2,3,case_input['target_degrees']);answer={'angle_degrees':rdMolTransforms.GetDihedralDeg(c,0,1,2,3),'bond_length_preserved':math.isclose(d,rdMolTransforms.GetBondLength(c,1,2))}

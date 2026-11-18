@@ -1,0 +1,113 @@
+{
+  "status": "PASS",
+  "argv": [
+    "tools/check_notebook_environment.py"
+  ],
+  "interpreter": "/home/miakhlov/course-notebooks/.venv/bin/python",
+  "kernel_argv": [
+    "/home/miakhlov/.local/bin/uv",
+    "run",
+    "--frozen",
+    "--project",
+    "/home/miakhlov/course-notebooks",
+    "python",
+    "-m",
+    "ipykernel_launcher",
+    "-f",
+    "{connection_file}"
+  ],
+  "checks": [
+    {
+      "source": "Labs/extensions/dft_pyscf.ipynb",
+      "kernel": "chemistry-course-uv",
+      "status": "PASS"
+    },
+    {
+      "source": "Labs/notebooks/lab01.ipynb",
+      "kernel": "chemistry-course-uv",
+      "status": "PASS"
+    },
+    {
+      "source": "Labs/notebooks/lab02.ipynb",
+      "kernel": "chemistry-course-uv",
+      "status": "PASS"
+    },
+    {
+      "source": "Labs/notebooks/lab03.ipynb",
+      "kernel": "chemistry-course-uv",
+      "status": "PASS"
+    },
+    {
+      "source": "Labs/notebooks/lab04.ipynb",
+      "kernel": "chemistry-course-uv",
+      "status": "PASS"
+    },
+    {
+      "source": "Labs/notebooks/lab05.ipynb",
+      "kernel": "chemistry-course-uv",
+      "status": "PASS"
+    },
+    {
+      "source": "Labs/notebooks/lab06.ipynb",
+      "kernel": "chemistry-course-uv",
+      "status": "PASS"
+    },
+    {
+      "source": "Labs/notebooks/lab07.ipynb",
+      "kernel": "chemistry-course-uv",
+      "status": "PASS"
+    },
+    {
+      "source": "Labs/notebooks/lab08.ipynb",
+      "kernel": "chemistry-course-uv",
+      "status": "PASS"
+    },
+    {
+      "source": "Labs/notebooks/lab09.ipynb",
+      "kernel": "chemistry-course-uv",
+      "status": "PASS"
+    },
+    {
+      "source": "Labs/notebooks/lab10.ipynb",
+      "kernel": "chemistry-course-uv",
+      "status": "PASS"
+    },
+    {
+      "source": "Labs/notebooks/lab11.ipynb",
+      "kernel": "chemistry-course-uv",
+      "status": "PASS"
+    },
+    {
+      "source": "Labs/notebooks/lab12.ipynb",
+      "kernel": "chemistry-course-uv",
+      "status": "PASS"
+    },
+    {
+      "source": "Labs/notebooks/lab13.ipynb",
+      "kernel": "chemistry-course-uv",
+      "status": "PASS"
+    },
+    {
+      "source": "Labs/notebooks/lab14.ipynb",
+      "kernel": "chemistry-course-uv",
+      "status": "PASS"
+    },
+    {
+      "source": "Stepik_course/practice/quickstart.ipynb",
+      "kernel": "chemistry-course-uv",
+      "status": "PASS"
+    },
+    {
+      "source": "Stepik_course/practice/quickstart.ipynb",
+      "sha256": "2e55f57b007886ca4b4e18b370300e7dff342c2f916251d720d72bbafe347003",
+      "status": "PASS",
+      "check": "metadata-selected kernel, isolated interpreter and original notebook assertions"
+    },
+    {
+      "source": "Labs/extensions/dft_pyscf.ipynb",
+      "sha256": "53fd2aa0c82ec32198e0ae3ad16913d01480e0c2c90c3c4b82c672a1f2e95cec",
+      "status": "PASS",
+      "check": "metadata-selected kernel, isolated interpreter and original notebook assertions"
+    }
+  ]
+}

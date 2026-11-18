@@ -1,0 +1,16 @@
+{
+  "id": "M04-C2",
+  "scope": "author numeric reference only, not learner completion",
+  "status": "PASS",
+  "reason": "Совпадает только указанный численный контракт",
+  "started_utc": "2026-11-17T11:01:25.179178+00:00",
+  "wall_seconds": 0.0002804649993777275,
+  "actual": {
+    "Q1": 3,
+    "Q2": 0,
+    "Q3": 1
+  },
+  "reference": "reference.py",
+  "inputs": "input.json",
+  "command": "uv run --frozen python tools/run_labs.py --output <new-directory> (author-reference stage)"
+}

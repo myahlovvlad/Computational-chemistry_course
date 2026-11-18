@@ -1,0 +1,40 @@
+{
+  "status": "FAIL",
+  "scope": "Streamlit AppTest with mocked file uploader, not live browser/Stepik or learner grading",
+  "checks": [
+    {
+      "id": "gui-reference-csv",
+      "status": "PASS",
+      "expected": "12 reference rows without an unhandled exception",
+      "actual": {
+        "exceptions": 0,
+        "dataframes": 1,
+        "rows": 12
+      }
+    },
+    {
+      "id": "gui-tautomer-switch",
+      "status": "FAIL",
+      "expected": "User-operable tautomer-processing switch required by Stepik_course/modules/14_delivery.md section 14.2",
+      "actual": {
+        "checkbox": 0,
+        "toggle": 0,
+        "selectbox": 0,
+        "radio": 0
+      },
+      "interpretation": "Contract mismatch with this source, not a chemical failure; current app displays a fixed policy"
+    },
+    {
+      "id": "gui-duplicate-id",
+      "status": "PASS",
+      "input": "id,smiles\nX,CCO\nX,CCN\n",
+      "expected": "Visible validation error, no unhandled exception",
+      "actual": {
+        "exceptions": 0,
+        "errors": [
+          "IDs must be nonempty and unique"
+        ]
+      }
+    }
+  ]
+}

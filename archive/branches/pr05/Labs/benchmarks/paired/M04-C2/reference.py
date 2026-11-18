@@ -1,0 +1,1 @@
+answer={r['id']:sum([r['MW']>500,r['logP']>5,r['HBD']>5,r['HBA']>10]) for r in case_input['profiles']}

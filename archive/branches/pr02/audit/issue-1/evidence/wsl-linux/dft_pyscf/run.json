@@ -1,0 +1,21 @@
+{
+  "id": "dft_pyscf",
+  "status": "PASS",
+  "source": "Labs/extensions/dft_pyscf.ipynb",
+  "input_sha256": "0737454a8b93ea81f3402827e45c533fa32dd4304607db9cd5f7a7c02ae5ebac",
+  "started_utc": "2026-11-17T09:39:01.628017+00:00",
+  "duration_seconds": 2.309454619999997,
+  "cwd": "/home/miakhlov/Computational-chemistry_course",
+  "kernel": "chemistry-course-uv",
+  "driver_argv": [
+    "/mnt/c/Users/Miakhlov/Documents/GitHub/Computational chemistry_course/tmp/practice-audit-issue1-20261117/audit/issue-1/linux_runner.py",
+    "--root",
+    "/home/miakhlov/Computational-chemistry_course",
+    "--output",
+    "/home/miakhlov/course-evidence-linux-02"
+  ],
+  "environment": "../environment.json",
+  "scope": "fresh reference execution, not learner transfer/interpretation",
+  "code_cells": 1,
+  "error": ""
+}

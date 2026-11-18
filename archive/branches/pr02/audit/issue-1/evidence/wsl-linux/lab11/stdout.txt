@@ -1,0 +1,6 @@
+
+
+/tmp/ipykernel_694/3789872467.py:12: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.savefig(OUT/"parity.png",dpi=150);plt.show()
+
+Запуск сохранён: /home/miakhlov/Computational-chemistry_course/Labs/results/lab11/benchmark.json

@@ -1,0 +1,7 @@
+2026-11-17 12:08:04.611 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+[12:08:05] SMILES Parse Error: syntax error while parsing: not_a_smiles
+[12:08:05] SMILES Parse Error: check for mistakes around position 3:
+[12:08:05] not_a_smiles
+[12:08:05] ~~^
+[12:08:05] SMILES Parse Error: Failed parsing SMILES 'not_a_smiles' for input: 'not_a_smiles'
+2026-11-17 12:08:05.848 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.

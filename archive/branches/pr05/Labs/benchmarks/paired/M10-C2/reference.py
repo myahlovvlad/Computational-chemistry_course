@@ -1,0 +1,2 @@
+from docking import first_pose,mapped_rmsd
+a,_=first_pose(DATA/case_input['reference']); x=np.array([a[k] for k in sorted(a)]); shift=np.array(case_input['translation_angstrom']);answer={'same_reference':0.,'translated':float(np.sqrt(np.mean(np.sum((x-(x+shift))**2,axis=1)))),'official_prepared':mapped_rmsd(DATA/case_input['reference'],DATA/case_input['official_pose'])}

@@ -1,0 +1,21 @@
+{
+  "module": 14,
+  "scope": "worked reference execution",
+  "python": "/home/miakhlov/course-notebooks/.venv/bin/python",
+  "elapsed_seconds": 0.3306710730003033,
+  "result": {
+    "rows": 12,
+    "passport": {
+      "input_sha256": "f1904ebd8af5789d383f9593365bf5443abf7aa60106db0ecfb50d4fff628465",
+      "python": "3.12.3",
+      "rdkit": "2026.09.1",
+      "rows": 12,
+      "policy": "teaching-parent-v1;neutralize;tautomer=False"
+    },
+    "negative_input_errors": [
+      "CSV requires id and smiles columns",
+      "IDs must be nonempty and unique"
+    ],
+    "scope": "reference core only; application development and tests take place in IDE"
+  }
+}

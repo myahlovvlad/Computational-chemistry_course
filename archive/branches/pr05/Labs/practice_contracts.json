@@ -1,0 +1,483 @@
+[
+  {
+    "id": "M01-C1",
+    "module": 1,
+    "title": "Вернуть пропущенный фактор",
+    "mode": "auto",
+    "expected": {
+      "beta": [
+        50,
+        10,
+        5,
+        8
+      ],
+      "effects": [
+        20,
+        10,
+        16
+      ],
+      "residual_df": 0
+    },
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M01-C2",
+    "module": 1,
+    "title": "Повторы меняют доказательство",
+    "mode": "auto",
+    "expected": {
+      "beta": [
+        51,
+        10,
+        5,
+        8
+      ],
+      "pure_error_df": 4,
+      "pure_error_ms": 2
+    },
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M01-C3",
+    "module": 1,
+    "title": "Выбрать следующий эксперимент",
+    "mode": "review",
+    "expected": null,
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M02-C1",
+    "module": 2,
+    "title": "Две единицы в одной поставке",
+    "mode": "auto",
+    "expected": {
+      "p_values": [
+        5.6020599913279625,
+        5.6020599913279625,
+        null,
+        null
+      ],
+      "statuses": [
+        "ok",
+        "ok",
+        "invalid",
+        "invalid"
+      ]
+    },
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M02-C2",
+    "module": 2,
+    "title": "Совпадает имя, различаются байты",
+    "mode": "auto",
+    "expected": {
+      "same_copy": true,
+      "changed_copy": true,
+      "source_preserved": true
+    },
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M02-C3",
+    "module": 2,
+    "title": "Импорт работает в терминале, но не в ядре",
+    "mode": "review",
+    "expected": null,
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M03-C1",
+    "module": 3,
+    "title": "Соль поменяла порядок компонентов",
+    "mode": "auto",
+    "expected": {
+      "same_parent": true,
+      "covalent_br_retained": true,
+      "rows": 3
+    },
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M03-C2",
+    "module": 3,
+    "title": "Не схлопнуть стереопару",
+    "mode": "auto",
+    "expected": {
+      "stereo_distinct": true,
+      "default_tautomers_distinct": true,
+      "explicit_tautomers_equal": true
+    },
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M03-C3",
+    "module": 3,
+    "title": "Можно ли усреднить растворимость соли и кислоты?",
+    "mode": "review",
+    "expected": null,
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M04-C1",
+    "module": 4,
+    "title": "Ноль площади или пропуск?",
+    "mode": "auto",
+    "expected": {
+      "ethanol_MW": 46.069,
+      "ethanol_HBD": 1,
+      "ethanol_HBA": 1,
+      "benzene_TPSA": 0
+    },
+    "tolerance": 0.01
+  },
+  {
+    "id": "M04-C2",
+    "module": 4,
+    "title": "Пороговый фильтр забывает два условия",
+    "mode": "auto",
+    "expected": {
+      "Q1": 3,
+      "Q2": 0,
+      "Q3": 1
+    },
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M04-C3",
+    "module": 4,
+    "title": "Ионизируемый кандидат при двух pH",
+    "mode": "review",
+    "expected": null,
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M05-C1",
+    "module": 5,
+    "title": "Проверить метрику без химической библиотеки",
+    "mode": "auto",
+    "expected": {
+      "AB": 0.5,
+      "AC": 0
+    },
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M05-C2",
+    "module": 5,
+    "title": "Хиральность исчезла из поиска",
+    "mode": "auto",
+    "expected": {
+      "achiral_score": 1,
+      "chiral_score_below_one": true,
+      "symmetric": true,
+      "self_score": 1
+    },
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M05-C3",
+    "module": 5,
+    "title": "Закупить разнообразные аналоги",
+    "mode": "review",
+    "expected": null,
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M06-C1",
+    "module": 6,
+    "title": "Другой seed — другая гипотеза поиска",
+    "mode": "auto",
+    "expected": {
+      "has_converged": true,
+      "finite_energy": true,
+      "energy_unit": "kcal/mol"
+    },
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M06-C2",
+    "module": 6,
+    "title": "Торсион или поворот камеры?",
+    "mode": "auto",
+    "expected": {
+      "angle_degrees": 60,
+      "bond_length_preserved": true
+    },
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M06-C3",
+    "module": 6,
+    "title": "Несошедшуюся геометрию назвали лучшей",
+    "mode": "review",
+    "expected": null,
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M07-C1",
+    "module": 7,
+    "title": "Граница не является точным измерением",
+    "mode": "auto",
+    "expected": {
+      "p_bound": 5,
+      "p_relation": "<",
+      "exact_regression_eligible": false
+    },
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M07-C2",
+    "module": 7,
+    "title": "Новая партия активности",
+    "mode": "auto",
+    "expected": {
+      "included_ids": [
+        "S1"
+      ],
+      "p_values": [
+        7.301029995663981
+      ],
+      "excluded_reasons": [
+        "endpoint",
+        "target_id",
+        "value_or_unit"
+      ],
+      "total_rows": 4
+    },
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M07-C3",
+    "module": 7,
+    "title": "API оборвался на второй странице",
+    "mode": "review",
+    "expected": null,
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M08-C1",
+    "module": 8,
+    "title": "Контрольная пластина стала шумной",
+    "mode": "auto",
+    "expected": {
+      "z_good": 0.6666666666666666,
+      "z_bad": -0.3333333333333333,
+      "ef": 5
+    },
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M08-C2",
+    "module": 8,
+    "title": "Нельзя выкинуть все предупреждения",
+    "mode": "auto",
+    "expected": {
+      "statuses": [
+        "review",
+        "eligible",
+        "invalid"
+      ]
+    },
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M08-C3",
+    "module": 8,
+    "title": "Экономия без цены ложного отказа",
+    "mode": "review",
+    "expected": null,
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M09-C1",
+    "module": 9,
+    "title": "Две строки исчезли из отчёта",
+    "mode": "auto",
+    "expected": {
+      "rows": 12,
+      "valid_structures": 10,
+      "invalid_ids": [
+        "M08",
+        "M09"
+      ]
+    },
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M09-C2",
+    "module": 9,
+    "title": "ID оказался HTML-кодом",
+    "mode": "auto",
+    "expected": {
+      "escaped_label": "&lt;script&gt;alert(1)&lt;/script&gt;"
+    },
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M09-C3",
+    "module": 9,
+    "title": "Исправить подпись drug-ready",
+    "mode": "review",
+    "expected": null,
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M10-C1",
+    "module": 10,
+    "title": "Повторный поиск при другой случайности",
+    "mode": "review",
+    "expected": null,
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M10-C2",
+    "module": 10,
+    "title": "Совмещение скрыло неправильное размещение",
+    "mode": "auto",
+    "expected": {
+      "same_reference": 0,
+      "translated": 5,
+      "official_prepared": 0.906728765427707
+    },
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M10-C3",
+    "module": 10,
+    "title": "Новый сырой PDB",
+    "mode": "review",
+    "expected": null,
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M11-C1",
+    "module": 11,
+    "title": "Выбрать ошибку, а не красивое R²",
+    "mode": "auto",
+    "expected": {
+      "MAE_A": 0.3333333333333333,
+      "MAE_B": 0.6666666666666666,
+      "units": "logS"
+    },
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M11-C2",
+    "module": 11,
+    "title": "Сериализации протекли через split",
+    "mode": "auto",
+    "expected": {
+      "leaked_identities": [
+        "CCN",
+        "CCO"
+      ],
+      "group_split_has_overlap": false
+    },
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M11-C3",
+    "module": 11,
+    "title": "Пять крупнейших ошибок ESOL",
+    "mode": "review",
+    "expected": null,
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M12-C1",
+    "module": 12,
+    "title": "Знак разности электронных энергий",
+    "mode": "auto",
+    "expected": {
+      "delta_kJ_mol": -26.255
+    },
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M12-C2",
+    "module": 12,
+    "title": "Повтор HF/DFT при новой геометрии",
+    "mode": "auto",
+    "expected": {
+      "hf_converged": true,
+      "pbe_converged": true,
+      "finite": true,
+      "method_pair": [
+        "RHF",
+        "PBE"
+      ]
+    },
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M12-C3",
+    "module": 12,
+    "title": "Сходимость есть, физика диссоциации спорная",
+    "mode": "review",
+    "expected": null,
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M13-C1",
+    "module": 13,
+    "title": "Новый эфир вместо обучающего примера",
+    "mode": "auto",
+    "expected": {
+      "precursors": [
+        "CC(=O)O",
+        "CCO"
+      ]
+    },
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M13-C2",
+    "module": 13,
+    "title": "Более дорогой вход — меньшая приведённая цена?",
+    "mode": "auto",
+    "expected": {
+      "yields": [
+        0.56,
+        0.855
+      ],
+      "normalized_costs": [
+        1071.4285714285713,
+        877.1929824561404
+      ]
+    },
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M13-C3",
+    "module": 13,
+    "title": "Шаблон не сработал на амиде",
+    "mode": "review",
+    "expected": null,
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M14-C1",
+    "module": 14,
+    "title": "Чужой CSV в командной строке",
+    "mode": "ide",
+    "expected": null,
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M14-C2",
+    "module": 14,
+    "title": "Интерфейс с понятным отказом",
+    "mode": "ide",
+    "expected": null,
+    "tolerance": 1e-06
+  },
+  {
+    "id": "M14-C3",
+    "module": 14,
+    "title": "Передать исследовательское досье",
+    "mode": "ide",
+    "expected": null,
+    "tolerance": 1e-06
+  }
+]

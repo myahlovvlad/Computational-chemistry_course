@@ -1,0 +1,33 @@
+{
+  "lab": 10,
+  "calculation_wall_seconds": 49.76180521100002,
+  "result": {
+    "official_reference_rmsd_angstrom": 0.906728765427707,
+    "rmsd_definition": "mapped heavy atom serials, receptor frame, no symmetry optimization",
+    "reference_score": -13.234,
+    "mode": "executed-vina",
+    "wall_seconds": 49.74659437499997,
+    "score": -13.286,
+    "rmsd_angstrom": 0.8968616151652141,
+    "command": [
+      "/home/miakhlov/.local/bin/vina",
+      "--receptor",
+      "/home/miakhlov/Computational-chemistry_course/Labs/datasets/docking/1iep_receptor.pdbqt",
+      "--ligand",
+      "/home/miakhlov/Computational-chemistry_course/Labs/datasets/docking/1iep_ligand.pdbqt",
+      "--config",
+      "/home/miakhlov/Computational-chemistry_course/Labs/datasets/docking/1iep_receptor.box.txt",
+      "--seed",
+      "42",
+      "--cpu",
+      "1",
+      "--exhaustiveness",
+      "8",
+      "--num_modes",
+      "9",
+      "--out",
+      "/home/miakhlov/Computational-chemistry_course/Labs/results/lab10/redocked.pdbqt"
+    ],
+    "binary_sha256": "f31f774f723bba7bbe6e9d1c47577020eea9a8da16424284c043d22593570644"
+  }
+}

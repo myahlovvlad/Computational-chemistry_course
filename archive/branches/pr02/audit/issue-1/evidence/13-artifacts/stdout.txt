@@ -1,0 +1,161 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "id": "chemistry-row-preservation",
+      "status": "PASS",
+      "actual": 12
+    },
+    {
+      "id": "chemistry-invalid-rows",
+      "status": "PASS",
+      "actual": [
+        "M08",
+        "M09"
+      ]
+    },
+    {
+      "id": "audit\\issue-1\\evidence\\05-esol\\results-source-hash",
+      "status": "PASS",
+      "actual": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189"
+    },
+    {
+      "id": "audit\\issue-1\\evidence\\05-esol\\results-identity-rows",
+      "status": "PASS",
+      "actual": 227
+    },
+    {
+      "id": "audit\\issue-1\\evidence\\05-esol\\results-identity-measured",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "id": "audit\\issue-1\\evidence\\05-esol\\results-identity-MAE-recomputed",
+      "status": "PASS",
+      "actual": 0.49735626231938007
+    },
+    {
+      "id": "audit\\issue-1\\evidence\\05-esol\\results-scaffold-rows",
+      "status": "PASS",
+      "actual": 119
+    },
+    {
+      "id": "audit\\issue-1\\evidence\\05-esol\\results-scaffold-measured",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "id": "audit\\issue-1\\evidence\\05-esol\\results-scaffold-MAE-recomputed",
+      "status": "PASS",
+      "actual": 0.7162755385511053
+    },
+    {
+      "id": "Labs\\results\\lab11-source-hash",
+      "status": "PASS",
+      "actual": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189"
+    },
+    {
+      "id": "Labs\\results\\lab11-identity-rows",
+      "status": "PASS",
+      "actual": 227
+    },
+    {
+      "id": "Labs\\results\\lab11-identity-measured",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "id": "Labs\\results\\lab11-identity-MAE-recomputed",
+      "status": "PASS",
+      "actual": 0.49735626231938007
+    },
+    {
+      "id": "Labs\\results\\lab11-scaffold-rows",
+      "status": "PASS",
+      "actual": 119
+    },
+    {
+      "id": "Labs\\results\\lab11-scaffold-measured",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "id": "Labs\\results\\lab11-scaffold-MAE-recomputed",
+      "status": "PASS",
+      "actual": 0.7162755385511053
+    },
+    {
+      "id": "SDF-record-count",
+      "status": "PASS",
+      "actual": 4
+    },
+    {
+      "id": "SDF-status-energy-properties",
+      "status": "PASS",
+      "actual": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "id": "output-lab09/structures.png",
+      "status": "PASS",
+      "actual": 41974
+    },
+    {
+      "id": "output-lab09/properties.png",
+      "status": "PASS",
+      "actual": 30839
+    },
+    {
+      "id": "output-lab09/report.html",
+      "status": "PASS",
+      "actual": 5108
+    },
+    {
+      "id": "output-lab14/cli/report.csv",
+      "status": "PASS",
+      "actual": 1849
+    },
+    {
+      "id": "output-lab14/cli/report.json",
+      "status": "PASS",
+      "actual": 4858
+    },
+    {
+      "id": "Vina-executed-mode",
+      "status": "PASS",
+      "actual": {
+        "official_reference_rmsd_angstrom": 0.906728765427707,
+        "rmsd_definition": "mapped heavy atom serials, receptor frame, no symmetry optimization",
+        "reference_score": -13.234,
+        "mode": "executed-vina",
+        "wall_seconds": 62.55944099999033,
+        "score": -13.201,
+        "rmsd_angstrom": 0.9002324474597987,
+        "command": [
+          "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\tools\\bin\\vina_1.2.7_win.exe",
+          "--receptor",
+          "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\Labs\\datasets\\docking\\1iep_receptor.pdbqt",
+          "--ligand",
+          "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\Labs\\datasets\\docking\\1iep_ligand.pdbqt",
+          "--config",
+          "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\Labs\\datasets\\docking\\1iep_receptor.box.txt",
+          "--seed",
+          "42",
+          "--cpu",
+          "1",
+          "--exhaustiveness",
+          "8",
+          "--num_modes",
+          "9",
+          "--out",
+          "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\Labs\\results\\lab10\\redocked.pdbqt"
+        ],
+        "binary_sha256": "e0c4b2715e0c1a74f6e92d0f3be0328ac97542eafbc111e6b1efad897a73cce5"
+      }
+    }
+  ]
+}

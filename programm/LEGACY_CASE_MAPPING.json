@@ -1,0 +1,620 @@
+[
+  {
+    "source_case": "M01-C1",
+    "title": "Вернуть пропущенный фактор",
+    "target_lessons": [
+      "M09-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "auto",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M01-C2",
+    "title": "Повторы меняют доказательство",
+    "target_lessons": [
+      "M09-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "auto",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M01-C3",
+    "title": "Выбрать следующий эксперимент",
+    "target_lessons": [
+      "M09-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "review",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M02-C1",
+    "title": "Две единицы в одной поставке",
+    "target_lessons": [
+      "M02-L01",
+      "M02-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "auto",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M02-C2",
+    "title": "Совпадает имя, различаются байты",
+    "target_lessons": [
+      "M02-L01",
+      "M02-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "auto",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M02-C3",
+    "title": "Импорт работает в терминале, но не в ядре",
+    "target_lessons": [
+      "M02-L01",
+      "M02-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "review",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M03-C1",
+    "title": "Соль поменяла порядок компонентов",
+    "target_lessons": [
+      "M03-L01",
+      "M03-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "auto",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M03-C2",
+    "title": "Не схлопнуть стереопару",
+    "target_lessons": [
+      "M03-L01",
+      "M03-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "auto",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M03-C3",
+    "title": "Можно ли усреднить растворимость соли и кислоты?",
+    "target_lessons": [
+      "M03-L01",
+      "M03-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "review",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M04-C1",
+    "title": "Ноль площади или пропуск?",
+    "target_lessons": [
+      "M04-L01",
+      "M04-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "auto",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M04-C2",
+    "title": "Пороговый фильтр забывает два условия",
+    "target_lessons": [
+      "M04-L01",
+      "M04-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "auto",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M04-C3",
+    "title": "Ионизируемый кандидат при двух pH",
+    "target_lessons": [
+      "M04-L01",
+      "M04-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "review",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M05-C1",
+    "title": "Проверить метрику без химической библиотеки",
+    "target_lessons": [
+      "M05-L01",
+      "M05-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "auto",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M05-C2",
+    "title": "Хиральность исчезла из поиска",
+    "target_lessons": [
+      "M05-L01",
+      "M05-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "auto",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M05-C3",
+    "title": "Закупить разнообразные аналоги",
+    "target_lessons": [
+      "M05-L01",
+      "M05-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "review",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M06-C1",
+    "title": "Другой seed — другая гипотеза поиска",
+    "target_lessons": [
+      "M06-L01",
+      "M06-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "auto",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M06-C2",
+    "title": "Торсион или поворот камеры?",
+    "target_lessons": [
+      "M06-L01",
+      "M06-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "auto",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M06-C3",
+    "title": "Несошедшуюся геометрию назвали лучшей",
+    "target_lessons": [
+      "M06-L01",
+      "M06-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "review",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M07-C1",
+    "title": "Граница не является точным измерением",
+    "target_lessons": [
+      "M11-L01"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "auto",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M07-C2",
+    "title": "Новая партия активности",
+    "target_lessons": [
+      "M11-L01"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "auto",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M07-C3",
+    "title": "API оборвался на второй странице",
+    "target_lessons": [
+      "M11-L01"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "review",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M08-C1",
+    "title": "Контрольная пластина стала шумной",
+    "target_lessons": [
+      "M05-L02",
+      "M14-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "auto",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M08-C2",
+    "title": "Нельзя выкинуть все предупреждения",
+    "target_lessons": [
+      "M05-L02",
+      "M14-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "auto",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M08-C3",
+    "title": "Экономия без цены ложного отказа",
+    "target_lessons": [
+      "M05-L02",
+      "M14-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "review",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M09-C1",
+    "title": "Две строки исчезли из отчёта",
+    "target_lessons": [
+      "M14-L01"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "auto",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M09-C2",
+    "title": "ID оказался HTML-кодом",
+    "target_lessons": [
+      "M14-L01"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "auto",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M09-C3",
+    "title": "Исправить подпись drug-ready",
+    "target_lessons": [
+      "M14-L01"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "review",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M10-C1",
+    "title": "Повторный поиск при другой случайности",
+    "target_lessons": [
+      "M11-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "review",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M10-C2",
+    "title": "Совмещение скрыло неправильное размещение",
+    "target_lessons": [
+      "M11-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "auto",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M10-C3",
+    "title": "Новый сырой PDB",
+    "target_lessons": [
+      "M11-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "review",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M11-C1",
+    "title": "Выбрать ошибку, а не красивое R²",
+    "target_lessons": [
+      "M12-L01",
+      "M12-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "auto",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M11-C2",
+    "title": "Сериализации протекли через split",
+    "target_lessons": [
+      "M12-L01",
+      "M12-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "auto",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M11-C3",
+    "title": "Пять крупнейших ошибок ESOL",
+    "target_lessons": [
+      "M12-L01",
+      "M12-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "review",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M12-C1",
+    "title": "Знак разности электронных энергий",
+    "target_lessons": [
+      "M07-L01",
+      "M07-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "auto",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M12-C2",
+    "title": "Повтор HF/DFT при новой геометрии",
+    "target_lessons": [
+      "M07-L01",
+      "M07-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "auto",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M12-C3",
+    "title": "Сходимость есть, физика диссоциации спорная",
+    "target_lessons": [
+      "M07-L01",
+      "M07-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "review",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M13-C1",
+    "title": "Новый эфир вместо обучающего примера",
+    "target_lessons": [
+      "M13-L01",
+      "M13-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "auto",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M13-C2",
+    "title": "Более дорогой вход — меньшая приведённая цена?",
+    "target_lessons": [
+      "M13-L01",
+      "M13-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "auto",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M13-C3",
+    "title": "Шаблон не сработал на амиде",
+    "target_lessons": [
+      "M13-L01",
+      "M13-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "review",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M14-C1",
+    "title": "Чужой CSV в командной строке",
+    "target_lessons": [
+      "M14-L01",
+      "M14-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "ide",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M14-C2",
+    "title": "Интерфейс с понятным отказом",
+    "target_lessons": [
+      "M14-L01",
+      "M14-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "ide",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  },
+  {
+    "source_case": "M14-C3",
+    "title": "Передать исследовательское досье",
+    "target_lessons": [
+      "M14-L01",
+      "M14-L02"
+    ],
+    "source_commit": "889a77e215ac95971a29cf07d59ce8124a0ed6e8",
+    "mode": "ide",
+    "action": "ARCHIVE + adapt learning outcome",
+    "reason": "map by scientific competence; old numbering differs (old QM M12 becomes M07)",
+    "student_solution": "NOT_RUN",
+    "historical_source": "archive/branches/pr05/Labs/practice-case-registry.json",
+    "current_reexecution": "NOT_RUN: old reference code is historical, new lesson references run separately"
+  }
+]

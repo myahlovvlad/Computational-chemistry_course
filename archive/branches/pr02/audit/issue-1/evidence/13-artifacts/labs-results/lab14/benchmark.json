@@ -1,0 +1,11 @@
+{
+  "lab": 14,
+  "calculation_wall_seconds": 1.0083828999195248,
+  "result": {
+    "input_sha256": "f1904ebd8af5789d383f9593365bf5443abf7aa60106db0ecfb50d4fff628465",
+    "python": "3.12.10",
+    "rdkit": "2026.09.1",
+    "rows": 12,
+    "policy": "teaching-parent-v1;neutralize;tautomer=False"
+  }
+}

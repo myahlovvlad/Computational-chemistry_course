@@ -1,0 +1,118 @@
+{
+  "status": "BLOCKED",
+  "reason": "Mixed results; see per-example status",
+  "checks": [
+    {
+      "module": 2,
+      "index": 1,
+      "source": "Stepik_course/modules/02_environment.md",
+      "source_line": 37,
+      "argv": [
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe",
+        "-c",
+        "import sys; sys.path.insert(0,'C:\\\\Users\\\\Miakhlov\\\\Documents\\\\GitHub\\\\Computational chemistry_course\\\\tmp\\\\practice-audit-issue1-20261117\\\\Stepik_course\\\\practice'); exec(compile('def to_molar(value: float, scale: float) -> float:\\n    # WHY: логарифм концентрации требует единой системы единиц.\\n    return value * scale\\n\\nvalues = [10.0, 100.0, 1000.0]\\nresult = [to_molar(value, 1e-9) for value in values]\\nprint(result)','C:\\\\Users\\\\Miakhlov\\\\Documents\\\\GitHub\\\\Computational chemistry_course\\\\tmp\\\\practice-audit-issue1-20261117\\\\Stepik_course\\\\modules\\\\02_environment.md','exec'))"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "reason": "",
+      "stdout": "[1e-08, 1.0000000000000001e-07, 1.0000000000000002e-06]\n",
+      "stderr_file": "module-02-1-stderr.txt"
+    },
+    {
+      "module": 3,
+      "index": 1,
+      "source": "Stepik_course/modules/03_representations.md",
+      "source_line": 30,
+      "argv": [
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe",
+        "-c",
+        "import sys; sys.path.insert(0,'C:\\\\Users\\\\Miakhlov\\\\Documents\\\\GitHub\\\\Computational chemistry_course\\\\tmp\\\\practice-audit-issue1-20261117\\\\Stepik_course\\\\practice'); exec(compile('from chemistry import standardize\\nrecord = standardize(\"CC(=O)[O-].[Na+]\")\\nprint(record.raw_smiles, record.parent_smiles, record.policy)','C:\\\\Users\\\\Miakhlov\\\\Documents\\\\GitHub\\\\Computational chemistry_course\\\\tmp\\\\practice-audit-issue1-20261117\\\\Stepik_course\\\\modules\\\\03_representations.md','exec'))"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "reason": "",
+      "stdout": "CC(=O)[O-].[Na+] CC(=O)O teaching-parent-v1;neutralize;tautomer=False\n",
+      "stderr_file": "module-03-1-stderr.txt"
+    },
+    {
+      "module": 4,
+      "index": 1,
+      "source": "Stepik_course/modules/04_descriptors.md",
+      "source_line": 35,
+      "argv": [
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe",
+        "-c",
+        "import sys; sys.path.insert(0,'C:\\\\Users\\\\Miakhlov\\\\Documents\\\\GitHub\\\\Computational chemistry_course\\\\tmp\\\\practice-audit-issue1-20261117\\\\Stepik_course\\\\practice'); exec(compile('from chemistry import standardize, descriptors\\nrecord = standardize(\"CCO\")\\nprint(descriptors(record.parent_smiles))','C:\\\\Users\\\\Miakhlov\\\\Documents\\\\GitHub\\\\Computational chemistry_course\\\\tmp\\\\practice-audit-issue1-20261117\\\\Stepik_course\\\\modules\\\\04_descriptors.md','exec'))"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "reason": "",
+      "stdout": "{'MolWt': 46.069, 'MolLogP': -0.0014000000000000123, 'TPSA': 20.23, 'HBD': 1, 'HBA': 1, 'ro5_violations': 0}\n",
+      "stderr_file": "module-04-1-stderr.txt"
+    },
+    {
+      "module": 5,
+      "index": 1,
+      "source": "Stepik_course/modules/05_similarity.md",
+      "source_line": 21,
+      "argv": [
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe",
+        "-c",
+        "import sys; sys.path.insert(0,'C:\\\\Users\\\\Miakhlov\\\\Documents\\\\GitHub\\\\Computational chemistry_course\\\\tmp\\\\practice-audit-issue1-20261117\\\\Stepik_course\\\\practice'); exec(compile('from chemistry import similarity\\nprint(similarity(\"CCO\", \"OCC\"))','C:\\\\Users\\\\Miakhlov\\\\Documents\\\\GitHub\\\\Computational chemistry_course\\\\tmp\\\\practice-audit-issue1-20261117\\\\Stepik_course\\\\modules\\\\05_similarity.md','exec'))"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "reason": "",
+      "stdout": "1.0\n",
+      "stderr_file": "module-05-1-stderr.txt"
+    },
+    {
+      "module": 6,
+      "index": 1,
+      "source": "Stepik_course/modules/06_mechanics.md",
+      "source_line": 19,
+      "argv": [
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe",
+        "-c",
+        "import sys; sys.path.insert(0,'C:\\\\Users\\\\Miakhlov\\\\Documents\\\\GitHub\\\\Computational chemistry_course\\\\tmp\\\\practice-audit-issue1-20261117\\\\Stepik_course\\\\practice'); exec(compile('from chemistry import optimize_conformer\\nresult = optimize_conformer(\"CCCC\", seed=42)\\nprint(result)','C:\\\\Users\\\\Miakhlov\\\\Documents\\\\GitHub\\\\Computational chemistry_course\\\\tmp\\\\practice-audit-issue1-20261117\\\\Stepik_course\\\\modules\\\\06_mechanics.md','exec'))"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "reason": "",
+      "stdout": "{'converged': True, 'status_code': 0, 'energy_kcal_mol': -4.293764268294335, 'seed': 42, 'n_conformers': 1}\n",
+      "stderr_file": "module-06-1-stderr.txt"
+    },
+    {
+      "module": 7,
+      "index": 1,
+      "source": "Stepik_course/modules/07_databases.md",
+      "source_line": 31,
+      "argv": [
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe",
+        "-c",
+        "import sys; sys.path.insert(0,'C:\\\\Users\\\\Miakhlov\\\\Documents\\\\GitHub\\\\Computational chemistry_course\\\\tmp\\\\practice-audit-issue1-20261117\\\\Stepik_course\\\\practice'); exec(compile('from chemistry import p_activity\\nprint(p_activity(100.0, \"nM\"))  # 7.0','C:\\\\Users\\\\Miakhlov\\\\Documents\\\\GitHub\\\\Computational chemistry_course\\\\tmp\\\\practice-audit-issue1-20261117\\\\Stepik_course\\\\modules\\\\07_databases.md','exec'))"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "reason": "",
+      "stdout": "7.0\n",
+      "stderr_file": "module-07-1-stderr.txt"
+    },
+    {
+      "module": 12,
+      "index": 1,
+      "source": "Stepik_course/modules/12_quantum.md",
+      "source_line": 27,
+      "argv": [
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe",
+        "-c",
+        "import sys; sys.path.insert(0,'C:\\\\Users\\\\Miakhlov\\\\Documents\\\\GitHub\\\\Computational chemistry_course\\\\tmp\\\\practice-audit-issue1-20261117\\\\Stepik_course\\\\practice'); exec(compile('from pyscf import gto, dft\\nmol = gto.M(atom=\"H 0 0 0; H 0 0 0.74\", unit=\"Angstrom\",\\n            basis=\"sto-3g\", charge=0, spin=0)\\nmf = dft.RKS(mol)\\nmf.xc = \"pbe\"\\nenergy = mf.kernel()\\nprint(mf.converged, energy)','C:\\\\Users\\\\Miakhlov\\\\Documents\\\\GitHub\\\\Computational chemistry_course\\\\tmp\\\\practice-audit-issue1-20261117\\\\Stepik_course\\\\modules\\\\12_quantum.md','exec'))"
+      ],
+      "exit_code": 1,
+      "status": "BLOCKED",
+      "reason": "PySCF not installed in native Windows environment",
+      "stdout": "",
+      "stderr_file": "module-12-1-stderr.txt"
+    }
+  ]
+}

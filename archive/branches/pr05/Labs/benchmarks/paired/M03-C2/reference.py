@@ -1,0 +1,2 @@
+from chemistry import standardize
+f=lambda s,t=False:standardize(s,t).parent_smiles; a,b=case_input['stereo']; x,y=case_input['tautomers']; answer={'stereo_distinct':f(a)!=f(b),'default_tautomers_distinct':f(x)!=f(y),'explicit_tautomers_equal':f(x,True)==f(y,True)}

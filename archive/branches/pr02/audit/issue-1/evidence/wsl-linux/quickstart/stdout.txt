@@ -1,0 +1,188 @@
+/home/miakhlov/Computational-chemistry_course/.venv/bin/python 3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0] 2026.09.1
+
+Structure(raw_smiles='CC(=O)[O-].[Na+]', parent_smiles='CC(=O)O', policy='teaching-parent-v1;neutralize;tautomer=False')
+Structure(raw_smiles='Clc1ccccc1', parent_smiles='Clc1ccccc1', policy='teaching-parent-v1;neutralize;tautomer=False')
+{'MolWt': 60.05200000000001, 'MolLogP': 0.09089999999999993, 'TPSA': 37.3, 'HBD': 1, 'HBA': 1, 'ro5_violations': 0}
+
+[12:37:46] Initializing MetalDisconnector
+[12:37:46] Running MetalDisconnector
+[12:37:46] Initializing Normalizer
+[12:37:46] Running Normalizer
+[12:37:46] Initializing MetalDisconnector
+[12:37:46] Running MetalDisconnector
+[12:37:46] Initializing Normalizer
+[12:37:46] Running Normalizer
+[12:37:46] Running LargestFragmentChooser
+[12:37:46] Fragment: CC(=O)[O-]
+[12:37:46] New largest fragment: CC(=O)[O-] (7)
+[12:37:46] Fragment: [Na+]
+[12:37:46] Running Uncharger
+[12:37:46] Removed negative charge.
+[12:37:46] Initializing MetalDisconnector
+[12:37:46] Running MetalDisconnector
+[12:37:46] Initializing Normalizer
+[12:37:46] Running Normalizer
+[12:37:46] Initializing MetalDisconnector
+[12:37:46] Running MetalDisconnector
+[12:37:46] Initializing Normalizer
+[12:37:46] Running Normalizer
+[12:37:46] Running LargestFragmentChooser
+[12:37:46] Running Uncharger
+[12:37:46] Initializing MetalDisconnector
+[12:37:46] Running MetalDisconnector
+[12:37:46] Initializing Normalizer
+[12:37:46] Running Normalizer
+[12:37:46] Initializing MetalDisconnector
+[12:37:46] Running MetalDisconnector
+[12:37:46] Initializing Normalizer
+[12:37:46] Running Normalizer
+[12:37:46] Running LargestFragmentChooser
+[12:37:46] Running Uncharger
+[12:37:46] Initializing MetalDisconnector
+[12:37:46] Running MetalDisconnector
+[12:37:46] Initializing Normalizer
+[12:37:46] Running Normalizer
+[12:37:46] Initializing MetalDisconnector
+[12:37:46] Running MetalDisconnector
+[12:37:46] Initializing Normalizer
+[12:37:46] Running Normalizer
+[12:37:46] Running LargestFragmentChooser
+[12:37:46] Running Uncharger
+
+M01 eligible No listed alert; activity remains unknown
+M02 eligible No listed alert; activity remains unknown
+M03 eligible No listed alert; activity remains unknown
+M04 eligible No listed alert; activity remains unknown
+M05 eligible No listed alert; activity remains unknown
+M06 review PAINS:catechol_A(92)
+M07 eligible No listed alert; activity remains unknown
+M08 invalid Invalid SMILES
+M09 invalid SMILES must be a nonempty string
+M10 eligible No listed alert; activity remains unknown
+M11 eligible No listed alert; activity remains unknown
+M12 eligible No listed alert; activity remains unknown
+
+[12:37:46] Initializing MetalDisconnector
+[12:37:46] Running MetalDisconnector
+[12:37:46] Initializing Normalizer
+[12:37:46] Running Normalizer
+[12:37:46] Initializing MetalDisconnector
+[12:37:46] Running MetalDisconnector
+[12:37:46] Initializing Normalizer
+[12:37:46] Running Normalizer
+[12:37:46] Running LargestFragmentChooser
+[12:37:46] Running Uncharger
+[12:37:46] Initializing MetalDisconnector
+[12:37:46] Running MetalDisconnector
+[12:37:46] Initializing Normalizer
+[12:37:46] Running Normalizer
+[12:37:46] Initializing MetalDisconnector
+[12:37:46] Running MetalDisconnector
+[12:37:46] Initializing Normalizer
+[12:37:46] Running Normalizer
+[12:37:46] Running LargestFragmentChooser
+[12:37:46] Running Uncharger
+[12:37:46] Initializing MetalDisconnector
+[12:37:46] Running MetalDisconnector
+[12:37:46] Initializing Normalizer
+[12:37:46] Running Normalizer
+[12:37:46] Initializing MetalDisconnector
+[12:37:46] Running MetalDisconnector
+[12:37:46] Initializing Normalizer
+[12:37:46] Running Normalizer
+[12:37:46] Running LargestFragmentChooser
+[12:37:46] Fragment: CC(=O)[O-]
+[12:37:46] New largest fragment: CC(=O)[O-] (7)
+[12:37:46] Fragment: [Na+]
+[12:37:46] Running Uncharger
+[12:37:46] Removed negative charge.
+[12:37:46] Initializing MetalDisconnector
+[12:37:46] Running MetalDisconnector
+[12:37:46] Initializing Normalizer
+[12:37:46] Running Normalizer
+[12:37:46] Initializing MetalDisconnector
+[12:37:46] Running MetalDisconnector
+[12:37:46] Initializing Normalizer
+[12:37:46] Running Normalizer
+[12:37:46] Running LargestFragmentChooser
+[12:37:46] Running Uncharger
+[12:37:46] Initializing MetalDisconnector
+[12:37:46] Running MetalDisconnector
+[12:37:46] Initializing Normalizer
+[12:37:46] Running Normalizer
+[12:37:46] Initializing MetalDisconnector
+[12:37:46] Running MetalDisconnector
+[12:37:46] Initializing Normalizer
+[12:37:46] Running Normalizer
+[12:37:46] Running LargestFragmentChooser
+[12:37:46] Running Uncharger
+[12:37:46] Initializing MetalDisconnector
+[12:37:46] Running MetalDisconnector
+[12:37:46] Initializing Normalizer
+[12:37:46] Running Normalizer
+[12:37:46] Initializing MetalDisconnector
+[12:37:46] Running MetalDisconnector
+[12:37:46] Initializing Normalizer
+[12:37:46] Running Normalizer
+[12:37:46] Running LargestFragmentChooser
+[12:37:46] Running Uncharger
+[12:37:46] Initializing MetalDisconnector
+[12:37:46] Running MetalDisconnector
+[12:37:46] Initializing Normalizer
+[12:37:46] Running Normalizer
+[12:37:46] Initializing MetalDisconnector
+[12:37:46] Running MetalDisconnector
+[12:37:46] Initializing Normalizer
+[12:37:46] Running Normalizer
+[12:37:46] Running LargestFragmentChooser
+[12:37:46] Running Uncharger
+[12:37:46] SMILES Parse Error: syntax error while parsing: not_a_smiles
+[12:37:46] SMILES Parse Error: check for mistakes around position 3:
+[12:37:46] not_a_smiles
+[12:37:46] ~~^
+[12:37:46] SMILES Parse Error: Failed parsing SMILES 'not_a_smiles' for input: 'not_a_smiles'
+[12:37:46] Initializing MetalDisconnector
+[12:37:46] Running MetalDisconnector
+[12:37:46] Initializing Normalizer
+[12:37:46] Running Normalizer
+[12:37:46] Initializing MetalDisconnector
+[12:37:46] Running MetalDisconnector
+[12:37:46] Initializing Normalizer
+[12:37:46] Running Normalizer
+[12:37:46] Running LargestFragmentChooser
+[12:37:46] Running Uncharger
+[12:37:46] Initializing MetalDisconnector
+[12:37:46] Running MetalDisconnector
+[12:37:46] Initializing Normalizer
+[12:37:46] Running Normalizer
+[12:37:46] Initializing MetalDisconnector
+[12:37:46] Running MetalDisconnector
+[12:37:46] Initializing Normalizer
+[12:37:46] Running Normalizer
+[12:37:46] Running LargestFragmentChooser
+[12:37:46] Running Uncharger
+[12:37:46] Initializing MetalDisconnector
+[12:37:46] Running MetalDisconnector
+[12:37:46] Initializing Normalizer
+[12:37:46] Running Normalizer
+[12:37:46] Initializing MetalDisconnector
+[12:37:46] Running MetalDisconnector
+[12:37:46] Initializing Normalizer
+[12:37:46] Running Normalizer
+[12:37:46] Running LargestFragmentChooser
+[12:37:46] Running Uncharger
+
+R01 included 7.0 teaching rules satisfied
+R02 included 7.0 teaching rules satisfied
+R03 excluded None relation
+R04 excluded None endpoint
+R05 excluded None target_id
+R06 excluded None assay_id
+R07 excluded None value_or_unit
+R08 excluded None value_or_unit
+
+Танимото: 0.5
+Morgan: 1.0
+Z prime: 0.6666666666666667
+EF: 5.0
+Конформер: {'converged': True, 'status_code': 0, 'energy_kcal_mol': -4.29376426829433, 'seed': 42, 'n_conformers': 1}

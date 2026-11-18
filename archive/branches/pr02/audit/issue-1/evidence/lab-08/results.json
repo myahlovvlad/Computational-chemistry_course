@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "source": "Labs/notebooks/lab08.ipynb",
+  "source_sha256": "d7c15db7899ce3ab9abafcc945c306bd02f454a5b5b133eef9ea4678ea2bcf19",
+  "kernel": "practice-audit-issue1",
+  "code_cells_executed": 3,
+  "output": "executed.ipynb",
+  "scope": "Reference notebook execution and its assertions; no learner/Stepik verification"
+}

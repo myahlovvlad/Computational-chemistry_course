@@ -1,0 +1,13 @@
+{
+  "id": "module12-pyscf",
+  "argv": [
+    "/home/miakhlov/Computational-chemistry_course/.venv/bin/python",
+    "/home/miakhlov/course-evidence-linux-02/module12-pyscf.py"
+  ],
+  "cwd": "/home/miakhlov/Computational-chemistry_course",
+  "started_utc": "2026-11-17T09:39:03.937870+00:00",
+  "duration_seconds": 0.4149609729998929,
+  "exit_code": 0,
+  "status": "PASS",
+  "environment": "../environment.json"
+}

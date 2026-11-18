@@ -1,0 +1,4 @@
+
+ESOL отдельно: 1128 строк; measured target присутствует
+
+Запуск сохранён: /home/miakhlov/Computational-chemistry_course/Labs/results/lab07/benchmark.json

@@ -1,0 +1,25 @@
+{
+  "id": "M02-C1",
+  "scope": "author numeric reference only, not learner completion",
+  "status": "PASS",
+  "reason": "Совпадает только указанный численный контракт",
+  "started_utc": "2026-11-17T11:01:25.055364+00:00",
+  "wall_seconds": 0.000272066000434279,
+  "actual": {
+    "p_values": [
+      5.6020599913279625,
+      5.6020599913279625,
+      null,
+      null
+    ],
+    "statuses": [
+      "ok",
+      "ok",
+      "invalid",
+      "invalid"
+    ]
+  },
+  "reference": "reference.py",
+  "inputs": "input.json",
+  "command": "uv run --frozen python tools/run_labs.py --output <new-directory> (author-reference stage)"
+}

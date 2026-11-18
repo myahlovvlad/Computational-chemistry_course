@@ -1,0 +1,902 @@
+[
+  {
+    "id": "M01-C1",
+    "module": 1,
+    "title": "Вернуть пропущенный фактор",
+    "mode": "auto",
+    "input": {
+      "A": [
+        -1,
+        1,
+        -1,
+        1
+      ],
+      "B": [
+        -1,
+        -1,
+        1,
+        1
+      ],
+      "y": [
+        43,
+        47,
+        37,
+        73
+      ]
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Постройте AB и матрицу модели [1,A,B,AB].",
+      "Верните beta, effects и residual_df; сохраните график взаимодействия.",
+      "Объясните различие коэффициента и эффекта."
+    ]
+  },
+  {
+    "id": "M01-C2",
+    "module": 1,
+    "title": "Повторы меняют доказательство",
+    "mode": "auto",
+    "input": {
+      "A": [
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        1
+      ],
+      "B": [
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "y": [
+        43,
+        45,
+        47,
+        49,
+        37,
+        39,
+        73,
+        75
+      ]
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Оцените модель по восьми строкам методом наименьших квадратов.",
+      "Верните beta, pure_error_df и pure_error_ms.",
+      "Назовите допущение, при котором эти повторы оценивают экспериментальную вариабельность."
+    ]
+  },
+  {
+    "id": "M01-C3",
+    "module": 1,
+    "title": "Выбрать следующий эксперимент",
+    "mode": "review",
+    "input": {
+      "proposal": "найти хорошую молекулу",
+      "budget": "один следующий эксперимент"
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Составьте паспорт: величина, объект, условия, контроль, критерий решения.",
+      "Предложите отрицательный результат и критерий остановки.",
+      "Свяжите выбранную модель с решением, которое изменится после расчёта."
+    ]
+  },
+  {
+    "id": "M02-C1",
+    "module": 2,
+    "title": "Две единицы в одной поставке",
+    "mode": "auto",
+    "input": {
+      "values": [
+        2.5,
+        2500,
+        0,
+        1
+      ],
+      "units": [
+        "uM",
+        "nM",
+        "M",
+        "unknown"
+      ]
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Напишите своё преобразование без вызова готового p_activity.",
+      "Верните p_values, заменяя непригодное значение на None, и statuses.",
+      "Объясните, почему ошибку нельзя подменить pIC50=0."
+    ]
+  },
+  {
+    "id": "M02-C2",
+    "module": 2,
+    "title": "Совпадает имя, различаются байты",
+    "mode": "auto",
+    "input": {
+      "text": "id,smiles\nA,CCO\n",
+      "suffix": "\n"
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Рассчитайте SHA256 исходных байтов и двух копий.",
+      "Верните same_copy, changed_copy и source_preserved.",
+      "Сохраните паспорт Python/uv отдельно; объясните границы вывода по hash."
+    ]
+  },
+  {
+    "id": "M02-C3",
+    "module": 2,
+    "title": "Импорт работает в терминале, но не в ядре",
+    "mode": "review",
+    "input": {
+      "terminal_python": "другая .venv",
+      "kernel_python": "измерить sys.executable"
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Сопоставьте пути Python и версии в терминале и notebook.",
+      "В IDE выберите проектную uv .venv; в Jupyter — chemistry-course-uv.",
+      "Приложите команды, диагностику до/после и объяснение причины без переустановки Python системы."
+    ]
+  },
+  {
+    "id": "M03-C1",
+    "module": 3,
+    "title": "Соль поменяла порядок компонентов",
+    "mode": "auto",
+    "input": {
+      "smiles": [
+        "CC(=O)[O-].[Na+]",
+        "[Na+].CC(=O)[O-]",
+        "Brc1ccccc1"
+      ]
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Получите parent всех трёх записей с явной политикой.",
+      "Верните same_parent, covalent_br_retained и rows.",
+      "Сдайте таблицу raw/parent/status; не используйте split по точке как политику химии."
+    ]
+  },
+  {
+    "id": "M03-C2",
+    "module": 3,
+    "title": "Не схлопнуть стереопару",
+    "mode": "auto",
+    "input": {
+      "stereo": [
+        "C[C@H](O)C(=O)O",
+        "C[C@@H](O)C(=O)O"
+      ],
+      "tautomers": [
+        "O=c1cccc[nH]1",
+        "Oc1ccccn1"
+      ]
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Сравните стереопару и таутомеры при выключенной канонизации.",
+      "Повторите только таутомерную пару с явным True.",
+      "Верните stereo_distinct, default_tautomers_distinct и explicit_tautomers_equal; запишите обе политики."
+    ]
+  },
+  {
+    "id": "M03-C3",
+    "module": 3,
+    "title": "Можно ли усреднить растворимость соли и кислоты?",
+    "mode": "review",
+    "input": {
+      "records": [
+        {
+          "form": "соль",
+          "pH": "не указан"
+        },
+        {
+          "form": "кислота",
+          "pH": 7
+        }
+      ]
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Перечислите недостающие условия и единицы.",
+      "Разделите идентичность parent и идентичность физического образца.",
+      "Предложите допустимое решение о включении/отложенной проверке без придумывания измерений."
+    ]
+  },
+  {
+    "id": "M04-C1",
+    "module": 4,
+    "title": "Ноль площади или пропуск?",
+    "mode": "auto",
+    "input": {
+      "ethanol": "CCO",
+      "benzene": "c1ccccc1"
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Рассчитайте признаки валидных графов.",
+      "Верните ethanol_MW, ethanol_HBD, ethanol_HBA и benzene_TPSA.",
+      "Подпишите единицы и объясните, почему invalid не должен давать числовой ноль."
+    ]
+  },
+  {
+    "id": "M04-C2",
+    "module": 4,
+    "title": "Пороговый фильтр забывает два условия",
+    "mode": "auto",
+    "input": {
+      "profiles": [
+        {
+          "id": "Q1",
+          "MW": 600,
+          "logP": 2,
+          "HBD": 6,
+          "HBA": 12
+        },
+        {
+          "id": "Q2",
+          "MW": 500,
+          "logP": 5,
+          "HBD": 5,
+          "HBA": 10
+        },
+        {
+          "id": "Q3",
+          "MW": 450,
+          "logP": 5.1,
+          "HBD": 0,
+          "HBA": 0
+        }
+      ]
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Напишите счётчик всех четырёх строгих условий >.",
+      "Верните словарь id → число нарушений.",
+      "Сформулируйте, каких биологических выводов этот фильтр не поддерживает."
+    ]
+  },
+  {
+    "id": "M04-C3",
+    "module": 4,
+    "title": "Ионизируемый кандидат при двух pH",
+    "mode": "review",
+    "input": {
+      "reported": "logD",
+      "pH": "не указан",
+      "calculated": "MolLogP parent"
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Укажите, какие величины сравниваются и чего не хватает.",
+      "Предложите корректный контроль при согласованных условиях.",
+      "Сдайте короткую записку с границей применимости дескриптора."
+    ]
+  },
+  {
+    "id": "M05-C1",
+    "module": 5,
+    "title": "Проверить метрику без химической библиотеки",
+    "mode": "auto",
+    "input": {
+      "A": [
+        1,
+        2,
+        3
+      ],
+      "B": [
+        2,
+        3,
+        4
+      ],
+      "C": [
+        7,
+        8
+      ]
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Самостоятельно реализуйте Tanimoto для множеств.",
+      "Верните AB и AC; проверьте симметрию и отдельно оговорите пустые множества.",
+      "Покажите промежуточные мощности пересечения и объединения."
+    ]
+  },
+  {
+    "id": "M05-C2",
+    "module": 5,
+    "title": "Хиральность исчезла из поиска",
+    "mode": "auto",
+    "input": {
+      "smiles": [
+        "C[C@H](O)C(=O)O",
+        "C[C@@H](O)C(=O)O"
+      ],
+      "radius": 2,
+      "fpSize": 2048
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Постройте два набора Morgan с includeChirality=False/True.",
+      "Верните achiral_score, chiral_score_below_one, symmetric и self_score.",
+      "Сохраните оба параметрических паспорта; не объявляйте T=1 универсальной идентичностью."
+    ]
+  },
+  {
+    "id": "M05-C3",
+    "module": 5,
+    "title": "Закупить разнообразные аналоги",
+    "mode": "review",
+    "input": {
+      "dataset": "molecules.csv",
+      "query": "CCO",
+      "slots": 3
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Удалите только дубли представлений по явной политике, сохранив связь ID.",
+      "Предложите критерий разнообразия и список выбранных ID с обоснованием.",
+      "Объясните, почему сходство не доказывает активность."
+    ]
+  },
+  {
+    "id": "M06-C1",
+    "module": 6,
+    "title": "Другой seed — другая гипотеза поиска",
+    "mode": "auto",
+    "input": {
+      "smiles": "CCCC",
+      "seed": 7
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Выполните ETKDG и MMFF с проверкой параметров и статуса.",
+      "Верните has_converged, finite_energy и energy_unit; сохраните координаты и энергию.",
+      "Сравните с разбором, не требуя тождества стохастических траекторий."
+    ]
+  },
+  {
+    "id": "M06-C2",
+    "module": 6,
+    "title": "Торсион или поворот камеры?",
+    "mode": "auto",
+    "input": {
+      "smiles": "CCCC",
+      "atoms": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "target_degrees": 60
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Создайте конформер и измерьте длину центральной связи.",
+      "Измените диэдр по четырём атомам через rdMolTransforms и повторно измерьте.",
+      "Верните angle_degrees и bond_length_preserved; не заменяйте изменение координат настройкой камеры."
+    ]
+  },
+  {
+    "id": "M06-C3",
+    "module": 6,
+    "title": "Несошедшуюся геометрию назвали лучшей",
+    "mode": "review",
+    "input": {
+      "reported_status": 1,
+      "claim": "глобальный минимум"
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Определите, какие данные нужно проверить до сравнения энергий.",
+      "Предложите повтор поиска с заранее записанными параметрами.",
+      "Составьте журнал причин, по которым утверждение о глобальном минимуме пока не поддержано."
+    ]
+  },
+  {
+    "id": "M07-C1",
+    "module": 7,
+    "title": "Граница не является точным измерением",
+    "mode": "auto",
+    "input": {
+      "value": 10,
+      "unit": "uM",
+      "relation": ">"
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Преобразуйте значение и знак отношения.",
+      "Верните p_bound, p_relation и exact_regression_eligible.",
+      "Сохраните исходную границу в журнале и объясните ограничение точечной регрессии."
+    ]
+  },
+  {
+    "id": "M07-C2",
+    "module": 7,
+    "title": "Новая партия активности",
+    "mode": "auto",
+    "input": {
+      "records": [
+        {
+          "record_id": "S1",
+          "target_id": "T1",
+          "assay_id": "A1",
+          "endpoint": "IC50",
+          "value": "50",
+          "unit": "nM",
+          "relation": "="
+        },
+        {
+          "record_id": "S2",
+          "target_id": "T1",
+          "assay_id": "A1",
+          "endpoint": "Ki",
+          "value": "50",
+          "unit": "nM",
+          "relation": "="
+        },
+        {
+          "record_id": "S3",
+          "target_id": "T2",
+          "assay_id": "A1",
+          "endpoint": "IC50",
+          "value": "50",
+          "unit": "nM",
+          "relation": "="
+        },
+        {
+          "record_id": "S4",
+          "target_id": "T1",
+          "assay_id": "A1",
+          "endpoint": "IC50",
+          "value": "-2",
+          "unit": "nM",
+          "relation": "="
+        }
+      ]
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Примените явную консервативную политику к новой партии.",
+      "Верните included_ids, p_values, excluded_reasons и total_rows.",
+      "Сдайте журнал всех строк; не усредняйте Ki с IC50."
+    ]
+  },
+  {
+    "id": "M07-C3",
+    "module": 7,
+    "title": "API оборвался на второй странице",
+    "mode": "review",
+    "input": {
+      "page1": {
+        "ids": [
+          "A",
+          "B"
+        ],
+        "next": "page2"
+      },
+      "page2": "timeout"
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Спроектируйте offline проверку пагинации с заданными mock-ответами.",
+      "Опишите ограниченные повторы, статус неполной выгрузки и сохранение provenance.",
+      "Сдайте запрос/параметры/hash snapshot и явный перечень неполноты; не обращайтесь к закрытым данным."
+    ]
+  },
+  {
+    "id": "M08-C1",
+    "module": 8,
+    "title": "Контрольная пластина стала шумной",
+    "mode": "auto",
+    "input": {
+      "mu_pos": 100,
+      "mu_neg": 10,
+      "sd_good": [
+        5,
+        5
+      ],
+      "sd_bad": [
+        20,
+        20
+      ],
+      "N": 1000,
+      "A": 20,
+      "k": 50,
+      "a": 5
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Самостоятельно вычислите Z′ двух пластин и EF@50.",
+      "Верните z_good, z_bad, ef.",
+      "Объясните, почему EF не заменяет оценку качества ассая."
+    ]
+  },
+  {
+    "id": "M08-C2",
+    "module": 8,
+    "title": "Нельзя выкинуть все предупреждения",
+    "mode": "auto",
+    "input": {
+      "smiles": [
+        "Oc1ccccc1O",
+        "CCO",
+        ""
+      ]
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Сохраните все три строки с причиной.",
+      "Верните statuses в исходном порядке.",
+      "Для review предложите подтверждающий контроль, для eligible запишите предел вывода."
+    ]
+  },
+  {
+    "id": "M08-C3",
+    "module": 8,
+    "title": "Экономия без цены ложного отказа",
+    "mode": "review",
+    "input": {
+      "flagged": 20,
+      "price_per_item": 50,
+      "false_rejection_probability": "неизвестна"
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Разделите номинальные расходы и ожидаемую полезность решения.",
+      "Укажите недостающие вероятности, стоимость контроля и цену потери полезного кандидата.",
+      "Предложите ограниченный подтверждающий эксперимент вместо безусловного отказа."
+    ]
+  },
+  {
+    "id": "M09-C1",
+    "module": 9,
+    "title": "Две строки исчезли из отчёта",
+    "mode": "auto",
+    "input": {
+      "dataset": "molecules.csv"
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Получите таблицу решений всех исходных строк.",
+      "Верните rows, valid_structures и invalid_ids.",
+      "Сдайте статический HTML с таблицей всех ID, легендой и подписями осей с единицами."
+    ]
+  },
+  {
+    "id": "M09-C2",
+    "module": 9,
+    "title": "ID оказался HTML-кодом",
+    "mode": "auto",
+    "input": {
+      "id": "<script>alert(1)</script>"
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Экранируйте ID стандартным средством, не удаляя исходную строку.",
+      "Верните escaped_label.",
+      "Покажите в сохранённом HTML, что имя отображается текстом; не используйте unsafe rendering для CSV."
+    ]
+  },
+  {
+    "id": "M09-C3",
+    "module": 9,
+    "title": "Исправить подпись drug-ready",
+    "mode": "review",
+    "input": {
+      "axes": [
+        "MW",
+        "TPSA"
+      ],
+      "claim": "drug-ready"
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Перепишите подпись, указав рассчитанные величины и ограничения.",
+      "Предложите текстовый доступ к статусам и ID без цветовой кодировки.",
+      "Объясните, чего нельзя вывести из одной конформации."
+    ]
+  },
+  {
+    "id": "M10-C1",
+    "module": 10,
+    "title": "Повторный поиск при другой случайности",
+    "mode": "review",
+    "input": {
+      "dataset": "docking/",
+      "seed": 7,
+      "cpu": 1,
+      "exhaustiveness": 8
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Выполните новый Vina run в отдельном каталоге с тем же box.",
+      "Сохраните argv, версию/hash бинарника, stdout/stderr, позы, score и serial-mapped RMSD.",
+      "Сравните результаты описательно; если бинарника нет, отметьте BLOCKED и не подставляйте официальный выход."
+    ]
+  },
+  {
+    "id": "M10-C2",
+    "module": 10,
+    "title": "Совмещение скрыло неправильное размещение",
+    "mode": "auto",
+    "input": {
+      "translation_angstrom": [
+        5,
+        0,
+        0
+      ],
+      "reference": "docking/1iep_ligand.pdbqt",
+      "official_pose": "docking/1iep_ligand_vina_out.pdbqt"
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Сопоставьте тяжёлые атомы по serial без отдельного совмещения.",
+      "Верните same_reference, translated и official_prepared RMSD.",
+      "Объясните отличие этого контроля от symmetry-corrected экспериментальной валидации."
+    ]
+  },
+  {
+    "id": "M10-C3",
+    "module": 10,
+    "title": "Новый сырой PDB",
+    "mode": "review",
+    "input": {
+      "input": "новая экспериментальная структура",
+      "prepared_reference": "ещё не проверен"
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Составьте план проверки цепей, вод/кофакторов, протонирования и валентности.",
+      "Определите box заново и способ независимой сверки экспериментальной позы/atom mapping.",
+      "Отметьте неисполненные этапы и необходимые инструменты; не называйте план выполненным redocking."
+    ]
+  },
+  {
+    "id": "M11-C1",
+    "module": 11,
+    "title": "Выбрать ошибку, а не красивое R²",
+    "mode": "auto",
+    "input": {
+      "y": [
+        -3,
+        -2,
+        -1
+      ],
+      "A": [
+        -2.5,
+        -2.5,
+        -1
+      ],
+      "B": [
+        -2,
+        -2,
+        -2
+      ]
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Рассчитайте MAE обеих моделей без sklearn.",
+      "Верните MAE_A, MAE_B и units.",
+      "Объясните, почему три объекта не доказывают применимость к новой химической области."
+    ]
+  },
+  {
+    "id": "M11-C2",
+    "module": 11,
+    "title": "Сериализации протекли через split",
+    "mode": "auto",
+    "input": {
+      "smiles": [
+        "CCO",
+        "OCC",
+        "CCN",
+        "NCC"
+      ],
+      "train": [
+        0,
+        2
+      ],
+      "test": [
+        1,
+        3
+      ]
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Канонизируйте identity без удаления строк.",
+      "Найдите пересечение train/test и предложите групповое разделение.",
+      "Верните leaked_identities и group_split_has_overlap; сохраните новое membership."
+    ]
+  },
+  {
+    "id": "M11-C3",
+    "module": 11,
+    "title": "Пять крупнейших ошибок ESOL",
+    "mode": "review",
+    "input": {
+      "dataset": "esol.csv",
+      "split": "scaffold",
+      "action": "сохранить фиксированный holdout"
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Выполните фиксированный протокол и выведите пять крупнейших ошибок с ID/SMILES и измеренной целью.",
+      "Проверьте target, membership и ближайшую train-похожесть.",
+      "Разберите ошибки без удаления test-строк и выбора гиперпараметров по этому holdout."
+    ]
+  },
+  {
+    "id": "M12-C1",
+    "module": 12,
+    "title": "Знак разности электронных энергий",
+    "mode": "auto",
+    "input": {
+      "E_initial": -100.0,
+      "E_final": -100.01,
+      "kJ_per_Hartree": 2625.5
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Вычислите E_final−E_initial и переведите единицы.",
+      "Верните delta_kJ_mol.",
+      "Объясните, почему данных недостаточно для ΔG и барьера."
+    ]
+  },
+  {
+    "id": "M12-C2",
+    "module": 12,
+    "title": "Повтор HF/DFT при новой геометрии",
+    "mode": "auto",
+    "input": {
+      "distance_angstrom": 1.0,
+      "basis": "sto-3g",
+      "charge": 0,
+      "spin": 0,
+      "functional": "PBE",
+      "grid_level": 4
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Запустите PySCF RHF и RKS/PBE при одинаковых входах.",
+      "Верните hf_converged, pbe_converged, finite и method_pair; полный JSON с энергиями сохраните отдельно.",
+      "Приложите SCF logs/версии и объясните физические ограничения малого базиса."
+    ]
+  },
+  {
+    "id": "M12-C3",
+    "module": 12,
+    "title": "Сходимость есть, физика диссоциации спорная",
+    "mode": "review",
+    "input": {
+      "method": "RHF/STO-3G",
+      "frequencies": "не рассчитаны",
+      "temperature_K": 298
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Отделите численную сходимость, электронную модель и термохимию.",
+      "Укажите роль корреляции, базиса и частотных/тепловых поправок.",
+      "Предложите следующий контроль, не заменяя E произвольной «поправленной» G."
+    ]
+  },
+  {
+    "id": "M13-C1",
+    "module": 13,
+    "title": "Новый эфир вместо обучающего примера",
+    "mode": "auto",
+    "input": {
+      "smiles": "CCOC(C)=O"
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Примените ester SMARTS, санитизируйте продукты и уберите atom maps из отображения.",
+      "Верните отсортированный precursors.",
+      "Укажите, чего правило не сообщает об условиях и выходе реальной реакции."
+    ]
+  },
+  {
+    "id": "M13-C2",
+    "module": 13,
+    "title": "Более дорогой вход — меньшая приведённая цена?",
+    "mode": "auto",
+    "input": {
+      "A": {
+        "yields": [
+          0.8,
+          0.7
+        ],
+        "cost": 600
+      },
+      "B": {
+        "yields": [
+          0.95,
+          0.9
+        ],
+        "cost": 750
+      }
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Перемножьте выходы и вычислите cost/overall_yield.",
+      "Верните yields и normalized_costs в порядке A,B.",
+      "Перечислите допущения о загрузке и недостающие данные о масштабе."
+    ]
+  },
+  {
+    "id": "M13-C3",
+    "module": 13,
+    "title": "Шаблон не сработал на амиде",
+    "mode": "review",
+    "input": {
+      "smiles": "CC(=O)NCC",
+      "template_family": "ester"
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Покажите границу данного правила на новой структуре.",
+      "Сравните, какие дополнительные данные потребуются для поиска по правилам, базе реакций и ML.",
+      "Сдайте план проверки предложенного маршрута без обещания универсальности одного SMARTS."
+    ]
+  },
+  {
+    "id": "M14-C1",
+    "module": 14,
+    "title": "Чужой CSV в командной строке",
+    "mode": "ide",
+    "input": {
+      "valid": "molecules.csv",
+      "negative": "повторный ID и отсутствующий smiles",
+      "workspace": "student_work/module14/"
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "В IDE создайте CLI с --input/--out и общим вычислительным ядром, без копирования химической логики в интерфейс.",
+      "Добавьте unit tests на схему, duplicate ID, invalid SMILES и сохранность строк.",
+      "Из терминала IDE выполните позитивный и негативные прогоны; приложите код, точные команды, exit codes, logs и паспорт."
+    ]
+  },
+  {
+    "id": "M14-C2",
+    "module": 14,
+    "title": "Интерфейс с понятным отказом",
+    "mode": "ide",
+    "input": {
+      "framework": "Streamlit",
+      "limit_bytes": 1048576,
+      "limit_rows": 500,
+      "policy": "явно показывать текущую политику"
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "В IDE создайте app.py поверх одного tested pipeline; покажите raw/parent/status/reason и паспорт.",
+      "Проверьте успешную загрузку, ошибочную схему, дубликаты и превышение лимитов; сохраните доказательства скачивания.",
+      "Если добавляете переключатель политики, реализуйте обе ветви в ядре и provenance; декоративный переключатель не подходит."
+    ]
+  },
+  {
+    "id": "M14-C3",
+    "module": 14,
+    "title": "Передать исследовательское досье",
+    "mode": "ide",
+    "input": {
+      "deliverable": "досье + исходники IDE + данные/лицензии + воспроизводимый запуск"
+    },
+    "dataset_kind": "fictional teaching scenario; referenced ESOL/docking retain original passports",
+    "requirements": [
+      "Соберите manifest входов, параметры/версии, фактические результаты и неисполненные этапы.",
+      "Свяжите результаты хемоинформатики, docking/QM/QSPR с ограничениями и следующим экспериментом, не фабрикуя недостающие расчёты.",
+      "Передайте пакет другому человеку, запишите замечания, применённую рубрику и ответы защиты."
+    ]
+  }
+]

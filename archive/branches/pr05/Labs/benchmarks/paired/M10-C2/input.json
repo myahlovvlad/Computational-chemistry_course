@@ -1,0 +1,9 @@
+{
+  "translation_angstrom": [
+    5,
+    0,
+    0
+  ],
+  "reference": "docking/1iep_ligand.pdbqt",
+  "official_pose": "docking/1iep_ligand_vina_out.pdbqt"
+}

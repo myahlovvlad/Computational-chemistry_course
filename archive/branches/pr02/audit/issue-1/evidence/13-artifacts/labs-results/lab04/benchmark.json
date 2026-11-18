@@ -1,0 +1,23 @@
+{
+  "lab": 4,
+  "calculation_wall_seconds": 0.13534520007669926,
+  "result": {
+    "valid_rows": 10,
+    "ethanol": {
+      "MolWt": 46.069,
+      "MolLogP": -0.0014000000000000123,
+      "TPSA": 20.23,
+      "HBD": 1,
+      "HBA": 1,
+      "ro5_violations": 0
+    },
+    "polyol": {
+      "MolWt": 348.3010000000001,
+      "MolLogP": -7.4624999999999915,
+      "TPSA": 242.75999999999996,
+      "HBD": 12,
+      "HBA": 12,
+      "ro5_violations": 2
+    }
+  }
+}

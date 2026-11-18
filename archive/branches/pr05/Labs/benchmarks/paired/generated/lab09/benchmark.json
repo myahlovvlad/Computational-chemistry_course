@@ -1,0 +1,11 @@
+{
+  "module": 9,
+  "scope": "worked reference execution",
+  "python": "/home/miakhlov/course-notebooks/.venv/bin/python",
+  "elapsed_seconds": 0.429872904000149,
+  "result": {
+    "report": "report.html",
+    "rows": 12,
+    "structures": 10
+  }
+}

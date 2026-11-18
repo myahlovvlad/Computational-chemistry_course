@@ -1,0 +1,37 @@
+{
+  "id": "lab-08",
+  "argv": [
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe",
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\audit\\issue-1\\check.py",
+    "notebook",
+    "Labs/notebooks/lab08.ipynb",
+    "lab-08"
+  ],
+  "command_windows": "\"C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe\" \"C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\audit\\issue-1\\check.py\" notebook Labs/notebooks/lab08.ipynb lab-08",
+  "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117",
+  "started_utc": "2026-11-17T08:58:45.372156+00:00",
+  "duration_seconds": 2.5436840001493692,
+  "exit_code": 0,
+  "status": "PASS",
+  "reason": "",
+  "environment": {
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONPATH": "unset",
+    "python": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe",
+    "stage_versions": "../core-environment/stdout.txt or ../labs-environment/stdout.txt"
+  },
+  "inputs": [
+    {
+      "path": "Labs/notebooks/lab08.ipynb",
+      "sha256": "d7c15db7899ce3ab9abafcc945c306bd02f454a5b5b133eef9ea4678ea2bcf19",
+      "bytes": 16578
+    },
+    {
+      "path": "Labs/datasets/manifest.json",
+      "sha256": "680fd50d4216ab27590261a53239c5bc54767911a6b2e00c2bc14206d6c2c89a",
+      "bytes": 2098
+    }
+  ],
+  "stdout": "stdout.txt",
+  "stderr": "stderr.txt"
+}

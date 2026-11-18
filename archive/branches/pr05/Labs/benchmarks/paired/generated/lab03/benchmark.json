@@ -1,0 +1,11 @@
+{
+  "module": 3,
+  "scope": "worked reference execution",
+  "python": "/home/miakhlov/course-notebooks/.venv/bin/python",
+  "elapsed_seconds": 0.33299989300030575,
+  "result": {
+    "rows": 12,
+    "invalid": 2,
+    "policy": "teaching-parent-v1;neutralize;tautomer=False"
+  }
+}

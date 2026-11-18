@@ -1,0 +1,10 @@
+{
+  "lab": 5,
+  "calculation_wall_seconds": 0.28014009981416166,
+  "result": {
+    "radius": 2,
+    "fpSize": 2048,
+    "includeChirality": true,
+    "molecules": 10
+  }
+}

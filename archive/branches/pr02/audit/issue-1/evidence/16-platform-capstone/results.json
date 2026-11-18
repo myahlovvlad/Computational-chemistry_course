@@ -1,0 +1,21 @@
+{
+  "status": "BLOCKED",
+  "reason": "No Stepik test-course/grader execution evidence, learner dossier/defense or implemented concept-map editor/export tests supplied",
+  "checks": [
+    {
+      "id": "stepik-grader",
+      "status": "BLOCKED",
+      "actual": "Local reference functions only; no target course ID, grader submission or grade trace"
+    },
+    {
+      "id": "learner-final-project",
+      "status": "NOT_RUN",
+      "actual": "Reference CLI/application execution is separate from learner work, independent transfer, dossier and defense"
+    },
+    {
+      "id": "concept-map",
+      "status": "BLOCKED",
+      "actual": "Specification in 09_EVOLVING_CONCEPT_MAP.md; no implemented editor/JSON export acceptance scenario"
+    }
+  ]
+}

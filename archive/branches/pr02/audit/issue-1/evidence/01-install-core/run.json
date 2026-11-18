@@ -1,0 +1,38 @@
+{
+  "id": "01-install-core",
+  "argv": [
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe",
+    "-m",
+    "pip",
+    "install",
+    "-r",
+    "Stepik_course/practice/requirements-ml.txt"
+  ],
+  "command_windows": "\"C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe\" -m pip install -r Stepik_course/practice/requirements-ml.txt",
+  "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117",
+  "started_utc": "2026-11-17T08:53:57.149131+00:00",
+  "duration_seconds": 38.470845700008795,
+  "exit_code": 0,
+  "status": "PASS",
+  "reason": "",
+  "environment": {
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONPATH": "unset",
+    "python": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe",
+    "stage_versions": "../core-environment/stdout.txt or ../labs-environment/stdout.txt"
+  },
+  "inputs": [
+    {
+      "path": "Stepik_course/practice/requirements.txt",
+      "sha256": "7d1df1e1a3b101823174ee38f863a61e3e5c6165928f24c026fa4e3c84a6873b",
+      "bytes": 171
+    },
+    {
+      "path": "Stepik_course/practice/requirements-ml.txt",
+      "sha256": "8e221f9b402b458b5a88e591808ac1433f6c10ead9df3433c09791adc9711547",
+      "bytes": 113
+    }
+  ],
+  "stdout": "stdout.txt",
+  "stderr": "stderr.txt"
+}

@@ -1,0 +1,115 @@
+[12:37:54] Initializing MetalDisconnector
+[12:37:54] Running MetalDisconnector
+[12:37:54] Initializing Normalizer
+[12:37:54] Running Normalizer
+[12:37:54] Initializing MetalDisconnector
+[12:37:54] Running MetalDisconnector
+[12:37:54] Initializing Normalizer
+[12:37:54] Running Normalizer
+[12:37:54] Running LargestFragmentChooser
+[12:37:54] Running Uncharger
+[12:37:54] Initializing MetalDisconnector
+[12:37:54] Running MetalDisconnector
+[12:37:54] Initializing Normalizer
+[12:37:54] Running Normalizer
+[12:37:54] Initializing MetalDisconnector
+[12:37:54] Running MetalDisconnector
+[12:37:54] Initializing Normalizer
+[12:37:54] Running Normalizer
+[12:37:54] Running LargestFragmentChooser
+[12:37:54] Running Uncharger
+[12:37:54] Initializing MetalDisconnector
+[12:37:54] Running MetalDisconnector
+[12:37:54] Initializing Normalizer
+[12:37:54] Running Normalizer
+[12:37:54] Initializing MetalDisconnector
+[12:37:54] Running MetalDisconnector
+[12:37:54] Initializing Normalizer
+[12:37:54] Running Normalizer
+[12:37:54] Running LargestFragmentChooser
+[12:37:54] Fragment: CC(=O)[O-]
+[12:37:54] New largest fragment: CC(=O)[O-] (7)
+[12:37:54] Fragment: [Na+]
+[12:37:54] Running Uncharger
+[12:37:54] Removed negative charge.
+[12:37:54] Initializing MetalDisconnector
+[12:37:54] Running MetalDisconnector
+[12:37:54] Initializing Normalizer
+[12:37:54] Running Normalizer
+[12:37:54] Initializing MetalDisconnector
+[12:37:54] Running MetalDisconnector
+[12:37:54] Initializing Normalizer
+[12:37:54] Running Normalizer
+[12:37:54] Running LargestFragmentChooser
+[12:37:54] Running Uncharger
+[12:37:54] Initializing MetalDisconnector
+[12:37:54] Running MetalDisconnector
+[12:37:54] Initializing Normalizer
+[12:37:54] Running Normalizer
+[12:37:54] Initializing MetalDisconnector
+[12:37:54] Running MetalDisconnector
+[12:37:54] Initializing Normalizer
+[12:37:54] Running Normalizer
+[12:37:54] Running LargestFragmentChooser
+[12:37:54] Running Uncharger
+[12:37:54] Initializing MetalDisconnector
+[12:37:54] Running MetalDisconnector
+[12:37:54] Initializing Normalizer
+[12:37:54] Running Normalizer
+[12:37:54] Initializing MetalDisconnector
+[12:37:54] Running MetalDisconnector
+[12:37:54] Initializing Normalizer
+[12:37:54] Running Normalizer
+[12:37:54] Running LargestFragmentChooser
+[12:37:54] Running Uncharger
+[12:37:54] Initializing MetalDisconnector
+[12:37:54] Running MetalDisconnector
+[12:37:54] Initializing Normalizer
+[12:37:54] Running Normalizer
+[12:37:54] Initializing MetalDisconnector
+[12:37:54] Running MetalDisconnector
+[12:37:54] Initializing Normalizer
+[12:37:54] Running Normalizer
+[12:37:54] Running LargestFragmentChooser
+[12:37:54] Running Uncharger
+[12:37:54] SMILES Parse Error: syntax error while parsing: not_a_smiles
+[12:37:54] SMILES Parse Error: check for mistakes around position 3:
+[12:37:54] not_a_smiles
+[12:37:54] ~~^
+[12:37:54] SMILES Parse Error: Failed parsing SMILES 'not_a_smiles' for input: 'not_a_smiles'
+[12:37:54] Initializing MetalDisconnector
+[12:37:54] Running MetalDisconnector
+[12:37:54] Initializing Normalizer
+[12:37:54] Running Normalizer
+[12:37:54] Initializing MetalDisconnector
+[12:37:54] Running MetalDisconnector
+[12:37:54] Initializing Normalizer
+[12:37:54] Running Normalizer
+[12:37:54] Running LargestFragmentChooser
+[12:37:54] Running Uncharger
+[12:37:54] Initializing MetalDisconnector
+[12:37:54] Running MetalDisconnector
+[12:37:54] Initializing Normalizer
+[12:37:54] Running Normalizer
+[12:37:54] Initializing MetalDisconnector
+[12:37:54] Running MetalDisconnector
+[12:37:54] Initializing Normalizer
+[12:37:54] Running Normalizer
+[12:37:54] Running LargestFragmentChooser
+[12:37:54] Running Uncharger
+[12:37:54] Initializing MetalDisconnector
+[12:37:54] Running MetalDisconnector
+[12:37:54] Initializing Normalizer
+[12:37:54] Running Normalizer
+[12:37:54] Initializing MetalDisconnector
+[12:37:54] Running MetalDisconnector
+[12:37:54] Initializing Normalizer
+[12:37:54] Running Normalizer
+[12:37:54] Running LargestFragmentChooser
+[12:37:54] Running Uncharger
+
+
+/tmp/ipykernel_535/4134087948.py:16: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.savefig(OUT/"similarity.png",dpi=150);plt.show()
+
+Запуск сохранён: /home/miakhlov/Computational-chemistry_course/Labs/results/lab05/benchmark.json

@@ -1,0 +1,3 @@
+from rdkit import Chem
+from sklearn.model_selection import GroupShuffleSplit
+g=[Chem.MolToSmiles(Chem.MolFromSmiles(s),isomericSmiles=True) for s in case_input['smiles']]; overlap=sorted({g[i] for i in case_input['train']}&{g[i] for i in case_input['test']});tr,te=next(GroupShuffleSplit(n_splits=1,test_size=.5,random_state=42).split(np.zeros((4,1)),groups=g));answer={'leaked_identities':overlap,'group_split_has_overlap':bool({g[i] for i in tr}&{g[i] for i in te})}

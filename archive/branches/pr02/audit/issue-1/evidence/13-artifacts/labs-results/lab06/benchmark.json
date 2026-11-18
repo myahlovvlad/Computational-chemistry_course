@@ -1,0 +1,10 @@
+{
+  "lab": 6,
+  "calculation_wall_seconds": 0.2540718000382185,
+  "result": {
+    "generated": 4,
+    "converged": 4,
+    "minimum": -5.075973340459498,
+    "seed": 42
+  }
+}

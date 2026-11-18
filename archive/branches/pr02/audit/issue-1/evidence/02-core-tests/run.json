@@ -1,0 +1,46 @@
+{
+  "id": "02-core-tests",
+  "argv": [
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "Stepik_course/practice",
+    "-p",
+    "test_practice.py",
+    "-v"
+  ],
+  "command_windows": "\"C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe\" -m unittest discover -s Stepik_course/practice -p test_practice.py -v",
+  "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117",
+  "started_utc": "2026-11-17T08:54:35.891409+00:00",
+  "duration_seconds": 1.8649818000849336,
+  "exit_code": 0,
+  "status": "PASS",
+  "reason": "",
+  "environment": {
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONPATH": "unset",
+    "python": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\practice-audit-issue1-20261117\\.venv-audit\\Scripts\\python.exe",
+    "stage_versions": "../core-environment/stdout.txt or ../labs-environment/stdout.txt"
+  },
+  "inputs": [
+    {
+      "path": "Stepik_course/practice/test_practice.py",
+      "sha256": "be7db9ea3efee79ca3f50b400aa8f7ea1f37dd685185823b3b12171238890d86",
+      "bytes": 4818
+    },
+    {
+      "path": "Stepik_course/practice/molecules.csv",
+      "sha256": "f1904ebd8af5789d383f9593365bf5443abf7aa60106db0ecfb50d4fff628465",
+      "bytes": 303
+    },
+    {
+      "path": "Stepik_course/practice/activities.csv",
+      "sha256": "ecaaf3d2abf7eb4876acb5b0bc925198e2f862c31e4425cf1fc4f513ab7ea832",
+      "bytes": 291
+    }
+  ],
+  "stdout": "stdout.txt",
+  "stderr": "stderr.txt"
+}

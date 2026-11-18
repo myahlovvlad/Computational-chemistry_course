@@ -1,0 +1,12 @@
+{
+  "module": 5,
+  "scope": "worked reference execution",
+  "python": "/home/miakhlov/course-notebooks/.venv/bin/python",
+  "elapsed_seconds": 0.2228728489999412,
+  "result": {
+    "radius": 2,
+    "fpSize": 2048,
+    "includeChirality": true,
+    "molecules": 10
+  }
+}

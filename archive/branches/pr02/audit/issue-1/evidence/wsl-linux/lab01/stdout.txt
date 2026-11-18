@@ -1,0 +1,6 @@
+Коэффициенты: [50. 10.  5.  8.] Эффекты: [20. 10. 16.]
+
+/tmp/ipykernel_436/2274687815.py:13: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.legend(); plt.savefig(OUT / "factorial.png", dpi=150); plt.show()
+
+Запуск сохранён: /home/miakhlov/Computational-chemistry_course/Labs/results/lab01/benchmark.json

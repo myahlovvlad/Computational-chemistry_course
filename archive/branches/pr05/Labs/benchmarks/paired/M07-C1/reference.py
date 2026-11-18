@@ -1,0 +1,2 @@
+from chemistry import p_activity
+answer={'p_bound':p_activity(case_input['value'],case_input['unit']),'p_relation':{'<':'>','>':'<','=':'='}[case_input['relation']],'exact_regression_eligible':case_input['relation']=='='}

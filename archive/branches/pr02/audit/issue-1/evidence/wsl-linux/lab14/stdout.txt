@@ -1,0 +1,114 @@
+[12:39:00] Initializing MetalDisconnector
+[12:39:00] Running MetalDisconnector
+[12:39:00] Initializing Normalizer
+[12:39:00] Running Normalizer
+[12:39:00] Initializing MetalDisconnector
+[12:39:00] Running MetalDisconnector
+[12:39:00] Initializing Normalizer
+[12:39:00] Running Normalizer
+[12:39:00] Running LargestFragmentChooser
+[12:39:00] Running Uncharger
+[12:39:00] Initializing MetalDisconnector
+[12:39:00] Running MetalDisconnector
+[12:39:00] Initializing Normalizer
+[12:39:00] Running Normalizer
+[12:39:00] Initializing MetalDisconnector
+[12:39:00] Running MetalDisconnector
+[12:39:00] Initializing Normalizer
+[12:39:00] Running Normalizer
+[12:39:00] Running LargestFragmentChooser
+[12:39:00] Running Uncharger
+[12:39:00] Initializing MetalDisconnector
+[12:39:00] Running MetalDisconnector
+[12:39:00] Initializing Normalizer
+[12:39:00] Running Normalizer
+[12:39:00] Initializing MetalDisconnector
+[12:39:00] Running MetalDisconnector
+[12:39:00] Initializing Normalizer
+[12:39:00] Running Normalizer
+[12:39:00] Running LargestFragmentChooser
+[12:39:00] Fragment: CC(=O)[O-]
+[12:39:00] New largest fragment: CC(=O)[O-] (7)
+[12:39:00] Fragment: [Na+]
+[12:39:00] Running Uncharger
+[12:39:00] Removed negative charge.
+[12:39:00] Initializing MetalDisconnector
+[12:39:00] Running MetalDisconnector
+[12:39:00] Initializing Normalizer
+[12:39:00] Running Normalizer
+[12:39:00] Initializing MetalDisconnector
+[12:39:00] Running MetalDisconnector
+[12:39:00] Initializing Normalizer
+[12:39:00] Running Normalizer
+[12:39:00] Running LargestFragmentChooser
+[12:39:00] Running Uncharger
+[12:39:00] Initializing MetalDisconnector
+[12:39:00] Running MetalDisconnector
+[12:39:00] Initializing Normalizer
+[12:39:00] Running Normalizer
+[12:39:00] Initializing MetalDisconnector
+[12:39:00] Running MetalDisconnector
+[12:39:00] Initializing Normalizer
+[12:39:00] Running Normalizer
+[12:39:00] Running LargestFragmentChooser
+[12:39:00] Running Uncharger
+[12:39:00] Initializing MetalDisconnector
+[12:39:00] Running MetalDisconnector
+[12:39:00] Initializing Normalizer
+[12:39:00] Running Normalizer
+[12:39:00] Initializing MetalDisconnector
+[12:39:00] Running MetalDisconnector
+[12:39:00] Initializing Normalizer
+[12:39:00] Running Normalizer
+[12:39:00] Running LargestFragmentChooser
+[12:39:00] Running Uncharger
+[12:39:00] Initializing MetalDisconnector
+[12:39:00] Running MetalDisconnector
+[12:39:00] Initializing Normalizer
+[12:39:00] Running Normalizer
+[12:39:00] Initializing MetalDisconnector
+[12:39:00] Running MetalDisconnector
+[12:39:00] Initializing Normalizer
+[12:39:00] Running Normalizer
+[12:39:00] Running LargestFragmentChooser
+[12:39:00] Running Uncharger
+[12:39:00] SMILES Parse Error: syntax error while parsing: not_a_smiles
+[12:39:00] SMILES Parse Error: check for mistakes around position 3:
+[12:39:00] not_a_smiles
+[12:39:00] ~~^
+[12:39:00] SMILES Parse Error: Failed parsing SMILES 'not_a_smiles' for input: 'not_a_smiles'
+[12:39:00] Initializing MetalDisconnector
+[12:39:00] Running MetalDisconnector
+[12:39:00] Initializing Normalizer
+[12:39:00] Running Normalizer
+[12:39:00] Initializing MetalDisconnector
+[12:39:00] Running MetalDisconnector
+[12:39:00] Initializing Normalizer
+[12:39:00] Running Normalizer
+[12:39:00] Running LargestFragmentChooser
+[12:39:00] Running Uncharger
+[12:39:00] Initializing MetalDisconnector
+[12:39:00] Running MetalDisconnector
+[12:39:00] Initializing Normalizer
+[12:39:00] Running Normalizer
+[12:39:00] Initializing MetalDisconnector
+[12:39:00] Running MetalDisconnector
+[12:39:00] Initializing Normalizer
+[12:39:00] Running Normalizer
+[12:39:00] Running LargestFragmentChooser
+[12:39:00] Running Uncharger
+[12:39:00] Initializing MetalDisconnector
+[12:39:00] Running MetalDisconnector
+[12:39:00] Initializing Normalizer
+[12:39:01] Running Normalizer
+[12:39:01] Initializing MetalDisconnector
+[12:39:01] Running MetalDisconnector
+[12:39:01] Initializing Normalizer
+[12:39:01] Running Normalizer
+[12:39:01] Running LargestFragmentChooser
+[12:39:01] Running Uncharger
+
+
+Интерфейс: python -m streamlit run Labs/app.py
+
+Запуск сохранён: /home/miakhlov/Computational-chemistry_course/Labs/results/lab14/benchmark.json
