@@ -1,12 +1,17 @@
 """Verify selective archives against their immutable migration digests."""
 import hashlib
 import json
+import argparse
+import subprocess
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 
 
 def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--git-ref',help='Also verify stored Git blobs, including historically ignored logs')
+    args=parser.parse_args()
     matrix=json.loads((ROOT/'migration-matrix.json').read_text(encoding='utf-8'))
     count=0
     for record in matrix['components']:
@@ -14,6 +19,10 @@ def main():
         path=(ROOT/record['destination']).resolve();path.relative_to(ROOT)
         if hashlib.sha256(path.read_bytes()).hexdigest()!=record['sha256']:
             raise ValueError('Changed historical bytes: '+record['destination'])
+        if args.git_ref:
+            blob=subprocess.check_output(['git','show',args.git_ref+':'+record['destination']],cwd=ROOT)
+            if hashlib.sha256(blob).hexdigest()!=record['sha256']:
+                raise ValueError('Git normalization changed historical bytes: '+record['destination'])
         count+=1
     mapping=json.loads((ROOT/'programm/LEGACY_CASE_MAPPING.json').read_text(encoding='utf-8'))
     if len(mapping)!=42 or len({r['source_case'] for r in mapping})!=42:

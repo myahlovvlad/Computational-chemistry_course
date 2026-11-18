@@ -1,6 +1,7 @@
 * text=auto eol=lf
 programm/author-brief.txt -text -whitespace
 archive/legacy-20261118/** -text -whitespace
+archive/branches/** -text -whitespace
 practicuum/shared/data/** -text -whitespace
 practicuum/evidence/** -text -whitespace
 practicuum/modules/**/*.ipynb -text -whitespace
