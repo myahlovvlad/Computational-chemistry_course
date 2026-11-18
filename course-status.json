@@ -1,0 +1,987 @@
+{
+  "schema_version": "1.0",
+  "observed_on": "2026-11-18",
+  "source_branch": "course/unified-research-structure",
+  "source_commit": "81ee97e2c25183d0221ed5b5ebca9c4a61fcd55a",
+  "status_meanings": {
+    "PLANNED": "запланировано без завершенной реализации",
+    "IN_PROGRESS": "реализована часть, не завершено",
+    "PASS": "конкретная документированная проверка выполнена",
+    "FAIL": "конкретная проверка не выполнена успешно",
+    "BLOCKED": "отсутствует обязательная предпосылка",
+    "NOT_RUN": "отсутствует свидетельство проведения проверки"
+  },
+  "program": {
+    "modules": 14,
+    "lessons": 28,
+    "paired_notebooks_target": 56,
+    "projected_hours": 122,
+    "hours_validated": false,
+    "source": "programm/COURSE_BLUEPRINT.md"
+  },
+  "modules": [
+    {
+      "id": "M01",
+      "development": "IN_PROGRESS",
+      "technical_execution": "IN_PROGRESS",
+      "scientific_review": "NOT_RUN",
+      "pedagogical_review": "NOT_RUN",
+      "stepik_validation": "NOT_RUN",
+      "release_readiness": "BLOCKED",
+      "lessons": [
+        {
+          "id": "M01-L01",
+          "title": "Предметная область",
+          "development": "PASS",
+          "technical_execution": "PASS",
+          "scientific_review": "NOT_RUN",
+          "pedagogical_review": "NOT_RUN",
+          "stepik_validation": "NOT_RUN",
+          "release_readiness": "BLOCKED",
+          "notebooks": {
+            "guided": {
+              "path": "practicuum/modules/M01/lessons/L01/Notebooks_cases/01_case.ipynb",
+              "development": "PASS",
+              "execution": "PASS"
+            },
+            "independent": {
+              "path": "practicuum/modules/M01/lessons/L01/Notebooks_labs/02_lab.ipynb",
+              "development": "PASS",
+              "scaffold_execution": "PASS",
+              "student_solution": "NOT_RUN"
+            }
+          },
+          "evidence": [
+            "practicuum/PRACTICUM_IMPLEMENTATION_REPORT.md",
+            "practicuum/evidence/20261118-pilot-linux/summary.json",
+            "practicuum/evidence/20261118-pilot-windows-final/summary.json"
+          ],
+          "caveat": "PASS refers to execution of prepared notebooks/scaffold, not learner achievement or independent scientific review"
+        },
+        {
+          "id": "M01-L02",
+          "title": "Исследовательский вопрос",
+          "development": "PLANNED",
+          "technical_execution": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "pedagogical_review": "NOT_RUN",
+          "stepik_validation": "NOT_RUN",
+          "release_readiness": "BLOCKED",
+          "notebooks": {
+            "guided": {
+              "path": null,
+              "development": "PLANNED",
+              "execution": "NOT_RUN"
+            },
+            "independent": {
+              "path": null,
+              "development": "PLANNED",
+              "scaffold_execution": "NOT_RUN",
+              "student_solution": "NOT_RUN"
+            }
+          },
+          "evidence": [
+            "programm/COURSE_BLUEPRINT.md"
+          ],
+          "caveat": "Not implemented in the new course even if legacy source materials exist"
+        }
+      ]
+    },
+    {
+      "id": "M02",
+      "development": "PLANNED",
+      "technical_execution": "NOT_RUN",
+      "scientific_review": "NOT_RUN",
+      "pedagogical_review": "NOT_RUN",
+      "stepik_validation": "NOT_RUN",
+      "release_readiness": "BLOCKED",
+      "lessons": [
+        {
+          "id": "M02-L01",
+          "title": "Воспроизводимая среда",
+          "development": "PLANNED",
+          "technical_execution": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "pedagogical_review": "NOT_RUN",
+          "stepik_validation": "NOT_RUN",
+          "release_readiness": "BLOCKED",
+          "notebooks": {
+            "guided": {
+              "path": null,
+              "development": "PLANNED",
+              "execution": "NOT_RUN"
+            },
+            "independent": {
+              "path": null,
+              "development": "PLANNED",
+              "scaffold_execution": "NOT_RUN",
+              "student_solution": "NOT_RUN"
+            }
+          },
+          "evidence": [
+            "programm/COURSE_BLUEPRINT.md"
+          ],
+          "caveat": "Not implemented in the new course even if legacy source materials exist"
+        },
+        {
+          "id": "M02-L02",
+          "title": "Python как инструмент исследования",
+          "development": "PLANNED",
+          "technical_execution": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "pedagogical_review": "NOT_RUN",
+          "stepik_validation": "NOT_RUN",
+          "release_readiness": "BLOCKED",
+          "notebooks": {
+            "guided": {
+              "path": null,
+              "development": "PLANNED",
+              "execution": "NOT_RUN"
+            },
+            "independent": {
+              "path": null,
+              "development": "PLANNED",
+              "scaffold_execution": "NOT_RUN",
+              "student_solution": "NOT_RUN"
+            }
+          },
+          "evidence": [
+            "programm/COURSE_BLUEPRINT.md"
+          ],
+          "caveat": "Not implemented in the new course even if legacy source materials exist"
+        }
+      ]
+    },
+    {
+      "id": "M03",
+      "development": "PASS",
+      "technical_execution": "PASS",
+      "scientific_review": "NOT_RUN",
+      "pedagogical_review": "NOT_RUN",
+      "stepik_validation": "NOT_RUN",
+      "release_readiness": "BLOCKED",
+      "lessons": [
+        {
+          "id": "M03-L01",
+          "title": "Молекулярная идентичность",
+          "development": "PASS",
+          "technical_execution": "PASS",
+          "scientific_review": "NOT_RUN",
+          "pedagogical_review": "NOT_RUN",
+          "stepik_validation": "NOT_RUN",
+          "release_readiness": "BLOCKED",
+          "notebooks": {
+            "guided": {
+              "path": "practicuum/modules/M03/lessons/L01/Notebooks_cases/01_case.ipynb",
+              "development": "PASS",
+              "execution": "PASS"
+            },
+            "independent": {
+              "path": "practicuum/modules/M03/lessons/L01/Notebooks_labs/02_lab.ipynb",
+              "development": "PASS",
+              "scaffold_execution": "PASS",
+              "student_solution": "NOT_RUN"
+            }
+          },
+          "evidence": [
+            "practicuum/PRACTICUM_IMPLEMENTATION_REPORT.md",
+            "practicuum/evidence/20261118-pilot-linux/summary.json",
+            "practicuum/evidence/20261118-pilot-windows-final/summary.json"
+          ],
+          "caveat": "PASS refers to execution of prepared notebooks/scaffold, not learner achievement or independent scientific review"
+        },
+        {
+          "id": "M03-L02",
+          "title": "Формы и стереохимия",
+          "development": "PASS",
+          "technical_execution": "PASS",
+          "scientific_review": "NOT_RUN",
+          "pedagogical_review": "NOT_RUN",
+          "stepik_validation": "NOT_RUN",
+          "release_readiness": "BLOCKED",
+          "notebooks": {
+            "guided": {
+              "path": "practicuum/modules/M03/lessons/L02/Notebooks_cases/01_case.ipynb",
+              "development": "PASS",
+              "execution": "PASS"
+            },
+            "independent": {
+              "path": "practicuum/modules/M03/lessons/L02/Notebooks_labs/02_lab.ipynb",
+              "development": "PASS",
+              "scaffold_execution": "PASS",
+              "student_solution": "NOT_RUN"
+            }
+          },
+          "evidence": [
+            "practicuum/PRACTICUM_IMPLEMENTATION_REPORT.md",
+            "practicuum/evidence/20261118-pilot-linux/summary.json",
+            "practicuum/evidence/20261118-pilot-windows-final/summary.json"
+          ],
+          "caveat": "PASS refers to execution of prepared notebooks/scaffold, not learner achievement or independent scientific review"
+        }
+      ]
+    },
+    {
+      "id": "M04",
+      "development": "PLANNED",
+      "technical_execution": "NOT_RUN",
+      "scientific_review": "NOT_RUN",
+      "pedagogical_review": "NOT_RUN",
+      "stepik_validation": "NOT_RUN",
+      "release_readiness": "BLOCKED",
+      "lessons": [
+        {
+          "id": "M04-L01",
+          "title": "Свойства и физический смысл",
+          "development": "PLANNED",
+          "technical_execution": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "pedagogical_review": "NOT_RUN",
+          "stepik_validation": "NOT_RUN",
+          "release_readiness": "BLOCKED",
+          "notebooks": {
+            "guided": {
+              "path": null,
+              "development": "PLANNED",
+              "execution": "NOT_RUN"
+            },
+            "independent": {
+              "path": null,
+              "development": "PLANNED",
+              "scaffold_execution": "NOT_RUN",
+              "student_solution": "NOT_RUN"
+            }
+          },
+          "evidence": [
+            "programm/COURSE_BLUEPRINT.md"
+          ],
+          "caveat": "Not implemented in the new course even if legacy source materials exist"
+        },
+        {
+          "id": "M04-L02",
+          "title": "Среда и растворитель",
+          "development": "PLANNED",
+          "technical_execution": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "pedagogical_review": "NOT_RUN",
+          "stepik_validation": "NOT_RUN",
+          "release_readiness": "BLOCKED",
+          "notebooks": {
+            "guided": {
+              "path": null,
+              "development": "PLANNED",
+              "execution": "NOT_RUN"
+            },
+            "independent": {
+              "path": null,
+              "development": "PLANNED",
+              "scaffold_execution": "NOT_RUN",
+              "student_solution": "NOT_RUN"
+            }
+          },
+          "evidence": [
+            "programm/COURSE_BLUEPRINT.md"
+          ],
+          "caveat": "Not implemented in the new course even if legacy source materials exist"
+        }
+      ]
+    },
+    {
+      "id": "M05",
+      "development": "PLANNED",
+      "technical_execution": "NOT_RUN",
+      "scientific_review": "NOT_RUN",
+      "pedagogical_review": "NOT_RUN",
+      "stepik_validation": "NOT_RUN",
+      "release_readiness": "BLOCKED",
+      "lessons": [
+        {
+          "id": "M05-L01",
+          "title": "Структурное сходство",
+          "development": "PLANNED",
+          "technical_execution": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "pedagogical_review": "NOT_RUN",
+          "stepik_validation": "NOT_RUN",
+          "release_readiness": "BLOCKED",
+          "notebooks": {
+            "guided": {
+              "path": null,
+              "development": "PLANNED",
+              "execution": "NOT_RUN"
+            },
+            "independent": {
+              "path": null,
+              "development": "PLANNED",
+              "scaffold_execution": "NOT_RUN",
+              "student_solution": "NOT_RUN"
+            }
+          },
+          "evidence": [
+            "programm/COURSE_BLUEPRINT.md"
+          ],
+          "caveat": "Not implemented in the new course even if legacy source materials exist"
+        },
+        {
+          "id": "M05-L02",
+          "title": "Отбор следующего кандидата",
+          "development": "PLANNED",
+          "technical_execution": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "pedagogical_review": "NOT_RUN",
+          "stepik_validation": "NOT_RUN",
+          "release_readiness": "BLOCKED",
+          "notebooks": {
+            "guided": {
+              "path": null,
+              "development": "PLANNED",
+              "execution": "NOT_RUN"
+            },
+            "independent": {
+              "path": null,
+              "development": "PLANNED",
+              "scaffold_execution": "NOT_RUN",
+              "student_solution": "NOT_RUN"
+            }
+          },
+          "evidence": [
+            "programm/COURSE_BLUEPRINT.md"
+          ],
+          "caveat": "Not implemented in the new course even if legacy source materials exist"
+        }
+      ]
+    },
+    {
+      "id": "M06",
+      "development": "PLANNED",
+      "technical_execution": "NOT_RUN",
+      "scientific_review": "NOT_RUN",
+      "pedagogical_review": "NOT_RUN",
+      "stepik_validation": "NOT_RUN",
+      "release_readiness": "BLOCKED",
+      "lessons": [
+        {
+          "id": "M06-L01",
+          "title": "Конформеры и геометрия",
+          "development": "PLANNED",
+          "technical_execution": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "pedagogical_review": "NOT_RUN",
+          "stepik_validation": "NOT_RUN",
+          "release_readiness": "BLOCKED",
+          "notebooks": {
+            "guided": {
+              "path": null,
+              "development": "PLANNED",
+              "execution": "NOT_RUN"
+            },
+            "independent": {
+              "path": null,
+              "development": "PLANNED",
+              "scaffold_execution": "NOT_RUN",
+              "student_solution": "NOT_RUN"
+            }
+          },
+          "evidence": [
+            "programm/COURSE_BLUEPRINT.md"
+          ],
+          "caveat": "Not implemented in the new course even if legacy source materials exist"
+        },
+        {
+          "id": "M06-L02",
+          "title": "Энергии и ограничения",
+          "development": "PLANNED",
+          "technical_execution": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "pedagogical_review": "NOT_RUN",
+          "stepik_validation": "NOT_RUN",
+          "release_readiness": "BLOCKED",
+          "notebooks": {
+            "guided": {
+              "path": null,
+              "development": "PLANNED",
+              "execution": "NOT_RUN"
+            },
+            "independent": {
+              "path": null,
+              "development": "PLANNED",
+              "scaffold_execution": "NOT_RUN",
+              "student_solution": "NOT_RUN"
+            }
+          },
+          "evidence": [
+            "programm/COURSE_BLUEPRINT.md"
+          ],
+          "caveat": "Not implemented in the new course even if legacy source materials exist"
+        }
+      ]
+    },
+    {
+      "id": "M07",
+      "development": "PLANNED",
+      "technical_execution": "NOT_RUN",
+      "scientific_review": "NOT_RUN",
+      "pedagogical_review": "NOT_RUN",
+      "stepik_validation": "NOT_RUN",
+      "release_readiness": "BLOCKED",
+      "lessons": [
+        {
+          "id": "M07-L01",
+          "title": "Электронная модель",
+          "development": "PLANNED",
+          "technical_execution": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "pedagogical_review": "NOT_RUN",
+          "stepik_validation": "NOT_RUN",
+          "release_readiness": "BLOCKED",
+          "notebooks": {
+            "guided": {
+              "path": null,
+              "development": "PLANNED",
+              "execution": "NOT_RUN"
+            },
+            "independent": {
+              "path": null,
+              "development": "PLANNED",
+              "scaffold_execution": "NOT_RUN",
+              "student_solution": "NOT_RUN"
+            }
+          },
+          "evidence": [
+            "programm/COURSE_BLUEPRINT.md"
+          ],
+          "caveat": "Not implemented in the new course even if legacy source materials exist"
+        },
+        {
+          "id": "M07-L02",
+          "title": "От энергии к физическому выводу",
+          "development": "PLANNED",
+          "technical_execution": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "pedagogical_review": "NOT_RUN",
+          "stepik_validation": "NOT_RUN",
+          "release_readiness": "BLOCKED",
+          "notebooks": {
+            "guided": {
+              "path": null,
+              "development": "PLANNED",
+              "execution": "NOT_RUN"
+            },
+            "independent": {
+              "path": null,
+              "development": "PLANNED",
+              "scaffold_execution": "NOT_RUN",
+              "student_solution": "NOT_RUN"
+            }
+          },
+          "evidence": [
+            "programm/COURSE_BLUEPRINT.md"
+          ],
+          "caveat": "Not implemented in the new course even if legacy source materials exist"
+        }
+      ]
+    },
+    {
+      "id": "M08",
+      "development": "PLANNED",
+      "technical_execution": "NOT_RUN",
+      "scientific_review": "NOT_RUN",
+      "pedagogical_review": "NOT_RUN",
+      "stepik_validation": "NOT_RUN",
+      "release_readiness": "BLOCKED",
+      "lessons": [
+        {
+          "id": "M08-L01",
+          "title": "UV–Vis и ИК",
+          "development": "PLANNED",
+          "technical_execution": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "pedagogical_review": "NOT_RUN",
+          "stepik_validation": "NOT_RUN",
+          "release_readiness": "BLOCKED",
+          "notebooks": {
+            "guided": {
+              "path": null,
+              "development": "PLANNED",
+              "execution": "NOT_RUN"
+            },
+            "independent": {
+              "path": null,
+              "development": "PLANNED",
+              "scaffold_execution": "NOT_RUN",
+              "student_solution": "NOT_RUN"
+            }
+          },
+          "evidence": [
+            "programm/COURSE_BLUEPRINT.md"
+          ],
+          "caveat": "Not implemented in the new course even if legacy source materials exist"
+        },
+        {
+          "id": "M08-L02",
+          "title": "Прибор и специфичность",
+          "development": "PLANNED",
+          "technical_execution": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "pedagogical_review": "NOT_RUN",
+          "stepik_validation": "NOT_RUN",
+          "release_readiness": "BLOCKED",
+          "notebooks": {
+            "guided": {
+              "path": null,
+              "development": "PLANNED",
+              "execution": "NOT_RUN"
+            },
+            "independent": {
+              "path": null,
+              "development": "PLANNED",
+              "scaffold_execution": "NOT_RUN",
+              "student_solution": "NOT_RUN"
+            }
+          },
+          "evidence": [
+            "programm/COURSE_BLUEPRINT.md"
+          ],
+          "caveat": "Not implemented in the new course even if legacy source materials exist"
+        }
+      ]
+    },
+    {
+      "id": "M09",
+      "development": "PLANNED",
+      "technical_execution": "NOT_RUN",
+      "scientific_review": "NOT_RUN",
+      "pedagogical_review": "NOT_RUN",
+      "stepik_validation": "NOT_RUN",
+      "release_readiness": "BLOCKED",
+      "lessons": [
+        {
+          "id": "M09-L01",
+          "title": "Реакция и наблюдение",
+          "development": "PLANNED",
+          "technical_execution": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "pedagogical_review": "NOT_RUN",
+          "stepik_validation": "NOT_RUN",
+          "release_readiness": "BLOCKED",
+          "notebooks": {
+            "guided": {
+              "path": null,
+              "development": "PLANNED",
+              "execution": "NOT_RUN"
+            },
+            "independent": {
+              "path": null,
+              "development": "PLANNED",
+              "scaffold_execution": "NOT_RUN",
+              "student_solution": "NOT_RUN"
+            }
+          },
+          "evidence": [
+            "programm/COURSE_BLUEPRINT.md"
+          ],
+          "caveat": "Not implemented in the new course even if legacy source materials exist"
+        },
+        {
+          "id": "M09-L02",
+          "title": "Кинетика и план эксперимента",
+          "development": "PLANNED",
+          "technical_execution": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "pedagogical_review": "NOT_RUN",
+          "stepik_validation": "NOT_RUN",
+          "release_readiness": "BLOCKED",
+          "notebooks": {
+            "guided": {
+              "path": null,
+              "development": "PLANNED",
+              "execution": "NOT_RUN"
+            },
+            "independent": {
+              "path": null,
+              "development": "PLANNED",
+              "scaffold_execution": "NOT_RUN",
+              "student_solution": "NOT_RUN"
+            }
+          },
+          "evidence": [
+            "programm/COURSE_BLUEPRINT.md"
+          ],
+          "caveat": "Not implemented in the new course even if legacy source materials exist"
+        }
+      ]
+    },
+    {
+      "id": "M10",
+      "development": "PLANNED",
+      "technical_execution": "NOT_RUN",
+      "scientific_review": "NOT_RUN",
+      "pedagogical_review": "NOT_RUN",
+      "stepik_validation": "NOT_RUN",
+      "release_readiness": "BLOCKED",
+      "lessons": [
+        {
+          "id": "M10-L01",
+          "title": "Разделение смеси",
+          "development": "PLANNED",
+          "technical_execution": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "pedagogical_review": "NOT_RUN",
+          "stepik_validation": "NOT_RUN",
+          "release_readiness": "BLOCKED",
+          "notebooks": {
+            "guided": {
+              "path": null,
+              "development": "PLANNED",
+              "execution": "NOT_RUN"
+            },
+            "independent": {
+              "path": null,
+              "development": "PLANNED",
+              "scaffold_execution": "NOT_RUN",
+              "student_solution": "NOT_RUN"
+            }
+          },
+          "evidence": [
+            "programm/COURSE_BLUEPRINT.md"
+          ],
+          "caveat": "Not implemented in the new course even if legacy source materials exist"
+        },
+        {
+          "id": "M10-L02",
+          "title": "Оптимизация и валидация HPLC",
+          "development": "PLANNED",
+          "technical_execution": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "pedagogical_review": "NOT_RUN",
+          "stepik_validation": "NOT_RUN",
+          "release_readiness": "BLOCKED",
+          "notebooks": {
+            "guided": {
+              "path": null,
+              "development": "PLANNED",
+              "execution": "NOT_RUN"
+            },
+            "independent": {
+              "path": null,
+              "development": "PLANNED",
+              "scaffold_execution": "NOT_RUN",
+              "student_solution": "NOT_RUN"
+            }
+          },
+          "evidence": [
+            "programm/COURSE_BLUEPRINT.md"
+          ],
+          "caveat": "Not implemented in the new course even if legacy source materials exist"
+        }
+      ]
+    },
+    {
+      "id": "M11",
+      "development": "PLANNED",
+      "technical_execution": "NOT_RUN",
+      "scientific_review": "NOT_RUN",
+      "pedagogical_review": "NOT_RUN",
+      "stepik_validation": "NOT_RUN",
+      "release_readiness": "BLOCKED",
+      "lessons": [
+        {
+          "id": "M11-L01",
+          "title": "Поиск и проверка мишени",
+          "development": "PLANNED",
+          "technical_execution": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "pedagogical_review": "NOT_RUN",
+          "stepik_validation": "NOT_RUN",
+          "release_readiness": "BLOCKED",
+          "notebooks": {
+            "guided": {
+              "path": null,
+              "development": "PLANNED",
+              "execution": "NOT_RUN"
+            },
+            "independent": {
+              "path": null,
+              "development": "PLANNED",
+              "scaffold_execution": "NOT_RUN",
+              "student_solution": "NOT_RUN"
+            }
+          },
+          "evidence": [
+            "programm/COURSE_BLUEPRINT.md"
+          ],
+          "caveat": "Not implemented in the new course even if legacy source materials exist"
+        },
+        {
+          "id": "M11-L02",
+          "title": "Докинг как проверяемый расчёт",
+          "development": "PLANNED",
+          "technical_execution": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "pedagogical_review": "NOT_RUN",
+          "stepik_validation": "NOT_RUN",
+          "release_readiness": "BLOCKED",
+          "notebooks": {
+            "guided": {
+              "path": null,
+              "development": "PLANNED",
+              "execution": "NOT_RUN"
+            },
+            "independent": {
+              "path": null,
+              "development": "PLANNED",
+              "scaffold_execution": "NOT_RUN",
+              "student_solution": "NOT_RUN"
+            }
+          },
+          "evidence": [
+            "programm/COURSE_BLUEPRINT.md"
+          ],
+          "caveat": "Not implemented in the new course even if legacy source materials exist"
+        }
+      ]
+    },
+    {
+      "id": "M12",
+      "development": "PLANNED",
+      "technical_execution": "NOT_RUN",
+      "scientific_review": "NOT_RUN",
+      "pedagogical_review": "NOT_RUN",
+      "stepik_validation": "NOT_RUN",
+      "release_readiness": "BLOCKED",
+      "lessons": [
+        {
+          "id": "M12-L01",
+          "title": "Модель структура–свойство",
+          "development": "PLANNED",
+          "technical_execution": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "pedagogical_review": "NOT_RUN",
+          "stepik_validation": "NOT_RUN",
+          "release_readiness": "BLOCKED",
+          "notebooks": {
+            "guided": {
+              "path": null,
+              "development": "PLANNED",
+              "execution": "NOT_RUN"
+            },
+            "independent": {
+              "path": null,
+              "development": "PLANNED",
+              "scaffold_execution": "NOT_RUN",
+              "student_solution": "NOT_RUN"
+            }
+          },
+          "evidence": [
+            "programm/COURSE_BLUEPRINT.md"
+          ],
+          "caveat": "Not implemented in the new course even if legacy source materials exist"
+        },
+        {
+          "id": "M12-L02",
+          "title": "Область применимости",
+          "development": "PLANNED",
+          "technical_execution": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "pedagogical_review": "NOT_RUN",
+          "stepik_validation": "NOT_RUN",
+          "release_readiness": "BLOCKED",
+          "notebooks": {
+            "guided": {
+              "path": null,
+              "development": "PLANNED",
+              "execution": "NOT_RUN"
+            },
+            "independent": {
+              "path": null,
+              "development": "PLANNED",
+              "scaffold_execution": "NOT_RUN",
+              "student_solution": "NOT_RUN"
+            }
+          },
+          "evidence": [
+            "programm/COURSE_BLUEPRINT.md"
+          ],
+          "caveat": "Not implemented in the new course even if legacy source materials exist"
+        }
+      ]
+    },
+    {
+      "id": "M13",
+      "development": "PLANNED",
+      "technical_execution": "NOT_RUN",
+      "scientific_review": "NOT_RUN",
+      "pedagogical_review": "NOT_RUN",
+      "stepik_validation": "NOT_RUN",
+      "release_readiness": "BLOCKED",
+      "lessons": [
+        {
+          "id": "M13-L01",
+          "title": "Опубликованный маршрут",
+          "development": "PLANNED",
+          "technical_execution": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "pedagogical_review": "NOT_RUN",
+          "stepik_validation": "NOT_RUN",
+          "release_readiness": "BLOCKED",
+          "notebooks": {
+            "guided": {
+              "path": null,
+              "development": "PLANNED",
+              "execution": "NOT_RUN"
+            },
+            "independent": {
+              "path": null,
+              "development": "PLANNED",
+              "scaffold_execution": "NOT_RUN",
+              "student_solution": "NOT_RUN"
+            }
+          },
+          "evidence": [
+            "programm/COURSE_BLUEPRINT.md"
+          ],
+          "caveat": "Not implemented in the new course even if legacy source materials exist"
+        },
+        {
+          "id": "M13-L02",
+          "title": "Технологическое решение",
+          "development": "PLANNED",
+          "technical_execution": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "pedagogical_review": "NOT_RUN",
+          "stepik_validation": "NOT_RUN",
+          "release_readiness": "BLOCKED",
+          "notebooks": {
+            "guided": {
+              "path": null,
+              "development": "PLANNED",
+              "execution": "NOT_RUN"
+            },
+            "independent": {
+              "path": null,
+              "development": "PLANNED",
+              "scaffold_execution": "NOT_RUN",
+              "student_solution": "NOT_RUN"
+            }
+          },
+          "evidence": [
+            "programm/COURSE_BLUEPRINT.md"
+          ],
+          "caveat": "Not implemented in the new course even if legacy source materials exist"
+        }
+      ]
+    },
+    {
+      "id": "M14",
+      "development": "PLANNED",
+      "technical_execution": "NOT_RUN",
+      "scientific_review": "NOT_RUN",
+      "pedagogical_review": "NOT_RUN",
+      "stepik_validation": "NOT_RUN",
+      "release_readiness": "BLOCKED",
+      "lessons": [
+        {
+          "id": "M14-L01",
+          "title": "Сборка исследовательского досье",
+          "development": "PLANNED",
+          "technical_execution": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "pedagogical_review": "NOT_RUN",
+          "stepik_validation": "NOT_RUN",
+          "release_readiness": "BLOCKED",
+          "notebooks": {
+            "guided": {
+              "path": null,
+              "development": "PLANNED",
+              "execution": "NOT_RUN"
+            },
+            "independent": {
+              "path": null,
+              "development": "PLANNED",
+              "scaffold_execution": "NOT_RUN",
+              "student_solution": "NOT_RUN"
+            }
+          },
+          "evidence": [
+            "programm/COURSE_BLUEPRINT.md"
+          ],
+          "caveat": "Not implemented in the new course even if legacy source materials exist"
+        },
+        {
+          "id": "M14-L02",
+          "title": "Защита и лабораторная проверка",
+          "development": "PLANNED",
+          "technical_execution": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "pedagogical_review": "NOT_RUN",
+          "stepik_validation": "NOT_RUN",
+          "release_readiness": "BLOCKED",
+          "notebooks": {
+            "guided": {
+              "path": null,
+              "development": "PLANNED",
+              "execution": "NOT_RUN"
+            },
+            "independent": {
+              "path": null,
+              "development": "PLANNED",
+              "scaffold_execution": "NOT_RUN",
+              "student_solution": "NOT_RUN"
+            }
+          },
+          "evidence": [
+            "programm/COURSE_BLUEPRINT.md"
+          ],
+          "caveat": "Not implemented in the new course even if legacy source materials exist"
+        }
+      ]
+    }
+  ],
+  "trainers": [
+    {
+      "id": "hplc",
+      "path": "web-training/trainers/hplc/index.html",
+      "development": "IN_PROGRESS",
+      "technical_execution": "PASS",
+      "scientific_review": "NOT_RUN",
+      "pedagogical_review": "NOT_RUN",
+      "stepik_validation": "NOT_RUN",
+      "release_readiness": "BLOCKED",
+      "limitations": "20 published observations, own in-sample regression, synthetic chromatogram shape; no independent validation or reliable out-of-domain estimates",
+      "evidence": [
+        "practicuum/PRACTICUM_IMPLEMENTATION_REPORT.md",
+        "practicuum/evidence/20261118-browser-hplc-fixed/check.json"
+      ]
+    },
+    {
+      "id": "spectrophotometry",
+      "development": "PLANNED",
+      "technical_execution": "NOT_RUN",
+      "scientific_review": "NOT_RUN",
+      "pedagogical_review": "NOT_RUN",
+      "stepik_validation": "NOT_RUN",
+      "release_readiness": "BLOCKED"
+    },
+    {
+      "id": "concept_map_gui",
+      "development": "PLANNED",
+      "technical_execution": "NOT_RUN",
+      "scientific_review": "NOT_RUN",
+      "pedagogical_review": "NOT_RUN",
+      "stepik_validation": "NOT_RUN",
+      "release_readiness": "BLOCKED"
+    }
+  ],
+  "issues": [
+    1,
+    4,
+    6
+  ],
+  "open_pull_requests": [
+    2,
+    3,
+    5,
+    7,
+    8
+  ]
+}
