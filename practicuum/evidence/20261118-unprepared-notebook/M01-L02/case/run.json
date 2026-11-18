@@ -1,0 +1,12 @@
+{
+  "lesson_id": "M01-L02",
+  "role": "case",
+  "kernel": "course-v2-base",
+  "started_utc": "2026-11-18T13:05:27.983251+00:00",
+  "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\course-restructure-20261118\\practicuum\\modules\\M01\\lessons\\L02\\Notebooks_cases\\01_case.ipynb",
+  "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\course-restructure-20261118",
+  "scope": "full guided computation",
+  "status": "BLOCKED",
+  "error": "FileNotFoundError: Notebook не подготовлен: C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\course-restructure-20261118\\practicuum\\modules\\M01\\lessons\\L02\\Notebooks_cases\\01_case.ipynb",
+  "seconds": 0.00010509999992791563
+}

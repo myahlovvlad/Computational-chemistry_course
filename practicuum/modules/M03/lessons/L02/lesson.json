@@ -1,0 +1,5 @@
+{
+  "inputs": ["practicuum/shared/data/compounds.json"],
+  "case_steps": ["practicuum/modules/M03/lessons/L02/steps/01_case.md"],
+  "lab_steps": ["practicuum/modules/M03/lessons/L02/steps/02_lab.md"]
+}

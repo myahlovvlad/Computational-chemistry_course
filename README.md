@@ -1,62 +1,25 @@
-# Введение в хемоинформатику и вычислительную химию
+# Основы хемоинформатики и вычислительной химии
 
-**Операция «Химера»: от молекулярной записи к проверяемому вычислительному решению.**
+От исследовательского вопроса — к воспроизводимому вычислению, интерпретации и плану лабораторной проверки.
 
-Основной текст курса находится в `Module_theory/`: 14 последовательно переработанных глав, 112 нумерованных разделов, объяснение методов и границ применимости, разобранные примеры и ссылки на книги. В `Labs/` каждой главе соответствует лабораторная работа с guideline, dataset, исполняемым notebook, заданиями и ответами.
+Начните с [программы практикума](programm/COURSE_BLUEPRINT.md). Она следует [замыслу автора](programm/author-brief.txt): предметное введение → разбор истрадефиллина/ксантинов → самостоятельное исследование аторвастатина → накопительное досье и междисциплинарная карта. [Матрица соответствия](programm/BRIEF_TRACEABILITY.md) связывает требования с модулями и критериями приёмки.
 
-Подача сохранена как разговор коллег у лабораторного стола: начинаем с прикладного вопроса, объясняем физику/математику, проверяем результат и только затем принимаем решение. Уверенный вывод не подменяет контроль.
+План семестра: **14 модулей, 28 исследовательских уроков, 122 проектных часа**. Это целевая программа, а не утверждение о готовности всех уроков. В этой редакции подготовлена первая связка M01-L01 и M03-L01/L02; остальные 25 уроков запланированы. Независимое научное ревью и студенческий пилот ещё не выполнены. [Фактические проверки и ограничения](practicuum/PRACTICUM_IMPLEMENTATION_REPORT.md).
 
-## Читать и выполнять
+| С чего начать | Материалы |
+|---|---|
+| Настроить рабочую среду uv | [Windows/Linux/WSL и ядра Notebook](scripts/README.md) |
+| Разобраться в предметной области | [M01-L01: постановка](theory/modules/M01/lessons/L01/01_problem.md), [понятия](theory/modules/M01/lessons/L01/02_domain.md), [процедура](theory/modules/M01/lessons/L01/03_workflow.md) |
+| Выполнить вводную пару | [Разбор A](practicuum/modules/M01/lessons/L01/Notebooks_cases/01_case.ipynb), [лабораторная B](practicuum/modules/M01/lessons/L01/Notebooks_labs/02_lab.ipynb) |
+| Проверить молекулярную идентичность | [M03-L01: теория](theory/modules/M03/lessons/L01/01_problem.md), [разбор](practicuum/modules/M03/lessons/L01/Notebooks_cases/01_case.ipynb), [лабораторная](practicuum/modules/M03/lessons/L01/Notebooks_labs/02_lab.ipynb) |
+| Различить изомеры, соль и лактон | [M03-L02: теория](theory/modules/M03/lessons/L02/01_problem.md), [разбор](practicuum/modules/M03/lessons/L02/Notebooks_cases/01_case.ipynb), [лабораторная](practicuum/modules/M03/lessons/L02/Notebooks_labs/02_lab.ipynb) |
+| Исследовать условия разделения | [Прототип HPLC](web-training/trainers/hplc/index.html), [научные ограничения](web-training/README.md) |
+| Уточнить сокращение | [Словарь курса](theory/glossary.md) |
 
-| № | Теория | Практикум | Jupyter notebook |
-|---|---|---|---|
-| 1 | [Модуль 1. Вычислительный эксперимент: от красивого результата к решению лаборатории](Module_theory/Module%201_SDLC.md) | [Guideline](Labs/guides/lab01.md) | [Рабочий пример](Labs/notebooks/lab01.ipynb) |
-| 2 | [Модуль 2. Цифровой верстак: от установки к первому проверенному результату](Module_theory/Module%202_Setup%20Workharness.md) | [Guideline](Labs/guides/lab02.md) | [Рабочий пример](Labs/notebooks/lab02.ipynb) |
-| 3 | [Модуль 3. Молекула в компьютере: от строки к химической идентичности](Module_theory/Module%203_compound%20and%20reaction-representation.md) | [Guideline](Labs/guides/lab03.md) | [Рабочий пример](Labs/notebooks/lab03.ipynb) |
-| 4 | [Модуль 4. Дескрипторы: от структуры к признакам с физическим смыслом](Module_theory/Module%204_Descriptor.md) | [Guideline](Labs/guides/lab04.md) | [Рабочий пример](Labs/notebooks/lab04.ipynb) |
-| 5 | [Модуль 5. Поиск аналогов: от отпечатка к проверяемой гипотезе](Module_theory/Module%205_Fingerprinter_Farmacophore.md) | [Guideline](Labs/guides/lab05.md) | [Рабочий пример](Labs/notebooks/lab05.ipynb) |
-| 6 | [Модуль 6. Конформеры: от плоской формулы к проверенной геометрии](Module_theory/Module%206_Moleculr%20mechanics.md) | [Guideline](Labs/guides/lab06.md) | [Рабочий пример](Labs/notebooks/lab06.ipynb) |
-| 7 | [Модуль 7. Химические данные: от скачанной таблицы к сопоставимым измерениям](Module_theory/Module%207_Database.md) | [Guideline](Labs/guides/lab07.md) | [Рабочий пример](Labs/notebooks/lab07.ipynb) |
-| 8 | [Модуль 8. Воронка скрининга: от предупреждения к обоснованной проверке](Module_theory/Module%208_Screening.md) | [Guideline](Labs/guides/lab08.md) | [Рабочий пример](Labs/notebooks/lab08.ipynb) |
-| 9 | [Модуль 9. Научный отчёт: от эффектной картинки к понятному решению](Module_theory/Module%209_Visualization.md) | [Guideline](Labs/guides/lab09.md) | [Рабочий пример](Labs/notebooks/lab09.ipynb) |
-| 10 | [Модуль 10. Докинг: от рейтинга score к проверке протокола](Module_theory/Module%2010_docking.md) | [Guideline](Labs/guides/lab10.md) | [Рабочий пример](Labs/notebooks/lab10.ipynb) |
-| 11 | [Модуль 11. QSAR/QSPR: от красивой метрики к честной оценке переноса](Module_theory/Module%2011_QSAR.md) | [Guideline](Labs/guides/lab11.md) | [Рабочий пример](Labs/notebooks/lab11.ipynb) |
-| 12 | [Модуль 12. Квантовая химия: от энергии в файле к физическому выводу](Module_theory/Module%2012_quatium%20chemistry.md) | [Guideline](Labs/guides/lab12.md) | [Рабочий пример](Labs/notebooks/lab12.ipynb) |
-| 13 | [Модуль 13. Ретросинтез: от предложенной стрелки к проверяемому маршруту](Module_theory/Module%2013_retrosynthesis.md) | [Guideline](Labs/guides/lab13.md) | [Рабочий пример](Labs/notebooks/lab13.ipynb) |
-| 14 | [Модуль 14. Передача инструмента: от рабочего ноутбука к воспроизводимому решению](Module_theory/Module%2014_SDLS-workflow%20development_web%20app.md) | [Guideline](Labs/guides/lab14.md) | [Рабочий пример](Labs/notebooks/lab14.ipynb) |
+Каждый самостоятельный урок добавляет результат в одно досье `practicuum/workspace/my_research`. В нём девять разделов: вопрос/источники, формы/дескрипторы, растворитель, реакции/кинетика, спектроскопия/прибор, хроматография, мишень/действие, ретросинтез/технология, лабораторная верификация. Шаблон не стирает ранее написанное. Автопрогон пустой лабораторной проверяет запуск, а не решение студентом кейсов.
 
-## С чего начать
+`programm` хранит программу, `skills` — правила авторства/сопровождения, `scripts` — среду и проверки, `media` — медиа, `web-training` — тренажёры и проекты IDE, `theory/modules/.../lessons/...` — отдельные MD-шаги, `practicuum/modules/.../lessons/...` — пары Notebook и практические шаги, `parser` — локальную сборку для Stepik. Научные данные и проверенные вычислительные ядра находятся в `practicuum/shared`.
 
-1. Прочитать главу 1 и заполнить паспорт задачи.
-2. Установить среду по [инструкции практикума](Labs/README.md).
-3. Выполнить ЛР 1–3 с прогнозом до запуска и отрицательным контролем.
-4. Продолжить по номерам; докинг и квантовая химия имеют отдельные предпосылки. Завершить передачей конвейера в главе 14.
+Ученические Notebook генерируются из указанных MD-шагов в `practicuum`. В теории находятся ссылки; независимых копий Notebook там нет. Для изменения опубликованного содержания редактируют исходный MD и пересобирают Notebook. Личную рабочую копию студент может изменять свободно.
 
-Выполнены все 14 основных notebooks в отдельных ядрах. [Benchmark с фактическими результатами](Labs/benchmarks/REPORT.md) содержит режимы исполнения, параметры и ограничения. Реально запущены Vina 1IEP, Random Forest на ESOL, многоконформерный MMFF, RHF H2 и один шаблонный ретросинтетический шаг. Дополнительный PySCF/DFT notebook выделен отдельно и не входит в проверенные Windows-запуски.
-
-Проверенная среда: Python 3.12.10 / Windows x64. Основные зависимости закреплены в `Labs/requirements.txt`; для Vina нужен отдельный официальный бинарник. Наборы данных и их hash опубликованы с [паспортами](Labs/datasets/README.md). Искусственные значения не выдаются за экспериментальные измерения.
-
-## Книги и визуальные материалы
-
-[Карта чтения](Literature/READING_MAP.md) связывает семь книг/источников из локальной библиотеки с главами курса. PDF преобразованы установленным навыком pdf-to-markdown: 2657 страниц Markdown, 767 извлечённых иллюстраций, 2657 факсимиле страниц. [Описание конвертации](Literature/README.md) объясняет покрытие и ограничение OCR.
-
-Полные книги и конвертации остаются в локальной `Literature/converted/` и исключены из публичного Git. На GitHub находятся авторские учебные тексты, библиографическая карта, исходный код, учебные datasets и проверенные notebooks. Рисунки в notebook построены кодом практикума.
-
-## Для автора курса
-
-- [Согласованная программа для Stepik](Stepik_course/02_PROGRAM.md) и [инструкция сборки шагов](Stepik_course/03_STEPIK.md).
-- [Интерактив и сценарии видео](Stepik_course/05_MEDIA.md), [локальный тренажёр](Stepik_course/media/interactive.html).
-- `course-manifest.json` — машинная связь глава → guideline → notebook → ответы.
-- `tools/build_course.py` — сборка основной редакции; `tools/run_labs.py` — исполнение; `tools/validate_course.py` — проверка пакета.
-
-`Stepik_course/` — предыдущий редакторский пакет; действующая теория и практикум находятся в `Module_theory/` и `Labs/`. В `archive/source-drafts/` сохранены заполненные исходные черновики. Старые файлы `Couse organistaions.md` и `Programm/Matrix-course.md` оставлены как история замысла; их неподтверждённые цифры и примеры не являются рекомендациями текущей редакции.
-
-## Проверки
-
-```text
-python -m unittest discover -s Labs -p test_labs.py -v
-python tools/validate_course.py
-python tools/run_labs.py
-```
-
-Перед публикацией на Stepik остаются ручная сборка шагов, выбор режима оценки, пилот нагрузки и запись видео. Размещение исходников на GitHub не означает публикацию курса в LMS.
+Прежние материалы сохранены в [архиве](archive/legacy-20261118/README.md). Их тесты и старые результаты не переносятся автоматически на новую редакцию. Сторонние книги остаются локальными; [происхождение и права](THIRD_PARTY_NOTICES.md). Публикация в Stepik и проверка grader на платформе пока NOT_RUN.

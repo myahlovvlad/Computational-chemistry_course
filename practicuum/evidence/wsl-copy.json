@@ -1,0 +1,11 @@
+{
+  "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\course-restructure-20261118",
+  "destination": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\miakhlov\\course-restructured-20261118",
+  "updated": [
+    ".gitattributes",
+    "theory/modules/M03/lessons/L01/03_workflow.md"
+  ],
+  "unchanged": 761,
+  "conflicts": [],
+  "policy": "copy only if destination is absent, already identical, or equals the original snapshot; no deletions"
+}

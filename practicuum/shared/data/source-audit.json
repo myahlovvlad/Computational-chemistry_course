@@ -1,0 +1,19 @@
+{
+  "rejected": {
+    "file": "xanthine_synthesis.xml",
+    "expected_doi": "10.1186/1860-5397-2-20",
+    "actual_doi": "10.1186/1472-6882-6-31",
+    "status": "FAIL",
+    "reason": "HTTP success did not establish article identity"
+  },
+  "verified": {
+    "file": "xanthine_synthesis_verified.xml",
+    "doi": "10.1186/1860-5397-2-20",
+    "pmcid": "PMC1698928",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC1698928/fullTextXML",
+    "sha256": "73258196880b6ccb9368087ef0fffcd22c45fbcdd6240d0f8927542406659a58",
+    "title": "Microwave-assisted ring closure reactions: Synthesis of 8-substituted xanthine derivatives and related pyrimido- and diazepinopurinediones",
+    "license": "https://creativecommons.org/licenses/by/2.0/https://www.beilstein-journals.org/bjoc/termsThis is an Open Access article under the terms of the Creative Commons Attribution License (https://creativecommons.org/licenses/by/2.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.The license is subject to the Beilstein Journal of Organic Chemistry terms and conditions: (https://www.beilstein-journals.org/bjoc/terms)",
+    "status": "PASS"
+  }
+}

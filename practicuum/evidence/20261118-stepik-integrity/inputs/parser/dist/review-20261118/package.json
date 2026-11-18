@@ -1,0 +1,79 @@
+{
+  "format": "local-stepik-review-package-v1",
+  "partial": true,
+  "lessons": [
+    {
+      "id": "M01-L01",
+      "file": "M01-L01/lesson.json",
+      "steps": 7
+    },
+    {
+      "id": "M03-L01",
+      "file": "M03-L01/lesson.json",
+      "steps": 5
+    },
+    {
+      "id": "M03-L02",
+      "file": "M03-L02/lesson.json",
+      "steps": 5
+    }
+  ],
+  "not_ready": [
+    "M01-L02",
+    "M02-L01",
+    "M02-L02",
+    "M04-L01",
+    "M04-L02",
+    "M05-L01",
+    "M05-L02",
+    "M06-L01",
+    "M06-L02",
+    "M07-L01",
+    "M07-L02",
+    "M08-L01",
+    "M08-L02",
+    "M09-L01",
+    "M09-L02",
+    "M10-L01",
+    "M10-L02",
+    "M11-L01",
+    "M11-L02",
+    "M12-L01",
+    "M12-L02",
+    "M13-L01",
+    "M13-L02",
+    "M14-L01",
+    "M14-L02"
+  ],
+  "files_sha256": {
+    "M01-L01/lesson.json": "478fd85730fb06ad741edeabc7e46a078cd578a7c48680dc1d59d95a86066908",
+    "M03-L01/lesson.json": "23470b94238d3769eddb692ceb662af563dc071819e9caa5b3b60a1af823d4db",
+    "M03-L02/lesson.json": "6ef017a049138e845a89497ea6a441fa32addb27bc9ff3281a3f5d6f9be0f80d",
+    "practicuum/modules/M01/lessons/L01/Notebooks_cases/01_case.ipynb": "fa7110467e1265019dfe5b26e4e7610e97b1584efb9371d3497285fee7514aec",
+    "practicuum/modules/M01/lessons/L01/Notebooks_labs/02_lab.ipynb": "75eaca3f4434fc4e89267d222f37aaa687e67c6aaac1cbd7cc2c0436fcb27e9e",
+    "practicuum/modules/M03/lessons/L01/Notebooks_cases/01_case.ipynb": "b7a2f8adedde5666e8972dc008415eb9a6a093e86f04a6fa10df5b48d3e774bd",
+    "practicuum/modules/M03/lessons/L01/Notebooks_labs/02_lab.ipynb": "1fd454d31c0e1ba52a1b7abcc9b2e401eb9272a4979d589ff22adede972dddcb",
+    "practicuum/modules/M03/lessons/L02/Notebooks_cases/01_case.ipynb": "faaea28a209160f689896bf25f7a2a9b953ac10b64f2698ad4cfd4a9cf3867bb",
+    "practicuum/modules/M03/lessons/L02/Notebooks_labs/02_lab.ipynb": "f3a9efb14b18e946a7abbf621f77a91e7052b907959b25316dc53abfb36b94ca",
+    "sources/practicuum/modules/M01/lessons/L01/steps/01_case.md": "ac15393b60b0f9abab39d39adb2ed26295bed9a95d849f71090b0fa54b8d44de",
+    "sources/practicuum/modules/M01/lessons/L01/steps/02_lab.md": "0292c94d09fdddce01e7afdc23d3b3524bd8408983391c656fe87ada2a8fb011",
+    "sources/practicuum/modules/M03/lessons/L01/steps/01_case.md": "5916e4fd4d3316178e0a54adab045bfc6fcc02e33414c0735e69798a5e35fb63",
+    "sources/practicuum/modules/M03/lessons/L01/steps/02_lab.md": "161c418449611e47f13b9d016660e19c7161ae54c5165fad133a5ea548a7a305",
+    "sources/practicuum/modules/M03/lessons/L02/steps/01_case.md": "117d597e72ea7c73140c991a3ea4c63be593c69c8660205e9465c3301ce5777a",
+    "sources/practicuum/modules/M03/lessons/L02/steps/02_lab.md": "18174180460e1bff928be96ee997d40779b8d8c92a5976ab751a4cdd808f234d",
+    "sources/theory/modules/M01/lessons/L01/01_problem.md": "1a7365210664ad5ffbf0c8e1d97449d1585d21d9deac6bd5d97cbac87baee825",
+    "sources/theory/modules/M01/lessons/L01/02_domain.md": "b63ae92f509f34712cbb25e97bae6561c194a674164fb5e43ffc5ff9eac32f32",
+    "sources/theory/modules/M01/lessons/L01/03_workflow.md": "66524535dc5a6859c2b16505e8070f1412fa68e1e5ba5bc590f72e0b6d802b4d",
+    "sources/theory/modules/M01/lessons/L01/04_evidence.md": "e233f64663d7cb4440199253d73975e35d87295378c613d57bd8dab8669c65cf",
+    "sources/theory/modules/M01/lessons/L01/05_dossier_and_lab.md": "1e60fdce37f249388cb46a3174efd1c22891c3469039f0162a64d4421f85b377",
+    "sources/theory/modules/M03/lessons/L01/01_problem.md": "29e5639b5dda4a97934afd8e969594ddab93dd0b268664f318645b199995953d",
+    "sources/theory/modules/M03/lessons/L01/02_model.md": "8a3682a30177222c80ac396c356b9c9f749e09a09dca41c143d705147152da57",
+    "sources/theory/modules/M03/lessons/L01/03_workflow.md": "47c1bc0d0fe5a00ac802bed14b52c7d0e5cfe93e841d637a5fa838b270076d02",
+    "sources/theory/modules/M03/lessons/L02/01_problem.md": "0a88d8f9510154ad57293e67d02347e5d6431e81d31de10d26fe1d58cecc7b0d",
+    "sources/theory/modules/M03/lessons/L02/02_model.md": "cb9435960f63b3f8194830b50928e8591e287ba33bd0ee30ccf9881e0df3c285",
+    "sources/theory/modules/M03/lessons/L02/03_workflow.md": "034a7a62302523a90a6c1cb7e9d741a1299d06f71e3ff716242528e950e59565"
+  },
+  "scope": "local build; HTML links require publication asset mapping",
+  "stepik_api_integration": "NOT_RUN",
+  "stepik_grader": "NOT_RUN"
+}

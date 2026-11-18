@@ -1,0 +1,44 @@
+{
+  "conditions": {
+    "acn_percent": 65,
+    "temperature_C": 35,
+    "flow_mL_min": 1,
+    "pH": 4.6,
+    "elution": "isocratic",
+    "column": "source"
+  },
+  "domain_status": "WITHIN_FACTOR_BOX",
+  "source_doi": "10.3390/molecules18032469",
+  "input_sha256": "48f2e1cde1995d8419cb27c67484e16fd8c3c767675dcf142b0ae4994adfbb4c",
+  "kind": "teaching model",
+  "learner_review": "NOT_RUN",
+  "real_experiment": "NOT_RUN",
+  "predicted_first_last_Rt_min": [
+    2.8410545454545453,
+    7.268463636363636
+  ],
+  "conditional_peak_times_min": [
+    2.8410545454545453,
+    4.747974512825161,
+    5.4818297086014685,
+    7.268463636363636
+  ],
+  "assumed_equal_baseline_width_min": 0.6,
+  "conditional_Rs": [
+    3.1781999456176933,
+    1.2230919929605122,
+    2.9777232129369464
+  ],
+  "limitations": [
+    "no numeric raw chromatograms",
+    "no baseline peak widths",
+    "middle-peak positions outside the single figure condition are assumptions",
+    "all Gaussian profiles and widths in the trainer are explicit teaching simulations",
+    "no pH/gradient/column response calibration",
+    "Rs alone does not establish method validation"
+  ],
+  "method_validated": false,
+  "hypothesis": "UI SMOKE TEST: not learner research",
+  "interpretation": "UI SMOKE TEST: interpretation is not scientifically assessed",
+  "exported_at": "2026-11-18T12:37:02.795Z"
+}

@@ -7,11 +7,20 @@ __pycache__/
 tmp/
 output/
 tools/bin/
+scripts/bin/
+scripts/environment/.uv-bootstrap/
+practicuum/shared/data/cache/
+practicuum/**/workspace/
+parser/dist/
+programm/IMPLEMENTATION_STATE.md
 *.log
+!practicuum/evidence/**/*.log
+!practicuum/shared/data/quantum/**/*.log
 
 # Third-party reference library stays local; publish original course content.
 Books/
 Literature/converted/
+archive/legacy-20261118/Literature/converted/
 
 # Notebook execution and downloads
 Labs/executed/

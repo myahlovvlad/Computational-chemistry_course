@@ -1,0 +1,875 @@
+{
+  "id": "computational-chemistry",
+  "version": "2.0-development",
+  "title": "Основы хемоинформатики и вычислительной химии",
+  "language": "ru",
+  "core_hours_planned": 122,
+  "hours_are_empirical": false,
+  "author_brief": "programm/author-brief.txt",
+  "decisions": "programm/RESTRUCTURE_GRILL.md",
+  "guided_macrocase": "istradefylline and xanthines / A2A / CNS",
+  "independent_macrocase": "atorvastatin / molecular forms / HMGCR / liver exposure",
+  "delivery_extension": "GalNAc-siRNA / inclisiran / ASGPR / PCSK9; separate modality",
+  "modules": [
+    {
+      "id": "M01",
+      "position": 1,
+      "title": "Предметное введение и научный вопрос",
+      "lessons": [
+        {
+          "id": "M01-L01",
+          "local_id": "L01",
+          "title": "Предметная область",
+          "hours": 3,
+          "guided_question": "Что изучают химия, вычислительные модели, аналитика и фармакология; какой объект скрывается за записью об истрадефиллине?",
+          "independent_question": "Разделить объект, представление, модель, алгоритм, расчёт и эксперимент в досье аторвастатина",
+          "dossier_result": "`research_question.md`, исходная карта дисциплин",
+          "profile": "base",
+          "theory": "theory/modules/M01/lessons/L01",
+          "practice": "practicuum/modules/M01/lessons/L01",
+          "case_notebook": "practicuum/modules/M01/lessons/L01/Notebooks_cases/01_case.ipynb",
+          "lab_notebook": "practicuum/modules/M01/lessons/L01/Notebooks_labs/02_lab.ipynb",
+          "status": "AUTHORED",
+          "execution_status": "PASS",
+          "scientific_review": "NOT_RUN",
+          "dossier_sections": [
+            "01_question_and_sources",
+            "09_laboratory_verification"
+          ],
+          "learner_solution": "NOT_RUN",
+          "student_pilot": "NOT_RUN",
+          "execution_scope": "guided calculation and empty lab scaffold, not student solution",
+          "execution_evidence": [
+            "practicuum/evidence/20261118-pilot-windows-final/summary.json",
+            "practicuum/evidence/20261118-pilot-linux/summary.json"
+          ]
+        },
+        {
+          "id": "M01-L02",
+          "local_id": "L02",
+          "title": "Исследовательский вопрос",
+          "hours": 3,
+          "guided_question": "Как превратить обещание расчёта в проверяемую гипотезу; что показывает вспомогательный архив ESOL?",
+          "independent_question": "Определить собственный endpoint, неизвестные условия, критерий и следующий опыт",
+          "dossier_result": "`research_protocol.json`, журнал гипотез",
+          "profile": "base",
+          "theory": "theory/modules/M01/lessons/L02",
+          "practice": "practicuum/modules/M01/lessons/L02",
+          "case_notebook": "practicuum/modules/M01/lessons/L02/Notebooks_cases/01_case.ipynb",
+          "lab_notebook": "practicuum/modules/M01/lessons/L02/Notebooks_labs/02_lab.ipynb",
+          "status": "PLANNED",
+          "execution_status": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "dossier_sections": [
+            "01_question_and_sources",
+            "09_laboratory_verification"
+          ],
+          "learner_solution": "NOT_RUN",
+          "student_pilot": "NOT_RUN"
+        }
+      ]
+    },
+    {
+      "id": "M02",
+      "position": 2,
+      "title": "Рабочая среда и Python",
+      "lessons": [
+        {
+          "id": "M02-L01",
+          "local_id": "L01",
+          "title": "Воспроизводимая среда",
+          "hours": 4,
+          "guided_question": "Как получить те же исходные байты и зафиксировать среду исследования ксантинов?",
+          "independent_question": "Подготовить свой workspace и паспорт входов B",
+          "dossier_result": "`environment.json`, `input_manifest.json`",
+          "profile": "base",
+          "theory": "theory/modules/M02/lessons/L01",
+          "practice": "practicuum/modules/M02/lessons/L01",
+          "case_notebook": "practicuum/modules/M02/lessons/L01/Notebooks_cases/01_case.ipynb",
+          "lab_notebook": "practicuum/modules/M02/lessons/L01/Notebooks_labs/02_lab.ipynb",
+          "status": "PLANNED",
+          "execution_status": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "dossier_sections": [
+            "01_question_and_sources",
+            "09_laboratory_verification"
+          ],
+          "learner_solution": "NOT_RUN",
+          "student_pilot": "NOT_RUN"
+        },
+        {
+          "id": "M02-L02",
+          "local_id": "L02",
+          "title": "Python как инструмент исследования",
+          "hours": 4,
+          "guided_question": "Как прочитать таблицу, не потерять пары и единицы, выполнить расчёт и сохранить отчёт?",
+          "independent_question": "Проверить таблицу молекулярных форм и результаты повторного чтения",
+          "dossier_result": "Таблица, график и журнал преобразования",
+          "profile": "base",
+          "theory": "theory/modules/M02/lessons/L02",
+          "practice": "practicuum/modules/M02/lessons/L02",
+          "case_notebook": "practicuum/modules/M02/lessons/L02/Notebooks_cases/01_case.ipynb",
+          "lab_notebook": "practicuum/modules/M02/lessons/L02/Notebooks_labs/02_lab.ipynb",
+          "status": "PLANNED",
+          "execution_status": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "dossier_sections": [
+            "01_question_and_sources",
+            "09_laboratory_verification"
+          ],
+          "learner_solution": "NOT_RUN",
+          "student_pilot": "NOT_RUN"
+        }
+      ]
+    },
+    {
+      "id": "M03",
+      "position": 3,
+      "title": "Молекулярные представления и формы",
+      "lessons": [
+        {
+          "id": "M03-L01",
+          "local_id": "L01",
+          "title": "Молекулярная идентичность",
+          "hours": 4,
+          "guided_question": "Как связать имя, CID, SMILES и экспериментальный образец ксантина?",
+          "independent_question": "Проверить сохранение конфигурации в записи аторвастатина и границу программного доказательства",
+          "dossier_result": "`identity_passport.json`, исходная запись",
+          "profile": "chem",
+          "theory": "theory/modules/M03/lessons/L01",
+          "practice": "practicuum/modules/M03/lessons/L01",
+          "case_notebook": "practicuum/modules/M03/lessons/L01/Notebooks_cases/01_case.ipynb",
+          "lab_notebook": "practicuum/modules/M03/lessons/L01/Notebooks_labs/02_lab.ipynb",
+          "status": "AUTHORED",
+          "execution_status": "PASS",
+          "scientific_review": "NOT_RUN",
+          "dossier_sections": [
+            "02_forms_and_descriptors",
+            "09_laboratory_verification"
+          ],
+          "learner_solution": "NOT_RUN",
+          "student_pilot": "NOT_RUN",
+          "execution_scope": "guided calculation and empty lab scaffold, not student solution",
+          "execution_evidence": [
+            "practicuum/evidence/20261118-pilot-windows-final/summary.json",
+            "practicuum/evidence/20261118-pilot-linux/summary.json"
+          ]
+        },
+        {
+          "id": "M03-L02",
+          "local_id": "L02",
+          "title": "Формы и стереохимия",
+          "hours": 4,
+          "guided_question": "Когда разные записи соответствуют одному объекту, а когда преобразование уничтожает смысл?",
+          "independent_question": "Отличить лактон от кислоты, стереоизомеры и политику нейтрализации",
+          "dossier_result": "Карта форм, исходные структуры, политика идентичности",
+          "profile": "chem",
+          "theory": "theory/modules/M03/lessons/L02",
+          "practice": "practicuum/modules/M03/lessons/L02",
+          "case_notebook": "practicuum/modules/M03/lessons/L02/Notebooks_cases/01_case.ipynb",
+          "lab_notebook": "practicuum/modules/M03/lessons/L02/Notebooks_labs/02_lab.ipynb",
+          "status": "AUTHORED",
+          "execution_status": "PASS",
+          "scientific_review": "NOT_RUN",
+          "dossier_sections": [
+            "02_forms_and_descriptors",
+            "09_laboratory_verification"
+          ],
+          "learner_solution": "NOT_RUN",
+          "student_pilot": "NOT_RUN",
+          "execution_scope": "guided calculation and empty lab scaffold, not student solution",
+          "execution_evidence": [
+            "practicuum/evidence/20261118-pilot-windows-final/summary.json",
+            "practicuum/evidence/20261118-pilot-linux/summary.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M04",
+      "position": 4,
+      "title": "Свойства, растворимость и выбор среды",
+      "lessons": [
+        {
+          "id": "M04-L01",
+          "local_id": "L01",
+          "title": "Свойства и физический смысл",
+          "hours": 4,
+          "guided_question": "Что описывают масса, заряд, cLogP, TPSA и донорно-акцепторные признаки ксантинов?",
+          "independent_question": "Сравнить допустимые представления B и указать смысл/условия каждого признака",
+          "dossier_result": "`descriptor_table.csv`, ограничения",
+          "profile": "chem",
+          "theory": "theory/modules/M04/lessons/L01",
+          "practice": "practicuum/modules/M04/lessons/L01",
+          "case_notebook": "practicuum/modules/M04/lessons/L01/Notebooks_cases/01_case.ipynb",
+          "lab_notebook": "practicuum/modules/M04/lessons/L01/Notebooks_labs/02_lab.ipynb",
+          "status": "PLANNED",
+          "execution_status": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "dossier_sections": [
+            "02_forms_and_descriptors",
+            "03_solvent",
+            "09_laboratory_verification"
+          ],
+          "learner_solution": "NOT_RUN",
+          "student_pilot": "NOT_RUN"
+        },
+        {
+          "id": "M04-L02",
+          "local_id": "L02",
+          "title": "Среда и растворитель",
+          "hours": 4,
+          "guided_question": "Как выбрать среду для конкретной операции и не подменить растворимость энергией сольватации?",
+          "independent_question": "Обосновать среду аналитического опыта B и данные для её проверки",
+          "dossier_result": "`solvent_decision.md`, план измерения растворимости",
+          "profile": "chem",
+          "theory": "theory/modules/M04/lessons/L02",
+          "practice": "practicuum/modules/M04/lessons/L02",
+          "case_notebook": "practicuum/modules/M04/lessons/L02/Notebooks_cases/01_case.ipynb",
+          "lab_notebook": "practicuum/modules/M04/lessons/L02/Notebooks_labs/02_lab.ipynb",
+          "status": "PLANNED",
+          "execution_status": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "dossier_sections": [
+            "02_forms_and_descriptors",
+            "03_solvent",
+            "09_laboratory_verification"
+          ],
+          "learner_solution": "NOT_RUN",
+          "student_pilot": "NOT_RUN"
+        }
+      ]
+    },
+    {
+      "id": "M05",
+      "position": 5,
+      "title": "Сходство и обоснованный отбор",
+      "lessons": [
+        {
+          "id": "M05-L01",
+          "local_id": "L01",
+          "title": "Структурное сходство",
+          "hours": 4,
+          "guided_question": "Что меняется при выборе отпечатка и почему близость к ксантину не доказывает действие?",
+          "independent_question": "Построить поиск аналогов B с явно выбранной химической политикой",
+          "dossier_result": "Список аналогов, параметры и контрпример",
+          "profile": "chem",
+          "theory": "theory/modules/M05/lessons/L01",
+          "practice": "practicuum/modules/M05/lessons/L01",
+          "case_notebook": "practicuum/modules/M05/lessons/L01/Notebooks_cases/01_case.ipynb",
+          "lab_notebook": "practicuum/modules/M05/lessons/L01/Notebooks_labs/02_lab.ipynb",
+          "status": "PLANNED",
+          "execution_status": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "dossier_sections": [
+            "02_forms_and_descriptors",
+            "07_targets_and_exposure",
+            "09_laboratory_verification"
+          ],
+          "learner_solution": "NOT_RUN",
+          "student_pilot": "NOT_RUN"
+        },
+        {
+          "id": "M05-L02",
+          "local_id": "L02",
+          "title": "Отбор следующего кандидата",
+          "hours": 4,
+          "guided_question": "Как выбрать информативное следующее измерение, сохранив различие сходства, предупреждения и активности?",
+          "independent_question": "Предложить ограниченный набор проверок B и разобрать альтернативный выбор",
+          "dossier_result": "`candidate_evidence.csv`, критерии отбора",
+          "profile": "chem",
+          "theory": "theory/modules/M05/lessons/L02",
+          "practice": "practicuum/modules/M05/lessons/L02",
+          "case_notebook": "practicuum/modules/M05/lessons/L02/Notebooks_cases/01_case.ipynb",
+          "lab_notebook": "practicuum/modules/M05/lessons/L02/Notebooks_labs/02_lab.ipynb",
+          "status": "PLANNED",
+          "execution_status": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "dossier_sections": [
+            "02_forms_and_descriptors",
+            "07_targets_and_exposure",
+            "09_laboratory_verification"
+          ],
+          "learner_solution": "NOT_RUN",
+          "student_pilot": "NOT_RUN"
+        }
+      ]
+    },
+    {
+      "id": "M06",
+      "position": 6,
+      "title": "Молекулярная механика и конформеры",
+      "lessons": [
+        {
+          "id": "M06-L01",
+          "local_id": "L01",
+          "title": "Конформеры и геометрия",
+          "hours": 4,
+          "guided_question": "Как получить и проверить ансамбль геометрий ксантина; что означает сходимость?",
+          "independent_question": "Исследовать гибкость B, сохранив форму, seed и протокол",
+          "dossier_result": "SDF, геометрический паспорт",
+          "profile": "chem",
+          "theory": "theory/modules/M06/lessons/L01",
+          "practice": "practicuum/modules/M06/lessons/L01",
+          "case_notebook": "practicuum/modules/M06/lessons/L01/Notebooks_cases/01_case.ipynb",
+          "lab_notebook": "practicuum/modules/M06/lessons/L01/Notebooks_labs/02_lab.ipynb",
+          "status": "PLANNED",
+          "execution_status": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "dossier_sections": [
+            "03_solvent",
+            "09_laboratory_verification"
+          ],
+          "learner_solution": "NOT_RUN",
+          "student_pilot": "NOT_RUN"
+        },
+        {
+          "id": "M06-L02",
+          "local_id": "L02",
+          "title": "Энергии и ограничения",
+          "hours": 4,
+          "guided_question": "Почему минимум одной оптимизации не гарантирует глобальный минимум и какие энергии сравнимы?",
+          "independent_question": "Проверить сравнимость состояний B и спланировать проверку модели среды",
+          "dossier_result": "`conformer_comparison.csv`, ограничения MM",
+          "profile": "chem",
+          "theory": "theory/modules/M06/lessons/L02",
+          "practice": "practicuum/modules/M06/lessons/L02",
+          "case_notebook": "practicuum/modules/M06/lessons/L02/Notebooks_cases/01_case.ipynb",
+          "lab_notebook": "practicuum/modules/M06/lessons/L02/Notebooks_labs/02_lab.ipynb",
+          "status": "PLANNED",
+          "execution_status": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "dossier_sections": [
+            "03_solvent",
+            "09_laboratory_verification"
+          ],
+          "learner_solution": "NOT_RUN",
+          "student_pilot": "NOT_RUN"
+        }
+      ]
+    },
+    {
+      "id": "M07",
+      "position": 7,
+      "title": "Квантовые модели и энергетические выводы",
+      "lessons": [
+        {
+          "id": "M07-L01",
+          "local_id": "L01",
+          "title": "Электронная модель",
+          "hours": 5,
+          "guided_question": "Как заряд, мультиплетность, метод, базис и геометрия определяют квантовый расчёт?",
+          "independent_question": "Составить и проверить паспорт расчёта релевантной формы B; отличить контрольный пример от расчёта целого вещества",
+          "dossier_result": "`quantum_calculation_passport.json`",
+          "profile": "chem",
+          "theory": "theory/modules/M07/lessons/L01",
+          "practice": "practicuum/modules/M07/lessons/L01",
+          "case_notebook": "practicuum/modules/M07/lessons/L01/Notebooks_cases/01_case.ipynb",
+          "lab_notebook": "practicuum/modules/M07/lessons/L01/Notebooks_labs/02_lab.ipynb",
+          "status": "PLANNED",
+          "execution_status": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "dossier_sections": [
+            "03_solvent",
+            "04_reactions_and_kinetics",
+            "05_spectroscopy_and_instrument",
+            "09_laboratory_verification"
+          ],
+          "learner_solution": "NOT_RUN",
+          "student_pilot": "NOT_RUN"
+        },
+        {
+          "id": "M07-L02",
+          "local_id": "L02",
+          "title": "От энергии к физическому выводу",
+          "hours": 5,
+          "guided_question": "Что требуется для вывода об устойчивости, термодинамике и переходном состоянии?",
+          "independent_question": "Указать допустимые сравнения B и недостающие поправки/условия",
+          "dossier_result": "`energy_comparison.csv`, план дополнительного расчёта",
+          "profile": "chem",
+          "theory": "theory/modules/M07/lessons/L02",
+          "practice": "practicuum/modules/M07/lessons/L02",
+          "case_notebook": "practicuum/modules/M07/lessons/L02/Notebooks_cases/01_case.ipynb",
+          "lab_notebook": "practicuum/modules/M07/lessons/L02/Notebooks_labs/02_lab.ipynb",
+          "status": "PLANNED",
+          "execution_status": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "dossier_sections": [
+            "03_solvent",
+            "04_reactions_and_kinetics",
+            "05_spectroscopy_and_instrument",
+            "09_laboratory_verification"
+          ],
+          "learner_solution": "NOT_RUN",
+          "student_pilot": "NOT_RUN"
+        }
+      ]
+    },
+    {
+      "id": "M08",
+      "position": 8,
+      "title": "Спектроскопия и выбор прибора",
+      "lessons": [
+        {
+          "id": "M08-L01",
+          "local_id": "L01",
+          "title": "UV–Vis и ИК",
+          "hours": 5,
+          "guided_question": "Как различать экспериментальный спектр, рассчитанные переходы и инструментальный отклик?",
+          "independent_question": "Выбрать признаки контроля B и объяснить, что можно измерить или предсказать",
+          "dossier_result": "Спектральная карточка и происхождение данных",
+          "profile": "chem",
+          "theory": "theory/modules/M08/lessons/L01",
+          "practice": "practicuum/modules/M08/lessons/L01",
+          "case_notebook": "practicuum/modules/M08/lessons/L01/Notebooks_cases/01_case.ipynb",
+          "lab_notebook": "practicuum/modules/M08/lessons/L01/Notebooks_labs/02_lab.ipynb",
+          "status": "PLANNED",
+          "execution_status": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "dossier_sections": [
+            "05_spectroscopy_and_instrument",
+            "09_laboratory_verification"
+          ],
+          "learner_solution": "NOT_RUN",
+          "student_pilot": "NOT_RUN"
+        },
+        {
+          "id": "M08-L02",
+          "local_id": "L02",
+          "title": "Прибор и специфичность",
+          "hours": 5,
+          "guided_question": "Как полоса, дискретизация и шум меняют наблюдение; когда лучшая спектральная разрешающая способность не решает задачу?",
+          "independent_question": "Исследовать настройку тренажёра и показать, почему похожие спектры требуют дополнительной специфичности",
+          "dossier_result": "`spectral_requirements.md`, `instrument_decision.json`",
+          "profile": "chem",
+          "theory": "theory/modules/M08/lessons/L02",
+          "practice": "practicuum/modules/M08/lessons/L02",
+          "case_notebook": "practicuum/modules/M08/lessons/L02/Notebooks_cases/01_case.ipynb",
+          "lab_notebook": "practicuum/modules/M08/lessons/L02/Notebooks_labs/02_lab.ipynb",
+          "status": "PLANNED",
+          "execution_status": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "dossier_sections": [
+            "05_spectroscopy_and_instrument",
+            "09_laboratory_verification"
+          ],
+          "learner_solution": "NOT_RUN",
+          "student_pilot": "NOT_RUN"
+        }
+      ]
+    },
+    {
+      "id": "M09",
+      "position": 9,
+      "title": "Реакции, кинетика и планирование эксперимента",
+      "lessons": [
+        {
+          "id": "M09-L01",
+          "local_id": "L01",
+          "title": "Реакция и наблюдение",
+          "hours": 4,
+          "guided_question": "Как читать опубликованную стадию получения ксантинового производного и сохранять баланс/условия?",
+          "independent_question": "Разобрать превращение форм B и отличить данные о составе от механистической гипотезы",
+          "dossier_result": "`reaction_balance.csv`, журнал условий",
+          "profile": "chem",
+          "theory": "theory/modules/M09/lessons/L01",
+          "practice": "practicuum/modules/M09/lessons/L01",
+          "case_notebook": "practicuum/modules/M09/lessons/L01/Notebooks_cases/01_case.ipynb",
+          "lab_notebook": "practicuum/modules/M09/lessons/L01/Notebooks_labs/02_lab.ipynb",
+          "status": "PLANNED",
+          "execution_status": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "dossier_sections": [
+            "04_reactions_and_kinetics",
+            "06_chromatography",
+            "08_retrosynthesis_and_process",
+            "09_laboratory_verification"
+          ],
+          "learner_solution": "NOT_RUN",
+          "student_pilot": "NOT_RUN"
+        },
+        {
+          "id": "M09-L02",
+          "local_id": "L02",
+          "title": "Кинетика и план эксперимента",
+          "hours": 4,
+          "guided_question": "Почему время стадии и выход не устанавливают закон скорости; какие измерения различат модели?",
+          "independent_question": "Спроектировать временной ряд/контроли превращения B и критерии выбора модели",
+          "dossier_result": "`kinetic_experiment_plan.md`, матрица факторов",
+          "profile": "chem",
+          "theory": "theory/modules/M09/lessons/L02",
+          "practice": "practicuum/modules/M09/lessons/L02",
+          "case_notebook": "practicuum/modules/M09/lessons/L02/Notebooks_cases/01_case.ipynb",
+          "lab_notebook": "practicuum/modules/M09/lessons/L02/Notebooks_labs/02_lab.ipynb",
+          "status": "PLANNED",
+          "execution_status": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "dossier_sections": [
+            "04_reactions_and_kinetics",
+            "06_chromatography",
+            "08_retrosynthesis_and_process",
+            "09_laboratory_verification"
+          ],
+          "learner_solution": "NOT_RUN",
+          "student_pilot": "NOT_RUN"
+        }
+      ]
+    },
+    {
+      "id": "M10",
+      "position": 10,
+      "title": "Хроматография и валидация аналитики",
+      "lessons": [
+        {
+          "id": "M10-L01",
+          "local_id": "L01",
+          "title": "Разделение смеси",
+          "hours": 5,
+          "guided_question": "Как связать аналитическую задачу, подвижную фазу, удерживание и определение ширины пика?",
+          "independent_question": "Разделить кислотную/лактонную формы B и гидроксилированные метаболиты на основе опубликованного HPLC-кейса",
+          "dossier_result": "`chromatogram.csv`, `method_screening.csv`",
+          "profile": "chem",
+          "theory": "theory/modules/M10/lessons/L01",
+          "practice": "practicuum/modules/M10/lessons/L01",
+          "case_notebook": "practicuum/modules/M10/lessons/L01/Notebooks_cases/01_case.ipynb",
+          "lab_notebook": "practicuum/modules/M10/lessons/L01/Notebooks_labs/02_lab.ipynb",
+          "status": "PLANNED",
+          "execution_status": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "dossier_sections": [
+            "06_chromatography",
+            "09_laboratory_verification"
+          ],
+          "learner_solution": "NOT_RUN",
+          "student_pilot": "NOT_RUN"
+        },
+        {
+          "id": "M10-L02",
+          "local_id": "L02",
+          "title": "Оптимизация и валидация HPLC",
+          "hours": 5,
+          "guided_question": "Как исследовать условия и многокритериальный выбор, не выдавая Rs за валидацию?",
+          "independent_question": "Самостоятельно работать с тренажёром: состав, pH, режим, поток, колонка; предложить проверки идентичности, специфичности и устойчивости",
+          "dossier_result": "`chromatography_METHOD_URS.md`, `validation_plan.md`",
+          "profile": "chem",
+          "theory": "theory/modules/M10/lessons/L02",
+          "practice": "practicuum/modules/M10/lessons/L02",
+          "case_notebook": "practicuum/modules/M10/lessons/L02/Notebooks_cases/01_case.ipynb",
+          "lab_notebook": "practicuum/modules/M10/lessons/L02/Notebooks_labs/02_lab.ipynb",
+          "status": "PLANNED",
+          "execution_status": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "dossier_sections": [
+            "06_chromatography",
+            "09_laboratory_verification"
+          ],
+          "learner_solution": "NOT_RUN",
+          "student_pilot": "NOT_RUN"
+        }
+      ]
+    },
+    {
+      "id": "M11",
+      "position": 11,
+      "title": "Мишени, доказательства и докинг",
+      "lessons": [
+        {
+          "id": "M11-L01",
+          "local_id": "L01",
+          "title": "Поиск и проверка мишени",
+          "hours": 5,
+          "guided_question": "Чем подтверждаются связывание с A2A, функциональный ответ и CNS-эффект; какие свидетельства нельзя объединить?",
+          "independent_question": "Различить HMGCR, транспортёры OATP, биохимический эффект и печёночную экспозицию",
+          "dossier_result": "`target_evidence.csv`, матрица утверждений",
+          "profile": "chem",
+          "theory": "theory/modules/M11/lessons/L01",
+          "practice": "practicuum/modules/M11/lessons/L01",
+          "case_notebook": "practicuum/modules/M11/lessons/L01/Notebooks_cases/01_case.ipynb",
+          "lab_notebook": "practicuum/modules/M11/lessons/L01/Notebooks_labs/02_lab.ipynb",
+          "status": "PLANNED",
+          "execution_status": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "dossier_sections": [
+            "07_targets_and_exposure",
+            "09_laboratory_verification"
+          ],
+          "learner_solution": "NOT_RUN",
+          "student_pilot": "NOT_RUN"
+        },
+        {
+          "id": "M11-L02",
+          "local_id": "L02",
+          "title": "Докинг как проверяемый расчёт",
+          "hours": 5,
+          "guided_question": "Как выбрать экспериментальную структуру A2A, подготовить протокол и проверить redocking?",
+          "independent_question": "Разобрать комплекс B/HMGCR, выполнить доступный проверяемый расчёт и оценить пределы score",
+          "dossier_result": "Протокол, позы, геометрические проверки, ограничения",
+          "profile": "chem",
+          "theory": "theory/modules/M11/lessons/L02",
+          "practice": "practicuum/modules/M11/lessons/L02",
+          "case_notebook": "practicuum/modules/M11/lessons/L02/Notebooks_cases/01_case.ipynb",
+          "lab_notebook": "practicuum/modules/M11/lessons/L02/Notebooks_labs/02_lab.ipynb",
+          "status": "PLANNED",
+          "execution_status": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "dossier_sections": [
+            "07_targets_and_exposure",
+            "09_laboratory_verification"
+          ],
+          "learner_solution": "NOT_RUN",
+          "student_pilot": "NOT_RUN"
+        }
+      ]
+    },
+    {
+      "id": "M12",
+      "position": 12,
+      "title": "QSAR/QSPR и область применимости",
+      "lessons": [
+        {
+          "id": "M12-L01",
+          "local_id": "L01",
+          "title": "Модель «структура — свойство»",
+          "hours": 5,
+          "guided_question": "Как выбрать endpoint, baseline и разделение без утечки; зачем отдельный контрольный набор ESOL?",
+          "independent_question": "Проверить перенос модели на B и явно установить пределы такого прогноза",
+          "dossier_result": "`model_card.md`, split, прогнозы и метрики",
+          "profile": "chem",
+          "theory": "theory/modules/M12/lessons/L01",
+          "practice": "practicuum/modules/M12/lessons/L01",
+          "case_notebook": "practicuum/modules/M12/lessons/L01/Notebooks_cases/01_case.ipynb",
+          "lab_notebook": "practicuum/modules/M12/lessons/L01/Notebooks_labs/02_lab.ipynb",
+          "status": "PLANNED",
+          "execution_status": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "dossier_sections": [
+            "07_targets_and_exposure",
+            "09_laboratory_verification"
+          ],
+          "learner_solution": "NOT_RUN",
+          "student_pilot": "NOT_RUN"
+        },
+        {
+          "id": "M12-L02",
+          "local_id": "L02",
+          "title": "Область применимости",
+          "hours": 5,
+          "guided_question": "Как отличить интерполяцию, близость по структуре, неопределённость и независимую проверку?",
+          "independent_question": "Отказаться от неподдержанного вывода, выбрать недостающее измерение B",
+          "dossier_result": "`applicability_report.md`, план проверки",
+          "profile": "chem",
+          "theory": "theory/modules/M12/lessons/L02",
+          "practice": "practicuum/modules/M12/lessons/L02",
+          "case_notebook": "practicuum/modules/M12/lessons/L02/Notebooks_cases/01_case.ipynb",
+          "lab_notebook": "practicuum/modules/M12/lessons/L02/Notebooks_labs/02_lab.ipynb",
+          "status": "PLANNED",
+          "execution_status": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "dossier_sections": [
+            "07_targets_and_exposure",
+            "09_laboratory_verification"
+          ],
+          "learner_solution": "NOT_RUN",
+          "student_pilot": "NOT_RUN"
+        }
+      ]
+    },
+    {
+      "id": "M13",
+      "position": 13,
+      "title": "Ретросинтез и технологическая оценка",
+      "lessons": [
+        {
+          "id": "M13-L01",
+          "local_id": "L01",
+          "title": "Опубликованный маршрут",
+          "hours": 4,
+          "guided_question": "Как читать путь получения ксантинового соединения, промежуточный продукт и ограничения стадии?",
+          "independent_question": "Сравнить литературные маршруты B с сохранением стереохимии и стадий очистки",
+          "dossier_result": "`route_graph.json`, источники стадий",
+          "profile": "chem",
+          "theory": "theory/modules/M13/lessons/L01",
+          "practice": "practicuum/modules/M13/lessons/L01",
+          "case_notebook": "practicuum/modules/M13/lessons/L01/Notebooks_cases/01_case.ipynb",
+          "lab_notebook": "practicuum/modules/M13/lessons/L01/Notebooks_labs/02_lab.ipynb",
+          "status": "PLANNED",
+          "execution_status": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "dossier_sections": [
+            "08_retrosynthesis_and_process",
+            "09_laboratory_verification"
+          ],
+          "learner_solution": "NOT_RUN",
+          "student_pilot": "NOT_RUN"
+        },
+        {
+          "id": "M13-L02",
+          "local_id": "L02",
+          "title": "Технологическое решение",
+          "hours": 4,
+          "guided_question": "Как выходы, масштаб, качество, безопасность и неопределённость затрат меняют выбор маршрута?",
+          "independent_question": "Обосновать предпочтительный маршрут B и следующий технологический эксперимент",
+          "dossier_result": "`route_comparison.md`, сценарии и `risk_log.md`",
+          "profile": "chem",
+          "theory": "theory/modules/M13/lessons/L02",
+          "practice": "practicuum/modules/M13/lessons/L02",
+          "case_notebook": "practicuum/modules/M13/lessons/L02/Notebooks_cases/01_case.ipynb",
+          "lab_notebook": "practicuum/modules/M13/lessons/L02/Notebooks_labs/02_lab.ipynb",
+          "status": "PLANNED",
+          "execution_status": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "dossier_sections": [
+            "08_retrosynthesis_and_process",
+            "09_laboratory_verification"
+          ],
+          "learner_solution": "NOT_RUN",
+          "student_pilot": "NOT_RUN"
+        }
+      ]
+    },
+    {
+      "id": "M14",
+      "position": 14,
+      "title": "Исследовательское досье и лабораторная проверка",
+      "lessons": [
+        {
+          "id": "M14-L01",
+          "local_id": "L01",
+          "title": "Сборка исследовательского досье",
+          "hours": 5,
+          "guided_question": "Как проверить связность источников, моделей, расчётов, аналитики и решений A?",
+          "independent_question": "Собрать непрерывное досье B и объяснённую междисциплинарную карту",
+          "dossier_result": "Проверяемое досье, карта, список пробелов",
+          "profile": "chem",
+          "theory": "theory/modules/M14/lessons/L01",
+          "practice": "practicuum/modules/M14/lessons/L01",
+          "case_notebook": "practicuum/modules/M14/lessons/L01/Notebooks_cases/01_case.ipynb",
+          "lab_notebook": "practicuum/modules/M14/lessons/L01/Notebooks_labs/02_lab.ipynb",
+          "status": "PLANNED",
+          "execution_status": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "dossier_sections": [
+            "09_laboratory_verification"
+          ],
+          "learner_solution": "NOT_RUN",
+          "student_pilot": "NOT_RUN"
+        },
+        {
+          "id": "M14-L02",
+          "local_id": "L02",
+          "title": "Защита и лабораторная проверка",
+          "hours": 5,
+          "guided_question": "Как передать воспроизводимое решение и отличить поддержанную гипотезу от предлагаемого опыта?",
+          "independent_question": "Защитить научную программу B: что поддержано, отвергнуто и требует лаборатории; программный инструмент разрабатывать в IDE",
+          "dossier_result": "`laboratory_verification_plan.md`, защита, передаваемый проект",
+          "profile": "chem",
+          "theory": "theory/modules/M14/lessons/L02",
+          "practice": "practicuum/modules/M14/lessons/L02",
+          "case_notebook": "practicuum/modules/M14/lessons/L02/Notebooks_cases/01_case.ipynb",
+          "lab_notebook": "practicuum/modules/M14/lessons/L02/Notebooks_labs/02_lab.ipynb",
+          "status": "PLANNED",
+          "execution_status": "NOT_RUN",
+          "scientific_review": "NOT_RUN",
+          "dossier_sections": [
+            "09_laboratory_verification"
+          ],
+          "learner_solution": "NOT_RUN",
+          "student_pilot": "NOT_RUN"
+        }
+      ]
+    }
+  ],
+  "release_status": "DEVELOPMENT",
+  "live_stepik_validation": "NOT_RUN",
+  "lesson_contract": "programm/LESSON_CONTRACT.md",
+  "brief_traceability": "programm/BRIEF_TRACEABILITY.md",
+  "dossier_sections": [
+    {
+      "id": "01_question_and_sources",
+      "title": "Гипотеза и источники",
+      "modules": [
+        "M01",
+        "M02"
+      ]
+    },
+    {
+      "id": "02_forms_and_descriptors",
+      "title": "Формы и дескрипторы",
+      "modules": [
+        "M03",
+        "M04",
+        "M05"
+      ]
+    },
+    {
+      "id": "03_solvent",
+      "title": "Растворитель",
+      "modules": [
+        "M04",
+        "M06",
+        "M07"
+      ]
+    },
+    {
+      "id": "04_reactions_and_kinetics",
+      "title": "Реакции и кинетика",
+      "modules": [
+        "M07",
+        "M09"
+      ]
+    },
+    {
+      "id": "05_spectroscopy_and_instrument",
+      "title": "Спектроскопия и прибор",
+      "modules": [
+        "M07",
+        "M08"
+      ]
+    },
+    {
+      "id": "06_chromatography",
+      "title": "Хроматография",
+      "modules": [
+        "M09",
+        "M10"
+      ]
+    },
+    {
+      "id": "07_targets_and_exposure",
+      "title": "Мишень, транспорт и действие",
+      "modules": [
+        "M05",
+        "M11",
+        "M12"
+      ]
+    },
+    {
+      "id": "08_retrosynthesis_and_process",
+      "title": "Ретросинтез и технология",
+      "modules": [
+        "M09",
+        "M13"
+      ]
+    },
+    {
+      "id": "09_laboratory_verification",
+      "title": "Лабораторная верификация",
+      "modules": [
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "M05",
+        "M06",
+        "M07",
+        "M08",
+        "M09",
+        "M10",
+        "M11",
+        "M12",
+        "M13",
+        "M14"
+      ]
+    }
+  ]
+}

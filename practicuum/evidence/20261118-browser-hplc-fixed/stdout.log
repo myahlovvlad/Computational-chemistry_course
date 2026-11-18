@@ -1,0 +1,58 @@
+### Result
+{"status":"PASS","scope":"UI smoke and numeric parity; not scientific validation or student pilot","browser":"157.0.8103.79","start":{"conditions":{"acn_percent":65,"temperature_C":35,"flow_mL_min":1,"pH":4.6,"elution":"isocratic","column":"source"},"domain_status":"WITHIN_FACTOR_BOX","source_doi":"10.3390/molecules18032469","input_sha256":"48f2e1cde1995d8419cb27c67484e16fd8c3c767675dcf142b0ae4994adfbb4c","kind":"teaching model","learner_review":"NOT_RUN","real_experiment":"NOT_RUN","predicted_first_last_Rt_min":[2.8410545454545453,7.268463636363636],"conditional_peak_times_min":[2.8410545454545453,4.747974512825161,5.4818297086014685,7.268463636363636],"assumed_equal_baseline_width_min":0.6,"conditional_Rs":[3.1781999456176933,1.2230919929605122,2.9777232129369464],"limitations":["no numeric raw chromatograms","no baseline peak widths","middle-peak positions outside the single figure condition are assumptions","all Gaussian profiles and widths in the trainer are explicit teaching simulations","no pH/gradient/column response calibration","Rs alone does not establish method validation"],"method_validated":false},"optimum":[2.792990667999998,7.184782541],"wider":{"conditions":{"acn_percent":65,"temperature_C":35,"flow_mL_min":1,"pH":4.6,"elution":"isocratic","column":"source"},"domain_status":"WITHIN_FACTOR_BOX","source_doi":"10.3390/molecules18032469","input_sha256":"48f2e1cde1995d8419cb27c67484e16fd8c3c767675dcf142b0ae4994adfbb4c","kind":"teaching model","learner_review":"NOT_RUN","real_experiment":"NOT_RUN","predicted_first_last_Rt_min":[2.8410545454545453,7.268463636363636],"conditional_peak_times_min":[2.8410545454545453,4.747974512825161,5.4818297086014685,7.268463636363636],"assumed_equal_baseline_width_min":2.5,"conditional_Rs":[0.7627679869482463,0.2935420783105229,0.714653571104867],"limitations":["no numeric raw chromatograms","no baseline peak widths","middle-peak positions outside the single figure condition are assumptions","all Gaussian profiles and widths in the trainer are explicit teaching simulations","no pH/gradient/column response calibration","Rs alone does not establish method validation"],"method_validated":false},"blocked":[{"conditions":{"acn_percent":65,"temperature_C":35,"flow_mL_min":1,"pH":3,"elution":"isocratic","column":"source"},"domain_status":"OUT_OF_DOMAIN","source_doi":"10.3390/molecules18032469","input_sha256":"48f2e1cde1995d8419cb27c67484e16fd8c3c767675dcf142b0ae4994adfbb4c","kind":"teaching model","learner_review":"NOT_RUN","real_experiment":"NOT_RUN"},{"conditions":{"acn_percent":65,"temperature_C":35,"flow_mL_min":1,"pH":6,"elution":"isocratic","column":"source"},"domain_status":"OUT_OF_DOMAIN","source_doi":"10.3390/molecules18032469","input_sha256":"48f2e1cde1995d8419cb27c67484e16fd8c3c767675dcf142b0ae4994adfbb4c","kind":"teaching model","learner_review":"NOT_RUN","real_experiment":"NOT_RUN"}],"export_filename":"chromatography_decision.json","student_work":"NOT_RUN","method_validation":"NOT_RUN"}
+### Ran Playwright code
+```js
+await (async (page) => {
+  // Проверка интерфейса: это не исследование студента и не валидация аналитического метода.
+  const failures=[];
+  const ensure=(condition,message)=>{if(!condition)failures.push(message);};
+  await page.goto('http://127.0.0.1:8875/');
+  const start=await page.evaluate(()=>window.courseHplc.getResult());
+  ensure(start.domain_status==='WITHIN_FACTOR_BOX','Начальное условие должно входить в диапазон');
+  ensure(Math.abs(start.predicted_first_last_Rt_min[0]-2.8410545454545453)<1e-10,'Первый отклик при центре');
+  ensure(Math.abs(start.predicted_first_last_Rt_min[1]-7.268463636363636)<1e-10,'Последний отклик при центре');
+  const optimum=await page.evaluate(()=>window.courseHplc.predict(61.93,31.44,1.03));
+  ensure(Math.abs(optimum[0]-2.7929906681818175)<1e-8,'JS/NumPy: первый отклик');
+  ensure(Math.abs(optimum[1]-7.184782540606061)<1e-8,'JS/NumPy: последний отклик');
+  await page.getByRole('slider',{name:'Условная ширина у основания, мин:'}).press('End');
+  const wider=await page.evaluate(()=>window.courseHplc.getResult());
+  ensure(wider.conditional_Rs[1]<start.conditional_Rs[1],'Уширение должно уменьшать условный Rs');
+  const blocked=[];
+  for(const value of ['3','6']){
+    await page.getByLabel('pH',{exact:true}).selectOption(value);
+    const result=await page.evaluate(()=>window.courseHplc.getResult());
+    ensure(result.domain_status==='OUT_OF_DOMAIN','Нет калибровки для pH '+value);
+    ensure(!('predicted_first_last_Rt_min' in result),'Не должно оставаться старого прогноза');
+    ensure(await page.locator('#plot').isHidden(),'График должен скрываться вне области');
+    blocked.push(result);
+  }
+  await page.getByLabel('pH',{exact:true}).selectOption('4.6');
+  await page.getByLabel('Элюирование',{exact:true}).selectOption('gradient');
+  ensure((await page.evaluate(()=>window.courseHplc.getResult())).domain_status==='OUT_OF_DOMAIN','Нет калибровки градиента');
+  await page.getByLabel('Элюирование',{exact:true}).selectOption('isocratic');
+  await page.getByLabel('Колонка',{exact:true}).selectOption('other');
+  ensure((await page.evaluate(()=>window.courseHplc.getResult())).domain_status==='OUT_OF_DOMAIN','Нет калибровки другой колонки');
+  await page.reload();
+  await page.getByLabel('Какое изменение должно улучшить разделение и почему?').fill('UI SMOKE TEST: not learner research');
+  await page.getByLabel('Что поддерживает модель, что неизвестно, какие контроль и критерий вы выберете?').fill('UI SMOKE TEST: interpretation is not scientifically assessed');
+  const downloadPromise=page.waitForEvent('download');
+  await page.getByRole('button',{name:'Сохранить решение в досье JSON'}).click();
+  const download=await downloadPromise;
+  await download.saveAs('output/playwright/chromatography_decision-ui-smoke.json');
+  await page.screenshot({path:'output/playwright/hplc-desktop.png',fullPage:true});
+  await page.setViewportSize({width:390,height:844});
+  ensure(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),'Страница не должна прокручиваться по горизонтали на телефоне');
+  await page.screenshot({path:'output/playwright/hplc-mobile.png',fullPage:true});
+  await page.setViewportSize({width:1280,height:900});
+  if(failures.length)throw new Error(JSON.stringify(failures));
+  return {status:'PASS',scope:'UI smoke and numeric parity; not scientific validation or student pilot',
+      browser:await page.context().browser().version(),start,optimum,wider,blocked,
+      export_filename:download.suggestedFilename(),student_work:'NOT_RUN',method_validation:'NOT_RUN'};
+}
+)(page);
+```
+### Events
+- Downloading file chromatography_decision.json ...
+- Downloaded file chromatography_decision.json to ".playwright-cli\chromatography-decision.json"
+- Downloading file chromatography_decision.json ...
+- Downloaded file chromatography_decision.json to ".playwright-cli\chromatography-decision-1.json"

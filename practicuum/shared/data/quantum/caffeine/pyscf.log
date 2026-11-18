@@ -1,0 +1,207 @@
+#INFO: **** input file is /mnt/c/Users/Miakhlov/Documents/GitHub/Computational chemistry_course/tmp/course-restructure-20261118/scripts/calculate_quantum_reference.py ****
+"""Воспроизводимый учебный расчёт вертикальных переходов: не экспериментальный UV-спектр."""
+import argparse
+from datetime import datetime,timezone
+import hashlib
+import json
+from pathlib import Path
+import sys
+
+def calculate(record,out):
+    import numpy as np
+    from rdkit import Chem,rdBase
+    from rdkit.Chem import AllChem
+    import pyscf
+    from pyscf import dft,gto,lib
+    from scipy.constants import physical_constants
+
+    out.mkdir(parents=True,exist_ok=False)
+    mol=Chem.AddHs(Chem.MolFromSmiles(record['smiles']))
+    params=AllChem.ETKDGv3();params.randomSeed=20261118
+    if AllChem.EmbedMolecule(mol,params)!=0:raise RuntimeError('Не получена исходная геометрия')
+    if not AllChem.MMFFHasAllMoleculeParams(mol):raise RuntimeError('Нет параметров MMFF для заданной формы')
+    geometry_status=AllChem.MMFFOptimizeMolecule(mol,maxIters=1000)
+    if geometry_status!=0:raise RuntimeError('Исходная MMFF-геометрия не сошлась')
+    # Геометрия MMFF не объявляется стационарной точкой поверхности DFT.
+    atoms=[]
+    for atom in mol.GetAtoms():
+        p=mol.GetConformer().GetAtomPosition(atom.GetIdx())
+        atoms.append((atom.GetSymbol(),(float(p.x),float(p.y),float(p.z))))
+    geometry=json.dumps(atoms)
+    (out/'geometry.json').write_text(geometry,encoding='utf-8')
+    lib.num_threads(2)
+    system=gto.M(atom=atoms,basis='sto-3g',unit='Angstrom',charge=Chem.GetFormalCharge(mol),spin=0,
+                 max_memory=3000,verbose=4,output=str(out/'pyscf.log'))
+    meanfield=dft.RKS(system).density_fit()
+    meanfield.xc='b3lyp';meanfield.grids.level=1;meanfield.conv_tol=1e-8;meanfield.max_cycle=100
+    energy=meanfield.kernel()
+    if not meanfield.converged:raise RuntimeError('SCF не сошёлся; результат не принимается')
+    excited=meanfield.TDDFT();excited.nstates=6;excited.conv_tol=1e-6;excited.max_cycle=100
+    transition_hartree,_=excited.kernel()
+    if not all(excited.converged):raise RuntimeError('Не все состояния TDDFT сошлись')
+    strength=excited.oscillator_strength(gauge='length')
+    hartree_eV=physical_constants['Hartree energy in eV'][0]
+    rows=[]
+    for index,(transition,f) in enumerate(zip(transition_hartree,strength),1):
+        eV=float(transition*hartree_eV)
+        if not np.isfinite(eV) or eV<=0 or not np.isfinite(f):raise RuntimeError('Некорректный переход')
+        rows.append({'state':index,'energy_eV':eV,'wavelength_nm':1239.8419843320026/eV,'oscillator_strength':float(f)})
+    result={'status':'PASS','scope':'computed gas-phase vertical transitions; not measured absorbance',
+     'compound':record['name'],'cid':record['cid'],'smiles':record['smiles'],'source_url':record['source_url'],
+     'method':'B3LYP/STO-3G, density fitting, grids level 1, gas phase; TDDFT singlets, length gauge',
+     'geometry_method':'ETKDGv3 seed 20261118 + MMFF; not DFT optimized',
+     'geometry_sha256':hashlib.sha256(geometry.encode()).hexdigest(),'charge':system.charge,'spin':system.spin,
+     'scf_converged':bool(meanfield.converged),'energy_hartree':float(energy),'transitions':rows,
+     'limitations':['minimal basis and coarse grid','no solvent','no vibrational/thermal broadening',
+       'MMFF geometry, not DFT stationary point','no absolute measured extinction coefficient',
+       'not a reproduction of the literature aqueous-xanthine protocol'],
+     'versions':{'python':sys.version,'pyscf':pyscf.__version__,'rdkit':rdBase.rdkitVersion,'numpy':np.__version__},
+     'utc':datetime.now(timezone.utc).isoformat()}
+    (out/'result.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
+    return result
+
+def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--compounds',type=Path,required=True);parser.add_argument('--out',type=Path,required=True)
+    parser.add_argument('--names',nargs='+',default=['caffeine','istradefylline','atorvastatin'])
+    args=parser.parse_args();records=json.loads(args.compounds.read_text(encoding='utf-8'));summary=[]
+    args.out.mkdir(parents=True,exist_ok=True)
+    for name in args.names:
+        record=next(r for r in records if r['name']==name)
+        print(name,'START',flush=True)
+        result=calculate(record,args.out/name);summary.append({'name':name,'status':result['status']})
+        print(name,'PASS',result['energy_hartree'],flush=True)
+        (args.out/'summary.json').write_text(json.dumps(summary,indent=2),encoding='utf-8')
+
+if __name__=='__main__':main()
+#INFO: ******************** input file end ********************
+
+
+System: uname_result(system='Linux', node='miakhlov', release='6.18.58.1-microsoft-standard-WSL2', version='#1 SMP PREEMPT_DYNAMIC Tue Oct 27 00:24:11 UTC 2026', machine='x86_64')  Threads 2
+Python 3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]
+numpy 2.5.4  scipy 1.18.1  h5py 3.16.0
+Date: Wed Nov 18 14:48:51 2026
+PySCF version 2.15.1
+PySCF path  /home/miakhlov/course-notebooks/.venv/lib/python3.12/site-packages/pyscf
+
+[CONFIG] conf_file None
+[INPUT] verbose = 4
+[INPUT] num. atoms = 24
+[INPUT] num. electrons = 102
+[INPUT] charge = 0
+[INPUT] spin (= nelec alpha-beta = 2S) = 0
+[INPUT] symmetry False subgroup None
+[INPUT] Mole.unit = Angstrom
+[INPUT] Symbol           X                Y                Z      unit          X                Y                Z       unit  Magmom
+[INPUT]  1 C      3.212853419610   0.471186438758  -0.750046535653 AA    6.071413041435   0.890413322861  -1.417382533064 Bohr   0.0
+[INPUT]  2 N      2.075923513048  -0.367946904454  -0.468497317847 AA    3.922926895206  -0.695318877799  -0.885331620825 Bohr   0.0
+[INPUT]  3 C      2.069818258994  -1.737423027126  -0.434138768215 AA    3.911389637122  -3.283253683781  -0.820403371982 Bohr   0.0
+[INPUT]  4 N      0.873328664992  -2.211236333206  -0.147611090566 AA    1.650351993568  -4.178631066447  -0.278944534118 Bohr   0.0
+[INPUT]  5 C      0.097105669888  -1.102198271443   0.004185182096 AA    0.183503121230  -2.082852867996   0.007908847944 Bohr   0.0
+[INPUT]  6 C      0.805523362161   0.045115040479  -0.186336865503 AA    1.522218541422   0.085255070605  -0.352125642711 Bohr   0.0
+[INPUT]  7 C      0.231160620944   1.341076955909  -0.085473901833 AA    0.436830264368   2.534268158634  -0.161522265262 Bohr   0.0
+[INPUT]  8 O      0.878700235909   2.369202940996  -0.259155366157 AA    1.660502791459   4.477144691997  -0.489732665747 Bohr   0.0
+[INPUT]  9 N     -1.130658562145   1.306357514162   0.228517693079 AA   -2.136635022849   2.468657922534   0.431835854538 Bohr   0.0
+[INPUT] 10 C     -1.898315115855   0.140429529305   0.433145723053 AA   -3.587295667088   0.265373350188   0.818526788597 Bohr   0.0
+[INPUT] 11 O     -3.099968680431   0.212525572793   0.707770042479 AA   -5.858091800744   0.401615127044   1.337491539457 Bohr   0.0
+[INPUT] 12 N     -1.241716664022  -1.084686865693   0.311640344679 AA   -2.346504419311  -2.049761107072   0.588914900809 Bohr   0.0
+[INPUT] 13 C     -1.959390108490  -2.331116645306   0.506701697633 AA   -3.702710676228  -4.405172024043   0.957527435379 Bohr   0.0
+[INPUT] 14 C     -1.833994467778   2.567282185029   0.359842126889 AA   -3.465747258068   4.851460214179   0.680003067902 Bohr   0.0
+[INPUT] 15 H      3.395299512571   1.112280395581   0.115960707555 AA    6.416186189628   2.101905321371   0.219133978489 Bohr   0.0
+[INPUT] 16 H      4.089924341993  -0.153816327586  -0.936790095860 AA    7.728836876559  -0.290670732624  -1.770276717381 Bohr   0.0
+[INPUT] 17 H      2.992190628905   1.070332593693  -1.636943446991 AA    5.654420801121   2.022635464275  -3.093374796215 Bohr   0.0
+[INPUT] 18 H      2.953091051381  -2.334814547466  -0.622855990703 AA    5.580533308015  -4.412160046361  -1.177027237472 Bohr   0.0
+[INPUT] 19 H     -1.899602076026  -2.925238273540  -0.410718442072 AA   -3.589727669343  -5.527899186086  -0.776145369824 Bohr   0.0
+[INPUT] 20 H     -1.498868850198  -2.883224564838   1.332118480742 AA   -2.832451623515  -5.448504783162   2.517339094075 Bohr   0.0
+[INPUT] 21 H     -3.012814657571  -2.162376356684   0.744846987351 AA   -5.693394566884  -4.086299092368   1.407556810800 Bohr   0.0
+[INPUT] 22 H     -2.257825767726   2.634864322108   1.367210658658 AA   -4.266672337987   4.979171944172   2.583653699450 Bohr   0.0
+[INPUT] 23 H     -2.655964407887   2.592997082334  -0.363146792231 AA   -5.019045327499   4.900054327407  -0.686247980330 Bohr   0.0
+[INPUT] 24 H     -1.185799922267   3.430427546195   0.189774969415 AA   -2.240837091615   6.482568552472   0.358622717493 Bohr   0.0
+
+nuclear repulsion = 931.291282070566
+number of shells = 52
+number of NR pGTOs = 240
+number of NR cGTOs = 80
+basis = sto-3g
+ecp = {}
+CPU time:         3.55
+
+
+******** <class 'pyscf.df.df_jk.DFRKS'> ********
+method = DFRKS
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+diis_damp = 0
+SCF conv_tol = 1e-08
+SCF conv_tol_grad = None
+SCF max_cycles = 100
+direct_scf = False
+chkfile to save SCF result = /tmp/tmps3m_05q4
+max_memory 3000 MB (current use 156 MB)
+XC library pyscf.dft.libxc version 7.1.2
+    S. Lehtola, C. Steigemann, M. J. T. Oliveira, and M. A. L. Marques,  SoftwareX 7, 1–5 (2018)
+XC functionals = b3lyp
+    P. J. Stephens, F. J. Devlin, C. F. Chabalowski, and M. J. Frisch,  J. Phys. Chem. 98, 11623 (1994)
+radial grids: 
+    Treutler-Ahlrichs [JCP 102, 346 (1995); DOI:10.1063/1.469408] (M4) radial grids
+    
+becke partition: Becke, JCP 88, 2547 (1988); DOI:10.1063/1.454033
+pruning grids: <function nwchem_prune at 0x743924d023e0>
+grids dens level: 1
+symmetrized grids: False
+atomic radii adjust function: <function treutler_atomic_radii_adjust at 0x743924d02340>
+small_rho_cutoff = 0
+Set gradient conv threshold to 0.0001
+Initial guess from minao.
+tot grids = 97000
+******** <class 'pyscf.df.df.DF'> ********
+auxbasis = None
+max_memory = 3000
+init E= -674.860169399826
+  HOMO = -0.234684992188418  LUMO = -0.0608803587451363  gap/eV = 4.72946
+cycle= 1 E= -671.129421308434  delta_E= 3.73  |g|= 1.09  |ddm|= 7.18
+  HOMO = 0.0436418104891089  LUMO = 0.0635357229208109  gap/eV = 0.54134
+cycle= 2 E= -666.816176292732  delta_E= 4.31  |g|= 3.67  |ddm|=  5.9
+  HOMO = -0.0898534517190449  LUMO = 0.0639120764738513  gap/eV = 4.18417
+cycle= 3 E= -671.481789380139  delta_E= -4.67  |g|= 0.422  |ddm|=  5.1
+  HOMO = -0.0995790939770328  LUMO = 0.0714324927909655  gap/eV = 4.65346
+cycle= 4 E= -671.540639146834  delta_E= -0.0588  |g|= 0.166  |ddm|= 0.855
+  HOMO = -0.123448469150998  LUMO = 0.063534674653784  gap/eV = 5.08807
+cycle= 5 E= -671.545101041414  delta_E= -0.00446  |g|= 0.112  |ddm|= 0.341
+  HOMO = -0.127672692925564  LUMO = 0.070775048038267  gap/eV = 5.40004
+cycle= 6 E= -671.548944146919  delta_E= -0.00384  |g|= 0.0212  |ddm|= 0.168
+  HOMO = -0.127997300203625  LUMO = 0.0708065744076514  gap/eV = 5.40973
+cycle= 7 E= -671.549066461988  delta_E= -0.000122  |g|= 0.0099  |ddm|= 0.0311
+  HOMO = -0.128069200115911  LUMO = 0.0708274353822665  gap/eV = 5.41225
+cycle= 8 E= -671.549091749341  delta_E= -2.53e-05  |g|= 0.00266  |ddm|= 0.0126
+  HOMO = -0.128069793563699  LUMO = 0.0707703898450662  gap/eV = 5.41072
+cycle= 9 E= -671.549093948258  delta_E= -2.2e-06  |g|= 0.000753  |ddm|= 0.00433
+  HOMO = -0.128077848182014  LUMO = 0.0707701527953044  gap/eV = 5.41093
+cycle= 10 E= -671.549094070779  delta_E= -1.23e-07  |g|= 0.000394  |ddm|= 0.00137
+  HOMO = -0.128077315703101  LUMO = 0.0707733971461377  gap/eV = 5.41100
+cycle= 11 E= -671.549094118161  delta_E= -4.74e-08  |g|= 6.29e-05  |ddm|= 0.000595
+  HOMO = -0.128076751400578  LUMO = 0.0707718765858349  gap/eV = 5.41095
+cycle= 12 E= -671.549094119256  delta_E= -1.09e-09  |g|= 1.51e-05  |ddm|= 9.32e-05
+  HOMO = -0.128078795644708  LUMO = 0.0707720007926557  gap/eV = 5.41101
+Extra cycle  E= -671.549094119159  delta_E= 9.73e-11  |g|= 2.34e-05  |ddm|= 5.29e-05
+converged SCF energy = -671.549094119159
+
+
+******** <class 'pyscf.tdscf.rks.TDDFT'> for <class 'pyscf.df.df_jk.DFRKS'> ********
+nstates = 6 singlet
+deg_eia_thresh = 1.000e-03
+wfnsym = None
+conv_tol = 1e-06
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_cycle = 100
+chkfile = /tmp/tmps3m_05q4
+max_memory 3000 MB (current use 295 MB)
+
+
+Excitation energies (eV)
+[4.18187702 5.01260328 5.32053167 5.49369411 5.88554042 6.06628849]

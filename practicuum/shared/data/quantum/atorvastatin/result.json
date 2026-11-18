@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "scope": "computed gas-phase vertical transitions; not measured absorbance",
+  "compound": "atorvastatin",
+  "cid": 60823,
+  "smiles": "CC(C)C1=C(C(=C(N1CC[C@H](C[C@H](CC(=O)O)O)O)C2=CC=C(C=C2)F)C3=CC=CC=C3)C(=O)NC4=CC=CC=C4",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/atorvastatin/property/MolecularFormula,MolecularWeight,CanonicalSMILES,IsomericSMILES,XLogP,TPSA/JSON",
+  "method": "B3LYP/STO-3G, density fitting, grids level 1, gas phase; TDDFT singlets, length gauge",
+  "geometry_method": "ETKDGv3 seed 20261118 + MMFF; not DFT optimized",
+  "geometry_sha256": "d0d2d8afc508fd0fa5bab87fcb26256f62f6f13b3743781bb9244abc878f6ee5",
+  "charge": 0,
+  "spin": 0,
+  "scf_converged": true,
+  "energy_hartree": -1840.3155272779868,
+  "transitions": [
+    {
+      "state": 1,
+      "energy_eV": 4.279481273690909,
+      "wavelength_nm": 289.717819763394,
+      "oscillator_strength": 0.005090912326551105
+    },
+    {
+      "state": 2,
+      "energy_eV": 4.803954350377609,
+      "wavelength_nm": 258.08779474237645,
+      "oscillator_strength": 0.016539764162952324
+    },
+    {
+      "state": 3,
+      "energy_eV": 4.846770275567155,
+      "wavelength_nm": 255.80787077574453,
+      "oscillator_strength": 0.08601719452026914
+    },
+    {
+      "state": 4,
+      "energy_eV": 5.020660160107956,
+      "wavelength_nm": 246.94799982346208,
+      "oscillator_strength": 0.000897628524210144
+    },
+    {
+      "state": 5,
+      "energy_eV": 5.069042438927817,
+      "wavelength_nm": 244.5909655067415,
+      "oscillator_strength": 0.0014988362493077003
+    },
+    {
+      "state": 6,
+      "energy_eV": 5.135885674674124,
+      "wavelength_nm": 241.4076291545706,
+      "oscillator_strength": 0.009136839704260664
+    }
+  ],
+  "limitations": [
+    "minimal basis and coarse grid",
+    "no solvent",
+    "no vibrational/thermal broadening",
+    "MMFF geometry, not DFT stationary point",
+    "no absolute measured extinction coefficient",
+    "not a reproduction of the literature aqueous-xanthine protocol"
+  ],
+  "versions": {
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "pyscf": "2.15.1",
+    "rdkit": "2026.09.1",
+    "numpy": "2.5.4"
+  },
+  "utc": "2026-11-18T13:00:13.191215+00:00"
+}

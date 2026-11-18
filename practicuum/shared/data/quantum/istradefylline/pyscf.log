@@ -1,0 +1,235 @@
+#INFO: **** input file is /mnt/c/Users/Miakhlov/Documents/GitHub/Computational chemistry_course/tmp/course-restructure-20261118/scripts/calculate_quantum_reference.py ****
+"""Воспроизводимый учебный расчёт вертикальных переходов: не экспериментальный UV-спектр."""
+import argparse
+from datetime import datetime,timezone
+import hashlib
+import json
+from pathlib import Path
+import sys
+
+def calculate(record,out):
+    import numpy as np
+    from rdkit import Chem,rdBase
+    from rdkit.Chem import AllChem
+    import pyscf
+    from pyscf import dft,gto,lib
+    from scipy.constants import physical_constants
+
+    out.mkdir(parents=True,exist_ok=False)
+    mol=Chem.AddHs(Chem.MolFromSmiles(record['smiles']))
+    params=AllChem.ETKDGv3();params.randomSeed=20261118
+    if AllChem.EmbedMolecule(mol,params)!=0:raise RuntimeError('Не получена исходная геометрия')
+    if not AllChem.MMFFHasAllMoleculeParams(mol):raise RuntimeError('Нет параметров MMFF для заданной формы')
+    geometry_status=AllChem.MMFFOptimizeMolecule(mol,maxIters=1000)
+    if geometry_status!=0:raise RuntimeError('Исходная MMFF-геометрия не сошлась')
+    # Геометрия MMFF не объявляется стационарной точкой поверхности DFT.
+    atoms=[]
+    for atom in mol.GetAtoms():
+        p=mol.GetConformer().GetAtomPosition(atom.GetIdx())
+        atoms.append((atom.GetSymbol(),(float(p.x),float(p.y),float(p.z))))
+    geometry=json.dumps(atoms)
+    (out/'geometry.json').write_text(geometry,encoding='utf-8')
+    lib.num_threads(2)
+    system=gto.M(atom=atoms,basis='sto-3g',unit='Angstrom',charge=Chem.GetFormalCharge(mol),spin=0,
+                 max_memory=3000,verbose=4,output=str(out/'pyscf.log'))
+    meanfield=dft.RKS(system).density_fit()
+    meanfield.xc='b3lyp';meanfield.grids.level=1;meanfield.conv_tol=1e-8;meanfield.max_cycle=100
+    energy=meanfield.kernel()
+    if not meanfield.converged:raise RuntimeError('SCF не сошёлся; результат не принимается')
+    excited=meanfield.TDDFT();excited.nstates=6;excited.conv_tol=1e-6;excited.max_cycle=100
+    transition_hartree,_=excited.kernel()
+    if not all(excited.converged):raise RuntimeError('Не все состояния TDDFT сошлись')
+    strength=excited.oscillator_strength(gauge='length')
+    hartree_eV=physical_constants['Hartree energy in eV'][0]
+    rows=[]
+    for index,(transition,f) in enumerate(zip(transition_hartree,strength),1):
+        eV=float(transition*hartree_eV)
+        if not np.isfinite(eV) or eV<=0 or not np.isfinite(f):raise RuntimeError('Некорректный переход')
+        rows.append({'state':index,'energy_eV':eV,'wavelength_nm':1239.8419843320026/eV,'oscillator_strength':float(f)})
+    result={'status':'PASS','scope':'computed gas-phase vertical transitions; not measured absorbance',
+     'compound':record['name'],'cid':record['cid'],'smiles':record['smiles'],'source_url':record['source_url'],
+     'method':'B3LYP/STO-3G, density fitting, grids level 1, gas phase; TDDFT singlets, length gauge',
+     'geometry_method':'ETKDGv3 seed 20261118 + MMFF; not DFT optimized',
+     'geometry_sha256':hashlib.sha256(geometry.encode()).hexdigest(),'charge':system.charge,'spin':system.spin,
+     'scf_converged':bool(meanfield.converged),'energy_hartree':float(energy),'transitions':rows,
+     'limitations':['minimal basis and coarse grid','no solvent','no vibrational/thermal broadening',
+       'MMFF geometry, not DFT stationary point','no absolute measured extinction coefficient',
+       'not a reproduction of the literature aqueous-xanthine protocol'],
+     'versions':{'python':sys.version,'pyscf':pyscf.__version__,'rdkit':rdBase.rdkitVersion,'numpy':np.__version__},
+     'utc':datetime.now(timezone.utc).isoformat()}
+    (out/'result.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
+    return result
+
+def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--compounds',type=Path,required=True);parser.add_argument('--out',type=Path,required=True)
+    parser.add_argument('--names',nargs='+',default=['caffeine','istradefylline','atorvastatin'])
+    args=parser.parse_args();records=json.loads(args.compounds.read_text(encoding='utf-8'));summary=[]
+    args.out.mkdir(parents=True,exist_ok=True)
+    for name in args.names:
+        record=next(r for r in records if r['name']==name)
+        print(name,'START',flush=True)
+        result=calculate(record,args.out/name);summary.append({'name':name,'status':result['status']})
+        print(name,'PASS',result['energy_hartree'],flush=True)
+        (args.out/'summary.json').write_text(json.dumps(summary,indent=2),encoding='utf-8')
+
+if __name__=='__main__':main()
+#INFO: ******************** input file end ********************
+
+
+System: uname_result(system='Linux', node='miakhlov', release='6.18.58.1-microsoft-standard-WSL2', version='#1 SMP PREEMPT_DYNAMIC Tue Oct 27 00:24:11 UTC 2026', machine='x86_64')  Threads 2
+Python 3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]
+numpy 2.5.4  scipy 1.18.1  h5py 3.16.0
+Date: Wed Nov 18 14:50:34 2026
+PySCF version 2.15.1
+PySCF path  /home/miakhlov/course-notebooks/.venv/lib/python3.12/site-packages/pyscf
+
+[CONFIG] conf_file None
+[INPUT] verbose = 4
+[INPUT] num. atoms = 52
+[INPUT] num. electrons = 204
+[INPUT] charge = 0
+[INPUT] spin (= nelec alpha-beta = 2S) = 0
+[INPUT] symmetry False subgroup None
+[INPUT] Mole.unit = Angstrom
+[INPUT] Symbol           X                Y                Z      unit          X                Y                Z       unit  Magmom
+[INPUT]  1 C     -3.295832045371  -2.731732711971  -1.656221700404 AA   -6.228219918317  -5.162226671140  -3.129805415325 Bohr   0.0
+[INPUT]  2 C     -3.300174416804  -2.683665266081  -0.135876150647 AA   -6.236425811056  -5.071392362900  -0.256768711584 Bohr   0.0
+[INPUT]  3 N     -3.540159426956  -1.335134415509   0.365377387581 AA   -6.689931754243  -2.523038384793   0.690463194638 Bohr   0.0
+[INPUT]  4 C     -2.498159297292  -0.460819041372   0.563089696606 AA   -4.720836887417  -0.870821781178   1.064085310151 Bohr   0.0
+[INPUT]  5 C     -2.695941950143   0.818531677644   0.978515740408 AA   -5.094591933497   1.546800695028   1.849126757946 Bohr   0.0
+[INPUT]  6 C     -3.991096827640   1.356426241360   1.222219823656 AA   -7.542079940859   2.563274104344   2.309660730725 Bohr   0.0
+[INPUT]  7 O     -4.182222964435   2.526724553178   1.541209434632 AA   -7.903255994650   4.774817397720   2.912463732050 Bohr   0.0
+[INPUT]  8 N     -5.018364128108   0.422393447041   1.040907445453 AA   -9.483333795466   0.798207931718   1.967029992926 Bohr   0.0
+[INPUT]  9 C     -4.848843635061  -0.894315530141   0.569612060422 AA   -9.162986491105  -1.690011420912   1.076410791447 Bohr   0.0
+[INPUT] 10 O     -5.817817828145  -1.624476211057   0.340434820570 AA  -10.994082337805  -3.069815134768   0.643328574143 Bohr   0.0
+[INPUT] 11 C     -6.384910892154   0.886828004659   1.251030956526 AA  -12.065732915924   1.675862048399   2.364105881186 Bohr   0.0
+[INPUT] 12 C     -6.982920738275   1.476139083046  -0.019056003044 AA  -13.195807744885   2.789498588723  -0.036010626781 Bohr   0.0
+[INPUT] 13 N     -1.439511075068   1.363969440522   1.068841651508 AA   -2.720281685157   2.577528684862   2.019817991877 Bohr   0.0
+[INPUT] 14 C     -0.541262223837   0.395976488488   0.639490899074 AA   -1.022837364624   0.748287115009   1.208462658401 Bohr   0.0
+[INPUT] 15 N     -1.183429607425  -0.728379622519   0.358346354098 AA   -2.236357845734  -1.376438001275   0.677176466981 Bohr   0.0
+[INPUT] 16 C      0.849241970096   0.671211418820   0.536376929002 AA    1.604834736968   1.268405753250   1.013605495349 Bohr   0.0
+[INPUT] 17 C      1.702169176801  -0.313425401708   0.208909727417 AA    3.216633561831  -0.592288169710   0.394782169576 Bohr   0.0
+[INPUT] 18 C      3.148957077600  -0.116962786113   0.052719830902 AA    5.950666454675  -0.221027632519   0.099626041738 Bohr   0.0
+[INPUT] 19 C      3.801659894655  -0.717599217264  -1.032113737039 AA    7.184096019641  -1.356065987832  -1.950412292405 Bohr   0.0
+[INPUT] 20 C      5.184339128290  -0.573632387589  -1.207500944798 AA    9.796981089335  -1.084008108723  -2.281846080821 Bohr   0.0
+[INPUT] 21 C      5.930920915021   0.173802955491  -0.274785251190 AA   11.207816195844   0.328439985518  -0.519268867819 Bohr   0.0
+[INPUT] 22 C      5.280895978836   0.758281004833   0.816296025496 AA    9.979447092316   1.432943424593   1.542575924759 Bohr   0.0
+[INPUT] 23 C      3.900395425963   0.609651334787   0.980355901595 AA    7.370679132576   1.152074054223   1.852604158615 Bohr   0.0
+[INPUT] 24 O      7.278979662225   0.268473999567  -0.516811093074 AA   13.755278027885   0.507342330748  -0.976631424048 Bohr   0.0
+[INPUT] 25 C      8.066302455991   1.000424868343   0.410845104774 AA   15.243102479729   1.890529009372   0.776384727642 Bohr   0.0
+[INPUT] 26 O      5.895519671091  -1.120224672125  -2.248003996701 AA   11.140917540348  -2.116917828297  -4.248111880693 Bohr   0.0
+[INPUT] 27 C      5.180764804158  -1.888703322759  -3.204782353495 AA    9.790226595645  -3.569132010570  -6.056160936944 Bohr   0.0
+[INPUT] 28 C     -1.139338055246   2.699382457228   1.532226073237 AA   -2.153036887709   5.101093549617   2.895487639335 Bohr   0.0
+[INPUT] 29 H     -4.251615668624  -2.387449436537  -2.064567934679 AA   -8.034389200609  -4.511625571302  -3.901467962103 Bohr   0.0
+[INPUT] 30 H     -2.507524053388  -2.093496310144  -2.068586970696 AA   -4.738533711662  -3.956134668959  -3.909062839459 Bohr   0.0
+[INPUT] 31 H     -3.123679366153  -3.755017222169  -2.003583212240 AA   -5.902898502984  -7.095954142925  -3.786223538910 Bohr   0.0
+[INPUT] 32 H     -2.347684189016  -3.054901134309   0.259815285672 AA   -4.436480144211  -5.772926481468   0.490979732895 Bohr   0.0
+[INPUT] 33 H     -4.081433245329  -3.352383153179   0.243497259658 AA   -7.712791029367  -6.335086024115   0.460143132835 Bohr   0.0
+[INPUT] 34 H     -6.397601390707   1.643767051742   2.043558251592 AA  -12.089714482573   3.106269540375   3.861765415104 Bohr   0.0
+[INPUT] 35 H     -7.008639461879   0.054781305710   1.596802595154 AA  -13.244409088770   0.103521664538   3.017519579837 Bohr   0.0
+[INPUT] 36 H     -8.006070046965   1.817336265769   0.165986109946 AA  -15.129279722847   3.434267818543   0.313668288281 Bohr   0.0
+[INPUT] 37 H     -6.396113093602   2.330352844612  -0.372182111321 AA  -12.086902008652   4.403728649919  -0.703322258859 Bohr   0.0
+[INPUT] 38 H     -7.009949898561   0.734876385041  -0.824304665588 AA  -13.246885455203   1.388715103139  -1.557710061163 Bohr   0.0
+[INPUT] 39 H      1.221874373698   1.677713990435   0.689204878056 AA    2.309007924914   3.170419957273   1.302408463241 Bohr   0.0
+[INPUT] 40 H      1.336173035258  -1.320795473108   0.014366749532 AA    2.525001091666  -2.495941710740   0.027149221915 Bohr   0.0
+[INPUT] 41 H      3.206370907438  -1.289262070145  -1.737115030937 AA    6.059162868831  -2.436352215364  -3.282671655337 Bohr   0.0
+[INPUT] 42 H      5.820080050401   1.331720228005   1.562484953965 AA   10.998357318303   2.516586505473   2.952668636747 Bohr   0.0
+[INPUT] 43 H      3.425011306841   1.057149676469   1.849880002487 AA    6.472333343468   1.997723361198   3.495766568011 Bohr   0.0
+[INPUT] 44 H      7.760558042338   2.051230541212   0.446092900285 AA   14.665329273809   3.876263941235   0.842993407652 Bohr   0.0
+[INPUT] 45 H      8.032093503483   0.543777130739   1.405454497210 AA   15.178456928482   1.027589849899   2.655924080265 Bohr   0.0
+[INPUT] 46 H      9.104634744686   0.968553538185   0.066841299947 AA   17.205266131656   1.830300924148   0.126311750709 Bohr   0.0
+[INPUT] 47 H      4.719815047445  -2.767332942955  -2.741692158506 AA    8.919157798273  -5.229501357672  -5.181047297445 Bohr   0.0
+[INPUT] 48 H      4.436368949941  -1.277799490353  -3.725897871434 AA    8.383522302913  -2.414691078876  -7.040926545111 Bohr   0.0
+[INPUT] 49 H      5.897936537953  -2.244996984970  -3.950581839420 AA   11.145484756796  -4.242429452068  -7.465517709183 Bohr   0.0
+[INPUT] 50 H     -1.101471770948   3.361740440907   0.664341332077 AA   -2.081479981032   6.352768735189   1.255423170855 Bohr   0.0
+[INPUT] 51 H     -1.904763761142   3.030870621951   2.235881305526 AA   -3.599481840554   5.727515394477   4.225203314479 Bohr   0.0
+[INPUT] 52 H     -0.184531601943   2.700417808299   2.062649741152 AA   -0.348714188999   5.103050079583   3.897843101681 Bohr   0.0
+
+nuclear repulsion = 2509.50048451452
+number of shells = 108
+number of NR pGTOs = 492
+number of NR cGTOs = 164
+basis = sto-3g
+ecp = {}
+CPU time:       551.17
+
+
+******** <class 'pyscf.df.df_jk.DFRKS'> ********
+method = DFRKS
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+diis_damp = 0
+SCF conv_tol = 1e-08
+SCF conv_tol_grad = None
+SCF max_cycles = 100
+direct_scf = False
+chkfile to save SCF result = /tmp/tmpkj8c12f0
+max_memory 3000 MB (current use 262 MB)
+XC library pyscf.dft.libxc version 7.1.2
+    S. Lehtola, C. Steigemann, M. J. T. Oliveira, and M. A. L. Marques,  SoftwareX 7, 1–5 (2018)
+XC functionals = b3lyp
+    P. J. Stephens, F. J. Devlin, C. F. Chabalowski, and M. J. Frisch,  J. Phys. Chem. 98, 11623 (1994)
+radial grids: 
+    Treutler-Ahlrichs [JCP 102, 346 (1995); DOI:10.1063/1.469408] (M4) radial grids
+    
+becke partition: Becke, JCP 88, 2547 (1988); DOI:10.1063/1.454033
+pruning grids: <function nwchem_prune at 0x743924d023e0>
+grids dens level: 1
+symmetrized grids: False
+atomic radii adjust function: <function treutler_atomic_radii_adjust at 0x743924d02340>
+small_rho_cutoff = 0
+Set gradient conv threshold to 0.0001
+Initial guess from minao.
+tot grids = 204128
+******** <class 'pyscf.df.df.DF'> ********
+auxbasis = None
+max_memory = 3000
+init E= -1285.80927357785
+  HOMO = -0.266090240535098  LUMO = -0.147064967344242  gap/eV = 3.23884
+cycle= 1 E= -1279.43417017498  delta_E= 6.38  |g|= 1.23  |ddm|= 10.2
+  HOMO = 0.0317483716071887  LUMO = 0.0608904162198882  gap/eV = 0.79300
+cycle= 2 E= -1275.21691556088  delta_E= 4.22  |g|= 3.66  |ddm|= 6.06
+  HOMO = -0.0608220286823756  LUMO = 0.0435861754653075  gap/eV = 2.84109
+cycle= 3 E= -1279.79228209102  delta_E= -4.58  |g|= 0.643  |ddm|= 5.22
+  HOMO = -0.0991692554844842  LUMO = 0.0402925646921383  gap/eV = 3.79495
+cycle= 4 E= -1279.94724557179  delta_E= -0.155  |g|= 0.17  |ddm|= 1.23
+  HOMO = -0.110432143678351  LUMO = 0.0323077156790268  gap/eV = 3.88415
+cycle= 5 E= -1279.95055631494  delta_E= -0.00331  |g|= 0.136  |ddm|= 0.42
+  HOMO = -0.109697779058902  LUMO = 0.0388566256519918  gap/eV = 4.04237
+cycle= 6 E= -1279.95624750375  delta_E= -0.00569  |g|= 0.0296  |ddm|= 0.222
+  HOMO = -0.109513387725593  LUMO = 0.0401429999772911  gap/eV = 4.07236
+cycle= 7 E= -1279.95652509467  delta_E= -0.000278  |g|= 0.0106  |ddm|= 0.0476
+  HOMO = -0.109417316661485  LUMO = 0.0399566511148215  gap/eV = 4.06467
+cycle= 8 E= -1279.95655164271  delta_E= -2.65e-05  |g|= 0.00436  |ddm|= 0.0135
+  HOMO = -0.109499323581432  LUMO = 0.0401411020653476  gap/eV = 4.07192
+cycle= 9 E= -1279.9565574248  delta_E= -5.78e-06  |g|= 0.00152  |ddm|= 0.0075
+  HOMO = -0.109513422653024  LUMO = 0.0401240642289656  gap/eV = 4.07184
+cycle= 10 E= -1279.95655813524  delta_E= -7.1e-07  |g|= 0.000492  |ddm|= 0.00275
+  HOMO = -0.109513789071281  LUMO = 0.0401372233894304  gap/eV = 4.07221
+cycle= 11 E= -1279.95655821123  delta_E= -7.6e-08  |g|= 0.000145  |ddm|= 0.000837
+  HOMO = -0.109509024967359  LUMO = 0.040134253879499  gap/eV = 4.07200
+cycle= 12 E= -1279.95655821771  delta_E= -6.48e-09  |g|= 5.25e-05  |ddm|= 0.00026
+  HOMO = -0.109513874855371  LUMO = 0.0401300338633046  gap/eV = 4.07202
+Extra cycle  E= -1279.95655821654  delta_E= 1.18e-09  |g|= 8.13e-05  |ddm|= 0.00018
+converged SCF energy = -1279.95655821654
+
+
+******** <class 'pyscf.tdscf.rks.TDDFT'> for <class 'pyscf.df.df_jk.DFRKS'> ********
+nstates = 6 singlet
+deg_eia_thresh = 1.000e-03
+wfnsym = None
+conv_tol = 1e-06
+eigh lindep = 1e-12
+eigh level_shift = 0
+eigh max_cycle = 100
+chkfile = /tmp/tmpkj8c12f0
+max_memory 3000 MB (current use 592 MB)
+
+
+Excitation energies (eV)
+[3.71229366 3.81325279 4.07788225 4.54912645 4.87250911 4.8757538 ]

@@ -1,0 +1,7 @@
+Requirement already satisfied: uv==0.13.8 in ./scripts/environment/.uv-bootstrap/lib/python3.12/site-packages (0.13.8)
+{
+  "profile": "base",
+  "environment": "/home/miakhlov/course-restructured-20261118/scripts/environment/.venv-base",
+  "kernel": "course-v2-base",
+  "uv": "uv 0.13.8 (x86_64-unknown-linux-gnu)"
+}

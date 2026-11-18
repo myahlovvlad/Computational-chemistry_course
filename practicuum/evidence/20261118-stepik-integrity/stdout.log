@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "scope": "local review package integrity only",
+  "lessons": 3,
+  "steps": 17,
+  "partial": true,
+  "stepik_integration": "NOT_RUN",
+  "stepik_grader": "NOT_RUN"
+}

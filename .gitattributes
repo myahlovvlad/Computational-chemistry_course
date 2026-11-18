@@ -1,4 +1,12 @@
 * text=auto eol=lf
+programm/author-brief.txt -text -whitespace
+archive/legacy-20261118/** -text -whitespace
+practicuum/shared/data/** -text -whitespace
+practicuum/evidence/** -text -whitespace
+practicuum/modules/**/*.ipynb -text -whitespace
+programm/course.json -text -whitespace
+web-training/trainers/hplc/model.json -text -whitespace
+web-training/trainers/hplc/model.js -text -whitespace
 # Scientific snapshots are byte-hashed; preserve them on every platform.
 Labs/datasets/** -text
 # Preserve byte hashes of captured runtime evidence on either platform.

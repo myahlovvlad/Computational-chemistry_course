@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "scope": "3 real gas-phase SCF/TDDFT calculations; no experimental UV validation",
+  "argv": [
+    "wsl",
+    "-d",
+    "Ubuntu-24.04",
+    "-u",
+    "miakhlov",
+    "--",
+    "/home/miakhlov/course-notebooks/.venv/bin/python",
+    "/mnt/c/Users/Miakhlov/Documents/GitHub/Computational chemistry_course/tmp/course-restructure-20261118/scripts/calculate_quantum_reference.py",
+    "--compounds",
+    "/mnt/c/Users/Miakhlov/Documents/GitHub/Computational chemistry_course/tmp/course-source-audit-20261118/curated/compounds.json",
+    "--out",
+    "/home/miakhlov/course-v2-quantum-20261118"
+  ],
+  "command_recorded_after_completion": true,
+  "console_transcript": "not preserved as a separate file; original per-compound PySCF logs preserved",
+  "runtime": "existing isolated WSL course-notebooks/.venv, not a new native Windows PySCF run",
+  "input_sha256": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267",
+  "script_sha256": "a1a683e18851f8d1933b98f59acd4dd34a5df025d467135970192a540f9c9308",
+  "files_sha256": {
+    "practicuum/shared/data/quantum/summary.json": "fcf989187adeb2eff19c29306390cd18b41f1e20698b45ab11c725c1e18286e9",
+    "practicuum/shared/data/quantum/atorvastatin/geometry.json": "d0d2d8afc508fd0fa5bab87fcb26256f62f6f13b3743781bb9244abc878f6ee5",
+    "practicuum/shared/data/quantum/atorvastatin/pyscf.log": "b0bc017e818000a946c4872f109f4d2635e1171edc2aceb8979bd7476bd19054",
+    "practicuum/shared/data/quantum/atorvastatin/result.json": "a365db4fdf5973018f6cb26c372c380bc7dd1f5599528da1c142e7219b8e83c2",
+    "practicuum/shared/data/quantum/caffeine/geometry.json": "512e03612a6b2c8f730d5ac6c4c5598db537f0db6a9f68c1114f4da9d6b0ad22",
+    "practicuum/shared/data/quantum/caffeine/pyscf.log": "a9047ea36b869db45c054acba791dd1a84c8b95a0174290be6d780cdd08f2e01",
+    "practicuum/shared/data/quantum/caffeine/result.json": "5184693aef2723e3c359535283931dda23fc6434e7a030dbe61a2b13101dd50b",
+    "practicuum/shared/data/quantum/istradefylline/geometry.json": "8b1ec2efb6af4bbf7c984c43eec14553b658ca8cddf2ede549c0d9e45edcfdfa",
+    "practicuum/shared/data/quantum/istradefylline/pyscf.log": "34487571b8d1ba4674e3c90b8b50862bfa4314122b4491a19d878f34dff1e9aa",
+    "practicuum/shared/data/quantum/istradefylline/result.json": "8f56fbf9ccaff067d7e26ad94f9cbadd752c1248dcee439595456d1636fbbbb2"
+  },
+  "course_lessons_M07_M08": "PLANNED; this evidence does not certify their content or learner work",
+  "independent_validation": "NOT_RUN"
+}

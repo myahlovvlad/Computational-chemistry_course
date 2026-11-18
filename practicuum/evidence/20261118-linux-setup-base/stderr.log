@@ -1,0 +1,3 @@
+Checked 98 packages in 0.46ms
+[InstallKernelSpec] Removing existing kernelspec in /home/miakhlov/.local/share/jupyter/kernels/course-v2-base
+[InstallKernelSpec] Installed kernelspec course-v2-base in /home/miakhlov/.local/share/jupyter/kernels/course-v2-base

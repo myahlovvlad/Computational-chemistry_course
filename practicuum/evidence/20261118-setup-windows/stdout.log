@@ -1,0 +1,12 @@
+Collecting uv==0.13.8
+  Using cached uv-0.13.8-py3-none-win_amd64.whl.metadata (11 kB)
+Using cached uv-0.13.8-py3-none-win_amd64.whl (15.6 MB)
+Installing collected packages: uv
+Successfully installed uv-0.13.8
+{
+  "profile": "base",
+  "environment": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\course-restructure-20261118\\scripts\\environment\\.venv-base",
+  "kernel": "course-v2-base",
+  "uv": "uv 0.13.8 (3d97a6aad 2026-11-12 x86_64-pc-windows-msvc)"
+}
+Выберите в Notebook ядро: Курс химии v2 · base · uv
