@@ -77,7 +77,8 @@ def main():
     # Consolidation and later main edits supersede older worktree runs only for the actual executed OS.
     for path in ['practicuum/evidence/20261119-main-unification/notebooks/summary.json',
                  'practicuum/evidence/20261119-main-method-article-reviews/summary.json',
-                 'practicuum/evidence/20261119-main-method-article-final/summary.json']:
+                 'practicuum/evidence/20261119-main-method-article-final/summary.json',
+                 'practicuum/evidence/20261119-main-metric-meaning/summary.json']:
         if (ROOT/path).is_file():
             for r in read(path)['runs']:baseline[(r['lesson_id'],r['role'],'Windows')]=execution_entry(r,path)
     research={

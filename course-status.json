@@ -1394,11 +1394,11 @@
             "case": {
               "path": "practicuum/modules/M12/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "b2d8994a515c7f6d40f29e0e0a76f2b90cafcb1f580a7e6a8e1f338a972ad6ef",
+              "current_sha256": "ca0ff9a702eca34996706fae3b74685156a2be7283c225124f0f8da11f084481",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-method-article-final/summary.json",
+                  "evidence": "practicuum/evidence/20261119-main-metric-meaning/summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1414,11 +1414,11 @@
             "lab": {
               "path": "practicuum/modules/M12/lessons/L02/Notebooks_labs/02_lab.ipynb",
               "authored": true,
-              "current_sha256": "1dfd59281c5dae2bf40d2edc600db3ef168d5d75b5a3f9d47cfee941f590c078",
+              "current_sha256": "912119b47eee18ba6f0179a7359c10aabd480ca48d407af5016f22916feca4dc",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-method-article-final/summary.json",
+                  "evidence": "practicuum/evidence/20261119-main-metric-meaning/summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },

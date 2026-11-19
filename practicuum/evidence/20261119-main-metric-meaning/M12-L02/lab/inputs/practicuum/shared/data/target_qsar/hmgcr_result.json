@@ -1,0 +1,13 @@
+{
+  "status": "BLOCKED",
+  "reason": "Insufficient data for the predeclared nested 5x3 / calibration / sealed-test protocol",
+  "n_total": 57,
+  "n_scaffolds": 28,
+  "required_compounds": 80,
+  "required_scaffolds": 20,
+  "dataset_sha256": "a98aca68cbff9c45e9d881e1b0d98c4f49f03a2e333e10df9977cf89c35986a7",
+  "endpoint": "pIC50",
+  "target_id": "CHEMBL402",
+  "model_training": "NOT_RUN",
+  "scope": "eligibility assessment, not a fitted QSAR; thresholds were not relaxed to obtain a result"
+}
