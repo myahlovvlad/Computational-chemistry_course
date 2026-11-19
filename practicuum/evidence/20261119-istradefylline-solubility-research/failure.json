@@ -1,0 +1,10 @@
+{
+  "status": "FAIL",
+  "scope": "PDF extraction, not a scientific fit",
+  "reason": "Caption temperature matched the table-column rule before the row-boundary guard was added",
+  "fit_status": "NOT_RUN",
+  "retained_inputs": [
+    "supporting-information.pdf",
+    "table-bbox.html"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "lesson_id": "M04-L01",
+  "role": "case",
+  "kernel": "course-v2-chem",
+  "started_utc": "2026-11-19T08:02:21.490461+00:00",
+  "source": "/home/miakhlov/course-production-verified-20261118/practicuum/modules/M04/lessons/L01/Notebooks_cases/01_case.ipynb",
+  "cwd": "/home/miakhlov/course-production-verified-20261118",
+  "scope": "full guided computation",
+  "input_sha256": "7f8aad0e334d6d6612e186149a8326aa8f5893ebed36dea0150f3224b89d884f",
+  "data_sha256": {
+    "practicuum/shared/data/istradefylline_solubility/istradefylline_solubility_table_S1.csv": "c2415add9b03df58409c67a2e516de2afaf944fb676a06d6cef5091f2d7d63c4",
+    "practicuum/shared/data/istradefylline_solubility/istradefylline_aqueous_pH_table2.csv": "d51455b500f0471b17f9ef290e9668dd84487fcbd8e452cf08b2be7540049f0a",
+    "practicuum/shared/data/istradefylline_solubility/supporting-information.pdf": "0363488f2e61e1903dc5218adfa41e2a91682b3284c4105580d8afde9a5df1c1",
+    "practicuum/shared/data/istradefylline_solubility/primary-article.pdf": "f394d17cb107fead9c6ea042778b156797ffd5c5b543752bdddf4a4e7d54994d",
+    "practicuum/shared/data/istradefylline_solubility/result.json": "7f1839b46f92d2f2cc1e567046289ece1d1dfe713f8db94913886d3709540df0",
+    "practicuum/shared/data/source-responses/statin_stability_verified.xml": "84ffbbd27fdaf85a4b75c480672f5538900ba73dfe21093f49d650fbf1a794ae"
+  },
+  "step_sha256": {
+    "practicuum/modules/M04/lessons/L01/steps/01_case.md": "055c5247b9f5dc56cf485bfc1eee5c888eb831a956939de8361e6a4241f27a37"
+  },
+  "status": "PASS",
+  "seconds": 5.215383346978342
+}

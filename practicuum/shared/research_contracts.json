@@ -9,12 +9,14 @@
     "unit_error_ratio": 1000.0
   },
   "M04-L01": {
-    "mass_difference": 18.015
+    "reported_baseline_mol_L": 0.00027,
+    "HPbetaCD_K_times_baseline": 0.04428,
+    "gammaCD_K_times_baseline": 0.015201
   },
   "M04-L02": {
-    "neutral_at_pKa": 0.5,
-    "S_at_pKa": 2e-05,
-    "S_at_5_5": 0.00011
+    "HPbetaCD_conditional_slope": 0.0424024208066802,
+    "gammaCD_conditional_slope": 0.014973389506117507,
+    "HPbetaCD_linear_model_accepted_without_review": false
   },
   "M05-L01": {
     "manual_T": 0.4

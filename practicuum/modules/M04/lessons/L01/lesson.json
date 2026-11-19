@@ -1,6 +1,11 @@
 {
   "inputs": [
-    "practicuum/shared/data/compounds.json"
+    "practicuum/shared/data/istradefylline_solubility/istradefylline_solubility_table_S1.csv",
+    "practicuum/shared/data/istradefylline_solubility/istradefylline_aqueous_pH_table2.csv",
+    "practicuum/shared/data/istradefylline_solubility/supporting-information.pdf",
+    "practicuum/shared/data/istradefylline_solubility/primary-article.pdf",
+    "practicuum/shared/data/istradefylline_solubility/result.json",
+    "practicuum/shared/data/source-responses/statin_stability_verified.xml"
   ],
   "case_steps": [
     "practicuum/modules/M04/lessons/L01/steps/01_case.md"
@@ -10,5 +15,5 @@
   ],
   "instructor": "practicuum/modules/M04/lessons/L01/instructor/reference.py",
   "assessment": "practicuum/modules/M04/lessons/L01/instructor/rubric.md",
-  "development_scope": "authored computational lesson; external validation pending"
+  "development_scope": "actual istradefylline pH/temperature solubility source audit and conditional fits; atorvastatin/CD phase-solubility identifiability"
 }

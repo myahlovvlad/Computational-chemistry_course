@@ -81,11 +81,19 @@ def main():
     for name,digest in docking_manifest['files_sha256'].items():
         path=(docking_folder/name).resolve();path.relative_to(docking_folder.resolve())
         require(sha(path)==digest,'Changed docking audit artifact '+name)
+    solubility_folder=DATA/'istradefylline_solubility'
+    solubility_report=json.loads((solubility_folder/'result.json').read_text(encoding='utf-8'))
+    require(sha(solubility_folder/'supporting-information.pdf')==solubility_report['supporting_PDF_sha256'],'Changed solubility supporting PDF')
+    with (solubility_folder/'istradefylline_solubility_table_S1.csv').open(encoding='utf-8',newline='') as stream:
+        solubility_rows=list(csv.DictReader(stream))
+    require(len(solubility_rows)==60 and len({r['solvent'] for r in solubility_rows})==12,'Incomplete solubility table')
+    require(solubility_report['source_data_acceptance']=='REVIEW_REQUIRED','Unreviewed source-consistency concern was cleared')
     print('PASS:',len(sources),'source hashes; 7 PubChem identities; 2 publication DOIs; 20 HPLC rows; 2 ChEMBL first pages')
     print('Scope: provenance/data consistency; no independent scientific review, assay or clinical validation')
     print('PASS: 5 caffeine kinetic rows match primary XML; caffeine and atorvastatin stability DOIs verified')
     print('PASS: frozen target-specific QSAR artifacts and target/endpoint identities verified')
     print('PASS: 7 xanthine UHPLC conditions match primary means and percent RSD')
     print('PASS: original receptor/ligand coordinates and saved docking audit artifacts verified')
+    print('PASS: 60 istradefylline solubility rows and primary supporting PDF; physical source acceptance remains REVIEW_REQUIRED')
 
 if __name__=='__main__':main()

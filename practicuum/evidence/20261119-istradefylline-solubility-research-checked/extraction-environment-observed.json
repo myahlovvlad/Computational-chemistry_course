@@ -1,0 +1,10 @@
+{
+  "scope": "environment observed after the same-session extraction; primary outputs retained unchanged",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "pdftotext_version_output": "pdftotext version 24.08.0\r\nCopyright 2005-2024 The Poppler Developers - http://poppler.freedesktop.org\r\nCopyright 1996-2011, 2022 Glyph & Cog, LLC\r\n"
+}

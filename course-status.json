@@ -320,7 +320,8 @@
           "title": "Свойства и физический смысл",
           "authoring": "DEVELOPED_DRAFT",
           "professional_computation_requirements": [
-            "reproducible_foundational_research_contract"
+            "istradefylline_solubility",
+            "atorvastatin_kinetic_parameter_audit"
           ],
           "professional_acceptance": "REVIEW_REQUIRED",
           "scientific_review": "NOT_RUN",
@@ -331,15 +332,15 @@
             "case": {
               "path": "practicuum/modules/M04/lessons/L01/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "4dbf0e0f42a2f3308b529fd1a2fcc462a839433c3020061f2076279c980c5cb9",
+              "current_sha256": "44a99eb886a1b388f181095cd8ee642a6d3cf43b0cdaa4b00f0d8f52cdc43055",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-solubility-windows/summary.json"
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-solubility-linux/summary.json"
                 }
               },
               "scope": "guided demonstration"
@@ -347,15 +348,15 @@
             "lab": {
               "path": "practicuum/modules/M04/lessons/L01/Notebooks_labs/02_lab.ipynb",
               "authored": true,
-              "current_sha256": "dcf9ada335fdd46c268d9988ea2837be2cebae0297796163d1e3e045fb281a36",
+              "current_sha256": "cc5d6cf9138512bf209785a2c568d2be98a79abdb9ed0e21fc4b1b4bfe214546",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-solubility-windows/summary.json"
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-solubility-linux/summary.json"
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -367,6 +368,7 @@
           "title": "Среда и растворитель",
           "authoring": "DEVELOPED_DRAFT",
           "professional_computation_requirements": [
+            "istradefylline_solubility",
             "atorvastatin_kinetic_parameter_audit"
           ],
           "professional_acceptance": "REVIEW_REQUIRED",
@@ -378,15 +380,15 @@
             "case": {
               "path": "practicuum/modules/M04/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "469d45e814c0aafce6ee463e6979499f15dd65ec52e22148a91fa1c969c3f57c",
+              "current_sha256": "af3e74ee74693c2df6312ecfd26897201cc7629fb2764bd0a20e641792352bf7",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-solubility-windows/summary.json"
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-solubility-linux/summary.json"
                 }
               },
               "scope": "guided demonstration"
@@ -394,15 +396,15 @@
             "lab": {
               "path": "practicuum/modules/M04/lessons/L02/Notebooks_labs/02_lab.ipynb",
               "authored": true,
-              "current_sha256": "ab3164de2f899b69cf46d27ac168afde1e9a25e3013db378cd8fa53d3f5638a9",
+              "current_sha256": "431ea32a53bc6ed5e43fc660ac82bd9734317cab2e6e49293bc98ac3692ef2ae",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-solubility-windows/summary.json"
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-solubility-linux/summary.json"
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -1438,6 +1440,12 @@
       "status": "PASS",
       "evidence": "practicuum/evidence/20261119-xanthine-UHPLC-research/result.json",
       "sha256": "994e2da0448e8102f9cc8bc75b60fa6b3754632b66fae554ee3879963239400e"
+    },
+    "istradefylline_solubility": {
+      "status": "PASS",
+      "evidence": "practicuum/evidence/20261119-istradefylline-solubility-research-checked/result.json",
+      "sha256": "7f1839b46f92d2f2cc1e567046289ece1d1dfe713f8db94913886d3709540df0",
+      "scientific_acceptance": "REVIEW_REQUIRED: source concentration-basis inconsistencies and aqueous analytical-domain questions; no accepted pKa/intrinsic S0/thermodynamic enthalpy"
     },
     "A2A_redocking": {
       "status": "PASS",

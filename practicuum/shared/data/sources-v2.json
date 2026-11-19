@@ -234,5 +234,50 @@
     "bytes": 2265,
     "license": "RCSB PDB coordinates CC0; source and transformation attribution retained",
     "attribution": "PDB 8RW0 (Glover), PDB 1HWK (Istvan and Deisenhofer); course preparation and Vina pose reanalysis"
+  },
+  {
+    "file": "istradefylline_solubility/istradefylline_aqueous_pH_table2.csv",
+    "url": "https://doi.org/10.3390/cryst12070917",
+    "status": "PASS",
+    "sha256": "d51455b500f0471b17f9ef290e9668dd84487fcbd8e452cf08b2be7540049f0a",
+    "bytes": 168,
+    "license": "CC BY 4.0, Wang et al. (2022); course extraction and numerical transformations identified",
+    "attribution": "Yiyun Wang, Youwei Xu, Zhonghui Zheng, Min Xue, Zihui Meng, Zhibin Xu, Jiarong Li, Qing Lin"
+  },
+  {
+    "file": "istradefylline_solubility/istradefylline_solubility_table_S1.csv",
+    "url": "https://doi.org/10.3390/cryst12070917",
+    "status": "PASS",
+    "sha256": "c2415add9b03df58409c67a2e516de2afaf944fb676a06d6cef5091f2d7d63c4",
+    "bytes": 4513,
+    "license": "CC BY 4.0, Wang et al. (2022); course extraction and numerical transformations identified",
+    "attribution": "Yiyun Wang, Youwei Xu, Zhonghui Zheng, Min Xue, Zihui Meng, Zhibin Xu, Jiarong Li, Qing Lin"
+  },
+  {
+    "file": "istradefylline_solubility/primary-article.pdf",
+    "url": "https://doi.org/10.3390/cryst12070917",
+    "status": "PASS",
+    "sha256": "f394d17cb107fead9c6ea042778b156797ffd5c5b543752bdddf4a4e7d54994d",
+    "bytes": 1630796,
+    "license": "CC BY 4.0, Wang et al. (2022); course extraction and numerical transformations identified",
+    "attribution": "Yiyun Wang, Youwei Xu, Zhonghui Zheng, Min Xue, Zihui Meng, Zhibin Xu, Jiarong Li, Qing Lin"
+  },
+  {
+    "file": "istradefylline_solubility/result.json",
+    "url": "https://doi.org/10.3390/cryst12070917",
+    "status": "PASS",
+    "sha256": "7f1839b46f92d2f2cc1e567046289ece1d1dfe713f8db94913886d3709540df0",
+    "bytes": 43912,
+    "license": "CC BY 4.0, Wang et al. (2022); course extraction and numerical transformations identified",
+    "attribution": "Yiyun Wang, Youwei Xu, Zhonghui Zheng, Min Xue, Zihui Meng, Zhibin Xu, Jiarong Li, Qing Lin"
+  },
+  {
+    "file": "istradefylline_solubility/supporting-information.pdf",
+    "url": "https://doi.org/10.3390/cryst12070917",
+    "status": "PASS",
+    "sha256": "0363488f2e61e1903dc5218adfa41e2a91682b3284c4105580d8afde9a5df1c1",
+    "bytes": 1123863,
+    "license": "CC BY 4.0, Wang et al. (2022); course extraction and numerical transformations identified",
+    "attribution": "Yiyun Wang, Youwei Xu, Zhonghui Zheng, Min Xue, Zihui Meng, Zhibin Xu, Jiarong Li, Qing Lin"
   }
 ]

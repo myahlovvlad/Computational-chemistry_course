@@ -62,13 +62,16 @@ def main():
     for name in ['fetch_target_qsar.py','train_target_qsar.py','audit_target_qsar.py',
                  'fetch_research_structures.py','prepare_target_docking.py','run_target_redocking.py',
                  'run_research_quantum.py','analyze_hplc_research.py','analyze_statin_research.py',
-                 'analyze_caffeine_kinetics.py','analyze_xanthine_chromatography.py']:
+                 'analyze_caffeine_kinetics.py','analyze_xanthine_chromatography.py',
+                 'analyze_istradefylline_solubility.py']:
         copy_resource(out,'scripts/'+name)
     for source in (ROOT/'practicuum/protocols').glob('*.json'):
         copy_resource(out,source.relative_to(ROOT))
     for target in ['A2A','HMGCR']:
         for name in ['dataset.json','curated.csv']:
             copy_resource(out,f'practicuum/evidence/20261119-research-{target}-dataset/{name}')
+    for name in ['crystals-12-00917.pdf','crystals-12-00917-s001.zip','provenance.json']:
+        copy_resource(out,'practicuum/evidence/20261119-istradefylline-solubility-source/'+name)
     for source in (ROOT/'web-training').rglob('*'):
         if source.is_file() and source.suffix in {'.html','.js','.css','.json','.svg','.png'} and not any(p in {'node_modules','workspace','__pycache__'} for p in source.parts):
             copy_resource(out,source.relative_to(ROOT))

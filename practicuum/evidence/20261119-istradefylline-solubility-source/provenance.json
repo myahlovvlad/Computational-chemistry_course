@@ -1,0 +1,26 @@
+{
+  "doi": "10.3390/cryst12070917",
+  "authors": "Wang et al. (2022)",
+  "licence": "CC BY 4.0; main article footer",
+  "sources": [
+    {
+      "url": "https://mdpi-res.com/d_attachment/crystals/crystals-12-00917/article_deploy/crystals-12-00917.pdf",
+      "file": "crystals-12-00917.pdf",
+      "http_status": 200,
+      "retrieved_utc": "2026-11-19T07:51:57.633356+00:00",
+      "sha256": "f394d17cb107fead9c6ea042778b156797ffd5c5b543752bdddf4a4e7d54994d",
+      "bytes": 1630796,
+      "content_type": "application/pdf"
+    },
+    {
+      "url": "https://mdpi-res.com/d_attachment/crystals/crystals-12-00917/article_deploy/crystals-12-00917-s001.zip",
+      "file": "crystals-12-00917-s001.zip",
+      "http_status": 200,
+      "retrieved_utc": "2026-11-19T07:51:58.889380+00:00",
+      "sha256": "d700774634444bfe68dbf3d65b0f0ca037a55bedcc92d3323bcb909e6638fae2",
+      "bytes": 981407,
+      "content_type": "application/zip"
+    }
+  ],
+  "scope": "primary paper and supporting material; data acceptance requires numerical and phase consistency checks"
+}
