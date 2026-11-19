@@ -1,5 +1,7 @@
 """Проверить локальные хеши/шаги пакета; не вызывает Stepik API."""
 import argparse,hashlib,json,math
+import re
+from urllib.parse import unquote,urlsplit
 from pathlib import Path
 
 def main():
@@ -40,6 +42,17 @@ def main():
                  'practicuum/evidence/20261119-research-A2A-dataset/curated.csv']:
         if not (root/path).is_file():raise ValueError('Missing portable resource '+path)
     data=root/'practicuum/shared/data/target_qsar'
+    readings=json.loads((root/'programm/article-reading.json').read_text(encoding='utf-8'))
+    reading_documents=[root/'programm'/name for name in
+                       ['ARTICLE_READING.md','ARTICLE_REVIEW_TEMPLATE.md','ARTICLE_REVIEW_RUBRIC.md']]
+    for reading in readings:
+        reading_documents.extend(root/reading[key] for key in ['case_step','lab_step'])
+    for path in reading_documents:
+        for reference in re.findall(r'\]\(([^)]+)\)',path.read_text(encoding='utf-8')):
+            parts=urlsplit(reference)
+            if parts.scheme or not parts.path:continue
+            target=(path.parent/unquote(parts.path)).resolve();target.relative_to(root)
+            if not target.is_file():raise ValueError('Missing offline article resource: '+reference)
     for name,digest in json.loads((data/'manifest.json').read_text(encoding='utf-8'))['files_sha256'].items():
         if hashlib.sha256((data/name).read_bytes()).hexdigest()!=digest:raise ValueError('Changed target QSAR resource '+name)
     print(json.dumps({'status':'PASS','scope':'local review package integrity only','lessons':len(manifest['lessons']),

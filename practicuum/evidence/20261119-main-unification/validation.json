@@ -26,7 +26,8 @@
     "status": "PASS",
     "lessons": 28,
     "steps": 212,
-    "package_manifest_sha256": "d2c192b7c9925f725140a59b838be2667ec6815abec499ba2eb0a5e182923cee"
+    "package_manifest_sha256": "07609a39f0472e78c65985cd9c29f8694279374982aae54dac600a3b322d2261",
+    "offline_article_links": "PASS"
   },
   "independent_scientific_review": "NOT_RUN",
   "student_pilot": "NOT_RUN",

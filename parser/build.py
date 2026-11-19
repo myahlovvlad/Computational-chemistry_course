@@ -101,6 +101,8 @@ def main():
           'source_sha256':hashlib.sha256(path.read_bytes()).hexdigest(),
           'block':{'name':'text','text':markdown2html(text)}})
         target=out/'sources'/relative;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(path,target)
+        # Keep canonical paths too: notebook and reading-route links resolve offline.
+        copy_resource(out,relative)
       for key in ['case_notebook','lab_notebook']:
         path=ROOT/lesson[key];target=out/path.relative_to(ROOT)
         target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(path,target)
