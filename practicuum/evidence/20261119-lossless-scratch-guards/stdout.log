@@ -1,0 +1,1 @@
+{"status": "PASS", "scope": "Exercise low-space rejection, path isolation, bitwise IO and patch restoration.", "low_space_rejected": true, "restored_after_exception": true, "outside_scratch_unchanged": true, "numeric_roundtrip_bitwise": true}

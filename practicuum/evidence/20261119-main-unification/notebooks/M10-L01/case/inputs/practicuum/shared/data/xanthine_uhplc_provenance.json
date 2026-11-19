@@ -1,0 +1,14 @@
+{
+  "doi": "10.1155/2019/2926580",
+  "title": "Rapid and Sensitive Determination of Methylxanthines in Commercial Brands of Tea Using Ultra-High-Performance Liquid Chromatography-Mass Spectrometry",
+  "url": "https://doi.org/10.1155/2019/2926580",
+  "licence": "Creative Commons Attribution; version unspecified in retrieved XML; preserve original licence text",
+  "source_sha256": "6d94f676aaa0661889867472e712917af11a8e255229782b115af30fa95324b8",
+  "conditions": "Table 2: Nucleodur C18 polar Tec 50 x 2 mm, 1.8 um; ACN/water 10:90 with 1% formic acid; 0.5 mL/min; 70 C; 5 uL; ESI+ SIM",
+  "reported_baseline_retention_s": {
+    "theobromine": 14,
+    "theophylline": 19,
+    "caffeine": 28
+  },
+  "scope": "tea methylxanthines; not istradefylline, atorvastatin or pharmaceutical-matrix validation"
+}

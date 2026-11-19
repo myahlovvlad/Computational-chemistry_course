@@ -1,0 +1,28 @@
+{
+  "lesson_id": "M12-L02",
+  "role": "lab",
+  "kernel": "course-v2-chem",
+  "started_utc": "2026-11-19T12:33:59.882327+00:00",
+  "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M12\\lessons\\L02\\Notebooks_labs\\02_lab.ipynb",
+  "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+  "scope": "empty lab scaffold; learner completion NOT_RUN",
+  "input_sha256": "0da3459fa36ba0474fc806a6e103cc44a20867c6f9af6a54728aa512affa5d5e",
+  "data_sha256": {
+    "practicuum/shared/data/target_qsar/a2a_curated.csv": "1c59acec5bdfd3f9cc30a353abadd677ee914cf572a7213e93a9f0d7fe24f2dd",
+    "practicuum/shared/data/target_qsar/a2a_dataset.json": "c1247c95ad73aef44cc831c7e373bab7209a8f2b4e0d218f96226a23a8723c23",
+    "practicuum/shared/data/target_qsar/a2a_result.json": "8c806ac7fc7e33acfd0ba9f8a2bade4f9967189503e21c009b8183838fdc2372",
+    "practicuum/shared/data/target_qsar/a2a_split.json": "dfbf515eeefe11b812604af23e58bab259abe2eb67e5c83350ac77e02e346b0f",
+    "practicuum/shared/data/target_qsar/a2a_heldout_predictions.csv": "a545dac007624625ae4f3d19a170d1ab31ee2178720fe55a56c78dd0e1862a32",
+    "practicuum/shared/data/target_qsar/a2a_audit.json": "6083703100c56690597ec5f695938550c9cb6de54032c6a015b50cb3920ccbea",
+    "practicuum/shared/data/target_qsar/hmgcr_curated.csv": "a98aca68cbff9c45e9d881e1b0d98c4f49f03a2e333e10df9977cf89c35986a7",
+    "practicuum/shared/data/target_qsar/hmgcr_dataset.json": "7a1338239a3548739b8f9d55046a2d49e504e030bcaf8a6ab79eccda23795cce",
+    "practicuum/shared/data/target_qsar/hmgcr_result.json": "aa814cbcf1462408a34d1fca2043e43462f4ba840a2d1bcd410471bfcfd8c3b6",
+    "practicuum/shared/data/target_qsar/manifest.json": "453a8b2a681589c8ea1a79ecdf85077f71af747749d44cac0ecad426e73131dc"
+  },
+  "step_sha256": {
+    "practicuum/modules/M12/lessons/L02/steps/02_lab.md": "d0b88ec3bee68e4a2e70045e19a0a02c1300eaa418c277c60931db42dbd60b43",
+    "practicuum/modules/M12/lessons/L02/steps/03_article_review.md": "f05c8b07a35d13a6eef73567ed4cc6f2681932ed356fbbea2ff268a7c0929d3d"
+  },
+  "status": "PASS",
+  "seconds": 1.4952304000034928
+}

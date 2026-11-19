@@ -1,10 +1,12 @@
 {
   "inputs": [],
   "case_steps": [
-    "practicuum/modules/M14/lessons/L02/steps/01_case.md"
+    "practicuum/modules/M14/lessons/L02/steps/01_case.md",
+    "practicuum/modules/M14/lessons/L02/steps/03_article_case.md"
   ],
   "lab_steps": [
-    "practicuum/modules/M14/lessons/L02/steps/02_lab.md"
+    "practicuum/modules/M14/lessons/L02/steps/02_lab.md",
+    "practicuum/modules/M14/lessons/L02/steps/03_article_review.md"
   ],
   "instructor": "practicuum/modules/M14/lessons/L02/instructor/reference.py",
   "assessment": "practicuum/modules/M14/lessons/L02/instructor/rubric.md",

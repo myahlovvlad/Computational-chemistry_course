@@ -1559,6 +1559,40 @@
       "status": "IN_PROGRESS",
       "evidence": "practicuum/evidence/20261119-refined-DFT-progress-snapshot/progress.json",
       "sha256": "62615cfc51c0af7034d2032fc4cdbdc6cf8b936c3d778e2e9cd736cf5f6c313b"
+    },
+    "lossless_HDF5_quantum_control": {
+      "status": "PASS",
+      "evidence": "practicuum/evidence/20261119-lossless-quantum-control/check.json",
+      "sha256": "20e0871e88e0cf88d4ec4c60bbe6e5385a03588b21315987d15df06ab1af71cb"
+    },
+    "lossless_HDF5_guard_control": {
+      "status": "PASS",
+      "evidence": "practicuum/evidence/20261119-lossless-scratch-guards/check.json",
+      "sha256": "0b389d60238124ab5108554033200f2f6309d466cfd3d96a83a31af647226f43"
+    },
+    "lossless_HDF5_quantum_control_linux": {
+      "status": "PASS",
+      "evidence": "practicuum/evidence/20261119-lossless-quantum-control-linux/check.json",
+      "sha256": "569471c980d4f6489dfd3f876d8cf559770afb064070e47db95e7b2f2d88550c"
+    },
+    "lossless_HDF5_guard_control_linux": {
+      "status": "PASS",
+      "evidence": "practicuum/evidence/20261119-lossless-scratch-guards-linux/check.json",
+      "sha256": "8a5355024e4b1c44758db6bea3d96ea80e519bd1af4475b467e557b1103ab455"
+    },
+    "electronic_checkpoint_control": {
+      "status": "PASS",
+      "evidence": "practicuum/evidence/20261119-electronic-checkpoint-controls/summary.json",
+      "sha256": "ed5a1c7f7e75774dcb448bf7b97e3d7766f8bf205fc3bb32c232dd59998d629d"
+    },
+    "CAM_TZVP_lossless_progress_snapshot": {
+      "status": "IN_PROGRESS",
+      "evidence": "practicuum/evidence/20261119-lossless-TDDFT-progress-snapshot/progress.json",
+      "sha256": "4c61823e39a2d0d2b03567a23045eedadacaf0159442a1804ed127d7cdbe00f6"
+    },
+    "CAM_TZVP_lossless_result": {
+      "status": "NOT_RUN",
+      "expected_evidence": "practicuum/evidence/20261119-istradefylline-CAM-TZVP-lossless-water/result.json"
     }
   },
   "global_release_blockers": [
@@ -1570,5 +1604,23 @@
     "student pilot and observed workload NOT_RUN",
     "Stepik API/grader testing NOT_RUN"
   ],
-  "release_readiness": "BLOCKED"
+  "release_readiness": "BLOCKED",
+  "repository": {
+    "canonical_branch": "main",
+    "canonical_location": "repository root",
+    "dataset_preservation": "archive/branch-datasets/manifest.json"
+  },
+  "pedagogy": {
+    "narrative_openings": 28,
+    "lesson_transitions": 28,
+    "article_reviews": 14,
+    "reading_route": "programm/ARTICLE_READING.md",
+    "student_pilot": "NOT_RUN"
+  },
+  "current_main_execution": {
+    "status": "PASS",
+    "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+    "sha256": "5ee0920eea63e735d933d01b17dcc34b78a831925e6fcf8f3987ebabcb76584f",
+    "scope": "Windows guided execution and empty B scaffolds; article-review learner solutions NOT_RUN"
+  }
 }

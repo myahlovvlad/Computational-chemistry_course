@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\Users\Miakhlov\Documents\GitHub\Computational chemistry_course\tmp\course-restructure-20261118\scripts\analyze_electronic_checkpoint.py", line 90, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\Users\Miakhlov\Documents\GitHub\Computational chemistry_course\tmp\course-restructure-20261118\scripts\analyze_electronic_checkpoint.py", line 39, in main
+    raise ValueError('Density/orthonormality/idempotency gate failed')
+ValueError: Density/orthonormality/idempotency gate failed

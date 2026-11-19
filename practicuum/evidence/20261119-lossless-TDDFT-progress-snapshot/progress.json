@@ -1,0 +1,46 @@
+{
+  "status": "IN_PROGRESS",
+  "utc": "2026-11-19T09:41:23.899026+00:00",
+  "scope": "Frozen progress observation, not a converged SCF or spectrum",
+  "processes": [
+    {
+      "pid": 4816,
+      "cmdline": [
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\course-restructure-20261118\\scripts\\environment\\.venv-quantum-core\\Scripts\\python.exe",
+        "scripts/run_vertical_tddft.py",
+        "--protocol",
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\course-restructure-20261118\\practicuum\\protocols\\uv-cam-gfn2-water-lossless.json",
+        "--out",
+        "practicuum/evidence/20261119-istradefylline-CAM-TZVP-lossless-water"
+      ],
+      "RSS_bytes": 3825664
+    },
+    {
+      "pid": 20420,
+      "cmdline": [
+        "C:\\Users\\Miakhlov\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "scripts/run_vertical_tddft.py",
+        "--protocol",
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\course-restructure-20261118\\practicuum\\protocols\\uv-cam-gfn2-water-lossless.json",
+        "--out",
+        "practicuum/evidence/20261119-istradefylline-CAM-TZVP-lossless-water"
+      ],
+      "RSS_bytes": 577118208
+    }
+  ],
+  "files_sha256": {
+    "manifest.json": "83fc1f49503941b20f1283af07da8135eb1322b095111c7a50a998f7aafa6fce",
+    "runner-source.py": "1ebc831ae6392540062c7f613ed2823a1a198318cf73548ca66a7034d78e6e01",
+    "io-helper-source.py": "791efe5a8fe57ff28fe2c441b021b4bc8fb9169a4d474328bf3bef1bc0a70184",
+    "input.xyz": "9db8e93d69c97b33b551bc9a41ceef21d68969e56deb26b311bad127fb0cd707",
+    "scratch-preflight.json": "fdbd86f6442ad43bd2610b06347c283f3e90c4f5e06146496a6d9abd713014fb",
+    "pyscf.log": "460afd74009d8987f1550b078fc81687a3a16f95c453ce06ec2c88d5f8680c22"
+  },
+  "free_disk_bytes": 8678264832,
+  "completed_result_present": false,
+  "SCF_result_present": false,
+  "numerical_method": "CAM-B3LYP/def2-TZVP//GFN2, C-PCM water, 30 singlet TDDFT states",
+  "storage_change_only": "lossless gzip/shuffle/Fletcher32; calibrated against uncompressed integrals",
+  "space_reserve_GiB": 4,
+  "postprocessing_plan": "practicuum/evidence/20261119-lossless-TDDFT-postprocess-plan/plan.json"
+}

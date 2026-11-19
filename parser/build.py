@@ -46,6 +46,9 @@ def main():
     # Portable notebook distribution retains the same root layout. No instructor,
     # archive, user workspace, ignored cache, or unrelated local downloads included.
     copy_resource(out,'programm/course.json')
+    for name in ['ARTICLE_READING.md','ARTICLE_REVIEW_TEMPLATE.md',
+                 'ARTICLE_REVIEW_RUBRIC.md','article-reading.json']:
+        copy_resource(out,'programm/'+name)
     for source in (ROOT/'practicuum/shared').glob('*.py'):
         copy_resource(out,source.relative_to(ROOT))
     for source in (ROOT/'practicuum/shared').glob('*.json'):
@@ -65,7 +68,9 @@ def main():
                  'analyze_caffeine_kinetics.py','analyze_xanthine_chromatography.py',
                  'analyze_istradefylline_solubility.py','setup_xtb.py',
                  'run_conformer_research.py','audit_conformer_numerics.py','run_vertical_tddft.py',
-                 'check_quantum_core.py','audit_conformer_reproduction.py','run_conformer_fixed_geometry.py']:
+                 'check_quantum_core.py','audit_conformer_reproduction.py','run_conformer_fixed_geometry.py',
+                 'check_lossless_quantum.py','check_lossless_guard.py','analyze_electronic_checkpoint.py',
+                 'capture_check.py','check_sources.py']:
         copy_resource(out,'scripts/'+name)
     for source in (ROOT/'practicuum/protocols').glob('*.json'):
         copy_resource(out,source.relative_to(ROOT))

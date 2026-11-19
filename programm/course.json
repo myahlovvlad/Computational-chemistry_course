@@ -65,7 +65,9 @@
             "09_laboratory_verification"
           ],
           "learner_solution": "NOT_RUN",
-          "student_pilot": "NOT_RUN"
+          "student_pilot": "NOT_RUN",
+          "article_review": "practicuum/modules/M01/lessons/L02/steps/03_article_review.md",
+          "article_review_assessment": "programm/ARTICLE_REVIEW_RUBRIC.md"
         }
       ]
     },
@@ -118,7 +120,9 @@
             "09_laboratory_verification"
           ],
           "learner_solution": "NOT_RUN",
-          "student_pilot": "NOT_RUN"
+          "student_pilot": "NOT_RUN",
+          "article_review": "practicuum/modules/M02/lessons/L02/steps/03_article_review.md",
+          "article_review_assessment": "programm/ARTICLE_REVIEW_RUBRIC.md"
         }
       ]
     },
@@ -181,7 +185,9 @@
           "execution_evidence": [
             "practicuum/evidence/20261118-pilot-windows-final/summary.json",
             "practicuum/evidence/20261118-pilot-linux/summary.json"
-          ]
+          ],
+          "article_review": "practicuum/modules/M03/lessons/L02/steps/03_article_review.md",
+          "article_review_assessment": "programm/ARTICLE_REVIEW_RUBRIC.md"
         }
       ]
     },
@@ -236,7 +242,9 @@
             "09_laboratory_verification"
           ],
           "learner_solution": "NOT_RUN",
-          "student_pilot": "NOT_RUN"
+          "student_pilot": "NOT_RUN",
+          "article_review": "practicuum/modules/M04/lessons/L02/steps/03_article_review.md",
+          "article_review_assessment": "programm/ARTICLE_REVIEW_RUBRIC.md"
         }
       ]
     },
@@ -291,7 +299,9 @@
             "09_laboratory_verification"
           ],
           "learner_solution": "NOT_RUN",
-          "student_pilot": "NOT_RUN"
+          "student_pilot": "NOT_RUN",
+          "article_review": "practicuum/modules/M05/lessons/L02/steps/03_article_review.md",
+          "article_review_assessment": "programm/ARTICLE_REVIEW_RUBRIC.md"
         }
       ]
     },
@@ -344,7 +354,9 @@
             "09_laboratory_verification"
           ],
           "learner_solution": "NOT_RUN",
-          "student_pilot": "NOT_RUN"
+          "student_pilot": "NOT_RUN",
+          "article_review": "practicuum/modules/M06/lessons/L02/steps/03_article_review.md",
+          "article_review_assessment": "programm/ARTICLE_REVIEW_RUBRIC.md"
         }
       ]
     },
@@ -401,7 +413,9 @@
             "09_laboratory_verification"
           ],
           "learner_solution": "NOT_RUN",
-          "student_pilot": "NOT_RUN"
+          "student_pilot": "NOT_RUN",
+          "article_review": "practicuum/modules/M07/lessons/L02/steps/03_article_review.md",
+          "article_review_assessment": "programm/ARTICLE_REVIEW_RUBRIC.md"
         }
       ]
     },
@@ -454,7 +468,9 @@
             "09_laboratory_verification"
           ],
           "learner_solution": "NOT_RUN",
-          "student_pilot": "NOT_RUN"
+          "student_pilot": "NOT_RUN",
+          "article_review": "practicuum/modules/M08/lessons/L02/steps/03_article_review.md",
+          "article_review_assessment": "programm/ARTICLE_REVIEW_RUBRIC.md"
         }
       ]
     },
@@ -511,7 +527,9 @@
             "09_laboratory_verification"
           ],
           "learner_solution": "NOT_RUN",
-          "student_pilot": "NOT_RUN"
+          "student_pilot": "NOT_RUN",
+          "article_review": "practicuum/modules/M09/lessons/L02/steps/03_article_review.md",
+          "article_review_assessment": "programm/ARTICLE_REVIEW_RUBRIC.md"
         }
       ]
     },
@@ -564,7 +582,9 @@
             "09_laboratory_verification"
           ],
           "learner_solution": "NOT_RUN",
-          "student_pilot": "NOT_RUN"
+          "student_pilot": "NOT_RUN",
+          "article_review": "practicuum/modules/M10/lessons/L02/steps/03_article_review.md",
+          "article_review_assessment": "programm/ARTICLE_REVIEW_RUBRIC.md"
         }
       ]
     },
@@ -617,7 +637,9 @@
             "09_laboratory_verification"
           ],
           "learner_solution": "NOT_RUN",
-          "student_pilot": "NOT_RUN"
+          "student_pilot": "NOT_RUN",
+          "article_review": "practicuum/modules/M11/lessons/L02/steps/03_article_review.md",
+          "article_review_assessment": "programm/ARTICLE_REVIEW_RUBRIC.md"
         }
       ]
     },
@@ -670,7 +692,9 @@
             "09_laboratory_verification"
           ],
           "learner_solution": "NOT_RUN",
-          "student_pilot": "NOT_RUN"
+          "student_pilot": "NOT_RUN",
+          "article_review": "practicuum/modules/M12/lessons/L02/steps/03_article_review.md",
+          "article_review_assessment": "programm/ARTICLE_REVIEW_RUBRIC.md"
         }
       ]
     },
@@ -723,7 +747,9 @@
             "09_laboratory_verification"
           ],
           "learner_solution": "NOT_RUN",
-          "student_pilot": "NOT_RUN"
+          "student_pilot": "NOT_RUN",
+          "article_review": "practicuum/modules/M13/lessons/L02/steps/03_article_review.md",
+          "article_review_assessment": "programm/ARTICLE_REVIEW_RUBRIC.md"
         }
       ]
     },
@@ -774,7 +800,9 @@
             "09_laboratory_verification"
           ],
           "learner_solution": "NOT_RUN",
-          "student_pilot": "NOT_RUN"
+          "student_pilot": "NOT_RUN",
+          "article_review": "practicuum/modules/M14/lessons/L02/steps/03_article_review.md",
+          "article_review_assessment": "programm/ARTICLE_REVIEW_RUBRIC.md"
         }
       ]
     }

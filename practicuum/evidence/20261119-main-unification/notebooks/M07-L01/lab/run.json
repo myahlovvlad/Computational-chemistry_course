@@ -1,0 +1,16 @@
+{
+  "lesson_id": "M07-L01",
+  "role": "lab",
+  "kernel": "course-v2-chem",
+  "started_utc": "2026-11-19T12:33:07.171216+00:00",
+  "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M07\\lessons\\L01\\Notebooks_labs\\02_lab.ipynb",
+  "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+  "scope": "empty lab scaffold; learner completion NOT_RUN",
+  "input_sha256": "dd1d9d381cfeece8fbc48554afab9595da2a8a9325ee3360598fd0e1aabb17a2",
+  "data_sha256": {},
+  "step_sha256": {
+    "practicuum/modules/M07/lessons/L01/steps/02_lab.md": "c35e3066a0181216bab1b117329487e5b3151fd7b8acf1c8d1b12bd1fac46115"
+  },
+  "status": "PASS",
+  "seconds": 1.4672795000078622
+}

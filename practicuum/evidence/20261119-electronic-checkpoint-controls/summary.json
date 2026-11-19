@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "actual_water_calculation": "PASS",
+  "independent_density_and_TD_reconstruction": "PASS",
+  "deliberate_electron_count_corruption": "REJECTED_AS_EXPECTED",
+  "scope": "Analyzer controls, not drug validation"
+}

@@ -83,6 +83,13 @@ def main():
     research['CAM_TZVP_on_GFN2_failed_attempt']=proof('practicuum/evidence/20261119-istradefylline-CAM-TZVP-on-GFN2-water/failure.json')
     research['CAM_TZVP_scratch_preflight']=proof('practicuum/evidence/20261119-istradefylline-CAM-TZVP-scratch-preflight/blocked.json')
     research['refined_DFT_progress_snapshot']=proof('practicuum/evidence/20261119-refined-DFT-progress-snapshot/progress.json')
+    research['lossless_HDF5_quantum_control']=proof('practicuum/evidence/20261119-lossless-quantum-control/check.json')
+    research['lossless_HDF5_guard_control']=proof('practicuum/evidence/20261119-lossless-scratch-guards/check.json')
+    research['lossless_HDF5_quantum_control_linux']=proof('practicuum/evidence/20261119-lossless-quantum-control-linux/check.json')
+    research['lossless_HDF5_guard_control_linux']=proof('practicuum/evidence/20261119-lossless-scratch-guards-linux/check.json')
+    research['electronic_checkpoint_control']=proof('practicuum/evidence/20261119-electronic-checkpoint-controls/summary.json')
+    research['CAM_TZVP_lossless_progress_snapshot']=proof('practicuum/evidence/20261119-lossless-TDDFT-progress-snapshot/progress.json')
+    research['CAM_TZVP_lossless_result']=proof('practicuum/evidence/20261119-istradefylline-CAM-TZVP-lossless-water/result.json')
     research['CAM_TZVP_on_GFN2']['scientific_acceptance']='REVIEW_REQUIRED: composite geometry; stability, sensitivity and experimental matching remain required'
     research['A2A_redocking']['scientific_acceptance']='FAIL: top-ranked pose recovery 0/9; finding a correct lower-ranked pose does not validate ranking'
     research['coarse_DFT_geometry']['scientific_acceptance']='NOT_ACCEPTED: quadrature gate failed; minimum not confirmed by Hessian'
@@ -128,6 +135,11 @@ def main():
     state={'schema_version':'2.0','observed_on':args.observed_on,
       'scope':'draft lesson coverage and actual evidence; professional delivery remains incomplete',
       'program':{'modules':14,'lessons':28,'notebooks':56,'projected_hours':122,'hours_validated':False},
+      'repository':{'canonical_branch':'main','canonical_location':'repository root',
+        'dataset_preservation':'archive/branch-datasets/manifest.json'},
+      'pedagogy':{'narrative_openings':28,'lesson_transitions':28,'article_reviews':14,
+        'reading_route':'programm/ARTICLE_READING.md','student_pilot':'NOT_RUN'},
+      'current_main_execution':proof('practicuum/evidence/20261119-main-unification/notebooks/summary.json'),
       'quality_requirement':'Professional calculations on target chemical forms; educational toy controls are not accepted substitutes',
       'modules':modules,'research':research,
       'global_release_blockers':['uncompleted target QM/IR/UV and numerical convergence',
@@ -157,7 +169,7 @@ def main():
 
 Полные QM/UV/IR, численная/методическая сходимость, исследовательские ансамбли форм B; пригодная подготовка HMGCR; QSAR и область применимости; замена упрощённых обязательных расчётов профессиональными исходниками/outputs. Полный список и ссылки — [реестр](course-status.json) и [научный отчёт](SCIENTIFIC_VALIDATION_REPORT.md).
 
-Независимая научная рецензия, студенческий пилот, фактические часы и Stepik grader **NOT_RUN**. Выпуск и слияние в main **BLOCKED**. Существующие пользовательские изменения сохранены; автоматическое закрытие PR/Issues не выполняется.
+Независимая научная рецензия, студенческий пилот, фактические часы и Stepik grader **NOT_RUN**. Научный выпуск **BLOCKED**. Репозиторий консолидирован в `main` по прямому поручению автора от 19.11.2026; это не снимает научные критерии выпуска. См. [отчёт об объединении](MAIN_UNIFICATION_REPORT.md).
 ''')
     write('ROADMAP.md','''# Оставшаяся работа
 
@@ -167,7 +179,7 @@ def main():
 4. Интегрировать профессиональные расчёты, реальные данные, негативные результаты и решения в все затронутые уроки A/B. Учебные синтетические контроли не оставлять заменой основного исследования.
 5. Проверить преподавательские ориентиры, задания/рубрики и передачу в версионное досье. Выполнить независимую научную рецензию и студенческий пилот.
 6. Повторить сборку полного локального пакета Stepik уже из профессиональной редакции; проверить portable data/resources. Проверить реальную платформу и grader в тестовом курсе.
-7. Обновить PR #8 фактическими доказательствами. Слияние в main, закрытие PR/Issues и любые разрушительные операции требуют отдельного разрешения.
+7. Поддерживать единственную ветку `main` и проверяемые доказательства. Консолидация и удаление прежних веток поручены автором 19.11.2026; [отчёт](MAIN_UNIFICATION_REPORT.md). Новые научные результаты принимать по прежним критериям.
 
 Выполненные этапы консолидации и исходной генерации не выдаются за выполнение этих научных критериев. [Статусы](course-status.json).
 ''')
@@ -184,6 +196,9 @@ def main():
 | Численная проверка GFN2 | Для A/кислоты solvent grid 974→2030 и Hessian step 0.005→0.0025 bohr; знаки частот устойчивы | Близкие уровни A меняют порядок; прохождение абсолютного допуска не подтверждает тонкое ранжирование или физическую точность |
 | Независимый Linux GFN2 | Новый полный поиск A: 300 singlepoints/19 оптимизаций/3 Hessian, локальные gates PASS; полное сопоставление 10 бассейнов REVIEW | 20/300 MMFF-refined starting geometries отличаются >0.01 Å; 7/10 назначений прошли geometric/energy допуски. На десяти идентичных XYZ max разность энергий Windows/Linux ≈1.01e-12 Eh: эту воспроизводимость нельзя переносить на полноту поиска |
 | CAM-B3LYP/def2-TZVP//GFN2 | Реальный Windows-запуск остановлен ENOSPC при построении DF/RSH интегралов; незавершённый временный кэш 13.6 GB удалён с receipt, входы/логи сохранены | Спектр не получен. Повторный preflight BLOCKED: свободно ≈17 GiB при консервативном резерве 50 GiB; базис не уменьшен. Геометрия остаётся GFN2, stability/sensitivity/эксперимент ещё требуют проверки |
+| Lossless HDF5 контроль | Disk-backed H2O CAM/def2-TZVP: DF-интегралы совпали побитово, SCF/TD excitation differences 0; файл 1715448→922294 bytes | Проверено изменение хранения, не точность спектра лекарства. Диск guard/path isolation/exception restoration PASS |
+| Повтор целевого CAM с lossless IO | Та же электронная модель, 1012 AO и 30 запрошенных состояний; gzip/shuffle/Fletcher32, остановка при резерве диска <4 GiB | Progress snapshot не является спектром. До result.json numerical completion NOT_RUN; минимальный резерв для попытки 16 GiB не гарантирует завершение |
+| Анализ электронного checkpoint | На настоящем H2O checkpoint независимо восстановлены density, MO metric и oscillator strengths; намеренно неверный electron count отклонён | Для целевого run поставлена отдельная проверка только после numerical PASS. X-only SVD character игнорирует Y, его вклад сообщается отдельно; physical assignments REVIEW_REQUIRED |
 | A2A/8RW0 redocking | 9 реальных поисков, exhaustiveness 64, 3 начальные геометрии × 3 seed; top-1 recovery 0/9, средний top-1 RMSD 9.5593 Å | **FAIL ранжирования**; найденные ниже позы с RMSD <2 Å не меняют этот итог |
 | HMGCR/1HWK | Gate остановил подготовку: смещение атомов кармана 2.311 Å и новый OXT на 3.79 Å от лиганда | BLOCKED до проверки структуры/обработки неполных концов; не запускать docking на заведомо неподходящем входе |
 | Кофеин, кинетика | Пять опубликованных k_exp при 100 °C; slope 0.695, origin-constrained k₂ 0.71273 L mol⁻¹ min⁻¹; LOOCV RMSE 0.008266 min⁻¹ | OLS-интервалы условны; сырые временные ряды/ошибки повторов отсутствуют; это не кинетика истрадефиллина |
@@ -214,7 +229,9 @@ def main():
 
 После дальнейших изменений M07/M08 потребуется следующая неизменяемая сборка. **NOT_RUN:** загрузка assets/доступность ссылок, API-объекты тестового курса, отображение формул, полный round-trip решений и реальный Stepik grader. Для доказательства платформенной пригодности локального запуска недостаточно.
 
-Выпуск **BLOCKED** научными критериями и отсутствием проверки платформы. Запись в действующий курс и merge в main не выполняются.
+Выпуск **BLOCKED** научными критериями и отсутствием проверки платформы. Репозиторий консолидирован в `main` по поручению автора; публикация в действующий Stepik-курс не выполняется.
+
+Дополнительная сборка `parser/dist/professional-quantum-io-20261119` включает lossless scratch/guard controls и самостоятельный electronic checkpoint analyzer. Её локальная целостность проверяется отдельно от состояния ожидающих расчётов; метод хранения не меняет научные критерии выпуска.
 ''')
     print('Updated evidence-scoped register for',len(modules),'modules; release BLOCKED')
 

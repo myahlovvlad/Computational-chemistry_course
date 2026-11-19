@@ -1,0 +1,29 @@
+{
+  "title": "An improved kilogram-scale preparation of atorvastatin calcium",
+  "authors": "Novozhilov et al. (2015)",
+  "doi": "10.1186/s13065-015-0082-7",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4333361/fullTextXML",
+  "kind": "literature",
+  "license": "CC BY 4.0",
+  "file": "source-responses/atorvastatin_process_verified.xml",
+  "sha256": "f5b8b4eea593ec9d36b7e9f19059b1647c62847ff9026ce7fedc3ac773277b52",
+  "stage1_isolated_molar_yield": 0.96,
+  "overall_two_stage_molar_yield_relation": ">",
+  "overall_two_stage_molar_yield_lower_bound": 0.78,
+  "advanced_input_mass_kg": 7.0,
+  "stage1_isopropanol_volume_L": 70.0,
+  "stage1_water_volume_L": 17.5,
+  "scope": "published final conversion from advanced protected intermediate, not total synthesis from commodity inputs; no new wet-lab run",
+  "route": [
+    "advanced ketal ester 4",
+    "deprotected diol ester 5",
+    "sodium atorvastatin",
+    "atorvastatin hemi-calcium 1"
+  ],
+  "caveats": [
+    "overall >78% is not a per-stage yield",
+    "stage2 lower bound assumes identical molar-equivalent basis",
+    "solvent volume per input mass is not PMI",
+    "retain stereochemistry and source scheme numbering; no experimental route execution here"
+  ]
+}

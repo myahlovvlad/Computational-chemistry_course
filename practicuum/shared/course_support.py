@@ -40,6 +40,12 @@ def workspace(lesson_id,role):
 def write_json(path,value):
     Path(path).write_text(json.dumps(value,ensure_ascii=False,indent=2),encoding='utf-8')
 
+def save_plot(figure,folder,name):
+    """Сохранить авторский график и показать его; вычислительная модель остаётся в ячейках."""
+    from IPython.display import display
+    figure.savefig(Path(folder)/name,dpi=130,bbox_inches='tight')
+    display(figure)
+
 def submission_feedback(answer):
     if answer is None:return {'status':'NOT_RUN','scope':'student work','message':'Сначала выполните собственный кейс и объясните результат.'}
     return {'status':'REVIEW_REQUIRED','scope':'scientific reasoning not graded automatically',

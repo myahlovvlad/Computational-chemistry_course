@@ -3,6 +3,7 @@ import argparse,hashlib,json,re,sys
 from pathlib import Path
 from urllib.parse import unquote,urlsplit
 import nbformat
+import xml.etree.ElementTree as ET
 from build_notebooks import cells_from_step
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -47,6 +48,24 @@ def main():
     if len(ids)!=len(set(ids)):errors.append('Повторены ID уроков')
     if len(ids)!=28:errors.append('Ожидаются 28 исследовательских уроков')
     if hours!=course['core_hours_planned'] or not 100<=hours<=140:errors.append('Несогласованная нагрузка')
+    # Reading assignments must reach the actual notebooks and primary full text.
+    readings=json.loads((ROOT/'programm/article-reading.json').read_text(encoding='utf-8'))
+    if {r['module'] for r in readings}!={m['id'] for m in course['modules']} or len(readings)!=14:
+        errors.append('Ожидается одна мини-рецензия на каждый модуль')
+    by_id={l['id']:l for m in course['modules'] for l in m['lessons']}
+    for reading in readings:
+      try:
+        lesson=by_id[reading['lesson']]
+        config=json.loads((ROOT/lesson['practice']/'lesson.json').read_text(encoding='utf-8'))
+        if lesson.get('article_review')!=reading['lab_step'] or reading['lab_step'] not in config['lab_steps']:
+            errors.append('Мини-рецензия не включена в лабораторную '+reading['lesson'])
+        if reading['case_step'] not in config['case_steps']:
+            errors.append('Нет разбора чтения A '+reading['lesson'])
+        source=(ROOT/reading['source']).resolve();source.relative_to(ROOT)
+        primary=ET.parse(source)
+        if not any(n.text==reading['doi'] for n in primary.findall('.//article-id')):
+            errors.append('DOI не совпал с первичной статьёй '+reading['lesson'])
+      except Exception as error:errors.append('Проверка чтения: '+str(error))
     folders=['programm','skills','scripts','media','web-training','theory','practicuum','parser']
     for name in folders:
       if not (ROOT/name).is_dir():errors.append('Отсутствует область '+name)

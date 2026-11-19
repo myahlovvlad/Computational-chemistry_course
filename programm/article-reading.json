@@ -1,0 +1,114 @@
+[
+  {
+    "module": "M01",
+    "lesson": "M01-L02",
+    "source": "practicuum/shared/data/source-responses/hplc_article.xml",
+    "doi": "10.3390/molecules18032469",
+    "case_step": "practicuum/modules/M01/lessons/L02/steps/03_article_case.md",
+    "lab_step": "practicuum/modules/M01/lessons/L02/steps/03_article_review.md"
+  },
+  {
+    "module": "M02",
+    "lesson": "M02-L02",
+    "source": "practicuum/shared/data/source-responses/hplc_article.xml",
+    "doi": "10.3390/molecules18032469",
+    "case_step": "practicuum/modules/M02/lessons/L02/steps/03_article_case.md",
+    "lab_step": "practicuum/modules/M02/lessons/L02/steps/03_article_review.md"
+  },
+  {
+    "module": "M03",
+    "lesson": "M03-L02",
+    "source": "practicuum/shared/data/source-responses/statin_stability_verified.xml",
+    "doi": "10.3390/pharmaceutics17070808",
+    "case_step": "practicuum/modules/M03/lessons/L02/steps/03_article_case.md",
+    "lab_step": "practicuum/modules/M03/lessons/L02/steps/03_article_review.md"
+  },
+  {
+    "module": "M04",
+    "lesson": "M04-L02",
+    "source": "practicuum/shared/data/source-responses/statin_stability_verified.xml",
+    "doi": "10.3390/pharmaceutics17070808",
+    "case_step": "practicuum/modules/M04/lessons/L02/steps/03_article_case.md",
+    "lab_step": "practicuum/modules/M04/lessons/L02/steps/03_article_review.md"
+  },
+  {
+    "module": "M05",
+    "lesson": "M05-L02",
+    "source": "practicuum/shared/data/source-responses/statin_stability_verified.xml",
+    "doi": "10.3390/pharmaceutics17070808",
+    "case_step": "practicuum/modules/M05/lessons/L02/steps/03_article_case.md",
+    "lab_step": "practicuum/modules/M05/lessons/L02/steps/03_article_review.md"
+  },
+  {
+    "module": "M06",
+    "lesson": "M06-L02",
+    "source": "practicuum/shared/data/source-responses/xanthine_synthesis_verified.xml",
+    "doi": "10.1186/1860-5397-2-20",
+    "case_step": "practicuum/modules/M06/lessons/L02/steps/03_article_case.md",
+    "lab_step": "practicuum/modules/M06/lessons/L02/steps/03_article_review.md"
+  },
+  {
+    "module": "M07",
+    "lesson": "M07-L02",
+    "source": "practicuum/shared/data/source-responses/hplc_article.xml",
+    "doi": "10.3390/molecules18032469",
+    "case_step": "practicuum/modules/M07/lessons/L02/steps/03_article_case.md",
+    "lab_step": "practicuum/modules/M07/lessons/L02/steps/03_article_review.md"
+  },
+  {
+    "module": "M08",
+    "lesson": "M08-L02",
+    "source": "practicuum/shared/data/source-responses/xanthine_synthesis_verified.xml",
+    "doi": "10.1186/1860-5397-2-20",
+    "case_step": "practicuum/modules/M08/lessons/L02/steps/03_article_case.md",
+    "lab_step": "practicuum/modules/M08/lessons/L02/steps/03_article_review.md"
+  },
+  {
+    "module": "M09",
+    "lesson": "M09-L02",
+    "source": "practicuum/shared/data/source-responses/caffeine_kinetics.xml",
+    "doi": "10.1186/s40064-015-0809-x",
+    "case_step": "practicuum/modules/M09/lessons/L02/steps/03_article_case.md",
+    "lab_step": "practicuum/modules/M09/lessons/L02/steps/03_article_review.md"
+  },
+  {
+    "module": "M10",
+    "lesson": "M10-L02",
+    "source": "practicuum/shared/data/source-responses/hplc_article.xml",
+    "doi": "10.3390/molecules18032469",
+    "case_step": "practicuum/modules/M10/lessons/L02/steps/03_article_case.md",
+    "lab_step": "practicuum/modules/M10/lessons/L02/steps/03_article_review.md"
+  },
+  {
+    "module": "M11",
+    "lesson": "M11-L02",
+    "source": "practicuum/shared/data/source-responses/statin_stability_verified.xml",
+    "doi": "10.3390/pharmaceutics17070808",
+    "case_step": "practicuum/modules/M11/lessons/L02/steps/03_article_case.md",
+    "lab_step": "practicuum/modules/M11/lessons/L02/steps/03_article_review.md"
+  },
+  {
+    "module": "M12",
+    "lesson": "M12-L02",
+    "source": "practicuum/shared/data/source-responses/hplc_article.xml",
+    "doi": "10.3390/molecules18032469",
+    "case_step": "practicuum/modules/M12/lessons/L02/steps/03_article_case.md",
+    "lab_step": "practicuum/modules/M12/lessons/L02/steps/03_article_review.md"
+  },
+  {
+    "module": "M13",
+    "lesson": "M13-L02",
+    "source": "practicuum/shared/data/source-responses/atorvastatin_process_verified.xml",
+    "doi": "10.1186/s13065-015-0082-7",
+    "case_step": "practicuum/modules/M13/lessons/L02/steps/03_article_case.md",
+    "lab_step": "practicuum/modules/M13/lessons/L02/steps/03_article_review.md"
+  },
+  {
+    "module": "M14",
+    "lesson": "M14-L02",
+    "source": "practicuum/shared/data/source-responses/atorvastatin_process_verified.xml",
+    "doi": "10.1186/s13065-015-0082-7",
+    "case_step": "practicuum/modules/M14/lessons/L02/steps/03_article_case.md",
+    "lab_step": "practicuum/modules/M14/lessons/L02/steps/03_article_review.md"
+  }
+]

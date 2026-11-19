@@ -1,0 +1,144 @@
+{
+  "status": "PASS",
+  "scope": "Independent density/TD-vector audit of a completed composite excitation run.\n\nNTO-like weights below use normalized X only, matching PySCF's documented CIS\ninterpretation. Y is retained and its size reported; no full-TDM claim is made.\n",
+  "density_electrons": 10.000000000000014,
+  "MO_metric_max_error": 5.1355444444900336e-15,
+  "closed_shell_density_idempotency_relative_error": 2.524006666605258e-15,
+  "orbital_gap_eV_not_excitation": 12.921238404193465,
+  "states": [
+    {
+      "state": 1,
+      "energy_eV": 8.204556416110469,
+      "oscillator_strength_length": 0.02102524324554706,
+      "TDDFT_norm_2_X2_minus_Y2": 0.9999999999999999,
+      "X_norm_squared": 0.500406672325057,
+      "Y_norm_squared": 0.0004066723250570476,
+      "X_only_NTO_weights": [
+        0.999797535141765,
+        8.162773110037698e-05,
+        7.679467059011314e-05,
+        4.404137441931185e-05,
+        1.082125202699054e-09
+      ],
+      "dominant_X_MO_pairs": [
+        {
+          "occupied_MO_1based": 5,
+          "virtual_MO_1based": 6,
+          "normalized_X_squared_weight": 0.9979056138210859
+        },
+        {
+          "occupied_MO_1based": 5,
+          "virtual_MO_1based": 9,
+          "normalized_X_squared_weight": 0.0012359410261117245
+        },
+        {
+          "occupied_MO_1based": 5,
+          "virtual_MO_1based": 13,
+          "normalized_X_squared_weight": 0.0003337776935990481
+        },
+        {
+          "occupied_MO_1based": 5,
+          "virtual_MO_1based": 10,
+          "normalized_X_squared_weight": 0.00018319335112926784
+        },
+        {
+          "occupied_MO_1based": 5,
+          "virtual_MO_1based": 15,
+          "normalized_X_squared_weight": 7.615571900498297e-05
+        }
+      ],
+      "interpretation": "CIS-like X-only character; de-excitation contribution not incorporated into this SVD"
+    },
+    {
+      "state": 2,
+      "energy_eV": 10.232423175905714,
+      "oscillator_strength_length": 1.5644871930404968e-27,
+      "TDDFT_norm_2_X2_minus_Y2": 1.0000000000000002,
+      "X_norm_squared": 0.5000773406100675,
+      "Y_norm_squared": 7.734061006735568e-05,
+      "X_only_NTO_weights": [
+        0.9999478417125882,
+        3.4867583125791784e-05,
+        1.3892485835443212e-05,
+        3.3982184506117972e-06,
+        1.7521696460252592e-29
+      ],
+      "dominant_X_MO_pairs": [
+        {
+          "occupied_MO_1based": 5,
+          "virtual_MO_1based": 7,
+          "normalized_X_squared_weight": 0.9939177710523127
+        },
+        {
+          "occupied_MO_1based": 5,
+          "virtual_MO_1based": 8,
+          "normalized_X_squared_weight": 0.004584186462168767
+        },
+        {
+          "occupied_MO_1based": 5,
+          "virtual_MO_1based": 12,
+          "normalized_X_squared_weight": 0.0014228740408737594
+        },
+        {
+          "occupied_MO_1based": 2,
+          "virtual_MO_1based": 14,
+          "normalized_X_squared_weight": 2.9731262627986863e-05
+        },
+        {
+          "occupied_MO_1based": 5,
+          "virtual_MO_1based": 18,
+          "normalized_X_squared_weight": 2.219039895847889e-05
+        }
+      ],
+      "interpretation": "CIS-like X-only character; de-excitation contribution not incorporated into this SVD"
+    },
+    {
+      "state": 3,
+      "energy_eV": 10.445300780249209,
+      "oscillator_strength_length": 0.08272517117360512,
+      "TDDFT_norm_2_X2_minus_Y2": 1.0000000000000002,
+      "X_norm_squared": 0.5005716400267171,
+      "Y_norm_squared": 0.0005716400267169194,
+      "X_only_NTO_weights": [
+        0.9932406014739344,
+        0.005707860846107706,
+        0.0007663570967310903,
+        0.00028510523021499487,
+        7.535301167584867e-08
+      ],
+      "dominant_X_MO_pairs": [
+        {
+          "occupied_MO_1based": 4,
+          "virtual_MO_1based": 6,
+          "normalized_X_squared_weight": 0.9916109765252769
+        },
+        {
+          "occupied_MO_1based": 3,
+          "virtual_MO_1based": 7,
+          "normalized_X_squared_weight": 0.005034510846710439
+        },
+        {
+          "occupied_MO_1based": 5,
+          "virtual_MO_1based": 11,
+          "normalized_X_squared_weight": 0.0007552698307099339
+        },
+        {
+          "occupied_MO_1based": 4,
+          "virtual_MO_1based": 9,
+          "normalized_X_squared_weight": 0.0007518893992875408
+        },
+        {
+          "occupied_MO_1based": 3,
+          "virtual_MO_1based": 8,
+          "normalized_X_squared_weight": 0.0004292466164611048
+        }
+      ],
+      "interpretation": "CIS-like X-only character; de-excitation contribution not incorporated into this SVD"
+    }
+  ],
+  "wavefunction_sha256": "c99a2b9423b73b0771a403e201684bf3c8bde6b87de8327b7d3e9116b3167d00",
+  "SCF_stability": "NOT_RUN",
+  "geometry_DFT_minimum": "NOT_CLAIMED",
+  "scientific_acceptance": "REVIEW_REQUIRED",
+  "seconds": 0.9739783999975771
+}

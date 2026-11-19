@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "scope": "independent deterministic audit, not prospective experimental validation",
+  "dataset_sha256": "1c59acec5bdfd3f9cc30a353abadd677ee914cf572a7213e93a9f0d7fe24f2dd",
+  "artifacts_sha256": {
+    "fitted_pipeline.joblib": "558a31a7e5fced34d4d69efccff109efaaaa74f02952e1db22ab1d910d18d47e",
+    "heldout_predictions.csv": "a545dac007624625ae4f3d19a170d1ab31ee2178720fe55a56c78dd0e1862a32",
+    "outer-fold-1.json": "d421c9ccf350619eeb0324e98cdc14859a45f01f418b96992b0365ce836be854",
+    "outer-fold-2.json": "ff92cc155a8a913aa8e503350aac0677525dc45fe089b4e6d99ba59777dbf4c3",
+    "outer-fold-3.json": "992752bdf44b100edccf92e20eb5694bd160f93c244018ae629c11f087a42f0b",
+    "outer-fold-4.json": "56a7a76cc785ed42f13d6cd765ac785050205f3952cd6cf066cd36de96bc3af3",
+    "outer-fold-5.json": "7f3ec455cfb752a5b6b19e78da1791267989f94db31d3e6c0c90952774eeca76",
+    "result.json": "8c806ac7fc7e33acfd0ba9f8a2bade4f9967189503e21c009b8183838fdc2372",
+    "split.json": "dfbf515eeefe11b812604af23e58bab259abe2eb67e5c83350ac77e02e346b0f"
+  },
+  "partitions_cover_unique_rows": true,
+  "scaffold_leakage": false,
+  "named_query_training_calibration_leakage": false,
+  "outer_validation_covers_training_once": true,
+  "recomputed_sealed_test": {
+    "n": 854,
+    "RMSE": 0.7445898633267389,
+    "MAE": 0.5824274959292625,
+    "R2": 0.639990145705893,
+    "bias": 0.024401514745584073
+  },
+  "observed_test_scaffold_simultaneous_coverage": 0.9118457300275482,
+  "test_scaffold_n": 363,
+  "query_audit": [
+    {
+      "name": "istradefylline",
+      "nearest_train_Tanimoto": 0.373134328358209,
+      "exact_graph_observations_in_sealed_test": [],
+      "prediction_minus_observation": null,
+      "decision": "Domain review required; low nearest similarity and pooled-assay heterogeneity limit transfer"
+    },
+    {
+      "name": "caffeine",
+      "nearest_train_Tanimoto": 0.3404255319148936,
+      "exact_graph_observations_in_sealed_test": [],
+      "prediction_minus_observation": null,
+      "decision": "Domain review required; low nearest similarity and pooled-assay heterogeneity limit transfer"
+    }
+  ],
+  "scientific_review": "NOT_RUN"
+}

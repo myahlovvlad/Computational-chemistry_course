@@ -1,0 +1,430 @@
+{
+  "version": "paired-v1",
+  "provenance": "Authored fictional exercises, 2026-11-17. Referenced real datasets keep their own passports.",
+  "modules": {
+    "1": [
+      {
+        "A": [
+          -1,
+          1,
+          -1,
+          1
+        ],
+        "B": [
+          -1,
+          -1,
+          1,
+          1
+        ],
+        "y": [
+          43,
+          47,
+          37,
+          73
+        ]
+      },
+      {
+        "A": [
+          -1,
+          -1,
+          1,
+          1,
+          -1,
+          -1,
+          1,
+          1
+        ],
+        "B": [
+          -1,
+          -1,
+          -1,
+          -1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "y": [
+          43,
+          45,
+          47,
+          49,
+          37,
+          39,
+          73,
+          75
+        ]
+      },
+      {
+        "proposal": "найти хорошую молекулу",
+        "budget": "один следующий эксперимент"
+      }
+    ],
+    "2": [
+      {
+        "values": [
+          2.5,
+          2500,
+          0,
+          1
+        ],
+        "units": [
+          "uM",
+          "nM",
+          "M",
+          "unknown"
+        ]
+      },
+      {
+        "text": "id,smiles\nA,CCO\n",
+        "suffix": "\n"
+      },
+      {
+        "terminal_python": "другая .venv",
+        "kernel_python": "измерить sys.executable"
+      }
+    ],
+    "3": [
+      {
+        "smiles": [
+          "CC(=O)[O-].[Na+]",
+          "[Na+].CC(=O)[O-]",
+          "Brc1ccccc1"
+        ]
+      },
+      {
+        "stereo": [
+          "C[C@H](O)C(=O)O",
+          "C[C@@H](O)C(=O)O"
+        ],
+        "tautomers": [
+          "O=c1cccc[nH]1",
+          "Oc1ccccn1"
+        ]
+      },
+      {
+        "records": [
+          {
+            "form": "соль",
+            "pH": "не указан"
+          },
+          {
+            "form": "кислота",
+            "pH": 7
+          }
+        ]
+      }
+    ],
+    "4": [
+      {
+        "ethanol": "CCO",
+        "benzene": "c1ccccc1"
+      },
+      {
+        "profiles": [
+          {
+            "id": "Q1",
+            "MW": 600,
+            "logP": 2,
+            "HBD": 6,
+            "HBA": 12
+          },
+          {
+            "id": "Q2",
+            "MW": 500,
+            "logP": 5,
+            "HBD": 5,
+            "HBA": 10
+          },
+          {
+            "id": "Q3",
+            "MW": 450,
+            "logP": 5.1,
+            "HBD": 0,
+            "HBA": 0
+          }
+        ]
+      },
+      {
+        "reported": "logD",
+        "pH": "не указан",
+        "calculated": "MolLogP parent"
+      }
+    ],
+    "5": [
+      {
+        "A": [
+          1,
+          2,
+          3
+        ],
+        "B": [
+          2,
+          3,
+          4
+        ],
+        "C": [
+          7,
+          8
+        ]
+      },
+      {
+        "smiles": [
+          "C[C@H](O)C(=O)O",
+          "C[C@@H](O)C(=O)O"
+        ],
+        "radius": 2,
+        "fpSize": 2048
+      },
+      {
+        "dataset": "molecules.csv",
+        "query": "CCO",
+        "slots": 3
+      }
+    ],
+    "6": [
+      {
+        "smiles": "CCCC",
+        "seed": 7
+      },
+      {
+        "smiles": "CCCC",
+        "atoms": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "target_degrees": 60
+      },
+      {
+        "reported_status": 1,
+        "claim": "глобальный минимум"
+      }
+    ],
+    "7": [
+      {
+        "value": 10,
+        "unit": "uM",
+        "relation": ">"
+      },
+      {
+        "records": [
+          {
+            "record_id": "S1",
+            "target_id": "T1",
+            "assay_id": "A1",
+            "endpoint": "IC50",
+            "value": "50",
+            "unit": "nM",
+            "relation": "="
+          },
+          {
+            "record_id": "S2",
+            "target_id": "T1",
+            "assay_id": "A1",
+            "endpoint": "Ki",
+            "value": "50",
+            "unit": "nM",
+            "relation": "="
+          },
+          {
+            "record_id": "S3",
+            "target_id": "T2",
+            "assay_id": "A1",
+            "endpoint": "IC50",
+            "value": "50",
+            "unit": "nM",
+            "relation": "="
+          },
+          {
+            "record_id": "S4",
+            "target_id": "T1",
+            "assay_id": "A1",
+            "endpoint": "IC50",
+            "value": "-2",
+            "unit": "nM",
+            "relation": "="
+          }
+        ]
+      },
+      {
+        "page1": {
+          "ids": [
+            "A",
+            "B"
+          ],
+          "next": "page2"
+        },
+        "page2": "timeout"
+      }
+    ],
+    "8": [
+      {
+        "mu_pos": 100,
+        "mu_neg": 10,
+        "sd_good": [
+          5,
+          5
+        ],
+        "sd_bad": [
+          20,
+          20
+        ],
+        "N": 1000,
+        "A": 20,
+        "k": 50,
+        "a": 5
+      },
+      {
+        "smiles": [
+          "Oc1ccccc1O",
+          "CCO",
+          ""
+        ]
+      },
+      {
+        "flagged": 20,
+        "price_per_item": 50,
+        "false_rejection_probability": "неизвестна"
+      }
+    ],
+    "9": [
+      {
+        "dataset": "molecules.csv"
+      },
+      {
+        "id": "<script>alert(1)</script>"
+      },
+      {
+        "axes": [
+          "MW",
+          "TPSA"
+        ],
+        "claim": "drug-ready"
+      }
+    ],
+    "10": [
+      {
+        "dataset": "docking/",
+        "seed": 7,
+        "cpu": 1,
+        "exhaustiveness": 8
+      },
+      {
+        "translation_angstrom": [
+          5,
+          0,
+          0
+        ],
+        "reference": "docking/1iep_ligand.pdbqt",
+        "official_pose": "docking/1iep_ligand_vina_out.pdbqt"
+      },
+      {
+        "input": "новая экспериментальная структура",
+        "prepared_reference": "ещё не проверен"
+      }
+    ],
+    "11": [
+      {
+        "y": [
+          -3,
+          -2,
+          -1
+        ],
+        "A": [
+          -2.5,
+          -2.5,
+          -1
+        ],
+        "B": [
+          -2,
+          -2,
+          -2
+        ]
+      },
+      {
+        "smiles": [
+          "CCO",
+          "OCC",
+          "CCN",
+          "NCC"
+        ],
+        "train": [
+          0,
+          2
+        ],
+        "test": [
+          1,
+          3
+        ]
+      },
+      {
+        "dataset": "esol.csv",
+        "split": "scaffold",
+        "action": "сохранить фиксированный holdout"
+      }
+    ],
+    "12": [
+      {
+        "E_initial": -100.0,
+        "E_final": -100.01,
+        "kJ_per_Hartree": 2625.5
+      },
+      {
+        "distance_angstrom": 1.0,
+        "basis": "sto-3g",
+        "charge": 0,
+        "spin": 0,
+        "functional": "PBE",
+        "grid_level": 4
+      },
+      {
+        "method": "RHF/STO-3G",
+        "frequencies": "не рассчитаны",
+        "temperature_K": 298
+      }
+    ],
+    "13": [
+      {
+        "smiles": "CCOC(C)=O"
+      },
+      {
+        "A": {
+          "yields": [
+            0.8,
+            0.7
+          ],
+          "cost": 600
+        },
+        "B": {
+          "yields": [
+            0.95,
+            0.9
+          ],
+          "cost": 750
+        }
+      },
+      {
+        "smiles": "CC(=O)NCC",
+        "template_family": "ester"
+      }
+    ],
+    "14": [
+      {
+        "valid": "molecules.csv",
+        "negative": "повторный ID и отсутствующий smiles",
+        "workspace": "student_work/module14/"
+      },
+      {
+        "framework": "Streamlit",
+        "limit_bytes": 1048576,
+        "limit_rows": 500,
+        "policy": "явно показывать текущую политику"
+      },
+      {
+        "deliverable": "досье + исходники IDE + данные/лицензии + воспроизводимый запуск"
+      }
+    ]
+  }
+}

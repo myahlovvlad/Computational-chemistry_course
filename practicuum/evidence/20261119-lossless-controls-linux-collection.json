@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "collected_utc": "2026-11-19T09:44:15.879150+00:00",
+  "source_root": "/home/miakhlov/course-production-verified-20261118",
+  "distro": "Ubuntu-24.04",
+  "files_sha256": {
+    "20261119-lossless-quantum-control-linux/check.json": "569471c980d4f6489dfd3f876d8cf559770afb064070e47db95e7b2f2d88550c",
+    "20261119-lossless-quantum-control-linux/inputs/practicuum/shared/lossless_scratch.py": "791efe5a8fe57ff28fe2c441b021b4bc8fb9169a4d474328bf3bef1bc0a70184",
+    "20261119-lossless-quantum-control-linux/inputs/scripts/check_lossless_quantum.py": "974065d9d4d5acdcc9e37c3ebb4534032b5c72426ea08ab6b8a6fe7d689317d7",
+    "20261119-lossless-quantum-control-linux/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "20261119-lossless-quantum-control-linux/stdout.log": "0e33dd5d83cd5f4b6f7eb9b71c0ca59288815ec7687cd4dfbf70e65fd37962b4",
+    "20261119-lossless-scratch-guards-linux/check.json": "8a5355024e4b1c44758db6bea3d96ea80e519bd1af4475b467e557b1103ab455",
+    "20261119-lossless-scratch-guards-linux/inputs/practicuum/shared/lossless_scratch.py": "791efe5a8fe57ff28fe2c441b021b4bc8fb9169a4d474328bf3bef1bc0a70184",
+    "20261119-lossless-scratch-guards-linux/inputs/scripts/check_lossless_guard.py": "f606f7f58d16510b3a87ed01d984e8591ad282a5146998410003fb93a6a229ac",
+    "20261119-lossless-scratch-guards-linux/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "20261119-lossless-scratch-guards-linux/stdout.log": "5faf4e82448453cdca5bf17236d30828fc941d449d5208eb2ae32be4df5c47c0"
+  },
+  "excluded": "HDF5/checkpoint files remain in original Linux run; no source artifacts removed"
+}

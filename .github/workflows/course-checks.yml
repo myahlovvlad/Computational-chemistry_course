@@ -28,6 +28,7 @@ jobs:
       - run: uv run --project scripts/environment --frozen --group chem python scripts/run_course.py --out tmp/ci-course
       - run: uv run --project scripts/environment --frozen --group chem python scripts/run_instructor_references.py --out tmp/ci-references
       - run: uv run --project scripts/environment --frozen --group chem python scripts/verify_consolidation.py --git-ref HEAD
+      - run: uv run --project scripts/environment --frozen --group chem python scripts/verify_branch_datasets.py
       - run: uv run --project scripts/environment --frozen --group chem python archive/legacy-20261118/course_source/modules/M01/verify_evidence.py
       - run: uv run --project scripts/environment --frozen --group chem python parser/build.py --out parser/dist/ci
       - run: uv run --project scripts/environment --frozen --group chem python parser/validate_package.py parser/dist/ci

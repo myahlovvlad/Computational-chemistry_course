@@ -1,0 +1,6 @@
+{
+  "status": "FAIL",
+  "type": "ValueError",
+  "message": "Density/orthonormality/idempotency gate failed",
+  "seconds": 0.6251474999880884
+}

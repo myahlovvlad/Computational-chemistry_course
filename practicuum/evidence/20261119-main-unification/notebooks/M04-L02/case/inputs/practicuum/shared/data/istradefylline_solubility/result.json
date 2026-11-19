@@ -1,0 +1,1307 @@
+{
+  "status": "PASS",
+  "scope": "actual primary table extraction, conditional regression and numerical consistency audit",
+  "source": {
+    "doi": "10.3390/cryst12070917",
+    "authors": "Wang et al. (2022)",
+    "licence": "CC BY 4.0; main article footer",
+    "sources": [
+      {
+        "url": "https://mdpi-res.com/d_attachment/crystals/crystals-12-00917/article_deploy/crystals-12-00917.pdf",
+        "file": "crystals-12-00917.pdf",
+        "http_status": 200,
+        "retrieved_utc": "2026-11-19T07:51:57.633356+00:00",
+        "sha256": "f394d17cb107fead9c6ea042778b156797ffd5c5b543752bdddf4a4e7d54994d",
+        "bytes": 1630796,
+        "content_type": "application/pdf"
+      },
+      {
+        "url": "https://mdpi-res.com/d_attachment/crystals/crystals-12-00917/article_deploy/crystals-12-00917-s001.zip",
+        "file": "crystals-12-00917-s001.zip",
+        "http_status": 200,
+        "retrieved_utc": "2026-11-19T07:51:58.889380+00:00",
+        "sha256": "d700774634444bfe68dbf3d65b0f0ca037a55bedcc92d3323bcb909e6638fae2",
+        "bytes": 981407,
+        "content_type": "application/zip"
+      }
+    ],
+    "scope": "primary paper and supporting material; data acceptance requires numerical and phase consistency checks"
+  },
+  "supporting_PDF_sha256": "0363488f2e61e1903dc5218adfa41e2a91682b3284c4105580d8afde9a5df1c1",
+  "table_extraction": "Poppler bounding boxes; visually checked supporting PDF pages 1/2 and main PDF p.7",
+  "visual_review": "table headings, exponents, mass units and crystal-form labels inspected",
+  "source_data_acceptance": "REVIEW_REQUIRED",
+  "fits": [
+    {
+      "solvent": "methanol",
+      "equilibrium_form_as_reported": "II",
+      "mole_fraction_fit": {
+        "intercept_at_mean_inverse_temperature": -8.04881046131357,
+        "slope_per_1000_K_inverse": -7.965973781582345,
+        "apparent_slope_enthalpy_kJ_mol": 66.2327912241552,
+        "conditional_CI95_kJ_mol": [
+          64.71101215437152,
+          67.7545702939389
+        ],
+        "residuals_ln_x": [
+          0.012788780446170378,
+          -0.02627355089734351,
+          0.013648123181856597,
+          -0.0005373189609070295,
+          0.00037396623021646036
+        ],
+        "leave_one_temperature_out_RMSE_ln_x": 0.023843815463749488,
+        "fitted_ln_x": [
+          -9.732256219552761,
+          -8.835877780790405,
+          -7.996748483893757,
+          -7.209553539272938,
+          -6.469616283057989
+        ],
+        "df": 3,
+        "interpretation": "Conditional apparent slope of the reported solubility basis; not a measured thermodynamic dissolution enthalpy. Activities, solvate equilibria, raw repeats and independent data remain unverified."
+      },
+      "mass_concentration_fit": {
+        "intercept_at_mean_inverse_temperature": 0.39671849284864164,
+        "slope_per_1000_K_inverse": -4.23631412241198,
+        "apparent_slope_enthalpy_kJ_mol": 35.222675409549055,
+        "conditional_CI95_kJ_mol": [
+          31.894020906575673,
+          38.55132991252244
+        ],
+        "residuals_ln_x": [
+          0.037773495535557644,
+          -0.027240384589284523,
+          -0.027778953553754704,
+          -0.022111749642804934,
+          0.03935759225028734
+        ],
+        "leave_one_temperature_out_RMSE_ln_x": 0.06703357933868173,
+        "fitted_ln_x": [
+          -0.4985399194288113,
+          -0.02184482310120689,
+          0.4244051129947147,
+          0.8430363001445766,
+          1.236535793633935
+        ],
+        "df": 3,
+        "interpretation": "Conditional apparent slope of the reported solubility basis; not a measured thermodynamic dissolution enthalpy. Activities, solvate equilibria, raw repeats and independent data remain unverified."
+      }
+    },
+    {
+      "solvent": "ethanol",
+      "equilibrium_form_as_reported": "I",
+      "mole_fraction_fit": {
+        "intercept_at_mean_inverse_temperature": -7.6106899881137355,
+        "slope_per_1000_K_inverse": -7.223378836218679,
+        "apparent_slope_enthalpy_kJ_mol": 60.05851331049946,
+        "conditional_CI95_kJ_mol": [
+          51.641585792850385,
+          68.47544082814852
+        ],
+        "residuals_ln_x": [
+          -0.10292621973378324,
+          0.10633418746715151,
+          0.07956152906809066,
+          -0.050415452600341304,
+          -0.03255404420112562
+        ],
+        "leave_one_temperature_out_RMSE_ln_x": 0.15450119792997932,
+        "fitted_ln_x": [
+          -9.137203481053152,
+          -8.324386213342715,
+          -7.563481273124559,
+          -6.849669320077576,
+          -6.178709652970676
+        ],
+        "df": 3,
+        "interpretation": "Conditional apparent slope of the reported solubility basis; not a measured thermodynamic dissolution enthalpy. Activities, solvate equilibria, raw repeats and independent data remain unverified."
+      },
+      "mass_concentration_fit": {
+        "intercept_at_mean_inverse_temperature": 1.2821147553507581,
+        "slope_per_1000_K_inverse": -7.22776518769825,
+        "apparent_slope_enthalpy_kJ_mol": 60.09498346590643,
+        "conditional_CI95_kJ_mol": [
+          51.69332637045787,
+          68.496640561355
+        ],
+        "residuals_ln_x": [
+          -0.10267270512977622,
+          0.10623402810776283,
+          0.07929062724772318,
+          -0.050653879225181386,
+          -0.03219807100052785
+        ],
+        "leave_one_temperature_out_RMSE_ln_x": 0.15413846016353167,
+        "fitted_ln_x": [
+          -0.24532570333005976,
+          0.5679851425666635,
+          1.3293521375359292,
+          2.043597548413019,
+          2.7149646515682386
+        ],
+        "df": 3,
+        "interpretation": "Conditional apparent slope of the reported solubility basis; not a measured thermodynamic dissolution enthalpy. Activities, solvate equilibria, raw repeats and independent data remain unverified."
+      }
+    },
+    {
+      "solvent": "ethyl acetate",
+      "equilibrium_form_as_reported": "I",
+      "mole_fraction_fit": {
+        "intercept_at_mean_inverse_temperature": -5.642402042132362,
+        "slope_per_1000_K_inverse": -3.3703985165234984,
+        "apparent_slope_enthalpy_kJ_mol": 28.02305247391376,
+        "conditional_CI95_kJ_mol": [
+          23.20287238307009,
+          32.84323256475743
+        ],
+        "residuals_ln_x": [
+          0.04701104833852465,
+          -0.015135238121666283,
+          -0.07761463551399839,
+          0.001299592096531299,
+          0.04443923320060783
+        ],
+        "leave_one_temperature_out_RMSE_ln_x": 0.0855519649862451,
+        "fitted_ln_x": [
+          -6.354666887810789,
+          -5.975409731926932,
+          -5.6203746521014395,
+          -5.287312964188404,
+          -4.974245974634246
+        ],
+        "df": 3,
+        "interpretation": "Conditional apparent slope of the reported solubility basis; not a measured thermodynamic dissolution enthalpy. Activities, solvate equilibria, raw repeats and independent data remain unverified."
+      },
+      "mass_concentration_fit": {
+        "intercept_at_mean_inverse_temperature": 2.7138062400058125,
+        "slope_per_1000_K_inverse": -3.463198294335671,
+        "apparent_slope_enthalpy_kJ_mol": 28.794632757505997,
+        "conditional_CI95_kJ_mol": [
+          21.379450320776403,
+          36.209815194235595
+        ],
+        "residuals_ln_x": [
+          0.08965570787966781,
+          -0.06952461529035014,
+          -0.09244500848429782,
+          0.017805396870537837,
+          0.05450851902443965
+        ],
+        "leave_one_temperature_out_RMSE_ln_x": 0.13968502068775815,
+        "fitted_ln_x": [
+          1.9819300578345844,
+          2.3716295930475186,
+          2.73644012712918,
+          3.0786722589777176,
+          3.400359163040062
+        ],
+        "df": 3,
+        "interpretation": "Conditional apparent slope of the reported solubility basis; not a measured thermodynamic dissolution enthalpy. Activities, solvate equilibria, raw repeats and independent data remain unverified."
+      }
+    },
+    {
+      "solvent": "n-propanol",
+      "equilibrium_form_as_reported": "I",
+      "mole_fraction_fit": {
+        "intercept_at_mean_inverse_temperature": -7.282951725892125,
+        "slope_per_1000_K_inverse": -5.690764310804253,
+        "apparent_slope_enthalpy_kJ_mol": 47.31564713090255,
+        "conditional_CI95_kJ_mol": [
+          36.0216216452458,
+          58.609672616559294
+        ],
+        "residuals_ln_x": [
+          -0.021911955047359655,
+          -0.09791924407748365,
+          0.20462137036853267,
+          -0.012555830672272172,
+          -0.07223434057142608
+        ],
+        "leave_one_temperature_out_RMSE_ln_x": 0.15315955566847392,
+        "fitted_ln_x": [
+          -8.485578460907492,
+          -7.8452200354156645,
+          -7.245759481582263,
+          -6.683399998696312,
+          -6.154800652858893
+        ],
+        "df": 3,
+        "interpretation": "Conditional apparent slope of the reported solubility basis; not a measured thermodynamic dissolution enthalpy. Activities, solvate equilibria, raw repeats and independent data remain unverified."
+      },
+      "mass_concentration_fit": {
+        "intercept_at_mean_inverse_temperature": 1.4524204833865084,
+        "slope_per_1000_K_inverse": -6.467457316322321,
+        "apparent_slope_enthalpy_kJ_mol": 53.773432091063604,
+        "conditional_CI95_kJ_mol": [
+          40.37663308657263,
+          67.17023109555457
+        ],
+        "residuals_ln_x": [
+          0.05149428322790581,
+          -0.1117016554477458,
+          0.15223751732308366,
+          -0.1840410010134399,
+          0.09201085591019709
+        ],
+        "leave_one_temperature_out_RMSE_ln_x": 0.19863418354783663,
+        "fitted_ln_x": [
+          0.08565555491932786,
+          0.8134120666681789,
+          1.4946888395220084,
+          2.1338008732235005,
+          2.7345450825995266
+        ],
+        "df": 3,
+        "interpretation": "Conditional apparent slope of the reported solubility basis; not a measured thermodynamic dissolution enthalpy. Activities, solvate equilibria, raw repeats and independent data remain unverified."
+      }
+    },
+    {
+      "solvent": "isopropanol",
+      "equilibrium_form_as_reported": "I",
+      "mole_fraction_fit": {
+        "intercept_at_mean_inverse_temperature": -7.47750782086212,
+        "slope_per_1000_K_inverse": -4.291065913499015,
+        "apparent_slope_enthalpy_kJ_mol": 35.67790712981914,
+        "conditional_CI95_kJ_mol": [
+          29.453990785667116,
+          41.90182347397116
+        ],
+        "residuals_ln_x": [
+          -0.01756524185729802,
+          -0.04230639861938812,
+          0.11695312206538677,
+          -0.028631910040769704,
+          -0.02844957154793981
+        ],
+        "leave_one_temperature_out_RMSE_ln_x": 0.08167896032009977,
+        "fitted_ln_x": [
+          -8.384336905224204,
+          -7.901480813849453,
+          -7.4494633679401145,
+          -7.025421626558666,
+          -6.626836390738161
+        ],
+        "df": 3,
+        "interpretation": "Conditional apparent slope of the reported solubility basis; not a measured thermodynamic dissolution enthalpy. Activities, solvate equilibria, raw repeats and independent data remain unverified."
+      },
+      "mass_concentration_fit": {
+        "intercept_at_mean_inverse_temperature": 1.0680700281761464,
+        "slope_per_1000_K_inverse": -4.293244620592288,
+        "apparent_slope_enthalpy_kJ_mol": 35.69602190850207,
+        "conditional_CI95_kJ_mol": [
+          29.469489570361354,
+          41.92255424664278
+        ],
+        "residuals_ln_x": [
+          -0.017546350510197567,
+          -0.042301783931949055,
+          0.11700202197503806,
+          -0.02883088886782792,
+          -0.028322998665061716
+        ],
+        "leave_one_temperature_out_RMSE_ln_x": 0.08167450683030653,
+        "fitted_ln_x": [
+          0.16078051859610532,
+          0.6438817709664039,
+          1.0961287201356635,
+          1.5203857606452114,
+          1.9191733705373477
+        ],
+        "df": 3,
+        "interpretation": "Conditional apparent slope of the reported solubility basis; not a measured thermodynamic dissolution enthalpy. Activities, solvate equilibria, raw repeats and independent data remain unverified."
+      }
+    },
+    {
+      "solvent": "n-butanol",
+      "equilibrium_form_as_reported": "I",
+      "mole_fraction_fit": {
+        "intercept_at_mean_inverse_temperature": -6.436430313124063,
+        "slope_per_1000_K_inverse": -4.999117756292097,
+        "apparent_slope_enthalpy_kJ_mol": 41.56497770843674,
+        "conditional_CI95_kJ_mol": [
+          36.777970348435396,
+          46.35198506843809
+        ],
+        "residuals_ln_x": [
+          0.05740196286350763,
+          -0.07254005663769902,
+          -0.00013549325677075785,
+          -0.02084808835018581,
+          0.036121675381139084
+        ],
+        "leave_one_temperature_out_RMSE_ln_x": 0.09185827758538063,
+        "fitted_ln_x": [
+          -7.492891684014549,
+          -6.930361415595293,
+          -6.403758355761009,
+          -5.909747160994609,
+          -5.445392949254856
+        ],
+        "df": 3,
+        "interpretation": "Conditional apparent slope of the reported solubility basis; not a measured thermodynamic dissolution enthalpy. Activities, solvate equilibria, raw repeats and independent data remain unverified."
+      },
+      "mass_concentration_fit": {
+        "intercept_at_mean_inverse_temperature": 1.9084834868640026,
+        "slope_per_1000_K_inverse": -5.008696856190455,
+        "apparent_slope_enthalpy_kJ_mol": 41.64462277645719,
+        "conditional_CI95_kJ_mol": [
+          36.822240753023095,
+          46.467004799891285
+        ],
+        "residuals_ln_x": [
+          0.057857484075119814,
+          -0.07283208850007195,
+          -0.0004640269563143118,
+          -0.021244694347192006,
+          0.036683325728461114
+        ],
+        "leave_one_temperature_out_RMSE_ln_x": 0.09264004000268598,
+        "fitted_ln_x": [
+          0.8499977689779337,
+          1.4136059343181533,
+          1.941218048862257,
+          2.436175847172776,
+          2.9014198349888933
+        ],
+        "df": 3,
+        "interpretation": "Conditional apparent slope of the reported solubility basis; not a measured thermodynamic dissolution enthalpy. Activities, solvate equilibria, raw repeats and independent data remain unverified."
+      }
+    },
+    {
+      "solvent": "acetonitrile",
+      "equilibrium_form_as_reported": "III",
+      "mole_fraction_fit": {
+        "intercept_at_mean_inverse_temperature": -6.022393099287063,
+        "slope_per_1000_K_inverse": -5.65954838771623,
+        "apparent_slope_enthalpy_kJ_mol": 47.05610350529603,
+        "conditional_CI95_kJ_mol": [
+          40.737898143132384,
+          53.374308867459675
+        ],
+        "residuals_ln_x": [
+          0.07315896961605084,
+          -0.061278607889651227,
+          -0.039699196115534185,
+          -0.044685200650735446,
+          0.07250403503985403
+        ],
+        "leave_one_temperature_out_RMSE_ln_x": 0.12762101218500482,
+        "fitted_ln_x": [
+          -7.218422986917173,
+          -6.581577161537949,
+          -5.985404868036684,
+          -5.426130132542619,
+          -4.90043034740089
+        ],
+        "df": 3,
+        "interpretation": "Conditional apparent slope of the reported solubility basis; not a measured thermodynamic dissolution enthalpy. Activities, solvate equilibria, raw repeats and independent data remain unverified."
+      },
+      "mass_concentration_fit": {
+        "intercept_at_mean_inverse_temperature": 2.896528317692451,
+        "slope_per_1000_K_inverse": -5.769220076634851,
+        "apparent_slope_enthalpy_kJ_mol": 47.967964663079634,
+        "conditional_CI95_kJ_mol": [
+          40.245778078308405,
+          55.690151247850864
+        ],
+        "residuals_ln_x": [
+          0.08397870177513589,
+          -0.062352225431663744,
+          -0.05122190967395923,
+          -0.06517845646124165,
+          0.09477388979173007
+        ],
+        "leave_one_temperature_out_RMSE_ln_x": 0.1554101876730252,
+        "fitted_ln_x": [
+          1.6773215599682105,
+          2.3265082918059274,
+          2.934233313163831,
+          3.5043457693750257,
+          4.040232654149261
+        ],
+        "df": 3,
+        "interpretation": "Conditional apparent slope of the reported solubility basis; not a measured thermodynamic dissolution enthalpy. Activities, solvate equilibria, raw repeats and independent data remain unverified."
+      }
+    },
+    {
+      "solvent": "methanol/water 30/70 v/v",
+      "equilibrium_form_as_reported": "II",
+      "mole_fraction_fit": {
+        "intercept_at_mean_inverse_temperature": -10.597153130097368,
+        "slope_per_1000_K_inverse": -5.154481873863433,
+        "apparent_slope_enthalpy_kJ_mol": 42.85674685618597,
+        "conditional_CI95_kJ_mol": [
+          42.09670185445501,
+          43.61679185791693
+        ],
+        "residuals_ln_x": [
+          -0.006334530212368961,
+          0.013140273738645902,
+          -0.006838654244869957,
+          2.3645977972108767e-05,
+          9.264740597814125e-06
+        ],
+        "leave_one_temperature_out_RMSE_ln_x": 0.011877455549276727,
+        "fitted_ln_x": [
+          -11.68644753206219,
+          -11.106434775127811,
+          -10.563465783605173,
+          -10.054101557146602,
+          -9.575316002545065
+        ],
+        "df": 3,
+        "interpretation": "Conditional apparent slope of the reported solubility basis; not a measured thermodynamic dissolution enthalpy. Activities, solvate equilibria, raw repeats and independent data remain unverified."
+      },
+      "mass_concentration_fit": {
+        "intercept_at_mean_inverse_temperature": -1.4141066447074762,
+        "slope_per_1000_K_inverse": -2.794685355080378,
+        "apparent_slope_enthalpy_kJ_mol": 23.236306914316113,
+        "conditional_CI95_kJ_mol": [
+          17.199053543734404,
+          29.273560284897822
+        ],
+        "residuals_ln_x": [
+          0.054888505670648735,
+          -0.09236976110586737,
+          0.045686539251212244,
+          -0.04092212735197687,
+          0.0327168435359817
+        ],
+        "leave_one_temperature_out_RMSE_ln_x": 0.10125110796565671,
+        "fitted_ln_x": [
+          -2.004706279556979,
+          -1.6902317703374221,
+          -1.3958418537552297,
+          -1.119671953672014,
+          -0.8600813662157353
+        ],
+        "df": 3,
+        "interpretation": "Conditional apparent slope of the reported solubility basis; not a measured thermodynamic dissolution enthalpy. Activities, solvate equilibria, raw repeats and independent data remain unverified."
+      }
+    },
+    {
+      "solvent": "ethanol/water 24/76 v/v",
+      "equilibrium_form_as_reported": "I",
+      "mole_fraction_fit": {
+        "intercept_at_mean_inverse_temperature": -9.074742899370234,
+        "slope_per_1000_K_inverse": -6.415115380422612,
+        "apparent_slope_enthalpy_kJ_mol": 53.3382370216637,
+        "conditional_CI95_kJ_mol": [
+          46.58695791290163,
+          60.08951613042577
+        ],
+        "residuals_ln_x": [
+          0.041346055565730566,
+          0.013406326081939923,
+          -0.12654550091709105,
+          0.03599162463931549,
+          0.0358014946300953
+        ],
+        "leave_one_temperature_out_RMSE_ln_x": 0.09736263406000671,
+        "fitted_ln_x": [
+          -10.430446429396445,
+          -9.70857974154986,
+          -9.032816626294462,
+          -8.398877005716797,
+          -7.802994693893605
+        ],
+        "df": 3,
+        "interpretation": "Conditional apparent slope of the reported solubility basis; not a measured thermodynamic dissolution enthalpy. Activities, solvate equilibria, raw repeats and independent data remain unverified."
+      },
+      "mass_concentration_fit": {
+        "intercept_at_mean_inverse_temperature": 0.5518671965108505,
+        "slope_per_1000_K_inverse": -6.4023414930957685,
+        "apparent_slope_enthalpy_kJ_mol": 53.232029012996165,
+        "conditional_CI95_kJ_mol": [
+          41.19376013593189,
+          65.27029789006043
+        ],
+        "residuals_ln_x": [
+          0.05585389850812161,
+          0.0475643203283357,
+          -0.2276789464127424,
+          0.0715129159054173,
+          0.05274781167086773
+        ],
+        "leave_one_temperature_out_RMSE_ln_x": 0.16364353467318546,
+        "fitted_ln_x": [
+          -0.8011368334885954,
+          -0.08070753892158988,
+          0.5937099852754997,
+          1.2263872944518779,
+          1.8210830752370604
+        ],
+        "df": 3,
+        "interpretation": "Conditional apparent slope of the reported solubility basis; not a measured thermodynamic dissolution enthalpy. Activities, solvate equilibria, raw repeats and independent data remain unverified."
+      }
+    },
+    {
+      "solvent": "ethanol/water 55/45 v/v",
+      "equilibrium_form_as_reported": "I",
+      "mole_fraction_fit": {
+        "intercept_at_mean_inverse_temperature": -7.349406241051967,
+        "slope_per_1000_K_inverse": -6.812811499831402,
+        "apparent_slope_enthalpy_kJ_mol": 56.644866539872694,
+        "conditional_CI95_kJ_mol": [
+          39.888190616099784,
+          73.4015424636456
+        ],
+        "residuals_ln_x": [
+          -0.1871417279886618,
+          0.1798685781356646,
+          0.051291607483202384,
+          0.14410805525774872,
+          -0.1881265128879699
+        ],
+        "leave_one_temperature_out_RMSE_ln_x": 0.33403747800478784,
+        "fitted_ln_x": [
+          -8.789154718205022,
+          -8.022536913120051,
+          -7.304880807226197,
+          -6.631640985156815,
+          -5.9988177815517485
+        ],
+        "df": 3,
+        "interpretation": "Conditional apparent slope of the reported solubility basis; not a measured thermodynamic dissolution enthalpy. Activities, solvate equilibria, raw repeats and independent data remain unverified."
+      },
+      "mass_concentration_fit": {
+        "intercept_at_mean_inverse_temperature": 1.814622686942182,
+        "slope_per_1000_K_inverse": -6.816564922207572,
+        "apparent_slope_enthalpy_kJ_mol": 56.6760742299095,
+        "conditional_CI95_kJ_mol": [
+          39.944001447277984,
+          73.40814701254102
+        ],
+        "residuals_ln_x": [
+          -0.18677190237357097,
+          0.1795674409946011,
+          0.05096227053585167,
+          0.1441200866270118,
+          -0.18787789578389402
+        ],
+        "leave_one_temperature_out_RMSE_ln_x": 0.33350806096470614,
+        "fitted_ln_x": [
+          0.37408100067856465,
+          1.1411211630272957,
+          1.8591726514275242,
+          2.5327833854783615,
+          3.1659552340991644
+        ],
+        "df": 3,
+        "interpretation": "Conditional apparent slope of the reported solubility basis; not a measured thermodynamic dissolution enthalpy. Activities, solvate equilibria, raw repeats and independent data remain unverified."
+      }
+    },
+    {
+      "solvent": "acetonitrile/water 25/75 v/v",
+      "equilibrium_form_as_reported": "III",
+      "mole_fraction_fit": {
+        "intercept_at_mean_inverse_temperature": -9.897868817577807,
+        "slope_per_1000_K_inverse": -4.975606852705934,
+        "apparent_slope_enthalpy_kJ_mol": 41.36949717945058,
+        "conditional_CI95_kJ_mol": [
+          28.22711330278478,
+          54.51188105611639
+        ],
+        "residuals_ln_x": [
+          -0.02292700414523452,
+          -0.11702461043759804,
+          0.18135184537443116,
+          0.101042549126662,
+          -0.14244277991826593
+        ],
+        "leave_one_temperature_out_RMSE_ln_x": 0.20784581940641617,
+        "fitted_ln_x": [
+          -10.949361639487375,
+          -10.389476956859424,
+          -9.865350516775166,
+          -9.37366266187329,
+          -8.911492312893781
+        ],
+        "df": 3,
+        "interpretation": "Conditional apparent slope of the reported solubility basis; not a measured thermodynamic dissolution enthalpy. Activities, solvate equilibria, raw repeats and independent data remain unverified."
+      },
+      "mass_concentration_fit": {
+        "intercept_at_mean_inverse_temperature": -0.3248691568617622,
+        "slope_per_1000_K_inverse": -4.973382890738425,
+        "apparent_slope_enthalpy_kJ_mol": 41.351006130807534,
+        "conditional_CI95_kJ_mol": [
+          28.199455222059818,
+          54.50255703955525
+        ],
+        "residuals_ln_x": [
+          -0.022474952493581668,
+          -0.11768810653885542,
+          0.18143383015460351,
+          0.10100189961043493,
+          -0.14227267073260175
+        ],
+        "leave_one_temperature_out_RMSE_ln_x": 0.20781051475853213,
+        "fitted_ln_x": [
+          -1.3758919898605781,
+          -0.8162575605740203,
+          -0.2923653908618852,
+          0.19910269283990323,
+          0.6610664641477693
+        ],
+        "df": 3,
+        "interpretation": "Conditional apparent slope of the reported solubility basis; not a measured thermodynamic dissolution enthalpy. Activities, solvate equilibria, raw repeats and independent data remain unverified."
+      }
+    },
+    {
+      "solvent": "acetonitrile/water 58/42 v/v",
+      "equilibrium_form_as_reported": "III",
+      "mole_fraction_fit": {
+        "intercept_at_mean_inverse_temperature": -7.1152449034618614,
+        "slope_per_1000_K_inverse": -5.332723418216484,
+        "apparent_slope_enthalpy_kJ_mol": 44.33872951371132,
+        "conditional_CI95_kJ_mol": [
+          32.3088858672933,
+          56.368573160129344
+        ],
+        "residuals_ln_x": [
+          -0.14580171992973767,
+          0.200612003674709,
+          -0.0025854401907103863,
+          0.006684841046937784,
+          -0.05890968460121293
+        ],
+        "leave_one_temperature_out_RMSE_ln_x": 0.22437235424578889,
+        "fitted_ln_x": [
+          -8.242207013105673,
+          -7.642137464417952,
+          -7.080392651396058,
+          -6.553414653353085,
+          -6.058072735036539
+        ],
+        "df": 3,
+        "interpretation": "Conditional apparent slope of the reported solubility basis; not a measured thermodynamic dissolution enthalpy. Activities, solvate equilibria, raw repeats and independent data remain unverified."
+      },
+      "mass_concentration_fit": {
+        "intercept_at_mean_inverse_temperature": 2.113168458119181,
+        "slope_per_1000_K_inverse": -5.33779726655446,
+        "apparent_slope_enthalpy_kJ_mol": 44.380915836047606,
+        "conditional_CI95_kJ_mol": [
+          32.35442579838143,
+          56.407405873713785
+        ],
+        "residuals_ln_x": [
+          -0.14572440678510978,
+          0.20063728049539709,
+          -0.0027075539798482318,
+          0.006515133926231265,
+          -0.05872045365666567
+        ],
+        "leave_one_temperature_out_RMSE_ln_x": 0.22425311165653516,
+        "fitted_ln_x": [
+          0.9851340943233071,
+          1.5857745824060627,
+          2.1480538705474026,
+          2.675533264636978,
+          3.171346478682156
+        ],
+        "df": 3,
+        "interpretation": "Conditional apparent slope of the reported solubility basis; not a measured thermodynamic dissolution enthalpy. Activities, solvate equilibria, raw repeats and independent data remain unverified."
+      }
+    }
+  ],
+  "basis_diagnostics": [
+    {
+      "solvent": "methanol",
+      "temperatures_K": [
+        293.15,
+        303.15,
+        313.15,
+        323.15,
+        333.15
+      ],
+      "recomputed_relative_deviation_percent": [
+        0.8984725965858124,
+        2.9579950582421257,
+        1.1489536315141655,
+        0.17859800565559902,
+        0.0
+      ],
+      "reported_relative_deviation_percent": [
+        0.899,
+        2.961,
+        1.15,
+        0.179,
+        0.024
+      ],
+      "deviation_difference_exceeds_0_05_percentage_points": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "implied_solvent_molarity_mol_L": [
+        27.299795017651203,
+        17.481842069204568,
+        11.331920474729138,
+        7.9925857261503355,
+        6.00037748756304
+      ],
+      "implied_molarity_relative_to_293K": [
+        1.0,
+        0.6403653235455192,
+        0.41509177879915465,
+        0.2927709061911482,
+        0.21979569750188166
+      ],
+      "assessment": "REVIEW: compare both concentration bases and formula/dilution/solid-form definitions with original raw data. No density was imputed."
+    },
+    {
+      "solvent": "ethanol",
+      "temperatures_K": [
+        293.15,
+        303.15,
+        313.15,
+        323.15,
+        333.15
+      ],
+      "recomputed_relative_deviation_percent": [
+        19.58996548704477,
+        5.994661525913854,
+        6.244995996797445,
+        3.870199464126225,
+        0.558130263616897
+      ],
+      "reported_relative_deviation_percent": [
+        19.595,
+        5.995,
+        6.245,
+        3.633,
+        0.721
+      ],
+      "deviation_difference_exceeds_0_05_percentage_points": [
+        false,
+        false,
+        false,
+        true,
+        true
+      ],
+      "implied_solvent_molarity_mol_L": [
+        18.921001674716756,
+        18.920381029639824,
+        18.920359851448573,
+        18.92073699405817,
+        18.920762117496608
+      ],
+      "implied_molarity_relative_to_293K": [
+        1.0,
+        0.9999671980856193,
+        0.9999660787901604,
+        0.9999860112766155,
+        0.9999873390836137
+      ],
+      "assessment": "REVIEW: compare both concentration bases and formula/dilution/solid-form definitions with original raw data. No density was imputed."
+    },
+    {
+      "solvent": "ethyl acetate",
+      "temperatures_K": [
+        293.15,
+        303.15,
+        313.15,
+        323.15,
+        333.15
+      ],
+      "recomputed_relative_deviation_percent": [
+        10.113592712506179,
+        2.293889621548158,
+        6.332209860709276,
+        0.6163693474782261,
+        1.0999045365873865
+      ],
+      "reported_relative_deviation_percent": [
+        9.998,
+        2.205,
+        6.417,
+        0.654,
+        1.129
+      ],
+      "deviation_difference_exceeds_0_05_percentage_points": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "implied_solvent_molarity_mol_L": [
+        11.309645266220755,
+        10.364461533346818,
+        10.879326703163828,
+        11.309629775954905,
+        11.309675043388069
+      ],
+      "implied_molarity_relative_to_293K": [
+        1.0,
+        0.9164267569295936,
+        0.9619511883063045,
+        0.9999986303490971,
+        1.0000026329002027
+      ],
+      "assessment": "REVIEW: compare both concentration bases and formula/dilution/solid-form definitions with original raw data. No density was imputed."
+    },
+    {
+      "solvent": "n-propanol",
+      "temperatures_K": [
+        293.15,
+        303.15,
+        313.15,
+        323.15,
+        333.15
+      ],
+      "recomputed_relative_deviation_percent": [
+        24.3971280019807,
+        24.720493396040446,
+        13.890507695999457,
+        0.5097499797718167,
+        0.7745658887257517
+      ],
+      "reported_relative_deviation_percent": [
+        24.395,
+        24.72,
+        13.891,
+        0.178,
+        0.536
+      ],
+      "deviation_difference_exceeds_0_05_percentage_points": [
+        false,
+        false,
+        false,
+        true,
+        true
+      ],
+      "implied_solvent_molarity_mol_L": [
+        14.771159038641771,
+        14.771989998008067,
+        15.41632845743611,
+        14.771761027588663,
+        22.194665355651253
+      ],
+      "implied_molarity_relative_to_293K": [
+        1.0,
+        1.0000562555290429,
+        1.0436776435150794,
+        1.0000407543473953,
+        1.5025676250312774
+      ],
+      "assessment": "REVIEW: compare both concentration bases and formula/dilution/solid-form definitions with original raw data. No density was imputed."
+    },
+    {
+      "solvent": "isopropanol",
+      "temperatures_K": [
+        293.15,
+        303.15,
+        313.15,
+        323.15,
+        333.15
+      ],
+      "recomputed_relative_deviation_percent": [
+        9.414542862234885,
+        8.778109677055745,
+        9.686052023916941,
+        2.132191225836324,
+        0.3029832193909292
+      ],
+      "reported_relative_deviation_percent": [
+        9.416,
+        8.779,
+        9.687,
+        2.132,
+        0.083
+      ],
+      "deviation_difference_exceeds_0_05_percentage_points": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "implied_solvent_molarity_mol_L": [
+        13.371828353613614,
+        13.373171307616655,
+        13.372831199489283,
+        13.369585885784145,
+        13.370978668150617
+      ],
+      "implied_molarity_relative_to_293K": [
+        1.0,
+        1.0001004315915167,
+        1.0000749969150926,
+        0.9998322990865447,
+        0.9999364570468205
+      ],
+      "assessment": "REVIEW: compare both concentration bases and formula/dilution/solid-form definitions with original raw data. No density was imputed."
+    },
+    {
+      "solvent": "n-butanol",
+      "temperatures_K": [
+        293.15,
+        303.15,
+        313.15,
+        323.15,
+        333.15
+      ],
+      "recomputed_relative_deviation_percent": [
+        12.07241414381125,
+        2.829835906911274,
+        1.8911244033593235,
+        2.6572321126124465,
+        0.6502938613153125
+      ],
+      "reported_relative_deviation_percent": [
+        12.073,
+        2.83,
+        2.18,
+        2.537,
+        0.54
+      ],
+      "deviation_difference_exceeds_0_05_percentage_points": [
+        false,
+        false,
+        true,
+        true,
+        true
+      ],
+      "implied_solvent_molarity_mol_L": [
+        10.924337980179253,
+        10.924456010867056,
+        10.926922324478953,
+        10.925551809577549,
+        10.925808846134368
+      ],
+      "implied_molarity_relative_to_293K": [
+        1.0,
+        1.0000108043789946,
+        1.0002365675892113,
+        1.0001111123988016,
+        1.0001346411981928
+      ],
+      "assessment": "REVIEW: compare both concentration bases and formula/dilution/solid-form definitions with original raw data. No density was imputed."
+    },
+    {
+      "solvent": "acetonitrile",
+      "temperatures_K": [
+        293.15,
+        303.15,
+        313.15,
+        323.15,
+        333.15
+      ],
+      "recomputed_relative_deviation_percent": [
+        23.07155809736365,
+        5.670221744801642,
+        1.5016754229926113,
+        5.15708921526689,
+        1.0683360197923366
+      ],
+      "reported_relative_deviation_percent": [
+        23.071,
+        5.431,
+        1.612,
+        5.101,
+        1.03
+      ],
+      "deviation_difference_exceeds_0_05_percentage_points": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      "implied_solvent_molarity_mol_L": [
+        19.182792633547816,
+        19.181494152520962,
+        19.18125544966734,
+        19.18261213315056,
+        20.148620849253913
+      ],
+      "implied_molarity_relative_to_293K": [
+        1.0,
+        0.9999323101150255,
+        0.9999198665225736,
+        0.9999905905046932,
+        1.0503486762410708
+      ],
+      "assessment": "REVIEW: compare both concentration bases and formula/dilution/solid-form definitions with original raw data. No density was imputed."
+    },
+    {
+      "solvent": "methanol/water 30/70 v/v",
+      "temperatures_K": [
+        293.15,
+        303.15,
+        313.15,
+        323.15,
+        333.15
+      ],
+      "recomputed_relative_deviation_percent": [
+        3.613880941835545,
+        1.0516629420270813,
+        2.6493162426462002,
+        1.6670541734480353,
+        1.6032381665754387
+      ],
+      "reported_relative_deviation_percent": [
+        3.614,
+        1.053,
+        2.648,
+        1.668,
+        1.604
+      ],
+      "deviation_difference_exceeds_0_05_percentage_points": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "implied_solvent_molarity_mol_L": [
+        44.30928357896187,
+        28.758001399629787,
+        26.268269771973127,
+        18.947634617923505,
+        16.380818930947814
+      ],
+      "implied_molarity_relative_to_293K": [
+        1.0,
+        0.6490288056312457,
+        0.5928389639873426,
+        0.42762222919171455,
+        0.3696927056325835
+      ],
+      "assessment": "REVIEW: compare both concentration bases and formula/dilution/solid-form definitions with original raw data. No density was imputed."
+    },
+    {
+      "solvent": "ethanol/water 24/76 v/v",
+      "temperatures_K": [
+        293.15,
+        303.15,
+        313.15,
+        323.15,
+        333.15
+      ],
+      "recomputed_relative_deviation_percent": [
+        12.70233374504323,
+        6.935693406950309,
+        10.738382590516014,
+        2.789561640313649,
+        0.2786962683042006
+      ],
+      "reported_relative_deviation_percent": [
+        12.703,
+        6.935,
+        10.741,
+        2.79,
+        0.28
+      ],
+      "deviation_difference_exceeds_0_05_percentage_points": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "implied_solvent_molarity_mol_L": [
+        40.12601811141943,
+        40.86225994058074,
+        35.64205328593393,
+        40.804422757096944,
+        39.998377018648824
+      ],
+      "implied_molarity_relative_to_293K": [
+        1.0,
+        1.0183482404637552,
+        0.8882529332206675,
+        1.0169068519032656,
+        0.9968189942890376
+      ],
+      "assessment": "REVIEW: compare both concentration bases and formula/dilution/solid-form definitions with original raw data. No density was imputed."
+    },
+    {
+      "solvent": "ethanol/water 55/45 v/v",
+      "temperatures_K": [
+        293.15,
+        303.15,
+        313.15,
+        323.15,
+        333.15
+      ],
+      "recomputed_relative_deviation_percent": [
+        90.61486112210176,
+        11.746727115276864,
+        8.753161963172863,
+        14.281022137555027,
+        4.39667331355479
+      ],
+      "reported_relative_deviation_percent": [
+        90.613,
+        11.747,
+        8.753,
+        14.151,
+        4.2
+      ],
+      "deviation_difference_exceeds_0_05_percentage_points": [
+        false,
+        false,
+        false,
+        true,
+        true
+      ],
+      "implied_solvent_molarity_mol_L": [
+        24.82167960094852,
+        24.808901597584452,
+        24.81019167682162,
+        24.807628938976084,
+        24.808881109623393
+      ],
+      "implied_molarity_relative_to_293K": [
+        1.0,
+        0.999485207948475,
+        0.9995371818381517,
+        0.9994339358899831,
+        0.9994843825425641
+      ],
+      "assessment": "REVIEW: compare both concentration bases and formula/dilution/solid-form definitions with original raw data. No density was imputed."
+    },
+    {
+      "solvent": "acetonitrile/water 25/75 v/v",
+      "temperatures_K": [
+        293.15,
+        303.15,
+        313.15,
+        323.15,
+        333.15
+      ],
+      "recomputed_relative_deviation_percent": [
+        39.22893250247509,
+        37.66357189853061,
+        7.271325796505655,
+        8.001106830420813,
+        8.39818694945695
+      ],
+      "reported_relative_deviation_percent": [
+        39.227,
+        37.663,
+        7.272,
+        8.001,
+        8.395
+      ],
+      "deviation_difference_exceeds_0_05_percentage_points": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "implied_solvent_molarity_mol_L": [
+        37.41766100614639,
+        37.366210147606516,
+        37.38401172366108,
+        37.370029056289034,
+        37.3693269027646
+      ],
+      "implied_molarity_relative_to_293K": [
+        1.0,
+        0.9986249579167596,
+        0.9991007112261833,
+        0.9987270195790825,
+        0.9987082542820127
+      ],
+      "assessment": "REVIEW: compare both concentration bases and formula/dilution/solid-form definitions with original raw data. No density was imputed."
+    },
+    {
+      "solvent": "acetonitrile/water 58/42 v/v",
+      "temperatures_K": [
+        293.15,
+        303.15,
+        313.15,
+        323.15,
+        333.15
+      ],
+      "recomputed_relative_deviation_percent": [
+        32.37103436154322,
+        11.262129299612878,
+        3.5149594290276087,
+        1.9305826596041311,
+        0.5940773661058576
+      ],
+      "reported_relative_deviation_percent": [
+        32.371,
+        11.262,
+        3.515,
+        1.603,
+        0.369
+      ],
+      "deviation_difference_exceeds_0_05_percentage_points": [
+        false,
+        false,
+        false,
+        true,
+        true
+      ],
+      "implied_solvent_molarity_mol_L": [
+        26.45457462188488,
+        26.458806289548768,
+        26.462352645400966,
+        26.458584536770974,
+        26.46013318431275
+      ],
+      "implied_molarity_relative_to_293K": [
+        1.0,
+        1.0001599597696946,
+        1.0002940143104646,
+        1.0001515773715286,
+        1.0002101172484275
+      ],
+      "assessment": "REVIEW: compare both concentration bases and formula/dilution/solid-form definitions with original raw data. No density was imputed."
+    }
+  ],
+  "aqueous_pH_diagnostics": {
+    "reported_ug_mL": [
+      0.41,
+      0.39,
+      0.32,
+      0.31,
+      0.27,
+      0.18,
+      0.11,
+      0.1
+    ],
+    "molarity_API_equivalents": [
+      1.0665140597768124e-06,
+      1.0144889836901387e-06,
+      8.324012173867805e-07,
+      8.063886793434435e-07,
+      7.02338527170096e-07,
+      4.6822568478006395e-07,
+      2.8613791847670576e-07,
+      2.601253804333689e-07
+    ],
+    "main_article_calibration_range_mg_mL": [
+      0.001,
+      0.1
+    ],
+    "below_stated_calibration_range_without_documented_preconcentration": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "assessment": "REVIEW: verify aqueous quantification LOQ/calibration and any concentration step; do not fit a pKa or label an intrinsic S0 without phase and analytical validation"
+  },
+  "limitations": [
+    "100 delta is model relative deviation, not replicate SD; do not use it as a measurement weight",
+    "Three repeats are reported in methods, but individual data/SD are unavailable",
+    "Reported mole fraction and mass concentration remain separate; apparent slope differences need source review",
+    "Mixed-solvent composition basis and solvate/hydrate equilibrium require explicit thermodynamic treatment",
+    "No extrapolation outside 293.15–333.15 K or claim of bioavailability"
+  ],
+  "scientific_review": "NOT_RUN"
+}

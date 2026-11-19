@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "transitions": [
+    {
+      "energy_eV": 8.204556416110469,
+      "oscillator_strength_length": 0.02102524324554706,
+      "oscillator_strength_velocity": 0.1028131478889866
+    },
+    {
+      "energy_eV": 10.232423175905714,
+      "oscillator_strength_length": 1.5644871930404968e-27,
+      "oscillator_strength_velocity": 6.395889426773222e-27
+    },
+    {
+      "energy_eV": 10.445300780249209,
+      "oscillator_strength_length": 0.08272517117360512,
+      "oscillator_strength_velocity": 0.17651147723971589
+    }
+  ]
+}

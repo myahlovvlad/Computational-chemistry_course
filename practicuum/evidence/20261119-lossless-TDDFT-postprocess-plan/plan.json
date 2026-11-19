@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-11-19T09:39:03.005369+00:00",
+  "watcher_pid": 9648,
+  "target_pid": 20420,
+  "run": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\course-restructure-20261118\\practicuum\\evidence\\20261119-istradefylline-CAM-TZVP-lossless-water",
+  "auditor_sha256": "93791453e9c78c4577698e82f520f1d0c27972da2402bc097eae798d0a4ecadb",
+  "output": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\course-restructure-20261118\\practicuum\\evidence\\20261119-istradefylline-CAM-TZVP-electronic-audit",
+  "maximum_wait_seconds": 86400,
+  "scope": "Only analyze a completed PASS checkpoint; no new SCF, no new TDDFT, no publishing",
+  "on_numerical_failure": "Record BLOCKED; do not invent missing transition data"
+}

@@ -1,0 +1,9 @@
+{
+  "all_electrons": 11,
+  "protocol": {
+    "functional": "CAM-B3LYP",
+    "static_dielectric": 78.3553,
+    "optical_dielectric": 1.78
+  },
+  "scope": "Deliberate negative control: mismatched count, not a physical result"
+}

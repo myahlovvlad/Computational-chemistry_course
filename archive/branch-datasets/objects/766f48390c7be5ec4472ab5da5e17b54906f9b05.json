@@ -1,0 +1,77 @@
+[
+  {
+    "path": "activities.csv",
+    "bytes": 291,
+    "sha256": "ecaaf3d2abf7eb4876acb5b0bc925198e2f862c31e4425cf1fc4f513ab7ea832"
+  },
+  {
+    "path": "DEEP_CHEM_LICENSE.txt",
+    "bytes": 1047,
+    "sha256": "e93ec2f869cea11536743939feb7943e195096ea363e16298620d4622046631f"
+  },
+  {
+    "path": "docking/1iep_ligand.pdbqt",
+    "bytes": 3841,
+    "sha256": "15fb35648d8c18c70317842f3a0631b73a19429c710a037ab07310084d579bb8"
+  },
+  {
+    "path": "docking/1iep_ligand.sdf",
+    "bytes": 6621,
+    "sha256": "051b8742c32adc05c07fb486a4e7c9327f84e131cee33ac4e6a568d07553eb38"
+  },
+  {
+    "path": "docking/1iep_ligand_vina_out.pdbqt",
+    "bytes": 16240,
+    "sha256": "4137e1960b3491f17a24579d991f32a2c0cb254af1f58d7278f77579fc27d93f"
+  },
+  {
+    "path": "docking/1iep_receptor.box.txt",
+    "bytes": 101,
+    "sha256": "3dff08200b5b9c2ca0932c832c9dffc5823b39caec6c92f76be5f7c5ea49d8de"
+  },
+  {
+    "path": "docking/1iep_receptor.pdbqt",
+    "bytes": 216160,
+    "sha256": "f13cf3b36f61d87c3b58983e0b8ecf1c3456a685eb86dfe9ccfb139c7bdc2586"
+  },
+  {
+    "path": "docking/provenance.json",
+    "bytes": 1658,
+    "sha256": "297afb200c060307e94cfb42bc9a1d46b0e0f34a189361b2692d36def14c7c61"
+  },
+  {
+    "path": "docking/UPSTREAM_LICENSE.txt",
+    "bytes": 11358,
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  {
+    "path": "esol.csv",
+    "bytes": 96699,
+    "sha256": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189"
+  },
+  {
+    "path": "factorial.csv",
+    "bytes": 43,
+    "sha256": "01208a741de90faaaa2a33381f1854539e3d9e97f6679e6169cc8a2ac7ab8a41"
+  },
+  {
+    "path": "molecules.csv",
+    "bytes": 303,
+    "sha256": "f1904ebd8af5789d383f9593365bf5443abf7aa60106db0ecfb50d4fff628465"
+  },
+  {
+    "path": "README.md",
+    "bytes": 6418,
+    "sha256": "a78922826f781624578513ebfb44fc8bb89bd975b263279abc1a1c5c33e0e6e0"
+  },
+  {
+    "path": "routes.csv",
+    "bytes": 65,
+    "sha256": "c3ddf027fcb04b233b0d2c12e7cdc2059028e31982e2a9981acf04644d58244d"
+  },
+  {
+    "path": "practice_cases.json",
+    "bytes": 8329,
+    "sha256": "ecee1412fdf589ad2618001448938b714383e0cb7e0697d8e3949d1b6cd3bb94"
+  }
+]

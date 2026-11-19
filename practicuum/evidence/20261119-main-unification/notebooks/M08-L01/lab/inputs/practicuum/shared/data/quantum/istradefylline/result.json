@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "scope": "computed gas-phase vertical transitions; not measured absorbance",
+  "compound": "istradefylline",
+  "cid": 5311037,
+  "smiles": "CCN1C2=C(C(=O)N(C1=O)CC)N(C(=N2)/C=C/C3=CC(=C(C=C3)OC)OC)C",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/istradefylline/property/MolecularFormula,MolecularWeight,CanonicalSMILES,IsomericSMILES,XLogP,TPSA/JSON",
+  "method": "B3LYP/STO-3G, density fitting, grids level 1, gas phase; TDDFT singlets, length gauge",
+  "geometry_method": "ETKDGv3 seed 20261118 + MMFF; not DFT optimized",
+  "geometry_sha256": "8b1ec2efb6af4bbf7c984c43eec14553b658ca8cddf2ede549c0d9e45edcfdfa",
+  "charge": 0,
+  "spin": 0,
+  "scf_converged": true,
+  "energy_hartree": -1279.956558216535,
+  "transitions": [
+    {
+      "state": 1,
+      "energy_eV": 3.7122936942342766,
+      "wavelength_nm": 333.98273047675474,
+      "oscillator_strength": 0.002695716220243701
+    },
+    {
+      "state": 2,
+      "energy_eV": 3.81325282383995,
+      "wavelength_nm": 325.1402520652906,
+      "oscillator_strength": 0.592037869830763
+    },
+    {
+      "state": 3,
+      "energy_eV": 4.077882284243059,
+      "wavelength_nm": 304.04065098268114,
+      "oscillator_strength": 0.07553527060244697
+    },
+    {
+      "state": 4,
+      "energy_eV": 4.549126489033398,
+      "wavelength_nm": 272.54506712901826,
+      "oscillator_strength": 0.005276339172888101
+    },
+    {
+      "state": 5,
+      "energy_eV": 4.872509146198535,
+      "wavelength_nm": 254.45657404241308,
+      "oscillator_strength": 0.0019162899667283947
+    },
+    {
+      "state": 6,
+      "energy_eV": 4.875753842518963,
+      "wavelength_nm": 254.28723934337557,
+      "oscillator_strength": 0.2471052047431396
+    }
+  ],
+  "limitations": [
+    "minimal basis and coarse grid",
+    "no solvent",
+    "no vibrational/thermal broadening",
+    "MMFF geometry, not DFT stationary point",
+    "no absolute measured extinction coefficient",
+    "not a reproduction of the literature aqueous-xanthine protocol"
+  ],
+  "versions": {
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "pyscf": "2.15.1",
+    "rdkit": "2026.09.1",
+    "numpy": "2.5.4"
+  },
+  "utc": "2026-11-18T12:05:17.464536+00:00"
+}

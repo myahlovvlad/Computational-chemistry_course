@@ -1,0 +1,9 @@
+{
+  "all_electrons": 10,
+  "protocol": {
+    "functional": "CAM-B3LYP",
+    "static_dielectric": 78.3553,
+    "optical_dielectric": 1.78
+  },
+  "scope": "Actual H2O calculation to check independent checkpoint analysis; not course target-drug evidence"
+}

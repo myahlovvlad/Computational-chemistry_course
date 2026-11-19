@@ -4,6 +4,7 @@ Use quantum-core on Windows or quantum on Linux. This route does not require
 dispersion or an optimizer and never certifies the input as a DFT minimum.
 """
 from datetime import datetime, timezone
+from contextlib import ExitStack
 import argparse
 import hashlib
 import importlib.metadata
@@ -55,9 +56,12 @@ def main():
         'geometry_sha256':sha(geometry),'geometry_source_id':selected['source_id'],
         'geometry_model':'GFN2-xTB 6.8.0 / ALPB water gsolv, independently projected positive Hessian',
         'canonical_state_smiles':source['canonical_state_smiles'],'charge':source['charge'],'spin_2S':0,
-        'all_electrons':electrons,'packages':{k:importlib.metadata.version(k) for k in ['pyscf','numpy','scipy','rdkit']}}
+        'all_electrons':electrons,'packages':{k:importlib.metadata.version(k) for k in ['pyscf','numpy','scipy','rdkit','h5py']}}
+    if p.get('scratch_compression'):
+        manifest['IO_helper_sha256']=sha(ROOT/'practicuum/shared/lossless_scratch.py')
+        shutil.copyfile(ROOT/'practicuum/shared/lossless_scratch.py',out/'io-helper-source.py')
     save(out/'manifest.json',manifest);shutil.copyfile(__file__,out/'runner-source.py');shutil.copyfile(geometry,out/'input.xyz')
-    scratch=None;mf=None;td=None
+    scratch=None;mf=None;td=None;io_stack=ExitStack();io_ledger=[]
     try:
         args.scratch.mkdir(parents=True,exist_ok=True)
         free=shutil.disk_usage(args.scratch).free
@@ -73,11 +77,18 @@ def main():
         from pyscf import gto,dft,lib
         from scipy.constants import physical_constants
         lib.param.TMPDIR=scratch.name
+        if p.get('scratch_compression'):
+            if p['scratch_compression']!='gzip1-shuffle-fletcher32':raise ValueError('Unsupported scratch compression')
+            from lossless_scratch import compressed_scratch
+            io_stack.enter_context(compressed_scratch(scratch.name,
+                minimum_free_bytes=p['resources']['scratch_reserve_GiB']*1024**3,ledger=io_ledger))
         lib.num_threads(p['resources']['threads'])
         mol=gto.M(atom='\n'.join(geometry.read_text().splitlines()[2:]),basis=p['basis'],unit='Angstrom',
             charge=source['charge'],spin=0,max_memory=p['resources']['memory_MB'],verbose=4,output=str(out/'pyscf.log'))
         if mol.nelectron!=electrons:raise ValueError('All-electron count mismatch')
-        mf=dft.RKS(mol).density_fit();mf.xc=p['functional'];mf=mf.PCM()
+        mf=dft.RKS(mol).density_fit();mf.xc=p['functional']
+        mf.with_df._cderi_to_save=str(Path(scratch.name)/'integrals.h5')
+        mf=mf.PCM()
         mf.with_solvent.method=p['solvent_model'];mf.with_solvent.eps=p['static_dielectric']
         mf.with_solvent.eps_optical=p['optical_dielectric'];mf.with_solvent.lebedev_order=p['surface_lebedev_order']
         mf.with_solvent.max_memory=p['resources']['memory_MB'];mf.grids.level=p['grid_level']
@@ -112,12 +123,16 @@ def main():
             'required_follow_up':p['required_follow_up'],'limitations':p['limitations']})
         print('PASS numerical SCF/TDDFT gates; scientific acceptance REVIEW_REQUIRED',flush=True)
     except Exception as error:
-        save(out/'failure.json',{'status':'FAIL','type':type(error).__name__,'message':str(error),'seconds':time.perf_counter()-started})
+        save(out/'failure.json',{'status':'BLOCKED' if type(error).__name__=='ScratchSpaceError' else 'FAIL',
+            'type':type(error).__name__,'message':str(error),'seconds':time.perf_counter()-started})
         raise
     finally:
         if scratch is not None:
             import gc
             mf=None;td=None;gc.collect()
+            io_stack.close()
+            save(out/'scratch-io.json',{'compression':p.get('scratch_compression'),'datasets':io_ledger,
+                'scope':'Lossless storage only; no integral rounding or model change'})
             try:scratch.cleanup()
             except OSError as error:
                 save(out/'scratch-retained.json',{'path':scratch.name,'reason':str(error),

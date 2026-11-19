@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-19",
+  "source_commit": "4a9ab3a97819b0e1f408d4ea3a7ef87ac68e8abb",
+  "windows_notebooks": {
+    "status": "PASS",
+    "count": 56,
+    "summary": "notebooks/summary.json"
+  },
+  "shared_tests": {
+    "status": "PASS",
+    "count": 47,
+    "command": "python -m unittest discover -s practicuum/shared/tests -p test_*.py -v"
+  },
+  "source_consistency": "PASS",
+  "legacy_archive": {
+    "status": "PASS",
+    "files": 704,
+    "mapped_tasks": 42
+  },
+  "branch_datasets": {
+    "status": "PASS",
+    "records": 47896,
+    "unique_files": 15406
+  },
+  "local_stepik_package": {
+    "status": "PASS",
+    "lessons": 28,
+    "steps": 212,
+    "package_manifest_sha256": "d2c192b7c9925f725140a59b838be2667ec6815abec499ba2eb0a5e182923cee"
+  },
+  "independent_scientific_review": "NOT_RUN",
+  "student_pilot": "NOT_RUN",
+  "stepik_platform": "NOT_RUN",
+  "new_linux_execution": "NOT_RUN"
+}

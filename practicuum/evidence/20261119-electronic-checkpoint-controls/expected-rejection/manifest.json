@@ -1,0 +1,16 @@
+{
+  "utc": "2026-11-19T09:35:47.878551+00:00",
+  "argv": [
+    "scripts/analyze_electronic_checkpoint.py",
+    "--run",
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\course-restructure-20261118\\practicuum\\evidence\\20261119-electronic-checkpoint-controls\\deliberately-corrupted-electron-count",
+    "--out",
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\course-restructure-20261118\\practicuum\\evidence\\20261119-electronic-checkpoint-controls\\expected-rejection"
+  ],
+  "auditor_sha256": "93791453e9c78c4577698e82f520f1d0c27972da2402bc097eae798d0a4ecadb",
+  "parent_manifest_sha256": "0ccfb5fd7c7f023c80bbd3a7d611fa0ad3f79180c676d7384cbd7f30090ef905",
+  "parent_result_sha256": "52cc9bb174503a848c6040dece40b9445a946783519da7bb8b2c6cff5c040b0c",
+  "checkpoint_sha256": "e62dc4d893ce3e8fedd947e3e67e0e5c403af970f3395c6d2641598655ceb6e5",
+  "PySCF": "2.15.1",
+  "scope": "Independent density/TD-vector audit of a completed composite excitation run.\n\nNTO-like weights below use normalized X only, matching PySCF's documented CIS\ninterpretation. Y is retained and its size reported; no full-TDM claim is made.\n"
+}

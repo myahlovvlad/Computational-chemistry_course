@@ -1,0 +1,38 @@
+{
+  "new_heavy_atoms": [
+    {
+      "atom": [
+        "A",
+        "861",
+        "OXT"
+      ],
+      "nearest_ligand_A": 40.28999620253147
+    },
+    {
+      "atom": [
+        "B",
+        "860",
+        "OXT"
+      ],
+      "nearest_ligand_A": 3.790613934443867
+    },
+    {
+      "atom": [
+        "C",
+        "860",
+        "OXT"
+      ],
+      "nearest_ligand_A": 46.752269303211364
+    },
+    {
+      "atom": [
+        "D",
+        "860",
+        "OXT"
+      ],
+      "nearest_ligand_A": 39.30772123896271
+    }
+  ],
+  "max_original_pocket_heavy_displacement_A": 2.3110002163565455,
+  "criterion": "original pocket atoms within 6 A may not move >0.05 A without separate review"
+}

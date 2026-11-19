@@ -1,0 +1,1497 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "lesson_id": "M01-L01",
+      "role": "case",
+      "kernel": "course-v2-base",
+      "started_utc": "2026-11-19T12:32:18.941101+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M01\\lessons\\L01\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "49145b953f7497a439e81a113f88c9c29b2969b0ef4c834008f511d136e53b2e",
+      "data_sha256": {
+        "practicuum/shared/data/compounds.json": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267",
+        "practicuum/shared/data/structures.json": "e854bab679bebd217095481e49e64174d043f3c64a5b5d416fce559368cfd646"
+      },
+      "step_sha256": {
+        "practicuum/modules/M01/lessons/L01/steps/01_case.md": "ac15393b60b0f9abab39d39adb2ed26295bed9a95d849f71090b0fa54b8d44de"
+      },
+      "status": "PASS",
+      "seconds": 2.3104308000183664
+    },
+    {
+      "lesson_id": "M01-L01",
+      "role": "lab",
+      "kernel": "course-v2-base",
+      "started_utc": "2026-11-19T12:32:21.252755+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M01\\lessons\\L01\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "75eaca3f4434fc4e89267d222f37aaa687e67c6aaac1cbd7cc2c0436fcb27e9e",
+      "data_sha256": {
+        "practicuum/shared/data/compounds.json": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267",
+        "practicuum/shared/data/structures.json": "e854bab679bebd217095481e49e64174d043f3c64a5b5d416fce559368cfd646"
+      },
+      "step_sha256": {
+        "practicuum/modules/M01/lessons/L01/steps/02_lab.md": "0292c94d09fdddce01e7afdc23d3b3524bd8408983391c656fe87ada2a8fb011"
+      },
+      "status": "PASS",
+      "seconds": 1.113395499996841
+    },
+    {
+      "lesson_id": "M01-L02",
+      "role": "case",
+      "kernel": "course-v2-base",
+      "started_utc": "2026-11-19T12:32:22.366639+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M01\\lessons\\L02\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "fd89bd61b722dc6dbe5964d7c0a8d798db6a2f94fdf47d4247f7759ae29821c7",
+      "data_sha256": {
+        "practicuum/shared/data/esol.csv": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189"
+      },
+      "step_sha256": {
+        "practicuum/modules/M01/lessons/L02/steps/01_case.md": "e47abf78d6519e770fd4851bda08fdc476545f13bf80d4d4c6f0f60574a43a9f",
+        "practicuum/modules/M01/lessons/L02/steps/03_article_case.md": "6c26dafad54b46170111294a0044a8a3eb4bbee16b59bc4ba3ce0c680e094c25"
+      },
+      "status": "PASS",
+      "seconds": 3.4938947999908123
+    },
+    {
+      "lesson_id": "M01-L02",
+      "role": "lab",
+      "kernel": "course-v2-base",
+      "started_utc": "2026-11-19T12:32:25.861066+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M01\\lessons\\L02\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "0458a3708fd25ffd4104fa7fbda627f2e159161aa70065c5fecf4f945d1229f7",
+      "data_sha256": {
+        "practicuum/shared/data/esol.csv": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189"
+      },
+      "step_sha256": {
+        "practicuum/modules/M01/lessons/L02/steps/02_lab.md": "3200b621617c20a98a05dbe1bfd8fb426e4506a10a4dd899a3d43f2f7627e6f6",
+        "practicuum/modules/M01/lessons/L02/steps/03_article_review.md": "0f35af4fab9eb6adcbd181ad1fdc1e113c70ab9ca89c909738e56f3a6e57856c"
+      },
+      "status": "PASS",
+      "seconds": 1.5417387000052258
+    },
+    {
+      "lesson_id": "M02-L01",
+      "role": "case",
+      "kernel": "course-v2-base",
+      "started_utc": "2026-11-19T12:32:27.403373+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M02\\lessons\\L01\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "08928b0fcdf421f5c155d86288252eb0b0b8bc6a800b0ec719d8c1458cece447",
+      "data_sha256": {
+        "practicuum/shared/data/compounds.json": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267"
+      },
+      "step_sha256": {
+        "practicuum/modules/M02/lessons/L01/steps/01_case.md": "7271a02992a69c2ca2bbc3582bcc73a5c8f94317e11080b9ec83006c0a91632d"
+      },
+      "status": "PASS",
+      "seconds": 1.5673435000062454
+    },
+    {
+      "lesson_id": "M02-L01",
+      "role": "lab",
+      "kernel": "course-v2-base",
+      "started_utc": "2026-11-19T12:32:28.971444+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M02\\lessons\\L01\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "2a34ac0daf8c3c0e76a2b26060b32734376800c96fbe83a66deb585f56133476",
+      "data_sha256": {
+        "practicuum/shared/data/compounds.json": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267"
+      },
+      "step_sha256": {
+        "practicuum/modules/M02/lessons/L01/steps/02_lab.md": "0a4da09e102cab263594a84995ae9d4dbfbf246e2cf70d64fb0e19c1be070117"
+      },
+      "status": "PASS",
+      "seconds": 1.4847466000064742
+    },
+    {
+      "lesson_id": "M02-L02",
+      "role": "case",
+      "kernel": "course-v2-base",
+      "started_utc": "2026-11-19T12:32:30.457449+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M02\\lessons\\L02\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "65ece8b24d253d078481e6ff546d8b359d7619bc4940c470a842f579d987822e",
+      "data_sha256": {
+        "practicuum/shared/data/compounds.json": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267"
+      },
+      "step_sha256": {
+        "practicuum/modules/M02/lessons/L02/steps/01_case.md": "23c0c56470ef1483aecba73c5d6377bf8646cb9a1439c62180f982b0ad19e92d",
+        "practicuum/modules/M02/lessons/L02/steps/03_article_case.md": "95cc79741db2812a55f7e71321766b0ebd21015d1f2d47ef87f9c1d3999bae8b"
+      },
+      "status": "PASS",
+      "seconds": 1.497026500001084
+    },
+    {
+      "lesson_id": "M02-L02",
+      "role": "lab",
+      "kernel": "course-v2-base",
+      "started_utc": "2026-11-19T12:32:31.954868+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M02\\lessons\\L02\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "c5c82c11ea821ad31aba835c997eab752ddda0e432ea35732d2c62995b44faf9",
+      "data_sha256": {
+        "practicuum/shared/data/compounds.json": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267"
+      },
+      "step_sha256": {
+        "practicuum/modules/M02/lessons/L02/steps/02_lab.md": "fcb3a3ac3ff4286d93fab5942751bb0110bfbe52e178ce27e7d58b3c2c3a7361",
+        "practicuum/modules/M02/lessons/L02/steps/03_article_review.md": "e4aa7ed31f55d852e0908eb773641a52c6bd8e5eeab66bb263fe7338dfcc1cdd"
+      },
+      "status": "PASS",
+      "seconds": 1.4416183000139426
+    },
+    {
+      "lesson_id": "M03-L01",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:32:33.397001+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M03\\lessons\\L01\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "d4e95458c9535ce3ee71c0aa23a68d7218507e73a004c746d517d00c1a8bb91c",
+      "data_sha256": {
+        "practicuum/shared/data/compounds.json": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267"
+      },
+      "step_sha256": {
+        "practicuum/modules/M03/lessons/L01/steps/01_case.md": "5916e4fd4d3316178e0a54adab045bfc6fcc02e33414c0735e69798a5e35fb63"
+      },
+      "status": "PASS",
+      "seconds": 3.4318192999926396
+    },
+    {
+      "lesson_id": "M03-L01",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:32:36.828801+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M03\\lessons\\L01\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "1fd454d31c0e1ba52a1b7abcc9b2e401eb9272a4979d589ff22adede972dddcb",
+      "data_sha256": {
+        "practicuum/shared/data/compounds.json": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267"
+      },
+      "step_sha256": {
+        "practicuum/modules/M03/lessons/L01/steps/02_lab.md": "161c418449611e47f13b9d016660e19c7161ae54c5165fad133a5ea548a7a305"
+      },
+      "status": "PASS",
+      "seconds": 1.2699789000034798
+    },
+    {
+      "lesson_id": "M03-L02",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:32:38.099618+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M03\\lessons\\L02\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "9ad48c533755209ae7e2ab8f7cfbe2c59b68030331a9e294afa2dc3fe9ca9d1a",
+      "data_sha256": {
+        "practicuum/shared/data/compounds.json": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267"
+      },
+      "step_sha256": {
+        "practicuum/modules/M03/lessons/L02/steps/01_case.md": "117d597e72ea7c73140c991a3ea4c63be593c69c8660205e9465c3301ce5777a",
+        "practicuum/modules/M03/lessons/L02/steps/03_article_case.md": "d20d2b67095c7fa45665a76452c140928173829e52a3b40e98f87c829701f398"
+      },
+      "status": "PASS",
+      "seconds": 1.2090651000034995
+    },
+    {
+      "lesson_id": "M03-L02",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:32:39.310091+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M03\\lessons\\L02\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "ea6fef58cd4dc183c9774395a8b5561d492509d2b36709e57a3fb62b7a1931b1",
+      "data_sha256": {
+        "practicuum/shared/data/compounds.json": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267"
+      },
+      "step_sha256": {
+        "practicuum/modules/M03/lessons/L02/steps/02_lab.md": "18174180460e1bff928be96ee997d40779b8d8c92a5976ab751a4cdd808f234d",
+        "practicuum/modules/M03/lessons/L02/steps/03_article_review.md": "6ca6ecb5031f63aa3c9e6c1bec3146634cd3f1d26a795d99aee8ac959fe6cbf6"
+      },
+      "status": "PASS",
+      "seconds": 1.2297679999901447
+    },
+    {
+      "lesson_id": "M04-L01",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:32:40.540403+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M04\\lessons\\L01\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "7f8aad0e334d6d6612e186149a8326aa8f5893ebed36dea0150f3224b89d884f",
+      "data_sha256": {
+        "practicuum/shared/data/istradefylline_solubility/istradefylline_solubility_table_S1.csv": "c2415add9b03df58409c67a2e516de2afaf944fb676a06d6cef5091f2d7d63c4",
+        "practicuum/shared/data/istradefylline_solubility/istradefylline_aqueous_pH_table2.csv": "d51455b500f0471b17f9ef290e9668dd84487fcbd8e452cf08b2be7540049f0a",
+        "practicuum/shared/data/istradefylline_solubility/supporting-information.pdf": "0363488f2e61e1903dc5218adfa41e2a91682b3284c4105580d8afde9a5df1c1",
+        "practicuum/shared/data/istradefylline_solubility/primary-article.pdf": "f394d17cb107fead9c6ea042778b156797ffd5c5b543752bdddf4a4e7d54994d",
+        "practicuum/shared/data/istradefylline_solubility/result.json": "7f1839b46f92d2f2cc1e567046289ece1d1dfe713f8db94913886d3709540df0",
+        "practicuum/shared/data/source-responses/statin_stability_verified.xml": "84ffbbd27fdaf85a4b75c480672f5538900ba73dfe21093f49d650fbf1a794ae"
+      },
+      "step_sha256": {
+        "practicuum/modules/M04/lessons/L01/steps/01_case.md": "49bdc095cb060df58712914d808bf50f0c3093a08ca847fa7f16f2889b3ccba3"
+      },
+      "status": "PASS",
+      "seconds": 2.567438800004311
+    },
+    {
+      "lesson_id": "M04-L01",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:32:43.107845+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M04\\lessons\\L01\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "cc5d6cf9138512bf209785a2c568d2be98a79abdb9ed0e21fc4b1b4bfe214546",
+      "data_sha256": {
+        "practicuum/shared/data/istradefylline_solubility/istradefylline_solubility_table_S1.csv": "c2415add9b03df58409c67a2e516de2afaf944fb676a06d6cef5091f2d7d63c4",
+        "practicuum/shared/data/istradefylline_solubility/istradefylline_aqueous_pH_table2.csv": "d51455b500f0471b17f9ef290e9668dd84487fcbd8e452cf08b2be7540049f0a",
+        "practicuum/shared/data/istradefylline_solubility/supporting-information.pdf": "0363488f2e61e1903dc5218adfa41e2a91682b3284c4105580d8afde9a5df1c1",
+        "practicuum/shared/data/istradefylline_solubility/primary-article.pdf": "f394d17cb107fead9c6ea042778b156797ffd5c5b543752bdddf4a4e7d54994d",
+        "practicuum/shared/data/istradefylline_solubility/result.json": "7f1839b46f92d2f2cc1e567046289ece1d1dfe713f8db94913886d3709540df0",
+        "practicuum/shared/data/source-responses/statin_stability_verified.xml": "84ffbbd27fdaf85a4b75c480672f5538900ba73dfe21093f49d650fbf1a794ae"
+      },
+      "step_sha256": {
+        "practicuum/modules/M04/lessons/L01/steps/02_lab.md": "34576ae4c1818e698e2e6af9ac7de8ec50db660450d90fa5dcf3a71dfa16afcd"
+      },
+      "status": "PASS",
+      "seconds": 2.2473591000016313
+    },
+    {
+      "lesson_id": "M04-L02",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:32:45.356424+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M04\\lessons\\L02\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "9a765482828bf325cbadf7679b368f980449c7c9256c138c97bc2e29a85a3b84",
+      "data_sha256": {
+        "practicuum/shared/data/istradefylline_solubility/istradefylline_solubility_table_S1.csv": "c2415add9b03df58409c67a2e516de2afaf944fb676a06d6cef5091f2d7d63c4",
+        "practicuum/shared/data/istradefylline_solubility/istradefylline_aqueous_pH_table2.csv": "d51455b500f0471b17f9ef290e9668dd84487fcbd8e452cf08b2be7540049f0a",
+        "practicuum/shared/data/istradefylline_solubility/supporting-information.pdf": "0363488f2e61e1903dc5218adfa41e2a91682b3284c4105580d8afde9a5df1c1",
+        "practicuum/shared/data/istradefylline_solubility/primary-article.pdf": "f394d17cb107fead9c6ea042778b156797ffd5c5b543752bdddf4a4e7d54994d",
+        "practicuum/shared/data/istradefylline_solubility/result.json": "7f1839b46f92d2f2cc1e567046289ece1d1dfe713f8db94913886d3709540df0",
+        "practicuum/shared/data/source-responses/statin_stability_verified.xml": "84ffbbd27fdaf85a4b75c480672f5538900ba73dfe21093f49d650fbf1a794ae"
+      },
+      "step_sha256": {
+        "practicuum/modules/M04/lessons/L02/steps/01_case.md": "ce02d57ffaea4df79ef6fbd1dc908d95bd5e031d7a786faa4d293b3a5b90d77d",
+        "practicuum/modules/M04/lessons/L02/steps/03_article_case.md": "b5a3934fcbfa651d4e3df8b7d08273aa7898977b7b663838fdb99598444f1e39"
+      },
+      "status": "PASS",
+      "seconds": 2.3952755000209436
+    },
+    {
+      "lesson_id": "M04-L02",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:32:47.752463+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M04\\lessons\\L02\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "fcb58775b32f2351b213917786a9bb9896b5c903309a95c181824563bfa97c1e",
+      "data_sha256": {
+        "practicuum/shared/data/istradefylline_solubility/istradefylline_solubility_table_S1.csv": "c2415add9b03df58409c67a2e516de2afaf944fb676a06d6cef5091f2d7d63c4",
+        "practicuum/shared/data/istradefylline_solubility/istradefylline_aqueous_pH_table2.csv": "d51455b500f0471b17f9ef290e9668dd84487fcbd8e452cf08b2be7540049f0a",
+        "practicuum/shared/data/istradefylline_solubility/supporting-information.pdf": "0363488f2e61e1903dc5218adfa41e2a91682b3284c4105580d8afde9a5df1c1",
+        "practicuum/shared/data/istradefylline_solubility/primary-article.pdf": "f394d17cb107fead9c6ea042778b156797ffd5c5b543752bdddf4a4e7d54994d",
+        "practicuum/shared/data/istradefylline_solubility/result.json": "7f1839b46f92d2f2cc1e567046289ece1d1dfe713f8db94913886d3709540df0",
+        "practicuum/shared/data/source-responses/statin_stability_verified.xml": "84ffbbd27fdaf85a4b75c480672f5538900ba73dfe21093f49d650fbf1a794ae"
+      },
+      "step_sha256": {
+        "practicuum/modules/M04/lessons/L02/steps/02_lab.md": "3e74eb9046c1ea4f8ef1e86c3146bb86b1b433de62f7916c6afa28ed677b0f47",
+        "practicuum/modules/M04/lessons/L02/steps/03_article_review.md": "db3dd4a04a5758e99273424c091c78163b4e142991bd6c062197f2107780857f"
+      },
+      "status": "PASS",
+      "seconds": 2.1060258999932557
+    },
+    {
+      "lesson_id": "M05-L01",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:32:49.858452+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M05\\lessons\\L01\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "c84b0ec3f42f02e436dc32ee6042cd3d5681b84c9e621512f122116a380c333f",
+      "data_sha256": {
+        "practicuum/shared/data/compounds.json": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267"
+      },
+      "step_sha256": {
+        "practicuum/modules/M05/lessons/L01/steps/01_case.md": "9bb8ce7fb1a4328d48a87eda73a623c57b20dc2732608fd7c933ffe0d6683dbd"
+      },
+      "status": "PASS",
+      "seconds": 1.6428199000074528
+    },
+    {
+      "lesson_id": "M05-L01",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:32:51.502670+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M05\\lessons\\L01\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "b8a92fd572a3bfc6bd65c02fc8dfa74b2471d1860fe8f170937c3bd18f58d952",
+      "data_sha256": {
+        "practicuum/shared/data/compounds.json": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267"
+      },
+      "step_sha256": {
+        "practicuum/modules/M05/lessons/L01/steps/02_lab.md": "8e5638743934c24394f12551443382c1c2f95f116b700b3f384ae07c63f71817"
+      },
+      "status": "PASS",
+      "seconds": 1.4706326000159606
+    },
+    {
+      "lesson_id": "M05-L02",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:32:52.973899+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M05\\lessons\\L02\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "5b627f23f86c485fb538a693b1cd0d6cd706cffe250b8f0ee769270988f5dd0b",
+      "data_sha256": {
+        "practicuum/shared/data/compounds.json": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267"
+      },
+      "step_sha256": {
+        "practicuum/modules/M05/lessons/L02/steps/01_case.md": "80f0031fdd084cab2a0a80a5b8e4a801cac19de97c94d16f046a953b744fae89",
+        "practicuum/modules/M05/lessons/L02/steps/03_article_case.md": "7994e8332fd911eb5228e4420fffb85041efa7d105a9d24b2e6f4ddda56029b9"
+      },
+      "status": "PASS",
+      "seconds": 1.6675715000019409
+    },
+    {
+      "lesson_id": "M05-L02",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:32:54.641576+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M05\\lessons\\L02\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "0fac4928542c7fc0c335e905bf1e2e68d94d902147d5540a36f67cba2937841c",
+      "data_sha256": {
+        "practicuum/shared/data/compounds.json": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267"
+      },
+      "step_sha256": {
+        "practicuum/modules/M05/lessons/L02/steps/02_lab.md": "0299883d874f13d78450f145919bd587e8a9c8a8c0fd2cadaaba3485f8a90e63",
+        "practicuum/modules/M05/lessons/L02/steps/03_article_review.md": "9555416bd0229c9c536289c9b081f1316cfd89195041fd48e65eed387b327bbf"
+      },
+      "status": "PASS",
+      "seconds": 1.4954448000062257
+    },
+    {
+      "lesson_id": "M06-L01",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:32:56.138331+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M06\\lessons\\L01\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "d530d52a0bc68a03ce33758f54a19f5c2de6a1167a9af609db55017779381879",
+      "data_sha256": {
+        "practicuum/shared/data/conformer_research/atorvastatin/geometry_0013.xyz": "76f58ea30369341e2f716c561d5def135caf1351fc6310b38488318b6c047e74",
+        "practicuum/shared/data/conformer_research/atorvastatin/geometry_0112.xyz": "1c8711d88a03242c73d0043cb57e33ed9b925ec2daaacaaaa94daf36c354b6a1",
+        "practicuum/shared/data/conformer_research/atorvastatin/geometry_0198.xyz": "ed056ee4958c4e9d8b9dc1ac68b142550e142f397168d805da3f3bae4461a4ca",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0013_Eh_bohr2.txt": "60cb40008678f22a7141e54319dd8222ee976815647b36b2e306b54c84124bfb",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0013_native.json": "1e189985be724c7977eb86f950e3ea85cab67ca5dd3136db8a81bcccec335cf4",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0013_projected.json": "cbd7d307b3b00e2d8916ace35a5f9b9c2d75311a69425f4b40a91d81905104b7",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0112_Eh_bohr2.txt": "6b3c7717bd0960a0947a0684a1dbf349387fb4a12fa0daa93ef0981e1e6b8746",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0112_native.json": "f866fe2b6c5399452e02f1ba6df78fe96e1da6d472da9bd555a97493449de166",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0112_projected.json": "301fb4276fc67d9b370608d74dbdd76801b43224c46816e5b52120bce58e5a0f",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0198_Eh_bohr2.txt": "14fa04514fa17adb76b3b503f7ce0cb55ddfc6c371ace5a5562dbdcf2aff152a",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0198_native.json": "54615f3eb75f4a916820bac1d2babedec5abe103939cc6ebe146b766f539df11",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0198_projected.json": "5e293c317c5538ff3dee298b5c0815595a17f8ab75a55a5bd2a00ebaac2b2fd4",
+        "practicuum/shared/data/conformer_research/atorvastatin/manifest.json": "029c7b1c74b1932fed3f25aa963d199c62c1932e8f28ca459dc4900a741d3744",
+        "practicuum/shared/data/conformer_research/atorvastatin/numerics.json": "9436df5fa2ec48ed7581af060abdf5f068a5a7ff99d43dde94f02b29a7c159b6",
+        "practicuum/shared/data/conformer_research/atorvastatin/optimization_selection.json": "9ea40bbface004b8132ea6434498f5c46c8bb093ad2e513bad77715d1c2f984a",
+        "practicuum/shared/data/conformer_research/atorvastatin/optimized_conformers.sdf": "71e3fab95c8d585627524151f89b263b5fab748900732deff5852bd2bc390583",
+        "practicuum/shared/data/conformer_research/atorvastatin/result.json": "e9fbfed446fb6047e508c6b8264daa88436a00e4c69c46a5b76c4c1c0ead1c21",
+        "practicuum/shared/data/conformer_research/atorvastatin/singlepoint_results.json": "200235ef0a0e7677b23c20ca13b17cb935b896bcdf6d4c01b960942a7123e795",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/geometry_0126.xyz": "bb107b8655c9ce1befd010c65b69b58f0a6f401a89b72d6bdc39bfd12579a308",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/geometry_0163.xyz": "411e736d6f2940df0d45676b91955db3bb8e6278303cb965be1b78567fc37ae2",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/geometry_0206.xyz": "8be7cc0faaac8e15e8f9c520a12014c67db79a1f0f3c8bfffb42a6d3d8dab38c",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0126_Eh_bohr2.txt": "54e9c308f1ae0ab6c146448fcc519f1cf17e4084512a0835154c64ad53f97dd1",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0126_native.json": "63c15d806dc774c5e051369fc13a990b81e104063716ee792d483b066125e0e6",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0126_projected.json": "aac3a3d3f68fdf831d2942afb6cb43a071ca45f5d706dd6bce1aab2b26efce96",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0163_Eh_bohr2.txt": "9edc355a611f91cf137db1b7d5b384b3160f320c9f4421642e862b153994f38f",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0163_native.json": "b0b3f4e353b17d772d0a88abc124fac1a0b8df444a976e706975bf745cc8f32d",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0163_projected.json": "af8ad21df3dab7e948a6d40749c47120652a9ca0c0dbc3ac2c98d9fddc680d05",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0206_Eh_bohr2.txt": "e2569d111772e3fbc0fdd5b2b9f22730a534a881b77cbf3d1b21b77ace60a52a",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0206_native.json": "7fca806b01c99a57f2ab2852044a242937b5ecfdeff026fefe407c87bcd16f5a",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0206_projected.json": "a089d938c1afbd68f98d498a4bbcba05635ada57990106f48f9233b0626814cc",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/manifest.json": "02ac888fb20750fb1ad42a3ab7592e28e28a3a9f44d9bbf8437d5a6fae1c3a55",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/optimization_selection.json": "20dcd264d0c00f597c888d2ac3ff0b8ed4082f1d2aa86c551806592c9f12364c",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/optimized_conformers.sdf": "dd87456922829138275991cd222f84c764525110dfbcb98531b7065a655a4b63",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/result.json": "ab571d634d5555f4c29832c9cabe5c5551ec84252e158fa4e4bb0f5be0ebeba7",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/singlepoint_results.json": "7ec4e9b82f1b4c36acb52d72ec3581d8491596f984207f6b1422c893c5ac8127",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/geometry_0081.xyz": "9ab9e2e6d60d3914d6ced3a0ef35a61a526489eed1c2bee81dc0055953807ba5",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/geometry_0199.xyz": "f11110816b80ef61025f91a421ae4572d08fc6be40ce2f39608817e5a2470daa",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/geometry_0265.xyz": "d22889e66293d859f0c38354302d5ce3bcb5e8dc3ec590508d3f945a1a032276",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0081_Eh_bohr2.txt": "1e90a219f65dff796ad94755f83451ca2882ddfe1a12558945e491ad95324596",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0081_native.json": "de9d2efbe3e96064b420f85b10c202b5a902e69ad2760da1896a121b3e1ad6df",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0081_projected.json": "a2721407eb01cd7f7fbd7a501842473374301865b9c8c519339232a88138f0a5",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0199_Eh_bohr2.txt": "4255679710e9e43e2568de0a22dafff077c44cc521d596b747303238f58f26a7",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0199_native.json": "ee28e95e9d638afd64da38f75b1b65d2ed57b122edb5e4a56cef651fb29e0f12",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0199_projected.json": "a77b49dca54b13386fb68327aaeda26c1c4621051218d9bc90331dee708b52cd",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0265_Eh_bohr2.txt": "bb1021c6d55bc4211b9c7fc3db80e04cd7a6f50443c1d56d806d2ef03ffe2241",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0265_native.json": "7a08db34c6665baece4c6f5f03bdb5754ed91316a75c42b280725e58109cc8d2",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0265_projected.json": "bfb999be4e756dc673ade4be7474b39fea142dbf4f35b3ed53ee5a9299690236",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/manifest.json": "cbba97a703da0f8d320c8c6b40ac8b61e79d0a38f00018a745e0d283fd0f17d4",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/optimization_selection.json": "7bc4c62ab2bedad4c2d857612eb85126f2a31a287eb2dec7cc02376c415bfc85",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/optimized_conformers.sdf": "184c1ec4d04185b7e787047b6b83a9cb018750f7f90a568ae74e77daab1d65fa",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/result.json": "43da4a5b77ce4ff2a13daf2ca64d2aba43f2a60fca1b4b8d1557cfc3973c5128",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/singlepoint_results.json": "e7e784f076fce30479b4db30ab65668a8fecb1e8c476815f6d0969e99e6903ad",
+        "practicuum/shared/data/conformer_research/cross_platform_reproduction.json": "869c56cf0fb690128cd6edf561ac0e21945b52243a89c92ebb7b166b5998eee0",
+        "practicuum/shared/data/conformer_research/istradefylline/geometry_0151.xyz": "2511da87bf029b6b2da900feb94988302dfddeebd6fa21c81ec7378df5c6610e",
+        "practicuum/shared/data/conformer_research/istradefylline/geometry_0172.xyz": "9db8e93d69c97b33b551bc9a41ceef21d68969e56deb26b311bad127fb0cd707",
+        "practicuum/shared/data/conformer_research/istradefylline/geometry_0293.xyz": "f19df9580a28879da88ea9f4fb3c714bbc03689d7373a4a64bc9f0771dd7d32b",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0151_Eh_bohr2.txt": "b7dd3ffe34a89c537f684f55326df04787c4b7936dcf3d59843cecae0f78feb1",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0151_native.json": "78d7a88d96787eea937983e3ee9acd25b9319cd9d0e3a4c4241d70b312d4c47c",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0151_projected.json": "54892e802c206a2979ce6645af1bed50c6f054ba3ee1cb5afa49c631eca26c59",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0172_Eh_bohr2.txt": "e52339437615a83c6d8571493c6098eab548efa5872a5da53a136c310a19a2e2",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0172_native.json": "b7d98a634657669ae0f5b9a4ec9070bd363cd35679f40a99194fc7600d11b293",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0172_projected.json": "ae212f60a95ab36d7c88c7270621b804ec82951094cce8e20ddfc2fe1cfcd816",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0293_Eh_bohr2.txt": "8750119dd12cfa97679b044819bfd3322eb364706242e0cfe3098ddcb16ccc75",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0293_native.json": "a3f1373719d6863603ae6c70da70bb2613306e850f3376f27fa93af45e2a5a1c",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0293_projected.json": "e6ef2302b7798d008a76a7bc0b1dd765e81c4818e88cb9d3e0950e9713b494f6",
+        "practicuum/shared/data/conformer_research/istradefylline/manifest.json": "083180bc06123d65f599253c195ab5aa9db1f27af4342d5e14595fd74d17b3db",
+        "practicuum/shared/data/conformer_research/istradefylline/numerics.json": "306fcab0b68d63d28d9e09648f16a66e0fc62b081099e825b0a98a462574f225",
+        "practicuum/shared/data/conformer_research/istradefylline/optimization_selection.json": "63eba61f5e951ddb5c5ea4f2000395cc413ca8a7e01300c0db36c3d7903507ff",
+        "practicuum/shared/data/conformer_research/istradefylline/optimized_conformers.sdf": "9ee0087becc606b98924f07301bf1fe83f4a66319c62fa016085f78ae2deb1dc",
+        "practicuum/shared/data/conformer_research/istradefylline/result.json": "9c32b3d54f83b40d8bb7ca83ce5128dd4a6d824282f381f2f6a8da5de1e77887",
+        "practicuum/shared/data/conformer_research/istradefylline/singlepoint_results.json": "7e12e0df49b78439230fc0064a2e5cdd3de7727dc132eeb003e1dfb2ec0b3077",
+        "practicuum/shared/data/conformer_research/bundle-manifest.json": "5a273e6daa51b8e9fe23b493fc673aef2e7c565bd6347b9991d992081f526dd9"
+      },
+      "step_sha256": {
+        "practicuum/modules/M06/lessons/L01/steps/01_case.md": "38625d5bb93ecd4464ccbd2362b911252f6927012ac5341528c20b9252d85f38"
+      },
+      "status": "PASS",
+      "seconds": 2.4747160999977496
+    },
+    {
+      "lesson_id": "M06-L01",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:32:58.613190+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M06\\lessons\\L01\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "4ff3fe8bc9c1c33c8f3e876f187ec918452bde526f11e9e9831f7d6cd10d69bd",
+      "data_sha256": {
+        "practicuum/shared/data/conformer_research/atorvastatin/geometry_0013.xyz": "76f58ea30369341e2f716c561d5def135caf1351fc6310b38488318b6c047e74",
+        "practicuum/shared/data/conformer_research/atorvastatin/geometry_0112.xyz": "1c8711d88a03242c73d0043cb57e33ed9b925ec2daaacaaaa94daf36c354b6a1",
+        "practicuum/shared/data/conformer_research/atorvastatin/geometry_0198.xyz": "ed056ee4958c4e9d8b9dc1ac68b142550e142f397168d805da3f3bae4461a4ca",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0013_Eh_bohr2.txt": "60cb40008678f22a7141e54319dd8222ee976815647b36b2e306b54c84124bfb",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0013_native.json": "1e189985be724c7977eb86f950e3ea85cab67ca5dd3136db8a81bcccec335cf4",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0013_projected.json": "cbd7d307b3b00e2d8916ace35a5f9b9c2d75311a69425f4b40a91d81905104b7",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0112_Eh_bohr2.txt": "6b3c7717bd0960a0947a0684a1dbf349387fb4a12fa0daa93ef0981e1e6b8746",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0112_native.json": "f866fe2b6c5399452e02f1ba6df78fe96e1da6d472da9bd555a97493449de166",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0112_projected.json": "301fb4276fc67d9b370608d74dbdd76801b43224c46816e5b52120bce58e5a0f",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0198_Eh_bohr2.txt": "14fa04514fa17adb76b3b503f7ce0cb55ddfc6c371ace5a5562dbdcf2aff152a",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0198_native.json": "54615f3eb75f4a916820bac1d2babedec5abe103939cc6ebe146b766f539df11",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0198_projected.json": "5e293c317c5538ff3dee298b5c0815595a17f8ab75a55a5bd2a00ebaac2b2fd4",
+        "practicuum/shared/data/conformer_research/atorvastatin/manifest.json": "029c7b1c74b1932fed3f25aa963d199c62c1932e8f28ca459dc4900a741d3744",
+        "practicuum/shared/data/conformer_research/atorvastatin/numerics.json": "9436df5fa2ec48ed7581af060abdf5f068a5a7ff99d43dde94f02b29a7c159b6",
+        "practicuum/shared/data/conformer_research/atorvastatin/optimization_selection.json": "9ea40bbface004b8132ea6434498f5c46c8bb093ad2e513bad77715d1c2f984a",
+        "practicuum/shared/data/conformer_research/atorvastatin/optimized_conformers.sdf": "71e3fab95c8d585627524151f89b263b5fab748900732deff5852bd2bc390583",
+        "practicuum/shared/data/conformer_research/atorvastatin/result.json": "e9fbfed446fb6047e508c6b8264daa88436a00e4c69c46a5b76c4c1c0ead1c21",
+        "practicuum/shared/data/conformer_research/atorvastatin/singlepoint_results.json": "200235ef0a0e7677b23c20ca13b17cb935b896bcdf6d4c01b960942a7123e795",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/geometry_0126.xyz": "bb107b8655c9ce1befd010c65b69b58f0a6f401a89b72d6bdc39bfd12579a308",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/geometry_0163.xyz": "411e736d6f2940df0d45676b91955db3bb8e6278303cb965be1b78567fc37ae2",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/geometry_0206.xyz": "8be7cc0faaac8e15e8f9c520a12014c67db79a1f0f3c8bfffb42a6d3d8dab38c",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0126_Eh_bohr2.txt": "54e9c308f1ae0ab6c146448fcc519f1cf17e4084512a0835154c64ad53f97dd1",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0126_native.json": "63c15d806dc774c5e051369fc13a990b81e104063716ee792d483b066125e0e6",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0126_projected.json": "aac3a3d3f68fdf831d2942afb6cb43a071ca45f5d706dd6bce1aab2b26efce96",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0163_Eh_bohr2.txt": "9edc355a611f91cf137db1b7d5b384b3160f320c9f4421642e862b153994f38f",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0163_native.json": "b0b3f4e353b17d772d0a88abc124fac1a0b8df444a976e706975bf745cc8f32d",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0163_projected.json": "af8ad21df3dab7e948a6d40749c47120652a9ca0c0dbc3ac2c98d9fddc680d05",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0206_Eh_bohr2.txt": "e2569d111772e3fbc0fdd5b2b9f22730a534a881b77cbf3d1b21b77ace60a52a",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0206_native.json": "7fca806b01c99a57f2ab2852044a242937b5ecfdeff026fefe407c87bcd16f5a",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0206_projected.json": "a089d938c1afbd68f98d498a4bbcba05635ada57990106f48f9233b0626814cc",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/manifest.json": "02ac888fb20750fb1ad42a3ab7592e28e28a3a9f44d9bbf8437d5a6fae1c3a55",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/optimization_selection.json": "20dcd264d0c00f597c888d2ac3ff0b8ed4082f1d2aa86c551806592c9f12364c",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/optimized_conformers.sdf": "dd87456922829138275991cd222f84c764525110dfbcb98531b7065a655a4b63",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/result.json": "ab571d634d5555f4c29832c9cabe5c5551ec84252e158fa4e4bb0f5be0ebeba7",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/singlepoint_results.json": "7ec4e9b82f1b4c36acb52d72ec3581d8491596f984207f6b1422c893c5ac8127",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/geometry_0081.xyz": "9ab9e2e6d60d3914d6ced3a0ef35a61a526489eed1c2bee81dc0055953807ba5",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/geometry_0199.xyz": "f11110816b80ef61025f91a421ae4572d08fc6be40ce2f39608817e5a2470daa",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/geometry_0265.xyz": "d22889e66293d859f0c38354302d5ce3bcb5e8dc3ec590508d3f945a1a032276",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0081_Eh_bohr2.txt": "1e90a219f65dff796ad94755f83451ca2882ddfe1a12558945e491ad95324596",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0081_native.json": "de9d2efbe3e96064b420f85b10c202b5a902e69ad2760da1896a121b3e1ad6df",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0081_projected.json": "a2721407eb01cd7f7fbd7a501842473374301865b9c8c519339232a88138f0a5",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0199_Eh_bohr2.txt": "4255679710e9e43e2568de0a22dafff077c44cc521d596b747303238f58f26a7",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0199_native.json": "ee28e95e9d638afd64da38f75b1b65d2ed57b122edb5e4a56cef651fb29e0f12",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0199_projected.json": "a77b49dca54b13386fb68327aaeda26c1c4621051218d9bc90331dee708b52cd",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0265_Eh_bohr2.txt": "bb1021c6d55bc4211b9c7fc3db80e04cd7a6f50443c1d56d806d2ef03ffe2241",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0265_native.json": "7a08db34c6665baece4c6f5f03bdb5754ed91316a75c42b280725e58109cc8d2",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0265_projected.json": "bfb999be4e756dc673ade4be7474b39fea142dbf4f35b3ed53ee5a9299690236",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/manifest.json": "cbba97a703da0f8d320c8c6b40ac8b61e79d0a38f00018a745e0d283fd0f17d4",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/optimization_selection.json": "7bc4c62ab2bedad4c2d857612eb85126f2a31a287eb2dec7cc02376c415bfc85",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/optimized_conformers.sdf": "184c1ec4d04185b7e787047b6b83a9cb018750f7f90a568ae74e77daab1d65fa",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/result.json": "43da4a5b77ce4ff2a13daf2ca64d2aba43f2a60fca1b4b8d1557cfc3973c5128",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/singlepoint_results.json": "e7e784f076fce30479b4db30ab65668a8fecb1e8c476815f6d0969e99e6903ad",
+        "practicuum/shared/data/conformer_research/cross_platform_reproduction.json": "869c56cf0fb690128cd6edf561ac0e21945b52243a89c92ebb7b166b5998eee0",
+        "practicuum/shared/data/conformer_research/istradefylline/geometry_0151.xyz": "2511da87bf029b6b2da900feb94988302dfddeebd6fa21c81ec7378df5c6610e",
+        "practicuum/shared/data/conformer_research/istradefylline/geometry_0172.xyz": "9db8e93d69c97b33b551bc9a41ceef21d68969e56deb26b311bad127fb0cd707",
+        "practicuum/shared/data/conformer_research/istradefylline/geometry_0293.xyz": "f19df9580a28879da88ea9f4fb3c714bbc03689d7373a4a64bc9f0771dd7d32b",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0151_Eh_bohr2.txt": "b7dd3ffe34a89c537f684f55326df04787c4b7936dcf3d59843cecae0f78feb1",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0151_native.json": "78d7a88d96787eea937983e3ee9acd25b9319cd9d0e3a4c4241d70b312d4c47c",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0151_projected.json": "54892e802c206a2979ce6645af1bed50c6f054ba3ee1cb5afa49c631eca26c59",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0172_Eh_bohr2.txt": "e52339437615a83c6d8571493c6098eab548efa5872a5da53a136c310a19a2e2",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0172_native.json": "b7d98a634657669ae0f5b9a4ec9070bd363cd35679f40a99194fc7600d11b293",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0172_projected.json": "ae212f60a95ab36d7c88c7270621b804ec82951094cce8e20ddfc2fe1cfcd816",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0293_Eh_bohr2.txt": "8750119dd12cfa97679b044819bfd3322eb364706242e0cfe3098ddcb16ccc75",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0293_native.json": "a3f1373719d6863603ae6c70da70bb2613306e850f3376f27fa93af45e2a5a1c",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0293_projected.json": "e6ef2302b7798d008a76a7bc0b1dd765e81c4818e88cb9d3e0950e9713b494f6",
+        "practicuum/shared/data/conformer_research/istradefylline/manifest.json": "083180bc06123d65f599253c195ab5aa9db1f27af4342d5e14595fd74d17b3db",
+        "practicuum/shared/data/conformer_research/istradefylline/numerics.json": "306fcab0b68d63d28d9e09648f16a66e0fc62b081099e825b0a98a462574f225",
+        "practicuum/shared/data/conformer_research/istradefylline/optimization_selection.json": "63eba61f5e951ddb5c5ea4f2000395cc413ca8a7e01300c0db36c3d7903507ff",
+        "practicuum/shared/data/conformer_research/istradefylline/optimized_conformers.sdf": "9ee0087becc606b98924f07301bf1fe83f4a66319c62fa016085f78ae2deb1dc",
+        "practicuum/shared/data/conformer_research/istradefylline/result.json": "9c32b3d54f83b40d8bb7ca83ce5128dd4a6d824282f381f2f6a8da5de1e77887",
+        "practicuum/shared/data/conformer_research/istradefylline/singlepoint_results.json": "7e12e0df49b78439230fc0064a2e5cdd3de7727dc132eeb003e1dfb2ec0b3077",
+        "practicuum/shared/data/conformer_research/bundle-manifest.json": "5a273e6daa51b8e9fe23b493fc673aef2e7c565bd6347b9991d992081f526dd9"
+      },
+      "step_sha256": {
+        "practicuum/modules/M06/lessons/L01/steps/02_lab.md": "21332c07a9cbaaaa28753398bf4c32520c20303d14391646c4efa0e56103f028"
+      },
+      "status": "PASS",
+      "seconds": 2.2147911000065506
+    },
+    {
+      "lesson_id": "M06-L02",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:33:00.829850+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M06\\lessons\\L02\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "401703c12eb521c1b78b2eb81fd62017973cfd5bc01c145b4c4c2a878beeda7a",
+      "data_sha256": {
+        "practicuum/shared/data/conformer_research/atorvastatin/geometry_0013.xyz": "76f58ea30369341e2f716c561d5def135caf1351fc6310b38488318b6c047e74",
+        "practicuum/shared/data/conformer_research/atorvastatin/geometry_0112.xyz": "1c8711d88a03242c73d0043cb57e33ed9b925ec2daaacaaaa94daf36c354b6a1",
+        "practicuum/shared/data/conformer_research/atorvastatin/geometry_0198.xyz": "ed056ee4958c4e9d8b9dc1ac68b142550e142f397168d805da3f3bae4461a4ca",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0013_Eh_bohr2.txt": "60cb40008678f22a7141e54319dd8222ee976815647b36b2e306b54c84124bfb",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0013_native.json": "1e189985be724c7977eb86f950e3ea85cab67ca5dd3136db8a81bcccec335cf4",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0013_projected.json": "cbd7d307b3b00e2d8916ace35a5f9b9c2d75311a69425f4b40a91d81905104b7",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0112_Eh_bohr2.txt": "6b3c7717bd0960a0947a0684a1dbf349387fb4a12fa0daa93ef0981e1e6b8746",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0112_native.json": "f866fe2b6c5399452e02f1ba6df78fe96e1da6d472da9bd555a97493449de166",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0112_projected.json": "301fb4276fc67d9b370608d74dbdd76801b43224c46816e5b52120bce58e5a0f",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0198_Eh_bohr2.txt": "14fa04514fa17adb76b3b503f7ce0cb55ddfc6c371ace5a5562dbdcf2aff152a",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0198_native.json": "54615f3eb75f4a916820bac1d2babedec5abe103939cc6ebe146b766f539df11",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0198_projected.json": "5e293c317c5538ff3dee298b5c0815595a17f8ab75a55a5bd2a00ebaac2b2fd4",
+        "practicuum/shared/data/conformer_research/atorvastatin/manifest.json": "029c7b1c74b1932fed3f25aa963d199c62c1932e8f28ca459dc4900a741d3744",
+        "practicuum/shared/data/conformer_research/atorvastatin/numerics.json": "9436df5fa2ec48ed7581af060abdf5f068a5a7ff99d43dde94f02b29a7c159b6",
+        "practicuum/shared/data/conformer_research/atorvastatin/optimization_selection.json": "9ea40bbface004b8132ea6434498f5c46c8bb093ad2e513bad77715d1c2f984a",
+        "practicuum/shared/data/conformer_research/atorvastatin/optimized_conformers.sdf": "71e3fab95c8d585627524151f89b263b5fab748900732deff5852bd2bc390583",
+        "practicuum/shared/data/conformer_research/atorvastatin/result.json": "e9fbfed446fb6047e508c6b8264daa88436a00e4c69c46a5b76c4c1c0ead1c21",
+        "practicuum/shared/data/conformer_research/atorvastatin/singlepoint_results.json": "200235ef0a0e7677b23c20ca13b17cb935b896bcdf6d4c01b960942a7123e795",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/geometry_0126.xyz": "bb107b8655c9ce1befd010c65b69b58f0a6f401a89b72d6bdc39bfd12579a308",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/geometry_0163.xyz": "411e736d6f2940df0d45676b91955db3bb8e6278303cb965be1b78567fc37ae2",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/geometry_0206.xyz": "8be7cc0faaac8e15e8f9c520a12014c67db79a1f0f3c8bfffb42a6d3d8dab38c",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0126_Eh_bohr2.txt": "54e9c308f1ae0ab6c146448fcc519f1cf17e4084512a0835154c64ad53f97dd1",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0126_native.json": "63c15d806dc774c5e051369fc13a990b81e104063716ee792d483b066125e0e6",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0126_projected.json": "aac3a3d3f68fdf831d2942afb6cb43a071ca45f5d706dd6bce1aab2b26efce96",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0163_Eh_bohr2.txt": "9edc355a611f91cf137db1b7d5b384b3160f320c9f4421642e862b153994f38f",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0163_native.json": "b0b3f4e353b17d772d0a88abc124fac1a0b8df444a976e706975bf745cc8f32d",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0163_projected.json": "af8ad21df3dab7e948a6d40749c47120652a9ca0c0dbc3ac2c98d9fddc680d05",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0206_Eh_bohr2.txt": "e2569d111772e3fbc0fdd5b2b9f22730a534a881b77cbf3d1b21b77ace60a52a",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0206_native.json": "7fca806b01c99a57f2ab2852044a242937b5ecfdeff026fefe407c87bcd16f5a",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0206_projected.json": "a089d938c1afbd68f98d498a4bbcba05635ada57990106f48f9233b0626814cc",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/manifest.json": "02ac888fb20750fb1ad42a3ab7592e28e28a3a9f44d9bbf8437d5a6fae1c3a55",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/optimization_selection.json": "20dcd264d0c00f597c888d2ac3ff0b8ed4082f1d2aa86c551806592c9f12364c",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/optimized_conformers.sdf": "dd87456922829138275991cd222f84c764525110dfbcb98531b7065a655a4b63",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/result.json": "ab571d634d5555f4c29832c9cabe5c5551ec84252e158fa4e4bb0f5be0ebeba7",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/singlepoint_results.json": "7ec4e9b82f1b4c36acb52d72ec3581d8491596f984207f6b1422c893c5ac8127",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/geometry_0081.xyz": "9ab9e2e6d60d3914d6ced3a0ef35a61a526489eed1c2bee81dc0055953807ba5",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/geometry_0199.xyz": "f11110816b80ef61025f91a421ae4572d08fc6be40ce2f39608817e5a2470daa",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/geometry_0265.xyz": "d22889e66293d859f0c38354302d5ce3bcb5e8dc3ec590508d3f945a1a032276",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0081_Eh_bohr2.txt": "1e90a219f65dff796ad94755f83451ca2882ddfe1a12558945e491ad95324596",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0081_native.json": "de9d2efbe3e96064b420f85b10c202b5a902e69ad2760da1896a121b3e1ad6df",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0081_projected.json": "a2721407eb01cd7f7fbd7a501842473374301865b9c8c519339232a88138f0a5",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0199_Eh_bohr2.txt": "4255679710e9e43e2568de0a22dafff077c44cc521d596b747303238f58f26a7",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0199_native.json": "ee28e95e9d638afd64da38f75b1b65d2ed57b122edb5e4a56cef651fb29e0f12",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0199_projected.json": "a77b49dca54b13386fb68327aaeda26c1c4621051218d9bc90331dee708b52cd",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0265_Eh_bohr2.txt": "bb1021c6d55bc4211b9c7fc3db80e04cd7a6f50443c1d56d806d2ef03ffe2241",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0265_native.json": "7a08db34c6665baece4c6f5f03bdb5754ed91316a75c42b280725e58109cc8d2",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0265_projected.json": "bfb999be4e756dc673ade4be7474b39fea142dbf4f35b3ed53ee5a9299690236",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/manifest.json": "cbba97a703da0f8d320c8c6b40ac8b61e79d0a38f00018a745e0d283fd0f17d4",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/optimization_selection.json": "7bc4c62ab2bedad4c2d857612eb85126f2a31a287eb2dec7cc02376c415bfc85",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/optimized_conformers.sdf": "184c1ec4d04185b7e787047b6b83a9cb018750f7f90a568ae74e77daab1d65fa",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/result.json": "43da4a5b77ce4ff2a13daf2ca64d2aba43f2a60fca1b4b8d1557cfc3973c5128",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/singlepoint_results.json": "e7e784f076fce30479b4db30ab65668a8fecb1e8c476815f6d0969e99e6903ad",
+        "practicuum/shared/data/conformer_research/cross_platform_reproduction.json": "869c56cf0fb690128cd6edf561ac0e21945b52243a89c92ebb7b166b5998eee0",
+        "practicuum/shared/data/conformer_research/istradefylline/geometry_0151.xyz": "2511da87bf029b6b2da900feb94988302dfddeebd6fa21c81ec7378df5c6610e",
+        "practicuum/shared/data/conformer_research/istradefylline/geometry_0172.xyz": "9db8e93d69c97b33b551bc9a41ceef21d68969e56deb26b311bad127fb0cd707",
+        "practicuum/shared/data/conformer_research/istradefylline/geometry_0293.xyz": "f19df9580a28879da88ea9f4fb3c714bbc03689d7373a4a64bc9f0771dd7d32b",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0151_Eh_bohr2.txt": "b7dd3ffe34a89c537f684f55326df04787c4b7936dcf3d59843cecae0f78feb1",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0151_native.json": "78d7a88d96787eea937983e3ee9acd25b9319cd9d0e3a4c4241d70b312d4c47c",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0151_projected.json": "54892e802c206a2979ce6645af1bed50c6f054ba3ee1cb5afa49c631eca26c59",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0172_Eh_bohr2.txt": "e52339437615a83c6d8571493c6098eab548efa5872a5da53a136c310a19a2e2",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0172_native.json": "b7d98a634657669ae0f5b9a4ec9070bd363cd35679f40a99194fc7600d11b293",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0172_projected.json": "ae212f60a95ab36d7c88c7270621b804ec82951094cce8e20ddfc2fe1cfcd816",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0293_Eh_bohr2.txt": "8750119dd12cfa97679b044819bfd3322eb364706242e0cfe3098ddcb16ccc75",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0293_native.json": "a3f1373719d6863603ae6c70da70bb2613306e850f3376f27fa93af45e2a5a1c",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0293_projected.json": "e6ef2302b7798d008a76a7bc0b1dd765e81c4818e88cb9d3e0950e9713b494f6",
+        "practicuum/shared/data/conformer_research/istradefylline/manifest.json": "083180bc06123d65f599253c195ab5aa9db1f27af4342d5e14595fd74d17b3db",
+        "practicuum/shared/data/conformer_research/istradefylline/numerics.json": "306fcab0b68d63d28d9e09648f16a66e0fc62b081099e825b0a98a462574f225",
+        "practicuum/shared/data/conformer_research/istradefylline/optimization_selection.json": "63eba61f5e951ddb5c5ea4f2000395cc413ca8a7e01300c0db36c3d7903507ff",
+        "practicuum/shared/data/conformer_research/istradefylline/optimized_conformers.sdf": "9ee0087becc606b98924f07301bf1fe83f4a66319c62fa016085f78ae2deb1dc",
+        "practicuum/shared/data/conformer_research/istradefylline/result.json": "9c32b3d54f83b40d8bb7ca83ce5128dd4a6d824282f381f2f6a8da5de1e77887",
+        "practicuum/shared/data/conformer_research/istradefylline/singlepoint_results.json": "7e12e0df49b78439230fc0064a2e5cdd3de7727dc132eeb003e1dfb2ec0b3077",
+        "practicuum/shared/data/conformer_research/bundle-manifest.json": "5a273e6daa51b8e9fe23b493fc673aef2e7c565bd6347b9991d992081f526dd9"
+      },
+      "step_sha256": {
+        "practicuum/modules/M06/lessons/L02/steps/01_case.md": "383f0be8006cffd734f5836df6a55cd6da3a7a8f17fed6f976e071598f25142d",
+        "practicuum/modules/M06/lessons/L02/steps/03_article_case.md": "392d55ca4913503946afcaa822c1faf04fd4d0a9b54ab4abf33558cc9ac00fbf"
+      },
+      "status": "PASS",
+      "seconds": 2.3161452999920584
+    },
+    {
+      "lesson_id": "M06-L02",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:33:03.146652+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M06\\lessons\\L02\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "6fe75d68ddd9c0476047ee38d5eb373acce7c88b9ca07aaf997f353276ba220f",
+      "data_sha256": {
+        "practicuum/shared/data/conformer_research/atorvastatin/geometry_0013.xyz": "76f58ea30369341e2f716c561d5def135caf1351fc6310b38488318b6c047e74",
+        "practicuum/shared/data/conformer_research/atorvastatin/geometry_0112.xyz": "1c8711d88a03242c73d0043cb57e33ed9b925ec2daaacaaaa94daf36c354b6a1",
+        "practicuum/shared/data/conformer_research/atorvastatin/geometry_0198.xyz": "ed056ee4958c4e9d8b9dc1ac68b142550e142f397168d805da3f3bae4461a4ca",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0013_Eh_bohr2.txt": "60cb40008678f22a7141e54319dd8222ee976815647b36b2e306b54c84124bfb",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0013_native.json": "1e189985be724c7977eb86f950e3ea85cab67ca5dd3136db8a81bcccec335cf4",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0013_projected.json": "cbd7d307b3b00e2d8916ace35a5f9b9c2d75311a69425f4b40a91d81905104b7",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0112_Eh_bohr2.txt": "6b3c7717bd0960a0947a0684a1dbf349387fb4a12fa0daa93ef0981e1e6b8746",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0112_native.json": "f866fe2b6c5399452e02f1ba6df78fe96e1da6d472da9bd555a97493449de166",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0112_projected.json": "301fb4276fc67d9b370608d74dbdd76801b43224c46816e5b52120bce58e5a0f",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0198_Eh_bohr2.txt": "14fa04514fa17adb76b3b503f7ce0cb55ddfc6c371ace5a5562dbdcf2aff152a",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0198_native.json": "54615f3eb75f4a916820bac1d2babedec5abe103939cc6ebe146b766f539df11",
+        "practicuum/shared/data/conformer_research/atorvastatin/hessian_0198_projected.json": "5e293c317c5538ff3dee298b5c0815595a17f8ab75a55a5bd2a00ebaac2b2fd4",
+        "practicuum/shared/data/conformer_research/atorvastatin/manifest.json": "029c7b1c74b1932fed3f25aa963d199c62c1932e8f28ca459dc4900a741d3744",
+        "practicuum/shared/data/conformer_research/atorvastatin/numerics.json": "9436df5fa2ec48ed7581af060abdf5f068a5a7ff99d43dde94f02b29a7c159b6",
+        "practicuum/shared/data/conformer_research/atorvastatin/optimization_selection.json": "9ea40bbface004b8132ea6434498f5c46c8bb093ad2e513bad77715d1c2f984a",
+        "practicuum/shared/data/conformer_research/atorvastatin/optimized_conformers.sdf": "71e3fab95c8d585627524151f89b263b5fab748900732deff5852bd2bc390583",
+        "practicuum/shared/data/conformer_research/atorvastatin/result.json": "e9fbfed446fb6047e508c6b8264daa88436a00e4c69c46a5b76c4c1c0ead1c21",
+        "practicuum/shared/data/conformer_research/atorvastatin/singlepoint_results.json": "200235ef0a0e7677b23c20ca13b17cb935b896bcdf6d4c01b960942a7123e795",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/geometry_0126.xyz": "bb107b8655c9ce1befd010c65b69b58f0a6f401a89b72d6bdc39bfd12579a308",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/geometry_0163.xyz": "411e736d6f2940df0d45676b91955db3bb8e6278303cb965be1b78567fc37ae2",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/geometry_0206.xyz": "8be7cc0faaac8e15e8f9c520a12014c67db79a1f0f3c8bfffb42a6d3d8dab38c",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0126_Eh_bohr2.txt": "54e9c308f1ae0ab6c146448fcc519f1cf17e4084512a0835154c64ad53f97dd1",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0126_native.json": "63c15d806dc774c5e051369fc13a990b81e104063716ee792d483b066125e0e6",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0126_projected.json": "aac3a3d3f68fdf831d2942afb6cb43a071ca45f5d706dd6bce1aab2b26efce96",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0163_Eh_bohr2.txt": "9edc355a611f91cf137db1b7d5b384b3160f320c9f4421642e862b153994f38f",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0163_native.json": "b0b3f4e353b17d772d0a88abc124fac1a0b8df444a976e706975bf745cc8f32d",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0163_projected.json": "af8ad21df3dab7e948a6d40749c47120652a9ca0c0dbc3ac2c98d9fddc680d05",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0206_Eh_bohr2.txt": "e2569d111772e3fbc0fdd5b2b9f22730a534a881b77cbf3d1b21b77ace60a52a",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0206_native.json": "7fca806b01c99a57f2ab2852044a242937b5ecfdeff026fefe407c87bcd16f5a",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/hessian_0206_projected.json": "a089d938c1afbd68f98d498a4bbcba05635ada57990106f48f9233b0626814cc",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/manifest.json": "02ac888fb20750fb1ad42a3ab7592e28e28a3a9f44d9bbf8437d5a6fae1c3a55",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/optimization_selection.json": "20dcd264d0c00f597c888d2ac3ff0b8ed4082f1d2aa86c551806592c9f12364c",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/optimized_conformers.sdf": "dd87456922829138275991cd222f84c764525110dfbcb98531b7065a655a4b63",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/result.json": "ab571d634d5555f4c29832c9cabe5c5551ec84252e158fa4e4bb0f5be0ebeba7",
+        "practicuum/shared/data/conformer_research/atorvastatin_anion/singlepoint_results.json": "7ec4e9b82f1b4c36acb52d72ec3581d8491596f984207f6b1422c893c5ac8127",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/geometry_0081.xyz": "9ab9e2e6d60d3914d6ced3a0ef35a61a526489eed1c2bee81dc0055953807ba5",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/geometry_0199.xyz": "f11110816b80ef61025f91a421ae4572d08fc6be40ce2f39608817e5a2470daa",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/geometry_0265.xyz": "d22889e66293d859f0c38354302d5ce3bcb5e8dc3ec590508d3f945a1a032276",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0081_Eh_bohr2.txt": "1e90a219f65dff796ad94755f83451ca2882ddfe1a12558945e491ad95324596",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0081_native.json": "de9d2efbe3e96064b420f85b10c202b5a902e69ad2760da1896a121b3e1ad6df",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0081_projected.json": "a2721407eb01cd7f7fbd7a501842473374301865b9c8c519339232a88138f0a5",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0199_Eh_bohr2.txt": "4255679710e9e43e2568de0a22dafff077c44cc521d596b747303238f58f26a7",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0199_native.json": "ee28e95e9d638afd64da38f75b1b65d2ed57b122edb5e4a56cef651fb29e0f12",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0199_projected.json": "a77b49dca54b13386fb68327aaeda26c1c4621051218d9bc90331dee708b52cd",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0265_Eh_bohr2.txt": "bb1021c6d55bc4211b9c7fc3db80e04cd7a6f50443c1d56d806d2ef03ffe2241",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0265_native.json": "7a08db34c6665baece4c6f5f03bdb5754ed91316a75c42b280725e58109cc8d2",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/hessian_0265_projected.json": "bfb999be4e756dc673ade4be7474b39fea142dbf4f35b3ed53ee5a9299690236",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/manifest.json": "cbba97a703da0f8d320c8c6b40ac8b61e79d0a38f00018a745e0d283fd0f17d4",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/optimization_selection.json": "7bc4c62ab2bedad4c2d857612eb85126f2a31a287eb2dec7cc02376c415bfc85",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/optimized_conformers.sdf": "184c1ec4d04185b7e787047b6b83a9cb018750f7f90a568ae74e77daab1d65fa",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/result.json": "43da4a5b77ce4ff2a13daf2ca64d2aba43f2a60fca1b4b8d1557cfc3973c5128",
+        "practicuum/shared/data/conformer_research/atorvastatin_lactone/singlepoint_results.json": "e7e784f076fce30479b4db30ab65668a8fecb1e8c476815f6d0969e99e6903ad",
+        "practicuum/shared/data/conformer_research/cross_platform_reproduction.json": "869c56cf0fb690128cd6edf561ac0e21945b52243a89c92ebb7b166b5998eee0",
+        "practicuum/shared/data/conformer_research/istradefylline/geometry_0151.xyz": "2511da87bf029b6b2da900feb94988302dfddeebd6fa21c81ec7378df5c6610e",
+        "practicuum/shared/data/conformer_research/istradefylline/geometry_0172.xyz": "9db8e93d69c97b33b551bc9a41ceef21d68969e56deb26b311bad127fb0cd707",
+        "practicuum/shared/data/conformer_research/istradefylline/geometry_0293.xyz": "f19df9580a28879da88ea9f4fb3c714bbc03689d7373a4a64bc9f0771dd7d32b",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0151_Eh_bohr2.txt": "b7dd3ffe34a89c537f684f55326df04787c4b7936dcf3d59843cecae0f78feb1",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0151_native.json": "78d7a88d96787eea937983e3ee9acd25b9319cd9d0e3a4c4241d70b312d4c47c",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0151_projected.json": "54892e802c206a2979ce6645af1bed50c6f054ba3ee1cb5afa49c631eca26c59",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0172_Eh_bohr2.txt": "e52339437615a83c6d8571493c6098eab548efa5872a5da53a136c310a19a2e2",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0172_native.json": "b7d98a634657669ae0f5b9a4ec9070bd363cd35679f40a99194fc7600d11b293",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0172_projected.json": "ae212f60a95ab36d7c88c7270621b804ec82951094cce8e20ddfc2fe1cfcd816",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0293_Eh_bohr2.txt": "8750119dd12cfa97679b044819bfd3322eb364706242e0cfe3098ddcb16ccc75",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0293_native.json": "a3f1373719d6863603ae6c70da70bb2613306e850f3376f27fa93af45e2a5a1c",
+        "practicuum/shared/data/conformer_research/istradefylline/hessian_0293_projected.json": "e6ef2302b7798d008a76a7bc0b1dd765e81c4818e88cb9d3e0950e9713b494f6",
+        "practicuum/shared/data/conformer_research/istradefylline/manifest.json": "083180bc06123d65f599253c195ab5aa9db1f27af4342d5e14595fd74d17b3db",
+        "practicuum/shared/data/conformer_research/istradefylline/numerics.json": "306fcab0b68d63d28d9e09648f16a66e0fc62b081099e825b0a98a462574f225",
+        "practicuum/shared/data/conformer_research/istradefylline/optimization_selection.json": "63eba61f5e951ddb5c5ea4f2000395cc413ca8a7e01300c0db36c3d7903507ff",
+        "practicuum/shared/data/conformer_research/istradefylline/optimized_conformers.sdf": "9ee0087becc606b98924f07301bf1fe83f4a66319c62fa016085f78ae2deb1dc",
+        "practicuum/shared/data/conformer_research/istradefylline/result.json": "9c32b3d54f83b40d8bb7ca83ce5128dd4a6d824282f381f2f6a8da5de1e77887",
+        "practicuum/shared/data/conformer_research/istradefylline/singlepoint_results.json": "7e12e0df49b78439230fc0064a2e5cdd3de7727dc132eeb003e1dfb2ec0b3077",
+        "practicuum/shared/data/conformer_research/bundle-manifest.json": "5a273e6daa51b8e9fe23b493fc673aef2e7c565bd6347b9991d992081f526dd9"
+      },
+      "step_sha256": {
+        "practicuum/modules/M06/lessons/L02/steps/02_lab.md": "85ce5d7c2ce03893b07a84894476806bf318fae8de32d67351f5fab769b3140b",
+        "practicuum/modules/M06/lessons/L02/steps/03_article_review.md": "0899f495ad01691be8e8b51ab8ab08cf0df92c89bbdb5ad9325cd40797027c94"
+      },
+      "status": "PASS",
+      "seconds": 2.2050076999876183
+    },
+    {
+      "lesson_id": "M07-L01",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:33:05.352436+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M07\\lessons\\L01\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "c24b5f17ef16a4a283d8f0adaea53ed9f3440056d1ef415f07e45ca4c1135b15",
+      "data_sha256": {},
+      "step_sha256": {
+        "practicuum/modules/M07/lessons/L01/steps/01_case.md": "69c8ffad6463acab9cc2d8670c93319802b0f575b801291fc2267ffd3e1abbda"
+      },
+      "status": "PASS",
+      "seconds": 1.8183938000001945
+    },
+    {
+      "lesson_id": "M07-L01",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:33:07.171216+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M07\\lessons\\L01\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "dd1d9d381cfeece8fbc48554afab9595da2a8a9325ee3360598fd0e1aabb17a2",
+      "data_sha256": {},
+      "step_sha256": {
+        "practicuum/modules/M07/lessons/L01/steps/02_lab.md": "c35e3066a0181216bab1b117329487e5b3151fd7b8acf1c8d1b12bd1fac46115"
+      },
+      "status": "PASS",
+      "seconds": 1.4672795000078622
+    },
+    {
+      "lesson_id": "M07-L02",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:33:08.640368+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M07\\lessons\\L02\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "2e66abd375cebdcd9cb99e039e7c1cf84c7aba8a1c68a1ea861178a8e45f5da0",
+      "data_sha256": {
+        "practicuum/shared/data/quantum/istradefylline/result.json": "8f56fbf9ccaff067d7e26ad94f9cbadd752c1248dcee439595456d1636fbbbb2",
+        "practicuum/shared/data/quantum/istradefylline/geometry.json": "8b1ec2efb6af4bbf7c984c43eec14553b658ca8cddf2ede549c0d9e45edcfdfa",
+        "practicuum/shared/data/quantum/atorvastatin/result.json": "a365db4fdf5973018f6cb26c372c380bc7dd1f5599528da1c142e7219b8e83c2",
+        "practicuum/shared/data/quantum/atorvastatin/geometry.json": "d0d2d8afc508fd0fa5bab87fcb26256f62f6f13b3743781bb9244abc878f6ee5"
+      },
+      "step_sha256": {
+        "practicuum/modules/M07/lessons/L02/steps/01_case.md": "30511b300750749e07fdfadcf3612e8dc22df7f5649c79cbc29135cd86764803",
+        "practicuum/modules/M07/lessons/L02/steps/03_article_case.md": "2a6b1bd5e2e1beba4a614f58e3ff484b4e0814988f20c408218bbbd5910cc882"
+      },
+      "status": "PASS",
+      "seconds": 1.5000841000000946
+    },
+    {
+      "lesson_id": "M07-L02",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:33:10.141436+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M07\\lessons\\L02\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "0d78ae527cb410f91c5bb290b5110625d321f3afabc3c902f165e697ae82bd18",
+      "data_sha256": {
+        "practicuum/shared/data/quantum/istradefylline/result.json": "8f56fbf9ccaff067d7e26ad94f9cbadd752c1248dcee439595456d1636fbbbb2",
+        "practicuum/shared/data/quantum/istradefylline/geometry.json": "8b1ec2efb6af4bbf7c984c43eec14553b658ca8cddf2ede549c0d9e45edcfdfa",
+        "practicuum/shared/data/quantum/atorvastatin/result.json": "a365db4fdf5973018f6cb26c372c380bc7dd1f5599528da1c142e7219b8e83c2",
+        "practicuum/shared/data/quantum/atorvastatin/geometry.json": "d0d2d8afc508fd0fa5bab87fcb26256f62f6f13b3743781bb9244abc878f6ee5"
+      },
+      "step_sha256": {
+        "practicuum/modules/M07/lessons/L02/steps/02_lab.md": "c493af2fb968e5cfe85ea6ffa433aefe2d303ad3f4f5533f05180dc1022524f4",
+        "practicuum/modules/M07/lessons/L02/steps/03_article_review.md": "92f2b478d1f0d7f9952cf5b82f7fdb02b30007d784dbbb314c22df4296a3e070"
+      },
+      "status": "PASS",
+      "seconds": 1.4589856000093278
+    },
+    {
+      "lesson_id": "M08-L01",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:33:11.601301+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M08\\lessons\\L01\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "a9dc1f102c8ac5e87607493dc6c692fc66a44e19d95141ec8e1521b6cfe17a5d",
+      "data_sha256": {
+        "practicuum/shared/data/quantum/istradefylline/result.json": "8f56fbf9ccaff067d7e26ad94f9cbadd752c1248dcee439595456d1636fbbbb2",
+        "practicuum/shared/data/quantum/atorvastatin/result.json": "a365db4fdf5973018f6cb26c372c380bc7dd1f5599528da1c142e7219b8e83c2"
+      },
+      "step_sha256": {
+        "practicuum/modules/M08/lessons/L01/steps/01_case.md": "b7dfbf3f01f4cc48c4972eca2860022b52386bd7dd62a4dfafa56233d5f952a6"
+      },
+      "status": "PASS",
+      "seconds": 1.5828184999991208
+    },
+    {
+      "lesson_id": "M08-L01",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:33:13.184664+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M08\\lessons\\L01\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "7c745f5b9848a655900640422043916048f68d5638ca749d05a2bad5ba14a895",
+      "data_sha256": {
+        "practicuum/shared/data/quantum/istradefylline/result.json": "8f56fbf9ccaff067d7e26ad94f9cbadd752c1248dcee439595456d1636fbbbb2",
+        "practicuum/shared/data/quantum/atorvastatin/result.json": "a365db4fdf5973018f6cb26c372c380bc7dd1f5599528da1c142e7219b8e83c2"
+      },
+      "step_sha256": {
+        "practicuum/modules/M08/lessons/L01/steps/02_lab.md": "8c618d4d777e6bb3cb1dc002aac0c86afdc525af8bad1658041845a4a1decc5a"
+      },
+      "status": "PASS",
+      "seconds": 1.4508560000103898
+    },
+    {
+      "lesson_id": "M08-L02",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:33:14.637361+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M08\\lessons\\L02\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "4a361f1e8947500429e1aedaf29999d936eb0068f2128ebb7952be1c97d37412",
+      "data_sha256": {
+        "practicuum/shared/data/nist_ir_source.json": "2a3a141b49453053d8507c4cf1135ffd351834df5dc2e23b1e63574c459451b3"
+      },
+      "step_sha256": {
+        "practicuum/modules/M08/lessons/L02/steps/01_case.md": "93029c8dfbf2678e492846d42a9346c97d0ac18709f6a7fe0f2bb28b9a64fcd9",
+        "practicuum/modules/M08/lessons/L02/steps/03_article_case.md": "956edc7ffde4f4c23ca59574a6fe8f42e8bcb55a0c110758c8aa714158514d09"
+      },
+      "status": "PASS",
+      "seconds": 1.6021785000048112
+    },
+    {
+      "lesson_id": "M08-L02",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:33:16.239799+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M08\\lessons\\L02\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "eb3676628ee9c1c1dafa2761f2f35d01278e439832c0a6b0b1cb0d0b1a3a2148",
+      "data_sha256": {
+        "practicuum/shared/data/nist_ir_source.json": "2a3a141b49453053d8507c4cf1135ffd351834df5dc2e23b1e63574c459451b3"
+      },
+      "step_sha256": {
+        "practicuum/modules/M08/lessons/L02/steps/02_lab.md": "63e6883255c9f556aa64bbacb5683a9e78e044086146c8c08c99b57ef2446a46",
+        "practicuum/modules/M08/lessons/L02/steps/03_article_review.md": "9a658a2294cd2dd49ac8062b444355d23578450587b98b207d3c4ea904427c7d"
+      },
+      "status": "PASS",
+      "seconds": 1.5043038000003435
+    },
+    {
+      "lesson_id": "M09-L01",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:33:17.745575+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M09\\lessons\\L01\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "1e17aa720447b0ff5255bc4cfc0e4d8232673d3baca8391d5f34dd45f496743b",
+      "data_sha256": {
+        "practicuum/shared/data/caffeine_hydroxide_table4.csv": "1ea9f1f65ad97d5fd67fcf6b4483c725444ca57c7d415953b69b9d8dc31a621f",
+        "practicuum/shared/data/caffeine_kinetics_provenance.json": "0a997291642d78e90b2bc1b2c21dd92ac7117246dd5686e6f11bcf1e02a39b3e",
+        "practicuum/shared/data/source-responses/caffeine_kinetics.xml": "492a9e1abd48ef55bcc7aeaea673203554bb85aa837fba1fc9e76f25b2d99d55",
+        "practicuum/shared/data/source-responses/statin_stability_verified.xml": "84ffbbd27fdaf85a4b75c480672f5538900ba73dfe21093f49d650fbf1a794ae"
+      },
+      "step_sha256": {
+        "practicuum/modules/M09/lessons/L01/steps/01_case.md": "e1891f26b334bb9697cadd4977ae6b1bcd142520a640ab1f3f27f5f4164cdc32"
+      },
+      "status": "PASS",
+      "seconds": 2.193331400019815
+    },
+    {
+      "lesson_id": "M09-L01",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:33:19.939793+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M09\\lessons\\L01\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "ecf9dd5552ed8d577ff9f8a1c39a28280e5b8b4248e125fd6727c2727b7b8f8f",
+      "data_sha256": {
+        "practicuum/shared/data/caffeine_hydroxide_table4.csv": "1ea9f1f65ad97d5fd67fcf6b4483c725444ca57c7d415953b69b9d8dc31a621f",
+        "practicuum/shared/data/caffeine_kinetics_provenance.json": "0a997291642d78e90b2bc1b2c21dd92ac7117246dd5686e6f11bcf1e02a39b3e",
+        "practicuum/shared/data/source-responses/caffeine_kinetics.xml": "492a9e1abd48ef55bcc7aeaea673203554bb85aa837fba1fc9e76f25b2d99d55",
+        "practicuum/shared/data/source-responses/statin_stability_verified.xml": "84ffbbd27fdaf85a4b75c480672f5538900ba73dfe21093f49d650fbf1a794ae"
+      },
+      "step_sha256": {
+        "practicuum/modules/M09/lessons/L01/steps/02_lab.md": "738a8887b0a47654bd9a802ac0828c7754aeb3900b40ebc6ab168c8e2b16df7e"
+      },
+      "status": "PASS",
+      "seconds": 2.4580505000194535
+    },
+    {
+      "lesson_id": "M09-L02",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:33:22.402158+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M09\\lessons\\L02\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "070961972443219afcb5aebcf5a31529c406b37b2f2dc66efc92ad67b89aef83",
+      "data_sha256": {
+        "practicuum/shared/data/caffeine_hydroxide_table4.csv": "1ea9f1f65ad97d5fd67fcf6b4483c725444ca57c7d415953b69b9d8dc31a621f",
+        "practicuum/shared/data/caffeine_kinetics_provenance.json": "0a997291642d78e90b2bc1b2c21dd92ac7117246dd5686e6f11bcf1e02a39b3e",
+        "practicuum/shared/data/source-responses/caffeine_kinetics.xml": "492a9e1abd48ef55bcc7aeaea673203554bb85aa837fba1fc9e76f25b2d99d55",
+        "practicuum/shared/data/source-responses/statin_stability_verified.xml": "84ffbbd27fdaf85a4b75c480672f5538900ba73dfe21093f49d650fbf1a794ae"
+      },
+      "step_sha256": {
+        "practicuum/modules/M09/lessons/L02/steps/01_case.md": "5493ea871d85699065e01b256d0a0fa2384c8c362990ea2e9f7ddeefe29f58ca",
+        "practicuum/modules/M09/lessons/L02/steps/03_article_case.md": "18dd5b4d97c5859ca1474607dff513577cab451755502e0be707879377d68ea7"
+      },
+      "status": "PASS",
+      "seconds": 2.2322736000060104
+    },
+    {
+      "lesson_id": "M09-L02",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:33:24.634474+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M09\\lessons\\L02\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "e70aa7866967bc2e5c1ae70eff0951ee26fc9b1d6c30af5a48accb84238febb3",
+      "data_sha256": {
+        "practicuum/shared/data/caffeine_hydroxide_table4.csv": "1ea9f1f65ad97d5fd67fcf6b4483c725444ca57c7d415953b69b9d8dc31a621f",
+        "practicuum/shared/data/caffeine_kinetics_provenance.json": "0a997291642d78e90b2bc1b2c21dd92ac7117246dd5686e6f11bcf1e02a39b3e",
+        "practicuum/shared/data/source-responses/caffeine_kinetics.xml": "492a9e1abd48ef55bcc7aeaea673203554bb85aa837fba1fc9e76f25b2d99d55",
+        "practicuum/shared/data/source-responses/statin_stability_verified.xml": "84ffbbd27fdaf85a4b75c480672f5538900ba73dfe21093f49d650fbf1a794ae"
+      },
+      "step_sha256": {
+        "practicuum/modules/M09/lessons/L02/steps/02_lab.md": "71071ed3592dacf187196bf36f292b294df8be10074da56394ca3a557330957d",
+        "practicuum/modules/M09/lessons/L02/steps/03_article_review.md": "43c1bf3507f3badfb85f754e2c33fbacad5dd621f5d98d237e59849668493b74"
+      },
+      "status": "PASS",
+      "seconds": 2.0560746999981347
+    },
+    {
+      "lesson_id": "M10-L01",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:33:26.691556+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M10\\lessons\\L01\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "b429d45a952a89b8442f6f03dda01c4230150a75e61850d472e697d90eea0b25",
+      "data_sha256": {
+        "practicuum/shared/data/xanthine_uhplc_ruggedness.csv": "c4c2ff2e6925896f2473c461f4a25aed8cf429b95f566df6a0e5c6f8001df7c0",
+        "practicuum/shared/data/xanthine_uhplc_provenance.json": "9e9c7597760294c07ce7874b82f6807cb302b52a1e12049976cc5d8a08d1bea0",
+        "practicuum/shared/data/source-responses/xanthine_uhplc.xml": "6d94f676aaa0661889867472e712917af11a8e255229782b115af30fa95324b8",
+        "practicuum/shared/data/atorvastatin_hplc_table1.csv": "48f2e1cde1995d8419cb27c67484e16fd8c3c767675dcf142b0ae4994adfbb4c",
+        "practicuum/shared/data/hplc_provenance.json": "867859df9479939620ff6ba6267793c72dc01f4e36c9daf47f220b1496e40e37"
+      },
+      "step_sha256": {
+        "practicuum/modules/M10/lessons/L01/steps/01_case.md": "cb93d2caa529222c1240a883135fe37ecaaea132596f1dbb25cdad35044cd986"
+      },
+      "status": "PASS",
+      "seconds": 2.1813068999908864
+    },
+    {
+      "lesson_id": "M10-L01",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:33:28.873917+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M10\\lessons\\L01\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "5f0b90fa422ab70566cad45ea6b77af85fcfde6a077dc322a475366482c60d81",
+      "data_sha256": {
+        "practicuum/shared/data/xanthine_uhplc_ruggedness.csv": "c4c2ff2e6925896f2473c461f4a25aed8cf429b95f566df6a0e5c6f8001df7c0",
+        "practicuum/shared/data/xanthine_uhplc_provenance.json": "9e9c7597760294c07ce7874b82f6807cb302b52a1e12049976cc5d8a08d1bea0",
+        "practicuum/shared/data/source-responses/xanthine_uhplc.xml": "6d94f676aaa0661889867472e712917af11a8e255229782b115af30fa95324b8",
+        "practicuum/shared/data/atorvastatin_hplc_table1.csv": "48f2e1cde1995d8419cb27c67484e16fd8c3c767675dcf142b0ae4994adfbb4c",
+        "practicuum/shared/data/hplc_provenance.json": "867859df9479939620ff6ba6267793c72dc01f4e36c9daf47f220b1496e40e37"
+      },
+      "step_sha256": {
+        "practicuum/modules/M10/lessons/L01/steps/02_lab.md": "afd9771172b3164dd6f7a33d604fa19b39ba1ee0e5d2e7e5afbe9d370e51cb6a"
+      },
+      "status": "PASS",
+      "seconds": 2.103559800016228
+    },
+    {
+      "lesson_id": "M10-L02",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:33:30.977998+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M10\\lessons\\L02\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "21144ef2bf6e7f4b8cc0fbe41aaecce99a9401a1683a7ff203f7429beb21d4b8",
+      "data_sha256": {
+        "practicuum/shared/data/xanthine_uhplc_ruggedness.csv": "c4c2ff2e6925896f2473c461f4a25aed8cf429b95f566df6a0e5c6f8001df7c0",
+        "practicuum/shared/data/xanthine_uhplc_provenance.json": "9e9c7597760294c07ce7874b82f6807cb302b52a1e12049976cc5d8a08d1bea0",
+        "practicuum/shared/data/source-responses/xanthine_uhplc.xml": "6d94f676aaa0661889867472e712917af11a8e255229782b115af30fa95324b8",
+        "practicuum/shared/data/atorvastatin_hplc_table1.csv": "48f2e1cde1995d8419cb27c67484e16fd8c3c767675dcf142b0ae4994adfbb4c",
+        "practicuum/shared/data/hplc_provenance.json": "867859df9479939620ff6ba6267793c72dc01f4e36c9daf47f220b1496e40e37"
+      },
+      "step_sha256": {
+        "practicuum/modules/M10/lessons/L02/steps/01_case.md": "c805bb9d3f64b196f1eb0536cae489760aecba8bd90aee39eba5898bfa3c671e",
+        "practicuum/modules/M10/lessons/L02/steps/03_article_case.md": "724a8bf79ebf960d8d8a19c08cdb0540efc249f48989ee70aa4ac541087ce8ef"
+      },
+      "status": "PASS",
+      "seconds": 2.1309814999985974
+    },
+    {
+      "lesson_id": "M10-L02",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:33:33.110396+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M10\\lessons\\L02\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "09e3b36f8af36da41c0c02986c53211558671140afb540189a08f772ba115e64",
+      "data_sha256": {
+        "practicuum/shared/data/xanthine_uhplc_ruggedness.csv": "c4c2ff2e6925896f2473c461f4a25aed8cf429b95f566df6a0e5c6f8001df7c0",
+        "practicuum/shared/data/xanthine_uhplc_provenance.json": "9e9c7597760294c07ce7874b82f6807cb302b52a1e12049976cc5d8a08d1bea0",
+        "practicuum/shared/data/source-responses/xanthine_uhplc.xml": "6d94f676aaa0661889867472e712917af11a8e255229782b115af30fa95324b8",
+        "practicuum/shared/data/atorvastatin_hplc_table1.csv": "48f2e1cde1995d8419cb27c67484e16fd8c3c767675dcf142b0ae4994adfbb4c",
+        "practicuum/shared/data/hplc_provenance.json": "867859df9479939620ff6ba6267793c72dc01f4e36c9daf47f220b1496e40e37"
+      },
+      "step_sha256": {
+        "practicuum/modules/M10/lessons/L02/steps/02_lab.md": "ba092d6541273586f3874d312ee8ed2779a36699abffea47850f39b7cdbb29a0",
+        "practicuum/modules/M10/lessons/L02/steps/03_article_review.md": "a43f39a86e552bd4212486fcbb3016aa32c590d0d888a78181d7810f3cd4b11f"
+      },
+      "status": "PASS",
+      "seconds": 2.1067400999891106
+    },
+    {
+      "lesson_id": "M11-L01",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:33:35.218200+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M11\\lessons\\L01\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "5d394d8ea758dd5a6e781411aa7ea2bb6b92f24aa4fec1b94afdb49b26da53bc",
+      "data_sha256": {
+        "practicuum/shared/data/target_docking/a2a_crystal_reference.sdf": "ebd7061074f84cae2338f900061881a395507d437eb68fdbcd5feaa89bc0fa8d",
+        "practicuum/shared/data/target_docking/a2a_preparation.json": "431d68d3e5dbf8010ec566811b7a776caf7ef84a3d4f96e3541c76d09f691cbf",
+        "practicuum/shared/data/target_docking/a2a_protein_crystal.pdb": "9e064d8b727dd452112141d6f201caefe36e3234a660d78b1beb6759a8760841",
+        "practicuum/shared/data/target_docking/a2a_protocol.json": "55112946db6028b93ae3942ff8d825fb1794b2519131b7732d8ebf386222d19f",
+        "practicuum/shared/data/target_docking/a2a_redocking.json": "11052b074b195eb7b491ccc33fec8279b4f5ac034c31cb916c3a56e3c83ef6e9",
+        "practicuum/shared/data/target_docking/hmgcr_crystal_reference.sdf": "dda7e1d6d60d3acd2103a7921eb70951efd7e2b42dfe7336dbbdd40e9b245d89",
+        "practicuum/shared/data/target_docking/hmgcr_failure.json": "2f6c5d6ed96cc00cdbd11622292309f2f565f38f7def4862af32b114f37252a8",
+        "practicuum/shared/data/target_docking/hmgcr_gap_audit.json": "60b0f9d2dd036b994972b67bbe071fa70ce8d5c3f511216803740c49cbbc6b5d",
+        "practicuum/shared/data/target_docking/hmgcr_protein_crystal.pdb": "41e24477ca5fc9a5b21daa10c83147bd3f08b06a335ce8b7712ab0fb3bfd156e",
+        "practicuum/shared/data/target_docking/hmgcr_repair_audit.json": "bd5bf16a8984e3c704f5e7dd4a3cfb67df87f1a218ed6b2c8dbcf5d38c069f0b",
+        "practicuum/shared/data/target_docking/manifest.json": "fd21ccb22bdbdbcc5e38e4ef53b8771b26eaf78a8e5b0fdf648c4e850363a4dc",
+        "practicuum/shared/data/target_docking/start-13-search-101.sdf": "3030071aa059241f39b3250706fb265c3186df79fbe51f3cba60e909d34e70f2",
+        "practicuum/shared/data/target_docking/start-13-search-202.sdf": "af53c6a4b7940cfdd8efb9aa767e7066b56d2ffd5a57c1545ae8007b84be18e9",
+        "practicuum/shared/data/target_docking/start-13-search-303.sdf": "758054fe84b13154132287de2a6f752f394f4fa4b8dc89d974806eaeebbd14b7",
+        "practicuum/shared/data/target_docking/start-37-search-101.sdf": "4a968144b3e09349c04a13e02b4ac23574123d8e37be7dd07d86d9fc8be169af",
+        "practicuum/shared/data/target_docking/start-37-search-202.sdf": "d1df345a8e4822954e620995fb3921319579319f28c38772e85d54b71fd1a0b4",
+        "practicuum/shared/data/target_docking/start-37-search-303.sdf": "59abf9bdbbfcdd4430f653e6b706573072c2142aa3e1ef0f89c72d77f2f50c1b",
+        "practicuum/shared/data/target_docking/start-73-search-101.sdf": "9f68e5840c24635906d07b68481d0ec3c542db16af2d660669bd0cd3a71a72e5",
+        "practicuum/shared/data/target_docking/start-73-search-202.sdf": "a47b4a56bf384877e67d1422464702f7543493212ba70ee610c8f0411bb7a4d2",
+        "practicuum/shared/data/target_docking/start-73-search-303.sdf": "9ca0bf7613aef2d3bfe65a4a39a84f0b6807b6f4d01bf4e6848a2396e08739b3"
+      },
+      "step_sha256": {
+        "practicuum/modules/M11/lessons/L01/steps/01_case.md": "4a244eb16a7c5281060aff9de54d61037a0520abd4bba5d298fb061b07e36c85"
+      },
+      "status": "PASS",
+      "seconds": 1.6925410999974702
+    },
+    {
+      "lesson_id": "M11-L01",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:33:36.910605+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M11\\lessons\\L01\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "66c6d573ec87e75f11ff4beeb8bcc01e0a13ec3e4c05329eee9c433faf1f3120",
+      "data_sha256": {
+        "practicuum/shared/data/target_docking/a2a_crystal_reference.sdf": "ebd7061074f84cae2338f900061881a395507d437eb68fdbcd5feaa89bc0fa8d",
+        "practicuum/shared/data/target_docking/a2a_preparation.json": "431d68d3e5dbf8010ec566811b7a776caf7ef84a3d4f96e3541c76d09f691cbf",
+        "practicuum/shared/data/target_docking/a2a_protein_crystal.pdb": "9e064d8b727dd452112141d6f201caefe36e3234a660d78b1beb6759a8760841",
+        "practicuum/shared/data/target_docking/a2a_protocol.json": "55112946db6028b93ae3942ff8d825fb1794b2519131b7732d8ebf386222d19f",
+        "practicuum/shared/data/target_docking/a2a_redocking.json": "11052b074b195eb7b491ccc33fec8279b4f5ac034c31cb916c3a56e3c83ef6e9",
+        "practicuum/shared/data/target_docking/hmgcr_crystal_reference.sdf": "dda7e1d6d60d3acd2103a7921eb70951efd7e2b42dfe7336dbbdd40e9b245d89",
+        "practicuum/shared/data/target_docking/hmgcr_failure.json": "2f6c5d6ed96cc00cdbd11622292309f2f565f38f7def4862af32b114f37252a8",
+        "practicuum/shared/data/target_docking/hmgcr_gap_audit.json": "60b0f9d2dd036b994972b67bbe071fa70ce8d5c3f511216803740c49cbbc6b5d",
+        "practicuum/shared/data/target_docking/hmgcr_protein_crystal.pdb": "41e24477ca5fc9a5b21daa10c83147bd3f08b06a335ce8b7712ab0fb3bfd156e",
+        "practicuum/shared/data/target_docking/hmgcr_repair_audit.json": "bd5bf16a8984e3c704f5e7dd4a3cfb67df87f1a218ed6b2c8dbcf5d38c069f0b",
+        "practicuum/shared/data/target_docking/manifest.json": "fd21ccb22bdbdbcc5e38e4ef53b8771b26eaf78a8e5b0fdf648c4e850363a4dc",
+        "practicuum/shared/data/target_docking/start-13-search-101.sdf": "3030071aa059241f39b3250706fb265c3186df79fbe51f3cba60e909d34e70f2",
+        "practicuum/shared/data/target_docking/start-13-search-202.sdf": "af53c6a4b7940cfdd8efb9aa767e7066b56d2ffd5a57c1545ae8007b84be18e9",
+        "practicuum/shared/data/target_docking/start-13-search-303.sdf": "758054fe84b13154132287de2a6f752f394f4fa4b8dc89d974806eaeebbd14b7",
+        "practicuum/shared/data/target_docking/start-37-search-101.sdf": "4a968144b3e09349c04a13e02b4ac23574123d8e37be7dd07d86d9fc8be169af",
+        "practicuum/shared/data/target_docking/start-37-search-202.sdf": "d1df345a8e4822954e620995fb3921319579319f28c38772e85d54b71fd1a0b4",
+        "practicuum/shared/data/target_docking/start-37-search-303.sdf": "59abf9bdbbfcdd4430f653e6b706573072c2142aa3e1ef0f89c72d77f2f50c1b",
+        "practicuum/shared/data/target_docking/start-73-search-101.sdf": "9f68e5840c24635906d07b68481d0ec3c542db16af2d660669bd0cd3a71a72e5",
+        "practicuum/shared/data/target_docking/start-73-search-202.sdf": "a47b4a56bf384877e67d1422464702f7543493212ba70ee610c8f0411bb7a4d2",
+        "practicuum/shared/data/target_docking/start-73-search-303.sdf": "9ca0bf7613aef2d3bfe65a4a39a84f0b6807b6f4d01bf4e6848a2396e08739b3"
+      },
+      "step_sha256": {
+        "practicuum/modules/M11/lessons/L01/steps/02_lab.md": "e991f38a598edd1498cf207bb8e2681cec9bb0c87088228623989ff52670828c"
+      },
+      "status": "PASS",
+      "seconds": 1.555573399993591
+    },
+    {
+      "lesson_id": "M11-L02",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:33:38.467597+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M11\\lessons\\L02\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "5b2dc260cfbbce8e24310e02384b3ca0a40caf65c35f44f1ab64ac799bb285c0",
+      "data_sha256": {
+        "practicuum/shared/data/target_docking/a2a_crystal_reference.sdf": "ebd7061074f84cae2338f900061881a395507d437eb68fdbcd5feaa89bc0fa8d",
+        "practicuum/shared/data/target_docking/a2a_preparation.json": "431d68d3e5dbf8010ec566811b7a776caf7ef84a3d4f96e3541c76d09f691cbf",
+        "practicuum/shared/data/target_docking/a2a_protein_crystal.pdb": "9e064d8b727dd452112141d6f201caefe36e3234a660d78b1beb6759a8760841",
+        "practicuum/shared/data/target_docking/a2a_protocol.json": "55112946db6028b93ae3942ff8d825fb1794b2519131b7732d8ebf386222d19f",
+        "practicuum/shared/data/target_docking/a2a_redocking.json": "11052b074b195eb7b491ccc33fec8279b4f5ac034c31cb916c3a56e3c83ef6e9",
+        "practicuum/shared/data/target_docking/hmgcr_crystal_reference.sdf": "dda7e1d6d60d3acd2103a7921eb70951efd7e2b42dfe7336dbbdd40e9b245d89",
+        "practicuum/shared/data/target_docking/hmgcr_failure.json": "2f6c5d6ed96cc00cdbd11622292309f2f565f38f7def4862af32b114f37252a8",
+        "practicuum/shared/data/target_docking/hmgcr_gap_audit.json": "60b0f9d2dd036b994972b67bbe071fa70ce8d5c3f511216803740c49cbbc6b5d",
+        "practicuum/shared/data/target_docking/hmgcr_protein_crystal.pdb": "41e24477ca5fc9a5b21daa10c83147bd3f08b06a335ce8b7712ab0fb3bfd156e",
+        "practicuum/shared/data/target_docking/hmgcr_repair_audit.json": "bd5bf16a8984e3c704f5e7dd4a3cfb67df87f1a218ed6b2c8dbcf5d38c069f0b",
+        "practicuum/shared/data/target_docking/manifest.json": "fd21ccb22bdbdbcc5e38e4ef53b8771b26eaf78a8e5b0fdf648c4e850363a4dc",
+        "practicuum/shared/data/target_docking/start-13-search-101.sdf": "3030071aa059241f39b3250706fb265c3186df79fbe51f3cba60e909d34e70f2",
+        "practicuum/shared/data/target_docking/start-13-search-202.sdf": "af53c6a4b7940cfdd8efb9aa767e7066b56d2ffd5a57c1545ae8007b84be18e9",
+        "practicuum/shared/data/target_docking/start-13-search-303.sdf": "758054fe84b13154132287de2a6f752f394f4fa4b8dc89d974806eaeebbd14b7",
+        "practicuum/shared/data/target_docking/start-37-search-101.sdf": "4a968144b3e09349c04a13e02b4ac23574123d8e37be7dd07d86d9fc8be169af",
+        "practicuum/shared/data/target_docking/start-37-search-202.sdf": "d1df345a8e4822954e620995fb3921319579319f28c38772e85d54b71fd1a0b4",
+        "practicuum/shared/data/target_docking/start-37-search-303.sdf": "59abf9bdbbfcdd4430f653e6b706573072c2142aa3e1ef0f89c72d77f2f50c1b",
+        "practicuum/shared/data/target_docking/start-73-search-101.sdf": "9f68e5840c24635906d07b68481d0ec3c542db16af2d660669bd0cd3a71a72e5",
+        "practicuum/shared/data/target_docking/start-73-search-202.sdf": "a47b4a56bf384877e67d1422464702f7543493212ba70ee610c8f0411bb7a4d2",
+        "practicuum/shared/data/target_docking/start-73-search-303.sdf": "9ca0bf7613aef2d3bfe65a4a39a84f0b6807b6f4d01bf4e6848a2396e08739b3"
+      },
+      "step_sha256": {
+        "practicuum/modules/M11/lessons/L02/steps/01_case.md": "ca292d3a617f92ec36b62fe38b7852d4173c5a64b51f512dfd8aec0abdc4c455",
+        "practicuum/modules/M11/lessons/L02/steps/03_article_case.md": "577dfc07446d2393ae8ebe04219c357d02c39a233d4b213ca481fd11e37a50d6"
+      },
+      "status": "PASS",
+      "seconds": 1.814014599978691
+    },
+    {
+      "lesson_id": "M11-L02",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:33:40.282023+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M11\\lessons\\L02\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "6da7b6460957952234f08e0738597f2d7f66fd872335c25bb7b01aab4b7a7b0b",
+      "data_sha256": {
+        "practicuum/shared/data/target_docking/a2a_crystal_reference.sdf": "ebd7061074f84cae2338f900061881a395507d437eb68fdbcd5feaa89bc0fa8d",
+        "practicuum/shared/data/target_docking/a2a_preparation.json": "431d68d3e5dbf8010ec566811b7a776caf7ef84a3d4f96e3541c76d09f691cbf",
+        "practicuum/shared/data/target_docking/a2a_protein_crystal.pdb": "9e064d8b727dd452112141d6f201caefe36e3234a660d78b1beb6759a8760841",
+        "practicuum/shared/data/target_docking/a2a_protocol.json": "55112946db6028b93ae3942ff8d825fb1794b2519131b7732d8ebf386222d19f",
+        "practicuum/shared/data/target_docking/a2a_redocking.json": "11052b074b195eb7b491ccc33fec8279b4f5ac034c31cb916c3a56e3c83ef6e9",
+        "practicuum/shared/data/target_docking/hmgcr_crystal_reference.sdf": "dda7e1d6d60d3acd2103a7921eb70951efd7e2b42dfe7336dbbdd40e9b245d89",
+        "practicuum/shared/data/target_docking/hmgcr_failure.json": "2f6c5d6ed96cc00cdbd11622292309f2f565f38f7def4862af32b114f37252a8",
+        "practicuum/shared/data/target_docking/hmgcr_gap_audit.json": "60b0f9d2dd036b994972b67bbe071fa70ce8d5c3f511216803740c49cbbc6b5d",
+        "practicuum/shared/data/target_docking/hmgcr_protein_crystal.pdb": "41e24477ca5fc9a5b21daa10c83147bd3f08b06a335ce8b7712ab0fb3bfd156e",
+        "practicuum/shared/data/target_docking/hmgcr_repair_audit.json": "bd5bf16a8984e3c704f5e7dd4a3cfb67df87f1a218ed6b2c8dbcf5d38c069f0b",
+        "practicuum/shared/data/target_docking/manifest.json": "fd21ccb22bdbdbcc5e38e4ef53b8771b26eaf78a8e5b0fdf648c4e850363a4dc",
+        "practicuum/shared/data/target_docking/start-13-search-101.sdf": "3030071aa059241f39b3250706fb265c3186df79fbe51f3cba60e909d34e70f2",
+        "practicuum/shared/data/target_docking/start-13-search-202.sdf": "af53c6a4b7940cfdd8efb9aa767e7066b56d2ffd5a57c1545ae8007b84be18e9",
+        "practicuum/shared/data/target_docking/start-13-search-303.sdf": "758054fe84b13154132287de2a6f752f394f4fa4b8dc89d974806eaeebbd14b7",
+        "practicuum/shared/data/target_docking/start-37-search-101.sdf": "4a968144b3e09349c04a13e02b4ac23574123d8e37be7dd07d86d9fc8be169af",
+        "practicuum/shared/data/target_docking/start-37-search-202.sdf": "d1df345a8e4822954e620995fb3921319579319f28c38772e85d54b71fd1a0b4",
+        "practicuum/shared/data/target_docking/start-37-search-303.sdf": "59abf9bdbbfcdd4430f653e6b706573072c2142aa3e1ef0f89c72d77f2f50c1b",
+        "practicuum/shared/data/target_docking/start-73-search-101.sdf": "9f68e5840c24635906d07b68481d0ec3c542db16af2d660669bd0cd3a71a72e5",
+        "practicuum/shared/data/target_docking/start-73-search-202.sdf": "a47b4a56bf384877e67d1422464702f7543493212ba70ee610c8f0411bb7a4d2",
+        "practicuum/shared/data/target_docking/start-73-search-303.sdf": "9ca0bf7613aef2d3bfe65a4a39a84f0b6807b6f4d01bf4e6848a2396e08739b3"
+      },
+      "step_sha256": {
+        "practicuum/modules/M11/lessons/L02/steps/02_lab.md": "e9b5f0bd3f6f2644376223cf7c96c08fbc10df7d76cfffa27c77efde7910b736",
+        "practicuum/modules/M11/lessons/L02/steps/03_article_review.md": "d380b18cd97fab1a4b3a64261988a32587bef4a01bc90bc34b4882f4af944242"
+      },
+      "status": "PASS",
+      "seconds": 1.5223041999852285
+    },
+    {
+      "lesson_id": "M12-L01",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:33:41.805795+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M12\\lessons\\L01\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "5e634f0d843430abbd2a55b8f306ad8b5155f7e65bfa8d9f2f117b21687e3263",
+      "data_sha256": {
+        "practicuum/shared/data/target_qsar/a2a_curated.csv": "1c59acec5bdfd3f9cc30a353abadd677ee914cf572a7213e93a9f0d7fe24f2dd",
+        "practicuum/shared/data/target_qsar/a2a_dataset.json": "c1247c95ad73aef44cc831c7e373bab7209a8f2b4e0d218f96226a23a8723c23",
+        "practicuum/shared/data/target_qsar/a2a_result.json": "8c806ac7fc7e33acfd0ba9f8a2bade4f9967189503e21c009b8183838fdc2372",
+        "practicuum/shared/data/target_qsar/a2a_split.json": "dfbf515eeefe11b812604af23e58bab259abe2eb67e5c83350ac77e02e346b0f",
+        "practicuum/shared/data/target_qsar/a2a_heldout_predictions.csv": "a545dac007624625ae4f3d19a170d1ab31ee2178720fe55a56c78dd0e1862a32",
+        "practicuum/shared/data/target_qsar/a2a_audit.json": "6083703100c56690597ec5f695938550c9cb6de54032c6a015b50cb3920ccbea",
+        "practicuum/shared/data/target_qsar/hmgcr_curated.csv": "a98aca68cbff9c45e9d881e1b0d98c4f49f03a2e333e10df9977cf89c35986a7",
+        "practicuum/shared/data/target_qsar/hmgcr_dataset.json": "7a1338239a3548739b8f9d55046a2d49e504e030bcaf8a6ab79eccda23795cce",
+        "practicuum/shared/data/target_qsar/hmgcr_result.json": "aa814cbcf1462408a34d1fca2043e43462f4ba840a2d1bcd410471bfcfd8c3b6",
+        "practicuum/shared/data/target_qsar/manifest.json": "453a8b2a681589c8ea1a79ecdf85077f71af747749d44cac0ecad426e73131dc"
+      },
+      "step_sha256": {
+        "practicuum/modules/M12/lessons/L01/steps/01_case.md": "ce8edc2a1cd1120a8a51f2eafedae1d98383bdaf3485b729e87522ac46452831"
+      },
+      "status": "PASS",
+      "seconds": 14.331776100007119
+    },
+    {
+      "lesson_id": "M12-L01",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:33:56.138139+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M12\\lessons\\L01\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "1d02a0f96da1418518c38c1f4083e07d6c06e8422033509e8cc3c6db236eadfe",
+      "data_sha256": {
+        "practicuum/shared/data/target_qsar/a2a_curated.csv": "1c59acec5bdfd3f9cc30a353abadd677ee914cf572a7213e93a9f0d7fe24f2dd",
+        "practicuum/shared/data/target_qsar/a2a_dataset.json": "c1247c95ad73aef44cc831c7e373bab7209a8f2b4e0d218f96226a23a8723c23",
+        "practicuum/shared/data/target_qsar/a2a_result.json": "8c806ac7fc7e33acfd0ba9f8a2bade4f9967189503e21c009b8183838fdc2372",
+        "practicuum/shared/data/target_qsar/a2a_split.json": "dfbf515eeefe11b812604af23e58bab259abe2eb67e5c83350ac77e02e346b0f",
+        "practicuum/shared/data/target_qsar/a2a_heldout_predictions.csv": "a545dac007624625ae4f3d19a170d1ab31ee2178720fe55a56c78dd0e1862a32",
+        "practicuum/shared/data/target_qsar/a2a_audit.json": "6083703100c56690597ec5f695938550c9cb6de54032c6a015b50cb3920ccbea",
+        "practicuum/shared/data/target_qsar/hmgcr_curated.csv": "a98aca68cbff9c45e9d881e1b0d98c4f49f03a2e333e10df9977cf89c35986a7",
+        "practicuum/shared/data/target_qsar/hmgcr_dataset.json": "7a1338239a3548739b8f9d55046a2d49e504e030bcaf8a6ab79eccda23795cce",
+        "practicuum/shared/data/target_qsar/hmgcr_result.json": "aa814cbcf1462408a34d1fca2043e43462f4ba840a2d1bcd410471bfcfd8c3b6",
+        "practicuum/shared/data/target_qsar/manifest.json": "453a8b2a681589c8ea1a79ecdf85077f71af747749d44cac0ecad426e73131dc"
+      },
+      "step_sha256": {
+        "practicuum/modules/M12/lessons/L01/steps/02_lab.md": "a093b26e8a081a98bf59869166e4a96559dc6d31b5ed569c49bb406e5ed75371"
+      },
+      "status": "PASS",
+      "seconds": 1.482278799987398
+    },
+    {
+      "lesson_id": "M12-L02",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:33:57.620876+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M12\\lessons\\L02\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "4349fe6755dd4af1fefa36ea27da0069cb4f4ae501faa6dce38742b5c3e417c0",
+      "data_sha256": {
+        "practicuum/shared/data/target_qsar/a2a_curated.csv": "1c59acec5bdfd3f9cc30a353abadd677ee914cf572a7213e93a9f0d7fe24f2dd",
+        "practicuum/shared/data/target_qsar/a2a_dataset.json": "c1247c95ad73aef44cc831c7e373bab7209a8f2b4e0d218f96226a23a8723c23",
+        "practicuum/shared/data/target_qsar/a2a_result.json": "8c806ac7fc7e33acfd0ba9f8a2bade4f9967189503e21c009b8183838fdc2372",
+        "practicuum/shared/data/target_qsar/a2a_split.json": "dfbf515eeefe11b812604af23e58bab259abe2eb67e5c83350ac77e02e346b0f",
+        "practicuum/shared/data/target_qsar/a2a_heldout_predictions.csv": "a545dac007624625ae4f3d19a170d1ab31ee2178720fe55a56c78dd0e1862a32",
+        "practicuum/shared/data/target_qsar/a2a_audit.json": "6083703100c56690597ec5f695938550c9cb6de54032c6a015b50cb3920ccbea",
+        "practicuum/shared/data/target_qsar/hmgcr_curated.csv": "a98aca68cbff9c45e9d881e1b0d98c4f49f03a2e333e10df9977cf89c35986a7",
+        "practicuum/shared/data/target_qsar/hmgcr_dataset.json": "7a1338239a3548739b8f9d55046a2d49e504e030bcaf8a6ab79eccda23795cce",
+        "practicuum/shared/data/target_qsar/hmgcr_result.json": "aa814cbcf1462408a34d1fca2043e43462f4ba840a2d1bcd410471bfcfd8c3b6",
+        "practicuum/shared/data/target_qsar/manifest.json": "453a8b2a681589c8ea1a79ecdf85077f71af747749d44cac0ecad426e73131dc"
+      },
+      "step_sha256": {
+        "practicuum/modules/M12/lessons/L02/steps/01_case.md": "f5150ce7d96db8e8d75d1b8c0f16f1bab9cf3e6cda7cfb7dc40be402370e1f35",
+        "practicuum/modules/M12/lessons/L02/steps/03_article_case.md": "69f47bada50335c92549bccee551bf707516ac8fc11ad82014509ab5df76649d"
+      },
+      "status": "PASS",
+      "seconds": 2.260244100005366
+    },
+    {
+      "lesson_id": "M12-L02",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:33:59.882327+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M12\\lessons\\L02\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "0da3459fa36ba0474fc806a6e103cc44a20867c6f9af6a54728aa512affa5d5e",
+      "data_sha256": {
+        "practicuum/shared/data/target_qsar/a2a_curated.csv": "1c59acec5bdfd3f9cc30a353abadd677ee914cf572a7213e93a9f0d7fe24f2dd",
+        "practicuum/shared/data/target_qsar/a2a_dataset.json": "c1247c95ad73aef44cc831c7e373bab7209a8f2b4e0d218f96226a23a8723c23",
+        "practicuum/shared/data/target_qsar/a2a_result.json": "8c806ac7fc7e33acfd0ba9f8a2bade4f9967189503e21c009b8183838fdc2372",
+        "practicuum/shared/data/target_qsar/a2a_split.json": "dfbf515eeefe11b812604af23e58bab259abe2eb67e5c83350ac77e02e346b0f",
+        "practicuum/shared/data/target_qsar/a2a_heldout_predictions.csv": "a545dac007624625ae4f3d19a170d1ab31ee2178720fe55a56c78dd0e1862a32",
+        "practicuum/shared/data/target_qsar/a2a_audit.json": "6083703100c56690597ec5f695938550c9cb6de54032c6a015b50cb3920ccbea",
+        "practicuum/shared/data/target_qsar/hmgcr_curated.csv": "a98aca68cbff9c45e9d881e1b0d98c4f49f03a2e333e10df9977cf89c35986a7",
+        "practicuum/shared/data/target_qsar/hmgcr_dataset.json": "7a1338239a3548739b8f9d55046a2d49e504e030bcaf8a6ab79eccda23795cce",
+        "practicuum/shared/data/target_qsar/hmgcr_result.json": "aa814cbcf1462408a34d1fca2043e43462f4ba840a2d1bcd410471bfcfd8c3b6",
+        "practicuum/shared/data/target_qsar/manifest.json": "453a8b2a681589c8ea1a79ecdf85077f71af747749d44cac0ecad426e73131dc"
+      },
+      "step_sha256": {
+        "practicuum/modules/M12/lessons/L02/steps/02_lab.md": "d0b88ec3bee68e4a2e70045e19a0a02c1300eaa418c277c60931db42dbd60b43",
+        "practicuum/modules/M12/lessons/L02/steps/03_article_review.md": "f05c8b07a35d13a6eef73567ed4cc6f2681932ed356fbbea2ff268a7c0929d3d"
+      },
+      "status": "PASS",
+      "seconds": 1.4952304000034928
+    },
+    {
+      "lesson_id": "M13-L01",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:34:01.377420+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M13\\lessons\\L01\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "e55ce4266364c22a7e8debd2886db4f5d771a308b2508bc4e5e4c1795f659099",
+      "data_sha256": {
+        "practicuum/shared/data/xanthine_synthesis_table1.csv": "38b1df144284e0da20d90d0f9648ec99da016f84510b1eae3372e561f514bea7",
+        "practicuum/shared/data/xanthine_synthesis_source.json": "b67add0310a67246474bbd04341783f3c6222dde2524c4d0e61f3d46cac71ab6",
+        "practicuum/shared/data/atorvastatin_process_source.json": "41c21e4f05ff11ada6a1f2cb6efe2d5de3d1182c42e05ab971377b661e5547dc"
+      },
+      "step_sha256": {
+        "practicuum/modules/M13/lessons/L01/steps/01_case.md": "1b6a3a48c661b9898f3086d3a01201fec98a826dec36d434aa4016a007dcdccc"
+      },
+      "status": "PASS",
+      "seconds": 1.579090700019151
+    },
+    {
+      "lesson_id": "M13-L01",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:34:02.957747+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M13\\lessons\\L01\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "9798267ee484cd53efdd98224773fe4d0cd681fa31ca458949db1130ba8af969",
+      "data_sha256": {
+        "practicuum/shared/data/xanthine_synthesis_table1.csv": "38b1df144284e0da20d90d0f9648ec99da016f84510b1eae3372e561f514bea7",
+        "practicuum/shared/data/xanthine_synthesis_source.json": "b67add0310a67246474bbd04341783f3c6222dde2524c4d0e61f3d46cac71ab6",
+        "practicuum/shared/data/atorvastatin_process_source.json": "41c21e4f05ff11ada6a1f2cb6efe2d5de3d1182c42e05ab971377b661e5547dc"
+      },
+      "step_sha256": {
+        "practicuum/modules/M13/lessons/L01/steps/02_lab.md": "21795c49f9f74040a3edb4b16a7dd7a9903859c12aa1bdc7294b12f78667d4bf"
+      },
+      "status": "PASS",
+      "seconds": 1.4906595000065863
+    },
+    {
+      "lesson_id": "M13-L02",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:34:04.450047+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M13\\lessons\\L02\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "50fc1b59d32f4549d1f45cbbfcf6385afd7c18de58ce481870b406fd15304123",
+      "data_sha256": {
+        "practicuum/shared/data/routes.csv": "c3ddf027fcb04b233b0d2c12e7cdc2059028e31982e2a9981acf04644d58244d",
+        "practicuum/shared/data/atorvastatin_process_source.json": "41c21e4f05ff11ada6a1f2cb6efe2d5de3d1182c42e05ab971377b661e5547dc"
+      },
+      "step_sha256": {
+        "practicuum/modules/M13/lessons/L02/steps/01_case.md": "01155aefec96dd79c00a7b2757cd866287aee6fb9dabd96809cd76a7cc142fb7",
+        "practicuum/modules/M13/lessons/L02/steps/03_article_case.md": "457808f2952569b686b27b38182de9566b83cedd156c3ba883f8cecddb38fec0"
+      },
+      "status": "PASS",
+      "seconds": 1.5458654999965802
+    },
+    {
+      "lesson_id": "M13-L02",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:34:05.996489+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M13\\lessons\\L02\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "403b32f184d575b7974c3fe1ec2568b6891e14e2c56072a24e6045cfc1f3882b",
+      "data_sha256": {
+        "practicuum/shared/data/routes.csv": "c3ddf027fcb04b233b0d2c12e7cdc2059028e31982e2a9981acf04644d58244d",
+        "practicuum/shared/data/atorvastatin_process_source.json": "41c21e4f05ff11ada6a1f2cb6efe2d5de3d1182c42e05ab971377b661e5547dc"
+      },
+      "step_sha256": {
+        "practicuum/modules/M13/lessons/L02/steps/02_lab.md": "7bb94d7a120fe101abb0a11fe3f20e1320af72ee15da91d13e82cc6a5e54f7c4",
+        "practicuum/modules/M13/lessons/L02/steps/03_article_review.md": "64ce2e684b0e30f656106f418dc8ab37cefa431f1b7799c9b5f02ec4011eb4e6"
+      },
+      "status": "PASS",
+      "seconds": 1.49536270002136
+    },
+    {
+      "lesson_id": "M14-L01",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:34:07.492863+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M14\\lessons\\L01\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "80529c12bfb0703f8b287b2c77c98c5917fe825c3140118800a3ddaaf16da758",
+      "data_sha256": {
+        "practicuum/shared/data/compounds.json": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267"
+      },
+      "step_sha256": {
+        "practicuum/modules/M14/lessons/L01/steps/01_case.md": "5c108776d510dc602baa61b66c0d11cb3694200fc91e61bebc1ef0e2a10a9173"
+      },
+      "status": "PASS",
+      "seconds": 2.6433520000136923
+    },
+    {
+      "lesson_id": "M14-L01",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:34:10.136595+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M14\\lessons\\L01\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "fabd70113fbf342ab86260e72f19f4f2035d0517acd31381aeaca6f61a0c52c9",
+      "data_sha256": {
+        "practicuum/shared/data/compounds.json": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267"
+      },
+      "step_sha256": {
+        "practicuum/modules/M14/lessons/L01/steps/02_lab.md": "11f4c2346bc59ab972316dde7e4edd7c835ea00f80e823dc4851c7917246a1c6"
+      },
+      "status": "PASS",
+      "seconds": 1.4773582999769133
+    },
+    {
+      "lesson_id": "M14-L02",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:34:11.614822+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M14\\lessons\\L02\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "8328d25d69994585e0f0fe9a9d6f5937d2d4333f9cd5c45b6e25e644a64a9146",
+      "data_sha256": {},
+      "step_sha256": {
+        "practicuum/modules/M14/lessons/L02/steps/01_case.md": "d07ac9f893104cd63f3b0f60e1b39acd7c7eedff4862b34bfb2948391433f76d",
+        "practicuum/modules/M14/lessons/L02/steps/03_article_case.md": "4cf2b3a98217fe729113981877995cdd036cebc341aa6d7ca967f7a712986236"
+      },
+      "status": "PASS",
+      "seconds": 1.4736269999993965
+    },
+    {
+      "lesson_id": "M14-L02",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T12:34:13.089778+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M14\\lessons\\L02\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "fe1646182d4a98e2d4238678943199d9405edb27bffb4b7dedfc0ad341268377",
+      "data_sha256": {},
+      "step_sha256": {
+        "practicuum/modules/M14/lessons/L02/steps/02_lab.md": "7ecf35134bb6cf308a2a6ccc8af6135c907d244b518b2a2ae381d35a6d0f7a07",
+        "practicuum/modules/M14/lessons/L02/steps/03_article_review.md": "94947beb045b4ca50d196f06005f4c1dc42db7bc6a0db67607b410f5727e7089"
+      },
+      "status": "PASS",
+      "seconds": 1.4804745999863371
+    }
+  ],
+  "scope": "technical execution, not scientific or learner certification",
+  "learner_work": "NOT_RUN",
+  "independent_scientific_review": "NOT_RUN",
+  "student_pilot": "NOT_RUN"
+}

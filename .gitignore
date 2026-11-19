@@ -4,6 +4,7 @@ __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
 .playwright-cli/
+.vscode/
 tmp/
 output/
 tools/bin/
