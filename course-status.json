@@ -1839,7 +1839,32 @@
     "current_main_research_runtime": {
       "status": "BLOCKED",
       "evidence": "practicuum/evidence/20261119-main-research-runtime/summary.json",
-      "sha256": "3a7b9aaaf2b64fd5bb97443743c9e7bd3809313f7b9d1fa4d17c2d4ac6ebd05a"
+      "sha256": "3a7b9aaaf2b64fd5bb97443743c9e7bd3809313f7b9d1fa4d17c2d4ac6ebd05a",
+      "observation_role": "Historical state before the later main-root cached restart"
+    },
+    "main_cached_restart_control": {
+      "status": "PASS",
+      "evidence": "practicuum/evidence/20261119-main-electronic-restart-guarded-calculation/result.json",
+      "sha256": "9b3dfbd74aceef5fd243ff3e0206019982149aea25b0bc3ac5c4ce5dbd37846a"
+    },
+    "main_cached_restart_input_compatibility": {
+      "status": "PASS",
+      "evidence": "practicuum/evidence/20261119-main-CAM-cache-preflight/restart-validation.json",
+      "sha256": "4f7d1f49568cb46fcd90a269a44735ef9976cc42683d30ebf1e7b0c4a1e37cc4",
+      "scientific_acceptance": "INPUTS_ONLY: does not certify SCF, TDDFT or physical accuracy"
+    },
+    "main_cached_restart_progress_snapshot": {
+      "status": "IN_PROGRESS",
+      "evidence": "practicuum/evidence/20261119-main-CAM-restarted-progress/progress.json",
+      "sha256": "4ebb18245e6f837d9acd992e1d4266b8d696ff6bbfe3936424324fde2ceef06d"
+    },
+    "main_cached_restart_spectrum": {
+      "status": "NOT_RUN",
+      "expected_evidence": "practicuum/evidence/20261119-main-CAM-TZVP-restarted/result.json"
+    },
+    "main_cached_restart_independent_audit": {
+      "status": "NOT_RUN",
+      "expected_evidence": "practicuum/evidence/20261119-main-CAM-TZVP-restarted-audit/result.json"
     }
   },
   "global_release_blockers": [

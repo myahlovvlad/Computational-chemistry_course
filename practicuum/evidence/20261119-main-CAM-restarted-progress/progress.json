@@ -1,0 +1,64 @@
+{
+  "utc": "2026-11-19T14:17:18.024445+00:00",
+  "status": "IN_PROGRESS",
+  "scope": "Frozen observation of a fresh main-root SCF/TDDFT run; not independent scientific validation",
+  "single_numerical_run": true,
+  "os_process_matches_including_venv_shims": [
+    {
+      "pid": 21668,
+      "cmdline": [
+        "C:\\Users\\Miakhlov\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\scripts\\run_vertical_tddft.py",
+        "--protocol",
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\protocols\\uv-cam-gfn2-water-lossless.json",
+        "--restart-source",
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\evidence\\20261119-istradefylline-CAM-TZVP-lossless-water",
+        "--initial-checkpoint",
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\evidence\\20261119-istradefylline-CAM-TZVP-lossless-water\\checkpoint.h5",
+        "--df-cache",
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational-chemistry-backup-20261119\\source-snapshot\\tmp\\pyscf-scratch\\vertical-vycoi1sv\\integrals.h5",
+        "--out",
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\evidence\\20261119-main-CAM-TZVP-restarted"
+      ],
+      "RSS_bytes": 1255759872
+    },
+    {
+      "pid": 23548,
+      "cmdline": [
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\scripts\\environment\\.venv-quantum-core\\Scripts\\python.exe",
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\scripts\\run_vertical_tddft.py",
+        "--protocol",
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\protocols\\uv-cam-gfn2-water-lossless.json",
+        "--restart-source",
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\evidence\\20261119-istradefylline-CAM-TZVP-lossless-water",
+        "--initial-checkpoint",
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\evidence\\20261119-istradefylline-CAM-TZVP-lossless-water\\checkpoint.h5",
+        "--df-cache",
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational-chemistry-backup-20261119\\source-snapshot\\tmp\\pyscf-scratch\\vertical-vycoi1sv\\integrals.h5",
+        "--out",
+        "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\evidence\\20261119-main-CAM-TZVP-restarted"
+      ],
+      "RSS_bytes": 3620864
+    }
+  ],
+  "input_compatibility": "PASS",
+  "SCF_completed": false,
+  "target_spectrum_completed": false,
+  "scientific_acceptance": "REVIEW_REQUIRED",
+  "geometry_DFT_minimum": "NOT_CLAIMED",
+  "files_sha256": {
+    "manifest.json": "6b5b7bae15344762fb599ea787e4db79bb40f6a26c322ff852cb8be6285f3996",
+    "runner-source.py": "be186bff86eca8fa7475556d049ff0aa26ddaeb82a96e1a6ecb5d3a14811cf1e",
+    "restart-helper-source.py": "0fd33dd27780db723c96ed54126ada5ea11fdbd85d577970adae165806b60a54",
+    "io-helper-source.py": "791efe5a8fe57ff28fe2c441b021b4bc8fb9169a4d474328bf3bef1bc0a70184",
+    "input.xyz": "9db8e93d69c97b33b551bc9a41ceef21d68969e56deb26b311bad127fb0cd707",
+    "basis.json": "cf57ce89cd9723fb73225a65948110293c22489210fc50f8219495f91511327e",
+    "scratch-preflight.json": "55d8f32b4eacca41d3ac143708eccaed50ca647157b91a790ded91cbd6135d33",
+    "restart-validation.json": "b8db90d9c8a0d6c49c296037f0c764510cd411da6001f1229fd9a81fd15e20ad",
+    "pyscf.log": "9cb9c554ee503cac9350b1df4a84507b2733ca650f791b9216a4fe242ecd27aa"
+  },
+  "free_disk_bytes": 8091598848,
+  "plan": "practicuum/evidence/20261119-main-CAM-TZVP-restart-plan/plan.json",
+  "expected_final_result": "practicuum/evidence/20261119-main-CAM-TZVP-restarted/result.json",
+  "expected_independent_audit": "practicuum/evidence/20261119-main-CAM-TZVP-restarted-audit/result.json"
+}

@@ -115,6 +115,13 @@ def main():
     research['CAM_TZVP_lossless_progress_snapshot']=proof('practicuum/evidence/20261119-lossless-TDDFT-progress-snapshot/progress.json')
     research['CAM_TZVP_lossless_result']=proof('practicuum/evidence/20261119-istradefylline-CAM-TZVP-lossless-water/result.json')
     research['current_main_research_runtime']=proof('practicuum/evidence/20261119-main-research-runtime/summary.json')
+    research['current_main_research_runtime']['observation_role']='Historical state before the later main-root cached restart'
+    research['main_cached_restart_control']=proof('practicuum/evidence/20261119-main-electronic-restart-guarded-calculation/result.json')
+    research['main_cached_restart_input_compatibility']=proof('practicuum/evidence/20261119-main-CAM-cache-preflight/restart-validation.json')
+    research['main_cached_restart_input_compatibility']['scientific_acceptance']='INPUTS_ONLY: does not certify SCF, TDDFT or physical accuracy'
+    research['main_cached_restart_progress_snapshot']=proof('practicuum/evidence/20261119-main-CAM-restarted-progress/progress.json')
+    research['main_cached_restart_spectrum']=proof('practicuum/evidence/20261119-main-CAM-TZVP-restarted/result.json')
+    research['main_cached_restart_independent_audit']=proof('practicuum/evidence/20261119-main-CAM-TZVP-restarted-audit/result.json')
     research['CAM_TZVP_on_GFN2']['scientific_acceptance']='REVIEW_REQUIRED: composite geometry; stability, sensitivity and experimental matching remain required'
     research['A2A_redocking']['scientific_acceptance']='FAIL: top-ranked pose recovery 0/9; finding a correct lower-ranked pose does not validate ranking'
     research['coarse_DFT_geometry']['scientific_acceptance']='NOT_ACCEPTED: quadrature gate failed; minimum not confirmed by Hessian'
@@ -224,7 +231,8 @@ def main():
 | Lossless HDF5 контроль | Disk-backed H2O CAM/def2-TZVP: DF-интегралы совпали побитово, SCF/TD excitation differences 0; файл 1715448→922294 bytes | Проверено изменение хранения, не точность спектра лекарства. Диск guard/path isolation/exception restoration PASS |
 | Повтор целевого CAM с lossless IO | Та же электронная модель, 1012 AO и 30 запрошенных состояний; gzip/shuffle/Fletcher32, остановка при резерве диска <4 GiB | Progress snapshot не является спектром. До result.json numerical completion NOT_RUN; минимальный резерв для попытки 16 GiB не гарантирует завершение |
 | Анализ электронного checkpoint | На настоящем H2O checkpoint независимо восстановлены density, MO metric и oscillator strengths; намеренно неверный electron count отклонён | Для целевого run поставлена отдельная проверка только после numerical PASS. X-only SVD character игнорирует Y, его вклад сообщается отдельно; physical assignments REVIEW_REQUIRED |
-| Текущее состояние процессов на main | Проверка `20261119-main-research-runtime/summary.json`: соответствующих процессов нет, финальных target результатов нет, checkpoint сохранены | BLOCKED; старые IN_PROGRESS snapshots исторические. Причина остановки не установлена. Промежуточная SCF-энергия не является принятым результатом; нужен новый запуск из main с проверкой происхождения входов |
+| Проверка main перед возобновлением | `20261119-main-research-runtime/summary.json`: в момент проверки соответствующих процессов не было, финальных target результатов нет, checkpoint сохранены | Исторический BLOCKED. Причина остановки не установлена; промежуточная SCF-энергия не является принятым результатом |
+| Read-only restart из main | H2O SCF/TDDFT parity PASS; неверная геометрия/повреждённый тензор отвергнуты. Целевые 204 electrons/1012 AO и 12 sampled AO pairs каждого full/LR блока совместимы; max Gram errors 1.08e-14/2.78e-16 | Это проверка входов, не спектр. Новый SCF/30-state TDDFT запущен из main; snapshot IN_PROGRESS и ожидаемые result/audit учитываются отдельно. Тензоры не перестраиваются, старый SCF PASS не наследуется |
 | A2A/8RW0 redocking | 9 реальных поисков, exhaustiveness 64, 3 начальные геометрии × 3 seed; top-1 recovery 0/9, средний top-1 RMSD 9.5593 Å | **FAIL ранжирования**; найденные ниже позы с RMSD <2 Å не меняют этот итог |
 | HMGCR/1HWK | Gate остановил подготовку: смещение атомов кармана 2.311 Å и новый OXT на 3.79 Å от лиганда | BLOCKED до проверки структуры/обработки неполных концов; не запускать docking на заведомо неподходящем входе |
 | Кофеин, кинетика | Пять опубликованных k_exp при 100 °C; slope 0.695, origin-constrained k₂ 0.71273 L mol⁻¹ min⁻¹; LOOCV RMSE 0.008266 min⁻¹ | OLS-интервалы условны; сырые временные ряды/ошибки повторов отсутствуют; это не кинетика истрадефиллина |
@@ -249,7 +257,7 @@ def main():
 ''')
     write('STEPIK_RELEASE_REPORT.md',f'''# Подготовка к Stepik
 
-Действующая программа main содержит 28 уроков, 56 Notebook и {text_step_count} текстовых шагов, включая переходы и задания по статьям. Сборка `parser/dist/main-method-articles-20261119` проверена локально; 25 stdlib-проверок относятся к ограниченным численным полям. Изменённые восемь Notebook выполнены отдельно: `practicuum/evidence/20261119-main-method-article-final/summary.json`. Прежние переносимые проверки M06 и неизменяемые сборки сохранены. Это **не профессиональный релиз** и не публикация.
+Действующая программа main содержит 28 уроков, 56 Notebook и {text_step_count} текстовых шагов, включая переходы и задания по статьям. Сборка `parser/dist/main-research-restart-20261119` проверена локально; 25 stdlib-проверок относятся к ограниченным численным полям. Изменённые восемь Notebook выполнены отдельно: `practicuum/evidence/20261119-main-method-article-final/summary.json`; уточнение смысла безразмерных метрик M12 проверено повтором `20261119-main-metric-meaning`. Прежние переносимые проверки и неизменяемые сборки сохранены. Это **не профессиональный релиз** и не публикация.
 
 Сборщик включает shared/data и закреплённую среду; исключает преподавательские решения, личный workspace и NIST raw cache. Notebook исполняются в локальном Jupyter/WSL, а не предполагаемом RDKit grader Stepik. Права/атрибуция сохраняются.
 

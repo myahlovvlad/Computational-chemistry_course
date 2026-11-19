@@ -1,0 +1,36 @@
+{
+  "utc": "2026-11-19T14:11:54.741778+00:00",
+  "pid": 18836,
+  "code_commit": "e19e6118d7c102c8f760ae4bc8d550f88009d771",
+  "branch": "main",
+  "code_sha256": {
+    "scripts/run_vertical_tddft.py": "be186bff86eca8fa7475556d049ff0aa26ddaeb82a96e1a6ecb5d3a14811cf1e",
+    "scripts/analyze_electronic_checkpoint.py": "93791453e9c78c4577698e82f520f1d0c27972da2402bc097eae798d0a4ecadb",
+    "practicuum/shared/electronic_restart.py": "0fd33dd27780db723c96ed54126ada5ea11fdbd85d577970adae165806b60a54",
+    "practicuum/shared/lossless_scratch.py": "791efe5a8fe57ff28fe2c441b021b4bc8fb9169a4d474328bf3bef1bc0a70184"
+  },
+  "solver_argv": [
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\scripts\\environment\\.venv-quantum-core\\Scripts\\python.exe",
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\scripts\\run_vertical_tddft.py",
+    "--protocol",
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\protocols\\uv-cam-gfn2-water-lossless.json",
+    "--restart-source",
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\evidence\\20261119-istradefylline-CAM-TZVP-lossless-water",
+    "--initial-checkpoint",
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\evidence\\20261119-istradefylline-CAM-TZVP-lossless-water\\checkpoint.h5",
+    "--df-cache",
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational-chemistry-backup-20261119\\source-snapshot\\tmp\\pyscf-scratch\\vertical-vycoi1sv\\integrals.h5",
+    "--out",
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\evidence\\20261119-main-CAM-TZVP-restarted"
+  ],
+  "analysis_argv": [
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\scripts\\environment\\.venv-quantum-core\\Scripts\\python.exe",
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\scripts\\analyze_electronic_checkpoint.py",
+    "--run",
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\evidence\\20261119-main-CAM-TZVP-restarted",
+    "--out",
+    "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\evidence\\20261119-main-CAM-TZVP-restarted-audit"
+  ],
+  "scope": "Fresh SCF/TDDFT after compatibility gates, then independent checkpoint audit; no publication",
+  "scientific_acceptance": "REVIEW_REQUIRED even after numerical PASS"
+}
