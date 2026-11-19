@@ -1,6 +1,6 @@
 """Проверить закреплённые байты и предметную идентичность источников; без сетевых запросов."""
 from pathlib import Path
-import csv,hashlib,json,xml.etree.ElementTree as ET
+import csv,hashlib,json,re,xml.etree.ElementTree as ET
 
 ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/'practicuum/shared/data'
@@ -56,6 +56,17 @@ def main():
     require(sha(DATA/'source-responses/caffeine_kinetics.xml')==caffeine_card['sha256'],'Caffeine source hash changed')
     statin=ET.parse(DATA/'source-responses/statin_stability_verified.xml')
     require(any(n.text=='10.3390/pharmaceutics17070808' for n in statin.findall('.//article-id')),'Wrong statin stability DOI')
+    xanthine=ET.parse(DATA/'source-responses/xanthine_uhplc.xml')
+    require(any(n.text=='10.1155/2019/2926580' for n in xanthine.findall('.//article-id')),'Wrong xanthine UHPLC DOI')
+    expected_uhplc=[]
+    for row in xanthine.findall('.//table-wrap[@id="tab4"]//tr'):
+        cells=[''.join(c.itertext()).strip() for c in row]
+        if len(cells)!=3:continue
+        match=re.fullmatch(r'([0-9.]+)\s*±\s*([0-9.]+)',cells[1])
+        if match:expected_uhplc.append((cells[0],float(match[1]),float(match[2])))
+    with (DATA/'xanthine_uhplc_ruggedness.csv').open(encoding='utf-8',newline='') as stream:
+        actual_uhplc=[(r['condition'],float(r['retention_s']),float(r['RSD_percent'])) for r in csv.DictReader(stream)]
+    require(len(expected_uhplc)==7 and expected_uhplc==actual_uhplc,'UHPLC CSV differs from primary Table 4')
     target_folder=DATA/'target_qsar'
     target_manifest=json.loads((target_folder/'manifest.json').read_text(encoding='utf-8'))
     for name,digest in target_manifest['files_sha256'].items():
@@ -65,9 +76,16 @@ def main():
         card=json.loads((target_folder/(prefix+'_dataset.json')).read_text(encoding='utf-8'))
         require(card['target']['target_chembl_id']==target and card['endpoint']==endpoint,'Wrong target/endpoint '+prefix)
         require(sha(target_folder/(prefix+'_curated.csv'))==card['sha256_curated_csv'],'Changed curated QSAR CSV '+prefix)
+    docking_folder=DATA/'target_docking'
+    docking_manifest=json.loads((docking_folder/'manifest.json').read_text(encoding='utf-8'))
+    for name,digest in docking_manifest['files_sha256'].items():
+        path=(docking_folder/name).resolve();path.relative_to(docking_folder.resolve())
+        require(sha(path)==digest,'Changed docking audit artifact '+name)
     print('PASS:',len(sources),'source hashes; 7 PubChem identities; 2 publication DOIs; 20 HPLC rows; 2 ChEMBL first pages')
     print('Scope: provenance/data consistency; no independent scientific review, assay or clinical validation')
     print('PASS: 5 caffeine kinetic rows match primary XML; caffeine and atorvastatin stability DOIs verified')
     print('PASS: frozen target-specific QSAR artifacts and target/endpoint identities verified')
+    print('PASS: 7 xanthine UHPLC conditions match primary means and percent RSD')
+    print('PASS: original receptor/ligand coordinates and saved docking audit artifacts verified')
 
 if __name__=='__main__':main()

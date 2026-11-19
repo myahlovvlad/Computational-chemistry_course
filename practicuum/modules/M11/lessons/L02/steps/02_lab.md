@@ -1,66 +1,53 @@
-# Независимое исследование B. Докинг как проверяемый расчёт
+# Независимое исследование B. Аторвастатин/HMGCR: вход, gate и валидация
 
-Разобрать комплекс B/HMGCR, выполнить доступный проверяемый расчёт и оценить пределы score. Объект — аторвастатин с явно выбранной химической формой; контрольные системы остаются контрольными.
+Источники: [RCSB PDB 1HWK](https://www.rcsb.org/structure/1HWK), исходный кристаллический карбоксилат аторвастатина (charge −1). Координаты PDB CC0, результаты подготовки и неудача сохранены; этот карман не объявлен готовым к docking.
 
 ```python
 from pathlib import Path
-import sys,json,math
+import sys,json,hashlib,math
+import numpy as np
+from rdkit import Chem
 from IPython.display import display
 ROOT=next(p for p in [Path.cwd(),*Path.cwd().parents] if (p/'programm/course.json').is_file())
 sys.path.insert(0,str(ROOT/'practicuum/shared'))
-from course_support import DATA,compound,esol,workspace,write_json,init_dossier
+from course_support import DATA,workspace,write_json,init_dossier
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+OUT=workspace('M11-L02','lab');D=DATA/'target_docking'
+manifest=json.loads((D/'manifest.json').read_text(encoding='utf-8'))
+for name,digest in manifest['files_sha256'].items():
+    assert hashlib.sha256((D/name).read_bytes()).hexdigest()==digest,name
+def read_json(name):return json.loads((D/name).read_text(encoding='utf-8'))
 def publish_plot(fig,name):
-    fig.savefig(OUT/name,dpi=120,bbox_inches='tight')
-    display(fig)
-    plt.close(fig)
-OUT=workspace('M11-L02','lab')
-DOSSIER=init_dossier()
+    fig.savefig(OUT/name,dpi=150,bbox_inches='tight');display(fig);plt.close(fig)
 ```
 
-## Задание 1. Применение
+## Задание 1
 
-Вычислите RMSD закреплённого 1IEP output и RMSD искусственного сдвига на 1 Å; это контроль метода для B.
-
-Сохраните код, таблицу результата и объяснение. Успешность: единицы/форма/условия названы; вычисление воспроизводимо; вывод ограничен полученными данными. На уровне 1 требуется перенос метода на указанный вход.
-
+Из HMGCR repair audit извлеките максимальное смещение исходных pocket-heavy atoms и ближайший новый heavy atom. Сравните со строгим заранее заданным gate 0.05 Å для смещения и 6 Å для новых атомов, требующих review. Сформируйте машиночитаемый вывод: подготовка BLOCKED, docking NOT_RUN. Не создавайте фиктивные poses/scores.
 ```python
-task_1=None  # Замените своим вычислением и аргументом; пустой каркас исполним.
+task_1=None  # Ваш расчёт, решение и независимая проверка.
 ```
 
-## Задание 2. Критический анализ
+## Задание 2
 
-Объясните, как независимое выравнивание лиганда скрывает ошибку box и как смена atom IDs ломает сравнение.
-
-Сохраните код, таблицу результата и объяснение. Успешность: единицы/форма/условия названы; вычисление воспроизводимо; вывод ограничен полученными данными. На уровне 2 требуется контрпример и диагностика причины.
-
+На примере A2A разделите sampling и ranking, top-1 и best-by-native-RMSD, алгоритмический и научный статус. Объясните, почему выбор одного удачного seed или постфактум правильной позы создаёт смещение. Для B обоснуйте, почему этот A2A результат не заменяет target-specific redocking HMGCR.
 ```python
-task_2=None  # Замените своим вычислением и аргументом; пустой каркас исполним.
+task_2=None  # Ваш расчёт, решение и независимая проверка.
 ```
 
-## Задание 3. Исследовательское решение
+## Задание 3
 
-Подготовьте исполнимый план redocking HMGCR/аторвастатин: исходная структура 1HWK, формы, receptor frame, box, mapping, seeds и критерии принятия. Фактический запуск отмечайте отдельно.
-
-Сохраните код, таблицу результата и объяснение. Успешность: единицы/форма/условия названы; вычисление воспроизводимо; вывод ограничен полученными данными. На уровне 3 требуется самостоятельный выбор и независимая проверка.
-
+Спроектируйте новый HMGCR redocking после научно обоснованной подготовки: независимые ligand starts, заранее заданные search seeds/критерии, symmetry-aware receptor-frame RMSD, negative translation control, сравнение cofactors/protonation и внешний комплекс. Укажите какие наблюдения разрешат запуск и какие потребуют отказа. До исправления входа score и affinity остаются NOT_RUN.
 ```python
-task_3=None  # Замените своим вычислением и аргументом; пустой каркас исполним.
+task_3=None  # Ваш расчёт, решение и независимая проверка.
 ```
 
-## Ограниченная автоматическая проверка
-
-Проверяются только указанные численные/структурные поля. Подготовьте `answer` как словарь; текстовые объяснения оценивает преподаватель по отдельной рубрике. Пустая работа имеет NOT_RUN. Даже полный PASS контракта не оценивает научное решение.
+Расчётный контракт ограничен полями: `max_original_pocket_displacement_A`, `nearest_new_heavy_atom_A`, `preparation_accepted`. Качество структурного решения оценивает преподаватель. Сохраните анализ, координатные соответствия и план в новой версии досье.
 
 ```python
 from research_checks import check
 answer=None
-feedback=check('M11-L02',answer)
-print(feedback)
+print(check('M11-L02',answer))
 ```
-
-Сохраните `answer.json`, графики и объяснение в OUT. Поля расчётного контракта: {"shift_RMSD_A": 1.0} (числа с допуском; эти ориентиры не являются полным решением). Для передачи в общее досье используйте `dossier_records.append_record`; запись версии не заменяет предыдущую.
-
-Три частые ошибки: выдавать контрольную систему за B; терять условия/единицы; считать совпадение числа доказательством интерпретации. Для каждого обнаруженного расхождения запишите причину и альтернативный способ проверки. Итоговый артефакт: Протокол, позы, геометрические проверки, ограничения.

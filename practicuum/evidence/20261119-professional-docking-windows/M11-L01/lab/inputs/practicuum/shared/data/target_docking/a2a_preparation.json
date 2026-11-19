@@ -1,0 +1,563 @@
+{
+  "status": "PASS",
+  "target": "8RW0",
+  "ligand_code": "JQ9",
+  "ligand_name": "istradefylline",
+  "ligand_form": "source",
+  "template_smiles": "CCn1c(=O)c2c(nc(/C=C/c3ccc(OC)c(OC)c3)n2C)n(CC)c1=O",
+  "coordinate_sha256": "ad7298ece81253b56a600d2a9426156fe475603e0c406f78b458f7703765867a",
+  "created_utc": "2026-11-18T15:03:13.962731+00:00",
+  "source_structure": "Crystal structure of the adenosine A2A receptor in complex with Istradefylline",
+  "pH": 5.0,
+  "pH_basis": "reported crystallization pH; soaking conditions and physiological transfer require separate review",
+  "protein_chains": [
+    "A"
+  ],
+  "protein_residues": 386,
+  "backbone_gap_audit": [
+    {
+      "chain": "A",
+      "before": "208",
+      "after": "1001",
+      "nearest_flank_to_ligand_A": 38.10136094682183
+    },
+    {
+      "chain": "A",
+      "before": "1042",
+      "after": "1059",
+      "nearest_flank_to_ligand_A": 46.68276153999461
+    }
+  ],
+  "heavy_atom_repairs": [
+    {
+      "atom": [
+        "A",
+        "111",
+        "CG"
+      ],
+      "nearest_ligand_A": 40.01726728551064
+    },
+    {
+      "atom": [
+        "A",
+        "111",
+        "CD"
+      ],
+      "nearest_ligand_A": 40.01462433910882
+    },
+    {
+      "atom": [
+        "A",
+        "111",
+        "NE"
+      ],
+      "nearest_ligand_A": 41.34121866853951
+    },
+    {
+      "atom": [
+        "A",
+        "111",
+        "CZ"
+      ],
+      "nearest_ligand_A": 41.6513884642517
+    },
+    {
+      "atom": [
+        "A",
+        "111",
+        "NH1"
+      ],
+      "nearest_ligand_A": 40.73771229462941
+    },
+    {
+      "atom": [
+        "A",
+        "111",
+        "NH2"
+      ],
+      "nearest_ligand_A": 42.932414840071594
+    },
+    {
+      "atom": [
+        "A",
+        "148",
+        "CG"
+      ],
+      "nearest_ligand_A": 18.357144467481852
+    },
+    {
+      "atom": [
+        "A",
+        "148",
+        "CD"
+      ],
+      "nearest_ligand_A": 18.05892341752409
+    },
+    {
+      "atom": [
+        "A",
+        "148",
+        "OE1"
+      ],
+      "nearest_ligand_A": 17.149263861752193
+    },
+    {
+      "atom": [
+        "A",
+        "148",
+        "NE2"
+      ],
+      "nearest_ligand_A": 18.93596245243425
+    },
+    {
+      "atom": [
+        "A",
+        "206",
+        "NE"
+      ],
+      "nearest_ligand_A": 40.44336043159618
+    },
+    {
+      "atom": [
+        "A",
+        "206",
+        "CZ"
+      ],
+      "nearest_ligand_A": 40.390304826777424
+    },
+    {
+      "atom": [
+        "A",
+        "206",
+        "NH1"
+      ],
+      "nearest_ligand_A": 39.31997376652228
+    },
+    {
+      "atom": [
+        "A",
+        "206",
+        "NH2"
+      ],
+      "nearest_ligand_A": 41.50093985682734
+    },
+    {
+      "atom": [
+        "A",
+        "1021",
+        "CG"
+      ],
+      "nearest_ligand_A": 74.23437057051135
+    },
+    {
+      "atom": [
+        "A",
+        "1021",
+        "OD1"
+      ],
+      "nearest_ligand_A": 73.56958405482527
+    },
+    {
+      "atom": [
+        "A",
+        "1021",
+        "OD2"
+      ],
+      "nearest_ligand_A": 74.60004150803135
+    },
+    {
+      "atom": [
+        "A",
+        "1059",
+        "CG"
+      ],
+      "nearest_ligand_A": 52.551937614135596
+    },
+    {
+      "atom": [
+        "A",
+        "1059",
+        "CD"
+      ],
+      "nearest_ligand_A": 52.424218916451196
+    },
+    {
+      "atom": [
+        "A",
+        "1059",
+        "CE"
+      ],
+      "nearest_ligand_A": 51.68516955568589
+    },
+    {
+      "atom": [
+        "A",
+        "1059",
+        "NZ"
+      ],
+      "nearest_ligand_A": 51.642954959994306
+    },
+    {
+      "atom": [
+        "A",
+        "1060",
+        "CG"
+      ],
+      "nearest_ligand_A": 55.23572805711897
+    },
+    {
+      "atom": [
+        "A",
+        "1060",
+        "OD1"
+      ],
+      "nearest_ligand_A": 55.693051945462635
+    },
+    {
+      "atom": [
+        "A",
+        "1060",
+        "OD2"
+      ],
+      "nearest_ligand_A": 55.12392897825771
+    },
+    {
+      "atom": [
+        "A",
+        "1061",
+        "CG"
+      ],
+      "nearest_ligand_A": 50.63357339749981
+    },
+    {
+      "atom": [
+        "A",
+        "1061",
+        "CD1"
+      ],
+      "nearest_ligand_A": 50.38091665501929
+    },
+    {
+      "atom": [
+        "A",
+        "1061",
+        "CD2"
+      ],
+      "nearest_ligand_A": 50.15164613449892
+    },
+    {
+      "atom": [
+        "A",
+        "1061",
+        "CE1"
+      ],
+      "nearest_ligand_A": 49.6681844041032
+    },
+    {
+      "atom": [
+        "A",
+        "1061",
+        "CE2"
+      ],
+      "nearest_ligand_A": 49.42799188718878
+    },
+    {
+      "atom": [
+        "A",
+        "1061",
+        "CZ"
+      ],
+      "nearest_ligand_A": 49.20459114757484
+    },
+    {
+      "atom": [
+        "A",
+        "1062",
+        "CG"
+      ],
+      "nearest_ligand_A": 52.651581562190515
+    },
+    {
+      "atom": [
+        "A",
+        "1062",
+        "CD"
+      ],
+      "nearest_ligand_A": 52.50697818385667
+    },
+    {
+      "atom": [
+        "A",
+        "1062",
+        "NE"
+      ],
+      "nearest_ligand_A": 51.133487999548784
+    },
+    {
+      "atom": [
+        "A",
+        "1062",
+        "CZ"
+      ],
+      "nearest_ligand_A": 50.797555984515625
+    },
+    {
+      "atom": [
+        "A",
+        "1062",
+        "NH1"
+      ],
+      "nearest_ligand_A": 51.68355314797929
+    },
+    {
+      "atom": [
+        "A",
+        "1062",
+        "NH2"
+      ],
+      "nearest_ligand_A": 49.56021019931211
+    },
+    {
+      "atom": [
+        "A",
+        "1077",
+        "CE"
+      ],
+      "nearest_ligand_A": 74.70880347054153
+    },
+    {
+      "atom": [
+        "A",
+        "1077",
+        "NZ"
+      ],
+      "nearest_ligand_A": 75.72673856043188
+    },
+    {
+      "atom": [
+        "A",
+        "1104",
+        "CG"
+      ],
+      "nearest_ligand_A": 53.17581668390247
+    },
+    {
+      "atom": [
+        "A",
+        "1104",
+        "CD"
+      ],
+      "nearest_ligand_A": 54.0090886610763
+    },
+    {
+      "atom": [
+        "A",
+        "1104",
+        "CE"
+      ],
+      "nearest_ligand_A": 55.137743025989
+    },
+    {
+      "atom": [
+        "A",
+        "1104",
+        "NZ"
+      ],
+      "nearest_ligand_A": 55.95143916826447
+    },
+    {
+      "atom": [
+        "A",
+        "1105",
+        "CG"
+      ],
+      "nearest_ligand_A": 50.095345682009224
+    },
+    {
+      "atom": [
+        "A",
+        "1105",
+        "CD1"
+      ],
+      "nearest_ligand_A": 49.097862550216995
+    },
+    {
+      "atom": [
+        "A",
+        "1105",
+        "CD2"
+      ],
+      "nearest_ligand_A": 51.18862132349337
+    },
+    {
+      "atom": [
+        "A",
+        "1105",
+        "CE1"
+      ],
+      "nearest_ligand_A": 49.20891811450441
+    },
+    {
+      "atom": [
+        "A",
+        "1105",
+        "CE2"
+      ],
+      "nearest_ligand_A": 51.30173193957491
+    },
+    {
+      "atom": [
+        "A",
+        "1105",
+        "CZ"
+      ],
+      "nearest_ligand_A": 50.31725801352852
+    },
+    {
+      "atom": [
+        "A",
+        "1105",
+        "OH"
+      ],
+      "nearest_ligand_A": 50.49927424230966
+    },
+    {
+      "atom": [
+        "A",
+        "220",
+        "CG"
+      ],
+      "nearest_ligand_A": 46.80860038497199
+    },
+    {
+      "atom": [
+        "A",
+        "220",
+        "CD"
+      ],
+      "nearest_ligand_A": 47.5157037725424
+    },
+    {
+      "atom": [
+        "A",
+        "220",
+        "NE"
+      ],
+      "nearest_ligand_A": 48.57458168630997
+    },
+    {
+      "atom": [
+        "A",
+        "220",
+        "CZ"
+      ],
+      "nearest_ligand_A": 49.37643452093316
+    },
+    {
+      "atom": [
+        "A",
+        "220",
+        "NH1"
+      ],
+      "nearest_ligand_A": 49.406658387306464
+    },
+    {
+      "atom": [
+        "A",
+        "220",
+        "NH2"
+      ],
+      "nearest_ligand_A": 50.24446156543028
+    },
+    {
+      "atom": [
+        "A",
+        "222",
+        "NE"
+      ],
+      "nearest_ligand_A": 43.01232403625733
+    },
+    {
+      "atom": [
+        "A",
+        "222",
+        "CZ"
+      ],
+      "nearest_ligand_A": 43.791414934893346
+    },
+    {
+      "atom": [
+        "A",
+        "222",
+        "NH1"
+      ],
+      "nearest_ligand_A": 45.107654561060926
+    },
+    {
+      "atom": [
+        "A",
+        "222",
+        "NH2"
+      ],
+      "nearest_ligand_A": 43.270072498205955
+    },
+    {
+      "atom": [
+        "A",
+        "305",
+        "OXT"
+      ],
+      "nearest_ligand_A": 36.24315340860947
+    }
+  ],
+  "histidine_alias": "HID/HIE/HIP renamed HIS for terminal template matching; protons and charges unchanged",
+  "receptor_variants": [
+    "receptor.pdbqt"
+  ],
+  "cofactors": [],
+  "cofactor_source": null,
+  "independent_ligand_starts": [
+    {
+      "seed": 13,
+      "file": "ligand-start-13.pdbqt"
+    },
+    {
+      "seed": 37,
+      "file": "ligand-start-37.pdbqt"
+    },
+    {
+      "seed": 73,
+      "file": "ligand-start-73.pdbqt"
+    }
+  ],
+  "box_center_A": [
+    2.135,
+    9.269,
+    123.8595
+  ],
+  "box_size_A": [
+    22.276,
+    30.330000000000002,
+    22.735
+  ],
+  "padding_A_each_side": 8,
+  "reference": "crystal_reference.sdf",
+  "reference_frame": "receptor, no independent ligand superposition",
+  "versions": {
+    "meeko": "0.8.0",
+    "vina": "1.2.7",
+    "gemmi": "0.7.5",
+    "rdkit": "2026.9.1",
+    "pdb2pqr": "3.8.0"
+  },
+  "limitations": [
+    "Rigid receptor approximation; no affinity/clinical validation",
+    "All crystal waters omitted: hydration sensitivity remains required",
+    "A2A lipids and sodium omitted explicitly; allosteric/membrane effects not represented",
+    "ADP phosphate state is a declared pH assumption, not measured proton positions",
+    "Protein-only HMGCR is a cofactor-sensitivity control, not the primary accepted receptor",
+    "Alternative protein protonation/tautomer assignments require sensitivity analysis"
+  ],
+  "redocking_execution": "NOT_RUN",
+  "scientific_review": "NOT_RUN"
+}

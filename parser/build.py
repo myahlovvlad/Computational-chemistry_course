@@ -62,7 +62,7 @@ def main():
     for name in ['fetch_target_qsar.py','train_target_qsar.py','audit_target_qsar.py',
                  'fetch_research_structures.py','prepare_target_docking.py','run_target_redocking.py',
                  'run_research_quantum.py','analyze_hplc_research.py','analyze_statin_research.py',
-                 'analyze_caffeine_kinetics.py']:
+                 'analyze_caffeine_kinetics.py','analyze_xanthine_chromatography.py']:
         copy_resource(out,'scripts/'+name)
     for source in (ROOT/'practicuum/protocols').glob('*.json'):
         copy_resource(out,source.relative_to(ROOT))

@@ -1,65 +1,68 @@
-# Разбор A. Оптимизация и валидация HPLC
+# Разбор A. План эксперимента и неидентифицируемые взаимодействия
 
-Как выбрать рабочие условия, если таблица содержит несколько факторов и повторы в центре плана? На A учимся оценивать модель отклика, сохраняя B как отдельную опубликованную систему. Гипотеза: качество аппроксимации на обучении завышает пригодность для нового режима. Нужно проверять остатки и ошибки вне обучающей строки.
-
-Постройте матрицу 20×10 по опубликованной таблице, оцените удерживание лактона. Проверьте ранг, RMSE на обучении и LOOCV. Затем исключайте целый уникальный режим факторов и сравните ошибку. Не используйте прогнозы для выдуманного «оптимума», если нет критериев всех аналитических ограничений.
+Семь условий Table 4 [исследования ксантинов](https://doi.org/10.1155/2019/2926580) изменяют по одному фактору. Проверим, какие члены поверхности отклика этот реальный план способен определить. Эта диагностика предшествует любой оптимизации.
 
 ```python
 from pathlib import Path
-import sys,json,math
+import sys,json,csv,math
+import numpy as np
+from scipy import stats
 from IPython.display import display
 ROOT=next(p for p in [Path.cwd(),*Path.cwd().parents] if (p/'programm/course.json').is_file())
 sys.path.insert(0,str(ROOT/'practicuum/shared'))
-from course_support import DATA,compound,esol,workspace,write_json,init_dossier
+from course_support import DATA,workspace,write_json,init_dossier
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-def publish_plot(fig,name):
-    fig.savefig(OUT/name,dpi=120,bbox_inches='tight')
-    display(fig)
-    plt.close(fig)
 OUT=workspace('M10-L02','case')
+def publish_plot(fig,name):
+    fig.savefig(OUT/name,dpi=150,bbox_inches='tight');display(fig);plt.close(fig)
 ```
-
-Сначала проверяем входы и единицы. Словари сохраняют названия полей вместе со значениями; список сохраняет соответствие записей. Выведите промежуточный результат перед дальнейшим анализом.
 
 ```python
-import numpy as np,csv
-with (DATA/'atorvastatin_hplc_table1.csv').open(encoding='utf-8',newline='') as f:rows=list(csv.DictReader(f))
-factors=np.array([[float(r[k]) for k in ['acetonitrile_percent','column_temperature_C','flow_mL_min']] for r in rows])
-x=(factors-[65,35,1])/[5,5,.2]
-X=np.column_stack([np.ones(len(x)),x,x*x,x[:,0]*x[:,1],x[:,0]*x[:,2],x[:,1]*x[:,2]])
-y=np.array([float(r['retention_ATO_lactone_min']) for r in rows]);assert X.shape==(20,10)
-beta,_,rank,_=np.linalg.lstsq(X,y,rcond=None);assert rank==10
-pred=X@beta;train=float(np.sqrt(np.mean((pred-y)**2)));print('Train RMSE / min',train)
+with (DATA/'xanthine_uhplc_ruggedness.csv').open(encoding='utf-8',newline='') as f:rows=list(csv.DictReader(f))
+t=np.array([float(r['retention_s']) for r in rows])
+rsd=np.array([float(r['RSD_percent']) for r in rows])
+n=np.array([int(r['n']) for r in rows])
 ```
 
-Теперь сравним модель с контрольным случаем. `assert` останавливает расчёт при нарушении контракта; это защита от ошибочного продолжения, а не оценка научного понимания.
+Кодируем ACN, температуру и поток как x=(factor−center)/scale. Полная квадратичная модель трёх факторов содержит 10 коэффициентов. При OFAT все x_i x_j равны нулю, поэтому взаимодействия неидентифицируемы. Даже идеальный fit семи средних семью аддитивными коэффициентами не даёт проверки lack of fit.
 
 ```python
-loo=np.zeros(len(y));group=np.zeros(len(y))
-for i in range(len(y)):
-    keep=np.arange(len(y))!=i;loo[i]=X[i]@np.linalg.lstsq(X[keep],y[keep],rcond=None)[0]
-for condition in np.unique(factors,axis=0):
-    test=np.all(factors==condition,axis=1);group[test]=X[test]@np.linalg.lstsq(X[~test],y[~test],rcond=None)[0]
-print('LOOCV, grouped RMSE / min',np.sqrt(np.mean((loo-y)**2)),np.sqrt(np.mean((group-y)**2)))
-fig,ax=plt.subplots();ax.scatter(y,group-y);ax.axhline(0,color='gray');ax.set(xlabel='Measured retention / min',ylabel='Held-condition residual / min');publish_plot(fig,'hplc_cv.png')
+factors=np.array([[float(r[k]) for k in ['ACN_percent','temperature_C','flow_mL_min']] for r in rows])
+x=(factors-[10,70,.5])/[5,5,.05]
+def design(z):
+    return np.column_stack([np.ones(len(z)),z,z*z,z[:,0]*z[:,1],z[:,0]*z[:,2],z[:,1]*z[:,2]])
+X=design(x);rank=int(np.linalg.matrix_rank(X));zero_columns=np.flatnonzero(np.all(X==0,axis=0))
+print({'conditions':len(t),'columns':X.shape[1],'rank':rank,'unidentifiable_columns':zero_columns.tolist()})
+assert rank==7 and zero_columns.tolist()==[7,8,9]
+beta=np.linalg.lstsq(X[:,:7],t,rcond=None)[0]
+residual=t-X[:,:7]@beta
+print('Saturated additive-model coefficients / s:',beta)
+print('Condition-mean lack-of-fit df:',len(t)-np.linalg.matrix_rank(X[:,:7]))
+assert np.max(abs(residual))<1e-10
 ```
 
-Сохраним именно полученный результат. Не переносите этот вывод на другую химическую форму, мишень или экспериментальные условия без отдельной проверки.
+Предложим **ещё не выполненное** расширение восемью угловыми условиями 2³. Оно устраняет линейную неидентифицируемость взаимодействий, но требует физической проверки давления, температуры, состава и идентичности пиков. Новых откликов не генерируем. Повторы центра, рандомизация, блокирование по дню и независимые приготовления планируются до измерения.
 
 ```python
-result={'kind':'calculated','rank':int(rank),'rows':len(y),'train_RMSE_min':train,
-        'LOOCV_RMSE_min':float(np.sqrt(np.mean((loo-y)**2))),'condition_RMSE_min':float(np.sqrt(np.mean((group-y)**2)))}
+from itertools import product
+corners=np.array(list(product([-1.,1.],repeat=3)))
+proposed=np.vstack([x,corners]);planned_rank=int(np.linalg.matrix_rank(design(proposed)))
+assert planned_rank==10
+print('Planned full design rank:',planned_rank,'new conditions:',len(corners))
+fig,ax=plt.subplots()
+ax.imshow(X,aspect='auto',cmap='coolwarm');ax.set(xlabel='Quadratic model column',ylabel='Published OFAT condition')
+publish_plot(fig,'design_identifiability.png')
+result={'kind':'calculated','scope':'actual design-rank audit; proposed new conditions NOT_RUN',
+        'published_rank':rank,'planned_rank':planned_rank,'optimization':'BLOCKED: interactions and method constraints not measured',
+        'new_experiments':'NOT_RUN'}
 ```
+
+В самостоятельной линии B есть другой реальный план: 20 опытов аторвастатина с 10 коэффициентами полного квадратичного уравнения. Он позволяет отдельно оценить pure error и lack of fit. Это иной метод/матрица; коэффициенты ксантинов на B не переносятся. Профессиональный анализ семи откликов выполнен в `scripts/analyze_hplc_research.py`; задания требуют воспроизвести диагностику, а не считать отсутствие значимого LOF доказательством валидации.
 
 ```python
 write_json(OUT/'result.json',result)
 from dossier_records import append_record
-receipt=append_record(init_dossier(),'M10-L02','A',result,ROOT,inputs=['practicuum/shared/data/atorvastatin_hplc_table1.csv'])
-print('Versioned evidence:',receipt)
+print(append_record(init_dossier(),'M10-L02','A',result,ROOT,inputs=['practicuum/shared/data/xanthine_uhplc_ruggedness.csv', 'practicuum/shared/data/xanthine_uhplc_provenance.json', 'practicuum/shared/data/source-responses/xanthine_uhplc.xml', 'practicuum/shared/data/atorvastatin_hplc_table1.csv', 'practicuum/shared/data/hplc_provenance.json']))
 ```
-
-Оптимизация требует селективности, runtime, pressure, устойчивости и проверки выбранного режима. Низкое RMSE одной колонки не завершает валидацию аналитического метода. После аналитики вернёмся к биологической мишени и уровням доказательств.
-
-Перед переходом ответьте: какие результаты получены вычислением, какие заданы условно, и какая независимая проверка ещё отсутствует?

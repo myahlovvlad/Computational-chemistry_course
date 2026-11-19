@@ -56,18 +56,28 @@
     "fast_schedule_max_h": 92.41962407465938
   },
   "M10-L01": {
-    "Rs": 1.4285714285714286
+    "unique_conditions": 15,
+    "minimum_retention_gap_min": 4.131,
+    "maximum_retention_gap_min": 6.0169999999999995
   },
   "M10-L02": {
     "rows": 20,
     "columns": 10,
-    "rank": 10
+    "rank": 10,
+    "pure_error_df": 5,
+    "lack_of_fit_df": 5,
+    "held_condition_RMSE_min": 0.232363784759675
   },
   "M11-L01": {
-    "pIC50_6nM": 8.221848749616356
+    "ligand_heavy_atoms": 41,
+    "ligand_formal_charge": -1,
+    "pocket_chain_count": 2,
+    "original_pocket_heavy_atoms": 149
   },
   "M11-L02": {
-    "shift_RMSD_A": 1.0
+    "max_original_pocket_displacement_A": 2.3110002163565455,
+    "nearest_new_heavy_atom_A": 3.790613934443867,
+    "preparation_accepted": false
   },
   "M12-L01": {
     "curated_HMGCR_n": 57,

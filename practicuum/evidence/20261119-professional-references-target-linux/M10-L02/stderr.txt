@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/miakhlov/course-production-verified-20261118/practicuum/modules/M10/lessons/L02/instructor/reference.py", line 8, in <module>
+    from analyze_hplc_research import fit_response
+ModuleNotFoundError: No module named 'analyze_hplc_research'

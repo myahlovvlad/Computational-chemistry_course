@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "scope": "actual reanalysis of published means and %RSD, not new UHPLC injections",
+  "source": {
+    "doi": "10.1155/2019/2926580",
+    "title": "Rapid and Sensitive Determination of Methylxanthines in Commercial Brands of Tea Using Ultra-High-Performance Liquid Chromatography-Mass Spectrometry",
+    "url": "https://doi.org/10.1155/2019/2926580",
+    "licence": "Creative Commons Attribution; version unspecified in retrieved XML; preserve original licence text",
+    "source_sha256": "6d94f676aaa0661889867472e712917af11a8e255229782b115af30fa95324b8",
+    "conditions": "Table 2: Nucleodur C18 polar Tec 50 x 2 mm, 1.8 um; ACN/water 10:90 with 1% formic acid; 0.5 mL/min; 70 C; 5 uL; ESI+ SIM",
+    "reported_baseline_retention_s": {
+      "theobromine": 14,
+      "theophylline": 19,
+      "caffeine": 28
+    },
+    "scope": "tea methylxanthines; not istradefylline, atorvastatin or pharmaceutical-matrix validation"
+  },
+  "diagnostics": {
+    "n_conditions": 7,
+    "full_quadratic_columns": 10,
+    "full_quadratic_rank": 7,
+    "unidentifiable_interaction_columns": [
+      7,
+      8,
+      9
+    ],
+    "additive_quadratic_rank": 7,
+    "additive_model_condition_mean_residual_df": 0,
+    "additive_coefficients_s": [
+      28.000000000000007,
+      -4.500000000000002,
+      -2.4999999999999982,
+      -5.999999999999997,
+      0.49999999999998046,
+      0.499999999999984,
+      0.9999999999999853
+    ],
+    "derived_SD_s": [
+      0.1736,
+      0.1127,
+      0.14,
+      0.07919999999999999,
+      0.1848,
+      0.1326,
+      0.11470000000000001
+    ],
+    "conditional_mean_CI95_s": [
+      [
+        27.568753693240144,
+        28.431246306759856
+      ],
+      [
+        22.72003767988574,
+        23.27996232011426
+      ],
+      [
+        34.652220720354954,
+        35.347779279645046
+      ],
+      [
+        23.803256293229374,
+        24.196743706770626
+      ],
+      [
+        32.54093135086854,
+        33.45906864913146
+      ],
+      [
+        25.670603339421906,
+        26.329396660578094
+      ],
+      [
+        30.715069404462238,
+        31.284930595537762
+      ]
+    ],
+    "relative_retention_change_percent": [
+      0.0,
+      -17.857142857142858,
+      25.0,
+      -14.285714285714286,
+      17.857142857142858,
+      -7.142857142857143,
+      10.714285714285714
+    ],
+    "pure_error_SS_from_reported_summary": 0.26720156,
+    "pure_error_df": 14,
+    "uncertainty_scope": "Conditional independent normal n=3 repeats; %RSD is not absolute SD. Raw repeats and independence unit are unavailable.",
+    "interaction_optimization": "BLOCKED: OFAT never varies two factors together",
+    "lack_of_fit": "NOT_IDENTIFIABLE for saturated additive quadratic condition means",
+    "measured_resolution": "NOT_CALCULABLE: numerical baseline peak widths absent"
+  },
+  "scientific_review": "NOT_RUN",
+  "prospective_method_validation": "NOT_RUN"
+}

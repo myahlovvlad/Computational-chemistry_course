@@ -1,0 +1,18 @@
+{
+  "rows": 20,
+  "columns": 10,
+  "rank": 10,
+  "pure_error_df": 5,
+  "lack_of_fit_df": 5,
+  "held_condition_RMSE_min": 0.232363784759675,
+  "lack_of_fit_p": 0.9675369971485711,
+  "adequacy": "NOT_REJECTED_NOT_VALIDATED",
+  "mean_CI95": [
+    7.087266906198353,
+    7.449660366528919
+  ],
+  "new_observation_PI95": [
+    6.7111094907118085,
+    7.825817782015464
+  ]
+}

@@ -933,15 +933,15 @@
             "case": {
               "path": "practicuum/modules/M10/lessons/L01/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "268c9bceeec06f62baa99048a1f061139798947ff9ee089070d3a39b4700be3b",
+              "current_sha256": "fd2e10ab9518175b50fe28f8baad56d26e4c094e7488dbceb396483ea359cff7",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-chromatography-windows/summary.json"
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-chromatography-linux/summary.json"
                 }
               },
               "scope": "guided demonstration"
@@ -949,15 +949,15 @@
             "lab": {
               "path": "practicuum/modules/M10/lessons/L01/Notebooks_labs/02_lab.ipynb",
               "authored": true,
-              "current_sha256": "9a8c78585c3cc5df258f4b318c2959d6ab494b104817085e4a38a3891c196cb4",
+              "current_sha256": "5f0b90fa422ab70566cad45ea6b77af85fcfde6a077dc322a475366482c60d81",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-chromatography-windows/summary.json"
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-chromatography-linux/summary.json"
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -981,15 +981,15 @@
             "case": {
               "path": "practicuum/modules/M10/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "10969e605eca2f451895a59baf89b1cc9c2550c890dfeb6dfb09c75efdd004ac",
+              "current_sha256": "f504abdcbdd46edab42a829a68c2b33016f10490a76562c5b4facbd729d432bd",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-chromatography-windows/summary.json"
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-chromatography-linux/summary.json"
                 }
               },
               "scope": "guided demonstration"
@@ -997,15 +997,15 @@
             "lab": {
               "path": "practicuum/modules/M10/lessons/L02/Notebooks_labs/02_lab.ipynb",
               "authored": true,
-              "current_sha256": "fc86426dc75224da65660594ba081b4918999bb6f780b0e0588ba1f5834e666f",
+              "current_sha256": "70a5d7ea3b5c6c3d0c875fe479868d25a923bd5b1c51c25c9a4f22204bc1f0f6",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-chromatography-windows/summary.json"
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-chromatography-linux/summary.json"
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -1034,15 +1034,15 @@
             "case": {
               "path": "practicuum/modules/M11/lessons/L01/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "d1556d2060387e04343d311a5567d2ac5dabfaa4c69e34116fe97e782879a257",
+              "current_sha256": "7faaa084f3bcc2fcc3a46aeb7a6f13960506999ece4114e04df2a99b7d712179",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-docking-windows/summary.json"
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-docking-linux/summary.json"
                 }
               },
               "scope": "guided demonstration"
@@ -1050,15 +1050,15 @@
             "lab": {
               "path": "practicuum/modules/M11/lessons/L01/Notebooks_labs/02_lab.ipynb",
               "authored": true,
-              "current_sha256": "445e97cc97c593e3ea2b1a5dfe8eca694e3d8f7806dfaf0a42378a03bbf7d72f",
+              "current_sha256": "66c6d573ec87e75f11ff4beeb8bcc01e0a13ec3e4c05329eee9c433faf1f3120",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-docking-windows/summary.json"
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-docking-linux/summary.json"
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -1083,15 +1083,15 @@
             "case": {
               "path": "practicuum/modules/M11/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "b15a309cf6e94aea60a8297cc8af818ca0d14296671f094b4fb077b68d67aac5",
+              "current_sha256": "2a557e7e142015a7496aba1101b59a084c39e948c9589a3ff130e1c8043b399b",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-docking-windows/summary.json"
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-docking-linux/summary.json"
                 }
               },
               "scope": "guided demonstration"
@@ -1099,15 +1099,15 @@
             "lab": {
               "path": "practicuum/modules/M11/lessons/L02/Notebooks_labs/02_lab.ipynb",
               "authored": true,
-              "current_sha256": "64cbeb3fd441511ff0619c6404bfa6ff5f15e8ed9254dc3b9afd587a39fd6bab",
+              "current_sha256": "d66e7ada2b23804fdf9c6e8ce8906c26517d7dccbf8b54ee1bf5012fbbc908e1",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-docking-windows/summary.json"
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-docking-linux/summary.json"
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -1434,6 +1434,11 @@
       "evidence": "practicuum/evidence/20261119-caffeine-rate-law-research/result.json",
       "sha256": "1f3178e5d507b1296a57c27e6048f5c5bb86963bd39a618d385074f09723ba4f"
     },
+    "xanthine_UHPLC": {
+      "status": "PASS",
+      "evidence": "practicuum/evidence/20261119-xanthine-UHPLC-research/result.json",
+      "sha256": "994e2da0448e8102f9cc8bc75b60fa6b3754632b66fae554ee3879963239400e"
+    },
     "A2A_redocking": {
       "status": "PASS",
       "evidence": "practicuum/evidence/20261118-A2A-professional-redocking/result.json",
@@ -1459,7 +1464,8 @@
     "A2A_QSAR": {
       "status": "PASS",
       "evidence": "practicuum/evidence/20261119-research-A2A-QSAR/result.json",
-      "sha256": "8c806ac7fc7e33acfd0ba9f8a2bade4f9967189503e21c009b8183838fdc2372"
+      "sha256": "8c806ac7fc7e33acfd0ba9f8a2bade4f9967189503e21c009b8183838fdc2372",
+      "scientific_acceptance": "REVIEW_REQUIRED: target-drug chemical domain and independent prospective assay validation"
     },
     "A2A_QSAR_audit": {
       "status": "PASS",

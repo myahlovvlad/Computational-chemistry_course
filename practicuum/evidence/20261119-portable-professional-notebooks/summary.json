@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "lesson_id": "M09-L01",
+      "status": "PASS",
+      "error": null,
+      "package_notebook_sha256": "f95de04bf8b5c60ac3da15207dd19d12c2d961de3baf810e89f85e65e91e482e",
+      "seconds": 4.86665070001618,
+      "scope": "execution from portable package root; frozen-result reanalysis, not model retraining"
+    },
+    {
+      "lesson_id": "M09-L02",
+      "status": "PASS",
+      "error": null,
+      "package_notebook_sha256": "13daccaad8fa0cfe9d0b0bdb1ae012bdec0d5d0a1f56d42627919e2f32b40483",
+      "seconds": 2.764980000007199,
+      "scope": "execution from portable package root; frozen-result reanalysis, not model retraining"
+    },
+    {
+      "lesson_id": "M12-L01",
+      "status": "PASS",
+      "error": null,
+      "package_notebook_sha256": "c73a6c545e9e282e4986aa0c566eefb69efdb94c71c830e5c86eb04f160de535",
+      "seconds": 16.798751599999378,
+      "scope": "execution from portable package root; frozen-result reanalysis, not model retraining"
+    },
+    {
+      "lesson_id": "M12-L02",
+      "status": "PASS",
+      "error": null,
+      "package_notebook_sha256": "19e5df4625e8aa317e5d4d95e470aabb371dcf6e6b6867587595f726fb82b701",
+      "seconds": 3.164996200008318,
+      "scope": "execution from portable package root; frozen-result reanalysis, not model retraining"
+    }
+  ],
+  "package_manifest_sha256": "fa1a86bca6534bd6b4e88a578aa11e17ff79d5d17b4e37711ac3515c0d57330f"
+}

@@ -1,0 +1,22 @@
+{
+  "lesson_id": "M10-L01",
+  "role": "lab",
+  "kernel": "course-v2-chem",
+  "started_utc": "2026-11-19T07:37:17.042167+00:00",
+  "source": "/home/miakhlov/course-production-verified-20261118/practicuum/modules/M10/lessons/L01/Notebooks_labs/02_lab.ipynb",
+  "cwd": "/home/miakhlov/course-production-verified-20261118",
+  "scope": "empty lab scaffold; learner completion NOT_RUN",
+  "input_sha256": "5f0b90fa422ab70566cad45ea6b77af85fcfde6a077dc322a475366482c60d81",
+  "data_sha256": {
+    "practicuum/shared/data/xanthine_uhplc_ruggedness.csv": "c4c2ff2e6925896f2473c461f4a25aed8cf429b95f566df6a0e5c6f8001df7c0",
+    "practicuum/shared/data/xanthine_uhplc_provenance.json": "9e9c7597760294c07ce7874b82f6807cb302b52a1e12049976cc5d8a08d1bea0",
+    "practicuum/shared/data/source-responses/xanthine_uhplc.xml": "6d94f676aaa0661889867472e712917af11a8e255229782b115af30fa95324b8",
+    "practicuum/shared/data/atorvastatin_hplc_table1.csv": "48f2e1cde1995d8419cb27c67484e16fd8c3c767675dcf142b0ae4994adfbb4c",
+    "practicuum/shared/data/hplc_provenance.json": "867859df9479939620ff6ba6267793c72dc01f4e36c9daf47f220b1496e40e37"
+  },
+  "step_sha256": {
+    "practicuum/modules/M10/lessons/L01/steps/02_lab.md": "0c7b9cc5ce4c06d08541cdc4aa2ad7d2314563cc293343cfa05a2202baf80189"
+  },
+  "status": "PASS",
+  "seconds": 1.8553644469939172
+}

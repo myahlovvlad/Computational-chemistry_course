@@ -1,7 +1,25 @@
 {
   "inputs": [
-    "practicuum/shared/data/docking/1iep_ligand.pdbqt",
-    "practicuum/shared/data/docking/1iep_ligand_vina_out.pdbqt"
+    "practicuum/shared/data/target_docking/a2a_crystal_reference.sdf",
+    "practicuum/shared/data/target_docking/a2a_preparation.json",
+    "practicuum/shared/data/target_docking/a2a_protein_crystal.pdb",
+    "practicuum/shared/data/target_docking/a2a_protocol.json",
+    "practicuum/shared/data/target_docking/a2a_redocking.json",
+    "practicuum/shared/data/target_docking/hmgcr_crystal_reference.sdf",
+    "practicuum/shared/data/target_docking/hmgcr_failure.json",
+    "practicuum/shared/data/target_docking/hmgcr_gap_audit.json",
+    "practicuum/shared/data/target_docking/hmgcr_protein_crystal.pdb",
+    "practicuum/shared/data/target_docking/hmgcr_repair_audit.json",
+    "practicuum/shared/data/target_docking/manifest.json",
+    "practicuum/shared/data/target_docking/start-13-search-101.sdf",
+    "practicuum/shared/data/target_docking/start-13-search-202.sdf",
+    "practicuum/shared/data/target_docking/start-13-search-303.sdf",
+    "practicuum/shared/data/target_docking/start-37-search-101.sdf",
+    "practicuum/shared/data/target_docking/start-37-search-202.sdf",
+    "practicuum/shared/data/target_docking/start-37-search-303.sdf",
+    "practicuum/shared/data/target_docking/start-73-search-101.sdf",
+    "practicuum/shared/data/target_docking/start-73-search-202.sdf",
+    "practicuum/shared/data/target_docking/start-73-search-303.sdf"
   ],
   "case_steps": [
     "practicuum/modules/M11/lessons/L02/steps/01_case.md"
@@ -11,5 +29,5 @@
   ],
   "instructor": "practicuum/modules/M11/lessons/L02/instructor/reference.py",
   "assessment": "practicuum/modules/M11/lessons/L02/instructor/rubric.md",
-  "development_scope": "authored computational lesson; external validation pending"
+  "development_scope": "actual A2A/8RW0 construct audit and nine-run pose reanalysis; HMGCR/1HWK preparation failure diagnosis"
 }

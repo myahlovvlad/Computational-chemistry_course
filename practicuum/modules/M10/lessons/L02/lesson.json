@@ -1,6 +1,10 @@
 {
   "inputs": [
-    "practicuum/shared/data/atorvastatin_hplc_table1.csv"
+    "practicuum/shared/data/xanthine_uhplc_ruggedness.csv",
+    "practicuum/shared/data/xanthine_uhplc_provenance.json",
+    "practicuum/shared/data/source-responses/xanthine_uhplc.xml",
+    "practicuum/shared/data/atorvastatin_hplc_table1.csv",
+    "practicuum/shared/data/hplc_provenance.json"
   ],
   "case_steps": [
     "practicuum/modules/M10/lessons/L02/steps/01_case.md"
@@ -10,5 +14,5 @@
   ],
   "instructor": "practicuum/modules/M10/lessons/L02/instructor/reference.py",
   "assessment": "practicuum/modules/M10/lessons/L02/instructor/rubric.md",
-  "development_scope": "authored computational lesson; external validation pending"
+  "development_scope": "real xanthine UHPLC ruggedness and design audit; independent atorvastatin RSM with LOF/grouped validation"
 }

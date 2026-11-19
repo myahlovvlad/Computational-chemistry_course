@@ -1,0 +1,6 @@
+{
+  "curated_HMGCR_n": 57,
+  "HMGCR_scaffolds": 28,
+  "training_eligible": false,
+  "model_training": "NOT_RUN"
+}

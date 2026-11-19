@@ -1,0 +1,23 @@
+{
+  "gaps": [
+    {
+      "chain": "A",
+      "before": "449",
+      "after": "462",
+      "nearest_flank_to_ligand_A": 28.072485782345677
+    },
+    {
+      "chain": "B",
+      "before": "472",
+      "after": "478",
+      "nearest_flank_to_ligand_A": 38.98483928400886
+    },
+    {
+      "chain": "D",
+      "before": "469",
+      "after": "481",
+      "nearest_flank_to_ligand_A": 62.75373499641277
+    }
+  ],
+  "criterion": "unresolved backbone gap flank within 6 A requires modelling/review"
+}

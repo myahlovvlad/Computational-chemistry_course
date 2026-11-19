@@ -6,21 +6,15 @@ import importlib.metadata
 import json
 from pathlib import Path
 import time
+import sys
 
 import numpy as np
 from rdkit import Chem
 from meeko import PDBQTMolecule,RDKitMolCreate
 from vina import Vina
 
-
-def rmsd_without_alignment(reference,pose,conf_id=0):
-    reference=Chem.RemoveHs(reference);pose=Chem.RemoveHs(pose)
-    if reference.GetNumAtoms()!=pose.GetNumAtoms():raise ValueError('Reference/pose heavy-atom count mismatch')
-    matches=pose.GetSubstructMatches(reference,uniquify=False,useChirality=True,maxMatches=10000)
-    if not matches:raise ValueError('No charge/stereochemistry-preserving graph isomorphism')
-    if len(matches)>=10000:raise RuntimeError('Symmetry enumeration truncated; explicit mapping required')
-    target=np.asarray(reference.GetConformer().GetPositions());coordinates=np.asarray(pose.GetConformer(conf_id).GetPositions())
-    return min(float(np.sqrt(np.mean(np.sum((coordinates[list(mapping)]-target)**2,axis=1)))) for mapping in matches)
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'practicuum/shared'))
+from pose_geometry import rmsd_without_alignment
 
 
 def save(path,value):

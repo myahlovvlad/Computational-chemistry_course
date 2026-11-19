@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "Windows_and_Linux_test_sources_identical": true,
+  "test_file_sha256": {
+    "test_receptor_inputs.py": "9e420b8c9852873586ae4ec4b0e3a6df132d1312476b112af226dfe314588891",
+    "test_hplc_research_statistics.py": "fc85d4e0a71f2b26db3a7c17ee73de9851419e1af2e6507c54daa824adc9fe15",
+    "test_caffeine_kinetics.py": "42fb2907fffc1ecad52d1145e97dbd896bc5154e83327d9ae08bb5e4944f5997",
+    "test_legacy_contracts.py": "0dfd7d1cf5bc8764ad83acfca256bfca2f5427e54635168fe5d77c1630a48747",
+    "test_dossier.py": "49ff866034407d884a13df10329acd425c72667c3c705c0d1d63337fb17d5bce",
+    "test_evidence_contracts.py": "0bd57837a8b9023c031551ca0c226df1d4d8603848a22e80c761fd21c4de13f2",
+    "test_qsar_partitions.py": "f6c0a27eb432df2245ce9a6ad163d8bf1469a6f58fd454ef9f7cd0c922c231cf",
+    "test_markdown_links.py": "9f57205d6341093f038b9b24a86b7290710f44aa432d50e4314e980736420ac0",
+    "test_pose_geometry.py": "5c1234029bca06eeacb0f4b9f417f5a6bc1c9fc55b5663f895fca1b193fe2daa",
+    "test_xanthine_chromatography.py": "b4cb04c642ecafb3be2ff039b8302fc4a5354db50517f9f1ed9286b1371fdefb"
+  },
+  "historical_scope_correction": "Earlier Linux capture label said 40 tests but its unittest log actually ran 32; eight newer tests were missing from that snapshot. Previous logs retained. This synchronized run includes all current test files."
+}

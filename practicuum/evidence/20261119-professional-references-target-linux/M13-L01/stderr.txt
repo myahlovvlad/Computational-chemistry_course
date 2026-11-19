@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/miakhlov/course-production-verified-20261118/practicuum/modules/M13/lessons/L01/instructor/reference.py", line 26, in <module>
+    print(json.dumps(reference(),ensure_ascii=False,indent=2))
+                     ^^^^^^^^^^^
+  File "/home/miakhlov/course-production-verified-20261118/practicuum/modules/M13/lessons/L01/instructor/reference.py", line 22, in reference
+    assert result['stage2_implied_lower_bound']==.8125
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -37,6 +37,12 @@ def main():
     for id in ['M12-L01','M12-L02']:
         supplementary[id]=('practicuum/evidence/20261119-professional-QSAR-windows/summary.json',
                             'practicuum/evidence/20261119-professional-QSAR-linux/summary.json')
+    for id in ['M10-L01','M10-L02']:
+        supplementary[id]=('practicuum/evidence/20261119-professional-chromatography-windows/summary.json',
+                            'practicuum/evidence/20261119-professional-chromatography-linux/summary.json')
+    for id in ['M11-L01','M11-L02']:
+        supplementary[id]=('practicuum/evidence/20261119-professional-docking-windows/summary.json',
+                            'practicuum/evidence/20261119-professional-docking-linux/summary.json')
     baseline={}
     for label,path in [('Windows',windows),('Linux/WSL',linux)]:
         for r in read(path)['runs']:baseline[(r['lesson_id'],r['role'],label)]={'status':r['status'],'evidence':path}
@@ -49,6 +55,7 @@ def main():
       'HPLC':proof('practicuum/evidence/20261118-hplc-research-statistics/result.json'),
       'atorvastatin_kinetic_parameter_audit':proof('practicuum/evidence/20261118-statin-kinetics-solubility-research/result.json'),
       'xanthine_primary_kinetic_data':proof('practicuum/evidence/20261119-caffeine-rate-law-research/result.json'),
+      'xanthine_UHPLC':proof('practicuum/evidence/20261119-xanthine-UHPLC-research/result.json'),
       'A2A_redocking':proof('practicuum/evidence/20261118-A2A-professional-redocking/result.json'),
       'HMGCR_preparation':proof('practicuum/evidence/20261118-HMGCR-target-preparation-repair-audited/failure.json'),
       'coarse_DFT_geometry':proof('practicuum/evidence/research-quantum-istradefylline-cpcm-20261118/conformer-000/optimize/result.json'),
@@ -58,6 +65,7 @@ def main():
       'HMGCR_QSAR':proof('practicuum/evidence/20261119-research-HMGCR-QSAR/result.json')}
     research['A2A_redocking']['scientific_acceptance']='FAIL: top-ranked pose recovery 0/9; finding a correct lower-ranked pose does not validate ranking'
     research['coarse_DFT_geometry']['scientific_acceptance']='NOT_ACCEPTED: quadrature gate failed; minimum not confirmed by Hessian'
+    research['A2A_QSAR']['scientific_acceptance']='REVIEW_REQUIRED: target-drug chemical domain and independent prospective assay validation'
     requirements={
       'M04-L02':['atorvastatin_kinetic_parameter_audit'],
       'M06-L01':['conformer_ensemble_with_identity_and_convergence'],
@@ -114,10 +122,10 @@ def main():
 
 - Селективно сохранены 704 файла из PR #2/#3/#5; 42 старых задания сопоставлены по компетенциям. Проверены рабочие файлы и Git blobs. [Матрица](migration-matrix.json), [перенос](CONSOLIDATION_REPORT.md).
 - Базовая редакция: 56 Notebook исполнялись на Windows и те же 56 в Linux/WSL. Это проверка исполнения разобранных примеров и **пустых каркасов B**, не научный выпуск и не решения студентов. Позднейшие изменения и исследовательские маршруты учитываются отдельно.
-- Выполнены профессиональные статистические проверки семи HPLC-откликов по 20 опубликованным опытам: pure error, lack-of-fit, исключение целого режима с повторами, условные интервалы и диагностика.
+- Выполнены профессиональные статистические проверки семи HPLC-откликов по 20 опубликованным опытам: pure error, lack-of-fit, исключение целого режима с повторами, условные интервалы и диагностика. M10 использует также реальные UHPLC данные ксантинов: %RSD, условные интервалы, ранг OFAT и неидентифицируемость взаимодействий.
 - Выполнен аудит реальных параметров кинетики/растворимости аторвастатина. M09 использует пять опубликованных кинетических условий кофеина, OLS/остатки/LOOCV и структурную идентифицируемость B; недостающие временные ряды не выдуманы.
 - Выполнен target-specific QSAR A2A на 4546 структурах: nested scaffold CV, отдельная calibration, test 854; RMSE 0.74459 pKi, bootstrap CI95 [0.68720, 0.80377]. Аудит не выявил пересечений каркасов. M12 заново анализирует сохранённые прогнозы и область применения, не выдавая это за новое обучение. HMGCR: 57 структур, обучение BLOCKED по заранее заданному протоколу.
-- Реальный redocking истрадефиллина в 8RW0: девять поисков, независимые начальные конформации, симметрийный RMSD в системе рецептора. **Геометрический критерий top-1 не пройден: 0/9.**
+- Реальный redocking истрадефиллина в 8RW0: девять поисков, независимые начальные конформации, симметрийный RMSD в системе рецептора. **Геометрический критерий top-1 не пройден: 0/9.** M11 заново анализирует координаты/poses и диагностирует HMGCR BLOCKED; сохранённые результаты не объявляются новым docking.
 - Геометрия истрадефиллина B3LYP-D3(BJ)/def2-SVP/C-PCM сошлась; coarse-grid проверка не прошла. Плотная сетка — отдельный новый прогон, не переименование прежнего результата.
 
 ## Требует завершения
@@ -150,6 +158,7 @@ def main():
 | A2A/8RW0 redocking | 9 реальных поисков, exhaustiveness 64, 3 начальные геометрии × 3 seed; top-1 recovery 0/9, средний top-1 RMSD 9.5593 Å | **FAIL ранжирования**; найденные ниже позы с RMSD <2 Å не меняют этот итог |
 | HMGCR/1HWK | Gate остановил подготовку: смещение атомов кармана 2.311 Å и новый OXT на 3.79 Å от лиганда | BLOCKED до проверки структуры/обработки неполных концов; не запускать docking на заведомо неподходящем входе |
 | Кофеин, кинетика | Пять опубликованных k_exp при 100 °C; slope 0.695, origin-constrained k₂ 0.71273 L mol⁻¹ min⁻¹; LOOCV RMSE 0.008266 min⁻¹ | OLS-интервалы условны; сырые временные ряды/ошибки повторов отсутствуют; это не кинетика истрадефиллина |
+| Ксантины, UHPLC | Семь опубликованных режимов; %RSD переведён в условный SD; ранг полного квадратичного OFAT-плана 7/10 | Взаимодействия неидентифицируемы; внутриусловная повторяемость не подтверждает полную устойчивость; исходные средние округлены |
 | QSAR A2A | 4546 структур, 1807 каркасов; nested 5×3 CV; train/cal/test 2848/844/854; test RMSE 0.74459 pKi, baseline 1.24215 | Аудит split/метрик PASS; ближайший training Tanimoto истрадефиллина 0.373; prospective assay validation NOT_RUN |
 | QSAR HMGCR | 57 структур, 28 каркасов, endpoint pIC50 | BLOCKED для заранее заданного порога ≥80; обучение NOT_RUN, pIC50 не смешивается с pKi |
 

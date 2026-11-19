@@ -1,0 +1,6 @@
+{
+  "status": "BLOCKED",
+  "error": "Receptor repair moved original binding-pocket atoms; review required",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/miakhlov/course-production-verified-20261118/scripts/prepare_target_docking.py\", line 128, in main\n    if max(pocket_movement,default=0)>.05:raise RuntimeError('Receptor repair moved original binding-pocket atoms; review required')\n                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Receptor repair moved original binding-pocket atoms; review required\n",
+  "no_bad_residue_bypass": true
+}

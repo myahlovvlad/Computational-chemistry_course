@@ -1,57 +1,66 @@
-# Разбор A. Разделение смеси
+# Разбор A. Реальная UHPLC–MS ксантинов: разделение и устойчивость
 
-Одновременный UV-сигнал нескольких форм не позволяет независимо восстановить их концентрации. Разделение по времени удерживания добавляет информацию. На A мы строим условные два пика как контроль метода; для B используем экспериментальную Table 1 исследования аторвастатина. Нельзя выдавать эти экспериментальные строки за измерение ксантинов.
+Работаем с опубликованными данными [DOI 10.1155/2019/2926580](https://doi.org/10.1155/2019/2926580), Tables 2/4, Creative Commons Attribution (версия лицензии в XML не указана). Объекты A — теобромин, теофиллин и кофеин, не истрадефиллин. Матрица — чай; перенос на фармацевтическую композицию не подтверждён.
 
-Сформируйте условные пики tR=3 и 4 min, σ=.15/.2 min; проверьте площадь и Rs. Затем прочитайте экспериментальный CSV B, выведите диапазоны удерживания и условия. HPLC-тренажёр доступен по web-training/trainers/hplc/index.html и явно разделяет таблицу и симуляцию. Не меняйте pH/колонку за пределами паспорта.
+Условия Table 2: Nucleodur C18 polar Tec, 50×2 mm, 1.8 μm; ACN/water 10:90 с 1% муравьиной кислоты, 0.5 mL/min, 70 °C, инъекция 5 μL, ESI+ SIM. Опубликованные t_R трёх соединений — 14, 19, 28 s. Это не сырые хроматограммы; Gaussian-пики не дорисовываем как измерения.
 
 ```python
 from pathlib import Path
-import sys,json,math
+import sys,json,csv,math
+import numpy as np
+from scipy import stats
 from IPython.display import display
 ROOT=next(p for p in [Path.cwd(),*Path.cwd().parents] if (p/'programm/course.json').is_file())
 sys.path.insert(0,str(ROOT/'practicuum/shared'))
-from course_support import DATA,compound,esol,workspace,write_json,init_dossier
+from course_support import DATA,workspace,write_json,init_dossier
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-def publish_plot(fig,name):
-    fig.savefig(OUT/name,dpi=120,bbox_inches='tight')
-    display(fig)
-    plt.close(fig)
 OUT=workspace('M10-L01','case')
+def publish_plot(fig,name):
+    fig.savefig(OUT/name,dpi=150,bbox_inches='tight');display(fig);plt.close(fig)
 ```
-
-Сначала проверяем входы и единицы. Словари сохраняют названия полей вместе со значениями; список сохраняет соответствие записей. Выведите промежуточный результат перед дальнейшим анализом.
 
 ```python
-import numpy as np,csv
-t=np.linspace(0,8,2000);mus=[3.,4.];sigmas=[.15,.2]
-signals=[np.exp(-.5*((t-mu)/sigma)**2)/(sigma*np.sqrt(2*np.pi)) for mu,sigma in zip(mus,sigmas)]
-Rs=2*(mus[1]-mus[0])/(4*sum(sigmas));print('Simulated Rs',Rs)
-assert all(math.isclose(float(np.trapezoid(s,t)),1,rel_tol=1e-6) for s in signals)
+with (DATA/'xanthine_uhplc_ruggedness.csv').open(encoding='utf-8',newline='') as f:rows=list(csv.DictReader(f))
+t=np.array([float(r['retention_s']) for r in rows])
+rsd=np.array([float(r['RSD_percent']) for r in rows])
+n=np.array([int(r['n']) for r in rows])
 ```
 
-Теперь сравним модель с контрольным случаем. `assert` останавливает расчёт при нарушении контракта; это защита от ошибочного продолжения, а не оценка научного понимания.
+Table 4 подписана «t_R ± %RSD (n=3)». Число после ± — относительная величина, не абсолютное SD. Переведём SD=t_R·%RSD/100, затем условный Student t-интервал среднего. Независимость и нормальность трёх повторов не подтверждены raw data; средние округлены до целых секунд, поэтому интервалы не восстанавливают исходную точность.
 
 ```python
-with (DATA/'atorvastatin_hplc_table1.csv').open(encoding='utf-8',newline='') as f:rows=list(csv.DictReader(f))
-print('Published B rows',len(rows));display(rows[:3]);assert len(rows)==20
-fig,ax=plt.subplots();ax.plot(t,sum(signals));ax.set(xlabel='Time / min',ylabel='Simulated detector response / a.u.');publish_plot(fig,'peaks.png')
+sd=t*rsd/100
+half=stats.t.ppf(.975,n-1)*sd/np.sqrt(n)
+change=100*(t-t[0])/t[0]
+display([{'condition':r['condition'],'tR_s':float(mean),'derived_SD_s':float(s),
+          'conditional_mean_CI95_s':[float(mean-h),float(mean+h)],'change_percent':float(c)}
+         for r,mean,s,h,c in zip(rows,t,sd,half,change)])
+fig,ax=plt.subplots(figsize=(9,4))
+ax.errorbar(np.arange(len(t)),t,yerr=half,fmt='o');ax.axhline(t[0],color='gray')
+ax.set_xticks(np.arange(len(t)),[r['condition'] for r in rows],rotation=35,ha='right')
+ax.set(ylabel='Caffeine retention time / s',title='Published means; conditional intervals from rounded summary data')
+publish_plot(fig,'ruggedness.png')
 ```
 
-Сохраним именно полученный результат. Не переносите этот вывод на другую химическую форму, мишень или экспериментальные условия без отдельной проверки.
+Проверим простую альтернативу: при неизменных k′ и объёмах t_R∝1/F. Это диагностическая физическая аппроксимация, не новый fit с доказанной применимостью.
 
 ```python
-result={'kind':'simulation','Rs':Rs,'B_experimental_table_rows':len(rows),'measured_B_Rs':'NOT_AVAILABLE: widths absent'}
+for i in [1,2]:
+    flow=float(rows[i]['flow_mL_min']);ideal=t[0]*.5/flow
+    print({'flow_mL_min':flow,'published_tR_s':float(t[i]),'inverse_flow_approximation_s':float(ideal),'difference_s':float(t[i]-ideal)})
+retention=np.array([14.,19.,28.])
+print('Published adjacent retention gaps / s:',np.diff(retention))
+result={'kind':'calculated','scope':'published UHPLC summary reanalysis','conditional_SD_s':sd.tolist(),
+        'relative_change_percent':change.tolist(),'measured_Rs':'NOT_CALCULABLE: numerical baseline widths unavailable',
+        'new_injections':'NOT_RUN','scientific_review':'NOT_RUN'}
 ```
+
+Небольшой %RSD внутри условия не означает отсутствия сдвига между условиями: изменение t_R достигает 25%. Без площади, ширин, асимметрии, матричных/blank-контролей и независимых приготовлений нельзя подтвердить полную устойчивость количественного метода. Разность t_R не равна Rs. Сформулируйте, какие измерения нужны, прежде чем принимать авторский общий вывод об устойчивости.
 
 ```python
 write_json(OUT/'result.json',result)
 from dossier_records import append_record
-receipt=append_record(init_dossier(),'M10-L01','A',result,ROOT,inputs=['practicuum/shared/data/atorvastatin_hplc_table1.csv', 'practicuum/shared/data/hplc_provenance.json'])
-print('Versioned evidence:',receipt)
+print(append_record(init_dossier(),'M10-L01','A',result,ROOT,inputs=['practicuum/shared/data/xanthine_uhplc_ruggedness.csv', 'practicuum/shared/data/xanthine_uhplc_provenance.json', 'practicuum/shared/data/source-responses/xanthine_uhplc.xml', 'practicuum/shared/data/atorvastatin_hplc_table1.csv', 'practicuum/shared/data/hplc_provenance.json']))
 ```
-
-Пики на рисунке делают пределы разрешения видимыми, но приписанная ширина не превращается в экспериментальное измерение. Для B нужны сырые хроматограммы, стандарт и проверка идентичности. Далее подберём условия и проверим ошибку прогноза.
-
-Перед переходом ответьте: какие результаты получены вычислением, какие заданы условно, и какая независимая проверка ещё отсутствует?

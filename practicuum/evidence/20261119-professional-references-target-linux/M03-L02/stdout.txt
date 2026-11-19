@@ -1,0 +1,70 @@
+{
+  "forms": [
+    {
+      "name": "atorvastatin",
+      "source": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/atorvastatin/property/MolecularFormula,MolecularWeight,CanonicalSMILES,IsomericSMILES,XLogP,TPSA/JSON",
+      "formula": "C33H35FN2O5",
+      "MW_g_mol": 558.6500000000002,
+      "charge": 0,
+      "smiles": "CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@@H](O)C[C@@H](O)CC(=O)O",
+      "fragments": [
+        {
+          "formula": "C33H35FN2O5",
+          "MW_g_mol": 558.6500000000002,
+          "charge": 0,
+          "smiles": "CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@@H](O)C[C@@H](O)CC(=O)O"
+        }
+      ]
+    },
+    {
+      "name": "atorvastatin_calcium",
+      "source": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/atorvastatin%20calcium/property/MolecularFormula,MolecularWeight,CanonicalSMILES,IsomericSMILES,XLogP,TPSA/JSON",
+      "formula": "C66H68CaF2N4O10",
+      "MW_g_mol": 1155.3619999999999,
+      "charge": 0,
+      "smiles": "CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@@H](O)C[C@@H](O)CC(=O)[O-].CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@@H](O)C[C@@H](O)CC(=O)[O-].[Ca+2]",
+      "fragments": [
+        {
+          "formula": "C33H34FN2O5-",
+          "MW_g_mol": 557.6420000000002,
+          "charge": -1,
+          "smiles": "CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@@H](O)C[C@@H](O)CC(=O)[O-]"
+        },
+        {
+          "formula": "C33H34FN2O5-",
+          "MW_g_mol": 557.6420000000002,
+          "charge": -1,
+          "smiles": "CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@@H](O)C[C@@H](O)CC(=O)[O-]"
+        },
+        {
+          "formula": "Ca+2",
+          "MW_g_mol": 40.078,
+          "charge": 2,
+          "smiles": "[Ca+2]"
+        }
+      ]
+    },
+    {
+      "name": "atorvastatin_lactone",
+      "source": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/atorvastatin%20lactone/property/MolecularFormula,MolecularWeight,CanonicalSMILES,IsomericSMILES,XLogP,TPSA/JSON",
+      "formula": "C33H33FN2O4",
+      "MW_g_mol": 540.6350000000002,
+      "charge": 0,
+      "smiles": "CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@@H]1C[C@@H](O)CC(=O)O1",
+      "fragments": [
+        {
+          "formula": "C33H33FN2O4",
+          "MW_g_mol": 540.6350000000002,
+          "charge": 0,
+          "smiles": "CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@@H]1C[C@@H](O)CC(=O)O1"
+        }
+      ]
+    }
+  ],
+  "rdkit": "2026.09.1",
+  "organic_equivalents_per_salt_record": 2,
+  "acid_equivalent_mass_fraction_ideal_anhydrous": 0.967056212684856,
+  "real_sample_hydration": "NOT_RUN",
+  "real_sample_identity": "NOT_RUN",
+  "scientific_explanation_review": "NOT_RUN"
+}

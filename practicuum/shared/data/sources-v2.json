@@ -216,5 +216,23 @@
     "bytes": 1754,
     "license": "CC BY-SA 3.0 for derived data",
     "attribution": "ChEMBL / EMBL-EBI; curated target-specific transforms and prediction audit by course authors"
+  },
+  {
+    "file": "source-responses/xanthine_uhplc.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6875304/fullTextXML",
+    "status": "PASS",
+    "sha256": "6d94f676aaa0661889867472e712917af11a8e255229782b115af30fa95324b8",
+    "bytes": 111198,
+    "license": "Creative Commons Attribution; version unspecified in retrieved XML",
+    "attribution": "Aqel, Almulla, Al-Rifai, Wabaidur, ALOthman, Badjah-Hadj-Ahmed (2019)"
+  },
+  {
+    "file": "target_docking/manifest.json",
+    "url": "https://www.rcsb.org/",
+    "status": "PASS",
+    "sha256": "fd21ccb22bdbdbcc5e38e4ef53b8771b26eaf78a8e5b0fdf648c4e850363a4dc",
+    "bytes": 2265,
+    "license": "RCSB PDB coordinates CC0; source and transformation attribution retained",
+    "attribution": "PDB 8RW0 (Glover), PDB 1HWK (Istvan and Deisenhofer); course preparation and Vina pose reanalysis"
   }
 ]
