@@ -291,5 +291,19 @@
     "attribution": "Own course calculations using GFN2-xTB 6.8.0 / ALPB water; PubChem structure sources retained in per-state manifests",
     "license": "Own calculated materials; upstream software LGPL-3.0 does not define a data licence",
     "scope": "Bundle hash manifest, not an experimental source or software author dataset; per-file hashes inside bundle"
+  },
+  {
+    "file": "article_reading/moleculenet_selected_results.json",
+    "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC5868307/unicode",
+    "utc": "2026-11-19T13:21:20.755529+00:00",
+    "http_status": 200,
+    "status": "PASS",
+    "sha256": "aca9f6e91bb14897e6b3b9f286fa493c49f1799a7d83d022f8dfd56946c5a540",
+    "source_response_sha256": "90e9665ba51f7048c862d154e3b93ff8182cf1f334df39f9affc02d1147a6d87",
+    "bytes": 2037,
+    "kind": "literature",
+    "attribution": "Wu et al., MoleculeNet: a benchmark for molecular machine learning, Chemical Science 9, 513–530 (2018)",
+    "license": "Source BioC labels article CC BY-NC; full text not redistributed. This file selects three factual numerical rows with attribution; article rights unchanged.",
+    "scope": "Author-selected factual subset, not a copy of the full source response or complete tables"
   }
 ]

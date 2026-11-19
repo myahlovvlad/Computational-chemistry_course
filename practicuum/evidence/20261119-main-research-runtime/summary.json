@@ -1,0 +1,27 @@
+{
+  "utc": "2026-11-19T13:24:32.766506+00:00",
+  "status": "BLOCKED",
+  "scope": "Current execution state on main; historical progress snapshots remain unchanged",
+  "windows_processes": [],
+  "linux": {
+    "processes": [],
+    "completed_stages": {},
+    "source": "/home/miakhlov/course-production-verified-20261118/practicuum/evidence/research-quantum-istradefylline-cpcm-refined-20261119",
+    "checkpoints": [
+      "initial_guess.h5",
+      "conformer-000/optimize/checkpoint.h5"
+    ]
+  },
+  "native_final_result_present": false,
+  "native_checkpoint_preserved": true,
+  "native_log_sha256": "6b79f2e48c7d4b882c10a7ee5025a325fffff91288afef37213bf6d2d49fa843",
+  "native_last_logged_SCF_cycle": [
+    "7",
+    "-1296.41026423615"
+  ],
+  "native_log_reports_SCF_convergence": false,
+  "accepted_target_spectrum": false,
+  "accepted_refined_DFT_minimum": false,
+  "reason_if_inactive": "No matching process and no completed result. Cause not established; stored checkpoint and intermediate energies are not accepted converged results.",
+  "restart_requirement": "New main-root run with new output directory; validate geometry, charge, basis and cached tensor provenance; reuse density only as initial guess and reconverge all gates."
+}

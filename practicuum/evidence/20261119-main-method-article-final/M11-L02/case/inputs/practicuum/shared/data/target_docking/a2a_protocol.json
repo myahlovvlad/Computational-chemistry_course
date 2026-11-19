@@ -1,0 +1,16 @@
+{
+  "scoring": "vina",
+  "exhaustiveness": 64,
+  "n_poses": 20,
+  "energy_range_kcal_mol": 8.0,
+  "cpu_per_run": 2,
+  "search_seeds": [
+    101,
+    202,
+    303
+  ],
+  "receptor_rigid": true,
+  "grid_spacing_A": 0.375,
+  "top1_RMSD_heuristic_A": 2.0,
+  "minimum_top1_recovery_fraction": 0.8888888888888888
+}

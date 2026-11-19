@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "applied": true,
+  "scope": "Historical payloads verified against original SHA256 and Git blobs; lineage fields unchanged",
+  "manifest_sha256_before": "b00673346c876902f8e9315b88ac8bb35d98024efbdfc1baa21d593fb9fb95d3",
+  "manifest_sha256_after": "5b0c1cd1ccb5a2cdcd0b44a4ecfe1df9b1cbd311f39efe6e465553747bbe150e",
+  "moves": [
+    {
+      "previous_storage": "practicuum/shared/data/SOURCES_V2.md",
+      "preserved_path": "archive/branch-datasets/objects/62adf0d0d6003c75ce066b098ccaba57c5f893fa.md",
+      "sha256": "af3ea79221c1ecbb09a4e9c5ff2f81883293d7a850afb037d3ea36b7defc02fc",
+      "git_blob": "62adf0d0d6003c75ce066b098ccaba57c5f893fa",
+      "bytes": 9748
+    }
+  ]
+}

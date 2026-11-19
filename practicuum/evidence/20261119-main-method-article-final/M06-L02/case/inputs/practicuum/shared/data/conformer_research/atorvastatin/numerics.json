@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "scope": "paired fixed-geometry controls; no global sampling or final DFT claim",
+  "paired_fixed_geometry_results": [
+    {
+      "source_id": 198,
+      "tight_energy_Eh": -119.52602673214,
+      "verytight_energy_Eh": -119.52602639424,
+      "gas_energy_Eh": -119.491434164824,
+      "fixed_geometry_ALPB_minus_gas_Eh": -0.0345925673159968,
+      "surface_grid_energy_change_Eh": 3.3789999065447773e-07
+    },
+    {
+      "source_id": 13,
+      "tight_energy_Eh": -119.525785253281,
+      "verytight_energy_Eh": -119.525785301544,
+      "gas_energy_Eh": -119.490317608681,
+      "fixed_geometry_ALPB_minus_gas_Eh": -0.03546764460000418,
+      "surface_grid_energy_change_Eh": -4.826300425975205e-08
+    },
+    {
+      "source_id": 112,
+      "tight_energy_Eh": -119.525760551164,
+      "verytight_energy_Eh": -119.525761375019,
+      "gas_energy_Eh": -119.490159109618,
+      "fixed_geometry_ALPB_minus_gas_Eh": -0.03560144154599243,
+      "surface_grid_energy_change_Eh": -8.238550037731329e-07
+    }
+  ],
+  "max_surface_energy_change_Eh": 8.238550037731329e-07,
+  "max_relative_energy_grid_sensitivity_kcal_mol": 0.0007290122655434497,
+  "Hessian_step_max_frequency_change_cm1": 0.1026581160535649,
+  "half_step_lowest_frequency_cm1": 11.42939540429934,
+  "minimum_sign_stable": true,
+  "fine_conformer_ordering": "REVIEW: compare pairwise gaps with numerical sensitivity; this is not an uncertainty bound on the Hamiltonian",
+  "limitations": [
+    "Gas singlepoints use ALPB-optimized geometries; solvent-induced geometry relaxation is not isolated",
+    "GFN2/ALPB controls do not establish DFT convergence or experimental populations",
+    "Finite difference/grid comparisons do not quantify all physical model error"
+  ],
+  "scientific_review": "NOT_RUN"
+}

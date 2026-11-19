@@ -9,7 +9,8 @@
     "practicuum/shared/data/target_qsar/hmgcr_curated.csv",
     "practicuum/shared/data/target_qsar/hmgcr_dataset.json",
     "practicuum/shared/data/target_qsar/hmgcr_result.json",
-    "practicuum/shared/data/target_qsar/manifest.json"
+    "practicuum/shared/data/target_qsar/manifest.json",
+    "practicuum/shared/data/article_reading/moleculenet_selected_results.json"
   ],
   "case_steps": [
     "practicuum/modules/M12/lessons/L02/steps/01_case.md",

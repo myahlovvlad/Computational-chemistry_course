@@ -17,8 +17,11 @@
 | M09 | DOI 10.1186/s40064-015-0809-x | [Мини-рецензия](../practicuum/modules/M09/lessons/L02/steps/03_article_review.md) |
 | M10 | DOI 10.3390/molecules18032469 | [Мини-рецензия](../practicuum/modules/M10/lessons/L02/steps/03_article_review.md) |
 | M11 | DOI 10.3390/pharmaceutics17070808 | [Мини-рецензия](../practicuum/modules/M11/lessons/L02/steps/03_article_review.md) |
-| M12 | DOI 10.3390/molecules18032469 | [Мини-рецензия](../practicuum/modules/M12/lessons/L02/steps/03_article_review.md) |
+| M12 | DOI 10.1039/C7SC02664A | [Мини-рецензия](../practicuum/modules/M12/lessons/L02/steps/03_article_review.md) |
 | M13 | DOI 10.1186/s13065-015-0082-7 | [Мини-рецензия](../practicuum/modules/M13/lessons/L02/steps/03_article_review.md) |
 | M14 | DOI 10.1186/s13065-015-0082-7 | [Мини-рецензия](../practicuum/modules/M14/lessons/L02/steps/03_article_review.md) |
 
 Преподавателю: сохраняйте отдельную оценку мини-рецензии. Критическая оценка переноса важнее пересказа. Формат и трудоёмкость требуют студенческого пилота; он пока NOT_RUN.
+
+
+В M06, M07 и M11 добавлены методические сопоставления с GFN2-xTB (10.1021/acs.jctc.8b01176), PySCF (10.1063/5.0006074) и Vina (10.1021/acs.jcim.1c00203). Их внешние полные тексты не включены; доступные локальные экспериментальные источники сохранены как отдельные сравнения типов свидетельств. Полное чтение внешней работы и локальный разбор — разные статусы. В M12 основной источник заменён профильной benchmark-статьёй MoleculeNet; доступны три выбранные фактические строки для собственного пересчёта, а полнота рецензии требует первичного текста.

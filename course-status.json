@@ -6,8 +6,26 @@
     "modules": 14,
     "lessons": 28,
     "notebooks": 56,
+    "text_steps": 212,
     "projected_hours": 122,
     "hours_validated": false
+  },
+  "repository": {
+    "canonical_branch": "main",
+    "canonical_location": "repository root",
+    "dataset_preservation": "archive/branch-datasets/manifest.json"
+  },
+  "pedagogy": {
+    "narrative_openings": 28,
+    "lesson_transitions": 28,
+    "article_reviews": 14,
+    "reading_route": "programm/ARTICLE_READING.md",
+    "student_pilot": "NOT_RUN"
+  },
+  "current_main_execution": {
+    "status": "PASS",
+    "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+    "sha256": "5ee0920eea63e735d933d01b17dcc34b78a831925e6fcf8f3987ebabcb76584f"
   },
   "quality_requirement": "Professional calculations on target chemical forms; educational toy controls are not accepted substitutes",
   "modules": [
@@ -31,15 +49,19 @@
             "case": {
               "path": "practicuum/modules/M01/lessons/L01/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "162b3f4ece6eb2b05cb96abb87b3060109ca26d1a650e35bf5eea234806b74eb",
+              "current_sha256": "801a7735c936574a8ab9c8a107d7bf76dad265a9b9c4795d49fefbc0738ef2e9",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "guided demonstration"
@@ -51,11 +73,15 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -78,15 +104,19 @@
             "case": {
               "path": "practicuum/modules/M01/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "e63ff78151f29a53d3f1749ecd29f3ddda6967f975993e82ef82fb58b76bb882",
+              "current_sha256": "2238d1deeab2064b546ecdd5097cf1e0a224b12c507287561a09e089c896f907",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "guided demonstration"
@@ -94,15 +124,19 @@
             "lab": {
               "path": "practicuum/modules/M01/lessons/L02/Notebooks_labs/02_lab.ipynb",
               "authored": true,
-              "current_sha256": "48e79e80cca7e4ef6b1e478c883b3526c00d3398cbbd0be80f8b713d67099727",
+              "current_sha256": "0458a3708fd25ffd4104fa7fbda627f2e159161aa70065c5fecf4f945d1229f7",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -131,15 +165,19 @@
             "case": {
               "path": "practicuum/modules/M02/lessons/L01/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "accc36bd1084521280bf9c5228e6f7c2a6ca1208f314a76fa6d5f9ded14041cd",
+              "current_sha256": "cc02750ade6073938e3c26f13ada07862221917a46ecc27dfc6d2acc42c25892",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "guided demonstration"
@@ -151,11 +189,15 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -178,15 +220,19 @@
             "case": {
               "path": "practicuum/modules/M02/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "bd456f9c611994371657b9a76454e389119870a2552e58e8800c474be8653a85",
+              "current_sha256": "57f36a36888ce8f4f5d9abca70a2661dca86a71b3fe688b7e79c7ab4d348839d",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "guided demonstration"
@@ -194,15 +240,19 @@
             "lab": {
               "path": "practicuum/modules/M02/lessons/L02/Notebooks_labs/02_lab.ipynb",
               "authored": true,
-              "current_sha256": "24a070734c12c5a3310b4574f16adaddd0391b48f365f8c3d458d6c92f75318d",
+              "current_sha256": "c5c82c11ea821ad31aba835c997eab752ddda0e432ea35732d2c62995b44faf9",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -231,15 +281,19 @@
             "case": {
               "path": "practicuum/modules/M03/lessons/L01/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "f5a2999b655191f98110fcfcd7ea43d54ecc6826b2c6b04d63b1d1d0e50f44da",
+              "current_sha256": "46dd004903c70643f087c5dbd40a9ec6f5e30f870afc90c930d3c843ff3add3f",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "guided demonstration"
@@ -251,11 +305,15 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -278,15 +336,19 @@
             "case": {
               "path": "practicuum/modules/M03/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "9234f70e657304bad179caa7dcb1573d2552bb9c814586f146672f5363ca7a4f",
+              "current_sha256": "469fb6d9de4ee3975278f1dcc24d3d210db3fe18060b3baaebd6a79283dcb72a",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "guided demonstration"
@@ -294,15 +356,19 @@
             "lab": {
               "path": "practicuum/modules/M03/lessons/L02/Notebooks_labs/02_lab.ipynb",
               "authored": true,
-              "current_sha256": "f3a9efb14b18e946a7abbf621f77a91e7052b907959b25316dc53abfb36b94ca",
+              "current_sha256": "ea6fef58cd4dc183c9774395a8b5561d492509d2b36709e57a3fb62b7a1931b1",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -332,15 +398,19 @@
             "case": {
               "path": "practicuum/modules/M04/lessons/L01/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "44a99eb886a1b388f181095cd8ee642a6d3cf43b0cdaa4b00f0d8f52cdc43055",
+              "current_sha256": "c3b45ae0ac3cd081fee9a787e738c1116507320edf2b34f95dfba4d505255418",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-solubility-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-solubility-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-solubility-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "guided demonstration"
@@ -352,11 +422,15 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-solubility-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-solubility-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-solubility-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -380,15 +454,19 @@
             "case": {
               "path": "practicuum/modules/M04/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "af3e74ee74693c2df6312ecfd26897201cc7629fb2764bd0a20e641792352bf7",
+              "current_sha256": "ed4771b0daebfc4e5f6ba9fface004355c696513028a6981c96ea0551cdf3aa1",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-solubility-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-solubility-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-solubility-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "guided demonstration"
@@ -396,15 +474,19 @@
             "lab": {
               "path": "practicuum/modules/M04/lessons/L02/Notebooks_labs/02_lab.ipynb",
               "authored": true,
-              "current_sha256": "431ea32a53bc6ed5e43fc660ac82bd9734317cab2e6e49293bc98ac3692ef2ae",
+              "current_sha256": "fcb58775b32f2351b213917786a9bb9896b5c903309a95c181824563bfa97c1e",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-solubility-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-solubility-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-solubility-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -433,15 +515,19 @@
             "case": {
               "path": "practicuum/modules/M05/lessons/L01/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "92469098cbfd5a1c6167eb88c3a714a0faab64532d49a89d75219bc1f72d73ca",
+              "current_sha256": "2926532e98a53404949700b6703ee459c4d4894cd8bb32ea4ea77bf73b7c3e09",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "guided demonstration"
@@ -453,11 +539,15 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -480,15 +570,19 @@
             "case": {
               "path": "practicuum/modules/M05/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "71e2428fcdf47388623cefe42475b5aad1e598f872b92228efce122b9abc0e8f",
+              "current_sha256": "0e53327e83769f0f86c49abdda87ac524ffefe2d133280c5858947a6e711b7c1",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "guided demonstration"
@@ -496,15 +590,19 @@
             "lab": {
               "path": "practicuum/modules/M05/lessons/L02/Notebooks_labs/02_lab.ipynb",
               "authored": true,
-              "current_sha256": "a3f7c94d0aa5841b150d694773f78a075469fffbc0ba4f0dfb444c33261c554f",
+              "current_sha256": "0fac4928542c7fc0c335e905bf1e2e68d94d902147d5540a36f67cba2937841c",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -537,15 +635,19 @@
             "case": {
               "path": "practicuum/modules/M06/lessons/L01/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "7d88e1472073933821fc215ce3aa0ade4579446ed854d8fe5c987b046cb996d9",
+              "current_sha256": "5f49fe502687c08f9d3bbe3ab626e36aa7680c135bd615f6b6acf47ce799caa5",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-conformers-reproduced-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-conformers-reproduced-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-conformers-reproduced-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "guided demonstration"
@@ -557,11 +659,15 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-conformers-reproduced-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-conformers-reproduced-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-conformers-reproduced-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -586,15 +692,19 @@
             "case": {
               "path": "practicuum/modules/M06/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "746d1f67d05b2a11e8231ff5b7e39bff092cc38a2889eda18c18fdab28514d5b",
+              "current_sha256": "18a2654ad6024113db7316f1376c180662b23e43d92b69bbc01255c05a103f7b",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-conformers-reproduced-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-method-article-final/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-conformers-reproduced-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-conformers-reproduced-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "guided demonstration"
@@ -602,15 +712,19 @@
             "lab": {
               "path": "practicuum/modules/M06/lessons/L02/Notebooks_labs/02_lab.ipynb",
               "authored": true,
-              "current_sha256": "a5ba37693e37de930e9494011bf45a04c1fd5a65c16b703962244cac24a3bfe4",
+              "current_sha256": "a4235e5bbe3977380df490c45f60aced5c53b9f538685482f3ab4ffdc9c4e075",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-conformers-reproduced-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-method-article-final/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-conformers-reproduced-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-conformers-reproduced-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -639,15 +753,19 @@
             "case": {
               "path": "practicuum/modules/M07/lessons/L01/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "fe80db69082c7dff29239209ef083156090ce30fd932a4acdfcfb6ec02d7e071",
+              "current_sha256": "b2684af11beaa1a197249e552e75f662a1c9b39f9727e9213baedf386a38aaf6",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "guided demonstration"
@@ -659,11 +777,15 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -686,15 +808,19 @@
             "case": {
               "path": "practicuum/modules/M07/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "6a333bdcdc92f0f54231fd241afecca856088c1609a399b835de2a0a5c8b728b",
+              "current_sha256": "02b03a6f998fd3175b9a59efcbfece5d59cb3ae7816bb606d9e76ba172703453",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-method-article-final/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "guided demonstration"
@@ -702,15 +828,19 @@
             "lab": {
               "path": "practicuum/modules/M07/lessons/L02/Notebooks_labs/02_lab.ipynb",
               "authored": true,
-              "current_sha256": "641298a295c60b9c65c707640e90e6ace44382431b2891ca0152ad81eb4d0006",
+              "current_sha256": "0e43c4e4318e7817ed85d7702f0540f5172b260f66964c06587026844ad67016",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-method-article-final/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -739,15 +869,19 @@
             "case": {
               "path": "practicuum/modules/M08/lessons/L01/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "14c3c87b0f299140a51c4be9b4673e8d0406b05ac04cba3508d256cf835fd478",
+              "current_sha256": "7a7ef7256236fd0e753ce4e2f2a37e88910024a33c246f0041b05b2df528d227",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "guided demonstration"
@@ -759,11 +893,15 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -786,15 +924,19 @@
             "case": {
               "path": "practicuum/modules/M08/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "4195369782d95ab2fc1ce9117314b8996637066831d46c3018af40e44f7f57ca",
+              "current_sha256": "7eebfc23be5933d6e7e5fd3bf6893546659a77b269bb8922f31544961e19b69b",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-ir-distribution-safe-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-ir-distribution-safe-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261118-ir-distribution-safe-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "guided demonstration"
@@ -802,15 +944,19 @@
             "lab": {
               "path": "practicuum/modules/M08/lessons/L02/Notebooks_labs/02_lab.ipynb",
               "authored": true,
-              "current_sha256": "5270b6804abdf6f06c1db6bd25a9ac34de073618b730e0bd9005461f544ac99a",
+              "current_sha256": "eb3676628ee9c1c1dafa2761f2f35d01278e439832c0a6b0b1cb0d0b1a3a2148",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-ir-distribution-safe-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-ir-distribution-safe-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261118-ir-distribution-safe-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -840,15 +986,19 @@
             "case": {
               "path": "practicuum/modules/M09/lessons/L01/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "f95de04bf8b5c60ac3da15207dd19d12c2d961de3baf810e89f85e65e91e482e",
+              "current_sha256": "eb243d503f9ef5c2686009f971e88a868a0d33a7cc2411d0f8dd8c30cc1f2018",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-kinetics-windows-corrected/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-kinetics-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-kinetics-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "guided demonstration"
@@ -860,11 +1010,15 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-kinetics-windows-corrected/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-kinetics-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-kinetics-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -887,15 +1041,19 @@
             "case": {
               "path": "practicuum/modules/M09/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "13daccaad8fa0cfe9d0b0bdb1ae012bdec0d5d0a1f56d42627919e2f32b40483",
+              "current_sha256": "d0472d995ab7f4f07a53cc54658df3551ab96c6dfcfcfe3cd2fb5489e98cd6ec",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-kinetics-windows-corrected/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-kinetics-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-kinetics-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "guided demonstration"
@@ -903,15 +1061,19 @@
             "lab": {
               "path": "practicuum/modules/M09/lessons/L02/Notebooks_labs/02_lab.ipynb",
               "authored": true,
-              "current_sha256": "c90de66eae42a99ba9dc6a90aaaf27ce7a7b46ec05abb152076fc57e674f1880",
+              "current_sha256": "e70aa7866967bc2e5c1ae70eff0951ee26fc9b1d6c30af5a48accb84238febb3",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-kinetics-windows-corrected/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-kinetics-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-kinetics-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -941,15 +1103,19 @@
             "case": {
               "path": "practicuum/modules/M10/lessons/L01/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "fd2e10ab9518175b50fe28f8baad56d26e4c094e7488dbceb396483ea359cff7",
+              "current_sha256": "67aace6fd4869c8ccc3ca12ccfc4fa06c621792adb0f9c17830e486ab00478fe",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-chromatography-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-chromatography-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-chromatography-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "guided demonstration"
@@ -961,11 +1127,15 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-chromatography-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-chromatography-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-chromatography-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -989,15 +1159,19 @@
             "case": {
               "path": "practicuum/modules/M10/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "f504abdcbdd46edab42a829a68c2b33016f10490a76562c5b4facbd729d432bd",
+              "current_sha256": "1a85b499ef3f93587bdaf5d2a922929e835f5f47d1be197cd8bbac7d82c7c029",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-chromatography-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-chromatography-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-chromatography-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "guided demonstration"
@@ -1005,15 +1179,19 @@
             "lab": {
               "path": "practicuum/modules/M10/lessons/L02/Notebooks_labs/02_lab.ipynb",
               "authored": true,
-              "current_sha256": "70a5d7ea3b5c6c3d0c875fe479868d25a923bd5b1c51c25c9a4f22204bc1f0f6",
+              "current_sha256": "09e3b36f8af36da41c0c02986c53211558671140afb540189a08f772ba115e64",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-chromatography-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-chromatography-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-chromatography-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -1042,15 +1220,19 @@
             "case": {
               "path": "practicuum/modules/M11/lessons/L01/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "7faaa084f3bcc2fcc3a46aeb7a6f13960506999ece4114e04df2a99b7d712179",
+              "current_sha256": "0daea6fee279b28d7043432ef238506dd86891f46e61e502284ee481a2a38efc",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-docking-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-docking-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-docking-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "guided demonstration"
@@ -1062,11 +1244,15 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-docking-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-docking-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-docking-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -1091,15 +1277,19 @@
             "case": {
               "path": "practicuum/modules/M11/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "2a557e7e142015a7496aba1101b59a084c39e948c9589a3ff130e1c8043b399b",
+              "current_sha256": "652053cd66530b843b3f01413ff85f63b879f193ba21d70d4423becbda66123a",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-docking-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-method-article-final/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-docking-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-docking-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "guided demonstration"
@@ -1107,15 +1297,19 @@
             "lab": {
               "path": "practicuum/modules/M11/lessons/L02/Notebooks_labs/02_lab.ipynb",
               "authored": true,
-              "current_sha256": "d66e7ada2b23804fdf9c6e8ce8906c26517d7dccbf8b54ee1bf5012fbbc908e1",
+              "current_sha256": "f758249dd25bca2bee8fe9cd846c2ad8e18f926fd26409b27922174ed9b16bb8",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-docking-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-method-article-final/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-docking-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-docking-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -1145,15 +1339,19 @@
             "case": {
               "path": "practicuum/modules/M12/lessons/L01/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "c73a6c545e9e282e4986aa0c566eefb69efdb94c71c830e5c86eb04f160de535",
+              "current_sha256": "da5cff8b339a45590ee6c4161f2da8243163aa089936ea1451774b4aeb8d8380",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-QSAR-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-QSAR-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-QSAR-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "guided demonstration"
@@ -1165,11 +1363,15 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-QSAR-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-QSAR-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-QSAR-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -1192,15 +1394,19 @@
             "case": {
               "path": "practicuum/modules/M12/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "19e5df4625e8aa317e5d4d95e470aabb371dcf6e6b6867587595f726fb82b701",
+              "current_sha256": "b2d8994a515c7f6d40f29e0e0a76f2b90cafcb1f580a7e6a8e1f338a972ad6ef",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-QSAR-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-method-article-final/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-QSAR-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-QSAR-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": false
                 }
               },
               "scope": "guided demonstration"
@@ -1208,15 +1414,19 @@
             "lab": {
               "path": "practicuum/modules/M12/lessons/L02/Notebooks_labs/02_lab.ipynb",
               "authored": true,
-              "current_sha256": "731b25a68952c33a2f9568235a3ea0a7d80951f9c04eeefe80783e5293c2eff7",
+              "current_sha256": "1dfd59281c5dae2bf40d2edc600db3ef168d5d75b5a3f9d47cfee941f590c078",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-QSAR-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-method-article-final/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-professional-QSAR-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261119-professional-QSAR-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": false
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -1245,15 +1455,19 @@
             "case": {
               "path": "practicuum/modules/M13/lessons/L01/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "6a27c9b42922aeca13004b867e0dc67dd48828d691009be79c8e53fcaa80b005",
+              "current_sha256": "05c040648f6ed43d18e410516fa920448dd964b02778e87b59fc01d3b3c39eb1",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-process-source-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": false
                 }
               },
               "scope": "guided demonstration"
@@ -1265,11 +1479,15 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-process-source-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": false
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -1292,15 +1510,19 @@
             "case": {
               "path": "practicuum/modules/M13/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "99a98ae982b203a6b0bb14d54ab3648faa89b0ad545d957814a82931bd48e25b",
+              "current_sha256": "43def8c3754edbebee3bac0916c02aba46dccc6c92aebe5428134edd360810ef",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-process-source-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": false
                 }
               },
               "scope": "guided demonstration"
@@ -1308,15 +1530,19 @@
             "lab": {
               "path": "practicuum/modules/M13/lessons/L02/Notebooks_labs/02_lab.ipynb",
               "authored": true,
-              "current_sha256": "646d7fa6bf09d6d2af01bd27d217a26f55f4ae0b0bf66e58805e355a6fecda3d",
+              "current_sha256": "403b32f184d575b7974c3fe1ec2568b6891e14e2c56072a24e6045cfc1f3882b",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-process-source-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": false
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -1345,15 +1571,19 @@
             "case": {
               "path": "practicuum/modules/M14/lessons/L01/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "2df9f463ccbf49a99bb58e6aaef44f7e8628192c8cc49c0329640dcad53dbc5d",
+              "current_sha256": "d44f332665be7e3f91414c46c357e1808bd81332d8c1884789a123b0f28dc648",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "guided demonstration"
@@ -1365,11 +1595,15 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -1392,15 +1626,19 @@
             "case": {
               "path": "practicuum/modules/M14/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "c3792bf525928f86eada4f8092d9a56bf7b0e32004b66a540566e97f7ead920e",
+              "current_sha256": "83f2ceaab66fba9adb2f707f67a99084f052d0b67c42f468d458eb31fac4ebcd",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "guided demonstration"
@@ -1408,15 +1646,19 @@
             "lab": {
               "path": "practicuum/modules/M14/lessons/L02/Notebooks_labs/02_lab.ipynb",
               "authored": true,
-              "current_sha256": "786c35cbbdd42630e44badbf58f86efb34196f0c79ba0a36735273c9c75e97f5",
+              "current_sha256": "fe1646182d4a98e2d4238678943199d9405edb27bffb4b7dedfc0ad341268377",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-windows/summary.json"
+                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "current_step_sources_match": true,
+                  "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json"
+                  "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json",
+                  "current_step_sources_match": false,
+                  "current_declared_inputs_match": true
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"
@@ -1593,6 +1835,11 @@
     "CAM_TZVP_lossless_result": {
       "status": "NOT_RUN",
       "expected_evidence": "practicuum/evidence/20261119-istradefylline-CAM-TZVP-lossless-water/result.json"
+    },
+    "current_main_research_runtime": {
+      "status": "BLOCKED",
+      "evidence": "practicuum/evidence/20261119-main-research-runtime/summary.json",
+      "sha256": "3a7b9aaaf2b64fd5bb97443743c9e7bd3809313f7b9d1fa4d17c2d4ac6ebd05a"
     }
   },
   "global_release_blockers": [
@@ -1604,23 +1851,5 @@
     "student pilot and observed workload NOT_RUN",
     "Stepik API/grader testing NOT_RUN"
   ],
-  "release_readiness": "BLOCKED",
-  "repository": {
-    "canonical_branch": "main",
-    "canonical_location": "repository root",
-    "dataset_preservation": "archive/branch-datasets/manifest.json"
-  },
-  "pedagogy": {
-    "narrative_openings": 28,
-    "lesson_transitions": 28,
-    "article_reviews": 14,
-    "reading_route": "programm/ARTICLE_READING.md",
-    "student_pilot": "NOT_RUN"
-  },
-  "current_main_execution": {
-    "status": "PASS",
-    "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
-    "sha256": "5ee0920eea63e735d933d01b17dcc34b78a831925e6fcf8f3987ebabcb76584f",
-    "scope": "Windows guided execution and empty B scaffolds; article-review learner solutions NOT_RUN"
-  }
+  "release_readiness": "BLOCKED"
 }

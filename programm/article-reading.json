@@ -45,7 +45,13 @@
     "source": "practicuum/shared/data/source-responses/xanthine_synthesis_verified.xml",
     "doi": "10.1186/1860-5397-2-20",
     "case_step": "practicuum/modules/M06/lessons/L02/steps/03_article_case.md",
-    "lab_step": "practicuum/modules/M06/lessons/L02/steps/03_article_review.md"
+    "lab_step": "practicuum/modules/M06/lessons/L02/steps/03_article_review.md",
+    "supplementary_method_article": {
+      "doi": "10.1021/acs.jctc.8b01176",
+      "url": "https://doi.org/10.1021/acs.jctc.8b01176",
+      "access": "external full text; separate from mandatory local comparison",
+      "full_review_without_reading": "NOT_RUN"
+    }
   },
   {
     "module": "M07",
@@ -53,7 +59,13 @@
     "source": "practicuum/shared/data/source-responses/hplc_article.xml",
     "doi": "10.3390/molecules18032469",
     "case_step": "practicuum/modules/M07/lessons/L02/steps/03_article_case.md",
-    "lab_step": "practicuum/modules/M07/lessons/L02/steps/03_article_review.md"
+    "lab_step": "practicuum/modules/M07/lessons/L02/steps/03_article_review.md",
+    "supplementary_method_article": {
+      "doi": "10.1063/5.0006074",
+      "url": "https://arxiv.org/abs/2002.12531v2",
+      "access": "external full text; separate from mandatory local comparison",
+      "full_review_without_reading": "NOT_RUN"
+    }
   },
   {
     "module": "M08",
@@ -85,15 +97,25 @@
     "source": "practicuum/shared/data/source-responses/statin_stability_verified.xml",
     "doi": "10.3390/pharmaceutics17070808",
     "case_step": "practicuum/modules/M11/lessons/L02/steps/03_article_case.md",
-    "lab_step": "practicuum/modules/M11/lessons/L02/steps/03_article_review.md"
+    "lab_step": "practicuum/modules/M11/lessons/L02/steps/03_article_review.md",
+    "supplementary_method_article": {
+      "doi": "10.1021/acs.jcim.1c00203",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10683950/",
+      "access": "external full text; separate from mandatory local comparison",
+      "full_review_without_reading": "NOT_RUN"
+    }
   },
   {
     "module": "M12",
     "lesson": "M12-L02",
-    "source": "practicuum/shared/data/source-responses/hplc_article.xml",
-    "doi": "10.3390/molecules18032469",
+    "source": "practicuum/shared/data/article_reading/moleculenet_selected_results.json",
+    "doi": "10.1039/C7SC02664A",
     "case_step": "practicuum/modules/M12/lessons/L02/steps/03_article_case.md",
-    "lab_step": "practicuum/modules/M12/lessons/L02/steps/03_article_review.md"
+    "lab_step": "practicuum/modules/M12/lessons/L02/steps/03_article_review.md",
+    "source_kind": "selected_factual_rows",
+    "source_coverage": "selected_rows_only",
+    "external_full_text_required": true,
+    "primary_text_url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC5868307/unicode"
   },
   {
     "module": "M13",

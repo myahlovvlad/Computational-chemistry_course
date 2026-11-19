@@ -1,0 +1,49 @@
+{
+  "doi": "10.1039/C7SC02664A",
+  "citation": "Wu et al., MoleculeNet: a benchmark for molecular machine learning, Chemical Science 9, 513–530 (2018)",
+  "source_url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC5868307/unicode",
+  "publisher_url": "https://doi.org/10.1039/C7SC02664A",
+  "retrieved_utc": "2026-11-19T13:21:20.755529+00:00",
+  "source_cache_sha256": "90e9665ba51f7048c862d154e3b93ff8182cf1f334df39f9affc02d1147a6d87",
+  "source_license_label": "CC BY-NC",
+  "distribution": "Only three selected factual benchmark rows; full article and complete tables are not redistributed. Source rights are unchanged.",
+  "kind": "literature",
+  "rows": [
+    {
+      "dataset": "ESOL",
+      "metric": "RMSE",
+      "higher_is_better": false,
+      "conventional_model": "XGBoost",
+      "conventional_value": 0.99,
+      "graph_model": "MPNN",
+      "graph_value": 0.58,
+      "source_table": "Table 3 / tab3",
+      "uncertainty": "not supplied in this selected summary row; inspect full methods/results",
+      "target_unit": "inspect dataset target definition; not stated in Table 3"
+    },
+    {
+      "dataset": "PDBbind (full)",
+      "metric": "RMSE",
+      "higher_is_better": false,
+      "conventional_model": "RF(grid)",
+      "conventional_value": 1.25,
+      "graph_model": "GC",
+      "graph_value": 1.44,
+      "source_table": "Table 3 / tab3",
+      "uncertainty": "not supplied in this selected summary row; inspect full methods/results",
+      "target_unit": "inspect dataset target definition; not stated in Table 3"
+    },
+    {
+      "dataset": "BBBP",
+      "metric": "AUC-ROC",
+      "higher_is_better": true,
+      "conventional_model": "KernelSVM",
+      "conventional_value": 0.729,
+      "graph_model": "GC",
+      "graph_value": 0.69,
+      "source_table": "Table 3 / tab3",
+      "uncertainty": "not supplied in this selected summary row; inspect full methods/results",
+      "target_unit": "dimensionless"
+    }
+  ]
+}

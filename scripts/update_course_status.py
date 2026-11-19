@@ -24,6 +24,23 @@ def proof(path):
 def main():
     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--observed-on',required=True)
     args=parser.parse_args();course=read('programm/course.json')
+    configs={lesson['id']:read(lesson['practice']+'/lesson.json')
+             for module in course['modules'] for lesson in module['lessons']}
+    text_step_count=sum(len(list((ROOT/lesson['theory']).glob('*.md')))
+                        +len(configs[lesson['id']]['case_steps'])+len(configs[lesson['id']]['lab_steps'])
+                        for module in course['modules'] for lesson in module['lessons'])
+    hashes={}
+    def current_hash(relative):
+        path=(ROOT/relative).resolve();path.relative_to(ROOT)
+        if relative not in hashes:hashes[relative]=hashlib.sha256(path.read_bytes()).hexdigest() if path.is_file() else None
+        return hashes[relative]
+    def execution_entry(run,path):
+        config=configs[run['lesson_id']];steps=config['case_steps' if run['role']=='case' else 'lab_steps']
+        observed_steps=run.get('step_sha256',{});observed_inputs=run.get('data_sha256',{})
+        return {'status':run['status'],'evidence':path,
+          'current_step_sources_match':set(observed_steps)==set(steps)
+              and all(observed_steps[name]==current_hash(name) for name in steps),
+          'current_declared_inputs_match':all(observed_inputs.get(name)==current_hash(name) for name in config.get('inputs',[]))}
     windows='practicuum/evidence/20261118-full-course-windows/summary.json'
     linux='practicuum/evidence/20261118-full-course-linux/summary.json'
     # Later source revisions supersede individual runs, never overwrite the old logs.
@@ -51,12 +68,18 @@ def main():
                             'practicuum/evidence/20261119-professional-conformers-reproduced-linux/summary.json')
     baseline={}
     for label,path in [('Windows',windows),('Linux/WSL',linux)]:
-        for r in read(path)['runs']:baseline[(r['lesson_id'],r['role'],label)]={'status':r['status'],'evidence':path}
+        for r in read(path)['runs']:baseline[(r['lesson_id'],r['role'],label)]=execution_entry(r,path)
     for lesson,(win,lin) in supplementary.items():
         for label,path in [('Windows',win),('Linux/WSL',lin)]:
             if path and (ROOT/path).is_file():
                 for r in read(path)['runs']:
-                    if r['lesson_id']==lesson:baseline[(lesson,r['role'],label)]={'status':r['status'],'evidence':path}
+                    if r['lesson_id']==lesson:baseline[(lesson,r['role'],label)]=execution_entry(r,path)
+    # Consolidation and later main edits supersede older worktree runs only for the actual executed OS.
+    for path in ['practicuum/evidence/20261119-main-unification/notebooks/summary.json',
+                 'practicuum/evidence/20261119-main-method-article-reviews/summary.json',
+                 'practicuum/evidence/20261119-main-method-article-final/summary.json']:
+        if (ROOT/path).is_file():
+            for r in read(path)['runs']:baseline[(r['lesson_id'],r['role'],'Windows')]=execution_entry(r,path)
     research={
       'HPLC':proof('practicuum/evidence/20261118-hplc-research-statistics/result.json'),
       'atorvastatin_kinetic_parameter_audit':proof('practicuum/evidence/20261118-statin-kinetics-solubility-research/result.json'),
@@ -90,6 +113,7 @@ def main():
     research['electronic_checkpoint_control']=proof('practicuum/evidence/20261119-electronic-checkpoint-controls/summary.json')
     research['CAM_TZVP_lossless_progress_snapshot']=proof('practicuum/evidence/20261119-lossless-TDDFT-progress-snapshot/progress.json')
     research['CAM_TZVP_lossless_result']=proof('practicuum/evidence/20261119-istradefylline-CAM-TZVP-lossless-water/result.json')
+    research['current_main_research_runtime']=proof('practicuum/evidence/20261119-main-research-runtime/summary.json')
     research['CAM_TZVP_on_GFN2']['scientific_acceptance']='REVIEW_REQUIRED: composite geometry; stability, sensitivity and experimental matching remain required'
     research['A2A_redocking']['scientific_acceptance']='FAIL: top-ranked pose recovery 0/9; finding a correct lower-ranked pose does not validate ranking'
     research['coarse_DFT_geometry']['scientific_acceptance']='NOT_ACCEPTED: quadrature gate failed; minimum not confirmed by Hessian'
@@ -134,7 +158,7 @@ def main():
         modules.append({'id':module['id'],'title':module['title'],'lessons':lessons})
     state={'schema_version':'2.0','observed_on':args.observed_on,
       'scope':'draft lesson coverage and actual evidence; professional delivery remains incomplete',
-      'program':{'modules':14,'lessons':28,'notebooks':56,'projected_hours':122,'hours_validated':False},
+      'program':{'modules':14,'lessons':28,'notebooks':56,'text_steps':text_step_count,'projected_hours':122,'hours_validated':False},
       'repository':{'canonical_branch':'main','canonical_location':'repository root',
         'dataset_preservation':'archive/branch-datasets/manifest.json'},
       'pedagogy':{'narrative_openings':28,'lesson_transitions':28,'article_reviews':14,
@@ -199,6 +223,7 @@ def main():
 | Lossless HDF5 контроль | Disk-backed H2O CAM/def2-TZVP: DF-интегралы совпали побитово, SCF/TD excitation differences 0; файл 1715448→922294 bytes | Проверено изменение хранения, не точность спектра лекарства. Диск guard/path isolation/exception restoration PASS |
 | Повтор целевого CAM с lossless IO | Та же электронная модель, 1012 AO и 30 запрошенных состояний; gzip/shuffle/Fletcher32, остановка при резерве диска <4 GiB | Progress snapshot не является спектром. До result.json numerical completion NOT_RUN; минимальный резерв для попытки 16 GiB не гарантирует завершение |
 | Анализ электронного checkpoint | На настоящем H2O checkpoint независимо восстановлены density, MO metric и oscillator strengths; намеренно неверный electron count отклонён | Для целевого run поставлена отдельная проверка только после numerical PASS. X-only SVD character игнорирует Y, его вклад сообщается отдельно; physical assignments REVIEW_REQUIRED |
+| Текущее состояние процессов на main | Проверка `20261119-main-research-runtime/summary.json`: соответствующих процессов нет, финальных target результатов нет, checkpoint сохранены | BLOCKED; старые IN_PROGRESS snapshots исторические. Причина остановки не установлена. Промежуточная SCF-энергия не является принятым результатом; нужен новый запуск из main с проверкой происхождения входов |
 | A2A/8RW0 redocking | 9 реальных поисков, exhaustiveness 64, 3 начальные геометрии × 3 seed; top-1 recovery 0/9, средний top-1 RMSD 9.5593 Å | **FAIL ранжирования**; найденные ниже позы с RMSD <2 Å не меняют этот итог |
 | HMGCR/1HWK | Gate остановил подготовку: смещение атомов кармана 2.311 Å и новый OXT на 3.79 Å от лиганда | BLOCKED до проверки структуры/обработки неполных концов; не запускать docking на заведомо неподходящем входе |
 | Кофеин, кинетика | Пять опубликованных k_exp при 100 °C; slope 0.695, origin-constrained k₂ 0.71273 L mol⁻¹ min⁻¹; LOOCV RMSE 0.008266 min⁻¹ | OLS-интервалы условны; сырые временные ряды/ошибки повторов отсутствуют; это не кинетика истрадефиллина |
@@ -221,9 +246,9 @@ def main():
 
 **NOT_RUN:** независимая научно-методическая рецензия, согласование оценок преподавателей, студенческий пилот, фактическая трудоёмкость и измерение переноса навыка. 122 часа — проектный ориентир. Машинная генерация рубрик не является проверкой педагогической эффективности.
 ''')
-    write('STEPIK_RELEASE_REPORT.md','''# Подготовка к Stepik
+    write('STEPIK_RELEASE_REPORT.md',f'''# Подготовка к Stepik
 
-Локальная сборка `parser/dist/professional-conformers-reproduced-20261119` содержит 28 уроков, 56 Notebook, 142 текстовых шага и 25 stdlib-проверок ограниченных численных полей. Целостность проверена локально; оба разбора M06 исполнены из переносимого пакета, включая повторную проекцию исходных гессианов и контроль воспроизводимости. Evidence: `practicuum/evidence/20261119-portable-professional-conformers-reproduced/summary.json`. Предыдущие неизменяемые сборки сохранены. Это **не профессиональный релиз** и не публикация.
+Действующая программа main содержит 28 уроков, 56 Notebook и {text_step_count} текстовых шагов, включая переходы и задания по статьям. Сборка `parser/dist/main-method-articles-20261119` проверена локально; 25 stdlib-проверок относятся к ограниченным численным полям. Изменённые восемь Notebook выполнены отдельно: `practicuum/evidence/20261119-main-method-article-final/summary.json`. Прежние переносимые проверки M06 и неизменяемые сборки сохранены. Это **не профессиональный релиз** и не публикация.
 
 Сборщик включает shared/data и закреплённую среду; исключает преподавательские решения, личный workspace и NIST raw cache. Notebook исполняются в локальном Jupyter/WSL, а не предполагаемом RDKit grader Stepik. Права/атрибуция сохраняются.
 

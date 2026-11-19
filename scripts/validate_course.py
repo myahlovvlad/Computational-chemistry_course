@@ -48,7 +48,7 @@ def main():
     if len(ids)!=len(set(ids)):errors.append('Повторены ID уроков')
     if len(ids)!=28:errors.append('Ожидаются 28 исследовательских уроков')
     if hours!=course['core_hours_planned'] or not 100<=hours<=140:errors.append('Несогласованная нагрузка')
-    # Reading assignments must reach the actual notebooks and primary full text.
+    # Reading assignments must reach the notebooks and honestly declare primary-source coverage.
     readings=json.loads((ROOT/'programm/article-reading.json').read_text(encoding='utf-8'))
     if {r['module'] for r in readings}!={m['id'] for m in course['modules']} or len(readings)!=14:
         errors.append('Ожидается одна мини-рецензия на каждый модуль')
@@ -62,9 +62,20 @@ def main():
         if reading['case_step'] not in config['case_steps']:
             errors.append('Нет разбора чтения A '+reading['lesson'])
         source=(ROOT/reading['source']).resolve();source.relative_to(ROOT)
-        primary=ET.parse(source)
-        if not any(n.text==reading['doi'] for n in primary.findall('.//article-id')):
-            errors.append('DOI не совпал с первичной статьёй '+reading['lesson'])
+        source_kind=reading.get('source_kind','full_article_xml')
+        if source_kind=='full_article_xml':
+            primary=ET.parse(source)
+            if not any(n.text==reading['doi'] for n in primary.findall('.//article-id')):
+                errors.append('DOI не совпал с первичной статьёй '+reading['lesson'])
+        elif source_kind=='selected_factual_rows':
+            selection=json.loads(source.read_text(encoding='utf-8'))
+            if selection['doi'].casefold()!=reading['doi'].casefold():
+                errors.append('DOI не совпал с выборкой статьи '+reading['lesson'])
+            if not reading.get('external_full_text_required') or reading.get('source_coverage')!='selected_rows_only':
+                errors.append('Выборка не должна объявляться полным текстом '+reading['lesson'])
+            if not selection.get('rows') or not re.fullmatch(r'[0-9a-f]{64}',selection.get('source_cache_sha256','')):
+                errors.append('Неполный паспорт выбранных первичных данных '+reading['lesson'])
+        else:errors.append('Неизвестный вид источника статьи '+reading['lesson'])
       except Exception as error:errors.append('Проверка чтения: '+str(error))
     folders=['programm','skills','scripts','media','web-training','theory','practicuum','parser']
     for name in folders:
