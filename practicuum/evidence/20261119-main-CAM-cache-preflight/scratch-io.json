@@ -1,0 +1,5 @@
+{
+  "compression": "gzip1-shuffle-fletcher32",
+  "datasets": [],
+  "scope": "Lossless storage only; no integral rounding or model change"
+}

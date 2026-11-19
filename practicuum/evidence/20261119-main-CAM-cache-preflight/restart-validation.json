@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "scope": "Input compatibility only; previous SCF convergence not accepted",
+  "density": {
+    "density_electrons": 203.99999999999983,
+    "MO_metric_max_error": 1.717377542259646e-12,
+    "checkpoint_sha256": "d8cc42286a1d79251ac50cc101965137869f1495bbfc1343868a227235c8ed15",
+    "orbital_basis_sha256": "d86b1375ac41782cec5e6bbd9e8c3dbd1449dc6507d66cc2107c340dfeaf5f01",
+    "scope": "Initial density only; no previous SCF convergence or energy is accepted"
+  },
+  "cache": {
+    "status": "PASS",
+    "scope": "Read-only DF compatibility using recomputed sampled Coulomb Gram matrices; not full physical validation",
+    "cache_sha256": "ce568e5f1ac20562c5bb591a3a88fd4f3422a4d17c100ff2ab2a35103bcce0ba",
+    "cache_bytes": 11318117284,
+    "orbital_basis_sha256": "d86b1375ac41782cec5e6bbd9e8c3dbd1449dc6507d66cc2107c340dfeaf5f01",
+    "auxiliary_basis_sha256": "4f91b6c5de1ad508982249e8bc723c2d25e4a2d1009abdfd5162d57752b3911a",
+    "AO_count": 1012,
+    "AO_pair_count": 512578,
+    "rsh_coefficients": [
+      0.33,
+      0.65,
+      0.19
+    ],
+    "groups": [
+      {
+        "group": "j3c",
+        "omega": 0.0,
+        "decomposition": "CD",
+        "auxiliary_rank": 2548,
+        "blocks": 30,
+        "sampled_AO_pair_indices": [
+          0,
+          70125,
+          158765,
+          510107,
+          510554,
+          511117,
+          511564,
+          511565,
+          512128,
+          512575,
+          512576,
+          512577
+        ],
+        "max_Gram_difference": 1.0769163338864018e-14,
+        "relative_Gram_difference": 4.4973001278861706e-15
+      },
+      {
+        "group": "j3c-lr/0.330000",
+        "omega": 0.33,
+        "decomposition": "ED",
+        "auxiliary_rank": 1319,
+        "blocks": 28,
+        "sampled_AO_pair_indices": [
+          0,
+          70125,
+          158765,
+          510107,
+          510554,
+          511117,
+          511564,
+          511565,
+          512128,
+          512575,
+          512576,
+          512577
+        ],
+        "max_Gram_difference": 2.7755575615628914e-16,
+        "relative_Gram_difference": 4.714644627885167e-16
+      }
+    ],
+    "absolute_tolerance": 1e-08,
+    "relative_tolerance": 1e-07,
+    "eigen_cutoff": 1e-07,
+    "metric_decomposition_source_sha256": "cf2b4631355749e6d695fcbd1abe7dbdb680a7d3bdbdf0bac06cdccc304d48eb"
+  },
+  "validation_only": true
+}

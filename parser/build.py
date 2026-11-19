@@ -70,7 +70,8 @@ def main():
                  'run_conformer_research.py','audit_conformer_numerics.py','run_vertical_tddft.py',
                  'check_quantum_core.py','audit_conformer_reproduction.py','run_conformer_fixed_geometry.py',
                  'check_lossless_quantum.py','check_lossless_guard.py','analyze_electronic_checkpoint.py',
-                 'capture_check.py','check_sources.py','fetch_article_benchmark.py']:
+                 'capture_check.py','check_sources.py','fetch_article_benchmark.py',
+                 'check_electronic_restart.py','continue_vertical_research.py']:
         copy_resource(out,'scripts/'+name)
     for source in (ROOT/'practicuum/protocols').glob('*.json'):
         copy_resource(out,source.relative_to(ROOT))

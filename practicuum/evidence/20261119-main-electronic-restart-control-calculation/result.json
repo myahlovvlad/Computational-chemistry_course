@@ -1,0 +1,89 @@
+{
+  "status": "PASS",
+  "scope": "Actual water SCF/TDDFT cache-restart controls, including incompatible inputs.",
+  "SCF_energy_difference_Eh": 5.684341886080802e-14,
+  "max_TDDFT_energy_difference_Eh": 1.3133570342382939e-09,
+  "max_oscillator_strength_difference": 3.6045842005671958e-09,
+  "density": {
+    "density_electrons": 10.000000000000007,
+    "MO_metric_max_error": 6.5503158452884236e-15,
+    "checkpoint_sha256": "0ebf977dbf22cdd7fe831c7bf049c4637c094a968779eee74c5d8756b069c146",
+    "orbital_basis_sha256": "84e640ab7b3ebef9ae076c64c62a84082063c038864bf14dcd4480487b8331aa",
+    "scope": "Initial density only; no previous SCF convergence or energy is accepted"
+  },
+  "cache": {
+    "status": "PASS",
+    "scope": "Read-only DF compatibility using recomputed sampled Coulomb Gram matrices; not full physical validation",
+    "cache_sha256": "c3c5af52fb28bc27b0dbba364847833c1ab7e8aab16d9a464562bab4956de068",
+    "cache_bytes": 547480,
+    "orbital_basis_sha256": "84e640ab7b3ebef9ae076c64c62a84082063c038864bf14dcd4480487b8331aa",
+    "auxiliary_basis_sha256": "0c72d4bde2c8fdb2cf329606fd778da79a3aeb2759a6c7e149ed09250e0e5592",
+    "AO_count": 24,
+    "AO_pair_count": 300,
+    "rsh_coefficients": [
+      0.33,
+      0.65,
+      0.19
+    ],
+    "groups": [
+      {
+        "group": "j3c",
+        "omega": 0.0,
+        "decomposition": "CD",
+        "auxiliary_rank": 113,
+        "blocks": 1,
+        "sampled_AO_pair_indices": [
+          0,
+          21,
+          28,
+          36,
+          119,
+          245,
+          252,
+          267,
+          274,
+          275,
+          290,
+          297,
+          298,
+          299
+        ],
+        "max_Gram_difference": 2.7755575615628914e-15,
+        "relative_Gram_difference": 9.011151818298213e-16
+      },
+      {
+        "group": "j3c-lr/0.330000",
+        "omega": 0.33,
+        "decomposition": "CD",
+        "auxiliary_rank": 113,
+        "blocks": 1,
+        "sampled_AO_pair_indices": [
+          0,
+          21,
+          28,
+          36,
+          119,
+          245,
+          252,
+          267,
+          274,
+          275,
+          290,
+          297,
+          298,
+          299
+        ],
+        "max_Gram_difference": 1.6153745008296028e-14,
+        "relative_Gram_difference": 2.4281880055712356e-14
+      }
+    ],
+    "absolute_tolerance": 1e-08,
+    "relative_tolerance": 1e-07,
+    "eigen_cutoff": 1e-07,
+    "metric_decomposition_source_sha256": "cf2b4631355749e6d695fcbd1abe7dbdb680a7d3bdbdf0bac06cdccc304d48eb"
+  },
+  "cache_unchanged": true,
+  "wrong_geometry": "REJECTED_AS_EXPECTED",
+  "corrupted_tensor": "REJECTED_AS_EXPECTED",
+  "target_drug_result": "NOT_CLAIMED"
+}
