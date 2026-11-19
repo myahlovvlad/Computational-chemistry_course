@@ -1,0 +1,6 @@
+{
+  "control_RMSD_A": 0.906728765427707,
+  "heavy_atoms": 37,
+  "shift_RMSD_A": 1.0,
+  "HMGCR_execution": "NOT_RUN"
+}

@@ -1,0 +1,176 @@
+{
+  "energy_hartree": -1295.7119783653716,
+  "geometry_sha256": "b403067a071df2f955530a5a1b7131a41e1d600be9bf596874248e30376347db",
+  "gradient_rms_hartree_bohr": 4.349331433760104e-06,
+  "gradient_max_hartree_bohr": 1.2389333432863603e-05,
+  "trajectory": [
+    {
+      "step": 1,
+      "energy_hartree": -1295.6971407298693,
+      "gradient_rms": 0.00700671084595935,
+      "gradient_max": 0.031016401223496495
+    },
+    {
+      "step": 2,
+      "energy_hartree": -1295.7035631816298,
+      "gradient_rms": 0.0036110507426043046,
+      "gradient_max": 0.014323891097216764
+    },
+    {
+      "step": 3,
+      "energy_hartree": -1295.706701553539,
+      "gradient_rms": 0.001775872435498336,
+      "gradient_max": 0.0068717123889092055
+    },
+    {
+      "step": 4,
+      "energy_hartree": -1295.7085794352563,
+      "gradient_rms": 0.0010155764121543376,
+      "gradient_max": 0.004026069319060702
+    },
+    {
+      "step": 5,
+      "energy_hartree": -1295.7097812288114,
+      "gradient_rms": 0.0016877237839511023,
+      "gradient_max": 0.0099528401480405
+    },
+    {
+      "step": 6,
+      "energy_hartree": -1295.7107354571167,
+      "gradient_rms": 0.0014877105659143928,
+      "gradient_max": 0.006404409573408314
+    },
+    {
+      "step": 7,
+      "energy_hartree": -1295.7111983231925,
+      "gradient_rms": 0.0011339723778484307,
+      "gradient_max": 0.00837517747599548
+    },
+    {
+      "step": 8,
+      "energy_hartree": -1295.7114581351377,
+      "gradient_rms": 0.0004968825423049628,
+      "gradient_max": 0.0018229509858363256
+    },
+    {
+      "step": 9,
+      "energy_hartree": -1295.711536062763,
+      "gradient_rms": 0.00040337198632104233,
+      "gradient_max": 0.002344727741686714
+    },
+    {
+      "step": 10,
+      "energy_hartree": -1295.711599749732,
+      "gradient_rms": 0.00023941144802329989,
+      "gradient_max": 0.0009684894632074575
+    },
+    {
+      "step": 11,
+      "energy_hartree": -1295.7116467157953,
+      "gradient_rms": 0.00013422809322930943,
+      "gradient_max": 0.0005478319020337053
+    },
+    {
+      "step": 12,
+      "energy_hartree": -1295.7117099006366,
+      "gradient_rms": 0.00028266953530120634,
+      "gradient_max": 0.0011080068999818578
+    },
+    {
+      "step": 13,
+      "energy_hartree": -1295.7117948078608,
+      "gradient_rms": 0.0004439335489834631,
+      "gradient_max": 0.0023079461181581416
+    },
+    {
+      "step": 14,
+      "energy_hartree": -1295.7118757800015,
+      "gradient_rms": 0.0003211865790860154,
+      "gradient_max": 0.0016933123400533537
+    },
+    {
+      "step": 15,
+      "energy_hartree": -1295.7119184241433,
+      "gradient_rms": 0.0003228604283170317,
+      "gradient_max": 0.001600232594579922
+    },
+    {
+      "step": 16,
+      "energy_hartree": -1295.711957365762,
+      "gradient_rms": 0.00013740891822351306,
+      "gradient_max": 0.0005330381967202716
+    },
+    {
+      "step": 17,
+      "energy_hartree": -1295.7119680075355,
+      "gradient_rms": 7.400910593653949e-05,
+      "gradient_max": 0.00027229789193094177
+    },
+    {
+      "step": 18,
+      "energy_hartree": -1295.7119730763093,
+      "gradient_rms": 9.501492458366672e-05,
+      "gradient_max": 0.0004983084824883746
+    },
+    {
+      "step": 19,
+      "energy_hartree": -1295.7119771579487,
+      "gradient_rms": 4.78820869987357e-05,
+      "gradient_max": 0.000212903220826283
+    },
+    {
+      "step": 20,
+      "energy_hartree": -1295.7119775216327,
+      "gradient_rms": 3.840633193672235e-05,
+      "gradient_max": 0.00020556656758098863
+    },
+    {
+      "step": 21,
+      "energy_hartree": -1295.7119779509264,
+      "gradient_rms": 1.636234637889914e-05,
+      "gradient_max": 8.905128439814928e-05
+    },
+    {
+      "step": 22,
+      "energy_hartree": -1295.7119780874284,
+      "gradient_rms": 8.65007620005403e-06,
+      "gradient_max": 5.265823317483938e-05
+    },
+    {
+      "step": 23,
+      "energy_hartree": -1295.7119781922381,
+      "gradient_rms": 5.241250535110701e-06,
+      "gradient_max": 3.313044789472232e-05
+    },
+    {
+      "step": 24,
+      "energy_hartree": -1295.711978319805,
+      "gradient_rms": 9.115340719462914e-06,
+      "gradient_max": 4.9140347964249896e-05
+    },
+    {
+      "step": 25,
+      "energy_hartree": -1295.711978309277,
+      "gradient_rms": 1.0785727604119846e-05,
+      "gradient_max": 5.7157117640978944e-05
+    },
+    {
+      "step": 26,
+      "energy_hartree": -1295.7119783508685,
+      "gradient_rms": 3.503705864263712e-06,
+      "gradient_max": 1.3705459522921483e-05
+    },
+    {
+      "step": 27,
+      "energy_hartree": -1295.7119783653734,
+      "gradient_rms": 2.5108787075874134e-06,
+      "gradient_max": 1.0057345092601253e-05
+    }
+  ],
+  "minimum_verified": false,
+  "next_required": "projected Hessian at same model",
+  "status": "PASS",
+  "kind": "calculated",
+  "seconds": 15727.521111171998,
+  "scientific_review": "NOT_RUN"
+}

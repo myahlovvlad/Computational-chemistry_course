@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Спектр и прибор · M08</title><link rel="stylesheet" href="../../learning-tools.css">
+<main><nav><a href="../hplc/index.html">HPLC</a> · <a href="../dossier/index.html">Досье</a></nav>
+<p class="eyebrow">M08 · исследование модели</p><h1>Почему прибор меняет спектр?</h1>
+<p>Гауссова полоса в энергетической шкале и закон Бугера–Ламберта–Бера. Все параметры условные; это <strong>simulation</strong>, не измеренный спектр лекарства.</p>
+<section><h2>Сначала сформулируйте гипотезу</h2><label for="hypothesis">Как ширина или рассеянный свет повлияют на наблюдение?</label><textarea id="hypothesis"></textarea></section>
+<section class="controls"><label>Энергия перехода, eV <input id="energy" type="range" min="2" max="6" value="4" step="0.01"></label>
+<label>Ширина σ, eV <input id="sigma" type="range" min="0.03" max="0.5" value="0.12" step="0.01"></label>
+<label>Концентрация, μmol/L <input id="concentration" type="range" min="0" max="400" value="100" step="1"></label>
+<label>Длина кюветы, cm <input id="length" type="range" min="0.1" max="2" value="1" step="0.1"></label>
+<label>Рассеянный свет, доля I₀ <input id="stray" type="range" min="0" max="0.02" value="0.001" step="0.001"></label></section>
+<section><h2>Условная полоса</h2><svg id="plot" viewBox="0 0 800 300" role="img" aria-label="Нормированная гауссова полоса; энергия в eV, плотность в eV в минус первой степени"></svg><output id="result" aria-live="polite"></output></section>
+<section><h2>Модель и ограничения</h2><p>I(E)=exp(−(E−E₀)²/(2σ²))/(σ√(2π)); площадь равна 1. FWHM=2√(2ln2)σ; λ₀=1239.841984/E₀ nm. Уширение в eV нельзя без якобиана переименовать в плотность по nm.</p>
+<p>Для отдельного концентрационного контроля ε=10000 L mol⁻¹ cm⁻¹, A=εcl, Tobs=(10⁻ᴬ+s)/(1+s), Aobs=−log₁₀(Tobs). Это не связь осцилляторной силы с абсолютной ε. Нет химической специфичности, растворителя, колебательной структуры и калибровки прибора.</p>
+<label for="decision">Интерпретация, ограничение и следующий опыт</label><textarea id="decision"></textarea><button id="export">Сохранить версию исследования JSON</button><p id="message" role="status"></p>
+<p><a href="https://goldbook.iupac.org/terms/view/B00626">IUPAC: закон поглощения</a> · <a href="https://pyscf.org/user/tddft.html">PySCF: электронные переходы</a></p></section></main><script src="app.js"></script></html>

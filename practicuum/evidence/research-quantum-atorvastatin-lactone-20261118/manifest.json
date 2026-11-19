@@ -1,0 +1,630 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-11-18T14:34:48.777915+00:00",
+  "name": "atorvastatin_lactone",
+  "protocol": {
+    "id": "research-quantum-v1",
+    "purpose": "Molecular geometry, harmonic vibration and vertical excitation research; no clinical inference",
+    "platform": "Linux/WSL CPU, Python 3.12, locked quantum profile",
+    "conformers": {
+      "attempted": 100,
+      "seed": 20261118,
+      "forcefield": "MMFF94s",
+      "max_iterations": 3000,
+      "energy_window_kcal_mol": 10.0,
+      "heavy_atom_rmsd_angstrom": 0.5,
+      "qm_candidates": 3
+    },
+    "geometry": {
+      "functional": "b3lyp",
+      "dispersion": "d3bj",
+      "basis": "def2-svp",
+      "solvent": "water",
+      "solvation_model": "SMD",
+      "grid_level": 4,
+      "scf_tolerance_hartree": 1e-09,
+      "density_tolerance": 1e-07,
+      "max_scf_cycles": 150,
+      "max_geometry_steps": 150,
+      "gradient_rms_hartree_bohr": 0.0001,
+      "gradient_max_hartree_bohr": 0.00015,
+      "step_rms_angstrom": 0.0004,
+      "step_max_angstrom": 0.0006,
+      "energy_change_hartree": 1e-07
+    },
+    "singlepoint": {
+      "functional": "pbe0",
+      "dispersion": "d3bj",
+      "basis": "def2-tzvp",
+      "solvent": "water",
+      "solvation_model": "SMD",
+      "grid_level": 5,
+      "scf_tolerance_hartree": 1e-10,
+      "density_tolerance": 1e-08,
+      "max_scf_cycles": 150
+    },
+    "excitation": {
+      "functional": "cam-b3lyp",
+      "basis": "def2-tzvp",
+      "solvent": "water",
+      "solvation_model": "SMD",
+      "grid_level": 4,
+      "scf_tolerance_hartree": 1e-09,
+      "density_tolerance": 1e-07,
+      "max_scf_cycles": 150,
+      "method": "TDDFT",
+      "states": 30,
+      "tolerance_hartree": 1e-07,
+      "equilibrium_solvation": false
+    },
+    "vibrations": {
+      "temperature_K": 298.15,
+      "pressure_Pa": 101325,
+      "frequency_scaling": 1.0,
+      "minimum_acceptance": "no negative projected harmonic frequencies; negative modes require review and reoptimization",
+      "IR_mass_weighted_step_bohr_sqrt_amu": 0.005
+    },
+    "resources": {
+      "threads": 6,
+      "memory_MB": 4500
+    },
+    "limitations": [
+      "Starting conformers are prescreened by MMFF, not a proof of global coverage",
+      "SMD is a continuum model, no explicit solvent or crystal packing",
+      "Harmonic thermochemistry is RRHO at 1 atm, not automatically solution-standard free energy",
+      "Frequency scale 1.0 is an unscaled prediction, not calibrated experimental agreement",
+      "Method and basis need benchmark assessment for each endpoint",
+      "Conformer-ensemble and experimental comparisons are required before a scientific acceptance claim"
+    ]
+  },
+  "protocol_sha256": "40819a26c2268c7a42ace70b77a4f6fe5b1067d9540279d5a87817a36903041c",
+  "script_sha256": "637201f40e11dd675e11a84ec93f006f85bc82ef60c908dd4f8f6e7188925e54",
+  "structure_source_sha256": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267",
+  "record": {
+    "name": "atorvastatin_lactone",
+    "cid": 6483036,
+    "smiles": "CC(C)C1=C(C(=C(N1CC[C@@H]2C[C@H](CC(=O)O2)O)C3=CC=C(C=C3)F)C4=CC=CC=C4)C(=O)NC5=CC=CC=C5",
+    "formula": "C33H33FN2O4",
+    "molecular_weight_g_mol": 540.6,
+    "pubchem_XLogP": 5.7,
+    "pubchem_TPSA_A2": 80.6,
+    "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/atorvastatin%20lactone/property/MolecularFormula,MolecularWeight,CanonicalSMILES,IsomericSMILES,XLogP,TPSA/JSON",
+    "source_sha256": "09d67f33e65c718c842dcb5fd85dea1b185bd7468feafba37cbe860750533755",
+    "property_kind": "database representation/computed descriptor; not an assay or measured solubility"
+  },
+  "charge": 0,
+  "spin_2S": 0,
+  "electrons": 286,
+  "atom_count": 73,
+  "prescreen": [
+    {
+      "id": 0,
+      "status": 0,
+      "energy_kcal_mol": 62.395461620053936
+    },
+    {
+      "id": 1,
+      "status": 0,
+      "energy_kcal_mol": 57.17213332573721
+    },
+    {
+      "id": 2,
+      "status": 0,
+      "energy_kcal_mol": 57.71266677330317
+    },
+    {
+      "id": 3,
+      "status": 0,
+      "energy_kcal_mol": 61.31591050660869
+    },
+    {
+      "id": 4,
+      "status": 0,
+      "energy_kcal_mol": 64.71558837519088
+    },
+    {
+      "id": 5,
+      "status": 0,
+      "energy_kcal_mol": 58.3814219206572
+    },
+    {
+      "id": 6,
+      "status": 0,
+      "energy_kcal_mol": 55.937236095642376
+    },
+    {
+      "id": 7,
+      "status": 0,
+      "energy_kcal_mol": 60.052829687615215
+    },
+    {
+      "id": 8,
+      "status": 0,
+      "energy_kcal_mol": 56.686942185431235
+    },
+    {
+      "id": 9,
+      "status": 0,
+      "energy_kcal_mol": 55.77481846066884
+    },
+    {
+      "id": 10,
+      "status": 0,
+      "energy_kcal_mol": 56.78320355747877
+    },
+    {
+      "id": 11,
+      "status": 0,
+      "energy_kcal_mol": 61.31941321900016
+    },
+    {
+      "id": 12,
+      "status": 0,
+      "energy_kcal_mol": 58.77504862234656
+    },
+    {
+      "id": 13,
+      "status": 0,
+      "energy_kcal_mol": 59.50905848285862
+    },
+    {
+      "id": 14,
+      "status": 0,
+      "energy_kcal_mol": 56.037185895497814
+    },
+    {
+      "id": 15,
+      "status": 0,
+      "energy_kcal_mol": 59.18160920688571
+    },
+    {
+      "id": 16,
+      "status": 0,
+      "energy_kcal_mol": 56.15129044670003
+    },
+    {
+      "id": 17,
+      "status": 0,
+      "energy_kcal_mol": 58.51630656138706
+    },
+    {
+      "id": 18,
+      "status": 0,
+      "energy_kcal_mol": 60.51429319120139
+    },
+    {
+      "id": 19,
+      "status": 0,
+      "energy_kcal_mol": 57.85848190702046
+    },
+    {
+      "id": 20,
+      "status": 0,
+      "energy_kcal_mol": 56.89071814544397
+    },
+    {
+      "id": 21,
+      "status": 0,
+      "energy_kcal_mol": 61.94665842158305
+    },
+    {
+      "id": 22,
+      "status": 0,
+      "energy_kcal_mol": 60.67479840729126
+    },
+    {
+      "id": 23,
+      "status": 0,
+      "energy_kcal_mol": 66.04719066885346
+    },
+    {
+      "id": 24,
+      "status": 0,
+      "energy_kcal_mol": 60.33530181497498
+    },
+    {
+      "id": 25,
+      "status": 0,
+      "energy_kcal_mol": 55.93723623125255
+    },
+    {
+      "id": 26,
+      "status": 0,
+      "energy_kcal_mol": 57.175971568231844
+    },
+    {
+      "id": 27,
+      "status": 0,
+      "energy_kcal_mol": 61.078799054455345
+    },
+    {
+      "id": 28,
+      "status": 0,
+      "energy_kcal_mol": 54.80686692568484
+    },
+    {
+      "id": 29,
+      "status": 0,
+      "energy_kcal_mol": 56.34282153376644
+    },
+    {
+      "id": 30,
+      "status": 0,
+      "energy_kcal_mol": 59.51537141236092
+    },
+    {
+      "id": 31,
+      "status": 0,
+      "energy_kcal_mol": 58.314455043836105
+    },
+    {
+      "id": 32,
+      "status": 0,
+      "energy_kcal_mol": 59.65227889115053
+    },
+    {
+      "id": 33,
+      "status": 0,
+      "energy_kcal_mol": 62.458073371179474
+    },
+    {
+      "id": 34,
+      "status": 0,
+      "energy_kcal_mol": 57.27366911598486
+    },
+    {
+      "id": 35,
+      "status": 0,
+      "energy_kcal_mol": 60.51466693976422
+    },
+    {
+      "id": 36,
+      "status": 0,
+      "energy_kcal_mol": 56.343076146969864
+    },
+    {
+      "id": 37,
+      "status": 0,
+      "energy_kcal_mol": 55.673199718113025
+    },
+    {
+      "id": 38,
+      "status": 0,
+      "energy_kcal_mol": 58.51630645168593
+    },
+    {
+      "id": 39,
+      "status": 0,
+      "energy_kcal_mol": 55.63143492031267
+    },
+    {
+      "id": 40,
+      "status": 0,
+      "energy_kcal_mol": 61.31941310020443
+    },
+    {
+      "id": 41,
+      "status": 0,
+      "energy_kcal_mol": 61.28075279160363
+    },
+    {
+      "id": 42,
+      "status": 0,
+      "energy_kcal_mol": 60.052829693558806
+    },
+    {
+      "id": 43,
+      "status": 0,
+      "energy_kcal_mol": 56.62485356505048
+    },
+    {
+      "id": 44,
+      "status": 0,
+      "energy_kcal_mol": 55.041216868502616
+    },
+    {
+      "id": 45,
+      "status": 0,
+      "energy_kcal_mol": 55.04121688405823
+    },
+    {
+      "id": 46,
+      "status": 0,
+      "energy_kcal_mol": 58.670331986554615
+    },
+    {
+      "id": 47,
+      "status": 0,
+      "energy_kcal_mol": 58.20165731637009
+    },
+    {
+      "id": 48,
+      "status": 0,
+      "energy_kcal_mol": 59.99414934600934
+    },
+    {
+      "id": 49,
+      "status": 0,
+      "energy_kcal_mol": 57.14559880074296
+    },
+    {
+      "id": 50,
+      "status": 0,
+      "energy_kcal_mol": 58.67033210404824
+    },
+    {
+      "id": 51,
+      "status": 0,
+      "energy_kcal_mol": 59.34914829867144
+    },
+    {
+      "id": 52,
+      "status": 0,
+      "energy_kcal_mol": 56.151290450494194
+    },
+    {
+      "id": 53,
+      "status": 0,
+      "energy_kcal_mol": 58.40366193509696
+    },
+    {
+      "id": 54,
+      "status": 0,
+      "energy_kcal_mol": 61.90912903041838
+    },
+    {
+      "id": 55,
+      "status": 0,
+      "energy_kcal_mol": 59.887471319639204
+    },
+    {
+      "id": 56,
+      "status": 0,
+      "energy_kcal_mol": 57.61578596556694
+    },
+    {
+      "id": 57,
+      "status": 0,
+      "energy_kcal_mol": 58.314455017985594
+    },
+    {
+      "id": 58,
+      "status": 0,
+      "energy_kcal_mol": 55.93723605287461
+    },
+    {
+      "id": 59,
+      "status": 0,
+      "energy_kcal_mol": 59.5029635109134
+    },
+    {
+      "id": 60,
+      "status": 0,
+      "energy_kcal_mol": 56.415032071537084
+    },
+    {
+      "id": 61,
+      "status": 0,
+      "energy_kcal_mol": 67.91829718347552
+    },
+    {
+      "id": 62,
+      "status": 0,
+      "energy_kcal_mol": 59.88747133517226
+    },
+    {
+      "id": 63,
+      "status": 0,
+      "energy_kcal_mol": 57.15278524138593
+    },
+    {
+      "id": 64,
+      "status": 0,
+      "energy_kcal_mol": 58.87006497303093
+    },
+    {
+      "id": 65,
+      "status": 0,
+      "energy_kcal_mol": 56.645975616536695
+    },
+    {
+      "id": 66,
+      "status": 0,
+      "energy_kcal_mol": 61.28075282457094
+    },
+    {
+      "id": 67,
+      "status": 0,
+      "energy_kcal_mol": 56.11563225752819
+    },
+    {
+      "id": 68,
+      "status": 0,
+      "energy_kcal_mol": 55.429009709382726
+    },
+    {
+      "id": 69,
+      "status": 0,
+      "energy_kcal_mol": 56.04896424308291
+    },
+    {
+      "id": 70,
+      "status": 0,
+      "energy_kcal_mol": 58.20165726267827
+    },
+    {
+      "id": 71,
+      "status": 0,
+      "energy_kcal_mol": 60.646628109922815
+    },
+    {
+      "id": 72,
+      "status": 0,
+      "energy_kcal_mol": 55.82368787582971
+    },
+    {
+      "id": 73,
+      "status": 0,
+      "energy_kcal_mol": 60.5829625393459
+    },
+    {
+      "id": 74,
+      "status": 0,
+      "energy_kcal_mol": 57.09128862546642
+    },
+    {
+      "id": 75,
+      "status": 0,
+      "energy_kcal_mol": 59.59783170397115
+    },
+    {
+      "id": 76,
+      "status": 0,
+      "energy_kcal_mol": 61.33495076859829
+    },
+    {
+      "id": 77,
+      "status": 0,
+      "energy_kcal_mol": 56.48460221909383
+    },
+    {
+      "id": 78,
+      "status": 0,
+      "energy_kcal_mol": 56.62671370634648
+    },
+    {
+      "id": 79,
+      "status": 0,
+      "energy_kcal_mol": 55.901853375508196
+    },
+    {
+      "id": 80,
+      "status": 0,
+      "energy_kcal_mol": 66.40837983703116
+    },
+    {
+      "id": 81,
+      "status": 0,
+      "energy_kcal_mol": 59.630098937794614
+    },
+    {
+      "id": 82,
+      "status": 0,
+      "energy_kcal_mol": 56.11638679415924
+    },
+    {
+      "id": 83,
+      "status": 0,
+      "energy_kcal_mol": 57.68007174015625
+    },
+    {
+      "id": 84,
+      "status": 0,
+      "energy_kcal_mol": 58.52432582501215
+    },
+    {
+      "id": 85,
+      "status": 0,
+      "energy_kcal_mol": 59.90512756486403
+    },
+    {
+      "id": 86,
+      "status": 0,
+      "energy_kcal_mol": 60.17965735987475
+    },
+    {
+      "id": 87,
+      "status": 0,
+      "energy_kcal_mol": 55.67319993807939
+    },
+    {
+      "id": 88,
+      "status": 0,
+      "energy_kcal_mol": 61.39024175307537
+    },
+    {
+      "id": 89,
+      "status": 0,
+      "energy_kcal_mol": 55.04121687284133
+    },
+    {
+      "id": 90,
+      "status": 0,
+      "energy_kcal_mol": 60.31551311607048
+    },
+    {
+      "id": 91,
+      "status": 0,
+      "energy_kcal_mol": 60.67479834940065
+    },
+    {
+      "id": 92,
+      "status": 0,
+      "energy_kcal_mol": 59.65227850949972
+    },
+    {
+      "id": 93,
+      "status": 0,
+      "energy_kcal_mol": 55.937236158504604
+    },
+    {
+      "id": 94,
+      "status": 0,
+      "energy_kcal_mol": 55.90478831159846
+    },
+    {
+      "id": 95,
+      "status": 0,
+      "energy_kcal_mol": 57.04305287581346
+    },
+    {
+      "id": 96,
+      "status": 0,
+      "energy_kcal_mol": 59.11513407006433
+    },
+    {
+      "id": 97,
+      "status": 0,
+      "energy_kcal_mol": 58.611886218002056
+    },
+    {
+      "id": 98,
+      "status": 0,
+      "energy_kcal_mol": 56.331969059852845
+    },
+    {
+      "id": 99,
+      "status": 0,
+      "energy_kcal_mol": 59.62706346014061
+    }
+  ],
+  "selected": [
+    {
+      "id": 28,
+      "status": 0,
+      "energy_kcal_mol": 54.80686692568484
+    },
+    {
+      "id": 44,
+      "status": 0,
+      "energy_kcal_mol": 55.041216868502616
+    },
+    {
+      "id": 68,
+      "status": 0,
+      "energy_kcal_mol": 55.429009709382726
+    }
+  ],
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-6.18.58.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+    "pyscf": "2.15.1",
+    "geometric": "1.1.1",
+    "pyscf-dispersion": "1.7.0",
+    "rdkit": "2026.9.1",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "scope": "actual computed molecular states, method validation pending",
+  "scientific_review": "NOT_RUN"
+}

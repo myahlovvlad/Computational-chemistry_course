@@ -6,6 +6,12 @@ import nbformat
 from build_notebooks import cells_from_step
 
 ROOT=Path(__file__).resolve().parents[1]
+
+def markdown_references(text):
+    # Chemical SMARTS such as [C](=[O]) inside code are not Markdown links.
+    prose=re.sub(r'^```[^\n]*\n.*?^```\s*$', '', text, flags=re.M|re.S)
+    prose=re.sub(r'`[^`\n]+`', '', prose)
+    return re.findall(r'\]\(([^)]+)\)',prose)
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--out',type=Path,required=True)
@@ -49,7 +55,7 @@ def main():
       documents=(ROOT/folder).glob('*.md') if folder=='.' else (ROOT/folder).rglob('*.md')
       for path in documents:
         if any(part.startswith('.') or part in ['evidence','workspace','dist','cache'] for part in path.relative_to(ROOT).parts):continue
-        for reference in re.findall(r'\]\(([^)]+)\)',path.read_text(encoding='utf-8')):
+        for reference in markdown_references(path.read_text(encoding='utf-8')):
           parts=urlsplit(reference.strip('<>'))
           if parts.scheme or not parts.path:continue
           target=(path.parent/unquote(parts.path)).resolve()

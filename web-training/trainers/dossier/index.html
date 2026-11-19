@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Исследовательское досье · M14</title><link rel="stylesheet" href="../../learning-tools.css">
+<main><nav><a href="../spectra/index.html">Спектр и прибор</a> · <a href="../hplc/index.html">HPLC</a></nav><p class="eyebrow">M14 · личное исследование</p><h1>От свидетельства к решению</h1>
+<p>Каждое сохранение добавляет версию в этом браузере. Экспортируйте JSON для резервной копии и передачи преподавателю. Браузерное хранилище не заменяет файлы общего досье.</p>
+<section><h2>Новая запись B</h2><label for="question">Вопрос</label><input id="question" type="text">
+<label for="form">Вещество, форма и условия</label><input id="form" value="atorvastatin; specify acid/lactone/salt, pH, temperature">
+<label for="kind">Происхождение</label><select id="kind"><option>hypothesis</option><option>literature</option><option>calculated</option><option>simulation</option><option>measured</option></select>
+<label for="source">Источник, входные файлы/SHA и версия метода</label><textarea id="source"></textarea>
+<label for="decision">Результат, неопределённость, решение и следующий независимый опыт</label><textarea id="decision"></textarea>
+<button id="save">Добавить версию</button><p id="status" role="status"></p></section>
+<section><h2>Концептуальная карта</h2><p>JSON: nodes — объекты с уникальным id; edges — объекты source, target, explanation, source_reference, limitation. Это смысловые связи, поэтому циклы допустимы. Зависимости вычислений проверяются отдельно Python-функцией validate_graph.</p>
+<label for="map">Карта с объяснёнными связями</label><textarea id="map" rows="10">{"nodes":[],"edges":[]}</textarea><button id="validate">Проверить структуру карты</button><p id="map-status" role="status"></p><ul id="edges"></ul></section>
+<section><h2>История</h2><ol id="history"></ol><button id="export">Экспортировать досье JSON</button>
+<label for="import">Импортировать ранее сохранённое досье (добавляет неизвестные версии)</label><input id="import" type="file" accept="application/json,.json"><p id="import-status" role="status"></p></section></main><script src="app.js"></script></html>

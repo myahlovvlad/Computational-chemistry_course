@@ -1,0 +1,6 @@
+{
+  "reference_n_after_query_scaffold_exclusion": 55,
+  "acid_nearest_reference_Tanimoto": 0.4722222222222222,
+  "lactone_nearest_reference_Tanimoto": 0.5694444444444444,
+  "model_training": "NOT_RUN"
+}

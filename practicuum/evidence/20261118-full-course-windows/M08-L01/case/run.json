@@ -1,0 +1,19 @@
+{
+  "lesson_id": "M08-L01",
+  "role": "case",
+  "kernel": "course-v2-chem",
+  "started_utc": "2026-11-18T14:16:07.911205+00:00",
+  "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\course-restructure-20261118\\practicuum\\modules\\M08\\lessons\\L01\\Notebooks_cases\\01_case.ipynb",
+  "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\course-restructure-20261118",
+  "scope": "full guided computation",
+  "input_sha256": "a9dc1f102c8ac5e87607493dc6c692fc66a44e19d95141ec8e1521b6cfe17a5d",
+  "data_sha256": {
+    "practicuum/shared/data/quantum/istradefylline/result.json": "8f56fbf9ccaff067d7e26ad94f9cbadd752c1248dcee439595456d1636fbbbb2",
+    "practicuum/shared/data/quantum/atorvastatin/result.json": "a365db4fdf5973018f6cb26c372c380bc7dd1f5599528da1c142e7219b8e83c2"
+  },
+  "step_sha256": {
+    "practicuum/modules/M08/lessons/L01/steps/01_case.md": "2624adaa5e648b2fd515ec1ba055710298ce321582cc042ae545d462dd4ef372"
+  },
+  "status": "PASS",
+  "seconds": 1.5757797999976901
+}

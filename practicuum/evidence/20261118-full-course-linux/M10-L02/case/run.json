@@ -1,0 +1,18 @@
+{
+  "lesson_id": "M10-L02",
+  "role": "case",
+  "kernel": "course-v2-chem",
+  "started_utc": "2026-11-18T14:20:14.758329+00:00",
+  "source": "/home/miakhlov/course-production-verified-20261118/practicuum/modules/M10/lessons/L02/Notebooks_cases/01_case.ipynb",
+  "cwd": "/home/miakhlov/course-production-verified-20261118",
+  "scope": "full guided computation",
+  "input_sha256": "e995847be0578acb6e9d6f0bcd1d38e585bfa979032197fe4589f8878ff90034",
+  "data_sha256": {
+    "practicuum/shared/data/atorvastatin_hplc_table1.csv": "48f2e1cde1995d8419cb27c67484e16fd8c3c767675dcf142b0ae4994adfbb4c"
+  },
+  "step_sha256": {
+    "practicuum/modules/M10/lessons/L02/steps/01_case.md": "d12dfc57c90ec51c202be73a2c4758f3eb57b14696c52948339acb823be75bd7"
+  },
+  "status": "PASS",
+  "seconds": 1.3134623170044506
+}

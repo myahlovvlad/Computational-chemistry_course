@@ -1,0 +1,20 @@
+{
+  "lesson_id": "M11-L01",
+  "role": "case",
+  "kernel": "course-v2-chem",
+  "started_utc": "2026-11-18T14:16:27.092907+00:00",
+  "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\course-restructure-20261118\\practicuum\\modules\\M11\\lessons\\L01\\Notebooks_cases\\01_case.ipynb",
+  "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\course-restructure-20261118",
+  "scope": "full guided computation",
+  "input_sha256": "5af01a82e81a81bc0642b2cc0cd2938ed5c5e534fd20d35993f536068dc128ef",
+  "data_sha256": {
+    "practicuum/shared/data/structures.json": "e854bab679bebd217095481e49e64174d043f3c64a5b5d416fce559368cfd646",
+    "practicuum/shared/data/istradefylline_activities.json": "8cbcfe22cadcc109b096699e74519f9ceaf9a0c2c9bf6df20000e7041567210a",
+    "practicuum/shared/data/atorvastatin_activities.json": "51955818e1961f42eb4ab5ddfa5b27f225bb2ac2e27d040d0718482b3e72790e"
+  },
+  "step_sha256": {
+    "practicuum/modules/M11/lessons/L01/steps/01_case.md": "a5fa2cc304c1d8db88bb32564e0886d0d4db62f5b1666681dcab86b217af8614"
+  },
+  "status": "PASS",
+  "seconds": 1.4869573999894783
+}

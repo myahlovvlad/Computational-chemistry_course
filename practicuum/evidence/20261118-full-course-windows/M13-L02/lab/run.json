@@ -1,0 +1,18 @@
+{
+  "lesson_id": "M13-L02",
+  "role": "lab",
+  "kernel": "course-v2-chem",
+  "started_utc": "2026-11-18T14:16:46.762751+00:00",
+  "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\course-restructure-20261118\\practicuum\\modules\\M13\\lessons\\L02\\Notebooks_labs\\02_lab.ipynb",
+  "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\course-restructure-20261118",
+  "scope": "empty lab scaffold; learner completion NOT_RUN",
+  "input_sha256": "83d900305fa5ddc7a2a46168d5de1b1ad23592bcc910d16fa18eabccbf083468",
+  "data_sha256": {
+    "practicuum/shared/data/routes.csv": "c3ddf027fcb04b233b0d2c12e7cdc2059028e31982e2a9981acf04644d58244d"
+  },
+  "step_sha256": {
+    "practicuum/modules/M13/lessons/L02/steps/02_lab.md": "30a073cf63543f3768bc082cdc201b5fd2edcc4b52a9a561a5d3331af56553a7"
+  },
+  "status": "PASS",
+  "seconds": 1.4800996999983909
+}

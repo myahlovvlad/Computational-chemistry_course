@@ -1,0 +1,4 @@
+PASS: 18 source hashes; 7 PubChem identities; 2 publication DOIs; 20 HPLC rows; 2 ChEMBL first pages
+Scope: provenance/data consistency; no independent scientific review, assay or clinical validation
+PASS: 5 caffeine kinetic rows match primary XML; caffeine and atorvastatin stability DOIs verified
+PASS: frozen target-specific QSAR artifacts and target/endpoint identities verified

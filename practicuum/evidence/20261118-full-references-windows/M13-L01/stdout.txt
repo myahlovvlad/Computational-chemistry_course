@@ -1,0 +1,6 @@
+{
+  "rows": 4,
+  "reflux_zeros": 2,
+  "microwave_zeros": 1,
+  "B_yields": "NOT_AVAILABLE"
+}

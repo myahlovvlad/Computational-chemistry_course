@@ -12,6 +12,8 @@ scripts/environment/.uv-bootstrap/
 practicuum/shared/data/cache/
 practicuum/**/workspace/
 parser/dist/
+# Private local NIST spectrum render; no redistribution grant.
+practicuum/evidence/20261118-ir-extended-windows/
 programm/IMPLEMENTATION_STATE.md
 *.log
 !practicuum/evidence/**/*.log

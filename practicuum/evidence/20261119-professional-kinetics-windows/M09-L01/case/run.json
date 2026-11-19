@@ -1,0 +1,22 @@
+{
+  "lesson_id": "M09-L01",
+  "role": "case",
+  "kernel": "course-v2-chem",
+  "started_utc": "2026-11-19T07:15:57.339814+00:00",
+  "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\course-restructure-20261118\\practicuum\\modules\\M09\\lessons\\L01\\Notebooks_cases\\01_case.ipynb",
+  "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\course-restructure-20261118",
+  "scope": "full guided computation",
+  "input_sha256": "11b617707b73a5589db206f233d5959a3694f54d926a60aa5f18b10851b218d3",
+  "data_sha256": {
+    "practicuum/shared/data/caffeine_hydroxide_table4.csv": "1ea9f1f65ad97d5fd67fcf6b4483c725444ca57c7d415953b69b9d8dc31a621f",
+    "practicuum/shared/data/caffeine_kinetics_provenance.json": "0a997291642d78e90b2bc1b2c21dd92ac7117246dd5686e6f11bcf1e02a39b3e",
+    "practicuum/shared/data/source-responses/caffeine_kinetics.xml": "492a9e1abd48ef55bcc7aeaea673203554bb85aa837fba1fc9e76f25b2d99d55",
+    "practicuum/shared/data/source-responses/statin_stability_verified.xml": "84ffbbd27fdaf85a4b75c480672f5538900ba73dfe21093f49d650fbf1a794ae"
+  },
+  "step_sha256": {
+    "practicuum/modules/M09/lessons/L01/steps/01_case.md": "06cc063428b9421b24e511ac034a7ba9911071bebb463917458a5b0816d83d55"
+  },
+  "status": "FAIL",
+  "error": "CellExecutionError: An error occurred while executing the following cell:\n------------------\nwrite_json(OUT/'result.json',result)\nfrom dossier_records import append_record\nreceipt=append_record(init_dossier(),'M09-L01','A',result,ROOT,inputs=['practicuum/shared/data/caffeine_hydroxide_table4.csv', 'practicuum/shared/data/caffeine_kinetics_provenance.json', 'practicuum/shared/data/source-responses/caffeine_kinetics.xml', 'practicuum/shared/data/source-responses/statin_stability_verified.xml'])\nprint(receipt)\n\n------------------\n\n\n\u001b[31m---------------------------------------------------------------------------\u001b[39m\n\u001b[31mValueError\u001b[39m                                Traceback (most recent call last)\n\u001b[36mCell\u001b[39m\u001b[36m \u001b[39m\u001b[32mIn[6]\u001b[39m\u001b[32m, line 3\u001b[39m\n\u001b[32m      1\u001b[39m write_json(OUT/\u001b[33m'result.json'\u001b[39m,result)\n\u001b[32m      2\u001b[39m \u001b[38;5;28;01mfrom\u001b[39;00m dossier_records \u001b[38;5;28;01mimport\u001b[39;00m append_record\n\u001b[32m----> \u001b[39m\u001b[32m3\u001b[39m receipt=append_record(init_dossier(),\u001b[33m'M09-L01'\u001b[39m,\u001b[33m'A'\u001b[39m,result,ROOT,inputs=[\u001b[33m'practicuum/shared/data/caffeine_hydroxide_table4.csv'\u001b[39m, \u001b[33m'practicuum/shared/data/caffeine_kinetics_provenance.json'\u001b[39m, \u001b[33m'practicuum/shared/data/source-responses/caffeine_kinetics.xml'\u001b[39m, \u001b[33m'practicuum/shared/data/source-responses/statin_stability_verified.xml'\u001b[39m])\n\u001b[32m      4\u001b[39m print(receipt)\n\n\u001b[36mFile \u001b[39m\u001b[32m~\\Documents\\GitHub\\Computational chemistry_course\\tmp\\course-restructure-20261118\\practicuum\\shared\\dossier_records.py:53\u001b[39m, in \u001b[36mappend_record\u001b[39m\u001b[34m(dossier, lesson_id, role, result, root, inputs, method, conditions, uncertainty, decision)\u001b[39m\n\u001b[32m     51\u001b[39m     \u001b[38;5;28;01mraise\u001b[39;00m \u001b[38;5;167;01mValueError\u001b[39;00m(\u001b[33m'\u001b[39m\u001b[33mInvalid role\u001b[39m\u001b[33m'\u001b[39m)\n\u001b[32m     52\u001b[39m \u001b[38;5;28;01mif\u001b[39;00m result.get(\u001b[33m'\u001b[39m\u001b[33mkind\u001b[39m\u001b[33m'\u001b[39m) \u001b[38;5;129;01mnot\u001b[39;00m \u001b[38;5;129;01min\u001b[39;00m KINDS:\n\u001b[32m---> \u001b[39m\u001b[32m53\u001b[39m     \u001b[38;5;28;01mraise\u001b[39;00m \u001b[38;5;167;01mValueError\u001b[39;00m(\u001b[33m'\u001b[39m\u001b[33mExplicit evidence kind required\u001b[39m\u001b[33m'\u001b[39m)\n\u001b[32m     54\u001b[39m root = Path(root).resolve()\n\u001b[32m     55\u001b[39m hashes = {}\n\n\u001b[31mValueError\u001b[39m: Explicit evidence kind required\n",
+  "seconds": 6.497713099990506
+}

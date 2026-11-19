@@ -1,0 +1,32 @@
+{
+  "source_doi": "10.3390/molecules18032469",
+  "pmcid": "PMC6270013",
+  "table_id": "molecules-18-02469-t001",
+  "table_caption": "Experimental design of the face-centered central composite design and experimentally obtained responses; x1-content of acetonitrile in the mobile phase, x2, temperature of column and x3, flow rate, Rt, retention time, Sym, symmetry of compounds, RRt, relative retention time.",
+  "source_xml_sha256": "fbada469bde0b3128fd426ebc23128af975ac5880afc1fe2dbb772fbe31926a1",
+  "license": "This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution license (http://creativecommons.org/licenses/by/3.0/).",
+  "records": 20,
+  "columns": [
+    "acetonitrile_percent",
+    "column_temperature_C",
+    "flow_mL_min",
+    "retention_p_ATO_min",
+    "retention_ATO_lactone_min",
+    "symmetry_p_ATO",
+    "symmetry_o_ATO",
+    "symmetry_ATO",
+    "symmetry_ATO_lactone",
+    "relative_retention_p_ATO"
+  ],
+  "transformations": [
+    "table1 numeric rows, original order",
+    "whitespace trimmed",
+    "Unicode minus normalized for numeric parsing"
+  ],
+  "not_provided": [
+    "individual raw chromatograms as numeric signals",
+    "baseline widths for computing measured Rs"
+  ],
+  "scope": "experimental table; new fitted responses are model predictions, Gaussian traces are conditional simulations",
+  "retrieved_utc": "2026-11-18T11:29:25.651053+00:00"
+}

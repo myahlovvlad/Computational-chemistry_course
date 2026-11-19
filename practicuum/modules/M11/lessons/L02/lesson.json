@@ -1,0 +1,15 @@
+{
+  "inputs": [
+    "practicuum/shared/data/docking/1iep_ligand.pdbqt",
+    "practicuum/shared/data/docking/1iep_ligand_vina_out.pdbqt"
+  ],
+  "case_steps": [
+    "practicuum/modules/M11/lessons/L02/steps/01_case.md"
+  ],
+  "lab_steps": [
+    "practicuum/modules/M11/lessons/L02/steps/02_lab.md"
+  ],
+  "instructor": "practicuum/modules/M11/lessons/L02/instructor/reference.py",
+  "assessment": "practicuum/modules/M11/lessons/L02/instructor/rubric.md",
+  "development_scope": "authored computational lesson; external validation pending"
+}

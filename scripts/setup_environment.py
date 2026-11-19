@@ -13,11 +13,11 @@ PROJECT=ROOT/'scripts/environment'
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--profile',choices=['base','chem','quantum'],default='base')
+    parser.add_argument('--profile',choices=['base','chem','quantum','docking'],default='base')
     parser.add_argument('--uv',help='Путь к исполняемому uv, если его нет в PATH')
     parser.add_argument('--register-only',action='store_true')
     args=parser.parse_args()
-    if args.profile=='quantum' and sys.platform!='linux':
+    if args.profile in {'quantum','docking'} and sys.platform!='linux':
         raise SystemExit('Профиль quantum устанавливается в Linux/WSL. Для Windows используйте base/chem и Linux-маршрут квантовых расчётов.')
     uv=args.uv or shutil.which('uv')
     if not uv:raise SystemExit('Сначала выполните setup-windows.ps1 или setup-linux.sh для установки uv в локальный bootstrap.')

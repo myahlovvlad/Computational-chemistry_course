@@ -1,0 +1,21 @@
+{
+  "lesson_id": "M07-L02",
+  "role": "case",
+  "kernel": "course-v2-chem",
+  "started_utc": "2026-11-18T14:19:58.565203+00:00",
+  "source": "/home/miakhlov/course-production-verified-20261118/practicuum/modules/M07/lessons/L02/Notebooks_cases/01_case.ipynb",
+  "cwd": "/home/miakhlov/course-production-verified-20261118",
+  "scope": "full guided computation",
+  "input_sha256": "f4b75959763de7d3a2a0434194a2d9ebd15b777b534f6009ed5874ce03f45aea",
+  "data_sha256": {
+    "practicuum/shared/data/quantum/istradefylline/result.json": "8f56fbf9ccaff067d7e26ad94f9cbadd752c1248dcee439595456d1636fbbbb2",
+    "practicuum/shared/data/quantum/istradefylline/geometry.json": "8b1ec2efb6af4bbf7c984c43eec14553b658ca8cddf2ede549c0d9e45edcfdfa",
+    "practicuum/shared/data/quantum/atorvastatin/result.json": "a365db4fdf5973018f6cb26c372c380bc7dd1f5599528da1c142e7219b8e83c2",
+    "practicuum/shared/data/quantum/atorvastatin/geometry.json": "d0d2d8afc508fd0fa5bab87fcb26256f62f6f13b3743781bb9244abc878f6ee5"
+  },
+  "step_sha256": {
+    "practicuum/modules/M07/lessons/L02/steps/01_case.md": "b79e9f1e2b805a1f7fb4ebbb095f0d9f3da7d061d76bbf379a7c52af6457b15c"
+  },
+  "status": "PASS",
+  "seconds": 1.1615158410131698
+}

@@ -1,0 +1,98 @@
+{
+  "status": "PASS",
+  "sources": [
+    {
+      "pdb": "8RW0",
+      "compound": "istradefylline",
+      "url": "https://files.rcsb.org/download/8RW0.cif",
+      "file": "8RW0/structure.cif",
+      "sha256": "ad7298ece81253b56a600d2a9426156fe475603e0c406f78b458f7703765867a",
+      "bytes": 472091,
+      "created_utc": "2026-11-18T14:45:32.805704+00:00",
+      "http_status": 200,
+      "licence": "wwPDB/RCSB CC0"
+    },
+    {
+      "pdb": "8RW0",
+      "compound": "istradefylline",
+      "url": "https://data.rcsb.org/rest/v1/core/entry/8RW0",
+      "file": "8RW0/entry.json",
+      "sha256": "c98ffbb6ec3d339c0420ff50b5a601d3e0c2ffcc55613b72965a9476660c98d2",
+      "bytes": 11037,
+      "created_utc": "2026-11-18T14:45:34.845925+00:00",
+      "http_status": 200,
+      "licence": "wwPDB/RCSB CC0"
+    },
+    {
+      "pdb": "8RW0",
+      "file": "8RW0/nonpolymer-2.json",
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/8RW0/2",
+      "sha256": "fa94aa75925cd916336bb0ba19796a8fd58f9a2b966128e6ec7d99caa5d6b518",
+      "licence": "wwPDB/RCSB CC0",
+      "created_utc": "2026-11-18T14:45:36.276252+00:00"
+    },
+    {
+      "pdb": "8RW0",
+      "file": "8RW0/nonpolymer-3.json",
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/8RW0/3",
+      "sha256": "3086d1f75c55108c96a3068b5569fed5ade257affe4261107294292266c7d815",
+      "licence": "wwPDB/RCSB CC0",
+      "created_utc": "2026-11-18T14:45:37.703578+00:00"
+    },
+    {
+      "pdb": "8RW0",
+      "file": "8RW0/nonpolymer-4.json",
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/8RW0/4",
+      "sha256": "8991550a2224614e457c36b989d232c2795ed9d2b21bea81e7753b775fb1e4a3",
+      "licence": "wwPDB/RCSB CC0",
+      "created_utc": "2026-11-18T14:45:39.410219+00:00"
+    },
+    {
+      "pdb": "8RW0",
+      "file": "8RW0/nonpolymer-5.json",
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/8RW0/5",
+      "sha256": "75ca5c3d98616628e6f28777ecde59615160537923227876b641f1a94a372016",
+      "licence": "wwPDB/RCSB CC0",
+      "created_utc": "2026-11-18T14:45:40.906904+00:00"
+    },
+    {
+      "pdb": "1HWK",
+      "compound": "atorvastatin",
+      "url": "https://files.rcsb.org/download/1HWK.cif",
+      "file": "1HWK/structure.cif",
+      "sha256": "3d3db42bd3fdee3bea99d51df0eb1fb119fb0d2be0335b7fb61c85af2e54bfe8",
+      "bytes": 1351686,
+      "created_utc": "2026-11-18T14:45:43.093733+00:00",
+      "http_status": 200,
+      "licence": "wwPDB/RCSB CC0"
+    },
+    {
+      "pdb": "1HWK",
+      "compound": "atorvastatin",
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1HWK",
+      "file": "1HWK/entry.json",
+      "sha256": "d0a30c0a00dac8ca6487e23f11c3a361b9cc13704b8dfcbcd9b2c57f27382fc9",
+      "bytes": 13722,
+      "created_utc": "2026-11-18T14:45:44.846426+00:00",
+      "http_status": 200,
+      "licence": "wwPDB/RCSB CC0"
+    },
+    {
+      "pdb": "1HWK",
+      "file": "1HWK/nonpolymer-2.json",
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/1HWK/2",
+      "sha256": "79cd8bc22e2ee0cebf49c1a6dee19503c24585a3cafc4e847a6c14c9ead20423",
+      "licence": "wwPDB/RCSB CC0",
+      "created_utc": "2026-11-18T14:45:46.252983+00:00"
+    },
+    {
+      "pdb": "1HWK",
+      "file": "1HWK/nonpolymer-3.json",
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/1HWK/3",
+      "sha256": "0c584930c8d8029cc0afbc5256917687a027fbb0d64570e95b7a9dc8f3a8dfce",
+      "licence": "wwPDB/RCSB CC0",
+      "created_utc": "2026-11-18T14:45:47.793427+00:00"
+    }
+  ],
+  "scope": "coordinate/metadata acquisition, not prepared receptor or docking result"
+}

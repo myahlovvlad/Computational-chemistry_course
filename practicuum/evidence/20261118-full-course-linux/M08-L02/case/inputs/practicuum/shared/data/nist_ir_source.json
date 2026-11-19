@@ -1,0 +1,14 @@
+{
+  "id": "NIST-CAFFEINE-IR",
+  "url": "https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C58082&Index=0&Type=IR",
+  "sha256": "c2b918c795818f77e1ef169c0b1f3f93b267b7d20f8d9c149af6231cbb2f04b8",
+  "kind": "experimental database IR record",
+  "phase": "gas",
+  "x_unit": "cm^-1",
+  "y_unit": "absorbance",
+  "sampling_step_cm1": 4.0,
+  "sampling_step_is_instrument_resolution": false,
+  "rights": "NIST SRD collection says all rights reserved; raw JDX stays in ignored local cache, not redistributed",
+  "acquisition": "official HTTPS curl with normal certificate verification; urllib certificate-chain attempt failed",
+  "expected_points": 880
+}

@@ -1,0 +1,18 @@
+{
+  "lesson_id": "M10-L02",
+  "role": "lab",
+  "kernel": "course-v2-chem",
+  "started_utc": "2026-11-18T14:16:25.594205+00:00",
+  "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\course-restructure-20261118\\practicuum\\modules\\M10\\lessons\\L02\\Notebooks_labs\\02_lab.ipynb",
+  "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\course-restructure-20261118",
+  "scope": "empty lab scaffold; learner completion NOT_RUN",
+  "input_sha256": "fc86426dc75224da65660594ba081b4918999bb6f780b0e0588ba1f5834e666f",
+  "data_sha256": {
+    "practicuum/shared/data/atorvastatin_hplc_table1.csv": "48f2e1cde1995d8419cb27c67484e16fd8c3c767675dcf142b0ae4994adfbb4c"
+  },
+  "step_sha256": {
+    "practicuum/modules/M10/lessons/L02/steps/02_lab.md": "85dac58ad9f7ebc6a6ca0862b68e059b3d04874fa2c996290a980a1a8eefe8c8"
+  },
+  "status": "PASS",
+  "seconds": 1.497164000000339
+}

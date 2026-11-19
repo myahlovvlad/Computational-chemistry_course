@@ -1,0 +1,9 @@
+{
+  "Rs": 1.4285714285714286,
+  "baseline_widths_min": [
+    0.6,
+    0.8
+  ],
+  "kind": "simulation",
+  "measured_Rs": "NOT_AVAILABLE"
+}

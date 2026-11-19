@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-docking/bin/pdb2pqr30",
+    "--ff=AMBER",
+    "--ffout=AMBER",
+    "--keep-chain",
+    "--drop-water",
+    "--whitespace",
+    "--titration-state-method=propka",
+    "--with-ph=5.0",
+    "--pdb-output=/home/miakhlov/course-production-verified-20261118/practicuum/evidence/20261118-A2A-target-preparation-repair-audited/protein_protonated.pdb",
+    "/home/miakhlov/course-production-verified-20261118/practicuum/evidence/20261118-A2A-target-preparation-repair-audited/protein_crystal.pdb",
+    "/home/miakhlov/course-production-verified-20261118/practicuum/evidence/20261118-A2A-target-preparation-repair-audited/protein_protonated.pqr"
+  ],
+  "returncode": 0
+}

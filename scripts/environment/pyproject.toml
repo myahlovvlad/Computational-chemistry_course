@@ -13,7 +13,19 @@ chem = [
   "scipy==1.18.1", "scikit-learn==1.9.1", "networkx==3.7",
   "requests==2.34.2", "streamlit==1.67.0"
 ]
-quantum = [{include-group = "chem"}, "pyscf==2.15.1; sys_platform == 'linux'"]
+docking = [
+    {include-group = "chem"},
+    "gemmi==0.7.5 ; sys_platform == 'linux'",
+    "meeko==0.8.0 ; sys_platform == 'linux'",
+    "pdb2pqr==3.8.0 ; sys_platform == 'linux'",
+    "vina==1.2.7 ; sys_platform == 'linux'",
+]
+quantum = [
+    {include-group = "chem"},
+    "geometric==1.1.1 ; sys_platform == 'linux'",
+    "pyscf==2.15.1; sys_platform == 'linux'",
+    "pyscf-dispersion==1.7.0 ; sys_platform == 'linux'",
+]
 
 [tool.uv]
 package = false

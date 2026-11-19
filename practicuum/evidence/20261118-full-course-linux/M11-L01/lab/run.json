@@ -1,0 +1,20 @@
+{
+  "lesson_id": "M11-L01",
+  "role": "lab",
+  "kernel": "course-v2-chem",
+  "started_utc": "2026-11-18T14:20:18.493555+00:00",
+  "source": "/home/miakhlov/course-production-verified-20261118/practicuum/modules/M11/lessons/L01/Notebooks_labs/02_lab.ipynb",
+  "cwd": "/home/miakhlov/course-production-verified-20261118",
+  "scope": "empty lab scaffold; learner completion NOT_RUN",
+  "input_sha256": "445e97cc97c593e3ea2b1a5dfe8eca694e3d8f7806dfaf0a42378a03bbf7d72f",
+  "data_sha256": {
+    "practicuum/shared/data/structures.json": "e854bab679bebd217095481e49e64174d043f3c64a5b5d416fce559368cfd646",
+    "practicuum/shared/data/istradefylline_activities.json": "8cbcfe22cadcc109b096699e74519f9ceaf9a0c2c9bf6df20000e7041567210a",
+    "practicuum/shared/data/atorvastatin_activities.json": "51955818e1961f42eb4ab5ddfa5b27f225bb2ac2e27d040d0718482b3e72790e"
+  },
+  "step_sha256": {
+    "practicuum/modules/M11/lessons/L01/steps/02_lab.md": "418e8a20a259e51ebe6ee4d2658324103393dd09537f41d65c89f84504adb6af"
+  },
+  "status": "PASS",
+  "seconds": 1.1982231610018061
+}

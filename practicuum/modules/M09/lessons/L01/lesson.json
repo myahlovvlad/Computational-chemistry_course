@@ -1,0 +1,17 @@
+{
+  "inputs": [
+    "practicuum/shared/data/caffeine_hydroxide_table4.csv",
+    "practicuum/shared/data/caffeine_kinetics_provenance.json",
+    "practicuum/shared/data/source-responses/caffeine_kinetics.xml",
+    "practicuum/shared/data/source-responses/statin_stability_verified.xml"
+  ],
+  "case_steps": [
+    "practicuum/modules/M09/lessons/L01/steps/01_case.md"
+  ],
+  "lab_steps": [
+    "practicuum/modules/M09/lessons/L01/steps/02_lab.md"
+  ],
+  "instructor": "practicuum/modules/M09/lessons/L01/instructor/reference.py",
+  "assessment": "practicuum/modules/M09/lessons/L01/instructor/rubric.md",
+  "development_scope": "published xanthine rate-law reanalysis and atorvastatin identifiability; independent scientific review pending"
+}

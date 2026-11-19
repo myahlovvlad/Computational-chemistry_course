@@ -1,0 +1,18 @@
+{
+  "lesson_id": "M08-L02",
+  "role": "lab",
+  "kernel": "course-v2-chem",
+  "started_utc": "2026-11-18T14:25:06.929233+00:00",
+  "source": "/home/miakhlov/course-production-verified-20261118/practicuum/modules/M08/lessons/L02/Notebooks_labs/02_lab.ipynb",
+  "cwd": "/home/miakhlov/course-production-verified-20261118",
+  "scope": "empty lab scaffold; learner completion NOT_RUN",
+  "input_sha256": "5270b6804abdf6f06c1db6bd25a9ac34de073618b730e0bd9005461f544ac99a",
+  "data_sha256": {
+    "practicuum/shared/data/nist_ir_source.json": "2a3a141b49453053d8507c4cf1135ffd351834df5dc2e23b1e63574c459451b3"
+  },
+  "step_sha256": {
+    "practicuum/modules/M08/lessons/L02/steps/02_lab.md": "c24212f4adaaee9b1428110c155c901326ee0a2facfbc6ced9f46f7c6335777b"
+  },
+  "status": "PASS",
+  "seconds": 1.233324843007722
+}

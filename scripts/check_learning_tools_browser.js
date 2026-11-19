@@ -1,0 +1,54 @@
+async (page) => {
+  const ensure=(ok,message)=>{if(!ok)throw Error(message);};
+  const errors=[];page.on('pageerror',error=>errors.push(String(error)));
+  await page.goto('http://127.0.0.1:8876/trainers/spectra/index.html');
+  const start=await page.evaluate(()=>window.spectralModel.current());
+  ensure(Math.abs(start.wavelength_nm-309.96049608300065)<1e-9,'Energy/wavelength conversion');
+  ensure(start.observed_A<start.ideal_A,'Stray light must reduce measured A');
+  await page.locator('#sigma').fill('0.5');await page.locator('#sigma').dispatchEvent('input');
+  const wide=await page.evaluate(()=>window.spectralModel.current());
+  ensure(wide.FWHM_eV>start.FWHM_eV,'Gaussian width must increase FWHM');
+  await page.locator('#concentration').fill('0');await page.locator('#concentration').dispatchEvent('input');
+  ensure(Math.abs((await page.evaluate(()=>window.spectralModel.current())).observed_A)<1e-12,'Blank must be zero');
+  const validation=await page.evaluate(()=>{
+    try{window.spectralModel.model({energy:NaN,sigma:.1,concentration:1,length:1,stray:0});return false;}catch{return true;}
+  });ensure(validation,'Nonfinite model input accepted');
+  await page.locator('#hypothesis').fill('UI TEST: widening changes FWHM');
+  await page.locator('#decision').fill('UI TEST: not learner research or scientific review');
+  const spectralDownload=page.waitForEvent('download');await page.locator('#export').click();
+  await (await spectralDownload).saveAs('output/playwright/spectral-ui-test.json');
+  await page.screenshot({path:'output/playwright/spectra-desktop.png',fullPage:true});
+  await page.setViewportSize({width:390,height:844});
+  ensure(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Spectra mobile overflow');
+  await page.screenshot({path:'output/playwright/spectra-mobile.png',fullPage:true});
+  await page.goto('http://127.0.0.1:8876/trainers/dossier/index.html');
+  // Unique browser session owned by this QA run; preserve any preexisting records.
+  const count=(await page.evaluate(()=>window.dossierTools.getState())).versions.length;
+  await page.locator('#question').fill('UI TEST: B form identity');
+  await page.locator('#source').fill('UI TEST: compounds.json; not scientific evidence');
+  await page.locator('#decision').fill('UI TEST: require independent sample verification');
+  await page.locator('#save').click();
+  ensure((await page.evaluate(()=>window.dossierTools.getState())).versions.length===count+1,'Version not appended');
+  await page.locator('#decision').fill('UI TEST: second version; previous must remain');
+  await page.locator('#save').click();await page.reload();
+  ensure((await page.evaluate(()=>window.dossierTools.getState())).versions.length===count+2,'Versions lost on reload');
+  const map={nodes:[{id:'form'},{id:'method'}],edges:[{source:'form',target:'method',explanation:'UI TEST choice depends on form',source_reference:'UI TEST',limitation:'not independently reviewed'}]};
+  await page.locator('#map').fill(JSON.stringify(map));await page.locator('#validate').click();
+  ensure((await page.locator('#map-status').textContent()).includes('Структура корректна'),'Valid concept graph rejected');
+  map.edges[0].target='missing';await page.locator('#map').fill(JSON.stringify(map));await page.locator('#validate').click();
+  ensure((await page.locator('#map-status').textContent()).includes('неизвестный'),'Dangling edge accepted');
+  const before=await page.evaluate(()=>window.dossierTools.getState());
+  const bad=structuredClone(before);bad.versions[0].decision='conflicting change to immutable version';
+  await page.locator('#import').setInputFiles({name:'conflict.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(bad))});
+  await page.waitForFunction(()=>document.getElementById('import-status').textContent.includes('отклонён'));
+  ensure(JSON.stringify(await page.evaluate(()=>window.dossierTools.getState()))===JSON.stringify(before),'Failed import changed previous work');
+  const dossierDownload=page.waitForEvent('download');await page.locator('#export').click();
+  await (await dossierDownload).saveAs('output/playwright/dossier-ui-test.json');
+  ensure(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Dossier mobile overflow');
+  await page.screenshot({path:'output/playwright/dossier-mobile.png',fullPage:true});
+  await page.setViewportSize({width:1280,height:900});
+  await page.screenshot({path:'output/playwright/dossier-desktop.png',fullPage:true});
+  ensure(errors.length===0,'JavaScript errors: '+errors.join(';'));
+  return {status:'PASS',scope:'browser controls, numeric limits, downloads, version preservation, negative import/map checks, mobile layout',
+    start,wide,versions_added:2,browser:await page.context().browser().version(),scientific_review:'NOT_RUN',student_pilot:'NOT_RUN'};
+}

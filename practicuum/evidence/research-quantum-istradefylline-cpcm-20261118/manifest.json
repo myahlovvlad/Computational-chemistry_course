@@ -1,0 +1,648 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-11-18T15:10:33.551881+00:00",
+  "name": "istradefylline",
+  "protocol": {
+    "id": "research-quantum-cpcm-v1",
+    "purpose": "Molecular geometry, harmonic vibration and vertical excitation research; no clinical inference",
+    "platform": "Linux/WSL CPU, Python 3.12, locked quantum profile",
+    "conformers": {
+      "attempted": 100,
+      "seed": 20261118,
+      "forcefield": "MMFF94s",
+      "max_iterations": 3000,
+      "energy_window_kcal_mol": 10.0,
+      "heavy_atom_rmsd_angstrom": 0.5,
+      "qm_candidates": 3
+    },
+    "geometry": {
+      "functional": "b3lyp",
+      "dispersion": "d3bj",
+      "basis": "def2-svp",
+      "solvent": "water",
+      "solvation_model": "C-PCM",
+      "grid_level": 4,
+      "scf_tolerance_hartree": 1e-09,
+      "density_tolerance": 1e-07,
+      "max_scf_cycles": 150,
+      "max_geometry_steps": 150,
+      "gradient_rms_hartree_bohr": 0.0001,
+      "gradient_max_hartree_bohr": 0.00015,
+      "step_rms_angstrom": 0.0004,
+      "step_max_angstrom": 0.0006,
+      "energy_change_hartree": 1e-07
+    },
+    "singlepoint": {
+      "functional": "pbe0",
+      "dispersion": "d3bj",
+      "basis": "def2-tzvp",
+      "solvent": "water",
+      "solvation_model": "C-PCM",
+      "grid_level": 5,
+      "scf_tolerance_hartree": 1e-10,
+      "density_tolerance": 1e-08,
+      "max_scf_cycles": 150
+    },
+    "excitation": {
+      "functional": "cam-b3lyp",
+      "basis": "def2-tzvp",
+      "solvent": "water",
+      "solvation_model": "C-PCM",
+      "grid_level": 4,
+      "scf_tolerance_hartree": 1e-09,
+      "density_tolerance": 1e-07,
+      "max_scf_cycles": 150,
+      "method": "TDDFT",
+      "states": 30,
+      "tolerance_hartree": 1e-07,
+      "equilibrium_solvation": false
+    },
+    "vibrations": {
+      "temperature_K": 298.15,
+      "pressure_Pa": 101325,
+      "frequency_scaling": 1.0,
+      "minimum_acceptance": "no negative projected harmonic frequencies; negative modes require review and reoptimization",
+      "IR_mass_weighted_step_bohr_sqrt_amu": 0.005
+    },
+    "resources": {
+      "threads": 6,
+      "memory_MB": 1200
+    },
+    "limitations": [
+      "Starting conformers are prescreened by MMFF, not a proof of global coverage",
+      "C-PCM is a continuum model, no explicit solvent or crystal packing",
+      "Harmonic thermochemistry is RRHO at 1 atm, not automatically solution-standard free energy",
+      "Frequency scale 1.0 is an unscaled prediction, not calibrated experimental agreement",
+      "Method and basis need benchmark assessment for each endpoint",
+      "Conformer-ensemble and experimental comparisons are required before a scientific acceptance claim",
+      "C-PCM is an electrostatic continuum model; SMD non-electrostatic CDS terms are not included",
+      "This model is distinct from SMD; their results are not pooled or labelled equivalent",
+      "Quadrature controls must pass before accepting the model discretization"
+    ],
+    "surface_lebedev_order": 17,
+    "numerical_convergence": {
+      "surface_orders": [
+        17,
+        23,
+        29
+      ],
+      "DFT_grid_levels": [
+        4,
+        5
+      ],
+      "energy_tolerance_hartree": 0.0001
+    }
+  },
+  "protocol_sha256": "6542fd61c9ad558fe9a615842d67b8982ef542688d28dad92fe124a84d1b6c6a",
+  "script_sha256": "55f2dc66ff53b596ff41bbfedc9263d6f82eea513004c7258074fc70eab6ce77",
+  "structure_source_sha256": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267",
+  "record": {
+    "name": "istradefylline",
+    "cid": 5311037,
+    "smiles": "CCN1C2=C(C(=O)N(C1=O)CC)N(C(=N2)/C=C/C3=CC(=C(C=C3)OC)OC)C",
+    "formula": "C20H24N4O4",
+    "molecular_weight_g_mol": 384.4,
+    "pubchem_XLogP": 2.5,
+    "pubchem_TPSA_A2": 76.9,
+    "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/istradefylline/property/MolecularFormula,MolecularWeight,CanonicalSMILES,IsomericSMILES,XLogP,TPSA/JSON",
+    "source_sha256": "e74a82530b8e7096e37c1f893b42a60f454c86a805a4df59808961665ac2e80b",
+    "property_kind": "database representation/computed descriptor; not an assay or measured solubility"
+  },
+  "charge": 0,
+  "spin_2S": 0,
+  "electrons": 204,
+  "atom_count": 52,
+  "prescreen": [
+    {
+      "id": 0,
+      "status": 0,
+      "energy_kcal_mol": -85.83242765834665
+    },
+    {
+      "id": 1,
+      "status": 0,
+      "energy_kcal_mol": -81.82957865304209
+    },
+    {
+      "id": 2,
+      "status": 0,
+      "energy_kcal_mol": -81.86456545647238
+    },
+    {
+      "id": 3,
+      "status": 0,
+      "energy_kcal_mol": -81.86456549689308
+    },
+    {
+      "id": 4,
+      "status": 0,
+      "energy_kcal_mol": -85.77695607218469
+    },
+    {
+      "id": 5,
+      "status": 0,
+      "energy_kcal_mol": -81.84289924024486
+    },
+    {
+      "id": 6,
+      "status": 0,
+      "energy_kcal_mol": -85.81183391926398
+    },
+    {
+      "id": 7,
+      "status": 0,
+      "energy_kcal_mol": -81.97171571155698
+    },
+    {
+      "id": 8,
+      "status": 0,
+      "energy_kcal_mol": -85.76433312307199
+    },
+    {
+      "id": 9,
+      "status": 0,
+      "energy_kcal_mol": -81.94297363363275
+    },
+    {
+      "id": 10,
+      "status": 0,
+      "energy_kcal_mol": -81.86456600577571
+    },
+    {
+      "id": 11,
+      "status": 0,
+      "energy_kcal_mol": -81.86456522511384
+    },
+    {
+      "id": 12,
+      "status": 0,
+      "energy_kcal_mol": -85.760409311749
+    },
+    {
+      "id": 13,
+      "status": 0,
+      "energy_kcal_mol": -81.8428984396963
+    },
+    {
+      "id": 14,
+      "status": 0,
+      "energy_kcal_mol": -85.78430948035052
+    },
+    {
+      "id": 15,
+      "status": 0,
+      "energy_kcal_mol": -85.83242779696353
+    },
+    {
+      "id": 16,
+      "status": 0,
+      "energy_kcal_mol": -81.89331090550525
+    },
+    {
+      "id": 17,
+      "status": 0,
+      "energy_kcal_mol": -81.82957892794327
+    },
+    {
+      "id": 18,
+      "status": 0,
+      "energy_kcal_mol": -85.77695588519951
+    },
+    {
+      "id": 19,
+      "status": 0,
+      "energy_kcal_mol": -81.84289888320427
+    },
+    {
+      "id": 20,
+      "status": 0,
+      "energy_kcal_mol": -81.82957890288027
+    },
+    {
+      "id": 21,
+      "status": 0,
+      "energy_kcal_mol": -81.89331105283414
+    },
+    {
+      "id": 22,
+      "status": 0,
+      "energy_kcal_mol": -85.78431013125186
+    },
+    {
+      "id": 23,
+      "status": 0,
+      "energy_kcal_mol": -85.76040934597421
+    },
+    {
+      "id": 24,
+      "status": 0,
+      "energy_kcal_mol": -81.84289934331731
+    },
+    {
+      "id": 25,
+      "status": 0,
+      "energy_kcal_mol": -81.94297386534346
+    },
+    {
+      "id": 26,
+      "status": 0,
+      "energy_kcal_mol": -85.83242757813098
+    },
+    {
+      "id": 27,
+      "status": 0,
+      "energy_kcal_mol": -85.78430967160274
+    },
+    {
+      "id": 28,
+      "status": 0,
+      "energy_kcal_mol": -81.84289841313725
+    },
+    {
+      "id": 29,
+      "status": 0,
+      "energy_kcal_mol": -82.00620246081051
+    },
+    {
+      "id": 30,
+      "status": 0,
+      "energy_kcal_mol": -81.97777984812394
+    },
+    {
+      "id": 31,
+      "status": 0,
+      "energy_kcal_mol": -81.8645658009011
+    },
+    {
+      "id": 32,
+      "status": 0,
+      "energy_kcal_mol": -81.95561999646495
+    },
+    {
+      "id": 33,
+      "status": 0,
+      "energy_kcal_mol": -81.82957880421218
+    },
+    {
+      "id": 34,
+      "status": 0,
+      "energy_kcal_mol": -85.79678335250841
+    },
+    {
+      "id": 35,
+      "status": 0,
+      "energy_kcal_mol": -85.83242713787483
+    },
+    {
+      "id": 36,
+      "status": 0,
+      "energy_kcal_mol": -81.94297383510846
+    },
+    {
+      "id": 37,
+      "status": 0,
+      "energy_kcal_mol": -81.86456590044571
+    },
+    {
+      "id": 38,
+      "status": 0,
+      "energy_kcal_mol": -85.83242698816328
+    },
+    {
+      "id": 39,
+      "status": 0,
+      "energy_kcal_mol": -81.82957704987234
+    },
+    {
+      "id": 40,
+      "status": 0,
+      "energy_kcal_mol": -81.84289867050998
+    },
+    {
+      "id": 41,
+      "status": 0,
+      "energy_kcal_mol": -85.76433304014476
+    },
+    {
+      "id": 42,
+      "status": 0,
+      "energy_kcal_mol": -81.82957876346734
+    },
+    {
+      "id": 43,
+      "status": 0,
+      "energy_kcal_mol": -81.8933098921033
+    },
+    {
+      "id": 44,
+      "status": 0,
+      "energy_kcal_mol": -85.76040906970714
+    },
+    {
+      "id": 45,
+      "status": 0,
+      "energy_kcal_mol": -81.95561998555688
+    },
+    {
+      "id": 46,
+      "status": 0,
+      "energy_kcal_mol": -81.86456588472095
+    },
+    {
+      "id": 47,
+      "status": 0,
+      "energy_kcal_mol": -85.78430854788607
+    },
+    {
+      "id": 48,
+      "status": 0,
+      "energy_kcal_mol": -85.7604092909292
+    },
+    {
+      "id": 49,
+      "status": 0,
+      "energy_kcal_mol": -85.76433298437291
+    },
+    {
+      "id": 50,
+      "status": 0,
+      "energy_kcal_mol": -85.74000295064275
+    },
+    {
+      "id": 51,
+      "status": 0,
+      "energy_kcal_mol": -85.76040920427226
+    },
+    {
+      "id": 52,
+      "status": 0,
+      "energy_kcal_mol": -81.89331058433874
+    },
+    {
+      "id": 53,
+      "status": 0,
+      "energy_kcal_mol": -85.7967833220052
+    },
+    {
+      "id": 54,
+      "status": 0,
+      "energy_kcal_mol": -81.842899189897
+    },
+    {
+      "id": 55,
+      "status": 0,
+      "energy_kcal_mol": -85.76433247795205
+    },
+    {
+      "id": 56,
+      "status": 0,
+      "energy_kcal_mol": -85.79678287942495
+    },
+    {
+      "id": 57,
+      "status": 0,
+      "energy_kcal_mol": -85.81183334858002
+    },
+    {
+      "id": 58,
+      "status": 0,
+      "energy_kcal_mol": -81.95561992670224
+    },
+    {
+      "id": 59,
+      "status": 0,
+      "energy_kcal_mol": -81.9777800189774
+    },
+    {
+      "id": 60,
+      "status": 0,
+      "energy_kcal_mol": -81.82957888944422
+    },
+    {
+      "id": 61,
+      "status": 0,
+      "energy_kcal_mol": -85.78430995753683
+    },
+    {
+      "id": 62,
+      "status": 0,
+      "energy_kcal_mol": -81.95562004576087
+    },
+    {
+      "id": 63,
+      "status": 0,
+      "energy_kcal_mol": -85.76040917035806
+    },
+    {
+      "id": 64,
+      "status": 0,
+      "energy_kcal_mol": -85.78431018176613
+    },
+    {
+      "id": 65,
+      "status": 0,
+      "energy_kcal_mol": -81.95561996482604
+    },
+    {
+      "id": 66,
+      "status": 0,
+      "energy_kcal_mol": -81.8645659578893
+    },
+    {
+      "id": 67,
+      "status": 0,
+      "energy_kcal_mol": -85.78430965755112
+    },
+    {
+      "id": 68,
+      "status": 0,
+      "energy_kcal_mol": -82.00620310136259
+    },
+    {
+      "id": 69,
+      "status": 0,
+      "energy_kcal_mol": -81.94297366548457
+    },
+    {
+      "id": 70,
+      "status": 0,
+      "energy_kcal_mol": -81.97777894845329
+    },
+    {
+      "id": 71,
+      "status": 0,
+      "energy_kcal_mol": -81.86456498932004
+    },
+    {
+      "id": 72,
+      "status": 0,
+      "energy_kcal_mol": -81.95561958782115
+    },
+    {
+      "id": 73,
+      "status": 0,
+      "energy_kcal_mol": -85.83242742570144
+    },
+    {
+      "id": 74,
+      "status": 0,
+      "energy_kcal_mol": -85.74000086926668
+    },
+    {
+      "id": 75,
+      "status": 0,
+      "energy_kcal_mol": -81.86456591157962
+    },
+    {
+      "id": 76,
+      "status": 0,
+      "energy_kcal_mol": -81.82957881259719
+    },
+    {
+      "id": 77,
+      "status": 0,
+      "energy_kcal_mol": -81.97777972870337
+    },
+    {
+      "id": 78,
+      "status": 0,
+      "energy_kcal_mol": -85.76040898677803
+    },
+    {
+      "id": 79,
+      "status": 0,
+      "energy_kcal_mol": -85.79678323882723
+    },
+    {
+      "id": 80,
+      "status": 0,
+      "energy_kcal_mol": -85.77695613637832
+    },
+    {
+      "id": 81,
+      "status": 0,
+      "energy_kcal_mol": -81.97777999800812
+    },
+    {
+      "id": 82,
+      "status": 0,
+      "energy_kcal_mol": -85.76040933759151
+    },
+    {
+      "id": 83,
+      "status": 0,
+      "energy_kcal_mol": -81.84289901274873
+    },
+    {
+      "id": 84,
+      "status": 0,
+      "energy_kcal_mol": -85.83242728359548
+    },
+    {
+      "id": 85,
+      "status": 0,
+      "energy_kcal_mol": -82.00620305561246
+    },
+    {
+      "id": 86,
+      "status": 0,
+      "energy_kcal_mol": -85.83242791649312
+    },
+    {
+      "id": 87,
+      "status": 0,
+      "energy_kcal_mol": -81.86456591513559
+    },
+    {
+      "id": 88,
+      "status": 0,
+      "energy_kcal_mol": -85.77695535615867
+    },
+    {
+      "id": 89,
+      "status": 0,
+      "energy_kcal_mol": -85.81183406549351
+    },
+    {
+      "id": 90,
+      "status": 0,
+      "energy_kcal_mol": -85.76433226321373
+    },
+    {
+      "id": 91,
+      "status": 0,
+      "energy_kcal_mol": -85.77695521644785
+    },
+    {
+      "id": 92,
+      "status": 0,
+      "energy_kcal_mol": -85.76040901799036
+    },
+    {
+      "id": 93,
+      "status": 0,
+      "energy_kcal_mol": -81.82957875078539
+    },
+    {
+      "id": 94,
+      "status": 0,
+      "energy_kcal_mol": -85.7604088408237
+    },
+    {
+      "id": 95,
+      "status": 0,
+      "energy_kcal_mol": -81.94297388302381
+    },
+    {
+      "id": 96,
+      "status": 0,
+      "energy_kcal_mol": -85.76433351488214
+    },
+    {
+      "id": 97,
+      "status": 0,
+      "energy_kcal_mol": -81.95561984504275
+    },
+    {
+      "id": 98,
+      "status": 0,
+      "energy_kcal_mol": -81.82957864102345
+    },
+    {
+      "id": 99,
+      "status": 0,
+      "energy_kcal_mol": -81.8428990222209
+    }
+  ],
+  "selected": [
+    {
+      "id": 86,
+      "status": 0,
+      "energy_kcal_mol": -85.83242791649312
+    },
+    {
+      "id": 0,
+      "status": 0,
+      "energy_kcal_mol": -85.83242765834665
+    },
+    {
+      "id": 89,
+      "status": 0,
+      "energy_kcal_mol": -85.81183406549351
+    }
+  ],
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-6.18.58.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "versions": {
+    "pyscf": "2.15.1",
+    "geometric": "1.1.1",
+    "pyscf-dispersion": "1.7.0",
+    "rdkit": "2026.9.1",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "scope": "actual computed molecular states, method validation pending",
+  "scientific_review": "NOT_RUN",
+  "initial_guess_checkpoint_sha256": "7ff3b2d67460b2b76491c7c7fd9de3320ee9cec244c5064adadca37c37f45e7b",
+  "initial_guess_scope": "starting density only; all energies recomputed at the selected model"
+}

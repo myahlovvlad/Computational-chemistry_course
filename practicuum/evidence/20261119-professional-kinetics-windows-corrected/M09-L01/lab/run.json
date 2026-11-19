@@ -1,0 +1,21 @@
+{
+  "lesson_id": "M09-L01",
+  "role": "lab",
+  "kernel": "course-v2-chem",
+  "started_utc": "2026-11-19T07:18:24.307210+00:00",
+  "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\course-restructure-20261118\\practicuum\\modules\\M09\\lessons\\L01\\Notebooks_labs\\02_lab.ipynb",
+  "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\course-restructure-20261118",
+  "scope": "empty lab scaffold; learner completion NOT_RUN",
+  "input_sha256": "ecf9dd5552ed8d577ff9f8a1c39a28280e5b8b4248e125fd6727c2727b7b8f8f",
+  "data_sha256": {
+    "practicuum/shared/data/caffeine_hydroxide_table4.csv": "1ea9f1f65ad97d5fd67fcf6b4483c725444ca57c7d415953b69b9d8dc31a621f",
+    "practicuum/shared/data/caffeine_kinetics_provenance.json": "0a997291642d78e90b2bc1b2c21dd92ac7117246dd5686e6f11bcf1e02a39b3e",
+    "practicuum/shared/data/source-responses/caffeine_kinetics.xml": "492a9e1abd48ef55bcc7aeaea673203554bb85aa837fba1fc9e76f25b2d99d55",
+    "practicuum/shared/data/source-responses/statin_stability_verified.xml": "84ffbbd27fdaf85a4b75c480672f5538900ba73dfe21093f49d650fbf1a794ae"
+  },
+  "step_sha256": {
+    "practicuum/modules/M09/lessons/L01/steps/02_lab.md": "8ad62afee2bef8458beedcf1ac44843667046eb215d1c5de9aaa13abd5777c2e"
+  },
+  "status": "PASS",
+  "seconds": 2.9041476999991573
+}

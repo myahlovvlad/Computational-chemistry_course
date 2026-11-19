@@ -1,0 +1,21 @@
+{
+  "lesson_id": "M09-L02",
+  "role": "lab",
+  "kernel": "course-v2-chem",
+  "started_utc": "2026-11-19T07:18:49.157968+00:00",
+  "source": "/home/miakhlov/course-production-verified-20261118/practicuum/modules/M09/lessons/L02/Notebooks_labs/02_lab.ipynb",
+  "cwd": "/home/miakhlov/course-production-verified-20261118",
+  "scope": "empty lab scaffold; learner completion NOT_RUN",
+  "input_sha256": "c90de66eae42a99ba9dc6a90aaaf27ce7a7b46ec05abb152076fc57e674f1880",
+  "data_sha256": {
+    "practicuum/shared/data/caffeine_hydroxide_table4.csv": "1ea9f1f65ad97d5fd67fcf6b4483c725444ca57c7d415953b69b9d8dc31a621f",
+    "practicuum/shared/data/caffeine_kinetics_provenance.json": "0a997291642d78e90b2bc1b2c21dd92ac7117246dd5686e6f11bcf1e02a39b3e",
+    "practicuum/shared/data/source-responses/caffeine_kinetics.xml": "492a9e1abd48ef55bcc7aeaea673203554bb85aa837fba1fc9e76f25b2d99d55",
+    "practicuum/shared/data/source-responses/statin_stability_verified.xml": "84ffbbd27fdaf85a4b75c480672f5538900ba73dfe21093f49d650fbf1a794ae"
+  },
+  "step_sha256": {
+    "practicuum/modules/M09/lessons/L02/steps/02_lab.md": "3cd86dc9d1460e445dfceae54b5a6fe5db176365e1f683166adeab3d460d778f"
+  },
+  "status": "PASS",
+  "seconds": 2.9132091349747498
+}

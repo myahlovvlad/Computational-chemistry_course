@@ -1,0 +1,7 @@
+{
+  "geometry_hash_matches": true,
+  "charge": 0,
+  "spin": 0,
+  "transitions": 6,
+  "scf_converged": true
+}

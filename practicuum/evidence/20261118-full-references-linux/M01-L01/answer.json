@@ -1,0 +1,9 @@
+{
+  "CID": 60823,
+  "form": "free acid database representation",
+  "target_structure": "1HWK",
+  "source": "https://www.rcsb.org/structure/1HWK",
+  "allowed_inference": "experimentally derived structural complex model",
+  "hepatic_exposure": "NOT_ESTABLISHED_BY_THIS_RECORD",
+  "open_question_rubric": "RUBRIC.md; alternative justified research questions accepted"
+}

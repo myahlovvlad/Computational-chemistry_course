@@ -1,0 +1,3 @@
+route,yield1,yield2,assumed_cost
+A,0.8,0.7,600
+B,0.95,0.9,750

@@ -1,0 +1,5 @@
+reactand,product,R1,R2,ring_size,reflux_yield_percent,microwave_yield_percent
+13,5,Pr,nor-adamantyl,6,60,75
+14,-,Bu,cyclopentyl,5,0,0
+15,17,Bu,cyclopentyl,6,60,98
+16,18,Bu,cyclopentyl,7,0,91

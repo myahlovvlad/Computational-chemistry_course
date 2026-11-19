@@ -1,0 +1,421 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "lesson_id": "M01-L01",
+      "source": "practicuum/modules/M01/lessons/L01/instructor/reference.py",
+      "sha256": "127918e6dafa74dfaec740dcc903c932d582b2465de859a95da50b251863a93a",
+      "python": "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-chem/bin/python",
+      "scope": "author numerical reference; open argument requires review",
+      "status": "PASS",
+      "contract": {
+        "status": "NOT_APPLICABLE",
+        "scope": "legacy reference contains its own assertions"
+      },
+      "seconds": 0.02087005999055691
+    },
+    {
+      "lesson_id": "M01-L02",
+      "source": "practicuum/modules/M01/lessons/L02/instructor/reference.py",
+      "sha256": "aa55acef7a6da92749852dd2a32be100d09df0ad9642ef64692464ba20d14247",
+      "python": "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-chem/bin/python",
+      "scope": "author numerical reference; open argument requires review",
+      "status": "PASS",
+      "contract": {
+        "status": "PASS",
+        "errors": [],
+        "scope": "listed numerical fields only",
+        "reasoning": "NOT_REVIEWED"
+      },
+      "seconds": 0.3568763100047363
+    },
+    {
+      "lesson_id": "M02-L01",
+      "source": "practicuum/modules/M02/lessons/L01/instructor/reference.py",
+      "sha256": "02212a55cdb0ff2973ca53054d5114842a19aad5c943cad422f696633fcf940a",
+      "python": "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-chem/bin/python",
+      "scope": "author numerical reference; open argument requires review",
+      "status": "PASS",
+      "contract": {
+        "status": "PASS",
+        "errors": [],
+        "scope": "listed numerical fields only",
+        "reasoning": "NOT_REVIEWED"
+      },
+      "seconds": 0.35287373801111244
+    },
+    {
+      "lesson_id": "M02-L02",
+      "source": "practicuum/modules/M02/lessons/L02/instructor/reference.py",
+      "sha256": "44a1ea4312a56e3acc157960ea0aa598570fda6fd66b2d9be6f4f106b2c03a6d",
+      "python": "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-chem/bin/python",
+      "scope": "author numerical reference; open argument requires review",
+      "status": "PASS",
+      "contract": {
+        "status": "PASS",
+        "errors": [],
+        "scope": "listed numerical fields only",
+        "reasoning": "NOT_REVIEWED"
+      },
+      "seconds": 0.35044725399347953
+    },
+    {
+      "lesson_id": "M03-L01",
+      "source": "practicuum/modules/M03/lessons/L01/instructor/reference.py",
+      "sha256": "0f2df3efced3c91fe2b85ffee68f65f1ff0991496bd4cd58b0e49810468eb4df",
+      "python": "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-chem/bin/python",
+      "scope": "author numerical reference; open argument requires review",
+      "status": "PASS",
+      "contract": {
+        "status": "NOT_APPLICABLE",
+        "scope": "legacy reference contains its own assertions"
+      },
+      "seconds": 0.10660958600055892
+    },
+    {
+      "lesson_id": "M03-L02",
+      "source": "practicuum/modules/M03/lessons/L02/instructor/reference.py",
+      "sha256": "74c27a1bc9bbe36f34434c859c21324d4e1f29becf851a5abcd598c68c9a2367",
+      "python": "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-chem/bin/python",
+      "scope": "author numerical reference; open argument requires review",
+      "status": "PASS",
+      "contract": {
+        "status": "NOT_APPLICABLE",
+        "scope": "legacy reference contains its own assertions"
+      },
+      "seconds": 0.10902297000575345
+    },
+    {
+      "lesson_id": "M04-L01",
+      "source": "practicuum/modules/M04/lessons/L01/instructor/reference.py",
+      "sha256": "8a42146857295e2f5ba263cd6bff2e9ea4d254e998a40207b438ba67e7837073",
+      "python": "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-chem/bin/python",
+      "scope": "author numerical reference; open argument requires review",
+      "status": "PASS",
+      "contract": {
+        "status": "PASS",
+        "errors": [],
+        "scope": "listed numerical fields only",
+        "reasoning": "NOT_REVIEWED"
+      },
+      "seconds": 0.39137808000668883
+    },
+    {
+      "lesson_id": "M04-L02",
+      "source": "practicuum/modules/M04/lessons/L02/instructor/reference.py",
+      "sha256": "265cef03c7c747494acff4d4c00bc3158a71a16ea0ff6c1dcf402961d1087e85",
+      "python": "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-chem/bin/python",
+      "scope": "author numerical reference; open argument requires review",
+      "status": "PASS",
+      "contract": {
+        "status": "PASS",
+        "errors": [],
+        "scope": "listed numerical fields only",
+        "reasoning": "NOT_REVIEWED"
+      },
+      "seconds": 0.3828937360085547
+    },
+    {
+      "lesson_id": "M05-L01",
+      "source": "practicuum/modules/M05/lessons/L01/instructor/reference.py",
+      "sha256": "8538942c1d5fe77d85b182a718eb12a5c39ad649a8b76bee15c575d65dc7c677",
+      "python": "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-chem/bin/python",
+      "scope": "author numerical reference; open argument requires review",
+      "status": "PASS",
+      "contract": {
+        "status": "PASS",
+        "errors": [],
+        "scope": "listed numerical fields only",
+        "reasoning": "NOT_REVIEWED"
+      },
+      "seconds": 0.3822393410082441
+    },
+    {
+      "lesson_id": "M05-L02",
+      "source": "practicuum/modules/M05/lessons/L02/instructor/reference.py",
+      "sha256": "f8a8710f7b843264f27b006edab1c3961dbaf360a93937759ee14cc3db6c3418",
+      "python": "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-chem/bin/python",
+      "scope": "author numerical reference; open argument requires review",
+      "status": "PASS",
+      "contract": {
+        "status": "PASS",
+        "errors": [],
+        "scope": "listed numerical fields only",
+        "reasoning": "NOT_REVIEWED"
+      },
+      "seconds": 0.3462024820037186
+    },
+    {
+      "lesson_id": "M06-L01",
+      "source": "practicuum/modules/M06/lessons/L01/instructor/reference.py",
+      "sha256": "e3e3c4725a3c802fee8a660e9f167535d69f45535784e618b943851e2c252fff",
+      "python": "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-chem/bin/python",
+      "scope": "author numerical reference; open argument requires review",
+      "status": "PASS",
+      "contract": {
+        "status": "PASS",
+        "errors": [],
+        "scope": "listed numerical fields only",
+        "reasoning": "NOT_REVIEWED"
+      },
+      "seconds": 1.1692777709977236
+    },
+    {
+      "lesson_id": "M06-L02",
+      "source": "practicuum/modules/M06/lessons/L02/instructor/reference.py",
+      "sha256": "5fba1915ecfb93aea512f8ea7fee6687d138ca65c22d8ebe64ed471dba711aea",
+      "python": "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-chem/bin/python",
+      "scope": "author numerical reference; open argument requires review",
+      "status": "PASS",
+      "contract": {
+        "status": "PASS",
+        "errors": [],
+        "scope": "listed numerical fields only",
+        "reasoning": "NOT_REVIEWED"
+      },
+      "seconds": 0.34973606299899984
+    },
+    {
+      "lesson_id": "M07-L01",
+      "source": "practicuum/modules/M07/lessons/L01/instructor/reference.py",
+      "sha256": "e9fad8d421fd5cb5d75fe5774270a7a5b633c05822cd33bb28552b4b93b41400",
+      "python": "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-chem/bin/python",
+      "scope": "author numerical reference; open argument requires review",
+      "status": "PASS",
+      "contract": {
+        "status": "PASS",
+        "errors": [],
+        "scope": "listed numerical fields only",
+        "reasoning": "NOT_REVIEWED"
+      },
+      "seconds": 0.46233963199483696
+    },
+    {
+      "lesson_id": "M07-L02",
+      "source": "practicuum/modules/M07/lessons/L02/instructor/reference.py",
+      "sha256": "f1f0b4d21c7edd3b3176d37e827452a918faabc3c35a1557c8f4d7853eedfd82",
+      "python": "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-chem/bin/python",
+      "scope": "author numerical reference; open argument requires review",
+      "status": "PASS",
+      "contract": {
+        "status": "PASS",
+        "errors": [],
+        "scope": "listed numerical fields only",
+        "reasoning": "NOT_REVIEWED"
+      },
+      "seconds": 0.34073383899522014
+    },
+    {
+      "lesson_id": "M08-L01",
+      "source": "practicuum/modules/M08/lessons/L01/instructor/reference.py",
+      "sha256": "7415881852687b99e5dadbe5ce4d1202e41d421d3d00a124348a117e4a5fc92a",
+      "python": "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-chem/bin/python",
+      "scope": "author numerical reference; open argument requires review",
+      "status": "PASS",
+      "contract": {
+        "status": "PASS",
+        "errors": [],
+        "scope": "listed numerical fields only",
+        "reasoning": "NOT_REVIEWED"
+      },
+      "seconds": 0.34390471799997613
+    },
+    {
+      "lesson_id": "M08-L02",
+      "source": "practicuum/modules/M08/lessons/L02/instructor/reference.py",
+      "sha256": "b2750dbf0968b96557f20a3406e2ab4c9253b8ea22a8df1b1db9e04c9110f9f7",
+      "python": "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-chem/bin/python",
+      "scope": "author numerical reference; open argument requires review",
+      "status": "PASS",
+      "contract": {
+        "status": "PASS",
+        "errors": [],
+        "scope": "listed numerical fields only",
+        "reasoning": "NOT_REVIEWED"
+      },
+      "seconds": 0.33841355399636086
+    },
+    {
+      "lesson_id": "M09-L01",
+      "source": "practicuum/modules/M09/lessons/L01/instructor/reference.py",
+      "sha256": "68845b8888c70c9012dfed0c9cd5314fa1b4b612911c3253bf9a70c08931ea5a",
+      "python": "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-chem/bin/python",
+      "scope": "author numerical reference; open argument requires review",
+      "status": "PASS",
+      "contract": {
+        "status": "PASS",
+        "errors": [],
+        "scope": "listed numerical fields only",
+        "reasoning": "NOT_REVIEWED"
+      },
+      "seconds": 0.3500506769923959
+    },
+    {
+      "lesson_id": "M09-L02",
+      "source": "practicuum/modules/M09/lessons/L02/instructor/reference.py",
+      "sha256": "3a0dbbc0c51b9f34ee8a91ba7b369810d24693eac72b326e7e842a1ac448afd6",
+      "python": "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-chem/bin/python",
+      "scope": "author numerical reference; open argument requires review",
+      "status": "PASS",
+      "contract": {
+        "status": "PASS",
+        "errors": [],
+        "scope": "listed numerical fields only",
+        "reasoning": "NOT_REVIEWED"
+      },
+      "seconds": 0.34963948000222445
+    },
+    {
+      "lesson_id": "M10-L01",
+      "source": "practicuum/modules/M10/lessons/L01/instructor/reference.py",
+      "sha256": "9c4826fe0816c03accacca1cceda167597b2d3407592f9cebd5611c8caffc8a6",
+      "python": "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-chem/bin/python",
+      "scope": "author numerical reference; open argument requires review",
+      "status": "PASS",
+      "contract": {
+        "status": "PASS",
+        "errors": [],
+        "scope": "listed numerical fields only",
+        "reasoning": "NOT_REVIEWED"
+      },
+      "seconds": 0.3516336669999873
+    },
+    {
+      "lesson_id": "M10-L02",
+      "source": "practicuum/modules/M10/lessons/L02/instructor/reference.py",
+      "sha256": "be17f0183404849d23b55be5aaf9b7818d1739aa43a58473e200c3cc68528fff",
+      "python": "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-chem/bin/python",
+      "scope": "author numerical reference; open argument requires review",
+      "status": "PASS",
+      "contract": {
+        "status": "PASS",
+        "errors": [],
+        "scope": "listed numerical fields only",
+        "reasoning": "NOT_REVIEWED"
+      },
+      "seconds": 0.3489194849971682
+    },
+    {
+      "lesson_id": "M11-L01",
+      "source": "practicuum/modules/M11/lessons/L01/instructor/reference.py",
+      "sha256": "cb58a43cfeba52c7886990d2998ed27c47684194d3ac222fa6074b76aabcf779",
+      "python": "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-chem/bin/python",
+      "scope": "author numerical reference; open argument requires review",
+      "status": "PASS",
+      "contract": {
+        "status": "PASS",
+        "errors": [],
+        "scope": "listed numerical fields only",
+        "reasoning": "NOT_REVIEWED"
+      },
+      "seconds": 0.3475449940015096
+    },
+    {
+      "lesson_id": "M11-L02",
+      "source": "practicuum/modules/M11/lessons/L02/instructor/reference.py",
+      "sha256": "78ddf4070fa06ca7f167bf7595ef5238bb2cd8aab88c0ef76c37edaaa050ce28",
+      "python": "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-chem/bin/python",
+      "scope": "author numerical reference; open argument requires review",
+      "status": "PASS",
+      "contract": {
+        "status": "PASS",
+        "errors": [],
+        "scope": "listed numerical fields only",
+        "reasoning": "NOT_REVIEWED"
+      },
+      "seconds": 0.33993054399616085
+    },
+    {
+      "lesson_id": "M12-L01",
+      "source": "practicuum/modules/M12/lessons/L01/instructor/reference.py",
+      "sha256": "cc92bcbdb52d12ea2d893fec019b18d9bfbbe55adbd88438c66cfd4af06691be",
+      "python": "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-chem/bin/python",
+      "scope": "author numerical reference; open argument requires review",
+      "status": "PASS",
+      "contract": {
+        "status": "PASS",
+        "errors": [],
+        "scope": "listed numerical fields only",
+        "reasoning": "NOT_REVIEWED"
+      },
+      "seconds": 1.4560410379926907
+    },
+    {
+      "lesson_id": "M12-L02",
+      "source": "practicuum/modules/M12/lessons/L02/instructor/reference.py",
+      "sha256": "3199af0b2ad768cfe6c5edb4e294c3f4523074e899f7ef9bd5063ce21d39cda5",
+      "python": "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-chem/bin/python",
+      "scope": "author numerical reference; open argument requires review",
+      "status": "PASS",
+      "contract": {
+        "status": "PASS",
+        "errors": [],
+        "scope": "listed numerical fields only",
+        "reasoning": "NOT_REVIEWED"
+      },
+      "seconds": 1.268744681001408
+    },
+    {
+      "lesson_id": "M13-L01",
+      "source": "practicuum/modules/M13/lessons/L01/instructor/reference.py",
+      "sha256": "f23db79446a9a6794bc0a5bdbe372bdcf8d0d45f3298137bd4e60f645455e89c",
+      "python": "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-chem/bin/python",
+      "scope": "author numerical reference; open argument requires review",
+      "status": "PASS",
+      "contract": {
+        "status": "PASS",
+        "errors": [],
+        "scope": "listed numerical fields only",
+        "reasoning": "NOT_REVIEWED"
+      },
+      "seconds": 0.3521912629948929
+    },
+    {
+      "lesson_id": "M13-L02",
+      "source": "practicuum/modules/M13/lessons/L02/instructor/reference.py",
+      "sha256": "15b4c9b584af728c2da756849770430a3ced6c8834dd916b87e9fcb6dd12f675",
+      "python": "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-chem/bin/python",
+      "scope": "author numerical reference; open argument requires review",
+      "status": "PASS",
+      "contract": {
+        "status": "PASS",
+        "errors": [],
+        "scope": "listed numerical fields only",
+        "reasoning": "NOT_REVIEWED"
+      },
+      "seconds": 0.34687719799694605
+    },
+    {
+      "lesson_id": "M14-L01",
+      "source": "practicuum/modules/M14/lessons/L01/instructor/reference.py",
+      "sha256": "d95b60f05871efdeb8898cf0c3bc50f927693d0ebfed9c449085f446bca2a6b2",
+      "python": "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-chem/bin/python",
+      "scope": "author numerical reference; open argument requires review",
+      "status": "PASS",
+      "contract": {
+        "status": "PASS",
+        "errors": [],
+        "scope": "listed numerical fields only",
+        "reasoning": "NOT_REVIEWED"
+      },
+      "seconds": 0.4165665360051207
+    },
+    {
+      "lesson_id": "M14-L02",
+      "source": "practicuum/modules/M14/lessons/L02/instructor/reference.py",
+      "sha256": "25d3f52d1f6845f7a9f6d67a24a8cda858dba7c7f88e66e959203d5f871caed4",
+      "python": "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-chem/bin/python",
+      "scope": "author numerical reference; open argument requires review",
+      "status": "PASS",
+      "contract": {
+        "status": "PASS",
+        "errors": [],
+        "scope": "listed numerical fields only",
+        "reasoning": "NOT_REVIEWED"
+      },
+      "seconds": 0.3467488000023877
+    }
+  ],
+  "learner_solutions": "NOT_RUN",
+  "scientific_review": "NOT_RUN"
+}

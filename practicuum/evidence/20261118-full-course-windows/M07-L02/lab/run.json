@@ -1,0 +1,21 @@
+{
+  "lesson_id": "M07-L02",
+  "role": "lab",
+  "kernel": "course-v2-chem",
+  "started_utc": "2026-11-18T14:16:06.445813+00:00",
+  "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\course-restructure-20261118\\practicuum\\modules\\M07\\lessons\\L02\\Notebooks_labs\\02_lab.ipynb",
+  "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\course-restructure-20261118",
+  "scope": "empty lab scaffold; learner completion NOT_RUN",
+  "input_sha256": "641298a295c60b9c65c707640e90e6ace44382431b2891ca0152ad81eb4d0006",
+  "data_sha256": {
+    "practicuum/shared/data/quantum/istradefylline/result.json": "8f56fbf9ccaff067d7e26ad94f9cbadd752c1248dcee439595456d1636fbbbb2",
+    "practicuum/shared/data/quantum/istradefylline/geometry.json": "8b1ec2efb6af4bbf7c984c43eec14553b658ca8cddf2ede549c0d9e45edcfdfa",
+    "practicuum/shared/data/quantum/atorvastatin/result.json": "a365db4fdf5973018f6cb26c372c380bc7dd1f5599528da1c142e7219b8e83c2",
+    "practicuum/shared/data/quantum/atorvastatin/geometry.json": "d0d2d8afc508fd0fa5bab87fcb26256f62f6f13b3743781bb9244abc878f6ee5"
+  },
+  "step_sha256": {
+    "practicuum/modules/M07/lessons/L02/steps/02_lab.md": "a4db409390dd5da0f15a7e4db6264b90b69f60cb3a087b398b84f50c2c09779e"
+  },
+  "status": "PASS",
+  "seconds": 1.464044799999101
+}

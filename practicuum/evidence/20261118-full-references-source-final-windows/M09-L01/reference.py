@@ -1,0 +1,23 @@
+from pathlib import Path
+import sys,json,math
+from IPython.display import display
+ROOT=next(p for p in [Path(__file__).resolve().parent,*Path(__file__).resolve().parents] if (p/'programm/course.json').is_file())
+sys.path.insert(0,str(ROOT/'practicuum/shared'))
+from course_support import DATA,compound,esol,workspace,write_json,init_dossier
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+def publish_plot(fig,name):
+    fig.savefig(OUT/name,dpi=120,bbox_inches='tight')
+    display(fig)
+    plt.close(fig)
+OUT=workspace('M09-L01','instructor')
+
+def reference():
+    k=.02;initial=1e-4;acid=initial*math.exp(-k*60)
+    result={'acid_mol_L':acid,'lactone_mol_L':initial-acid,'balance_mol_L':initial,'kind':'simulation'}
+    assert math.isclose(result['acid_mol_L']+result['lactone_mol_L'],initial)
+    return result
+
+if __name__=="__main__":
+    print(json.dumps(reference(),ensure_ascii=False,indent=2))

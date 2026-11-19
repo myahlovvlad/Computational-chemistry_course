@@ -1,0 +1,117 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "lesson_id": "M12-L01",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T07:25:35.946875+00:00",
+      "source": "/home/miakhlov/course-production-verified-20261118/practicuum/modules/M12/lessons/L01/Notebooks_cases/01_case.ipynb",
+      "cwd": "/home/miakhlov/course-production-verified-20261118",
+      "scope": "full guided computation",
+      "input_sha256": "5e634f0d843430abbd2a55b8f306ad8b5155f7e65bfa8d9f2f117b21687e3263",
+      "data_sha256": {
+        "practicuum/shared/data/target_qsar/a2a_curated.csv": "1c59acec5bdfd3f9cc30a353abadd677ee914cf572a7213e93a9f0d7fe24f2dd",
+        "practicuum/shared/data/target_qsar/a2a_dataset.json": "c1247c95ad73aef44cc831c7e373bab7209a8f2b4e0d218f96226a23a8723c23",
+        "practicuum/shared/data/target_qsar/a2a_result.json": "8c806ac7fc7e33acfd0ba9f8a2bade4f9967189503e21c009b8183838fdc2372",
+        "practicuum/shared/data/target_qsar/a2a_split.json": "dfbf515eeefe11b812604af23e58bab259abe2eb67e5c83350ac77e02e346b0f",
+        "practicuum/shared/data/target_qsar/a2a_heldout_predictions.csv": "a545dac007624625ae4f3d19a170d1ab31ee2178720fe55a56c78dd0e1862a32",
+        "practicuum/shared/data/target_qsar/a2a_audit.json": "6083703100c56690597ec5f695938550c9cb6de54032c6a015b50cb3920ccbea",
+        "practicuum/shared/data/target_qsar/hmgcr_curated.csv": "a98aca68cbff9c45e9d881e1b0d98c4f49f03a2e333e10df9977cf89c35986a7",
+        "practicuum/shared/data/target_qsar/hmgcr_dataset.json": "7a1338239a3548739b8f9d55046a2d49e504e030bcaf8a6ab79eccda23795cce",
+        "practicuum/shared/data/target_qsar/hmgcr_result.json": "aa814cbcf1462408a34d1fca2043e43462f4ba840a2d1bcd410471bfcfd8c3b6",
+        "practicuum/shared/data/target_qsar/manifest.json": "453a8b2a681589c8ea1a79ecdf85077f71af747749d44cac0ecad426e73131dc"
+      },
+      "step_sha256": {
+        "practicuum/modules/M12/lessons/L01/steps/01_case.md": "62b95182e7973f20a40a5cf260dba9245572d035d9af0dbd87c54ae781402564"
+      },
+      "status": "PASS",
+      "seconds": 22.743354146019556
+    },
+    {
+      "lesson_id": "M12-L01",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T07:25:58.019114+00:00",
+      "source": "/home/miakhlov/course-production-verified-20261118/practicuum/modules/M12/lessons/L01/Notebooks_labs/02_lab.ipynb",
+      "cwd": "/home/miakhlov/course-production-verified-20261118",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "1d02a0f96da1418518c38c1f4083e07d6c06e8422033509e8cc3c6db236eadfe",
+      "data_sha256": {
+        "practicuum/shared/data/target_qsar/a2a_curated.csv": "1c59acec5bdfd3f9cc30a353abadd677ee914cf572a7213e93a9f0d7fe24f2dd",
+        "practicuum/shared/data/target_qsar/a2a_dataset.json": "c1247c95ad73aef44cc831c7e373bab7209a8f2b4e0d218f96226a23a8723c23",
+        "practicuum/shared/data/target_qsar/a2a_result.json": "8c806ac7fc7e33acfd0ba9f8a2bade4f9967189503e21c009b8183838fdc2372",
+        "practicuum/shared/data/target_qsar/a2a_split.json": "dfbf515eeefe11b812604af23e58bab259abe2eb67e5c83350ac77e02e346b0f",
+        "practicuum/shared/data/target_qsar/a2a_heldout_predictions.csv": "a545dac007624625ae4f3d19a170d1ab31ee2178720fe55a56c78dd0e1862a32",
+        "practicuum/shared/data/target_qsar/a2a_audit.json": "6083703100c56690597ec5f695938550c9cb6de54032c6a015b50cb3920ccbea",
+        "practicuum/shared/data/target_qsar/hmgcr_curated.csv": "a98aca68cbff9c45e9d881e1b0d98c4f49f03a2e333e10df9977cf89c35986a7",
+        "practicuum/shared/data/target_qsar/hmgcr_dataset.json": "7a1338239a3548739b8f9d55046a2d49e504e030bcaf8a6ab79eccda23795cce",
+        "practicuum/shared/data/target_qsar/hmgcr_result.json": "aa814cbcf1462408a34d1fca2043e43462f4ba840a2d1bcd410471bfcfd8c3b6",
+        "practicuum/shared/data/target_qsar/manifest.json": "453a8b2a681589c8ea1a79ecdf85077f71af747749d44cac0ecad426e73131dc"
+      },
+      "step_sha256": {
+        "practicuum/modules/M12/lessons/L01/steps/02_lab.md": "5e69b68629d1d7b876a0bd9082d83dad97b69ad1623460f7da5711d3a2b573ca"
+      },
+      "status": "PASS",
+      "seconds": 1.8971176889899652
+    },
+    {
+      "lesson_id": "M12-L02",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T07:25:59.923137+00:00",
+      "source": "/home/miakhlov/course-production-verified-20261118/practicuum/modules/M12/lessons/L02/Notebooks_cases/01_case.ipynb",
+      "cwd": "/home/miakhlov/course-production-verified-20261118",
+      "scope": "full guided computation",
+      "input_sha256": "e9866e8fe834e990b8e6f9a93eef3d807ce470f19ca4a10ec9f2085d4f0810c8",
+      "data_sha256": {
+        "practicuum/shared/data/target_qsar/a2a_curated.csv": "1c59acec5bdfd3f9cc30a353abadd677ee914cf572a7213e93a9f0d7fe24f2dd",
+        "practicuum/shared/data/target_qsar/a2a_dataset.json": "c1247c95ad73aef44cc831c7e373bab7209a8f2b4e0d218f96226a23a8723c23",
+        "practicuum/shared/data/target_qsar/a2a_result.json": "8c806ac7fc7e33acfd0ba9f8a2bade4f9967189503e21c009b8183838fdc2372",
+        "practicuum/shared/data/target_qsar/a2a_split.json": "dfbf515eeefe11b812604af23e58bab259abe2eb67e5c83350ac77e02e346b0f",
+        "practicuum/shared/data/target_qsar/a2a_heldout_predictions.csv": "a545dac007624625ae4f3d19a170d1ab31ee2178720fe55a56c78dd0e1862a32",
+        "practicuum/shared/data/target_qsar/a2a_audit.json": "6083703100c56690597ec5f695938550c9cb6de54032c6a015b50cb3920ccbea",
+        "practicuum/shared/data/target_qsar/hmgcr_curated.csv": "a98aca68cbff9c45e9d881e1b0d98c4f49f03a2e333e10df9977cf89c35986a7",
+        "practicuum/shared/data/target_qsar/hmgcr_dataset.json": "7a1338239a3548739b8f9d55046a2d49e504e030bcaf8a6ab79eccda23795cce",
+        "practicuum/shared/data/target_qsar/hmgcr_result.json": "aa814cbcf1462408a34d1fca2043e43462f4ba840a2d1bcd410471bfcfd8c3b6",
+        "practicuum/shared/data/target_qsar/manifest.json": "453a8b2a681589c8ea1a79ecdf85077f71af747749d44cac0ecad426e73131dc"
+      },
+      "step_sha256": {
+        "practicuum/modules/M12/lessons/L02/steps/01_case.md": "c9b13b0236bf6fca9bdf26e1a6c071e2ebdc087abbad4d850f9f893d3f36111f"
+      },
+      "status": "PASS",
+      "seconds": 3.2771588290052023
+    },
+    {
+      "lesson_id": "M12-L02",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-19T07:26:03.200673+00:00",
+      "source": "/home/miakhlov/course-production-verified-20261118/practicuum/modules/M12/lessons/L02/Notebooks_labs/02_lab.ipynb",
+      "cwd": "/home/miakhlov/course-production-verified-20261118",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "731b25a68952c33a2f9568235a3ea0a7d80951f9c04eeefe80783e5293c2eff7",
+      "data_sha256": {
+        "practicuum/shared/data/target_qsar/a2a_curated.csv": "1c59acec5bdfd3f9cc30a353abadd677ee914cf572a7213e93a9f0d7fe24f2dd",
+        "practicuum/shared/data/target_qsar/a2a_dataset.json": "c1247c95ad73aef44cc831c7e373bab7209a8f2b4e0d218f96226a23a8723c23",
+        "practicuum/shared/data/target_qsar/a2a_result.json": "8c806ac7fc7e33acfd0ba9f8a2bade4f9967189503e21c009b8183838fdc2372",
+        "practicuum/shared/data/target_qsar/a2a_split.json": "dfbf515eeefe11b812604af23e58bab259abe2eb67e5c83350ac77e02e346b0f",
+        "practicuum/shared/data/target_qsar/a2a_heldout_predictions.csv": "a545dac007624625ae4f3d19a170d1ab31ee2178720fe55a56c78dd0e1862a32",
+        "practicuum/shared/data/target_qsar/a2a_audit.json": "6083703100c56690597ec5f695938550c9cb6de54032c6a015b50cb3920ccbea",
+        "practicuum/shared/data/target_qsar/hmgcr_curated.csv": "a98aca68cbff9c45e9d881e1b0d98c4f49f03a2e333e10df9977cf89c35986a7",
+        "practicuum/shared/data/target_qsar/hmgcr_dataset.json": "7a1338239a3548739b8f9d55046a2d49e504e030bcaf8a6ab79eccda23795cce",
+        "practicuum/shared/data/target_qsar/hmgcr_result.json": "aa814cbcf1462408a34d1fca2043e43462f4ba840a2d1bcd410471bfcfd8c3b6",
+        "practicuum/shared/data/target_qsar/manifest.json": "453a8b2a681589c8ea1a79ecdf85077f71af747749d44cac0ecad426e73131dc"
+      },
+      "step_sha256": {
+        "practicuum/modules/M12/lessons/L02/steps/02_lab.md": "319665b08ffd70e6ff9e43760f7964b019d7249be5c9d3bf3dcac55b97d9bed0"
+      },
+      "status": "PASS",
+      "seconds": 1.3791027789993677
+    }
+  ],
+  "scope": "technical execution, not scientific or learner certification",
+  "learner_work": "NOT_RUN",
+  "independent_scientific_review": "NOT_RUN",
+  "student_pilot": "NOT_RUN"
+}

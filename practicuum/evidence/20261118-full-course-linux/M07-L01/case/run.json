@@ -1,0 +1,16 @@
+{
+  "lesson_id": "M07-L01",
+  "role": "case",
+  "kernel": "course-v2-chem",
+  "started_utc": "2026-11-18T14:19:55.623184+00:00",
+  "source": "/home/miakhlov/course-production-verified-20261118/practicuum/modules/M07/lessons/L01/Notebooks_cases/01_case.ipynb",
+  "cwd": "/home/miakhlov/course-production-verified-20261118",
+  "scope": "full guided computation",
+  "input_sha256": "c24b5f17ef16a4a283d8f0adaea53ed9f3440056d1ef415f07e45ca4c1135b15",
+  "data_sha256": {},
+  "step_sha256": {
+    "practicuum/modules/M07/lessons/L01/steps/01_case.md": "ac035924f82427e16471b2f5a8ddd27e73d5160155eb44b887f61f141cf9b2fa"
+  },
+  "status": "PASS",
+  "seconds": 1.850002385006519
+}

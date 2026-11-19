@@ -1,0 +1,880 @@
+INFO:PDB2PQR v3.8.0: biomolecular structure conversion software.
+INFO:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+INFO:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+INFO:Checking and transforming input arguments.
+INFO:Loading topology files.
+INFO:Loading molecule: /home/miakhlov/course-production-verified-20261118/practicuum/evidence/20261118-A2A-target-preparation-repair-audited/protein_crystal.pdb
+ERROR:Error parsing line: invalid literal for int() with base 10: ''
+ERROR:<CRYST1    1.000    1.000    1.000  90.00  90.00  90.00 P 1>
+ERROR:Truncating remaining errors for record type:CRYST1
+WARNING:Warning: /home/miakhlov/course-production-verified-20261118/practicuum/evidence/20261118-A2A-target-preparation-repair-audited/protein_crystal.pdb is a non-standard PDB file.
+
+ERROR:['CRYST1']
+INFO:Dropping water from structure.
+INFO:Setting up molecule.
+INFO:Created biomolecule object with 386 residues and 2928 atoms.
+INFO:Setting termini states for biomolecule chains.
+WARNING:Gap in backbone detected between LYS A 1042 and LYS A 1059!
+INFO:Loading forcefield.
+INFO:Loading hydrogen topology definitions.
+WARNING:Missing atom CG in residue ARG A 111
+WARNING:Missing atom CD in residue ARG A 111
+WARNING:Missing atom NE in residue ARG A 111
+WARNING:Missing atom CZ in residue ARG A 111
+WARNING:Missing atom NH1 in residue ARG A 111
+WARNING:Missing atom NH2 in residue ARG A 111
+WARNING:Missing atom CG in residue GLN A 148
+WARNING:Missing atom CD in residue GLN A 148
+WARNING:Missing atom OE1 in residue GLN A 148
+WARNING:Missing atom NE2 in residue GLN A 148
+WARNING:Missing atom NE in residue ARG A 206
+WARNING:Missing atom CZ in residue ARG A 206
+WARNING:Missing atom NH1 in residue ARG A 206
+WARNING:Missing atom NH2 in residue ARG A 206
+WARNING:Missing atom CG in residue ASP A 1021
+WARNING:Missing atom OD1 in residue ASP A 1021
+WARNING:Missing atom OD2 in residue ASP A 1021
+WARNING:Missing atom CG in residue LYS A 1059
+WARNING:Missing atom CD in residue LYS A 1059
+WARNING:Missing atom CE in residue LYS A 1059
+WARNING:Missing atom NZ in residue LYS A 1059
+WARNING:Missing atom CG in residue ASP A 1060
+WARNING:Missing atom OD1 in residue ASP A 1060
+WARNING:Missing atom OD2 in residue ASP A 1060
+WARNING:Missing atom CG in residue PHE A 1061
+WARNING:Missing atom CD1 in residue PHE A 1061
+WARNING:Missing atom CD2 in residue PHE A 1061
+WARNING:Missing atom CE1 in residue PHE A 1061
+WARNING:Missing atom CE2 in residue PHE A 1061
+WARNING:Missing atom CZ in residue PHE A 1061
+WARNING:Missing atom CG in residue ARG A 1062
+WARNING:Missing atom CD in residue ARG A 1062
+WARNING:Missing atom NE in residue ARG A 1062
+WARNING:Missing atom CZ in residue ARG A 1062
+WARNING:Missing atom NH1 in residue ARG A 1062
+WARNING:Missing atom NH2 in residue ARG A 1062
+WARNING:Missing atom CE in residue LYS A 1077
+WARNING:Missing atom NZ in residue LYS A 1077
+WARNING:Missing atom CG in residue LYS A 1104
+WARNING:Missing atom CD in residue LYS A 1104
+WARNING:Missing atom CE in residue LYS A 1104
+WARNING:Missing atom NZ in residue LYS A 1104
+WARNING:Missing atom CG in residue TYR A 1105
+WARNING:Missing atom CD1 in residue TYR A 1105
+WARNING:Missing atom CD2 in residue TYR A 1105
+WARNING:Missing atom CE1 in residue TYR A 1105
+WARNING:Missing atom CE2 in residue TYR A 1105
+WARNING:Missing atom CZ in residue TYR A 1105
+WARNING:Missing atom OH in residue TYR A 1105
+WARNING:Missing atom CG in residue ARG A 220
+WARNING:Missing atom CD in residue ARG A 220
+WARNING:Missing atom NE in residue ARG A 220
+WARNING:Missing atom CZ in residue ARG A 220
+WARNING:Missing atom NH1 in residue ARG A 220
+WARNING:Missing atom NH2 in residue ARG A 220
+WARNING:Missing atom NE in residue ARG A 222
+WARNING:Missing atom CZ in residue ARG A 222
+WARNING:Missing atom NH1 in residue ARG A 222
+WARNING:Missing atom NH2 in residue ARG A 222
+WARNING:Missing atom OXT in residue SER A 305
+WARNING:Missing atom CG in residue ARG A 111
+WARNING:Missing atom CD in residue ARG A 111
+WARNING:Missing atom NE in residue ARG A 111
+WARNING:Missing atom CZ in residue ARG A 111
+WARNING:Missing atom NH1 in residue ARG A 111
+WARNING:Missing atom NH2 in residue ARG A 111
+WARNING:Missing atom CG in residue GLN A 148
+WARNING:Missing atom CD in residue GLN A 148
+WARNING:Missing atom OE1 in residue GLN A 148
+WARNING:Missing atom NE2 in residue GLN A 148
+WARNING:Missing atom NE in residue ARG A 206
+WARNING:Missing atom CZ in residue ARG A 206
+WARNING:Missing atom NH1 in residue ARG A 206
+WARNING:Missing atom NH2 in residue ARG A 206
+WARNING:Missing atom CG in residue ASP A 1021
+WARNING:Missing atom OD1 in residue ASP A 1021
+WARNING:Missing atom OD2 in residue ASP A 1021
+WARNING:Missing atom CG in residue LYS A 1059
+WARNING:Missing atom CD in residue LYS A 1059
+WARNING:Missing atom CE in residue LYS A 1059
+WARNING:Missing atom NZ in residue LYS A 1059
+WARNING:Missing atom CG in residue ASP A 1060
+WARNING:Missing atom OD1 in residue ASP A 1060
+WARNING:Missing atom OD2 in residue ASP A 1060
+WARNING:Missing atom CG in residue PHE A 1061
+WARNING:Missing atom CD1 in residue PHE A 1061
+WARNING:Missing atom CD2 in residue PHE A 1061
+WARNING:Missing atom CE1 in residue PHE A 1061
+WARNING:Missing atom CE2 in residue PHE A 1061
+WARNING:Missing atom CZ in residue PHE A 1061
+WARNING:Missing atom CG in residue ARG A 1062
+WARNING:Missing atom CD in residue ARG A 1062
+WARNING:Missing atom NE in residue ARG A 1062
+WARNING:Missing atom CZ in residue ARG A 1062
+WARNING:Missing atom NH1 in residue ARG A 1062
+WARNING:Missing atom NH2 in residue ARG A 1062
+WARNING:Missing atom CE in residue LYS A 1077
+WARNING:Missing atom NZ in residue LYS A 1077
+WARNING:Missing atom CG in residue LYS A 1104
+WARNING:Missing atom CD in residue LYS A 1104
+WARNING:Missing atom CE in residue LYS A 1104
+WARNING:Missing atom NZ in residue LYS A 1104
+WARNING:Missing atom CG in residue TYR A 1105
+WARNING:Missing atom CD1 in residue TYR A 1105
+WARNING:Missing atom CD2 in residue TYR A 1105
+WARNING:Missing atom CE1 in residue TYR A 1105
+WARNING:Missing atom CE2 in residue TYR A 1105
+WARNING:Missing atom CZ in residue TYR A 1105
+WARNING:Missing atom OH in residue TYR A 1105
+WARNING:Missing atom CG in residue ARG A 220
+WARNING:Missing atom CD in residue ARG A 220
+WARNING:Missing atom NE in residue ARG A 220
+WARNING:Missing atom CZ in residue ARG A 220
+WARNING:Missing atom NH1 in residue ARG A 220
+WARNING:Missing atom NH2 in residue ARG A 220
+WARNING:Missing atom NE in residue ARG A 222
+WARNING:Missing atom CZ in residue ARG A 222
+WARNING:Missing atom NH1 in residue ARG A 222
+WARNING:Missing atom NH2 in residue ARG A 222
+WARNING:Missing atom OXT in residue SER A 305
+INFO:Attempting to repair 60 missing atoms in biomolecule.
+WARNING:Missing atom CG in residue ARG A 111
+WARNING:Missing atom CD in residue ARG A 111
+WARNING:Missing atom NE in residue ARG A 111
+WARNING:Missing atom CZ in residue ARG A 111
+WARNING:Missing atom NH1 in residue ARG A 111
+WARNING:Missing atom NH2 in residue ARG A 111
+WARNING:Missing atom CG in residue GLN A 148
+WARNING:Missing atom CD in residue GLN A 148
+WARNING:Missing atom OE1 in residue GLN A 148
+WARNING:Missing atom NE2 in residue GLN A 148
+WARNING:Missing atom NE in residue ARG A 206
+WARNING:Missing atom CZ in residue ARG A 206
+WARNING:Missing atom NH1 in residue ARG A 206
+WARNING:Missing atom NH2 in residue ARG A 206
+WARNING:Missing atom CG in residue ASP A 1021
+WARNING:Missing atom OD1 in residue ASP A 1021
+WARNING:Missing atom OD2 in residue ASP A 1021
+WARNING:Missing atom CG in residue LYS A 1059
+WARNING:Missing atom CD in residue LYS A 1059
+WARNING:Missing atom CE in residue LYS A 1059
+WARNING:Missing atom NZ in residue LYS A 1059
+WARNING:Missing atom CG in residue ASP A 1060
+WARNING:Missing atom OD1 in residue ASP A 1060
+WARNING:Missing atom OD2 in residue ASP A 1060
+WARNING:Missing atom CG in residue PHE A 1061
+WARNING:Missing atom CD1 in residue PHE A 1061
+WARNING:Missing atom CD2 in residue PHE A 1061
+WARNING:Missing atom CE1 in residue PHE A 1061
+WARNING:Missing atom CE2 in residue PHE A 1061
+WARNING:Missing atom CZ in residue PHE A 1061
+WARNING:Missing atom CG in residue ARG A 1062
+WARNING:Missing atom CD in residue ARG A 1062
+WARNING:Missing atom NE in residue ARG A 1062
+WARNING:Missing atom CZ in residue ARG A 1062
+WARNING:Missing atom NH1 in residue ARG A 1062
+WARNING:Missing atom NH2 in residue ARG A 1062
+WARNING:Missing atom CE in residue LYS A 1077
+WARNING:Missing atom NZ in residue LYS A 1077
+WARNING:Missing atom CG in residue LYS A 1104
+WARNING:Missing atom CD in residue LYS A 1104
+WARNING:Missing atom CE in residue LYS A 1104
+WARNING:Missing atom NZ in residue LYS A 1104
+WARNING:Missing atom CG in residue TYR A 1105
+WARNING:Missing atom CD1 in residue TYR A 1105
+WARNING:Missing atom CD2 in residue TYR A 1105
+WARNING:Missing atom CE1 in residue TYR A 1105
+WARNING:Missing atom CE2 in residue TYR A 1105
+WARNING:Missing atom CZ in residue TYR A 1105
+WARNING:Missing atom OH in residue TYR A 1105
+WARNING:Missing atom CG in residue ARG A 220
+WARNING:Missing atom CD in residue ARG A 220
+WARNING:Missing atom NE in residue ARG A 220
+WARNING:Missing atom CZ in residue ARG A 220
+WARNING:Missing atom NH1 in residue ARG A 220
+WARNING:Missing atom NH2 in residue ARG A 220
+WARNING:Missing atom NE in residue ARG A 222
+WARNING:Missing atom CZ in residue ARG A 222
+WARNING:Missing atom NH1 in residue ARG A 222
+WARNING:Missing atom NH2 in residue ARG A 222
+WARNING:Missing atom OXT in residue SER A 305
+INFO:Added atom CG to residue ARG A 111 at coordinates -3.939, -35.371, 107.715
+INFO:Added atom CD to residue ARG A 111 at coordinates -4.710, -34.840, 106.565
+INFO:Added atom NE to residue ARG A 111 at coordinates -5.412, -35.890, 105.839
+INFO:Added atom CZ to residue ARG A 111 at coordinates -6.168, -35.662, 104.771
+INFO:Added atom NH1 to residue ARG A 111 at coordinates -6.494, -34.427, 104.404
+INFO:Added atom NH2 to residue ARG A 111 at coordinates -6.653, -36.692, 104.083
+INFO:Added atom CG to residue GLN A 148 at coordinates 1.897, 19.397, 107.522
+INFO:Added atom CD to residue GLN A 148 at coordinates 0.408, 19.204, 107.526
+INFO:Added atom OE1 to residue GLN A 148 at coordinates -0.242, 19.110, 108.572
+INFO:Added atom NE2 to residue GLN A 148 at coordinates -0.167, 19.122, 106.322
+INFO:Added atom NE to residue ARG A 206 at coordinates -18.816, -32.905, 114.664
+INFO:Added atom CZ to residue ARG A 206 at coordinates -18.629, -32.684, 113.367
+INFO:Added atom NH1 to residue ARG A 206 at coordinates -18.355, -31.477, 112.891
+INFO:Added atom NH2 to residue ARG A 206 at coordinates -18.772, -33.698, 112.511
+INFO:Added atom CG to residue ASP A 1021 at coordinates -38.511, -61.109, 122.152
+INFO:Added atom OD1 to residue ASP A 1021 at coordinates -37.540, -60.904, 122.912
+INFO:Added atom OD2 to residue ASP A 1021 at coordinates -39.678, -60.804, 122.445
+INFO:Added atom CG to residue LYS A 1059 at coordinates 0.686, -50.425, 119.540
+INFO:Added atom CD to residue LYS A 1059 at coordinates 2.031, -50.288, 120.228
+INFO:Added atom CE to residue LYS A 1059 at coordinates 3.023, -49.488, 119.417
+INFO:Added atom NZ to residue LYS A 1059 at coordinates 4.321, -49.381, 120.129
+INFO:Added atom CG to residue ASP A 1060 at coordinates -1.892, -52.962, 124.738
+INFO:Added atom OD1 to residue ASP A 1060 at coordinates -1.108, -53.495, 123.930
+INFO:Added atom OD2 to residue ASP A 1060 at coordinates -1.606, -52.768, 125.934
+INFO:Added atom CG to residue PHE A 1061 at coordinates -5.706, -48.116, 122.383
+INFO:Added atom CD1 to residue PHE A 1061 at coordinates -4.364, -47.917, 122.698
+INFO:Added atom CD2 to residue PHE A 1061 at coordinates -6.683, -47.527, 123.183
+INFO:Added atom CE1 to residue PHE A 1061 at coordinates -3.986, -47.157, 123.794
+INFO:Added atom CE2 to residue PHE A 1061 at coordinates -6.339, -46.758, 124.293
+INFO:Added atom CZ to residue PHE A 1061 at coordinates -4.977, -46.594, 124.605
+INFO:Added atom CG to residue ARG A 1062 at coordinates -4.484, -50.132, 116.617
+INFO:Added atom CD to residue ARG A 1062 at coordinates -3.332, -49.994, 115.690
+INFO:Added atom NE to residue ARG A 1062 at coordinates -3.016, -48.601, 115.408
+INFO:Added atom CZ to residue ARG A 1062 at coordinates -2.027, -48.223, 114.606
+INFO:Added atom NH1 to residue ARG A 1062 at coordinates -1.129, -49.093, 114.156
+INFO:Added atom NH2 to residue ARG A 1062 at coordinates -1.900, -46.937, 114.288
+INFO:Added atom CE to residue LYS A 1077 at coordinates -20.339, -68.704, 109.329
+INFO:Added atom NZ to residue LYS A 1077 at coordinates -19.761, -70.007, 109.739
+INFO:Added atom CG to residue LYS A 1104 at coordinates -8.745, -49.570, 129.663
+INFO:Added atom CD to residue LYS A 1104 at coordinates -7.634, -50.600, 129.714
+INFO:Added atom CE to residue LYS A 1104 at coordinates -7.756, -51.535, 130.893
+INFO:Added atom NZ to residue LYS A 1104 at coordinates -6.649, -52.524, 130.900
+INFO:Added atom CG to residue TYR A 1105 at coordinates -9.098, -48.003, 123.200
+INFO:Added atom CD1 to residue TYR A 1105 at coordinates -9.493, -49.280, 123.616
+INFO:Added atom CD2 to residue TYR A 1105 at coordinates -7.898, -47.887, 122.500
+INFO:Added atom CE1 to residue TYR A 1105 at coordinates -8.702, -50.398, 123.359
+INFO:Added atom CE2 to residue TYR A 1105 at coordinates -7.098, -48.995, 122.244
+INFO:Added atom CZ to residue TYR A 1105 at coordinates -7.494, -50.249, 122.684
+INFO:Added atom OH to residue TYR A 1105 at coordinates -6.658, -51.303, 122.456
+INFO:Added atom CG to residue ARG A 220 at coordinates -6.200, -43.778, 127.576
+INFO:Added atom CD to residue ARG A 220 at coordinates -5.230, -44.710, 126.943
+INFO:Added atom NE to residue ARG A 220 at coordinates -4.746, -45.715, 127.877
+INFO:Added atom CZ to residue ARG A 220 at coordinates -3.871, -46.659, 127.546
+INFO:Added atom NH1 to residue ARG A 220 at coordinates -3.524, -46.870, 126.281
+INFO:Added atom NH2 to residue ARG A 220 at coordinates -3.371, -47.445, 128.496
+INFO:Added atom NE to residue ARG A 222 at coordinates -14.868, -37.033, 130.306
+INFO:Added atom CZ to residue ARG A 222 at coordinates -15.682, -37.318, 131.318
+INFO:Added atom NH1 to residue ARG A 222 at coordinates -16.013, -38.566, 131.621
+INFO:Added atom NH2 to residue ARG A 222 at coordinates -16.222, -36.318, 132.016
+INFO:Added atom OXT to residue SER A 305 at coordinates 21.143, -22.448, 140.705
+INFO:Updating disulfide bridges.
+INFO:Debumping biomolecule.
+INFO:Assigning titration states with PROPKA.
+INFO:
+propka3.5.1                                                                                  2026-11-18
+
+-------------------------------------------------------------------------------
+--                                                                           --
+--  PROPKA: A PROTEIN PKA PREDICTOR                                          --
+--                                                                           --
+--  VERSION 1.0,  04/25/2004,  IOWA CITY                                     --
+--  BY HUI LI                                                                --
+--                                                                           --
+--  VERSION 2.0,  11/05/2007, IOWA CITY/COPENHAGEN                           --
+--  BY DELPHINE C. BAS AND DAVID M. ROGERS                                   --
+--                                                                           --
+--  VERSION 3.0,  01/06/2011, COPENHAGEN                                     --
+--  BY MATS H.M. OLSSON AND CHRESTEN R. SONDERGARD                           --
+--                                                                           --
+--  VERSION 3.1,  07/01/2011, COPENHAGEN                                     --
+--  BY CHRESTEN R. SONDERGARD AND MATS H.M. OLSSON                           --
+--                                                                           --
+--  VERSION 3.2,  06/17/2020, PLANET EARTH                                   --
+--  SEE ABOVE FOR AUTHORS                                                    --
+--                                                                           --
+-------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+References:
+
+Very Fast Empirical Prediction and Rationalization of Protein pKa Values.
+Hui Li, Andrew D. Robertson and Jan H. Jensen. PROTEINS: Structure, Function,
+and Bioinformatics. 61:704-721 (2005)
+
+Very Fast Prediction and Rationalization of pKa Values for Protein-Ligand
+Complexes.  Delphine C. Bas, David M. Rogers and Jan H. Jensen.  PROTEINS:
+Structure, Function, and Bioinformatics 73:765-783 (2008)
+
+PROPKA3: Consistent Treatment of Internal and Surface Residues in Empirical
+pKa predictions.  Mats H.M. Olsson, Chresten R. Sondergard, Michal Rostkowski,
+and Jan H. Jensen.  Journal of Chemical Theory and Computation, 7(2):525-537
+(2011)
+
+Improved Treatment of Ligands and Coupling Effects in Empirical Calculation
+and Rationalization of pKa Values.  Chresten R. Sondergaard, Mats H.M. Olsson,
+Michal Rostkowski, and Jan H. Jensen.  Journal of Chemical Theory and
+Computation, (2011)
+-------------------------------------------------------------------------------
+
+
+
+WARNING:Missing atoms or failed protonation for LYS1059 A (BBN) -- please check the structure
+WARNING:Group (BBN) for  1894-   N  1059-LYS (A) [  -2.319  -50.093  119.525] N
+WARNING:Expected 2 interaction atoms for acids, found:
+WARNING:                 0-  H1  1059-LYS (A) [  -2.525  -49.667  120.417] H
+WARNING:                 0-  H2  1059-LYS (A) [  -3.176  -50.216  119.005] H
+WARNING:              1894-   N  1059-LYS (A) [  -2.319  -50.093  119.525] N
+WARNING:Expected 2 interaction atoms for bases, found:
+WARNING:                 0-  H1  1059-LYS (A) [  -2.525  -49.667  120.417] H
+WARNING:                 0-  H2  1059-LYS (A) [  -3.176  -50.216  119.005] H
+WARNING:              1894-   N  1059-LYS (A) [  -2.319  -50.093  119.525] N
+INFO:Coupling map:
+
+INFO:Calculating pKas for Conformation container 1A with 3543 atoms and 923 groups
+INFO:pKa determinants:
+
+---------  -----   ------   ---------------------    --------------    --------------    --------------
+                            DESOLVATION  EFFECTS       SIDECHAIN          BACKBONE        COULOMBIC
+ RESIDUE    pKa    BURIED     REGULAR      RE        HYDROGEN BOND     HYDROGEN BOND      INTERACTION
+---------  -----   ------   ---------   ---------    --------------    --------------    --------------
+
+ASP  52 A   7.14   100 %    2.97  600   1.22    0   -0.85 SER 281 A    0.00 XXX   0 X    0.00 XXX   0 X
+
+ASP 101 A   3.64    66 %    2.60  465   0.29    0   -0.85 THR  41 A    0.00 XXX   0 X   -0.82 ARG 102 A
+ASP 101 A                                           -0.53 ARG 102 A    0.00 XXX   0 X    0.00 XXX   0 X
+ASP 101 A                                           -0.85 TYR 112 A    0.00 XXX   0 X    0.00 XXX   0 X
+
+ASP 170 A   3.76    38 %    1.39  387   0.21    0   -0.85 LYS 153 A    0.00 XXX   0 X   -0.31 LYS 150 A
+ASP 170 A                                            0.00 XXX   0 X    0.00 XXX   0 X   -0.49 LYS 153 A
+
+ASP1002 A   3.97     0 %    0.36  251   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X   -0.21 ARG 206 A
+ASP1002 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.02 ASP1039 A
+
+ASP1005 A   4.16     0 %    0.27  211   0.00    0   -0.04 GLU1008 A    0.00 XXX   0 X    0.12 ASP1002 A
+ASP1005 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.01 ASP1012 A
+
+ASP1012 A   4.13     0 %    0.34  229   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X   -0.01 LYS1015 A
+
+ASP1021 A   3.98     0 %    0.19  152   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X   -0.01 LYS1085 A
+
+ASP1028 A   3.88     0 %    0.25  228   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X   -0.08 LYS1027 A
+ASP1028 A                                            0.00 XXX   0 X    0.00 XXX   0 X   -0.08 LYS1032 A
+
+ASP1039 A   3.90     0 %    0.17  224   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X   -0.07 LYS1042 A
+
+ASP1060 A   3.77     0 %    0.20  170   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X   -0.06 LYS1104 A
+ASP1060 A                                            0.00 XXX   0 X    0.00 XXX   0 X   -0.09 ARG 220 A
+ASP1060 A                                            0.00 XXX   0 X    0.00 XXX   0 X   -0.07 HIS1063 A
+
+ASP1066 A   3.88     0 %    0.30  233   0.00    0   -0.07 GLN1041 A    0.00 XXX   0 X   -0.02 LYS1042 A
+ASP1066 A                                            0.00 XXX   0 X    0.00 XXX   0 X   -0.03 ARG1062 A
+ASP1066 A                                            0.00 XXX   0 X    0.00 XXX   0 X   -0.10 HIS1063 A
+
+ASP1073 A   3.24     5 %    0.55  294   0.05    0   -0.77 ARG1034 A    0.00 XXX   0 X   -0.38 ARG1034 A
+
+ASP1074 A   4.27     5 %    0.36  295   0.04    0    0.00 XXX   0 X    0.00 XXX   0 X   -0.02 LYS1077 A
+ASP1074 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.09 ASP1073 A
+
+ASP 261 A   3.92     0 %    0.12   85   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.00 XXX   0 X
+
+GLU  13 A   4.28    75 %    3.30  490   0.30    0   -0.85 TYR   9 A    0.00 XXX   0 X   -1.37 HIS 278 A
+GLU  13 A                                           -1.60 HIS 278 A    0.00 XXX   0 X    0.00 XXX   0 X
+
+GLU 151 A   4.72     0 %    0.29  211   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X   -0.21 HIS 155 A
+GLU 151 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.14 GLU 161 A
+
+GLU 161 A   4.48     0 %    0.10  136   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X   -0.12 HIS 155 A
+
+GLU 169 A   4.85    59 %    1.61  446   0.00    0   -0.78 HIS 264 A    0.00 XXX   0 X   -0.00 LYS 150 A
+GLU 169 A                                            0.00 XXX   0 X    0.00 XXX   0 X   -0.02 LYS 153 A
+GLU 169 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.10 ASP 170 A
+GLU 169 A                                            0.00 XXX   0 X    0.00 XXX   0 X   -0.56 HIS 264 A
+
+GLU1004 A   4.70     0 %    0.36  268   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X   -0.19 ARG 222 A
+GLU1004 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.03 ASP1005 A
+
+GLU1008 A   5.37     0 %    0.25  196   0.00    0    0.04 ASP1005 A    0.00 XXX   0 X    0.04 GLU1004 A
+GLU1008 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.33 ASP1005 A
+GLU1008 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.20 ASP1012 A
+
+GLU1018 A   2.07*    0 %    0.51  281   0.00    0   -0.37 LYS1015 A    0.00 XXX   0 X   -0.11 LYS1019 A
+GLU1018 A                                           -0.77 GLU1092 A    0.00 XXX   0 X   -0.05 ARG1098 A
+GLU1018 A                                           -0.85 LYS1095 A    0.00 XXX   0 X   -0.38 LYS1015 A
+GLU1018 A                                            0.00 XXX   0 X    0.00 XXX   0 X   -0.41 LYS1095 A
+
+GLU1081 A   3.88     0 %    0.35  169   0.00    0   -0.32 LYS1083 A    0.00 XXX   0 X   -0.33 LYS1077 A
+GLU1081 A                                            0.00 XXX   0 X    0.00 XXX   0 X   -0.32 LYS1083 A
+
+GLU1086 A   4.53     0 %    0.21  167   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X   -0.23 LYS1083 A
+GLU1086 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.05 GLU1081 A
+
+GLU1092 A   4.74*    3 %    0.55  291   0.01    0    0.77 GLU1018 A    0.00 XXX   0 X   -0.13 LYS1015 A
+GLU1092 A                                           -0.80 LYS1095 A    0.00 XXX   0 X   -0.06 ARG1098 A
+GLU1092 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.33 GLU1018 A
+GLU1092 A                                            0.00 XXX   0 X    0.00 XXX   0 X   -0.42 LYS1095 A
+
+GLU 219 A   4.06     0 %    0.32  234   0.00    0   -0.66 GLN1103 A    0.00 XXX   0 X   -0.05 LYS1104 A
+GLU 219 A                                            0.00 XXX   0 X    0.00 XXX   0 X   -0.04 ARG 220 A
+GLU 219 A                                            0.00 XXX   0 X    0.00 XXX   0 X   -0.02 ARG 222 A
+
+GLU 228 A   6.02    46 %    1.32  409   0.49    0    0.00 XXX   0 X    0.00 XXX   0 X   -0.29 ARG 102 A
+
+GLU 294 A   3.54     0 %    0.41  278   0.00    0   -0.81 ASN  34 A    0.00 XXX   0 X   -0.01 ARG 293 A
+GLU 294 A                                           -0.46 ASN  36 A    0.00 XXX   0 X   -0.09 LYS 301 A
+
+C-  305 A   3.41     0 %    0.21  124   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.00 XXX   0 X
+
+HIS  75 A   6.18     1 %   -0.32  284   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.00 XXX   0 X
+
+HIS 155 A   6.59     0 %   -0.24  152   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.21 GLU 151 A
+HIS 155 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.12 GLU 161 A
+
+HIS1063 A   6.35     0 %   -0.32  217   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.07 ASP1060 A
+HIS1063 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.10 ASP1066 A
+
+HIS 230 A   6.22    10 %   -0.47  308   0.00    0    0.00 XXX   0 X    0.68 ARG 291 A   -0.00 LYS 227 A
+HIS 230 A                                            0.00 XXX   0 X    0.00 XXX   0 X   -0.01 LYS 233 A
+HIS 230 A                                            0.00 XXX   0 X    0.00 XXX   0 X   -0.39 ARG 291 A
+HIS 230 A                                            0.00 XXX   0 X    0.00 XXX   0 X   -0.06 ARG 293 A
+HIS 230 A                                            0.00 XXX   0 X    0.00 XXX   0 X   -0.03 ARG 296 A
+
+HIS 250 A   3.64    97 %   -2.86  554   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.00 XXX   0 X
+
+HIS 264 A   8.04    19 %   -0.64  334   0.00    0    0.78 GLU 169 A    0.84 ALA 265 A    0.56 GLU 169 A
+
+HIS 278 A   6.54   100 %   -2.93  567   0.00    0    1.60 GLU  13 A    0.00 XXX   0 X    1.37 GLU  13 A
+
+CYS  28 A  10.74    58 %    1.75  445   0.00    0    0.00 XXX   0 X   -0.03 CYS  28 A    0.01 ASP  52 A
+
+CYS  71 A  99.99     0 %    0.00    0   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.00 XXX   0 X
+
+CYS  74 A  99.99     0 %    0.00    0   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.00 XXX   0 X
+
+CYS  77 A  99.99     0 %    0.00    0   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.00 XXX   0 X
+
+CYS  82 A  11.92    78 %    2.92  499   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.00 XXX   0 X
+
+CYS 128 A  10.45    41 %    1.45  395   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.00 XXX   0 X
+
+CYS 146 A  99.99     0 %    0.00    0   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.00 XXX   0 X
+
+CYS 159 A  99.99     0 %    0.00    0   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.00 XXX   0 X
+
+CYS 166 A  99.99     0 %    0.00    0   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.00 XXX   0 X
+
+CYS 185 A  10.92    55 %    1.92  435   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.00 XXX   0 X
+
+CYS 245 A  10.47    49 %    1.76  418   0.00    0   -0.31 ASN 280 A    0.00 XXX   0 X    0.03 ASP  52 A
+
+CYS 254 A  10.44    30 %    1.44  366   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.00 XXX   0 X
+
+CYS 259 A  99.99     0 %    0.00    0   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.00 XXX   0 X
+
+CYS 262 A  99.99     0 %    0.00    0   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.00 XXX   0 X
+
+TYR   9 A  14.91    76 %    2.83  494   0.00    0    0.85 GLU  13 A    0.00 XXX   0 X    0.24 TYR 271 A
+TYR   9 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.99 GLU  13 A
+
+TYR  43 A  10.46     8 %    0.46  303   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.00 XXX   0 X
+
+TYR 103 A  10.12     2 %    0.28  286   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X   -0.15 ARG 199 A
+TYR 103 A                                            0.00 XXX   0 X    0.00 XXX   0 X   -0.01 ARG 206 A
+
+TYR 112 A  11.74    45 %    1.76  408   0.00    0   -0.57 THR  41 A    0.00 XXX   0 X   -0.57 ARG 102 A
+TYR 112 A                                           -0.44 ARG 102 A    0.00 XXX   0 X    0.01 GLU 228 A
+TYR 112 A                                            0.85 ASP 101 A    0.00 XXX   0 X    0.70 ASP 101 A
+
+TYR 176 A  13.83    80 %    3.03  506   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.49 CYS  82 A
+TYR 176 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.31 CYS 185 A
+
+TYR 179 A  10.41     0 %    0.39  209   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.02 CYS 254 A
+
+TYR 197 A  12.80    83 %    2.83  515   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.02 ASP 101 A
+TYR 197 A                                            0.00 XXX   0 X    0.00 XXX   0 X   -0.06 ARG 102 A
+
+TYR1101 A  10.36     0 %    0.33  223   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.10 ASP1060 A
+TYR1101 A                                            0.00 XXX   0 X    0.00 XXX   0 X   -0.07 LYS1104 A
+
+TYR1105 A  11.94    12 %    1.83  315   0.00    0    0.00 XXX   0 X   -0.12 GLY1064 A    0.11 ASP1060 A
+TYR1105 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.02 ASP1066 A
+TYR1105 A                                            0.00 XXX   0 X    0.00 XXX   0 X   -0.06 ARG 220 A
+TYR1105 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.16 TYR1101 A
+
+TYR 271 A  10.78    32 %    0.99  371   0.00    0   -0.11 SER   6 A    0.00 XXX   0 X    0.02 GLU  13 A
+TYR 271 A                                           -0.12 SER  67 A    0.00 XXX   0 X    0.00 XXX   0 X
+
+TYR 288 A  13.40   100 %    2.99  591   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.03 CYS  28 A
+TYR 288 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.33 ASP  52 A
+TYR 288 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.06 TYR 197 A
+
+TYR 290 A  10.09     0 %    0.10  170   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X   -0.01 ARG 296 A
+
+LYS 150 A  10.39     0 %   -0.19  265   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.00 GLU 169 A
+LYS 150 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.31 ASP 170 A
+LYS 150 A                                            0.00 XXX   0 X    0.00 XXX   0 X   -0.23 LYS 153 A
+
+LYS 153 A  11.14    14 %   -0.72  321   0.00    0    0.85 ASP 170 A    0.00 XXX   0 X    0.02 GLU 169 A
+LYS 153 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.49 ASP 170 A
+
+LYS1015 A  10.74     0 %   -0.28  231   0.00    0    0.37 GLU1018 A    0.00 XXX   0 X    0.01 ASP1012 A
+LYS1015 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.13 GLU1092 A
+LYS1015 A                                            0.00 XXX   0 X    0.00 XXX   0 X   -0.10 ARG1098 A
+LYS1015 A                                            0.00 XXX   0 X    0.00 XXX   0 X   -0.27 LYS1095 A
+LYS1015 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.38 GLU1018 A
+
+LYS1019 A  10.41     0 %   -0.09  128   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.11 GLU1018 A
+LYS1019 A                                            0.00 XXX   0 X    0.00 XXX   0 X   -0.10 LYS1015 A
+
+LYS1027 A  10.30     0 %   -0.28  219   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.08 ASP1028 A
+
+LYS1032 A  10.42     0 %   -0.15  226   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.08 ASP1028 A
+
+LYS1042 A   9.93     0 %   -0.61  211   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X   -0.05 ARG1034 A
+LYS1042 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.07 ASP1039 A
+LYS1042 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.02 ASP1066 A
+
+LYS1059 A  10.46     0 %   -0.04   65   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.00 XXX   0 X
+
+LYS1077 A  10.74     0 %   -0.11  134   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.02 ASP1074 A
+LYS1077 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.33 GLU1081 A
+
+LYS1083 A  11.16     0 %   -0.21  138   0.00    0    0.32 GLU1081 A    0.00 XXX   0 X    0.23 GLU1086 A
+LYS1083 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.32 GLU1081 A
+
+LYS1085 A  10.41     0 %   -0.10  173   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.01 ASP1021 A
+
+LYS1095 A  11.69    16 %   -1.06  327   0.00    0    0.85 GLU1018 A    0.00 XXX   0 X   -0.23 ARG1098 A
+LYS1095 A                                            0.80 GLU1092 A    0.00 XXX   0 X    0.41 GLU1018 A
+LYS1095 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.42 GLU1092 A
+
+LYS1104 A  10.39     0 %   -0.20  202   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.06 ASP1060 A
+LYS1104 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.05 GLU 219 A
+LYS1104 A                                            0.00 XXX   0 X    0.00 XXX   0 X   -0.09 ARG 220 A
+LYS1104 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.07 TYR1101 A
+
+LYS 227 A  10.25     0 %   -0.19  213   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X   -0.06 ARG 293 A
+
+LYS 233 A  10.03     2 %   -0.43  286   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X   -0.04 ARG 291 A
+
+LYS 301 A  10.33     0 %   -0.26  240   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.09 GLU 294 A
+
+ARG 102 A  13.39    78 %   -1.81  501   0.00    0    0.44 TYR 112 A    0.00 XXX   0 X    0.57 TYR 112 A
+ARG 102 A                                            0.53 ASP 101 A    0.00 XXX   0 X    0.06 TYR 197 A
+ARG 102 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.29 GLU 228 A
+ARG 102 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.82 ASP 101 A
+
+ARG 111 A  12.43     0 %   -0.07  116   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.00 XXX   0 X
+
+ARG 120 A  12.28     0 %   -0.22  166   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.00 XXX   0 X
+
+ARG 199 A  12.43     0 %   -0.22  223   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.15 TYR 103 A
+
+ARG 205 A  12.30     0 %   -0.20  197   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.00 XXX   0 X
+
+ARG 206 A  12.60     0 %   -0.12  195   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.01 TYR 103 A
+ARG 206 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.21 ASP1002 A
+
+ARG1034 A  13.36     0 %   -0.30  252   0.00    0    0.77 ASP1073 A    0.00 XXX   0 X    0.38 ASP1073 A
+
+ARG1062 A  12.42     0 %   -0.11  166   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.03 ASP1066 A
+
+ARG1098 A  11.76    24 %   -0.85  348   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.05 GLU1018 A
+ARG1098 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.06 GLU1092 A
+
+ARG 220 A  12.36     0 %   -0.33  207   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.09 ASP1060 A
+ARG 220 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.06 TYR1105 A
+ARG 220 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.04 GLU 219 A
+
+ARG 222 A  12.52     0 %   -0.19  224   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.19 GLU1004 A
+ARG 222 A                                            0.00 XXX   0 X    0.00 XXX   0 X    0.02 GLU 219 A
+
+ARG 291 A  11.92     5 %   -0.58  294   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.00 XXX   0 X
+
+ARG 293 A  12.38     0 %   -0.13  219   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.01 GLU 294 A
+
+ARG 296 A  11.75     0 %   -0.40  261   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.01 TYR 290 A
+ARG 296 A                                            0.00 XXX   0 X    0.00 XXX   0 X   -0.19 ARG 293 A
+ARG 296 A                                            0.00 XXX   0 X    0.00 XXX   0 X   -0.17 ARG 300 A
+
+ARG 300 A  12.02     0 %   -0.30  197   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X   -0.01 ARG 293 A
+ARG 300 A                                            0.00 XXX   0 X    0.00 XXX   0 X   -0.18 ARG 304 A
+
+ARG 304 A  12.29     0 %   -0.21  127   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.00 XXX   0 X
+
+N+    0 A   7.87     0 %   -0.13   86   0.00    0    0.00 XXX   0 X    0.00 XXX   0 X    0.00 XXX   0 X
+
+Coupled residues (marked *) were detected.Please rerun PropKa with the --display-coupled-residues 
+or -d option for detailed information.
+
+INFO:pKa summary:
+--------------------------------------------------------------------------------------------------------
+SUMMARY OF THIS PREDICTION
+       Group      pKa  model-pKa   ligand atom-type
+   ASP  52 A     7.14       3.80                      
+   ASP 101 A     3.64       3.80                      
+   ASP 170 A     3.76       3.80                      
+   ASP1002 A     3.97       3.80                      
+   ASP1005 A     4.16       3.80                      
+   ASP1012 A     4.13       3.80                      
+   ASP1021 A     3.98       3.80                      
+   ASP1028 A     3.88       3.80                      
+   ASP1039 A     3.90       3.80                      
+   ASP1060 A     3.77       3.80                      
+   ASP1066 A     3.88       3.80                      
+   ASP1073 A     3.24       3.80                      
+   ASP1074 A     4.27       3.80                      
+   ASP 261 A     3.92       3.80                      
+   GLU  13 A     4.28       4.50                      
+   GLU 151 A     4.72       4.50                      
+   GLU 161 A     4.48       4.50                      
+   GLU 169 A     4.85       4.50                      
+   GLU1004 A     4.70       4.50                      
+   GLU1008 A     5.37       4.50                      
+   GLU1018 A     2.07       4.50                      
+   GLU1081 A     3.88       4.50                      
+   GLU1086 A     4.53       4.50                      
+   GLU1092 A     4.74       4.50                      
+   GLU 219 A     4.06       4.50                      
+   GLU 228 A     6.02       4.50                      
+   GLU 294 A     3.54       4.50                      
+   C-  305 A     3.41       3.20                      
+   HIS  75 A     6.18       6.50                      
+   HIS 155 A     6.59       6.50                      
+   HIS1063 A     6.35       6.50                      
+   HIS 230 A     6.22       6.50                      
+   HIS 250 A     3.64       6.50                      
+   HIS 264 A     8.04       6.50                      
+   HIS 278 A     6.54       6.50                      
+   CYS  28 A    10.74       9.00                      
+   CYS  71 A    99.99       9.00                      
+   CYS  74 A    99.99       9.00                      
+   CYS  77 A    99.99       9.00                      
+   CYS  82 A    11.92       9.00                      
+   CYS 128 A    10.45       9.00                      
+   CYS 146 A    99.99       9.00                      
+   CYS 159 A    99.99       9.00                      
+   CYS 166 A    99.99       9.00                      
+   CYS 185 A    10.92       9.00                      
+   CYS 245 A    10.47       9.00                      
+   CYS 254 A    10.44       9.00                      
+   CYS 259 A    99.99       9.00                      
+   CYS 262 A    99.99       9.00                      
+   TYR   9 A    14.91      10.00                      
+   TYR  43 A    10.46      10.00                      
+   TYR 103 A    10.12      10.00                      
+   TYR 112 A    11.74      10.00                      
+   TYR 176 A    13.83      10.00                      
+   TYR 179 A    10.41      10.00                      
+   TYR 197 A    12.80      10.00                      
+   TYR1101 A    10.36      10.00                      
+   TYR1105 A    11.94      10.00                      
+   TYR 271 A    10.78      10.00                      
+   TYR 288 A    13.40      10.00                      
+   TYR 290 A    10.09      10.00                      
+   LYS 150 A    10.39      10.50                      
+   LYS 153 A    11.14      10.50                      
+   LYS1015 A    10.74      10.50                      
+   LYS1019 A    10.41      10.50                      
+   LYS1027 A    10.30      10.50                      
+   LYS1032 A    10.42      10.50                      
+   LYS1042 A     9.93      10.50                      
+   LYS1059 A    10.46      10.50                      
+   LYS1077 A    10.74      10.50                      
+   LYS1083 A    11.16      10.50                      
+   LYS1085 A    10.41      10.50                      
+   LYS1095 A    11.69      10.50                      
+   LYS1104 A    10.39      10.50                      
+   LYS 227 A    10.25      10.50                      
+   LYS 233 A    10.03      10.50                      
+   LYS 301 A    10.33      10.50                      
+   ARG 102 A    13.39      12.50                      
+   ARG 111 A    12.43      12.50                      
+   ARG 120 A    12.28      12.50                      
+   ARG 199 A    12.43      12.50                      
+   ARG 205 A    12.30      12.50                      
+   ARG 206 A    12.60      12.50                      
+   ARG1034 A    13.36      12.50                      
+   ARG1062 A    12.42      12.50                      
+   ARG1098 A    11.76      12.50                      
+   ARG 220 A    12.36      12.50                      
+   ARG 222 A    12.52      12.50                      
+   ARG 291 A    11.92      12.50                      
+   ARG 293 A    12.38      12.50                      
+   ARG 296 A    11.75      12.50                      
+   ARG 300 A    12.02      12.50                      
+   ARG 304 A    12.29      12.50                      
+   N+    0 A     7.87       8.00                      
+
+INFO:PROPKA information:
+--------------------------------------------------------------------------------------------------------
+Free energy of   folding (kcal/mol) as a function of pH (using neutral reference)
+  0.00     16.66
+  1.00     16.62
+  2.00     16.30
+  3.00     15.30
+  4.00     14.19
+  5.00     14.69
+  6.00     16.03
+  7.00     17.11
+  8.00     18.48
+  9.00     21.24
+ 10.00     29.35
+ 11.00     41.43
+ 12.00     50.25
+ 13.00     54.92
+ 14.00     58.38
+
+The pH of optimum stability is  4.3 for which the free energy is   14.1 kcal/mol at 298K
+Could not determine pH values where the free energy is within 80 % of minimum
+Could not determine the pH-range where the free energy is negative
+
+
+Protein charge of folded and unfolded state as a function of pH
+    pH  unfolded  folded
+  0.00     40.00   39.99
+  0.10     40.00   39.99
+  0.20     39.99   39.98
+  0.30     39.99   39.98
+  0.40     39.99   39.97
+  0.50     39.99   39.96
+  0.60     39.99   39.95
+  0.70     39.98   39.94
+  0.80     39.98   39.93
+  0.90     39.97   39.91
+  1.00     39.97   39.89
+  1.10     39.96   39.86
+  1.20     39.95   39.83
+  1.30     39.94   39.79
+  1.40     39.92   39.74
+  1.50     39.90   39.68
+  1.60     39.87   39.62
+  1.70     39.84   39.54
+  1.80     39.80   39.44
+  1.90     39.75   39.34
+  2.00     39.68   39.21
+  2.10     39.60   39.07
+  2.20     39.50   38.91
+  2.30     39.38   38.73
+  2.40     39.22   38.52
+  2.50     39.04   38.28
+  2.60     38.81   38.00
+  2.70     38.53   37.68
+  2.80     38.19   37.30
+  2.90     37.78   36.87
+  3.00     37.30   36.36
+  3.10     36.73   35.78
+  3.20     36.07   35.11
+  3.30     35.30   34.36
+  3.40     34.44   33.51
+  3.50     33.47   32.59
+  3.60     32.41   31.58
+  3.70     31.25   30.50
+  3.80     30.02   29.36
+  3.90     28.74   28.19
+  4.00     27.41   26.98
+  4.10     26.06   25.78
+  4.20     24.70   24.58
+  4.30     23.36   23.41
+  4.40     22.06   22.29
+  4.50     20.81   21.21
+  4.60     19.62   20.19
+  4.70     18.52   19.24
+  4.80     17.50   18.36
+  4.90     16.58   17.54
+  5.00     15.75   16.80
+  5.10     15.02   16.11
+  5.20     14.37   15.48
+  5.30     13.80   14.89
+  5.40     13.28   14.35
+  5.50     12.82   13.84
+  5.60     12.39   13.36
+  5.70     11.98   12.90
+  5.80     11.59   12.44
+  5.90     11.19   11.99
+  6.00     10.79   11.54
+  6.10     10.37   11.10
+  6.20      9.95   10.65
+  6.30      9.50   10.22
+  6.40      9.05    9.78
+  6.50      8.60    9.36
+  6.60      8.15    8.96
+  6.70      7.72    8.57
+  6.80      7.31    8.20
+  6.90      6.92    7.85
+  7.00      6.56    7.53
+  7.10      6.24    7.22
+  7.20      5.94    6.94
+  7.30      5.66    6.67
+  7.40      5.41    6.41
+  7.50      5.17    6.17
+  7.60      4.95    5.94
+  7.70      4.72    5.72
+  7.80      4.49    5.51
+  7.90      4.26    5.30
+  8.00      4.00    5.10
+  8.10      3.73    4.91
+  8.20      3.44    4.73
+  8.30      3.11    4.55
+  8.40      2.75    4.37
+  8.50      2.34    4.20
+  8.60      1.89    4.02
+  8.70      1.38    3.83
+  8.80      0.82    3.63
+  8.90      0.20    3.41
+  9.00     -0.47    3.16
+  9.10     -1.21    2.88
+  9.20     -2.02    2.54
+  9.30     -2.89    2.14
+  9.40     -3.84    1.67
+  9.50     -4.87    1.12
+  9.60     -5.99    0.48
+  9.70     -7.20   -0.27
+  9.80     -8.50   -1.13
+  9.90     -9.88   -2.11
+ 10.00    -11.34   -3.20
+ 10.10    -12.86   -4.39
+ 10.20    -14.42   -5.68
+ 10.30    -15.99   -7.04
+ 10.40    -17.56   -8.47
+ 10.50    -19.09   -9.92
+ 10.60    -20.56  -11.38
+ 10.70    -21.94  -12.84
+ 10.80    -23.23  -14.26
+ 10.90    -24.42  -15.65
+ 11.00    -25.49  -16.98
+ 11.10    -26.47  -18.28
+ 11.20    -27.35  -19.52
+ 11.30    -28.16  -20.74
+ 11.40    -28.90  -21.92
+ 11.50    -29.61  -23.09
+ 11.60    -30.30  -24.25
+ 11.70    -30.99  -25.41
+ 11.80    -31.70  -26.57
+ 11.90    -32.44  -27.74
+ 12.00    -33.23  -28.91
+ 12.10    -34.06  -30.07
+ 12.20    -34.95  -31.23
+ 12.30    -35.88  -32.36
+ 12.40    -36.83  -33.46
+ 12.50    -37.80  -34.52
+ 12.60    -38.76  -35.53
+ 12.70    -39.68  -36.48
+ 12.80    -40.56  -37.37
+ 12.90    -41.36  -38.20
+ 13.00    -42.09  -38.97
+ 13.10    -42.74  -39.67
+ 13.20    -43.30  -40.31
+ 13.30    -43.78  -40.90
+ 13.40    -44.19  -41.44
+ 13.50    -44.53  -41.93
+ 13.60    -44.81  -42.37
+ 13.70    -45.04  -42.77
+ 13.80    -45.23  -43.13
+ 13.90    -45.38  -43.46
+ 14.00    -45.50  -43.74
+The pI is  9.67 (folded) and  8.93 (unfolded)
+
+--------------------------------------------------------------------------------------------------------
+INFO:Applying pKa values at a pH of 5.00:
+INFO:Adding hydrogens to biomolecule.
+INFO:Debumping biomolecule (again).
+WARNING:WARNING: Unable to debump PHE A 1061
+INFO:Optimizing hydrogen bonds
+INFO:Applying force field to biomolecule states.
+INFO:Applying custom naming scheme (amber).
+INFO:Regenerating headers.
+INFO:Regenerating PDB lines.
+WARNING:Ignoring 540 header lines in output.
+WARNING:Ignoring 540 header lines in output.

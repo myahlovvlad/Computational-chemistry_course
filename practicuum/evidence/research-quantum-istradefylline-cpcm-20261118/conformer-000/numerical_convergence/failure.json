@@ -1,0 +1,7 @@
+{
+  "status": "FAIL",
+  "error": "Quadrature convergence not demonstrated at requested tolerance",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/miakhlov/course-production-verified-20261118/scripts/run_research_quantum.py\", line 231, in stage\n    if max(deltas)>threshold:raise RuntimeError('Quadrature convergence not demonstrated at requested tolerance')\n                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Quadrature convergence not demonstrated at requested tolerance\n",
+  "seconds": 3243.4763617029967,
+  "no_substitute_result": true
+}

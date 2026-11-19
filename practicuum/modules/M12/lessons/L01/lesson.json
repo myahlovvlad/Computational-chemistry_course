@@ -1,0 +1,23 @@
+{
+  "inputs": [
+    "practicuum/shared/data/target_qsar/a2a_curated.csv",
+    "practicuum/shared/data/target_qsar/a2a_dataset.json",
+    "practicuum/shared/data/target_qsar/a2a_result.json",
+    "practicuum/shared/data/target_qsar/a2a_split.json",
+    "practicuum/shared/data/target_qsar/a2a_heldout_predictions.csv",
+    "practicuum/shared/data/target_qsar/a2a_audit.json",
+    "practicuum/shared/data/target_qsar/hmgcr_curated.csv",
+    "practicuum/shared/data/target_qsar/hmgcr_dataset.json",
+    "practicuum/shared/data/target_qsar/hmgcr_result.json",
+    "practicuum/shared/data/target_qsar/manifest.json"
+  ],
+  "case_steps": [
+    "practicuum/modules/M12/lessons/L01/steps/01_case.md"
+  ],
+  "lab_steps": [
+    "practicuum/modules/M12/lessons/L01/steps/02_lab.md"
+  ],
+  "instructor": "practicuum/modules/M12/lessons/L01/instructor/reference.py",
+  "assessment": "practicuum/modules/M12/lessons/L01/instructor/rubric.md",
+  "development_scope": "Actual A2A nested-scaffold QSAR and heldout audit; HMGCR insufficient-data decision; prospective validation NOT_RUN"
+}

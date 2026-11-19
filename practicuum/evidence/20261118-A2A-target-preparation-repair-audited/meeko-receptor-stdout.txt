@@ -1,0 +1,11 @@
+Template padding will be used.
+[32m read charges will be read from template file 
+ [0m
+Reading a PQR file. The following options or configurations will be ignored: 
+  - default_altloc
+  - wanted_altloc
+Reading structures and partial charges from PQR. 
+
+Files written:
+ /home/miakhlov/course-production-verified-20261118/practicuum/evidence/20261118-A2A-target-preparation-repair-audited/receptor.json <-- parameterized receptor
+/home/miakhlov/course-production-verified-20261118/practicuum/evidence/20261118-A2A-target-preparation-repair-audited/receptor.pdbqt <-- static (i.e., rigid) receptor input file

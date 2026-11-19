@@ -1,0 +1,99 @@
+{
+  "M01-L02": {
+    "n": 226
+  },
+  "M02-L01": {
+    "same_object": true
+  },
+  "M02-L02": {
+    "unit_error_ratio": 1000.0
+  },
+  "M04-L01": {
+    "mass_difference": 18.015
+  },
+  "M04-L02": {
+    "neutral_at_pKa": 0.5,
+    "S_at_pKa": 2e-05,
+    "S_at_5_5": 0.00011
+  },
+  "M05-L01": {
+    "manual_T": 0.4
+  },
+  "M05-L02": {
+    "n": 2
+  },
+  "M06-L01": {
+    "generated": 6
+  },
+  "M06-L02": {
+    "ratio": 0.184924697649489
+  },
+  "M07-L01": {
+    "energy_hartree": -1.1167593,
+    "converged": true
+  },
+  "M07-L02": {
+    "geometry_hash_matches": true,
+    "charge": 0,
+    "spin": 0,
+    "transitions": 6
+  },
+  "M08-L01": {
+    "relative_error": 0.0
+  },
+  "M08-L02": {
+    "ideal_A": 2.0
+  },
+  "M09-L01": {
+    "reported_rate_ratio_pH4_5": 10.0,
+    "lactone_loss_half_relaxation_h": 231.04906018664843,
+    "acid_formation_half_relaxation_h": 23.104906018664845
+  },
+  "M09-L02": {
+    "one_observable_rank": 1,
+    "with_equilibrium_rank": 2,
+    "slow_schedule_max_h": 924.1962407465937,
+    "fast_schedule_max_h": 92.41962407465938
+  },
+  "M10-L01": {
+    "Rs": 1.4285714285714286
+  },
+  "M10-L02": {
+    "rows": 20,
+    "columns": 10,
+    "rank": 10
+  },
+  "M11-L01": {
+    "pIC50_6nM": 8.221848749616356
+  },
+  "M11-L02": {
+    "shift_RMSD_A": 1.0
+  },
+  "M12-L01": {
+    "curated_HMGCR_n": 57,
+    "HMGCR_scaffolds": 28,
+    "training_eligible": false
+  },
+  "M12-L02": {
+    "reference_n_after_query_scaffold_exclusion": 55,
+    "acid_nearest_reference_Tanimoto": 0.4722222222222222,
+    "lactone_nearest_reference_Tanimoto": 0.5694444444444444
+  },
+  "M13-L01": {
+    "stage1_yield": 0.96,
+    "overall_yield_lower_bound": 0.78,
+    "stage2_implied_lower_bound": 0.8125
+  },
+  "M13-L02": {
+    "isopropanol_L_per_kg_input": 10.0,
+    "water_L_per_kg_input": 2.5
+  },
+  "M14-L01": {
+    "valid_DAG": true,
+    "cycle_detected": true
+  },
+  "M14-L02": {
+    "n": 16,
+    "double_tolerance_n": 4
+  }
+}

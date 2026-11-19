@@ -1,0 +1,258 @@
+{
+  "status": "PASS",
+  "scope": "actual consistency/identifiability analysis of published atorvastatin parameters",
+  "source": {
+    "authors": "Abo Horan, Loftsson, Sigurdsson (2025)",
+    "doi": "10.3390/pharmaceutics17070808",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12300459/",
+    "licence": "CC BY 4.0",
+    "source_sha256": "84ffbbd27fdaf85a4b75c480672f5538900ba73dfe21093f49d650fbf1a794ae",
+    "conditions": "0.15 M universal buffer; 0% CD for Table 1; 23 +/-1 C; atorvastatin measurements lack reported replicate uncertainty in Table 1",
+    "distinct_scope": "aqueous ocular formulation study; not hepatic exposure or pharmacokinetics"
+  },
+  "kinetic_parameters": [
+    {
+      "initial_form": "Ring-closed",
+      "parameter_as_published": "kf,lactone loss",
+      "pH": 2.0,
+      "reported_rate_h_inverse": 0.139,
+      "reported_rate_text": "0.139",
+      "uncertainty": "not reported for atorvastatin in this table",
+      "apparent_half_relaxation_hours": 4.986670363740613
+    },
+    {
+      "initial_form": "Ring-closed",
+      "parameter_as_published": "kf,lactone loss",
+      "pH": 4.5,
+      "reported_rate_h_inverse": 0.003,
+      "reported_rate_text": "0.003",
+      "uncertainty": "not reported for atorvastatin in this table",
+      "apparent_half_relaxation_hours": 231.04906018664843
+    },
+    {
+      "initial_form": "Ring-closed",
+      "parameter_as_published": "kf,lactone loss",
+      "pH": 7.0,
+      "reported_rate_h_inverse": 0.014,
+      "reported_rate_text": "0.014",
+      "uncertainty": "not reported for atorvastatin in this table",
+      "apparent_half_relaxation_hours": 49.510512897138945
+    },
+    {
+      "initial_form": "Ring-closed",
+      "parameter_as_published": "kf,lactone loss",
+      "pH": 9.5,
+      "reported_rate_h_inverse": null,
+      "reported_rate_text": "-",
+      "uncertainty": "not reported for atorvastatin in this table",
+      "apparent_half_relaxation_hours": null
+    },
+    {
+      "initial_form": "Ring-closed",
+      "parameter_as_published": "kf,Acid formation",
+      "pH": 2.0,
+      "reported_rate_h_inverse": 0.149,
+      "reported_rate_text": "0.149",
+      "uncertainty": "not reported for atorvastatin in this table",
+      "apparent_half_relaxation_hours": 4.651994500402318
+    },
+    {
+      "initial_form": "Ring-closed",
+      "parameter_as_published": "kf,Acid formation",
+      "pH": 4.5,
+      "reported_rate_h_inverse": 0.03,
+      "reported_rate_text": "0.030",
+      "uncertainty": "not reported for atorvastatin in this table",
+      "apparent_half_relaxation_hours": 23.104906018664845
+    },
+    {
+      "initial_form": "Ring-closed",
+      "parameter_as_published": "kf,Acid formation",
+      "pH": 7.0,
+      "reported_rate_h_inverse": 0.017,
+      "reported_rate_text": "0.017",
+      "uncertainty": "not reported for atorvastatin in this table",
+      "apparent_half_relaxation_hours": 40.77336356234972
+    },
+    {
+      "initial_form": "Ring-closed",
+      "parameter_as_published": "kf,Acid formation",
+      "pH": 9.5,
+      "reported_rate_h_inverse": null,
+      "reported_rate_text": "-",
+      "uncertainty": "not reported for atorvastatin in this table",
+      "apparent_half_relaxation_hours": null
+    },
+    {
+      "initial_form": "Ring-opened",
+      "parameter_as_published": "kr,Acid loss",
+      "pH": 2.0,
+      "reported_rate_h_inverse": 0.119,
+      "reported_rate_text": "0.119",
+      "uncertainty": "not reported for atorvastatin in this table",
+      "apparent_half_relaxation_hours": 5.8247662231928174
+    },
+    {
+      "initial_form": "Ring-opened",
+      "parameter_as_published": "kr,Acid loss",
+      "pH": 4.5,
+      "reported_rate_h_inverse": 0.002,
+      "reported_rate_text": "0.002",
+      "uncertainty": "not reported for atorvastatin in this table",
+      "apparent_half_relaxation_hours": 346.5735902799726
+    },
+    {
+      "initial_form": "Ring-opened",
+      "parameter_as_published": "kr,Acid loss",
+      "pH": 7.0,
+      "reported_rate_h_inverse": null,
+      "reported_rate_text": "-",
+      "uncertainty": "not reported for atorvastatin in this table",
+      "apparent_half_relaxation_hours": null
+    },
+    {
+      "initial_form": "Ring-opened",
+      "parameter_as_published": "kr,Acid loss",
+      "pH": 9.5,
+      "reported_rate_h_inverse": null,
+      "reported_rate_text": "-",
+      "uncertainty": "not reported for atorvastatin in this table",
+      "apparent_half_relaxation_hours": null
+    },
+    {
+      "initial_form": "Ring-opened",
+      "parameter_as_published": "kr,Lactone formation",
+      "pH": 2.0,
+      "reported_rate_h_inverse": 0.133,
+      "reported_rate_text": "0.133",
+      "uncertainty": "not reported for atorvastatin in this table",
+      "apparent_half_relaxation_hours": 5.2116329365409415
+    },
+    {
+      "initial_form": "Ring-opened",
+      "parameter_as_published": "kr,Lactone formation",
+      "pH": 4.5,
+      "reported_rate_h_inverse": 0.004,
+      "reported_rate_text": "0.004",
+      "uncertainty": "not reported for atorvastatin in this table",
+      "apparent_half_relaxation_hours": 173.2867951399863
+    },
+    {
+      "initial_form": "Ring-opened",
+      "parameter_as_published": "kr,Lactone formation",
+      "pH": 7.0,
+      "reported_rate_h_inverse": null,
+      "reported_rate_text": "-",
+      "uncertainty": "not reported for atorvastatin in this table",
+      "apparent_half_relaxation_hours": null
+    },
+    {
+      "initial_form": "Ring-opened",
+      "parameter_as_published": "kr,Lactone formation",
+      "pH": 9.5,
+      "reported_rate_h_inverse": null,
+      "reported_rate_text": "-",
+      "uncertainty": "not reported for atorvastatin in this table",
+      "apparent_half_relaxation_hours": null
+    }
+  ],
+  "paired_rate_diagnostics": [
+    {
+      "initial_form": "Ring-closed",
+      "pH": 2.0,
+      "reported_parameter_1": 0.139,
+      "reported_parameter_2": 0.149,
+      "ratio_2_to_1": 1.0719424460431652,
+      "relative_discrepancy_to_mean": 0.06944444444444431,
+      "assessment": "shared relaxation constant requires scrutiny; no raw data/uncertainties for a statistical rejection"
+    },
+    {
+      "initial_form": "Ring-closed",
+      "pH": 4.5,
+      "reported_parameter_1": 0.003,
+      "reported_parameter_2": 0.03,
+      "ratio_2_to_1": 10.0,
+      "relative_discrepancy_to_mean": 1.6363636363636362,
+      "assessment": "shared relaxation constant requires scrutiny; no raw data/uncertainties for a statistical rejection"
+    },
+    {
+      "initial_form": "Ring-closed",
+      "pH": 7.0,
+      "reported_parameter_1": 0.014,
+      "reported_parameter_2": 0.017,
+      "ratio_2_to_1": 1.2142857142857144,
+      "relative_discrepancy_to_mean": 0.19354838709677424,
+      "assessment": "shared relaxation constant requires scrutiny; no raw data/uncertainties for a statistical rejection"
+    },
+    {
+      "initial_form": "Ring-opened",
+      "pH": 2.0,
+      "reported_parameter_1": 0.119,
+      "reported_parameter_2": 0.133,
+      "ratio_2_to_1": 1.1176470588235294,
+      "relative_discrepancy_to_mean": 0.1111111111111112,
+      "assessment": "shared relaxation constant requires scrutiny; no raw data/uncertainties for a statistical rejection"
+    },
+    {
+      "initial_form": "Ring-opened",
+      "pH": 4.5,
+      "reported_parameter_1": 0.002,
+      "reported_parameter_2": 0.004,
+      "ratio_2_to_1": 2.0,
+      "relative_discrepancy_to_mean": 0.6666666666666666,
+      "assessment": "shared relaxation constant requires scrutiny; no raw data/uncertainties for a statistical rejection"
+    }
+  ],
+  "phase_solubility_diagnostics": [
+    {
+      "formulation": "Atorvastatin–HPβCD",
+      "pH": 6.9,
+      "S0_as_reported_mol_L": 0.00027,
+      "phase_solubility_type": "AN",
+      "K_1_1_as_reported_M_inverse": 164.0,
+      "CE_as_reported": 0.048,
+      "K_times_S0": 0.04428,
+      "CE_relative_difference": -0.07750000000000003,
+      "linear_1_to_1_implied_slope": 0.0424024208066802,
+      "applicability": "A_N curvature means linear 1:1 analysis requires independent validation",
+      "molar_basis": "paper-reported baseline at pH 6.9; do not identify automatically with intrinsic neutral-acid solubility or convert salt units silently"
+    },
+    {
+      "formulation": "Atorvastatin–γCD",
+      "pH": 6.9,
+      "S0_as_reported_mol_L": 0.00027,
+      "phase_solubility_type": "AL",
+      "K_1_1_as_reported_M_inverse": 56.3,
+      "CE_as_reported": 0.016,
+      "K_times_S0": 0.015201,
+      "CE_relative_difference": -0.049937500000000065,
+      "linear_1_to_1_implied_slope": 0.014973389506117507,
+      "applicability": "conditional linear 1:1 relation; raw slope uncertainty unavailable",
+      "molar_basis": "paper-reported baseline at pH 6.9; do not identify automatically with intrinsic neutral-acid solubility or convert salt units silently"
+    }
+  ],
+  "kinetic_identifiability": {
+    "equations": [
+      "dL/dt=-kopen*L+kclose*A",
+      "dA/dt=kopen*L-kclose*A",
+      "lambda=kopen+kclose",
+      "acid_equilibrium_fraction=kopen/lambda"
+    ],
+    "conclusion": "Published independently fitted apparent rate constants cannot automatically be assigned as microscopic forward/reverse rates",
+    "required_for_new_fit": [
+      "raw paired concentration-time observations",
+      "form-specific detector response and mass balance",
+      "replicate structure and uncertainty",
+      "baseline/plateau estimates",
+      "parameter covariance and model comparison"
+    ],
+    "new_fit_status": "NOT_RUN: numerical raw concentration-time observations are not supplied here"
+  },
+  "scientific_review": "NOT_RUN",
+  "not_inferred": [
+    "missing rate is not zero",
+    "apparent half-relaxation time is not automatically half-disappearance of a reversible species",
+    "reported baseline S0 at buffer pH is not intrinsic neutral-species solubility",
+    "published formulation parameters do not establish liver delivery"
+  ]
+}

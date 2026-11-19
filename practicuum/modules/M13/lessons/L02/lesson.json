@@ -1,0 +1,15 @@
+{
+  "inputs": [
+    "practicuum/shared/data/routes.csv",
+    "practicuum/shared/data/atorvastatin_process_source.json"
+  ],
+  "case_steps": [
+    "practicuum/modules/M13/lessons/L02/steps/01_case.md"
+  ],
+  "lab_steps": [
+    "practicuum/modules/M13/lessons/L02/steps/02_lab.md"
+  ],
+  "instructor": "practicuum/modules/M13/lessons/L02/instructor/reference.py",
+  "assessment": "practicuum/modules/M13/lessons/L02/instructor/rubric.md",
+  "development_scope": "authored computational lesson; external validation pending"
+}

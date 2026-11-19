@@ -1,0 +1,66 @@
+[
+  {
+    "pdb_id": "8RW0",
+    "compound": "istradefylline",
+    "title": "Crystal structure of the adenosine A2A receptor in complex with Istradefylline",
+    "method": [
+      "X-RAY DIFFRACTION"
+    ],
+    "resolution_A": [
+      1.94
+    ],
+    "doi": "10.1038/s41467-024-55109-w",
+    "citation_title": "Photoswitch dissociation from a G protein-coupled receptor resolved by time-resolved serial crystallography.",
+    "source_url": "https://www.rcsb.org/structure/8RW0",
+    "source_sha256": "c98ffbb6ec3d339c0420ff50b5a601d3e0c2ffcc55613b72965a9476660c98d2",
+    "kind": "experimentally derived crystallographic structural model; not a tissue exposure or efficacy measurement",
+    "nonpolymer_ids": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "pmid": 39738009
+  },
+  {
+    "pdb_id": "3RFM",
+    "compound": "caffeine",
+    "title": "Thermostabilised adenosine A2A receptor in complex with caffeine",
+    "method": [
+      "X-RAY DIFFRACTION"
+    ],
+    "resolution_A": [
+      3.598
+    ],
+    "doi": "10.1016/j.str.2011.06.014",
+    "citation_title": "Structure of the adenosine A(2A) receptor in complex with ZM241385 and the xanthines XAC and caffeine",
+    "source_url": "https://www.rcsb.org/structure/3RFM",
+    "source_sha256": "40a9018bfead8c127585ea1bdf146c11efb0237082c2c1270bade70763f10a3d",
+    "kind": "experimentally derived crystallographic structural model; not a tissue exposure or efficacy measurement",
+    "nonpolymer_ids": [
+      "2"
+    ],
+    "pmid": 21885291
+  },
+  {
+    "pdb_id": "1HWK",
+    "compound": "atorvastatin",
+    "title": "COMPLEX OF THE CATALYTIC PORTION OF HUMAN HMG-COA REDUCTASE WITH ATORVASTATIN",
+    "method": [
+      "X-RAY DIFFRACTION"
+    ],
+    "resolution_A": [
+      2.22
+    ],
+    "doi": "10.1126/science.1059344",
+    "citation_title": "Structural mechanism for statin inhibition of HMG-CoA reductase.",
+    "source_url": "https://www.rcsb.org/structure/1HWK",
+    "source_sha256": "d0a30c0a00dac8ca6487e23f11c3a361b9cc13704b8dfcbcd9b2c57f27382fc9",
+    "kind": "experimentally derived crystallographic structural model; not a tissue exposure or efficacy measurement",
+    "nonpolymer_ids": [
+      "2",
+      "3"
+    ],
+    "pmid": 11349148
+  }
+]

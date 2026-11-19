@@ -1,0 +1,7 @@
+{
+  "similarities": {
+    "atorvastatin": 0.25806451612903225,
+    "atorvastatin_lactone": 0.24358974358974358
+  },
+  "queries": 2
+}

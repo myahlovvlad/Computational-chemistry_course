@@ -1,4 +1,4 @@
-name: Course structure and pilot checks
+name: Complete course execution and package checks
 on:
   push:
   pull_request:
@@ -22,18 +22,21 @@ jobs:
       - run: python scripts/setup_environment.py --profile base --uv uv
       - run: python scripts/setup_environment.py --profile chem --uv uv
       - run: uv run --project scripts/environment --frozen --group chem python scripts/check_sources.py
-      - run: uv run --project scripts/environment --frozen --group chem python scripts/build_notebooks.py --only M01-L01 M03-L01 M03-L02
+      - run: uv run --project scripts/environment --frozen --group chem python scripts/build_notebooks.py
       - run: uv run --project scripts/environment --frozen --group chem python scripts/validate_course.py --out tmp/ci-structure.json
       - run: uv run --project scripts/environment --frozen --group chem python -m unittest discover -s practicuum/shared/tests -p test_*.py -v
-      - run: uv run --project scripts/environment --frozen --group chem python scripts/run_course.py --only M01-L01 M03-L01 M03-L02 --out tmp/ci-pilot
+      - run: uv run --project scripts/environment --frozen --group chem python scripts/run_course.py --out tmp/ci-course
+      - run: uv run --project scripts/environment --frozen --group chem python scripts/run_instructor_references.py --out tmp/ci-references
+      - run: uv run --project scripts/environment --frozen --group chem python scripts/verify_consolidation.py --git-ref HEAD
       - run: uv run --project scripts/environment --frozen --group chem python archive/legacy-20261118/course_source/modules/M01/verify_evidence.py
-      - run: uv run --project scripts/environment --frozen --group chem python parser/build.py --allow-partial --out parser/dist/ci
+      - run: uv run --project scripts/environment --frozen --group chem python parser/build.py --out parser/dist/ci
       - run: uv run --project scripts/environment --frozen --group chem python parser/validate_package.py parser/dist/ci
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: pilot-evidence-${{ matrix.os }}
+          name: full-course-evidence-${{ matrix.os }}
           path: |
-            tmp/ci-pilot/
+            tmp/ci-course/
+            tmp/ci-references/
             tmp/ci-structure.json
             parser/dist/ci/package.json

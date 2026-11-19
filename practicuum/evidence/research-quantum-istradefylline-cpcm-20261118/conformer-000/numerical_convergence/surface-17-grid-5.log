@@ -1,0 +1,528 @@
+#INFO: **** input file is /home/miakhlov/course-production-verified-20261118/scripts/run_research_quantum.py ****
+"""Real staged DFT research, strict convergence, immutable outputs and resumable stages.
+
+No surrogate values and no fallback to the educational STO-3G archive.
+Run prepare once, then selected stages or all; successful stages are reused only
+when their immutable input protocol and script hashes match the run manifest.
+"""
+from __future__ import annotations
+import argparse
+from datetime import datetime, timezone
+import hashlib
+import importlib.metadata
+import json
+import os
+from pathlib import Path
+import platform
+import shutil
+import sys
+import time
+import traceback
+
+ROOT=Path(__file__).resolve().parents[1]
+
+
+def digest(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+
+
+def dump_new(path,value):
+    path=Path(path);path.parent.mkdir(parents=True,exist_ok=True)
+    with path.open('x',encoding='utf-8') as f:
+        json.dump(value,f,ensure_ascii=False,indent=2,allow_nan=False);f.write('\n')
+
+
+def load(path):return json.loads(Path(path).read_text(encoding='utf-8'))
+
+
+def structure(name):
+    from rdkit import Chem
+    records=load(ROOT/'practicuum/shared/data/compounds.json')
+    if name=='atorvastatin_anion':
+        record=next(r for r in records if r['name']=='atorvastatin_calcium')
+        parent=Chem.MolFromSmiles(record['smiles'])
+        fragments=Chem.GetMolFrags(parent,asMols=True)
+        organic=[m for m in fragments if Chem.GetFormalCharge(m)==-1]
+        if len(organic)!=2 or Chem.MolToSmiles(organic[0])!=Chem.MolToSmiles(organic[1]):
+            raise ValueError('Unexpected calcium salt stoichiometry or anion identity')
+        molecule=organic[0]
+        record={**record,'derived_name':name,'transformation':'one of two identical organic anions from calcium salt; counterion excluded explicitly'}
+    else:
+        record=next(r for r in records if r['name']==name)
+        molecule=Chem.MolFromSmiles(record['smiles'])
+    if molecule is None or len(Chem.GetMolFrags(molecule))!=1:
+        raise ValueError('QM requires one explicitly chosen molecular form')
+    if any(a.GetAtomicNum() not in {1,6,7,8,9,15,16,17} for a in molecule.GetAtoms()):
+        raise ValueError('Element outside this organic protocol')
+    return Chem.AddHs(molecule),record
+
+
+def prepare(args,protocol):
+    import numpy as np
+    from rdkit import Chem,rdBase
+    from rdkit.Chem import AllChem,rdMolAlign
+    out=args.out.resolve();out.mkdir(parents=True,exist_ok=False)
+    molecule,record=structure(args.name)
+    p=protocol['conformers'];params=AllChem.ETKDGv3()
+    params.randomSeed=p['seed'];params.numThreads=protocol['resources']['threads']
+    ids=list(AllChem.EmbedMultipleConfs(molecule,numConfs=p['attempted'],params=params))
+    if not ids:raise RuntimeError('No conformers embedded')
+    if not AllChem.MMFFHasAllMoleculeParams(molecule):raise RuntimeError('MMFF parameters missing')
+    raw=AllChem.MMFFOptimizeMoleculeConfs(molecule,numThreads=protocol['resources']['threads'],
+        maxIters=p['max_iterations'],mmffVariant=p['forcefield'])
+    values=[{'id':int(i),'status':int(s),'energy_kcal_mol':float(e)} for i,(s,e) in zip(ids,raw)]
+    good=sorted([r for r in values if r['status']==0 and np.isfinite(r['energy_kcal_mol'])],key=lambda r:r['energy_kcal_mol'])
+    if not good:raise RuntimeError('No converged prescreen conformer')
+    heavy=[a.GetIdx() for a in molecule.GetAtoms() if a.GetAtomicNum()>1]
+    selected=[]
+    for row in good:
+        if row['energy_kcal_mol']-good[0]['energy_kcal_mol']>p['energy_window_kcal_mol']:continue
+        if any(rdMolAlign.GetBestRMS(Chem.RemoveHs(Chem.Mol(molecule)),Chem.RemoveHs(Chem.Mol(molecule)),
+                 prbId=row['id'],refId=previous['id'])<p['heavy_atom_rmsd_angstrom'] for previous in selected):continue
+        selected.append(row)
+        if len(selected)>=p['qm_candidates']:break
+    charge=Chem.GetFormalCharge(molecule);electrons=sum(a.GetAtomicNum() for a in molecule.GetAtoms())-charge
+    if electrons%2:raise ValueError('Open-shell species requires a separately justified protocol')
+    with Chem.SDWriter(str(out/'prescreen.sdf')) as writer:
+        for row in values:
+            molecule.SetProp('MMFF_status',str(row['status']));molecule.SetProp('MMFF_energy_kcal_mol',str(row['energy_kcal_mol']))
+            writer.write(molecule,confId=row['id'])
+    for number,row in enumerate(selected):
+        folder=out/f'conformer-{number:03}';folder.mkdir()
+        conf=molecule.GetConformer(row['id'])
+        atoms=[(a.GetSymbol(),list(conf.GetAtomPosition(a.GetIdx()))) for a in molecule.GetAtoms()]
+        dump_new(folder/'initial_geometry.json',atoms)
+        dump_new(folder/'selection.json',row)
+    manifest={'schema_version':1,'created_utc':datetime.now(timezone.utc).isoformat(),'name':args.name,
+       'protocol':protocol,'protocol_sha256':digest(args.protocol),'script_sha256':digest(__file__),
+       'structure_source_sha256':digest(ROOT/'practicuum/shared/data/compounds.json'),
+       'record':record,'charge':charge,'spin_2S':0,'electrons':electrons,'atom_count':molecule.GetNumAtoms(),
+       'prescreen':values,'selected':selected,'python':sys.version,'platform':platform.platform(),
+       'versions':{n:importlib.metadata.version(n) for n in ['pyscf','geometric','pyscf-dispersion','rdkit','numpy','scipy']},
+       'scope':'actual computed molecular states, method validation pending','scientific_review':'NOT_RUN'}
+    if args.guess_checkpoint:
+        manifest['initial_guess_checkpoint_sha256']=digest(args.guess_checkpoint)
+        manifest['initial_guess_scope']='starting density only; all energies recomputed at the selected model'
+        shutil.copyfile(args.guess_checkpoint,out/'initial_guess.h5')
+    dump_new(out/'manifest.json',manifest)
+    (out/'protocol.json').write_bytes(args.protocol.read_bytes())
+    (out/'runner-source.py').write_bytes(Path(__file__).read_bytes())
+    print('Prepared',args.name,'embedded',len(ids),'converged',len(good),'QM candidates',len(selected),flush=True)
+    return manifest
+
+
+def build_mf(atoms,settings,manifest,log,checkpoint):
+    from pyscf import gto,dft,lib
+    resources=manifest['protocol']['resources'];lib.num_threads(resources['threads'])
+    system=gto.M(atom=atoms,basis=settings['basis'],unit='Angstrom',charge=manifest['charge'],
+       spin=manifest['spin_2S'],max_memory=resources['memory_MB'],verbose=4,output=str(log))
+    if system.nelectron!=manifest['electrons']:raise ValueError('Electron count changed')
+    mf=dft.RKS(system).density_fit();mf.xc=settings['functional']
+    if settings.get('dispersion'):mf.disp=settings['dispersion']
+    if settings['solvation_model']=='SMD':
+        mf=mf.SMD();mf.with_solvent.solvent=settings['solvent']
+    elif settings['solvation_model']=='C-PCM':
+        mf=mf.PCM(settings['solvent']);mf.with_solvent.method='C-PCM'
+    else:raise ValueError('Unvalidated solvent-model selection')
+    # Memory controls change block sizes, never the basis or electronic model.
+    mf.max_memory=resources['memory_MB'];mf.with_solvent.max_memory=resources['memory_MB']
+    mf.with_solvent.lebedev_order=protocol_order=manifest['protocol'].get('surface_lebedev_order',41)
+    mf.grids.level=settings['grid_level'];mf.conv_tol=settings['scf_tolerance_hartree']
+    mf.conv_tol_grad=settings['density_tolerance'];mf.max_cycle=settings['max_scf_cycles']
+    mf.chkfile=str(checkpoint)
+    return mf
+
+
+def solve(mf,dm0=None):
+    import numpy as np
+    energy=mf.kernel(dm0=dm0)
+    if not mf.converged or not np.isfinite(energy):raise RuntimeError('SCF not converged; no fallback accepted')
+    # N is evaluated in the nonorthogonal AO metric, never by tracing D alone.
+    trace=float(np.einsum('ij,ji',mf.make_rdm1(),mf.get_ovlp()))
+    if abs(trace-mf.mol.nelectron)>1e-6:raise RuntimeError('Density electron-count regression')
+    return float(energy)
+
+
+def geometry_json(system):
+    return [(system.atom_symbol(i),system.atom_coord(i,unit='Angstrom').tolist()) for i in range(system.natm)]
+
+
+def stage(folder,stage_name,manifest):
+    import numpy as np
+    protocol=manifest['protocol'];target=folder/stage_name
+    if (target/'result.json').exists():
+        result=load(target/'result.json')
+        if result['status']!='PASS':raise RuntimeError('Existing stage not accepted')
+        print(folder.name,stage_name,'already PASS',flush=True);return
+    if target.exists():raise FileExistsError('Incomplete stage retained. Inspect it and choose a new attempt/run: '+str(target))
+    target.mkdir()
+    started=time.perf_counter()
+    dump_new(target/'started.json',{'utc':datetime.now(timezone.utc).isoformat(),'stage':stage_name,
+      'script_sha256':manifest['script_sha256'],'protocol_sha256':manifest['protocol_sha256']})
+    try:
+        if stage_name=='optimize':
+            from pyscf.geomopt.geometric_solver import kernel
+            atoms=load(folder/'initial_geometry.json');settings=protocol['geometry']
+            mf=build_mf(atoms,settings,manifest,target/'pyscf.log',target/'checkpoint.h5')
+            guess=folder.parent/'initial_guess.h5'
+            if guess.is_file():
+                # An initial density is not reused as a new method's result.
+                solve(mf,dm0=mf.init_guess_by_chkfile(str(guess),project=True))
+            trajectory=[]
+            def callback(env):
+                g=np.asarray(env['gradients']);entry={'step':len(trajectory)+1,'energy_hartree':float(env['energy']),
+                    'gradient_rms':float(np.sqrt(np.mean(g*g))),'gradient_max':float(abs(g).max())}
+                trajectory.append(entry);dump_new(target/f"step-{len(trajectory):04}.json",{**entry,'geometry':geometry_json(env['mol'])})
+                print(manifest['name'],folder.name,'DFT optimization',entry,flush=True)
+            converged,system=kernel(mf,maxsteps=settings['max_geometry_steps'],callback=callback,
+                convergence_energy=settings['energy_change_hartree'],convergence_grms=settings['gradient_rms_hartree_bohr'],
+                convergence_gmax=settings['gradient_max_hartree_bohr'],convergence_drms=settings['step_rms_angstrom'],
+                convergence_dmax=settings['step_max_angstrom'])
+            if not converged:raise RuntimeError('Geometry optimization not converged')
+            atoms=geometry_json(system);dump_new(target/'geometry.json',atoms)
+            check=build_mf(atoms,settings,manifest,target/'final-scf.log',target/'final-checkpoint.h5')
+            energy=solve(check);gradient=check.nuc_grad_method().kernel()
+            # geomeTRIC uses rms/max over vector magnitudes of per-atom gradients.
+            norms=np.linalg.norm(gradient,axis=1);grms=float(np.sqrt(np.mean(norms**2)));gmax=float(norms.max())
+            if grms>settings['gradient_rms_hartree_bohr'] or gmax>settings['gradient_max_hartree_bohr']:
+                raise RuntimeError('Independent final gradient check failed')
+            result={'energy_hartree':energy,'geometry_sha256':digest(target/'geometry.json'),
+                'gradient_rms_hartree_bohr':grms,'gradient_max_hartree_bohr':gmax,'trajectory':trajectory,
+                'minimum_verified':False,'next_required':'projected Hessian at same model'}
+        else:
+            geometry=folder/'optimize/geometry.json'
+            if not geometry.is_file():raise FileNotFoundError('Accepted optimized geometry required')
+            atoms=load(geometry)
+            if stage_name=='frequencies':
+                from pyscf.hessian import thermo
+                settings=protocol['geometry'];mf=build_mf(atoms,settings,manifest,target/'pyscf.log',target/'checkpoint.h5')
+                energy=solve(mf);hessian=mf.Hessian().kernel()
+                if not np.all(np.isfinite(hessian)):raise RuntimeError('Nonfinite Hessian')
+                symmetry=float(np.max(abs(hessian-hessian.transpose(1,0,3,2))))
+                np.save(target/'hessian_hartree_bohr2.npy',hessian)
+                if symmetry>1e-5:raise RuntimeError('Hessian not symmetric within tolerance')
+                modes=thermo.harmonic_analysis(mf.mol,hessian,imaginary_freq=False)
+                frequencies=np.asarray(modes['freq_wavenumber'],dtype=float)
+                np.save(target/'normal_modes.npy',modes['norm_mode'])
+                dump_new(target/'frequencies_cm1.json',frequencies.tolist())
+                if len(frequencies)!=3*mf.mol.natm-6:raise RuntimeError('Unexpected mode count for nonlinear molecule')
+                if np.any(frequencies<=0):raise RuntimeError('Not a verified minimum: nonpositive projected vibrational modes')
+                thermal=thermo.thermo(mf,modes['freq_au'],temperature=protocol['vibrations']['temperature_K'],pressure=protocol['vibrations']['pressure_Pa'])
+                thermochemistry={key:{'value':np.asarray(value[0]).tolist(),'unit':value[1]} for key,value in thermal.items()}
+                dump_new(target/'RRHO_thermochemistry.json',thermochemistry)
+                result={'energy_hartree':energy,'geometry_sha256':digest(geometry),'minimum_verified':True,
+                    'mode_count':len(frequencies),'lowest_frequency_cm1':float(frequencies.min()),'hessian_symmetry_error':symmetry,
+                    'standard_state':'RRHO 1 atm; solution free energies need explicit standard-state and low-mode treatment'}
+            elif stage_name=='numerical_convergence':
+                import copy
+                trials=[]
+                controls=protocol['numerical_convergence'];base_surface=protocol['surface_lebedev_order'];base_grid=protocol['geometry']['grid_level']
+                conditions=[(o,base_grid) for o in controls['surface_orders']]
+                conditions += [(base_surface,g) for g in controls['DFT_grid_levels'] if g!=base_grid]
+                for surface_order,grid_level in conditions:
+                    variant=copy.deepcopy(manifest);variant['protocol']['surface_lebedev_order']=surface_order
+                    settings={**protocol['geometry'],'grid_level':grid_level}
+                    mf=build_mf(atoms,settings,variant,target/f'surface-{surface_order}-grid-{grid_level}.log',target/f'surface-{surface_order}-grid-{grid_level}.h5')
+                    energy=solve(mf)
+                    trial={'surface_lebedev_order':surface_order,'DFT_grid_level':grid_level,'energy_hartree':energy}
+                    trials.append(trial);dump_new(target/f'surface-{surface_order}-grid-{grid_level}.json',trial)
+                baseline=next(t['energy_hartree'] for t in trials if t['surface_lebedev_order']==base_surface and t['DFT_grid_level']==base_grid)
+                deltas=[abs(t['energy_hartree']-baseline) for t in trials
+                        if t['surface_lebedev_order']>=base_surface and (t['surface_lebedev_order']>base_surface or t['DFT_grid_level']>base_grid)]
+                threshold=protocol['numerical_convergence']['energy_tolerance_hartree']
+                if max(deltas)>threshold:raise RuntimeError('Quadrature convergence not demonstrated at requested tolerance')
+                result={'trials':trials,'max_reference_change_hartree':max(deltas),'acceptance_hartree':threshold,
+                        'geometry_sha256':digest(geometry),'scope':'electronic and surface quadrature only; not basis-set error'}
+            elif stage_name=='singlepoint':
+                settings=protocol['singlepoint'];mf=build_mf(atoms,settings,manifest,target/'pyscf.log',target/'checkpoint.h5')
+                energy=solve(mf)
+                result={'energy_hartree':energy,'geometry_sha256':digest(geometry),'basis_functions':mf.mol.nao_nr(),
+                    'settings':settings,'energy_kind':'electronic plus SMD and specified D3; not a Gibbs free energy'}
+            elif stage_name=='uv':
+                from scipy.constants import physical_constants
+                settings=protocol['excitation'];mf=build_mf(atoms,settings,manifest,target/'pyscf.log',target/'checkpoint.h5')
+                energy=solve(mf);td=mf.TDDFT();td.nstates=settings['states'];td.conv_tol=settings['tolerance_hartree'];td.max_cycle=150
+                td.with_solvent.equilibrium_solvation=settings['equilibrium_solvation']
+                excitations,_=td.kernel()
+                if len(excitations)!=settings['states'] or not all(td.converged):raise RuntimeError('Incomplete TDDFT convergence')
+                oscillator=td.oscillator_strength(gauge='length');vel=td.oscillator_strength(gauge='velocity')
+                transitions=[]
+                for i,(e,f,v) in enumerate(zip(excitations,oscillator,vel),1):
+                    eV=float(e*physical_constants['Hartree energy in eV'][0])
+                    if eV<=0 or not np.isfinite([eV,f,v]).all():raise RuntimeError('Invalid electronic transition')
+                    transitions.append({'state':i,'energy_eV':eV,'wavelength_nm':1239.8419843320026/eV,
+                        'oscillator_strength_length':float(f),'oscillator_strength_velocity':float(v)})
+                result={'SCF_energy_hartree':energy,'geometry_sha256':digest(geometry),'transitions':transitions,
+                    'solvent_response':'nonequilibrium vertical','absolute_measured_absorbance':'NOT_INFERRED',
+                    'settings':settings,'converged_states':len(transitions)}
+            elif stage_name=='ir':
+                from scipy.constants import Avogadro,epsilon_0,c,physical_constants
+                if not load(folder/'frequencies/result.json')['minimum_verified']:raise RuntimeError('Verified minimum required for IR')
+                modes=np.load(folder/'frequencies/normal_modes.npy')
+                frequencies=load(folder/'frequencies/frequencies_cm1.json')
+                settings=protocol['geometry'];reference=build_mf(atoms,settings,manifest,target/'reference.log',target/'reference.h5');solve(reference)
+                coords=reference.mol.atom_coords(unit='Bohr');step=protocol['vibrations']['IR_mass_weighted_step_bohr_sqrt_amu']
+                # PySCF normal modes are mass-unweighted Cartesian vectors in amu^-1/2.
+                # Central differences produce d(mu/e*a0)/d(Q/a0*sqrt(amu)).
+                ea0=physical_constants['atomic unit of electric dipole mom.'][0]
+                bohr=physical_constants['Bohr radius'][0];amu=physical_constants['atomic mass constant'][0]
+                conversion=ea0/(bohr*np.sqrt(amu))
+                intensity_factor=Avogadro/(12*epsilon_0*c*c)/1000
+                lines=[]
+                for i,mode in enumerate(modes):
+                    dipoles=[]
+                    for sign in [-1,1]:
+                        displaced=reference.mol.copy();displaced.set_geom_(coords+sign*step*mode,unit='Bohr')
+                        geom=geometry_json(displaced)
+                        trial=build_mf(geom,settings,manifest,target/f'mode-{i:04}-{sign}.log',target/f'mode-{i:04}-{sign}.h5')
+                        solve(trial);dipoles.append(np.asarray(trial.dip_moment(unit='AU',verbose=0)))
+                    derivative=(dipoles[1]-dipoles[0])/(2*step)
+                    intensity=float(intensity_factor*np.sum((derivative*conversion)**2))
+                    line={'mode':i+1,'frequency_cm1':frequencies[i],'intensity_km_mol':intensity,
+                          'dipole_derivative_au_per_mass_weighted_Q':derivative.tolist()}
+                    lines.append(line);dump_new(target/f'mode-{i:04}.json',line)
+                    print(manifest['name'],'IR mode',i+1,'of',len(modes),flush=True)
+                result={'modes':lines,'geometry_sha256':digest(geometry),'intensity_units':'km/mol',
+                    'derivative':'central finite difference of self-consistent SMD dipoles',
+                    'step_bohr_sqrt_amu':step,'frequency_scale':1.0,'experimental_calibration':'NOT_RUN'}
+            else:raise ValueError(stage_name)
+        result.update(status='PASS',kind='calculated',seconds=time.perf_counter()-started,scientific_review='NOT_RUN')
+        dump_new(target/'result.json',result);print(manifest['name'],folder.name,stage_name,'PASS',flush=True)
+    except BaseException as error:
+        dump_new(target/'failure.json',{'status':'FAIL','error':str(error),'traceback':traceback.format_exc(),
+            'seconds':time.perf_counter()-started,'no_substitute_result':True})
+        raise
+
+
+def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--name',choices=['caffeine','istradefylline','atorvastatin','atorvastatin_anion','atorvastatin_lactone'],required=True)
+    parser.add_argument('--protocol',type=Path,default=ROOT/'practicuum/protocols/research-quantum.json')
+    parser.add_argument('--out',type=Path,required=True)
+    parser.add_argument('--stage',choices=['prepare','optimize','numerical_convergence','frequencies','singlepoint','uv','ir','all'],required=True)
+    parser.add_argument('--candidate',type=int,help='Run one selected QM conformer; default all selected')
+    parser.add_argument('--guess-checkpoint',type=Path,help='Optional density guess copied into a new run; never substituted for recalculation')
+    args=parser.parse_args();protocol=load(args.protocol)
+    if args.stage=='prepare':prepare(args,protocol);return
+    manifest=load(args.out/'manifest.json')
+    if manifest['name']!=args.name or manifest['protocol_sha256']!=digest(args.protocol) or manifest['script_sha256']!=digest(__file__):
+        raise ValueError('Run identity, protocol or script changed; create a new run rather than mixing methods')
+    indices=range(len(manifest['selected'])) if args.candidate is None else [args.candidate]
+    for i in indices:
+        if not 0<=i<len(manifest['selected']):raise ValueError('Unknown selected conformer')
+        folder=args.out/f'conformer-{i:03}'
+        stages=['optimize','numerical_convergence','frequencies','singlepoint','uv','ir'] if args.stage=='all' else [args.stage]
+        for name in stages:stage(folder,name,manifest)
+
+
+if __name__=='__main__':main()
+#INFO: ******************** input file end ********************
+
+
+System: uname_result(system='Linux', node='miakhlov', release='6.18.58.1-microsoft-standard-WSL2', version='#1 SMP PREEMPT_DYNAMIC Tue Oct 27 00:24:11 UTC 2026', machine='x86_64')  Threads 6
+Python 3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]
+numpy 2.5.4  scipy 1.18.1  h5py 3.16.0
+Date: Wed Nov 18 23:15:20 2026
+PySCF version 2.15.1
+PySCF path  /home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-quantum/lib/python3.12/site-packages/pyscf
+
+[CONFIG] conf_file None
+[INPUT] verbose = 4
+[INPUT] num. atoms = 52
+[INPUT] num. electrons = 204
+[INPUT] charge = 0
+[INPUT] spin (= nelec alpha-beta = 2S) = 0
+[INPUT] symmetry False subgroup None
+[INPUT] Mole.unit = Angstrom
+[INPUT] Symbol           X                Y                Z      unit          X                Y                Z       unit  Magmom
+[INPUT]  1 C     -3.214500815532  -2.094980489809   2.539226141695 AA   -6.074526168546  -3.958939362046   4.798441976139 Bohr   0.0
+[INPUT]  2 C     -3.307948908448  -2.325389956644   1.035037647651 AA   -6.251117471020  -4.394350150872   1.955937682674 Bohr   0.0
+[INPUT]  3 N     -3.583597866155  -1.088506050027   0.294547148089 AA   -6.772018507608  -2.056978319483   0.556613440660 Bohr   0.0
+[INPUT]  4 C     -2.552704559466  -0.284586156595  -0.129787863938 AA   -4.823912494319  -0.537789894808  -0.245263517135 Bohr   0.0
+[INPUT]  5 C     -2.786952394185   0.923111205252  -0.779237078018 AA   -5.266576747210   1.744427360443  -1.472544663560 Bohr   0.0
+[INPUT]  6 C     -4.104608544271   1.416187273304  -1.037908585418 AA   -7.756585997222   2.676206087639  -1.961362968774 Bohr   0.0
+[INPUT]  7 O     -4.406332429325   2.474777559549  -1.587728076078 AA   -8.326761505214   4.676651806767  -3.000371224070 Bohr   0.0
+[INPUT]  8 N     -5.101749258951   0.524294218659  -0.572878415073 AA   -9.640908855620   0.990772481958  -1.082583307164 Bohr   0.0
+[INPUT]  9 C     -4.896254041042  -0.682325323811   0.111424286475 AA   -9.252579173865  -1.289407989858   0.210561385062 Bohr   0.0
+[INPUT] 10 O     -5.836244272317  -1.350998217959   0.523306919597 AA  -11.028903270741  -2.553016626718   0.988906757128 Bohr   0.0
+[INPUT] 11 C     -6.501418164296   0.938479816161  -0.756627067281 AA  -12.285899751793   1.773469825977  -1.429817935593 Bohr   0.0
+[INPUT] 12 C     -7.034361124239   1.734496742524   0.429874336648 AA  -13.293015986099   3.277723807321   0.812344764244 Bohr   0.0
+[INPUT] 13 N     -1.526393585548   1.438251832303  -1.044324350749 AA   -2.884465834978   2.717902061207  -1.973487008130 Bohr   0.0
+[INPUT] 14 C     -0.622098958419   0.536593796063  -0.553577415928 AA   -1.175596653790   1.014015314700  -1.046109704848 Bohr   0.0
+[INPUT] 15 N     -1.235878493399  -0.524618154578   0.012141620756 AA   -2.335471875763  -0.991384632128   0.022944337937 Bohr   0.0
+[INPUT] 16 C      0.806537997269   0.729057896460  -0.646556080704 AA    1.524135923894   1.377719753261  -1.221813916703 Bohr   0.0
+[INPUT] 17 C      1.695010128664  -0.175990132341  -0.168250565305 AA    3.203104921539  -0.332573150750  -0.317947488729 Bohr   0.0
+[INPUT] 18 C      3.149275414047  -0.087050751884  -0.204356598123 AA    5.951268023375  -0.164502079997  -0.386178002200 Bohr   0.0
+[INPUT] 19 C      3.899534018975  -1.161688605263   0.332365516853 AA    7.369051309287  -2.195273305975   0.628079800102 Bohr   0.0
+[INPUT] 20 C      5.291384369592  -1.149186216816   0.331793744640 AA    9.999267278333  -2.171647215908   0.626999307214 Bohr   0.0
+[INPUT] 21 C      5.980381247446  -0.031404196491  -0.217264112041 AA   11.301282678158  -0.059345330530  -0.410569668454 Bohr   0.0
+[INPUT] 22 C      5.241658257119   1.032921302908  -0.747986661610 AA    9.905298544519   1.951938370726  -1.413489935271 Bohr   0.0
+[INPUT] 23 C      3.845285591870   1.007007844697  -0.742732410791 AA    7.266536639370   1.902969031766  -1.403560840233 Bohr   0.0
+[INPUT] 24 O      7.328748996708  -0.092452170251  -0.178543622472 AA   13.849328439459  -0.174709281395  -0.337398547760 Bohr   0.0
+[INPUT] 25 C      8.078127793448   0.988854192998  -0.708992051227 AA   15.265449128855   1.868663601895  -1.339800801312 Bohr   0.0
+[INPUT] 26 O      6.074828061443  -2.138695910457   0.823664273803 AA   11.479761289949  -4.041549534491   1.556499896077 Bohr   0.0
+[INPUT] 27 C      5.451187828098  -3.281346508486   1.383224467242 AA   10.301252048668  -6.200846220835   2.613915411885 Bohr   0.0
+[INPUT] 28 C     -1.235851177666   2.696038906705  -1.721434792415 AA   -2.335420256511   5.094775154844  -3.253040298961 Bohr   0.0
+[INPUT] 29 H     -4.162125178518  -1.696185514253   2.931965741256 AA   -7.865276683556  -3.205326078393   5.540612257580 Bohr   0.0
+[INPUT] 30 H     -2.407186460434  -1.385500922809   2.777522878146 AA   -4.548923140982  -2.618217289441   5.248757544410 Bohr   0.0
+[INPUT] 31 H     -3.000683260799  -3.045435565388   3.052387855387 AA   -5.670469549477  -5.755039148594   5.768177072629 Bohr   0.0
+[INPUT] 32 H     -2.364251059181  -2.724723851044   0.641321489889 AA   -4.467786991564  -5.148981843543   1.211921973688 Bohr   0.0
+[INPUT] 33 H     -4.112431475473  -3.031435788577   0.795803967335 AA   -7.771369194684  -5.728583404615   1.503851547106 Bohr   0.0
+[INPUT] 34 H     -7.092488344518   0.028467533059  -0.911641246848 AA  -13.402860512809   0.053795840924  -1.722752280400 Bohr   0.0
+[INPUT] 35 H     -6.533026767982   1.541892800111  -1.671030708256 AA  -12.345631355939   2.913755105649  -3.157790384341 Bohr   0.0
+[INPUT] 36 H     -8.080410732118   2.026951860159   0.247861839453 AA  -15.269763257698   3.830383883378   0.468390993298 Bohr   0.0
+[INPUT] 37 H     -6.443097361051   2.650192771623   0.583365486557 AA  -12.175689406295   5.008138515670   1.102401000116 Bohr   0.0
+[INPUT] 38 H     -7.000391714973   1.133267600520   1.350923653185 AA  -13.228823105973   2.141565390825   2.552875719716 Bohr   0.0
+[INPUT] 39 H      1.146653729388   1.647929123478  -1.126958352613 AA    2.166861508254   3.114134716068  -2.129642640230 Bohr   0.0
+[INPUT] 40 H      1.286605805540  -1.078034112521   0.298012891665 AA    2.431332602745  -2.037189225604   0.563162746836 Bohr   0.0
+[INPUT] 41 H      3.362634535122  -2.012321668525   0.751570295508 AA    6.354458328384  -3.802736828041   1.420262021869 Bohr   0.0
+[INPUT] 42 H      5.756394449411   1.894912499998  -1.171197581670 AA   10.878008974354   3.580865655011  -2.213242667109 Bohr   0.0
+[INPUT] 43 H      3.303139179800   1.855295949705  -1.163891383363 AA    6.242028401142   3.506001224957  -2.199435953298 Bohr   0.0
+[INPUT] 44 H      9.135555171573   0.728451165550  -0.573937108587 AA   17.263697270128   1.376573198010  -1.084583947954 Bohr   0.0
+[INPUT] 45 H      7.872407444685   1.132627086120  -1.783254827721 AA   14.876694011441   2.140354994032  -3.369863234701 Bohr   0.0
+[INPUT] 46 H      7.862963629436   1.929045058076  -0.173453798679 AA   14.858847787051   3.645366841709  -0.327780174768 Bohr   0.0
+[INPUT] 47 H      4.828803955844  -3.807458316369   0.639081657327 AA    9.125116985762  -7.195053448635   1.207689303581 Bohr   0.0
+[INPUT] 48 H      6.259387198073  -3.946268572628   1.713757090433 AA   11.828527511966  -7.457366816246   3.238531544949 Bohr   0.0
+[INPUT] 49 H      4.822153145615  -3.015042412797   2.249998643923 AA    9.112548775922  -5.697604414133   4.251881217658 Bohr   0.0
+[INPUT] 50 H     -0.656532311400   3.359433069062  -1.063474388109 AA   -1.240666260474   6.348408434334  -2.009675334016 Bohr   0.0
+[INPUT] 51 H     -0.665356669157   2.511936893998  -2.643138461861 AA   -1.257341879859   4.746872771847  -4.994807802222 Bohr   0.0
+[INPUT] 52 H     -2.190096867353   3.171119933229  -1.970659758086 AA   -4.138683265566   5.992548181951  -3.724007227485 Bohr   0.0
+
+nuclear repulsion = 2499.29012502613
+number of shells = 240
+number of NR pGTOs = 840
+number of NR cGTOs = 512
+basis = def2-svp
+ecp = {}
+CPU time:    132912.23
+
+
+******** <class 'pyscf.solvent._attach_solvent.PCMDFRKS'> ********
+method = PCMDFRKS
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+diis_damp = 0
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = 1e-07
+SCF max_cycles = 150
+direct_scf = False
+chkfile to save SCF result = practicuum/evidence/research-quantum-istradefylline-cpcm-20261118/conformer-000/numerical_convergence/surface-17-grid-5.h5
+max_memory 1200 MB (current use 492 MB)
+XC library pyscf.dft.libxc version 7.1.2
+    S. Lehtola, C. Steigemann, M. J. T. Oliveira, and M. A. L. Marques,  SoftwareX 7, 1–5 (2018)
+XC functionals = b3lyp
+    P. J. Stephens, F. J. Devlin, C. F. Chabalowski, and M. J. Frisch,  J. Phys. Chem. 98, 11623 (1994)
+radial grids: 
+    Treutler-Ahlrichs [JCP 102, 346 (1995); DOI:10.1063/1.469408] (M4) radial grids
+    
+becke partition: Becke, JCP 88, 2547 (1988); DOI:10.1063/1.454033
+pruning grids: <function nwchem_prune at 0x734649a67560>
+grids dens level: 5
+symmetrized grids: False
+atomic radii adjust function: <function treutler_atomic_radii_adjust at 0x734649a67b00>
+small_rho_cutoff = 0
+******** <class 'pyscf.solvent.pcm.PCM'> (In testing) ********
+
+WARN: PCM is an experimental feature. It is still in testing.
+Features and APIs may be changed in the future.
+
+lebedev_order = 17 (110 grids per sphere)
+solvent = water
+eps = 78.3553
+eps_optical = 1.77635584
+frozen = False
+Initial guess from minao.
+tot grids = 1764888
+******** <class 'pyscf.df.df.DF'> ********
+auxbasis = None
+max_memory = 1200
+_cderi_to_save = /tmp/tmpci4l2upx
+PCM E_diel = -0.00174239013016845
+Solvent Energy = -0.00174239013016845
+Calc dispersion correction with DFTD3.
+Parameters: xc=b3lyp, version=d3bj, atm=False
+init E= -1300.17052693818
+  HOMO = -0.216746843852993  LUMO = -0.124352988831276  gap/eV = 2.51416
+PCM E_diel = -0.0647834689895036
+Solvent Energy = -0.0647834689895036
+cycle= 1 E= -1295.26288078675  delta_E= 4.91  |g|= 1.49  |ddm|= 8.66
+  HOMO = -0.110173886756253  LUMO = -0.052479198045384  gap/eV = 1.56995
+PCM E_diel = -0.0731949111521735
+Solvent Energy = -0.0731949111521735
+cycle= 2 E= -1293.6655665338  delta_E=  1.6  |g|= 3.17  |ddm|= 5.28
+  HOMO = -0.181471168288078  LUMO = -0.0592316504174351  gap/eV = 3.32631
+PCM E_diel = -0.0312551423608322
+Solvent Energy = -0.0312551423608322
+cycle= 3 E= -1295.67137566017  delta_E= -2.01  |g|= 0.425  |ddm|= 4.08
+  HOMO = -0.198383817366467  LUMO = -0.071545208595988  gap/eV = 3.45145
+PCM E_diel = -0.0285868087006834
+Solvent Energy = -0.0285868087006834
+cycle= 4 E= -1295.70442353359  delta_E= -0.033  |g|= 0.193  |ddm|= 0.591
+  HOMO = -0.200566897112876  LUMO = -0.0745787115848455  gap/eV = 3.42831
+PCM E_diel = -0.0281761565438487
+Solvent Energy = -0.0281761565438487
+cycle= 5 E= -1295.71117329899  delta_E= -0.00675  |g|= 0.0585  |ddm|= 0.19
+  HOMO = -0.197778077423257  LUMO = -0.0715153445551371  gap/eV = 3.43578
+PCM E_diel = -0.0283311768646918
+Solvent Energy = -0.0283311768646918
+cycle= 6 E= -1295.71191141759  delta_E= -0.000738  |g|= 0.0167  |ddm|= 0.0696
+  HOMO = -0.197532835608761  LUMO = -0.0711042719973349  gap/eV = 3.44030
+PCM E_diel = -0.0281666140237748
+Solvent Energy = -0.0281666140237748
+cycle= 7 E= -1295.71196996099  delta_E= -5.85e-05  |g|= 0.00566  |ddm|= 0.0209
+  HOMO = -0.197651168114076  LUMO = -0.0712317084938703  gap/eV = 3.44005
+PCM E_diel = -0.028226061747537
+Solvent Energy = -0.028226061747537
+cycle= 8 E= -1295.71197676669  delta_E= -6.81e-06  |g|= 0.00166  |ddm|= 0.00644
+  HOMO = -0.197698557041274  LUMO = -0.0712647811190856  gap/eV = 3.44044
+PCM E_diel = -0.0282330842400522
+Solvent Energy = -0.0282330842400522
+cycle= 9 E= -1295.71197734391  delta_E= -5.77e-07  |g|= 0.000473  |ddm|= 0.00197
+  HOMO = -0.197681104635673  LUMO = -0.071245683794583  gap/eV = 3.44048
+PCM E_diel = -0.0282319045154305
+Solvent Energy = -0.0282319045154305
+cycle= 10 E= -1295.71197738504  delta_E= -4.11e-08  |g|= 0.000202  |ddm|= 0.00071
+  HOMO = -0.197682946428043  LUMO = -0.0712448800196159  gap/eV = 3.44056
+PCM E_diel = -0.0282345336157093
+Solvent Energy = -0.0282345336157093
+cycle= 11 E= -1295.71197739225  delta_E= -7.21e-09  |g|= 0.000109  |ddm|= 0.0003
+  HOMO = -0.197683671369323  LUMO = -0.0712459655627584  gap/eV = 3.44055
+PCM E_diel = -0.0282331028434195
+Solvent Energy = -0.0282331028434195
+cycle= 12 E= -1295.71197739474  delta_E= -2.48e-09  |g|= 2.21e-05  |ddm|= 0.000118
+  HOMO = -0.197683337248596  LUMO = -0.0712454213273039  gap/eV = 3.44055
+PCM E_diel = -0.0282329560927214
+Solvent Energy = -0.0282329560927214
+cycle= 13 E= -1295.71197739473  delta_E= 4.09e-12  |g|= 2.3e-05  |ddm|= 4.31e-05
+  HOMO = -0.197683738292485  LUMO = -0.0712457256911758  gap/eV = 3.44055
+PCM E_diel = -0.028233121006402
+Solvent Energy = -0.028233121006402
+cycle= 14 E= -1295.71197739484  delta_E= -1.1e-10  |g|= 2.9e-06  |ddm|= 2.48e-05
+  HOMO = -0.197683829269261  LUMO = -0.0712457655773697  gap/eV = 3.44055
+PCM E_diel = -0.028233123202735
+Solvent Energy = -0.028233123202735
+cycle= 15 E= -1295.71197739485  delta_E= -4.09e-12  |g|= 1.58e-06  |ddm|= 4.21e-06
+  HOMO = -0.197683789749282  LUMO = -0.0712457155665511  gap/eV = 3.44056
+PCM E_diel = -0.0282331349690488
+Solvent Energy = -0.0282331349690488
+cycle= 16 E= -1295.71197739485  delta_E= 4.55e-13  |g|= 7.33e-07  |ddm|= 2.14e-06
+  HOMO = -0.197683774122338  LUMO = -0.0712457011352066  gap/eV = 3.44056
+PCM E_diel = -0.0282331243021761
+Solvent Energy = -0.0282331243021761
+cycle= 17 E= -1295.71197739485  delta_E= -4.55e-13  |g|= 6.4e-07  |ddm|= 1.28e-06
+  HOMO = -0.197683779677107  LUMO = -0.0712457107321671  gap/eV = 3.44056
+PCM E_diel = -0.0282331261975949
+Solvent Energy = -0.0282331261975949
+cycle= 18 E= -1295.71197739485  delta_E= 1.36e-12  |g|= 1.71e-07  |ddm|= 7.65e-07
+  HOMO = -0.197683783563791  LUMO = -0.0712457117824288  gap/eV = 3.44056
+PCM E_diel = -0.0282331267844221
+Solvent Energy = -0.0282331267844221
+cycle= 19 E= -1295.71197739485  delta_E= -4.09e-12  |g|= 3.32e-08  |ddm|= 1.66e-07
+  HOMO = -0.197683783335334  LUMO = -0.0712457116447367  gap/eV = 3.44056
+PCM E_diel = -0.0282331273109012
+Solvent Energy = -0.0282331273109012
+Extra cycle  E= -1295.71197739484  delta_E= 8.19e-12  |g|= 6.34e-08  |ddm|= 1.01e-07
+converged SCF energy = -1295.71197739484

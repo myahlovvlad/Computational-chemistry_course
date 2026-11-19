@@ -1,0 +1,6 @@
+{
+  "reported_rate_ratio_pH4_5": 10.0,
+  "lactone_loss_half_relaxation_h": 231.04906018664843,
+  "acid_formation_half_relaxation_h": 23.104906018664845,
+  "new_kinetic_fit": "NOT_RUN"
+}

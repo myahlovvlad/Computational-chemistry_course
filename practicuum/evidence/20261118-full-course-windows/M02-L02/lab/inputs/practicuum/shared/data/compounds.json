@@ -1,0 +1,86 @@
+[
+  {
+    "name": "istradefylline",
+    "cid": 5311037,
+    "smiles": "CCN1C2=C(C(=O)N(C1=O)CC)N(C(=N2)/C=C/C3=CC(=C(C=C3)OC)OC)C",
+    "formula": "C20H24N4O4",
+    "molecular_weight_g_mol": 384.4,
+    "pubchem_XLogP": 2.5,
+    "pubchem_TPSA_A2": 76.9,
+    "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/istradefylline/property/MolecularFormula,MolecularWeight,CanonicalSMILES,IsomericSMILES,XLogP,TPSA/JSON",
+    "source_sha256": "e74a82530b8e7096e37c1f893b42a60f454c86a805a4df59808961665ac2e80b",
+    "property_kind": "database representation/computed descriptor; not an assay or measured solubility"
+  },
+  {
+    "name": "caffeine",
+    "cid": 2519,
+    "smiles": "CN1C=NC2=C1C(=O)N(C(=O)N2C)C",
+    "formula": "C8H10N4O2",
+    "molecular_weight_g_mol": 194.19,
+    "pubchem_XLogP": -0.1,
+    "pubchem_TPSA_A2": 58.4,
+    "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/caffeine/property/MolecularFormula,MolecularWeight,CanonicalSMILES,IsomericSMILES,XLogP,TPSA/JSON",
+    "source_sha256": "9252f25f5083198ab7968f585835f98426c79b48a2e46065f9aef415c5a3e9e2",
+    "property_kind": "database representation/computed descriptor; not an assay or measured solubility"
+  },
+  {
+    "name": "theophylline",
+    "cid": 2153,
+    "smiles": "CN1C2=C(C(=O)N(C1=O)C)NC=N2",
+    "formula": "C7H8N4O2",
+    "molecular_weight_g_mol": 180.16,
+    "pubchem_XLogP": 0,
+    "pubchem_TPSA_A2": 69.3,
+    "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/theophylline/property/MolecularFormula,MolecularWeight,CanonicalSMILES,IsomericSMILES,XLogP,TPSA/JSON",
+    "source_sha256": "3e5920b69f37fddcbcbf88d6db9eda726ac1c6cad9873fef83ea754c28f73827",
+    "property_kind": "database representation/computed descriptor; not an assay or measured solubility"
+  },
+  {
+    "name": "theobromine",
+    "cid": 5429,
+    "smiles": "CN1C=NC2=C1C(=O)NC(=O)N2C",
+    "formula": "C7H8N4O2",
+    "molecular_weight_g_mol": 180.16,
+    "pubchem_XLogP": -0.8,
+    "pubchem_TPSA_A2": 67.2,
+    "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/theobromine/property/MolecularFormula,MolecularWeight,CanonicalSMILES,IsomericSMILES,XLogP,TPSA/JSON",
+    "source_sha256": "1d445933e7af411613835e86b073f1616a2396aef56074dee0a07f74a16cefc6",
+    "property_kind": "database representation/computed descriptor; not an assay or measured solubility"
+  },
+  {
+    "name": "atorvastatin",
+    "cid": 60823,
+    "smiles": "CC(C)C1=C(C(=C(N1CC[C@H](C[C@H](CC(=O)O)O)O)C2=CC=C(C=C2)F)C3=CC=CC=C3)C(=O)NC4=CC=CC=C4",
+    "formula": "C33H35FN2O5",
+    "molecular_weight_g_mol": 558.6,
+    "pubchem_XLogP": 5,
+    "pubchem_TPSA_A2": 112,
+    "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/atorvastatin/property/MolecularFormula,MolecularWeight,CanonicalSMILES,IsomericSMILES,XLogP,TPSA/JSON",
+    "source_sha256": "b2a9fcec871c17fe58c2c0486fb2d6b1400a83868c87f4150d30429c0a9e8dcd",
+    "property_kind": "database representation/computed descriptor; not an assay or measured solubility"
+  },
+  {
+    "name": "atorvastatin_calcium",
+    "cid": 60822,
+    "smiles": "CC(C)C1=C(C(=C(N1CC[C@H](C[C@H](CC(=O)[O-])O)O)C2=CC=C(C=C2)F)C3=CC=CC=C3)C(=O)NC4=CC=CC=C4.CC(C)C1=C(C(=C(N1CC[C@H](C[C@H](CC(=O)[O-])O)O)C2=CC=C(C=C2)F)C3=CC=CC=C3)C(=O)NC4=CC=CC=C4.[Ca+2]",
+    "formula": "C66H68CaF2N4O10",
+    "molecular_weight_g_mol": 1155.3,
+    "pubchem_XLogP": null,
+    "pubchem_TPSA_A2": 229,
+    "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/atorvastatin%20calcium/property/MolecularFormula,MolecularWeight,CanonicalSMILES,IsomericSMILES,XLogP,TPSA/JSON",
+    "source_sha256": "9f36424ef9ee4e88a5cd24d0c8cd2580b6b610db345a9b4cd77b69d7bfdff150",
+    "property_kind": "database representation/computed descriptor; not an assay or measured solubility"
+  },
+  {
+    "name": "atorvastatin_lactone",
+    "cid": 6483036,
+    "smiles": "CC(C)C1=C(C(=C(N1CC[C@@H]2C[C@H](CC(=O)O2)O)C3=CC=C(C=C3)F)C4=CC=CC=C4)C(=O)NC5=CC=CC=C5",
+    "formula": "C33H33FN2O4",
+    "molecular_weight_g_mol": 540.6,
+    "pubchem_XLogP": 5.7,
+    "pubchem_TPSA_A2": 80.6,
+    "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/atorvastatin%20lactone/property/MolecularFormula,MolecularWeight,CanonicalSMILES,IsomericSMILES,XLogP,TPSA/JSON",
+    "source_sha256": "09d67f33e65c718c842dcb5fd85dea1b185bd7468feafba37cbe860750533755",
+    "property_kind": "database representation/computed descriptor; not an assay or measured solubility"
+  }
+]

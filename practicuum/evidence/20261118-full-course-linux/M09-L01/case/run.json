@@ -1,0 +1,18 @@
+{
+  "lesson_id": "M09-L01",
+  "role": "case",
+  "kernel": "course-v2-chem",
+  "started_utc": "2026-11-18T14:20:05.984690+00:00",
+  "source": "/home/miakhlov/course-production-verified-20261118/practicuum/modules/M09/lessons/L01/Notebooks_cases/01_case.ipynb",
+  "cwd": "/home/miakhlov/course-production-verified-20261118",
+  "scope": "full guided computation",
+  "input_sha256": "b71e1c1ac3d19f2a7d04aa3047504d1bf255d9de3e4af02db1d9cc1ee6308f0b",
+  "data_sha256": {
+    "practicuum/shared/data/compounds.json": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267"
+  },
+  "step_sha256": {
+    "practicuum/modules/M09/lessons/L01/steps/01_case.md": "ab2bf65dfa75a1e742b855457e98de2646eec4b9a71390a84bdc14506a90d22c"
+  },
+  "status": "PASS",
+  "seconds": 2.2935958310117712
+}

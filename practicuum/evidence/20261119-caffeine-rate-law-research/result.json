@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "scope": "reanalysis of published rate estimates, not new measurements",
+  "created_utc": "2026-11-19T07:13:56.128535+00:00",
+  "source": {
+    "doi": "10.1186/s40064-015-0809-x",
+    "authors": "Edwards, Kulikov, Garner-O’Neale (2015)",
+    "licence": "CC BY 4.0",
+    "url": "https://link.springer.com/article/10.1186/s40064-015-0809-x",
+    "sha256": "492a9e1abd48ef55bcc7aeaea673203554bb85aa837fba1fc9e76f25b2d99d55",
+    "conditions": "100 C; initially 25 mg/L caffeine; GC-MS/MS-MRM; NaOH 0.02–0.10 mol/L"
+  },
+  "fit": {
+    "intercept_min_inverse": 0.0013000000000000045,
+    "k2_L_mol_inverse_min_inverse": 0.6950000000000001,
+    "conditional_OLS_CI95": [
+      [
+        -0.021165005460450578,
+        0.02376500546045059
+      ],
+      [
+        0.3563272998836372,
+        1.0336727001163628
+      ]
+    ],
+    "residuals_min_inverse": [
+      -0.0012000000000000049,
+      -0.005100000000000007,
+      0.008999999999999994,
+      0.0020999999999999908,
+      -0.004800000000000013
+    ],
+    "leverage": [
+      0.6000000000000008,
+      0.3000000000000005,
+      0.20000000000000018,
+      0.3000000000000005,
+      0.6000000000000003
+    ],
+    "residual_degrees_freedom": 3,
+    "leave_one_concentration_out_RMSE_min_inverse": 0.008266125242857893,
+    "through_origin_k2_L_mol_inverse_min_inverse": 0.7127272727272728,
+    "intercept_F_test": {
+      "F": 0.0339153120610047,
+      "df": [
+        1,
+        3
+      ],
+      "p": 0.8656322522362174
+    },
+    "uncertainty_scope": "Conditional homoscedastic independent rate-estimate OLS; published Table 4 has no replicate errors. These are not experimental confidence limits.",
+    "raw_time_series_refit": "NOT_RUN",
+    "lack_of_fit_test": "NOT_IDENTIFIABLE: no replicated concentrations",
+    "half_life_rounding_error_min": [
+      0.010512897138944766,
+      -0.018867476668944505,
+      0.029753472306639495,
+      0.04825729762619346,
+      0.0022300084840196632
+    ]
+  },
+  "scientific_review": "NOT_RUN",
+  "limitations": [
+    "Caffeine is a xanthine-family case, not istradefylline kinetics",
+    "Table 5 rates at 30 C are author extrapolations, not independent observations",
+    "The prose unit for second-order k is dimensionally inconsistent; the rate law requires L mol^-1 min^-1",
+    "Alkaline thermal hydrolysis cannot establish physiological or environmental total disappearance"
+  ]
+}

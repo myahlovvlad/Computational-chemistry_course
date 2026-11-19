@@ -1,0 +1,91 @@
+{
+  "id": "research-quantum-cpcm-v1",
+  "purpose": "Molecular geometry, harmonic vibration and vertical excitation research; no clinical inference",
+  "platform": "Linux/WSL CPU, Python 3.12, locked quantum profile",
+  "conformers": {
+    "attempted": 100,
+    "seed": 20261118,
+    "forcefield": "MMFF94s",
+    "max_iterations": 3000,
+    "energy_window_kcal_mol": 10.0,
+    "heavy_atom_rmsd_angstrom": 0.5,
+    "qm_candidates": 3
+  },
+  "geometry": {
+    "functional": "b3lyp",
+    "dispersion": "d3bj",
+    "basis": "def2-svp",
+    "solvent": "water",
+    "solvation_model": "C-PCM",
+    "grid_level": 4,
+    "scf_tolerance_hartree": 1e-09,
+    "density_tolerance": 1e-07,
+    "max_scf_cycles": 150,
+    "max_geometry_steps": 150,
+    "gradient_rms_hartree_bohr": 0.0001,
+    "gradient_max_hartree_bohr": 0.00015,
+    "step_rms_angstrom": 0.0004,
+    "step_max_angstrom": 0.0006,
+    "energy_change_hartree": 1e-07
+  },
+  "singlepoint": {
+    "functional": "pbe0",
+    "dispersion": "d3bj",
+    "basis": "def2-tzvp",
+    "solvent": "water",
+    "solvation_model": "C-PCM",
+    "grid_level": 5,
+    "scf_tolerance_hartree": 1e-10,
+    "density_tolerance": 1e-08,
+    "max_scf_cycles": 150
+  },
+  "excitation": {
+    "functional": "cam-b3lyp",
+    "basis": "def2-tzvp",
+    "solvent": "water",
+    "solvation_model": "C-PCM",
+    "grid_level": 4,
+    "scf_tolerance_hartree": 1e-09,
+    "density_tolerance": 1e-07,
+    "max_scf_cycles": 150,
+    "method": "TDDFT",
+    "states": 30,
+    "tolerance_hartree": 1e-07,
+    "equilibrium_solvation": false
+  },
+  "vibrations": {
+    "temperature_K": 298.15,
+    "pressure_Pa": 101325,
+    "frequency_scaling": 1.0,
+    "minimum_acceptance": "no negative projected harmonic frequencies; negative modes require review and reoptimization",
+    "IR_mass_weighted_step_bohr_sqrt_amu": 0.005
+  },
+  "resources": {
+    "threads": 6,
+    "memory_MB": 1200
+  },
+  "limitations": [
+    "Starting conformers are prescreened by MMFF, not a proof of global coverage",
+    "C-PCM is a continuum model, no explicit solvent or crystal packing",
+    "Harmonic thermochemistry is RRHO at 1 atm, not automatically solution-standard free energy",
+    "Frequency scale 1.0 is an unscaled prediction, not calibrated experimental agreement",
+    "Method and basis need benchmark assessment for each endpoint",
+    "Conformer-ensemble and experimental comparisons are required before a scientific acceptance claim",
+    "C-PCM is an electrostatic continuum model; SMD non-electrostatic CDS terms are not included",
+    "This model is distinct from SMD; their results are not pooled or labelled equivalent",
+    "Quadrature controls must pass before accepting the model discretization"
+  ],
+  "surface_lebedev_order": 17,
+  "numerical_convergence": {
+    "surface_orders": [
+      17,
+      23,
+      29
+    ],
+    "DFT_grid_levels": [
+      4,
+      5
+    ],
+    "energy_tolerance_hartree": 0.0001
+  }
+}

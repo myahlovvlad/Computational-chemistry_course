@@ -1,0 +1,486 @@
+{
+  "new_heavy_atoms": [
+    {
+      "atom": [
+        "A",
+        "111",
+        "CG"
+      ],
+      "nearest_ligand_A": 40.01726728551064
+    },
+    {
+      "atom": [
+        "A",
+        "111",
+        "CD"
+      ],
+      "nearest_ligand_A": 40.01462433910882
+    },
+    {
+      "atom": [
+        "A",
+        "111",
+        "NE"
+      ],
+      "nearest_ligand_A": 41.34121866853951
+    },
+    {
+      "atom": [
+        "A",
+        "111",
+        "CZ"
+      ],
+      "nearest_ligand_A": 41.6513884642517
+    },
+    {
+      "atom": [
+        "A",
+        "111",
+        "NH1"
+      ],
+      "nearest_ligand_A": 40.73771229462941
+    },
+    {
+      "atom": [
+        "A",
+        "111",
+        "NH2"
+      ],
+      "nearest_ligand_A": 42.932414840071594
+    },
+    {
+      "atom": [
+        "A",
+        "148",
+        "CG"
+      ],
+      "nearest_ligand_A": 18.357144467481852
+    },
+    {
+      "atom": [
+        "A",
+        "148",
+        "CD"
+      ],
+      "nearest_ligand_A": 18.05892341752409
+    },
+    {
+      "atom": [
+        "A",
+        "148",
+        "OE1"
+      ],
+      "nearest_ligand_A": 17.149263861752193
+    },
+    {
+      "atom": [
+        "A",
+        "148",
+        "NE2"
+      ],
+      "nearest_ligand_A": 18.93596245243425
+    },
+    {
+      "atom": [
+        "A",
+        "206",
+        "NE"
+      ],
+      "nearest_ligand_A": 40.44336043159618
+    },
+    {
+      "atom": [
+        "A",
+        "206",
+        "CZ"
+      ],
+      "nearest_ligand_A": 40.390304826777424
+    },
+    {
+      "atom": [
+        "A",
+        "206",
+        "NH1"
+      ],
+      "nearest_ligand_A": 39.31997376652228
+    },
+    {
+      "atom": [
+        "A",
+        "206",
+        "NH2"
+      ],
+      "nearest_ligand_A": 41.50093985682734
+    },
+    {
+      "atom": [
+        "A",
+        "1021",
+        "CG"
+      ],
+      "nearest_ligand_A": 74.23437057051135
+    },
+    {
+      "atom": [
+        "A",
+        "1021",
+        "OD1"
+      ],
+      "nearest_ligand_A": 73.56958405482527
+    },
+    {
+      "atom": [
+        "A",
+        "1021",
+        "OD2"
+      ],
+      "nearest_ligand_A": 74.60004150803135
+    },
+    {
+      "atom": [
+        "A",
+        "1059",
+        "CG"
+      ],
+      "nearest_ligand_A": 52.551937614135596
+    },
+    {
+      "atom": [
+        "A",
+        "1059",
+        "CD"
+      ],
+      "nearest_ligand_A": 52.424218916451196
+    },
+    {
+      "atom": [
+        "A",
+        "1059",
+        "CE"
+      ],
+      "nearest_ligand_A": 51.68516955568589
+    },
+    {
+      "atom": [
+        "A",
+        "1059",
+        "NZ"
+      ],
+      "nearest_ligand_A": 51.642954959994306
+    },
+    {
+      "atom": [
+        "A",
+        "1060",
+        "CG"
+      ],
+      "nearest_ligand_A": 55.23572805711897
+    },
+    {
+      "atom": [
+        "A",
+        "1060",
+        "OD1"
+      ],
+      "nearest_ligand_A": 55.693051945462635
+    },
+    {
+      "atom": [
+        "A",
+        "1060",
+        "OD2"
+      ],
+      "nearest_ligand_A": 55.12392897825771
+    },
+    {
+      "atom": [
+        "A",
+        "1061",
+        "CG"
+      ],
+      "nearest_ligand_A": 50.63357339749981
+    },
+    {
+      "atom": [
+        "A",
+        "1061",
+        "CD1"
+      ],
+      "nearest_ligand_A": 50.38091665501929
+    },
+    {
+      "atom": [
+        "A",
+        "1061",
+        "CD2"
+      ],
+      "nearest_ligand_A": 50.15164613449892
+    },
+    {
+      "atom": [
+        "A",
+        "1061",
+        "CE1"
+      ],
+      "nearest_ligand_A": 49.6681844041032
+    },
+    {
+      "atom": [
+        "A",
+        "1061",
+        "CE2"
+      ],
+      "nearest_ligand_A": 49.42799188718878
+    },
+    {
+      "atom": [
+        "A",
+        "1061",
+        "CZ"
+      ],
+      "nearest_ligand_A": 49.20459114757484
+    },
+    {
+      "atom": [
+        "A",
+        "1062",
+        "CG"
+      ],
+      "nearest_ligand_A": 52.651581562190515
+    },
+    {
+      "atom": [
+        "A",
+        "1062",
+        "CD"
+      ],
+      "nearest_ligand_A": 52.50697818385667
+    },
+    {
+      "atom": [
+        "A",
+        "1062",
+        "NE"
+      ],
+      "nearest_ligand_A": 51.133487999548784
+    },
+    {
+      "atom": [
+        "A",
+        "1062",
+        "CZ"
+      ],
+      "nearest_ligand_A": 50.797555984515625
+    },
+    {
+      "atom": [
+        "A",
+        "1062",
+        "NH1"
+      ],
+      "nearest_ligand_A": 51.68355314797929
+    },
+    {
+      "atom": [
+        "A",
+        "1062",
+        "NH2"
+      ],
+      "nearest_ligand_A": 49.56021019931211
+    },
+    {
+      "atom": [
+        "A",
+        "1077",
+        "CE"
+      ],
+      "nearest_ligand_A": 74.70880347054153
+    },
+    {
+      "atom": [
+        "A",
+        "1077",
+        "NZ"
+      ],
+      "nearest_ligand_A": 75.72673856043188
+    },
+    {
+      "atom": [
+        "A",
+        "1104",
+        "CG"
+      ],
+      "nearest_ligand_A": 53.17581668390247
+    },
+    {
+      "atom": [
+        "A",
+        "1104",
+        "CD"
+      ],
+      "nearest_ligand_A": 54.0090886610763
+    },
+    {
+      "atom": [
+        "A",
+        "1104",
+        "CE"
+      ],
+      "nearest_ligand_A": 55.137743025989
+    },
+    {
+      "atom": [
+        "A",
+        "1104",
+        "NZ"
+      ],
+      "nearest_ligand_A": 55.95143916826447
+    },
+    {
+      "atom": [
+        "A",
+        "1105",
+        "CG"
+      ],
+      "nearest_ligand_A": 50.095345682009224
+    },
+    {
+      "atom": [
+        "A",
+        "1105",
+        "CD1"
+      ],
+      "nearest_ligand_A": 49.097862550216995
+    },
+    {
+      "atom": [
+        "A",
+        "1105",
+        "CD2"
+      ],
+      "nearest_ligand_A": 51.18862132349337
+    },
+    {
+      "atom": [
+        "A",
+        "1105",
+        "CE1"
+      ],
+      "nearest_ligand_A": 49.20891811450441
+    },
+    {
+      "atom": [
+        "A",
+        "1105",
+        "CE2"
+      ],
+      "nearest_ligand_A": 51.30173193957491
+    },
+    {
+      "atom": [
+        "A",
+        "1105",
+        "CZ"
+      ],
+      "nearest_ligand_A": 50.31725801352852
+    },
+    {
+      "atom": [
+        "A",
+        "1105",
+        "OH"
+      ],
+      "nearest_ligand_A": 50.49927424230966
+    },
+    {
+      "atom": [
+        "A",
+        "220",
+        "CG"
+      ],
+      "nearest_ligand_A": 46.80860038497199
+    },
+    {
+      "atom": [
+        "A",
+        "220",
+        "CD"
+      ],
+      "nearest_ligand_A": 47.5157037725424
+    },
+    {
+      "atom": [
+        "A",
+        "220",
+        "NE"
+      ],
+      "nearest_ligand_A": 48.57458168630997
+    },
+    {
+      "atom": [
+        "A",
+        "220",
+        "CZ"
+      ],
+      "nearest_ligand_A": 49.37643452093316
+    },
+    {
+      "atom": [
+        "A",
+        "220",
+        "NH1"
+      ],
+      "nearest_ligand_A": 49.406658387306464
+    },
+    {
+      "atom": [
+        "A",
+        "220",
+        "NH2"
+      ],
+      "nearest_ligand_A": 50.24446156543028
+    },
+    {
+      "atom": [
+        "A",
+        "222",
+        "NE"
+      ],
+      "nearest_ligand_A": 43.01232403625733
+    },
+    {
+      "atom": [
+        "A",
+        "222",
+        "CZ"
+      ],
+      "nearest_ligand_A": 43.791414934893346
+    },
+    {
+      "atom": [
+        "A",
+        "222",
+        "NH1"
+      ],
+      "nearest_ligand_A": 45.107654561060926
+    },
+    {
+      "atom": [
+        "A",
+        "222",
+        "NH2"
+      ],
+      "nearest_ligand_A": 43.270072498205955
+    },
+    {
+      "atom": [
+        "A",
+        "305",
+        "OXT"
+      ],
+      "nearest_ligand_A": 36.24315340860947
+    }
+  ],
+  "max_original_pocket_heavy_displacement_A": 0.0,
+  "criterion": "original pocket atoms within 6 A may not move >0.05 A without separate review"
+}

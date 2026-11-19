@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-docking/bin/mk_prepare_receptor.py",
+    "--read_pqr",
+    "/home/miakhlov/course-production-verified-20261118/practicuum/evidence/20261118-A2A-target-preparation-repair-audited/protein_protonated_tokens.pqr",
+    "--charge_model",
+    "read",
+    "-o",
+    "/home/miakhlov/course-production-verified-20261118/practicuum/evidence/20261118-A2A-target-preparation-repair-audited/receptor",
+    "-p",
+    "-j",
+    "--default_altloc",
+    "A"
+  ],
+  "returncode": 0
+}
