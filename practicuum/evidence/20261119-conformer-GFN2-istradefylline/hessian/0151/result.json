@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "kind": "hessian",
+  "energy_hartree": -83.149603539243,
+  "valence_electrons": 148,
+  "charge": 0,
+  "seconds": 7.058457700011786,
+  "JSON_sha256": "78d7a88d96787eea937983e3ee9acd25b9319cd9d0e3a4c4241d70b312d4c47c",
+  "minimum_verified": true,
+  "lowest_frequency_cm1": 11.7319919363968,
+  "internal_mode_count": 150,
+  "native_projected_mode_max_difference_cm1": 0.08732010006360724
+}

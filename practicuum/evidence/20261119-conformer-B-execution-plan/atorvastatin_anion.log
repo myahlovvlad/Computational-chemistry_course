@@ -1,0 +1,43 @@
+atorvastatin_anion prepared seed 20261118 embedded 100
+atorvastatin_anion prepared seed 20261119 embedded 100
+atorvastatin_anion prepared seed 20261120 embedded 100
+atorvastatin_anion GFN2/ALPB singlepoints 25 / 300
+atorvastatin_anion GFN2/ALPB singlepoints 50 / 300
+atorvastatin_anion GFN2/ALPB singlepoints 75 / 300
+atorvastatin_anion GFN2/ALPB singlepoints 100 / 300
+atorvastatin_anion GFN2/ALPB singlepoints 125 / 300
+atorvastatin_anion GFN2/ALPB singlepoints 150 / 300
+atorvastatin_anion GFN2/ALPB singlepoints 175 / 300
+atorvastatin_anion GFN2/ALPB singlepoints 200 / 300
+atorvastatin_anion GFN2/ALPB singlepoints 225 / 300
+atorvastatin_anion GFN2/ALPB singlepoints 250 / 300
+atorvastatin_anion GFN2/ALPB singlepoints 275 / 300
+atorvastatin_anion GFN2/ALPB singlepoints 300 / 300
+atorvastatin_anion optimization 126 PASS
+atorvastatin_anion optimization 163 PASS
+atorvastatin_anion optimization 268 PASS
+atorvastatin_anion optimization 185 PASS
+atorvastatin_anion optimization 79 PASS
+atorvastatin_anion optimization 49 PASS
+atorvastatin_anion optimization 206 PASS
+atorvastatin_anion optimization 90 PASS
+atorvastatin_anion optimization 182 PASS
+atorvastatin_anion optimization 82 PASS
+atorvastatin_anion optimization 228 PASS
+atorvastatin_anion optimization 239 PASS
+atorvastatin_anion optimization 122 PASS
+atorvastatin_anion optimization 6 PASS
+atorvastatin_anion optimization 54 PASS
+atorvastatin_anion optimization 235 PASS
+atorvastatin_anion optimization 299 PASS
+atorvastatin_anion optimization 238 PASS
+atorvastatin_anion optimization 273 PASS
+atorvastatin_anion optimization 48 PASS
+atorvastatin_anion optimization 81 PASS
+atorvastatin_anion optimization 212 PASS
+atorvastatin_anion optimization 20 PASS
+atorvastatin_anion optimization 78 PASS
+atorvastatin_anion Hessian 206 PASS
+atorvastatin_anion Hessian 126 PASS
+atorvastatin_anion Hessian 163 PASS
+atorvastatin_anion completed PASS distinct conformers 23

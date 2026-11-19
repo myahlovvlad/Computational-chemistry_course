@@ -1,67 +1,97 @@
-# Разбор A. Энергии и ограничения
+# Разбор A. Энсамбль, низкие частоты и пределы численного ранга
 
-Теперь есть несколько минимумов одной молекулы. Можно ли считать самый низкий единственной формой? Начнём с контролируемого двухуровневого примера, а затем проверим ансамбль A. Гипотеза: близкие по энергии состояния вносят вклад при конечной температуре. Для B небольшая ошибка разности энергий может поменять ранжирование.
+Один минимум не определяет распределение конформеров. Для трёх Hessian-проверенных структур истрадефиллина сравним restricted weights по electronic+ALPB energies и native model free-energy values. Полная функция распределения по неизвестным состояниям и экспериментальные populations отсюда не следуют.
 
-На условных уровнях 0,1,2 kcal/mol вычислите нормированные веса при 298.15 и 350 K. Сравните аналитическое отношение p1/p0 с exp(−1/RT). Затем возьмите три стартовых конформера A, покажите чувствительность к ±0.5 kcal/mol у одного уровня. Не выдавайте веса поисковых геометрий за измеренные популяции.
+Термодинамическая формула w_i∝g_i exp(−ΔG_i/RT) требует свободных энергий, degeneracy и полноты состояний. Здесь degeneracy не установлена, набор ограничен тремя конформерами, а native thermochemistry использует собственную coupled RRHO/low-mode модель xTB при 298.15 K. Её значения сохраняются как model-dependent diagnostic, не как проверенная solution free energy.
 
 ```python
 from pathlib import Path
-import sys,json,math
+import sys,json,hashlib,math
+import numpy as np
+from scipy import stats
+from rdkit import Chem
+from rdkit.Chem import rdMolAlign
 from IPython.display import display
 ROOT=next(p for p in [Path.cwd(),*Path.cwd().parents] if (p/'programm/course.json').is_file())
 sys.path.insert(0,str(ROOT/'practicuum/shared'))
-from course_support import DATA,compound,esol,workspace,write_json,init_dossier
+from course_support import DATA,workspace,write_json,init_dossier
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+OUT=workspace('M06-L02','case');C_DATA=DATA/'conformer_research'
+manifest=json.loads((C_DATA/'bundle-manifest.json').read_text(encoding='utf-8'))
+for name,digest in manifest['files_sha256'].items():assert hashlib.sha256((C_DATA/name).read_bytes()).hexdigest()==digest,name
+def read(state,name):return json.loads((C_DATA/state/name).read_text(encoding='utf-8'))
 def publish_plot(fig,name):
-    fig.savefig(OUT/name,dpi=120,bbox_inches='tight')
-    display(fig)
-    plt.close(fig)
-OUT=workspace('M06-L02','case')
+    fig.savefig(OUT/name,dpi=150,bbox_inches='tight');display(fig);plt.close(fig)
 ```
 
-Сначала проверяем входы и единицы. Словари сохраняют названия полей вместе со значениями; список сохраняет соответствие записей. Выведите промежуточный результат перед дальнейшим анализом.
+Из исходных матриц Eh/bohr² заново построим mass-weighted Hessian и удалим переносы/вращения. Функция проекции открыта в shared/conformer_ensemble.py; здесь явно формируются матрица, координаты и массы. Пересчитанные частоты сравниваются со всеми сохранёнными внутренними модами, включая знак.
 
 ```python
-import numpy as np
-R=.001987204258
-levels=np.array([0.,1.,2.])
-def weights(energies,T):
-    if T<=0:raise ValueError('Kelvin temperature must be positive')
-    raw=np.exp(-(energies-min(energies))/(R*T));return raw/raw.sum()
-rows={str(T):weights(levels,T).tolist() for T in [298.15,350.]}
-assert math.isclose(sum(rows['298.15']),1) and math.isclose(rows['298.15'][1]/rows['298.15'][0],math.exp(-1/(R*298.15)))
-display(rows)
-```
+from conformer_ensemble import projected_frequencies
 
-Теперь сравним модель с контрольным случаем. `assert` останавливает расчёт при нарушении контракта; это защита от ошибочного продолжения, а не оценка научного понимания.
+def reproject_hessian(state,source_id):
+    xyz=Chem.MolFromXYZBlock((C_DATA/state/f'geometry_{source_id:04}.xyz').read_text())
+    assert xyz is not None
+    # В XYZ нет связей; для mass weighting здесь нужны только идентичность атомов и координаты.
+    masses=[atom.GetMass() for atom in xyz.GetAtoms()]
+    lines=(C_DATA/state/f'hessian_{source_id:04}_Eh_bohr2.txt').read_text().splitlines()
+    H=np.fromstring(' '.join(line for line in lines if not line.startswith('$')),sep=' ')
+    H=H.reshape(3*xyz.GetNumAtoms(),3*xyz.GetNumAtoms())
+    actual=projected_frequencies(H,xyz.GetConformer().GetPositions(),masses)
+    saved=read(state,f'hessian_{source_id:04}_projected.json')
+    assert np.allclose(actual['frequencies_cm1'],saved['frequencies_cm1'],rtol=1e-10,atol=1e-7)
+    return actual
+
+recomputed={h['source_id']:reproject_hessian('istradefylline',h['source_id'])
+            for h in read('istradefylline','result.json')['hessian_results']}
+assert all(h['minimum_verified'] and h['internal_mode_count']==150 for h in recomputed.values())
+display({i:{'lowest_frequency_cm1':h['lowest_frequency_cm1'],'rigid_mode_rank':h['rigid_mode_rank']}
+         for i,h in recomputed.items()})
+```
 
 ```python
-from rdkit import Chem
-from rdkit.Chem import AllChem
-m=Chem.AddHs(Chem.MolFromSmiles(compound('istradefylline')['smiles']))
-p=AllChem.ETKDGv3();p.randomSeed=17;p.numThreads=1
-AllChem.EmbedMultipleConfs(m,numConfs=3,params=p)
-values=AllChem.MMFFOptimizeMoleculeConfs(m,numThreads=1,maxIters=1000)
-good=np.array([e for s,e in values if s==0]);assert len(good)>0
-print('Search-conformer weights, unclustered approximation:',weights(good,298.15))
-fig,ax=plt.subplots();ax.bar(['0','1','2'],rows['298.15']);ax.set(xlabel='Simulated level / kcal mol^-1',ylabel='Normalized model weight');publish_plot(fig,'weights.png')
+state='istradefylline';report=read(state,'result.json');checked=report['hessian_results']
+assert all(r['status']=='PASS' and r['minimum_verified'] for r in checked)
+ids=[r['source_id'] for r in checked]
+native=[read(state,f'hessian_{i:04}_native.json') for i in ids]
+E=np.array([r['energy_hartree'] for r in checked]);G=np.array([r['total free energy'] for r in native])
+T=298.15;R_kcal=8.31446261815324/4184
+def restricted_weights(energy_Eh):
+    relative=(energy_Eh-energy_Eh.min())*627.5094740631
+    weight=np.exp(-relative/(R_kcal*T))
+    return weight/weight.sum()
+wE=restricted_weights(E);wG=restricted_weights(G)
+display([{'source_id':i,'model_E_relative_kcal_mol':float(e),'model_G_relative_kcal_mol':float(g),
+          'restricted_E_weight':float(a),'restricted_native_G_weight':float(b),'lowest_internal_frequency_cm1':r['lowest_frequency_cm1']}
+         for i,e,g,a,b,r in zip(ids,(E-E.min())*627.5094740631,(G-G.min())*627.5094740631,wE,wG,checked)])
+fig,ax=plt.subplots();x=np.arange(len(ids));ax.bar(x-.18,wE,.36,label='E + ALPB, restricted set');ax.bar(x+.18,wG,.36,label='Native model G, restricted set')
+ax.set_xticks(x,[str(i) for i in ids]);ax.set(xlabel='Source conformer ID',ylabel='Restricted model weight');ax.legend(fontsize=8)
+publish_plot(fig,'restricted_ensemble_weights.png')
 ```
 
-Сохраним именно полученный результат. Не переносите этот вывод на другую химическую форму, мишень или экспериментальные условия без отдельной проверки.
+Проверим численную устойчивость до физической интерпретации точного порядка. Парные GFN2 calculations при той же геометрии отделяют модельную solvation contribution от gas energy. Более плотная SASA-сетка и вдвое меньший Hessian step проверяют разные численные источники.
 
 ```python
-result={'simulated_weights':rows,'MMFF_converged_energies':good.tolist(),'kind':'simulation','free_energy_calculation':'NOT_RUN'}
+audit=read(state,'numerics.json');pairs=audit['paired_fixed_geometry_results']
+display(pairs)
+order_tight=np.argsort([r['tight_energy_Eh'] for r in pairs]).tolist()
+order_dense=np.argsort([r['verytight_energy_Eh'] for r in pairs]).tolist()
+print({'grid_order_tight':order_tight,'grid_order_verytight':order_dense,
+       'relative_energy_grid_sensitivity_kcal_mol':audit['max_relative_energy_grid_sensitivity_kcal_mol'],
+       'Hessian_half_step_max_frequency_change_cm1':audit['Hessian_step_max_frequency_change_cm1'],
+       'minimum_sign_stable':audit['minimum_sign_stable']})
+result={'kind':'calculated','scope':'restricted saved-ensemble and numerical-sensitivity analysis','conformer_ids':ids,
+        'restricted_E_weights':wE.tolist(),'restricted_native_G_weights':wG.tolist(),
+        'precise_ordering_accepted':order_tight==order_dense,'complete_population_claim_allowed':False,
+        'DFT_validation':'separate and incomplete','new_external_calculation':'NOT_RUN'}
 ```
+
+Для близкой пары уточнение сетки меняет порядок: точные последние знаки не доказывают предпочтение одного конформера. При этом Hessian frequencies изменились максимум на ≈0.183 cm⁻¹ и положительный знак сохранился. Эти проверки оценивают numerical sensitivity, не все ошибки Hamiltonian/solvent/entropy model. Следующий шаг — дополнительные состояния, low-mode/degeneracy sensitivity, целевые DFT и независимые solution-state данные, например подходящие NMR ограничения.
 
 ```python
 write_json(OUT/'result.json',result)
 from dossier_records import append_record
-receipt=append_record(init_dossier(),'M06-L02','A',result,ROOT,inputs=['practicuum/shared/data/compounds.json'])
-print('Versioned evidence:',receipt)
+print(append_record(init_dossier(),'M06-L02','A',result,ROOT,inputs=['practicuum/shared/data/conformer_research/'+name for name in manifest['files_sha256']]+['practicuum/shared/data/conformer_research/bundle-manifest.json']))
 ```
-
-Больцмановское взвешивание превращает энергию в гипотезу о распределении только при перечисленных допущениях. Для спектра понадобится электронная, а не механическая модель.
-
-Перед переходом ответьте: какие результаты получены вычислением, какие заданы условно, и какая независимая проверка ещё отсутствует?

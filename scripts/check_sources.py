@@ -81,6 +81,18 @@ def main():
     for name,digest in docking_manifest['files_sha256'].items():
         path=(docking_folder/name).resolve();path.relative_to(docking_folder.resolve())
         require(sha(path)==digest,'Changed docking audit artifact '+name)
+    conformer_folder=DATA/'conformer_research'
+    conformer_bundle=json.loads((conformer_folder/'bundle-manifest.json').read_text(encoding='utf-8'))
+    for name,digest in conformer_bundle['files_sha256'].items():
+        path=(conformer_folder/name).resolve();path.relative_to(conformer_folder.resolve())
+        require(sha(path)==digest,'Changed conformer artifact '+name)
+    for name,charge in [('istradefylline',0),('atorvastatin',0),('atorvastatin_anion',-1),('atorvastatin_lactone',0)]:
+        manifest=json.loads((conformer_folder/name/'manifest.json').read_text(encoding='utf-8'))
+        result=json.loads((conformer_folder/name/'result.json').read_text(encoding='utf-8'))
+        require(manifest['name']==name and manifest['charge']==charge,'Wrong conformer chemical state '+name)
+        require(result['protocol_sha256']==manifest['protocol_sha256'],'Different conformer protocol '+name)
+    reproduction=json.loads((conformer_folder/'cross_platform_reproduction.json').read_text(encoding='utf-8'))
+    require(reproduction['complete_basin_set_reproduction']=='REVIEW','Unresolved basin-set finding was cleared')
     solubility_folder=DATA/'istradefylline_solubility'
     solubility_report=json.loads((solubility_folder/'result.json').read_text(encoding='utf-8'))
     require(sha(solubility_folder/'supporting-information.pdf')==solubility_report['supporting_PDF_sha256'],'Changed solubility supporting PDF')

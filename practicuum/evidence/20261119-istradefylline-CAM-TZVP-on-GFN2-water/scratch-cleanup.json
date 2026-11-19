@@ -1,0 +1,8 @@
+{
+  "utc": "2026-11-19T09:05:15.768935+00:00",
+  "deleted_own_incomplete_integral_cache": "C:/Users/Miakhlov/AppData/Local/Temp/tmpbqhf_6an",
+  "bytes": 13621396832,
+  "reason": "OSError ENOSPC, no active run_vertical_tddft process; recomputable incomplete DF integral scratch, not a checkpoint/geometry/scientific result",
+  "source_and_failure_retained": true,
+  "free_bytes_after": 18417741824
+}

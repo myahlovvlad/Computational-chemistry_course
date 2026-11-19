@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "version": "6.8.0",
+  "created_utc": "2026-11-19T09:08:44.670730+00:00",
+  "download_url": "https://github.com/grimme-lab/xtb/releases/download/v6.8.0/xtb-6.8.0-linux-x86_64-ifx-mkl.tar.xz",
+  "archive_sha256": "db090333361749ae0d9ccf0ce7c0035c0000f2ebad0847f6d77191d1954f4d68",
+  "executable": "stage/bin/xtb",
+  "executable_sha256": "95d82a623580bb1ef7e1f9aec6a91d3773b79e5aabf7bb8fada287debf65c93b",
+  "version_output": "      -----------------------------------------------------------      \n     |                   =====================                   |     \n     |                           x T B                           |     \n     |                   =====================                   |     \n     |                         S. Grimme                         |     \n     |          Mulliken Center for Theoretical Chemistry        |     \n     |                    University of Bonn                     |     \n      -----------------------------------------------------------      \n\n   * xtb version 6.8.0 (4b8c987066c7e9bd0c2b727ce026fb9a581c273a) compiled by '@Linux' on 2026/11/05\n\nnormal termination of xtb\n",
+  "platform": "Linux-6.18.58.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "scope": "local pinned tool installation; no scientific calculation yet"
+}

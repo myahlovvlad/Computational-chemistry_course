@@ -1,0 +1,25 @@
+{
+  "argv": [
+    "xtb",
+    "input.xyz",
+    "--gfn",
+    "2",
+    "--alpb",
+    "water",
+    "gsolv",
+    "--chrg",
+    "0",
+    "--uhf",
+    "0",
+    "--hess",
+    "--acc",
+    "0.01",
+    "--parallel",
+    "2",
+    "--input",
+    "control.inp",
+    "--json"
+  ],
+  "executable": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\course-restructure-20261118\\scripts\\bin\\xtb-6.8.0\\stage\\bin\\xtb.exe",
+  "predeclared_acceptance": "All projected internal Hessian frequencies must be positive; no threshold relaxed after inspection"
+}

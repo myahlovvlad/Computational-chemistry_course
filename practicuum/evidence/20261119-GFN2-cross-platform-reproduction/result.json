@@ -1,0 +1,140 @@
+{
+  "status": "REVIEW",
+  "scope": "numerical/finite-search reproduction, not physical error or a proof of complete sampling",
+  "source_comparison": {
+    "name": {
+      "windows": "istradefylline",
+      "linux": "istradefylline",
+      "equal": true
+    },
+    "canonical_state_smiles": {
+      "windows": "CCn1c(=O)c2c(nc(/C=C/c3ccc(OC)c(OC)c3)n2C)n(CC)c1=O",
+      "linux": "CCn1c(=O)c2c(nc(/C=C/c3ccc(OC)c(OC)c3)n2C)n(CC)c1=O",
+      "equal": true
+    },
+    "charge": {
+      "windows": 0,
+      "linux": 0,
+      "equal": true
+    },
+    "protocol_sha256": {
+      "windows": "1d146cab21ea260c0038daf647582b3ba7b6b67e3a1993b795d7e677d6103c37",
+      "linux": "1d146cab21ea260c0038daf647582b3ba7b6b67e3a1993b795d7e677d6103c37",
+      "equal": true
+    },
+    "script_sha256": {
+      "windows": "f32a1edc499ed87eeddb553e239e0316535725e4b501c9f3d5c92080597507e5",
+      "linux": "f32a1edc499ed87eeddb553e239e0316535725e4b501c9f3d5c92080597507e5",
+      "equal": true
+    },
+    "structure_helper_sha256": {
+      "windows": "c54f6ee17fc464d7104e8c1024bec95911553b583c97482c62b12f6ad9a31280",
+      "linux": "c54f6ee17fc464d7104e8c1024bec95911553b583c97482c62b12f6ad9a31280",
+      "equal": true
+    },
+    "geometry_helper_sha256": {
+      "windows": "98f58d50d6848ded0c03d0d672c21d057aedff7e81ff708f68fb517a676ba165",
+      "linux": "98f58d50d6848ded0c03d0d672c21d057aedff7e81ff708f68fb517a676ba165",
+      "equal": true
+    },
+    "compound_source_sha256": {
+      "windows": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267",
+      "linux": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267",
+      "equal": true
+    }
+  },
+  "input_result_sha256": [
+    "9c32b3d54f83b40d8bb7ca83ce5128dd4a6d824282f381f2f6a8da5de1e77887",
+    "73884ab267c7d5d124a24447dcad6ec819b511ebd922d29d8b30df36bbdeed2f"
+  ],
+  "conformer_counts": [
+    10,
+    10
+  ],
+  "matched_basins": [
+    {
+      "windows_source_id": 172,
+      "linux_source_id": 270,
+      "RMSD_A": 0.0025110542748177683,
+      "linux_minus_windows_energy_Eh": -1.472991002060553e-06,
+      "within_comparison_tolerances": true
+    },
+    {
+      "windows_source_id": 151,
+      "linux_source_id": 120,
+      "RMSD_A": 0.001247817679341126,
+      "linux_minus_windows_energy_Eh": -3.110382991167171e-06,
+      "within_comparison_tolerances": true
+    },
+    {
+      "windows_source_id": 293,
+      "linux_source_id": 293,
+      "RMSD_A": 0.36842307623047177,
+      "linux_minus_windows_energy_Eh": 0.0024919332520028092,
+      "within_comparison_tolerances": false
+    },
+    {
+      "windows_source_id": 144,
+      "linux_source_id": 90,
+      "RMSD_A": 0.003247406211499782,
+      "linux_minus_windows_energy_Eh": -3.317897011356763e-06,
+      "within_comparison_tolerances": true
+    },
+    {
+      "windows_source_id": 55,
+      "linux_source_id": 55,
+      "RMSD_A": 6.954073092182162e-05,
+      "linux_minus_windows_energy_Eh": -4.540400766472885e-08,
+      "within_comparison_tolerances": true
+    },
+    {
+      "windows_source_id": 239,
+      "linux_source_id": 147,
+      "RMSD_A": 0.7396591324593571,
+      "linux_minus_windows_energy_Eh": -6.890256800318184e-05,
+      "within_comparison_tolerances": false
+    },
+    {
+      "windows_source_id": 72,
+      "linux_source_id": 155,
+      "RMSD_A": 0.06527491347887833,
+      "linux_minus_windows_energy_Eh": -2.8134599006079952e-05,
+      "within_comparison_tolerances": false
+    },
+    {
+      "windows_source_id": 65,
+      "linux_source_id": 97,
+      "RMSD_A": 0.004184468908318294,
+      "linux_minus_windows_energy_Eh": -2.877586993577097e-06,
+      "within_comparison_tolerances": true
+    },
+    {
+      "windows_source_id": 19,
+      "linux_source_id": 222,
+      "RMSD_A": 0.0018960940801795642,
+      "linux_minus_windows_energy_Eh": -4.319149979892245e-07,
+      "within_comparison_tolerances": true
+    },
+    {
+      "windows_source_id": 128,
+      "linux_source_id": 128,
+      "RMSD_A": 0.0013639290425046815,
+      "linux_minus_windows_energy_Eh": 2.727829979676244e-07,
+      "within_comparison_tolerances": true
+    }
+  ],
+  "max_matched_RMSD_A": 0.7396591324593571,
+  "max_matched_energy_difference_Eh": 0.0024919332520028092,
+  "minimum_energy_difference_Eh": -2.292177001095297e-06,
+  "executable_sha256": [
+    "9e825df458f43e2bb4b48a58a269cc6c40d2228ecc127eb23bd7b87373c8c0a1",
+    "95d82a623580bb1ef7e1f9aec6a91d3773b79e5aabf7bb8fada287debf65c93b"
+  ],
+  "platforms": [
+    "Windows-10-10.0.19045-SP0",
+    "Linux-6.18.58.1-microsoft-standard-WSL2-x86_64-with-glibc2.39"
+  ],
+  "source_id_identity_required": false,
+  "fine_ordering_validation": "NOT_ESTABLISHED by this basin comparison",
+  "global_minimum": "NOT_PROVEN"
+}

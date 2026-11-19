@@ -1,0 +1,12 @@
+
+WARN: PCM is an experimental feature. It is still in testing.
+Features and APIs may be changed in the future.
+
+converged SCF energy = -76.3392044352847
+
+WARN: PCM is an experimental feature. It is still in testing.
+Features and APIs may be changed in the future.
+
+Excitation energies (eV)
+[ 8.20455769 10.23242414 10.44530214]
+{"status": "PASS", "scope": "Small installation check: water SCF and nonequilibrium TDDFT, not a drug case.", "energy_Eh": -76.3392044352847, "excitation_energies_Eh": [0.3015119363226755, 0.3760346543771014, 0.3838577768195072], "oscillator_strengths": [0.021025261084812293, 4.4465711196209644e-27, 0.08272540490941946], "density_electrons": 10.000000000000007}

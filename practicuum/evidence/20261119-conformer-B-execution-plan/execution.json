@@ -1,0 +1,13 @@
+{
+  "runs": [
+    {
+      "name": "atorvastatin_anion",
+      "exit_code": 0
+    },
+    {
+      "name": "atorvastatin_lactone",
+      "exit_code": 0
+    }
+  ],
+  "scope": "child exit status; model acceptance is in each immutable result.json"
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "kind": "singlepoint",
+  "energy_hartree": -119.500313319705,
+  "valence_electrons": 214,
+  "charge": 0,
+  "seconds": 0.22991579998051748,
+  "JSON_sha256": "9a490b44133193cb6dcbff405d6592db7315dd675c4efc3c2cd5f3692cb0ae52"
+}

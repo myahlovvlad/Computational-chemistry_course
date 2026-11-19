@@ -1,0 +1,36 @@
+{
+  "id": "uv-cam-b3lyp-tzvp-on-gfn2-alpb-v1",
+  "scope": "Vertical singlet TDDFT on an independently Hessian-checked GFN2/ALPB geometry; no DFT optimized-geometry claim",
+  "functional": "CAM-B3LYP",
+  "basis": "def2-TZVP",
+  "density_fitting": true,
+  "auxiliary_basis": "PySCF method-dependent default, expanded basis recorded in manifest",
+  "grid_level": 4,
+  "solvent_model": "C-PCM",
+  "solvent": "water",
+  "static_dielectric": 78.3553,
+  "optical_dielectric": 1.78,
+  "surface_lebedev_order": 29,
+  "equilibrium_solvation": false,
+  "scf_energy_tolerance_Eh": 1e-9,
+  "scf_orbital_gradient_tolerance": 1e-7,
+  "scf_max_cycles": 200,
+  "singlet_states": 30,
+  "tddft_tolerance_Eh": 1e-6,
+  "tddft_max_cycles": 150,
+  "tddft_max_space": 80,
+  "resources": {"threads": 2, "memory_MB": 1800, "minimum_scratch_free_GiB": 50},
+  "required_follow_up": [
+    "SCF stability audit",
+    "basis, quadrature, solvent and geometry sensitivity",
+    "transition and state-character interpretation",
+    "experimental spectrum under matched chemical state and conditions"
+  ],
+  "limitations": [
+    "GFN2/ALPB geometry is not a DFT minimum",
+    "One conformer is not a validated solution ensemble",
+    "Positive oscillator strengths and converged eigenvalues do not validate experimental band assignments",
+    "C-PCM does not include SMD non-electrostatic terms",
+    "No absolute measured absorbance or empirical line widths are inferred"
+  ]
+}

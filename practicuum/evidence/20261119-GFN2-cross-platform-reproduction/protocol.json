@@ -1,0 +1,10 @@
+{
+  "comparison": "one-to-one basin assignment minimizing heavy-atom aligned symmetry RMSD",
+  "RMSD_tolerance_A": 0.1,
+  "paired_absolute_energy_tolerance_Eh": 1e-05,
+  "scope": "numerical/finite-search reproduction, not physical error or a proof of complete sampling",
+  "notes": [
+    "Different compilers and libraries need not preserve starting IDs or fine energy order",
+    "Thresholds recorded before matching; no empirical tolerance adjustment"
+  ]
+}

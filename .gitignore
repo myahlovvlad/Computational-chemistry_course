@@ -18,6 +18,8 @@ programm/IMPLEMENTATION_STATE.md
 *.log
 !practicuum/evidence/**/*.log
 !practicuum/shared/data/quantum/**/*.log
+# Large native restart caches stay local; immutable XYZ, logs and receipts remain evidence.
+practicuum/evidence/**/xtbrestart
 
 # Third-party reference library stays local; publish original course content.
 Books/

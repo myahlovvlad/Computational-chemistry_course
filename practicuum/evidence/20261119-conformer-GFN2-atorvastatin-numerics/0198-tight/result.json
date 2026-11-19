@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "energy_hartree": -119.52602673214,
+  "solvent_model": "ALPB water, tight",
+  "same_geometry_sha256": "ed056ee4958c4e9d8b9dc1ac68b142550e142f397168d805da3f3bae4461a4ca"
+}

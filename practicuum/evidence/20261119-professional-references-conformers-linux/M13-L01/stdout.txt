@@ -1,0 +1,13 @@
+{
+  "stage1_yield": 0.96,
+  "overall_yield_lower_bound": 0.78,
+  "stage2_implied_lower_bound": 0.8125000000000001,
+  "route": [
+    "advanced ketal ester 4",
+    "deprotected diol ester 5",
+    "sodium atorvastatin",
+    "atorvastatin hemi-calcium 1"
+  ],
+  "relation": ">",
+  "kind": "calculated"
+}

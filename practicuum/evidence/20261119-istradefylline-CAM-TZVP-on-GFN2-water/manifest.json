@@ -1,0 +1,68 @@
+{
+  "created_utc": "2026-11-19T08:56:17.751871+00:00",
+  "argv": [
+    "scripts/run_vertical_tddft.py",
+    "--out",
+    "practicuum/evidence/20261119-istradefylline-CAM-TZVP-on-GFN2-water"
+  ],
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "protocol": {
+    "id": "uv-cam-b3lyp-tzvp-on-gfn2-alpb-v1",
+    "scope": "Vertical singlet TDDFT on an independently Hessian-checked GFN2/ALPB geometry; no DFT optimized-geometry claim",
+    "functional": "CAM-B3LYP",
+    "basis": "def2-TZVP",
+    "density_fitting": true,
+    "auxiliary_basis": "PySCF method-dependent default, expanded basis recorded in manifest",
+    "grid_level": 4,
+    "solvent_model": "C-PCM",
+    "solvent": "water",
+    "static_dielectric": 78.3553,
+    "optical_dielectric": 1.78,
+    "surface_lebedev_order": 29,
+    "equilibrium_solvation": false,
+    "scf_energy_tolerance_Eh": 1e-09,
+    "scf_orbital_gradient_tolerance": 1e-07,
+    "scf_max_cycles": 200,
+    "singlet_states": 30,
+    "tddft_tolerance_Eh": 1e-06,
+    "tddft_max_cycles": 150,
+    "tddft_max_space": 80,
+    "resources": {
+      "threads": 2,
+      "memory_MB": 1800
+    },
+    "required_follow_up": [
+      "SCF stability audit",
+      "basis, quadrature, solvent and geometry sensitivity",
+      "transition and state-character interpretation",
+      "experimental spectrum under matched chemical state and conditions"
+    ],
+    "limitations": [
+      "GFN2/ALPB geometry is not a DFT minimum",
+      "One conformer is not a validated solution ensemble",
+      "Positive oscillator strengths and converged eigenvalues do not validate experimental band assignments",
+      "C-PCM does not include SMD non-electrostatic terms",
+      "No absolute measured absorbance or empirical line widths are inferred"
+    ]
+  },
+  "protocol_sha256": "632275d60cb6af02efcc9c4edc0b0c96e9aa19f0631bdf2b2babd1a12b6ee491",
+  "runner_sha256": "d86b305d60b0a25b9238efce6e1be2693d787308775833379c1d5882159cd949",
+  "helper_sha256": "98f58d50d6848ded0c03d0d672c21d057aedff7e81ff708f68fb517a676ba165",
+  "structure_builder_sha256": "c54f6ee17fc464d7104e8c1024bec95911553b583c97482c62b12f6ad9a31280",
+  "parent_manifest_sha256": "083180bc06123d65f599253c195ab5aa9db1f27af4342d5e14595fd74d17b3db",
+  "parent_result_sha256": "9c32b3d54f83b40d8bb7ca83ce5128dd4a6d824282f381f2f6a8da5de1e77887",
+  "geometry_sha256": "9db8e93d69c97b33b551bc9a41ceef21d68969e56deb26b311bad127fb0cd707",
+  "geometry_source_id": 172,
+  "geometry_model": "GFN2-xTB 6.8.0 / ALPB water gsolv, independently projected positive Hessian",
+  "canonical_state_smiles": "CCn1c(=O)c2c(nc(/C=C/c3ccc(OC)c(OC)c3)n2C)n(CC)c1=O",
+  "charge": 0,
+  "spin_2S": 0,
+  "all_electrons": 204,
+  "packages": {
+    "pyscf": "2.15.1",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "rdkit": "2026.9.1"
+  }
+}

@@ -20,10 +20,13 @@ docking = [
     "pdb2pqr==3.8.0 ; sys_platform == 'linux'",
     "vina==1.2.7 ; sys_platform == 'linux'",
 ]
-quantum = [
+quantum-core = [
     {include-group = "chem"},
+    "pyscf==2.15.1",
+]
+quantum = [
+    {include-group = "quantum-core"},
     "geometric==1.1.1 ; sys_platform == 'linux'",
-    "pyscf==2.15.1; sys_platform == 'linux'",
     "pyscf-dispersion==1.7.0 ; sys_platform == 'linux'",
 ]
 

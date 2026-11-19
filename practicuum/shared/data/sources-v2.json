@@ -279,5 +279,17 @@
     "bytes": 1123863,
     "license": "CC BY 4.0, Wang et al. (2022); course extraction and numerical transformations identified",
     "attribution": "Yiyun Wang, Youwei Xu, Zhonghui Zheng, Min Xue, Zihui Meng, Zhibin Xu, Jiarong Li, Qing Lin"
+  },
+  {
+    "file": "conformer_research/bundle-manifest.json",
+    "url": "https://github.com/grimme-lab/xtb/releases/tag/v6.8.0",
+    "utc": "2026-11-19",
+    "status": "PASS",
+    "sha256": "5a273e6daa51b8e9fe23b493fc673aef2e7c565bd6347b9991d992081f526dd9",
+    "bytes": 8519,
+    "kind": "calculated",
+    "attribution": "Own course calculations using GFN2-xTB 6.8.0 / ALPB water; PubChem structure sources retained in per-state manifests",
+    "license": "Own calculated materials; upstream software LGPL-3.0 does not define a data licence",
+    "scope": "Bundle hash manifest, not an experimental source or software author dataset; per-file hashes inside bundle"
   }
 ]

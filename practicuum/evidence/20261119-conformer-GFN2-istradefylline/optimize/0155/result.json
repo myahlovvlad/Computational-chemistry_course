@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "kind": "optimize",
+  "energy_hartree": -83.146791485485,
+  "valence_electrons": 148,
+  "charge": 0,
+  "seconds": 2.665821100003086,
+  "JSON_sha256": "39e5e05bfd147951b79fe0c6d785646b796419a6b817aec9ed900e122d975c59",
+  "geometry_sha256": "9a20cbb51a9a47898a4df379e18148b41f252b3eccff3d32091ee2331b942d19",
+  "minimum_verified": false,
+  "scope": "stationary conformer; Hessian required separately"
+}

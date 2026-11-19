@@ -1,0 +1,5 @@
+{
+  "atorvastatin_descriptive_rank_correlation": 0.8148872765252948,
+  "atorvastatin_anion_descriptive_rank_correlation": 0.6362955143946044,
+  "atorvastatin_lactone_descriptive_rank_correlation": 0.8073547483860931
+}

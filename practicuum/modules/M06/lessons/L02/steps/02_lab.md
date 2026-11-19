@@ -1,66 +1,54 @@
-# Независимое исследование B. Энергии и ограничения
+# Независимое исследование B. Конформации кислоты, аниона и лактона
 
-Проверить сравнимость состояний B и спланировать проверку модели среды. Объект — аторвастатин с явно выбранной химической формой; контрольные системы остаются контрольными.
+Данные — собственные вычисления целых форм аторвастатина, GFN2-xTB 6.8.0 / ALPB water gsolv, три seed × 100 initial structures для каждой формы. Calcium counterion исключён явно при выборе одного из двух одинаковых органических анионов; это не модель целого кальциевого комплекса. Новый full run и анализ frozen dataset различаются.
 
 ```python
 from pathlib import Path
-import sys,json,math
+import sys,json,hashlib,math
+import numpy as np
+from scipy import stats
+from rdkit import Chem
+from rdkit.Chem import rdMolAlign
 from IPython.display import display
 ROOT=next(p for p in [Path.cwd(),*Path.cwd().parents] if (p/'programm/course.json').is_file())
 sys.path.insert(0,str(ROOT/'practicuum/shared'))
-from course_support import DATA,compound,esol,workspace,write_json,init_dossier
+from course_support import DATA,workspace,write_json,init_dossier
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+OUT=workspace('M06-L02','lab');C_DATA=DATA/'conformer_research'
+manifest=json.loads((C_DATA/'bundle-manifest.json').read_text(encoding='utf-8'))
+for name,digest in manifest['files_sha256'].items():assert hashlib.sha256((C_DATA/name).read_bytes()).hexdigest()==digest,name
+def read(state,name):return json.loads((C_DATA/state/name).read_text(encoding='utf-8'))
 def publish_plot(fig,name):
-    fig.savefig(OUT/name,dpi=120,bbox_inches='tight')
-    display(fig)
-    plt.close(fig)
-OUT=workspace('M06-L02','lab')
-DOSSIER=init_dossier()
+    fig.savefig(OUT/name,dpi=150,bbox_inches='tight');display(fig);plt.close(fig)
 ```
 
-## Задание 1. Применение
+## Задание 1
 
-Для условных состояний B 0 и 1 kcal/mol при 298.15 K вычислите веса и отношение популяций.
-
-Сохраните код, таблицу результата и объяснение. Успешность: единицы/форма/условия названы; вычисление воспроизводимо; вывод ограничен полученными данными. На уровне 1 требуется перенос метода на указанный вход.
-
+Для трёх Hessian-проверенных конформеров кислоты вычислите минимальную внутреннюю частоту, число внутренних modes и restricted weights при 298.15 K. Сопоставьте electronic/ALPB и native thermochemistry варианты. Проверьте spin/valence-electron consistency, сохраняя отдельную модель каждого химического состояния.
 ```python
-task_1=None  # Замените своим вычислением и аргументом; пустой каркас исполним.
+task_1=None  # Ваш вычислительный, диагностический и исследовательский аргумент.
 ```
 
-## Задание 2. Критический анализ
+## Задание 2
 
-Измените разность на ±0.5 kcal/mol; объясните вклад неопределённости и отсутствие энтропии в MMFF.
-
-Сохраните код, таблицу результата и объяснение. Успешность: единицы/форма/условия названы; вычисление воспроизводимо; вывод ограничен полученными данными. На уровне 2 требуется контрпример и диагностика причины.
-
+Покажите, какие пропущенные entropy/degeneracy/states сведения запрещают полный population claim. Почему нельзя непосредственно сравнить total energies кислоты, аниона и лактона для вывода об их долях? Запишите сбалансированные процессы, необходимые chemical potentials и standard states; не подменяйте их сортировкой трёх абсолютных чисел.
 ```python
-task_2=None  # Замените своим вычислением и аргументом; пустой каркас исполним.
+task_2=None  # Ваш вычислительный, диагностический и исследовательский аргумент.
 ```
 
-## Задание 3. Исследовательское решение
+## Задание 3
 
-Выберите наблюдаемую величину для проверки ансамбля B и опишите роль кластеризации и растворителя.
-
-Сохраните код, таблицу результата и объяснение. Успешность: единицы/форма/условия названы; вычисление воспроизводимо; вывод ограничен полученными данными. На уровне 3 требуется самостоятельный выбор и независимая проверка.
-
+Выберите дополнительный conformer/Hessian/numerical/DFT контроль и независимое наблюдение B. Обоснуйте treatment low modes, cutoff/solvent sensitivity и критерий отказа. При негативной mode/identity проверке сохраните FAIL; не удаляйте неудобную структуру и не ослабляйте критерий после результата.
 ```python
-task_3=None  # Замените своим вычислением и аргументом; пустой каркас исполним.
+task_3=None  # Ваш вычислительный, диагностический и исследовательский аргумент.
 ```
 
-## Ограниченная автоматическая проверка
-
-Проверяются только указанные численные/структурные поля. Подготовьте `answer` как словарь; текстовые объяснения оценивает преподаватель по отдельной рубрике. Пустая работа имеет NOT_RUN. Даже полный PASS контракта не оценивает научное решение.
+Численный контракт относится к закреплённым данным и проверяет лишь `acid_minimum_internal_frequency_cm1`, `acid_internal_mode_count`, `restricted_conformer_count`, `complete_population_claim_allowed`. Новый авторский протокол оценивается по его собственным входам/доказательствам; расхождение с frozen result не исправляется подгонкой. Открытый научный аргумент оценивается отдельно. Сохраните новую версию досье.
 
 ```python
 from research_checks import check
 answer=None
-feedback=check('M06-L02',answer)
-print(feedback)
+print(check('M06-L02',answer))
 ```
-
-Сохраните `answer.json`, графики и объяснение в OUT. Поля расчётного контракта: {"ratio": 0.184924697649489} (числа с допуском; эти ориентиры не являются полным решением). Для передачи в общее досье используйте `dossier_records.append_record`; запись версии не заменяет предыдущую.
-
-Три частые ошибки: выдавать контрольную систему за B; терять условия/единицы; считать совпадение числа доказательством интерпретации. Для каждого обнаруженного расхождения запишите причину и альтернативный способ проверки. Итоговый артефакт: `conformer_comparison.csv`, ограничения MM.

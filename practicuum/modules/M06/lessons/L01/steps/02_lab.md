@@ -1,66 +1,54 @@
-# Независимое исследование B. Конформеры и геометрия
+# Независимое исследование B. Конформации кислоты, аниона и лактона
 
-Исследовать гибкость B, сохранив форму, seed и протокол. Объект — аторвастатин с явно выбранной химической формой; контрольные системы остаются контрольными.
+Данные — собственные вычисления целых форм аторвастатина, GFN2-xTB 6.8.0 / ALPB water gsolv, три seed × 100 initial structures для каждой формы. Calcium counterion исключён явно при выборе одного из двух одинаковых органических анионов; это не модель целого кальциевого комплекса. Новый full run и анализ frozen dataset различаются.
 
 ```python
 from pathlib import Path
-import sys,json,math
+import sys,json,hashlib,math
+import numpy as np
+from scipy import stats
+from rdkit import Chem
+from rdkit.Chem import rdMolAlign
 from IPython.display import display
 ROOT=next(p for p in [Path.cwd(),*Path.cwd().parents] if (p/'programm/course.json').is_file())
 sys.path.insert(0,str(ROOT/'practicuum/shared'))
-from course_support import DATA,compound,esol,workspace,write_json,init_dossier
+from course_support import DATA,workspace,write_json,init_dossier
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+OUT=workspace('M06-L01','lab');C_DATA=DATA/'conformer_research'
+manifest=json.loads((C_DATA/'bundle-manifest.json').read_text(encoding='utf-8'))
+for name,digest in manifest['files_sha256'].items():assert hashlib.sha256((C_DATA/name).read_bytes()).hexdigest()==digest,name
+def read(state,name):return json.loads((C_DATA/state/name).read_text(encoding='utf-8'))
 def publish_plot(fig,name):
-    fig.savefig(OUT/name,dpi=120,bbox_inches='tight')
-    display(fig)
-    plt.close(fig)
-OUT=workspace('M06-L01','lab')
-DOSSIER=init_dossier()
+    fig.savefig(OUT/name,dpi=150,bbox_inches='tight');display(fig);plt.close(fig)
 ```
 
-## Задание 1. Применение
+## Задание 1
 
-Постройте 6 конформеров свободной кислоты B с seed=42, MMFF94 и maxIters=1000; сохраните SDF и статусы.
-
-Сохраните код, таблицу результата и объяснение. Успешность: единицы/форма/условия названы; вычисление воспроизводимо; вывод ограничен полученными данными. На уровне 1 требуется перенос метода на указанный вход.
-
+Проверьте отдельные whole-molecule наборы кислоты, органического карбоксилат-аниона и лактона. Назовите charge, formula, источник и изменение состава. Для каждой формы вычислите descriptive Spearman correlation MMFF94s vs GFN2/ALPB singlepoint energies на одинаковых принятых строках. Не смешивайте абсолютные энергетические нули разных методов/составов.
 ```python
-task_1=None  # Замените своим вычислением и аргументом; пустой каркас исполним.
+task_1=None  # Ваш вычислительный, диагностический и исследовательский аргумент.
 ```
 
-## Задание 2. Критический анализ
+## Задание 2
 
-Повторите с maxIters=1 и сравните долю несошедшихся; не используйте их как доказанные минимумы.
-
-Сохраните код, таблицу результата и объяснение. Успешность: единицы/форма/условия названы; вычисление воспроизводимо; вывод ограничен полученными данными. На уровне 2 требуется контрпример и диагностика причины.
-
+Проверьте embedding/MMFF/SCC coverage, три seed, cap 24 и RMSD diversity после оптимизации. Сравните лучший singlepoint каждого seed и изменение энергии при переоптимизации. Почему seed plateau, малый RMSD или положительные Hessian трёх структур не доказывают полноту всех low-energy состояний? Разберите возможную потерю basins при предварительном energy window.
 ```python
-task_2=None  # Замените своим вычислением и аргументом; пустой каркас исполним.
+task_2=None  # Ваш вычислительный, диагностический и исследовательский аргумент.
 ```
 
-## Задание 3. Исследовательское решение
+## Задание 3
 
-Предложите стратегию проверки покрытия конформационного пространства B: seed, кластеризация, растворитель и независимый метод.
-
-Сохраните код, таблицу результата и объяснение. Успешность: единицы/форма/условия названы; вычисление воспроизводимо; вывод ограничен полученными данными. На уровне 3 требуется самостоятельный выбор и независимая проверка.
-
+Заранее выберите альтернативный sampling design для одной формы B и повторите ресурсный CLI-маршрут в новой директории; при отсутствии ресурсов честно выполните frozen-result audit. Обоснуйте seeds, coverage/diversity и критерий остановки; сохраните полный source/protocol. Новые данные не выдавайте за продолжение другого протокола.
 ```python
-task_3=None  # Замените своим вычислением и аргументом; пустой каркас исполним.
+task_3=None  # Ваш вычислительный, диагностический и исследовательский аргумент.
 ```
 
-## Ограниченная автоматическая проверка
-
-Проверяются только указанные численные/структурные поля. Подготовьте `answer` как словарь; текстовые объяснения оценивает преподаватель по отдельной рубрике. Пустая работа имеет NOT_RUN. Даже полный PASS контракта не оценивает научное решение.
+Численный контракт относится к закреплённым данным и проверяет лишь `atorvastatin_descriptive_rank_correlation`, `atorvastatin_anion_descriptive_rank_correlation`, `atorvastatin_lactone_descriptive_rank_correlation`. Новый авторский протокол оценивается по его собственным входам/доказательствам; расхождение с frozen result не исправляется подгонкой. Открытый научный аргумент оценивается отдельно. Сохраните новую версию досье.
 
 ```python
 from research_checks import check
 answer=None
-feedback=check('M06-L01',answer)
-print(feedback)
+print(check('M06-L01',answer))
 ```
-
-Сохраните `answer.json`, графики и объяснение в OUT. Поля расчётного контракта: {"generated": 6} (числа с допуском; эти ориентиры не являются полным решением). Для передачи в общее досье используйте `dossier_records.append_record`; запись версии не заменяет предыдущую.
-
-Три частые ошибки: выдавать контрольную систему за B; терять условия/единицы; считать совпадение числа доказательством интерпретации. Для каждого обнаруженного расхождения запишите причину и альтернативный способ проверки. Итоговый артефакт: SDF, геометрический паспорт.

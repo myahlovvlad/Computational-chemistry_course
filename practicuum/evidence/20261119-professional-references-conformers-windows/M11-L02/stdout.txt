@@ -1,0 +1,6 @@
+{
+  "max_original_pocket_displacement_A": 2.3110002163565455,
+  "nearest_new_heavy_atom_A": 3.790613934443867,
+  "preparation_accepted": false,
+  "docking": "NOT_RUN"
+}

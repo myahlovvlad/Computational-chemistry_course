@@ -1,0 +1,30 @@
+{
+  "argv": [
+    "xtb",
+    "input.xyz",
+    "--gfn",
+    "2",
+    "--alpb",
+    "water",
+    "gsolv",
+    "--chrg",
+    "0",
+    "--uhf",
+    "0",
+    "--parallel",
+    "2",
+    "--input",
+    "control.inp",
+    "--json",
+    "--opt",
+    "vtight",
+    "--acc",
+    "0.05",
+    "--cycles",
+    "500"
+  ],
+  "executable": "/home/miakhlov/course-production-verified-20261118/scripts/bin/xtb-6.8.0/stage/bin/xtb",
+  "executable_sha256": "95d82a623580bb1ef7e1f9aec6a91d3773b79e5aabf7bb8fada287debf65c93b",
+  "input_sha256": "e332f00eef6784489f675ab69c0f72c9f879043a8228fc275d4ff84bb8186cbd",
+  "protocol_sha256": "1d146cab21ea260c0038daf647582b3ba7b6b67e3a1993b795d7e677d6103c37"
+}

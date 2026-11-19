@@ -1,0 +1,92 @@
+{
+  "created_utc": "2026-11-19T08:24:03.622954+00:00",
+  "name": "istradefylline",
+  "structure": {
+    "name": "istradefylline",
+    "cid": 5311037,
+    "smiles": "CCN1C2=C(C(=O)N(C1=O)CC)N(C(=N2)/C=C/C3=CC(=C(C=C3)OC)OC)C",
+    "formula": "C20H24N4O4",
+    "molecular_weight_g_mol": 384.4,
+    "pubchem_XLogP": 2.5,
+    "pubchem_TPSA_A2": 76.9,
+    "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/istradefylline/property/MolecularFormula,MolecularWeight,CanonicalSMILES,IsomericSMILES,XLogP,TPSA/JSON",
+    "source_sha256": "e74a82530b8e7096e37c1f893b42a60f454c86a805a4df59808961665ac2e80b",
+    "property_kind": "database representation/computed descriptor; not an assay or measured solubility"
+  },
+  "canonical_state_smiles": "CCn1c(=O)c2c(nc(/C=C/c3ccc(OC)c(OC)c3)n2C)n(CC)c1=O",
+  "charge": 0,
+  "protocol": {
+    "id": "conformer-gfn2-alpb-v1",
+    "purpose": "Solvent-aware conformer screening; separate from final DFT and experimental populations",
+    "xtb_version": "6.8.0",
+    "seeds": [
+      20261118,
+      20261119,
+      20261120
+    ],
+    "conformers_per_seed": 100,
+    "embedding": "ETKDGv3, explicit stereochemistry",
+    "forcefield": "MMFF94s",
+    "forcefield_max_iterations": 3000,
+    "electronic_method": "GFN2-xTB",
+    "solvent_model": "native ALPB",
+    "solvent": "water",
+    "solution_reference_state": "gsolv",
+    "solvent_grid": "tight",
+    "solvent_grid_points": 974,
+    "singlepoint_accuracy": 0.05,
+    "optimization_level": "vtight",
+    "optimization_accuracy": 0.05,
+    "optimization_max_cycles": 500,
+    "selection_energy_window_kcal_mol": 15.0,
+    "selection_heavy_atom_RMSD_A": 0.5,
+    "max_optimization_candidates": 24,
+    "hessian_candidates": 3,
+    "hessian_accuracy": 0.01,
+    "hessian_displacement_bohr": 0.005,
+    "minimum_acceptance": "all mass-projected internal frequencies > 0 cm^-1; no imaginary-mode clipping",
+    "native_frequency_check_relative_tolerance": 0.005,
+    "native_frequency_check_absolute_tolerance_cm1": 0.5,
+    "resources": {
+      "simultaneous_jobs": 2,
+      "threads_per_job": 2,
+      "BLAS_threads_per_job": 1,
+      "timeout_seconds_per_job": 1800
+    },
+    "limitations": [
+      "Finite seeded search and candidate budget do not establish exhaustive sampling or a global minimum",
+      "Singlepoint ranking before optimization may miss high-starting-energy basins",
+      "GFN2/ALPB minima are not DFT minima",
+      "Absolute energies of different chemical compositions, charges or Hamiltonians are not directly comparable",
+      "Electronic plus implicit-solvation energies are not full conformer free energies or measured populations",
+      "Hessian checks and raw failures remain visible"
+    ]
+  },
+  "protocol_sha256": "1d146cab21ea260c0038daf647582b3ba7b6b67e3a1993b795d7e677d6103c37",
+  "script_sha256": "f32a1edc499ed87eeddb553e239e0316535725e4b501c9f3d5c92080597507e5",
+  "structure_helper_sha256": "c54f6ee17fc464d7104e8c1024bec95911553b583c97482c62b12f6ad9a31280",
+  "geometry_helper_sha256": "98f58d50d6848ded0c03d0d672c21d057aedff7e81ff708f68fb517a676ba165",
+  "compound_source_sha256": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267",
+  "executable_sha256": "9e825df458f43e2bb4b48a58a269cc6c40d2228ecc127eb23bd7b87373c8c0a1",
+  "installation": {
+    "status": "PASS",
+    "version": "6.8.0",
+    "created_utc": "2026-11-19T08:11:32.675993+00:00",
+    "download_url": "https://github.com/grimme-lab/xtb/releases/download/v6.8.0/xtb-6.8.0-windows-x86_64-openblas.zip",
+    "archive_sha256": "abd7f74d60908925a7e88a030f83d448253ff4e087451f9b13aeda755eb7b98d",
+    "executable": "stage/bin/xtb.exe",
+    "executable_sha256": "9e825df458f43e2bb4b48a58a269cc6c40d2228ecc127eb23bd7b87373c8c0a1",
+    "version_output": "      -----------------------------------------------------------      \r\n     |                   =====================                   |     \r\n     |                           x T B                           |     \r\n     |                   =====================                   |     \r\n     |                         S. Grimme                         |     \r\n     |          Mulliken Center for Theoretical Chemistry        |     \r\n     |                    University of Bonn                     |     \r\n      -----------------------------------------------------------      \r\n\r\n   * xtb version 6.8.0 (4b8c987) compiled by 'runneradmin@runnervmm7ud1' on 2026-11-05\r\n\r\nnormal termination of xtb\r\n",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "scope": "local pinned tool installation; no scientific calculation yet"
+  },
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "rdkit": "2026.09.1",
+  "versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "rdkit": "2026.9.1"
+  },
+  "scope": "actual finite conformer search; final DFT and equilibrium populations require separate validation"
+}

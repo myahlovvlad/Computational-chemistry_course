@@ -1,0 +1,17 @@
+{
+  "scope": "Identical Windows-optimized XYZ bytes on Windows OpenBLAS and Linux MKL xTB 6.8.0; fixed-geometry singlepoints, no optimization",
+  "geometry_sha256": {
+    "0019.xyz": "c7cb2581c9387a2904bd7715ef0b865a43aafdc9db93886d615926e78beaea9f",
+    "0055.xyz": "c18c734a75c09651ae4ffad54c34d46fda0a018f893d7a5aeecd99a3a12aac04",
+    "0065.xyz": "a8aea09e072208de342e4096eee4b2e325119f4df1a2bd8c71cdc6b43c64f723",
+    "0072.xyz": "8bace5b3b1d104c748c46d93743e2609223529bbab3f30e40bb21db6f51932a4",
+    "0128.xyz": "0983b587c7395b6eae49c9faa8323fa49b03adb537793fbb35516dceefbe5119",
+    "0144.xyz": "474a4b9a653126f96d85b4b5fee257ae2c9bcf0a08bbd90fefb3b5fa684b3ad2",
+    "0151.xyz": "2511da87bf029b6b2da900feb94988302dfddeebd6fa21c81ec7378df5c6610e",
+    "0172.xyz": "9db8e93d69c97b33b551bc9a41ceef21d68969e56deb26b311bad127fb0cd707",
+    "0239.xyz": "da6a02d278df73f96152b684f99a4a55547ed3e3c3bd5e6d9d727eb1008d958b",
+    "0293.xyz": "f19df9580a28879da88ea9f4fb3c714bbc03689d7373a4a64bc9f0771dd7d32b"
+  },
+  "absolute_energy_difference_tolerance_Eh": 1e-06,
+  "settings": "GFN2, ALPB water gsolv, tight grid, accuracy 0.01, one thread"
+}

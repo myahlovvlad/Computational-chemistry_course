@@ -63,10 +63,18 @@ def main():
                  'fetch_research_structures.py','prepare_target_docking.py','run_target_redocking.py',
                  'run_research_quantum.py','analyze_hplc_research.py','analyze_statin_research.py',
                  'analyze_caffeine_kinetics.py','analyze_xanthine_chromatography.py',
-                 'analyze_istradefylline_solubility.py']:
+                 'analyze_istradefylline_solubility.py','setup_xtb.py',
+                 'run_conformer_research.py','audit_conformer_numerics.py','run_vertical_tddft.py',
+                 'check_quantum_core.py','audit_conformer_reproduction.py','run_conformer_fixed_geometry.py']:
         copy_resource(out,'scripts/'+name)
     for source in (ROOT/'practicuum/protocols').glob('*.json'):
         copy_resource(out,source.relative_to(ROOT))
+    copy_resource(out,'practicuum/protocols/README.md')
+    for source in (ROOT/'practicuum/evidence/20261119-GFN2-fixed-geometry-inputs').glob('*'):
+        if source.is_file():copy_resource(out,source.relative_to(ROOT))
+    for name in ['20261119-conformer-GFN2-istradefylline','20261119-conformer-GFN2-istradefylline-linux']:
+        for resource in ['manifest.json','result.json','optimized_conformers.sdf']:
+            copy_resource(out,'practicuum/evidence/'+name+'/'+resource)
     for target in ['A2A','HMGCR']:
         for name in ['dataset.json','curated.csv']:
             copy_resource(out,f'practicuum/evidence/20261119-research-{target}-dataset/{name}')

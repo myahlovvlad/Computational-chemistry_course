@@ -1,0 +1,6 @@
+$gbsa
+ grid=tight
+$end
+$hess
+ step=0.005
+$end

@@ -1,0 +1,8 @@
+{
+  "frontier": [
+    "acid",
+    "lactone"
+  ],
+  "n": 2,
+  "kind": "simulation"
+}

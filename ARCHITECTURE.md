@@ -42,3 +42,9 @@
 `scripts/analyze_hplc_research.py`, `analyze_statin_research.py`, `analyze_caffeine_kinetics.py` анализируют первичные числовые данные, сохраняя границы идентифицируемости. `audit_target_qsar.py` отдельно проверяет каркасы, row IDs, прогнозы и отсутствие query-утечки. Переносимые снимки данных и их SHA находятся в `practicuum/shared/data`; большие checkpoint остаются в вычислительной среде, с сохранённым маршрутом к ним.
 
 Технический PASS не снимает научный FAIL или BLOCKED. В частности, девять завершённых Vina-поисков с top-1 recovery 0/9 не валидируют ранжирование; сошедшаяся DFT-геометрия без numerical convergence и Hessian не объявляется подтверждённым минимумом. Статусы научной рецензии и студенческого пилота независимы от этих вычислительных gates.
+
+## Исследование конформеров и native quantum-core
+
+`setup_xtb.py` устанавливает SHA-проверенный локальный xTB; `run_conformer_research.py` выполняет полный поиск, сохраняет все попытки, идентичность графа/стереохимии, SCC, оптимизацию и реальные Hessian. `audit_conformer_numerics.py` отдельно проверяет ALPB grid и Hessian step. Общая `conformer_ensemble.py` содержит симметрийный conformer RMSD и mass-weighted SVD projection; docking использует другой, receptor-frame RMSD. Канонический bundle содержит сырые Hessian, геометрии, native и независимо пересчитанные частоты; M06 повторяет расчёт из матриц, внешний xTB внутри обычного Notebook не запускается.
+
+Профиль uv `quantum-core` допускает официальный Windows PySCF 2.15.1 для SCF/TDDFT; полный `quantum` с dispersion/optimizer остаётся Linux. `run_vertical_tddft.py` задаёт отдельный composite CAM//GFN2 протокол, не присваивая ему чужой статус DFT-оптимизации. После реального ENOSPC добавлен scratch preflight 50 GiB и отдельный scratch directory; method/basis не уменьшаются при недостатке ресурсов. Inputs, failure и очистка только собственного незавершённого интегрального кэша документированы.

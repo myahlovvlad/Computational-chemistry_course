@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "xtb",
+    "input.xyz",
+    "--gfn",
+    "2",
+    "--chrg",
+    "0",
+    "--uhf",
+    "0",
+    "--acc",
+    "0.01",
+    "--parallel",
+    "1",
+    "--json"
+  ],
+  "executable": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\tmp\\course-restructure-20261118\\scripts\\bin\\xtb-6.8.0\\stage\\bin\\xtb.exe",
+  "geometry_sha256": "9db8e93d69c97b33b551bc9a41ceef21d68969e56deb26b311bad127fb0cd707"
+}

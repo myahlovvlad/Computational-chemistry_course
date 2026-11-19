@@ -25,10 +25,15 @@
     "n": 2
   },
   "M06-L01": {
-    "generated": 6
+    "atorvastatin_descriptive_rank_correlation": 0.8148872765252948,
+    "atorvastatin_anion_descriptive_rank_correlation": 0.6362955143946044,
+    "atorvastatin_lactone_descriptive_rank_correlation": 0.8073547483860931
   },
   "M06-L02": {
-    "ratio": 0.184924697649489
+    "acid_minimum_internal_frequency_cm1": 11.002140350712118,
+    "acid_internal_mode_count": 222,
+    "restricted_conformer_count": 3,
+    "complete_population_claim_allowed": false
   },
   "M07-L01": {
     "energy_hartree": -1.1167593,

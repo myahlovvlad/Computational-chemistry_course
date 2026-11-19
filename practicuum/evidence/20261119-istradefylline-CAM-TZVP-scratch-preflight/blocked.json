@@ -1,0 +1,8 @@
+{
+  "status": "BLOCKED",
+  "reason": "Insufficient free scratch space before SCF",
+  "free_bytes": 18416889856,
+  "required_free_bytes": 53687091200,
+  "SCF": "NOT_RUN",
+  "TDDFT": "NOT_RUN"
+}

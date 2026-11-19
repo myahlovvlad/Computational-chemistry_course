@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "lesson": "M06-L01",
+      "started_utc": "2026-11-19T09:19:01.443096+00:00",
+      "source_sha256": "7d88e1472073933821fc215ce3aa0ade4579446ed854d8fe5c987b046cb996d9",
+      "scope": "actual frozen-data recomputation from portable package, not a new external xTB run",
+      "status": "PASS",
+      "seconds": 5.961665199982235
+    },
+    {
+      "lesson": "M06-L02",
+      "started_utc": "2026-11-19T09:19:07.402263+00:00",
+      "source_sha256": "746d1f67d05b2a11e8231ff5b7e39bff092cc38a2889eda18c18fdab28514d5b",
+      "scope": "actual frozen-data recomputation from portable package, not a new external xTB run",
+      "status": "PASS",
+      "seconds": 3.0000608000264037
+    }
+  ],
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "data_manifest_sha256": "5a273e6daa51b8e9fe23b493fc673aef2e7c565bd6347b9991d992081f526dd9",
+  "student_solutions": "NOT_RUN",
+  "scientific_review": "NOT_RUN",
+  "Stepik_platform": "NOT_RUN"
+}

@@ -1,0 +1,57 @@
+test_PRESS_matches_independent_refitting (test_caffeine_kinetics.RateLawTests.test_PRESS_matches_independent_refitting) ... ok
+test_constant_concentration_is_not_identifiable (test_caffeine_kinetics.RateLawTests.test_constant_concentration_is_not_identifiable) ... ok
+test_invalid_rates_rejected (test_caffeine_kinetics.RateLawTests.test_invalid_rates_rejected) ... ok
+test_time_unit_conversion_scales_rates_and_intervals (test_caffeine_kinetics.RateLawTests.test_time_unit_conversion_scales_rates_and_intervals) ... ok
+test_alignment_is_allowed_for_isolated_conformers (test_conformer_ensemble.ConformerControls.test_alignment_is_allowed_for_isolated_conformers) ... ok
+test_diatomic_spring_has_one_internal_mode_and_correct_units (test_conformer_ensemble.ConformerControls.test_diatomic_spring_has_one_internal_mode_and_correct_units) ... ok
+test_negative_internal_curvature_is_not_clipped (test_conformer_ensemble.ConformerControls.test_negative_internal_curvature_is_not_clipped) ... ok
+test_empty_answer_is_not_success (test_dossier.DossierContract.test_empty_answer_is_not_success) ... ok
+test_one_dossier_survives_lesson_transition (test_dossier.DossierContract.test_one_dossier_survives_lesson_transition) ... ok
+test_dependency_errors_and_concept_cycles (test_evidence_contracts.EvidenceContracts.test_dependency_errors_and_concept_cycles) ... ok
+test_empty_boolean_and_nonfinite_submissions (test_evidence_contracts.EvidenceContracts.test_empty_boolean_and_nonfinite_submissions) ... ok
+test_nonfinite_and_unlabelled_evidence_rejected (test_evidence_contracts.EvidenceContracts.test_nonfinite_and_unlabelled_evidence_rejected) ... ok
+test_previous_versions_survive_and_hashes_follow_input (test_evidence_contracts.EvidenceContracts.test_previous_versions_survive_and_hashes_follow_input) ... ok
+test_known_correct_mean_has_only_pure_error (test_hplc_research_statistics.HplcAdequacyTests.test_known_correct_mean_has_only_pure_error) ... ok
+test_omitted_three_factor_effect_is_detected (test_hplc_research_statistics.HplcAdequacyTests.test_omitted_three_factor_effect_is_detected) ... ok
+test_validation_excludes_all_replicates_of_condition (test_hplc_research_statistics.HplcAdequacyTests.test_validation_excludes_all_replicates_of_condition) ... ok
+test_complete_table_contract (test_legacy_contracts.LaboratoryContracts.test_complete_table_contract) ... [11:53:48] SMILES Parse Error: syntax error while parsing: not_a_smiles
+[11:53:48] SMILES Parse Error: check for mistakes around position 3:
+[11:53:48] not_a_smiles
+[11:53:48] ~~^
+[11:53:48] SMILES Parse Error: Failed parsing SMILES 'not_a_smiles' for input: 'not_a_smiles'
+ok
+test_pose_reference (test_legacy_contracts.LaboratoryContracts.test_pose_reference) ... ok
+test_rhf_physical_reference (test_legacy_contracts.LaboratoryContracts.test_rhf_physical_reference) ... ok
+test_salt_and_covalent_halogen (test_legacy_contracts.LaboratoryContracts.test_salt_and_covalent_halogen) ... ok
+test_schema_duplicate_and_limit (test_legacy_contracts.LaboratoryContracts.test_schema_duplicate_and_limit) ... ok
+test_stereo_and_tautomer_policy (test_legacy_contracts.LaboratoryContracts.test_stereo_and_tautomer_policy) ... ok
+test_structural_alert_is_not_verdict (test_legacy_contracts.LaboratoryContracts.test_structural_alert_is_not_verdict) ... ok
+test_tautomer_option_reaches_the_table_policy (test_legacy_contracts.LaboratoryContracts.test_tautomer_option_reaches_the_table_policy) ... ok
+test_units_and_invalid_numbers (test_legacy_contracts.LaboratoryContracts.test_units_and_invalid_numbers) ... ok
+test_inline_smarts_is_not_link (test_markdown_links.MarkdownLinkTests.test_inline_smarts_is_not_link) ... ok
+test_smarts_in_code_is_not_a_link_but_real_link_survives (test_markdown_links.MarkdownLinkTests.test_smarts_in_code_is_not_a_link_but_real_link_survives) ... ok
+test_atom_reordering_does_not_change_pose (test_pose_geometry.PoseGeometryTests.test_atom_reordering_does_not_change_pose) ... ok
+test_changed_bond_graph_is_not_full_graph_isomorphism (test_pose_geometry.PoseGeometryTests.test_changed_bond_graph_is_not_full_graph_isomorphism) ... ok
+test_changed_stereochemistry_is_rejected (test_pose_geometry.PoseGeometryTests.test_changed_stereochemistry_is_rejected) ... ok
+test_translation_remains_visible (test_pose_geometry.PoseGeometryTests.test_translation_remains_visible) ... ok
+test_disjoint_rows_do_not_allow_shared_scaffolds (test_qsar_partitions.PartitionAuditTests.test_disjoint_rows_do_not_allow_shared_scaffolds) ... ok
+test_duplicate_rows_are_rejected (test_qsar_partitions.PartitionAuditTests.test_duplicate_rows_are_rejected) ... ok
+test_ledger_must_match_molecular_scaffolds (test_qsar_partitions.PartitionAuditTests.test_ledger_must_match_molecular_scaffolds) ... ok
+test_missing_rows_are_rejected (test_qsar_partitions.PartitionAuditTests.test_missing_rows_are_rejected) ... ok
+test_valid_groups_pass (test_qsar_partitions.PartitionAuditTests.test_valid_groups_pass) ... ok
+test_forcefield_zero_hydrogen_radius_preserved (test_receptor_inputs.ReceptorInputs.test_forcefield_zero_hydrogen_radius_preserved) ... ok
+test_four_digit_residue_does_not_merge_into_chain (test_receptor_inputs.ReceptorInputs.test_four_digit_residue_does_not_merge_into_chain) ... ok
+test_histidine_alias_does_not_change_protons_or_charges (test_receptor_inputs.ReceptorInputs.test_histidine_alias_does_not_change_protons_or_charges) ... ok
+test_malformed_or_nonfinite_input_rejected (test_receptor_inputs.ReceptorInputs.test_malformed_or_nonfinite_input_rejected) ... ok
+test_small_residue_and_chainless_records_preserve_values (test_receptor_inputs.ReceptorInputs.test_small_residue_and_chainless_records_preserve_values) ... ok
+test_constant_concentration_unit_factor_does_not_change_slope (test_solubility_regression.SolubilityRegressionTests.test_constant_concentration_unit_factor_does_not_change_slope) ... ok
+test_kelvin_scaling_recovers_known_slope (test_solubility_regression.SolubilityRegressionTests.test_kelvin_scaling_recovers_known_slope) ... ok
+test_missing_solubility_is_not_zero (test_solubility_regression.SolubilityRegressionTests.test_missing_solubility_is_not_zero) ... ok
+test_no_temperature_variation_cannot_identify_enthalpy (test_solubility_regression.SolubilityRegressionTests.test_no_temperature_variation_cannot_identify_enthalpy) ... ok
+test_interaction_is_invisible_in_OFAT (test_xanthine_chromatography.ChromatographySummaryTests.test_interaction_is_invisible_in_OFAT) ... ok
+test_percent_RSD_is_not_absolute_SD (test_xanthine_chromatography.ChromatographySummaryTests.test_percent_RSD_is_not_absolute_SD) ... ok
+
+----------------------------------------------------------------------
+Ran 47 tests in 1.061s
+
+OK

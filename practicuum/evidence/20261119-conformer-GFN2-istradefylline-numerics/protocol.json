@@ -1,0 +1,19 @@
+{
+  "scope": "paired fixed-geometry controls; no global sampling or final DFT claim",
+  "source_manifest_sha256": "083180bc06123d65f599253c195ab5aa9db1f27af4342d5e14595fd74d17b3db",
+  "source_result_sha256": "9c32b3d54f83b40d8bb7ca83ce5128dd4a6d824282f381f2f6a8da5de1e77887",
+  "executable_sha256": "9e825df458f43e2bb4b48a58a269cc6c40d2228ecc127eb23bd7b87373c8c0a1",
+  "singlepoint_accuracy": 0.01,
+  "solvent_grids": [
+    "tight",
+    "verytight"
+  ],
+  "ALPB_reference_state": "gsolv",
+  "Hessian_steps_bohr": [
+    0.005,
+    0.0025
+  ],
+  "absolute_grid_energy_change_tolerance_Eh": 1e-05,
+  "Hessian_mode_change_tolerance_cm1": 2.0,
+  "minimum_gate": "all internal frequencies positive in both step calculations"
+}

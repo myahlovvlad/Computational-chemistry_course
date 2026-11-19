@@ -1,0 +1,13 @@
+{
+  "method": "sequential whole-molecule GFN2/ALPB states, no additional simultaneous state jobs",
+  "input_sha256": {
+    "scripts/run_conformer_research.py": "f32a1edc499ed87eeddb553e239e0316535725e4b501c9f3d5c92080597507e5",
+    "practicuum/shared/conformer_ensemble.py": "98f58d50d6848ded0c03d0d672c21d057aedff7e81ff708f68fb517a676ba165",
+    "practicuum/protocols/conformer-gfn2-alpb.json": "1d146cab21ea260c0038daf647582b3ba7b6b67e3a1993b795d7e677d6103c37"
+  },
+  "wait_for": "20261119-conformer-GFN2-atorvastatin/result.json",
+  "remaining": [
+    "atorvastatin_anion",
+    "atorvastatin_lactone"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "status": "FAIL",
+  "type": "OSError",
+  "message": "[Errno 28] Can't synchronously write data (file write failed: time = Thu Nov 19 12:02:03 2026\n, filename = 'C:\\Users\\Miakhlov\\AppData\\Local\\Temp\\tmpbqhf_6an', file descriptor = 6, errno = 28, error message = 'No space left on device', buf = 00000152A0061040, total write size = 199432800, bytes this sub-write = 199432800, offset = 13621396832)",
+  "seconds": 349.24159439999494
+}

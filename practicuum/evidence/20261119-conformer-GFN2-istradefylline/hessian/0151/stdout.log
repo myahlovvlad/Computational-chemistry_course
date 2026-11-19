@@ -1,0 +1,1029 @@
+      -----------------------------------------------------------      
+     |                   =====================                   |     
+     |                           x T B                           |     
+     |                   =====================                   |     
+     |                         S. Grimme                         |     
+     |          Mulliken Center for Theoretical Chemistry        |     
+     |                    University of Bonn                     |     
+      -----------------------------------------------------------      
+
+   * xtb version 6.8.0 (4b8c987) compiled by 'runneradmin@runnervmm7ud1' on 2026-11-05
+
+   xtb is free software: you can redistribute it and/or modify it under
+   the terms of the GNU Lesser General Public License as published by
+   the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+   
+   xtb is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU Lesser General Public License for more details.
+   
+   Cite this work as:
+   * C. Bannwarth, E. Caldeweyher, S. Ehlert, A. Hansen, P. Pracht,
+     J. Seibert, S. Spicher, S. Grimme, WIREs Comput. Mol. Sci., 2021, 11,
+     e1493. DOI: 10.1002/wcms.1493
+   
+   for the xtb software:
+   * A. Katbashev, M. Stahn, T. Rose, V. Alizadeh, M. Friede, C. Plett,
+     P. Steinbach, S. Ehlert, J. Phys. Chem. A, 2025, 129, 2667-2682.
+     DOI: 10.1021/acs.jpca.4c08263
+   
+   for GFN2-xTB:
+   * C. Bannwarth, S. Ehlert and S. Grimme., J. Chem. Theory Comput., 2019,
+     15, 1652-1671. DOI: 10.1021/acs.jctc.8b01176
+   for GFN1-xTB:
+   * S. Grimme, C. Bannwarth, P. Shushkov, J. Chem. Theory Comput., 2017,
+     13, 1989-2009. DOI: 10.1021/acs.jctc.7b00118
+   for GFN0-xTB:
+   * P. Pracht, E. Caldeweyher, S. Ehlert, S. Grimme, ChemRxiv, 2019, preprint.
+     DOI: 10.26434/chemrxiv.8326202.v1
+   
+   for spGFNn-xTB (spin-polarization):
+   * H. Neugebauer, B. Bädorf, S. Ehlert, A. Hansen, S. Grimme,
+     J. Comput. Chem., 2023, 44, 2120-2129. DOI: 10.1002/jcc.27185
+   
+   for GFN-FF:
+   * S. Spicher and S. Grimme, Angew. Chem. Int. Ed., 2020, 59, 15665-15673.
+     DOI: 10.1002/anie.202004239
+   * T. Rose, M. Bursch, J.-M. Mewes, S. Grimme, Inorg. Chem., 2024, 63,
+     19364-19374. DOI: 10.1021/acs.inorgchem.4c03215
+   
+   for periodic GFN-FF (mcGFN-FF):
+   * S. Grimme and T. Rose, Z. Naturforsch. B, 2024, 79, 191-200.
+     DOI: 10.1515/znb-2023-0088
+   
+   for ALPB and GBSA implicit solvation:
+   * S. Ehlert, M. Stahn, S. Spicher, S. Grimme, J. Chem. Theory Comput.,
+     2021, 17, 4250-4261. DOI: 10.1021/acs.jctc.1c00471
+   
+   for CPCM-X implicit solvation:
+   * M. Stahn, S. Ehlert, S. Grimme, J. Phys. Chem. A,
+     2023, 127, 7036-7043. DOI: 10.1021/acs.jpca.3c04382
+   
+   for ddX implicit solvation:
+   * M. Nottoli, M. F. Herbst, A. Mikhalev, A. Jha, F. Lipparini, B. Stamm,
+     WIREs Comput. Mol. Sci., 2024, 14, e1726. DOI: 10.1002/wcms.1726
+   
+   for DFT-D4:
+   * E. Caldeweyher, C. Bannwarth and S. Grimme, J. Chem. Phys., 2017,
+     147, 034112. DOI: 10.1063/1.4993215
+   * E. Caldeweyher, S. Ehlert, A. Hansen, H. Neugebauer, S. Spicher,
+     C. Bannwarth and S. Grimme, J. Chem. Phys., 2019, 150, 154122.
+     DOI: 10.1063/1.5090222
+   * E. Caldeweyher, J.-M. Mewes, S. Ehlert and S. Grimme, Phys. Chem. Chem. Phys.
+     2020, 22, 8499-8512. DOI: 10.1039/D0CP00502A
+   * L. Wittmann, I. Gordiy, M. Friede, B. Helmich-Paris, S. Grimme,
+     A. Hansen and M. Bursch, Phys. Chem. Chem. Phys., 2024, 26, 21379-21394.
+     DOI: 10.1039/D4CP01514B
+   
+   for sTDA-xTB:
+   * S. Grimme and C. Bannwarth, J. Chem. Phys., 2016, 145, 054103.
+     DOI: 10.1063/1.4959605
+   
+   for FOD:
+   * S. Grimme and A. Hansen, Angew. Chem. Int. Ed., 2015, 54, 12308-12313.
+     DOI: 10.1002/anie.201501887
+   * C. A. Bauer, A. Hansen, S. Grimme, Chem. Eur. J., 2017, 23, 6150-6164.
+     DOI: 10.1002/chem.201604682
+   
+   in the mass-spec context:
+   * V. Asgeirsson, C. Bauer and S. Grimme, Chem. Sci., 2017, 8, 4879.
+     DOI: 10.1039/c7sc00601b
+   * J. Koopman and S. Grimme, ACS Omega 2019, 4, 12, 15120-15133.
+     DOI: 10.1021/acsomega.9b02011
+   * J. Koopman and S. Grimme, J. Am. Soc. Mass Spectrom., 2021, 32, 7, 1735-1751.
+     DOI: 10.1021/jasms.1c00098
+   * J. Gorges and S. Grimme, Phys. Chem. Chem. Phys., 2025, 27, 6899-6911.
+     DOI: 10.1039/D5CP00316D
+   
+   for metadynamics refer to:
+   * S. Grimme, J. Chem. Theory Comput., 2019, 15, 2847-2862
+     DOI: 10.1021/acs.jctc.9b00143
+   
+   for SPH calculations refer to:
+   * S. Spicher and S. Grimme, J. Chem. Theory Comput., 2021, 17, 1701-1714
+     DOI: 10.1021/acs.jctc.0c01306
+   
+   for ONIOM refer to:
+   * C. Plett, A. Katbashev, S. Ehlert, S. Grimme, M. Bursch,
+     Phys. Chem. Chem. Phys., 2023, 25, 17860-17868. DOI: 10.1039/D3CP02178E
+   
+   for DIPRO refer to:
+   * J. T. Kohn, N. Gildemeister, S. Grimme, D. Fazzi, A. Hansen,
+     J. Chem. Phys., 2023, 159, 144106. DOI: 10.1063/5.0167484
+   
+   for PTB refer to:
+   * S. Grimme, M. Mueller, A. Hansen, J. Chem. Phys., 2023, 158, 124111.
+     DOI: 10.1063/5.0137838
+   
+   for CEH refer to:
+   * M. Müller, T. Froitzheim, A. Hansen, S. Grimme, J. Phys. Chem. A, 2024,
+     128, 10723-10736. DOI: 10.1021/acs.jpca.4c06989
+   
+   for O1NumHess refer to:
+   * B. Wang, S. Luo, Z. Wang, W. Liu, J. Chem. Theory Comput., 2025, 21, 10893-10909.
+     DOI: 10.1021/acs.jctc.5c01354
+   
+   with help from (in alphabetical order)
+   P. Atkinson, T. Balduf, C. Bannwarth, F. Bohle, G. Brandenburg, E. Caldeweyher,
+   M. Checinski, S. Dohm, S. Ehlert, S. Ehrlich, M. Friede, T. Froitzheim,
+   I. Gerasimov, J. Gorges, C. Hölzer, A. Katbashev, J. Kohn, J. Koopman,
+   C. Lavigne, S. Lehtola, F. März, M. Müller, F. Musil, H. Neugebauer,
+   J. Pisarek, C. Plett, P. Pracht, F. Pultar, T. Rose, J. Seibert, L. M. Seidler,
+   C. E. Selzer, P. Shushkov, S. Spicher, M. Stahn, M. Steiner, T. Strunk,
+   J. Stückrath, and J. Unsleber
+   
+ * started run on 2026/11/19 at 11:26:26.966     
+   ID    Z sym.   atoms
+    1    6 C      1, 2, 4-6, 9, 11, 12, 14, 16-23, 25, 27, 28
+    2    7 N      3, 8, 13, 15
+    3    8 O      7, 10, 24, 26
+    4    1 H      29-52
+
+           -------------------------------------------------
+          |                Calculation Setup                |
+           -------------------------------------------------
+
+          program call               : xtb input.xyz --gfn 2 --alpb water gsolv --chrg 0 --uhf 0 --parallel 2 --input control.inp --json --acc 0.01 --hess
+          coordinate file            : input.xyz
+          omp threads                :                     2
+          random seed                :            2116246941
+
+
+           -------------------------------------------------
+          |                 G F N 2 - x T B                 |
+           -------------------------------------------------
+
+        Reference                      10.1021/acs.jctc.8b01176
+      * Hamiltonian:
+        H0-scaling (s, p, d)           1.850000    2.230000    2.230000
+        zeta-weighting                 0.500000
+      * Dispersion:
+        s8                             2.700000
+        a1                             0.520000
+        a2                             5.000000
+        s9                             5.000000
+      * Repulsion:
+        kExp                           1.500000    1.000000
+        rExp                           1.000000
+      * Coulomb:
+        alpha                          2.000000
+        third order                    shell-resolved
+        anisotropic                    true
+        a3                             3.000000
+        a5                             4.000000
+        cn-shift                       1.200000
+        cn-exp                         4.000000
+        max-rad                        5.000000
+
+      * Solvation model:               ALPB
+        Solvent                        water
+        Parameter file                 internal GFN2-xTB/ALPB
+        Dielectric constant                8.0200E+01
+        Reference state                gsolv [1 M gas/solution]
+        Free energy shift                  1.0808E-03 Eh       6.7819E-01 kcal/mol
+        Temperature                        2.9815E+02 K
+        Density                            1.0000E+00 kg/L
+        Solvent mass                       1.8000E+01 g/mol
+        Interaction kernel             P16
+        Born radius scaling (c1)           1.4744E+00
+        Born radii integrator          GBOBC
+        Born offset                        0.0000E+00 a0       0.0000E+00 AA
+        H-bond correction              true
+        Ion screening                  false
+        Surface tension                    1.0000E-05 Eh       1.5569E+01 dyn/cm
+        Grid points                               974 per atom
+
+          ...................................................
+          :                      SETUP                      :
+          :.................................................:
+          :  # basis functions                 136          :
+          :  # atomic orbitals                 136          :
+          :  # shells                           80          :
+          :  # electrons                       148          :
+          :  max. iterations                   250          :
+          :  Hamiltonian                  GFN2-xTB          :
+          :  restarted?                      false          :
+          :  GBSA solvation                   true          :
+          :  PC potential                    false          :
+          :  electronic temp.          300.0000000     K    :
+          :  accuracy                    0.0100000          :
+          :  -> integral cutoff          0.2500000E+02      :
+          :  -> integral neglect         0.0000000E+00      :
+          :  -> SCF convergence          0.1000000E-07 Eh   :
+          :  -> wf. convergence          0.2000000E-06 e    :
+          :  Broyden damping             0.4000000          :
+          :  net charge                          0          :
+          :  unpaired electrons                  0          :
+          ...................................................
+
+ iter      E             dE          RMSdq      gap      omega  full diag
+   1    -84.0837589 -0.840838E+02  0.141E+00    2.34       0.0  T
+   2    -84.2393064 -0.155548E+00  0.797E-01    2.18       1.0  T
+   3    -84.2430901 -0.378370E-02  0.332E-01    2.09       1.0  T
+   4    -84.2463639 -0.327375E-02  0.805E-02    2.12       1.0  T
+   5    -84.2480478 -0.168388E-02  0.312E-02    2.12       1.0  T
+   6    -84.2481482 -0.100389E-03  0.163E-02    2.12       1.0  T
+   7    -84.2481761 -0.279683E-04  0.781E-03    2.12       1.0  T
+   8    -84.2481814 -0.525136E-05  0.238E-03    2.12       1.8  T
+   9    -84.2481826 -0.126879E-05  0.989E-04    2.12       4.3  T
+  10    -84.2481827 -0.819209E-07  0.433E-04    2.12       9.9  T
+  11    -84.2481827 -0.133567E-07  0.134E-04    2.12      31.8  T
+  12    -84.2481827 -0.153562E-08  0.744E-05    2.12      57.4  T
+  13    -84.2481827 -0.644704E-09  0.326E-05    2.12     131.0  T
+  14    -84.2481827 -0.108443E-09  0.143E-05    2.12     299.7  T
+  15    -84.2481827 -0.182609E-10  0.632E-06    2.12     676.4  T
+  16    -84.2481827 -0.375167E-11  0.242E-06    2.12    1761.6  T
+  17    -84.2481827 -0.113687E-11  0.783E-07    2.12       0.0  T
+
+   *** convergence criteria satisfied after 17 iterations ***
+
+         #    Occupation            Energy/Eh            Energy/eV
+      -------------------------------------------------------------
+         1        2.0000           -0.7273399             -19.7919
+       ...           ...                  ...                  ...
+        68        2.0000           -0.4258621             -11.5883
+        69        2.0000           -0.4193557             -11.4112
+        70        2.0000           -0.4161786             -11.3248
+        71        2.0000           -0.4024783             -10.9520
+        72        2.0000           -0.3990919             -10.8598
+        73        2.0000           -0.3848458             -10.4722
+        74        2.0000           -0.3641252              -9.9084 (HOMO)
+        75                         -0.2861607              -7.7868 (LUMO)
+        76                         -0.2457328              -6.6867
+        77                         -0.2260402              -6.1509
+        78                         -0.2194702              -5.9721
+        79                         -0.1979278              -5.3859
+       ...                                ...                  ...
+       136                          0.6948339              18.9074
+      -------------------------------------------------------------
+                  HL-Gap            0.0779646 Eh            2.1215 eV
+             Fermi-level           -0.3251430 Eh           -8.8476 eV
+
+ SCC (total)                   0 d,  0 h,  0 min,  0.058 sec
+ SCC setup                      ...        0 min,  0.003 sec (  4.380%)
+ Dispersion                     ...        0 min,  0.001 sec (  1.144%)
+ classical contributions        ...        0 min,  0.000 sec (  0.190%)
+ integral evaluation            ...        0 min,  0.002 sec (  3.933%)
+ iterations                     ...        0 min,  0.049 sec ( 84.590%)
+ molecular gradient             ...        0 min,  0.003 sec (  5.159%)
+ printout                       ...        0 min,  0.000 sec (  0.578%)
+
+         :::::::::::::::::::::::::::::::::::::::::::::::::::::
+         ::                     SUMMARY                     ::
+         :::::::::::::::::::::::::::::::::::::::::::::::::::::
+         :: total energy             -83.149603539243 Eh    ::
+         :: w/o Gsasa/hb/shift       -83.145482582916 Eh    ::
+         :: gradient norm              0.000062642584 Eh/a0 ::
+         :: HOMO-LUMO gap              2.121524466790 eV    ::
+         ::.................................................::
+         :: SCC energy               -84.248492281842 Eh    ::
+         :: -> isotropic ES            0.148598227971 Eh    ::
+         :: -> anisotropic ES          0.001648800722 Eh    ::
+         :: -> anisotropic XC          0.026660693411 Eh    ::
+         :: -> dispersion             -0.054054371308 Eh    ::
+         :: -> Gsolv                  -0.028103167996 Eh    ::
+         ::    -> Gelec               -0.023982211668 Eh    ::
+         ::    -> Gsasa               -0.000403411125 Eh    ::
+         ::    -> Ghb                 -0.004798304901 Eh    ::
+         ::    -> Gshift               0.001080759698 Eh    ::
+         :: repulsion energy           1.098888742599 Eh    ::
+         :: add. restraining           0.000000000000 Eh    ::
+         :: total charge              -0.000000000000 e     ::
+         :::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+           ------------------------------------------------- 
+          |                Numerical Hessian                |
+           ------------------------------------------------- 
+step length          :   0.00500
+SCC accuracy         :   0.01000
+Hessian scale factor :   1.00000
+frozen atoms in %    :   0.00000    0
+RMS gradient         :   0.00006
+estimated CPU  time      3.28 min
+estimated wall time      1.96 min
+
+           -------------------------------------------------
+          |              Compliance Constants               |
+           -------------------------------------------------
+
+References for compliance constants and relaxed force constants:
+      K. Brandhorst, J. Grunenberg, Chem. Soc. Rev. 37 (2008), 1558.
+      J. Grunenberg, Chem. Sci. 6 (2015), 4086.
+
+Table columns C and 1/C report diagonal compliance elements C_ii and their reciprocals.
+units: C   in Bohr^2/Hartree (a0^2/Eh)
+       1/C in Eh/a0^2  (relaxed force constant)
+       conversion: 1 Eh/a0^2 = 15.570 N/cm
+coord value: bond stretches in Bohr (a0); angles and dihedrals in radians
+             linear bends are dimensionless fixed-frame projections
+bond local-mode frequency nu_loc in cm^-1
+exact zero C is reported as 1/C = +Infinity (zero response)
+
+Reference for bond local-mode frequencies:
+      Cremer, Kraka, Zou, J. Chem. Theory Comput. 8 (2012) 2864.
+
+     type                atoms                   coord value       C       1/C    nu_loc/cm-1
+---------------------------------------------------------------------------------------------
+   1 bond stretch  C   1   H  31                         2.05      3.06      0.33   3047.26
+   2 bond stretch  C   1   H  30                         2.05      3.10      0.32   3029.24
+   3 bond stretch  C   1   H  29                         2.06      3.11      0.32   3021.05
+   4 bond stretch  C   1   C   2                         2.88      3.63      0.28   1101.01
+   5 bond stretch  C   2   H  33                         2.06      3.17      0.32   2994.28
+   6 bond stretch  C   2   H  32                         2.06      3.21      0.31   2973.20
+   7 bond stretch  C   2   N   3                         2.75      3.46      0.29   1087.42
+   8 bond stretch  N   3   C   4                         2.57      2.36      0.42   1316.85
+   9 bond stretch  N   3   C   9                         2.59      2.77      0.36   1215.29
+  10 bond stretch  C   4   N  15                         2.53      2.29      0.44   1336.02
+  11 bond stretch  C   4   C   5                         2.64      2.32      0.43   1376.22
+  12 bond stretch  C   5   N  13                         2.60      2.48      0.40   1284.35
+  13 bond stretch  C   5   C   6                         2.68      2.74      0.37   1267.81
+  14 bond stretch  C   6   O   7                         2.33      1.57      0.64   1566.42
+  15 bond stretch  C   6   N   8                         2.64      3.30      0.30   1112.27
+  16 bond stretch  N   8   C   9                         2.62      3.14      0.32   1141.45
+  17 bond stretch  N   8   C  11                         2.76      3.54      0.28   1074.78
+  18 bond stretch  C   9   O  10                         2.31      1.51      0.66   1599.76
+  19 bond stretch  C  11   H  34                         2.06      3.21      0.31   2975.81
+  20 bond stretch  C  11   H  35                         2.06      3.21      0.31   2977.06
+  21 bond stretch  C  11   C  12                         2.88      3.62      0.28   1102.43
+  22 bond stretch  C  12   H  38                         2.05      3.07      0.33   3043.77
+  23 bond stretch  C  12   H  37                         2.05      3.11      0.32   3021.47
+  24 bond stretch  C  12   H  36                         2.06      3.12      0.32   3017.55
+  25 bond stretch  N  13   C  14                         2.57      2.57      0.39   1260.84
+  26 bond stretch  N  13   C  28                         2.72      3.09      0.32   1149.54
+  27 bond stretch  C  14   N  15                         2.53      2.37      0.42   1312.68
+  28 bond stretch  C  14   C  16                         2.70      2.81      0.36   1252.26
+  29 bond stretch  C  16   H  39                         2.04      2.95      0.34   3101.53
+  30 bond stretch  C  16   C  17                         2.55      1.86      0.54   1537.00
+  31 bond stretch  C  17   H  40                         2.04      3.01      0.33   3074.46
+  32 bond stretch  C  17   C  18                         2.73      2.97      0.34   1217.13
+  33 bond stretch  C  18   C  23                         2.63      2.40      0.42   1354.48
+  34 bond stretch  C  18   C  19                         2.65      2.52      0.40   1321.10
+  35 bond stretch  C  19   H  41                         2.04      2.94      0.34   3106.61
+  36 bond stretch  C  19   C  20                         2.60      2.26      0.44   1394.09
+  37 bond stretch  C  20   O  26                         2.58      3.03      0.33   1128.23
+  38 bond stretch  C  20   C  21                         2.67      2.67      0.37   1283.45
+  39 bond stretch  C  21   O  24                         2.57      3.01      0.33   1131.97
+  40 bond stretch  C  21   C  22                         2.62      2.37      0.42   1361.83
+  41 bond stretch  C  22   H  42                         2.04      2.94      0.34   3109.80
+  42 bond stretch  C  22   C  23                         2.61      2.30      0.44   1383.69
+  43 bond stretch  C  23   H  43                         2.04      2.94      0.34   3109.00
+  44 bond stretch  O  24   C  25                         2.68      3.57      0.28   1038.95
+  45 bond stretch  C  25   H  45                         2.06      3.12      0.32   3018.75
+  46 bond stretch  C  25   H  46                         2.07      3.32      0.30   2927.16
+  47 bond stretch  C  25   H  44                         2.07      3.32      0.30   2927.11
+  48 bond stretch  O  26   C  27                         2.67      3.55      0.28   1041.59
+  49 bond stretch  C  27   H  48                         2.06      3.12      0.32   3017.30
+  50 bond stretch  C  27   H  47                         2.07      3.32      0.30   2923.76
+  51 bond stretch  C  27   H  49                         2.07      3.33      0.30   2923.08
+  52 bond stretch  C  28   H  52                         2.06      3.09      0.32   3031.33
+  53 bond stretch  C  28   H  50                         2.06      3.19      0.31   2983.29
+  54 bond stretch  C  28   H  51                         2.06      3.20      0.31   2981.25
+  55 angle         H  31   C   1   H  30               1.9035    6.5850    0.1519
+  56 angle         H  31   C   1   H  29               1.8997    6.5527    0.1526
+  57 angle         H  31   C   1   C   2               1.9113    6.1797    0.1618
+  58 angle         H  30   C   1   H  29               1.9058    6.4760    0.1544
+  59 angle         H  30   C   1   C   2               1.9227    6.0114    0.1664
+  60 angle         H  29   C   1   C   2               1.9205    5.8985    0.1695
+  61 angle         C   1   C   2   H  33               1.9317    6.0314    0.1658
+  62 angle         C   1   C   2   H  32               1.9261    6.0565    0.1651
+  63 angle         C   1   C   2   N   3               1.9390    4.2743    0.2340
+  64 angle         H  33   C   2   H  32               1.9325    6.8928    0.1451
+  65 angle         H  33   C   2   N   3               1.8598    5.4496    0.1835
+  66 angle         H  32   C   2   N   3               1.8729    5.3150    0.1881
+  67 angle         C   2   N   3   C   4               2.0991    3.8154    0.2621
+  68 angle         C   2   N   3   C   9               2.0948    3.6565    0.2735
+  69 angle         C   4   N   3   C   9               2.0879    1.9611    0.5099
+  70 angle         N   3   C   4   N  15               2.2235    2.4073    0.4154
+  71 angle         N   3   C   4   C   5               2.1223    2.1385    0.4676
+  72 angle         N  15   C   4   C   5               1.9373    1.3237    0.7555
+  73 angle         C   4   C   5   N  13               1.8371    1.2561    0.7961
+  74 angle         C   4   C   5   C   6               2.1310    2.0906    0.4783
+  75 angle         N  13   C   5   C   6               2.3150    2.4045    0.4159
+  76 angle         C   5   C   6   O   7               2.2144    3.0106    0.3322
+  77 angle         C   5   C   6   N   8               1.9552    1.9048    0.5250
+  78 angle         O   7   C   6   N   8               2.1136    2.5542    0.3915
+  79 angle         C   6   N   8   C   9               2.2144    2.0511    0.4875
+  80 angle         C   6   N   8   C  11               2.0409    2.9959    0.3338
+  81 angle         C   9   N   8   C  11               2.0276    2.9521    0.3387
+  82 angle         N   3   C   9   N   8               2.0555    1.9159    0.5219
+  83 angle         N   3   C   9   O  10               2.1165    2.5734    0.3886
+  84 angle         N   8   C   9   O  10               2.1112    2.5730    0.3886
+  85 angle         N   8   C  11   H  34               1.8764    5.1354    0.1947
+  86 angle         N   8   C  11   H  35               1.8626    5.1003    0.1961
+  87 angle         N   8   C  11   C  12               1.9416    4.2900    0.2331
+  88 angle         H  34   C  11   H  35               1.9265    6.8034    0.1470
+  89 angle         H  34   C  11   C  12               1.9267    5.8467    0.1710
+  90 angle         H  35   C  11   C  12               1.9284    5.8230    0.1717
+  91 angle         C  11   C  12   H  38               1.9103    6.1579    0.1624
+  92 angle         C  11   C  12   H  37               1.9192    5.8539    0.1708
+  93 angle         C  11   C  12   H  36               1.9221    5.8819    0.1700
+  94 angle         H  38   C  12   H  37               1.9021    6.5584    0.1525
+  95 angle         H  38   C  12   H  36               1.9020    6.5537    0.1526
+  96 angle         H  37   C  12   H  36               1.9079    6.4732    0.1545
+  97 angle         C   5   N  13   C  14               1.8588    1.2370    0.8084
+  98 angle         C   5   N  13   C  28               2.1954    3.5137    0.2846
+  99 angle         C  14   N  13   C  28               2.2289    3.5249    0.2837
+ 100 angle         N  13   C  14   N  15               1.9549    1.2846    0.7785
+ 101 angle         N  13   C  14   C  16               2.1545    3.4018    0.2940
+ 102 angle         N  15   C  14   C  16               2.1737    3.4626    0.2888
+ 103 angle         C   4   N  15   C  14               1.8366    1.2544    0.7972
+ 104 angle         C  14   C  16   H  39               2.0287    5.7916    0.1727
+ 105 angle         C  14   C  16   C  17               2.1287    4.6798    0.2137
+ 106 angle         H  39   C  16   C  17               2.1257    6.0578    0.1651
+ 107 angle         C  16   C  17   H  40               2.0402    5.6760    0.1762
+ 108 angle         C  16   C  17   C  18               2.2133    4.1311    0.2421
+ 109 angle         H  40   C  17   C  18               2.0297    5.4494    0.1835
+ 110 angle         C  17   C  18   C  23               2.1557    3.1779    0.3147
+ 111 angle         C  17   C  18   C  19               2.0638    3.0869    0.3239
+ 112 angle         C  23   C  18   C  19               2.0637    2.0831    0.4801
+ 113 angle         C  18   C  19   H  41               2.0645    5.1429    0.1944
+ 114 angle         C  18   C  19   C  20               2.1197    2.2433    0.4458
+ 115 angle         H  41   C  19   C  20               2.0989    5.2415    0.1908
+ 116 angle         C  19   C  20   O  26               2.1874    2.7916    0.3582
+ 117 angle         C  19   C  20   C  21               2.0861    2.1595    0.4631
+ 118 angle         O  26   C  20   C  21               2.0097    2.9535    0.3386
+ 119 angle         C  20   C  21   O  24               2.0157    2.9603    0.3378
+ 120 angle         C  20   C  21   C  22               2.0781    2.1295    0.4696
+ 121 angle         O  24   C  21   C  22               2.1894    2.8035    0.3567
+ 122 angle         C  21   C  22   H  42               2.0965    5.2697    0.1898
+ 123 angle         C  21   C  22   C  23               2.1084    2.2665    0.4412
+ 124 angle         H  42   C  22   C  23               2.0782    5.1527    0.1941
+ 125 angle         C  18   C  23   C  22               2.1104    2.1941    0.4558
+ 126 angle         C  18   C  23   H  43               2.1013    5.3139    0.1882
+ 127 angle         C  22   C  23   H  43               2.0715    5.1941    0.1925
+ 128 angle         C  21   O  24   C  25               2.0690    3.7988    0.2632
+ 129 angle         O  24   C  25   H  45               1.8348    5.2135    0.1918
+ 130 angle         O  24   C  25   H  46               1.9401    5.2221    0.1915
+ 131 angle         O  24   C  25   H  44               1.9397    5.2202    0.1916
+ 132 angle         H  45   C  25   H  46               1.9143    6.7244    0.1487
+ 133 angle         H  45   C  25   H  44               1.9143    6.7254    0.1487
+ 134 angle         H  46   C  25   H  44               1.9189    6.5923    0.1517
+ 135 angle         C  20   O  26   C  27               2.0645    3.7510    0.2666
+ 136 angle         O  26   C  27   H  48               1.8347    5.2120    0.1919
+ 137 angle         O  26   C  27   H  47               1.9407    5.2030    0.1922
+ 138 angle         O  26   C  27   H  49               1.9401    5.1912    0.1926
+ 139 angle         H  48   C  27   H  47               1.9142    6.7136    0.1490
+ 140 angle         H  48   C  27   H  49               1.9142    6.7180    0.1489
+ 141 angle         H  47   C  27   H  49               1.9182    6.5584    0.1525
+ 142 angle         N  13   C  28   H  52               1.8854    4.9941    0.2002
+ 143 angle         N  13   C  28   H  50               1.9240    5.3181    0.1880
+ 144 angle         N  13   C  28   H  51               1.9246    5.3208    0.1879
+ 145 angle         H  52   C  28   H  50               1.9092    6.8380    0.1462
+ 146 angle         H  52   C  28   H  51               1.9079    6.8369    0.1463
+ 147 angle         H  50   C  28   H  51               1.9125    6.6898    0.1495
+ 148 dihedral      H  31   C   1   C   2   H  33       1.0648   56.1166    0.0178
+ 149 dihedral      H  31   C   1   C   2   H  32      -1.0806   56.0159    0.0179
+ 150 dihedral      H  31   C   1   C   2   N   3       3.1273   54.0459    0.0185
+ 151 dihedral      H  30   C   1   C   2   H  33      -1.0288   53.3420    0.0187
+ 152 dihedral      H  30   C   1   C   2   H  32       3.1090   53.2094    0.0188
+ 153 dihedral      H  30   C   1   C   2   N   3       1.0337   51.1656    0.0195
+ 154 dihedral      H  29   C   1   C   2   H  33      -3.1309   52.6230    0.0190
+ 155 dihedral      H  29   C   1   C   2   H  32       1.0068   52.5422    0.0190
+ 156 dihedral      H  29   C   1   C   2   N   3      -1.0684   50.4371    0.0198
+ 157 dihedral      C   1   C   2   N   3   C   4      -1.5711  230.5183    0.0043
+ 158 dihedral      C   1   C   2   N   3   C   9       1.5151  213.6080    0.0047
+ 159 dihedral      H  33   C   2   N   3   C   4       0.5344  226.7141    0.0044
+ 160 dihedral      H  33   C   2   N   3   C   9      -2.6626  209.6959    0.0048
+ 161 dihedral      H  32   C   2   N   3   C   4       2.6051  225.8749    0.0044
+ 162 dihedral      H  32   C   2   N   3   C   9      -0.5919  210.2141    0.0048
+ 163 dihedral      C   2   N   3   C   4   N  15      -0.0616   36.5511    0.0274
+ 164 dihedral      C   2   N   3   C   4   C   5       3.0949   29.5791    0.0338
+ 165 dihedral      C   9   N   3   C   4   N  15       3.1351   24.4599    0.0409
+ 166 dihedral      C   9   N   3   C   4   C   5       0.0085   27.5196    0.0363
+ 167 dihedral      C   2   N   3   C   9   N   8      -3.0977   27.1668    0.0368
+ 168 dihedral      C   2   N   3   C   9   O  10       0.0478   31.3176    0.0319
+ 169 dihedral      C   4   N   3   C   9   N   8      -0.0111   31.1304    0.0321
+ 170 dihedral      C   4   N   3   C   9   O  10       3.1344   24.5345    0.0408
+ 171 dihedral      N   3   C   4   N  15   C  14      -3.1311   13.2013    0.0758
+ 172 dihedral      C   5   C   4   N  15   C  14      -0.0031    6.6247    0.1509
+ 173 dihedral      N   3   C   4   C   5   N  13       3.1322   12.0584    0.0829
+ 174 dihedral      N   3   C   4   C   5   C   6       0.0030   25.5785    0.0391
+ 175 dihedral      N  15   C   4   C   5   N  13       0.0033    7.1313    0.1402
+ 176 dihedral      N  15   C   4   C   5   C   6      -3.1259   20.3844    0.0491
+ 177 dihedral      C   4   C   5   N  13   C  14      -0.0021    6.8518    0.1459
+ 178 dihedral      C   4   C   5   N  13   C  28      -3.1401   25.1546    0.0398
+ 179 dihedral      C   6   C   5   N  13   C  14       3.1252   26.3158    0.0380
+ 180 dihedral      C   6   C   5   N  13   C  28      -0.0128   54.8117    0.0182
+ 181 dihedral      C   4   C   5   C   6   O   7       3.1355   28.2806    0.0354
+ 182 dihedral      C   4   C   5   C   6   N   8      -0.0104   26.2319    0.0381
+ 183 dihedral      N  13   C   5   C   6   O   7       0.0102   29.7216    0.0336
+ 184 dihedral      N  13   C   5   C   6   N   8      -3.1357   23.6397    0.0423
+ 185 dihedral      C   5   C   6   N   8   C   9       0.0077   34.8832    0.0287
+ 186 dihedral      C   5   C   6   N   8   C  11       3.1209   23.4564    0.0426
+ 187 dihedral      O   7   C   6   N   8   C   9      -3.1379   32.3089    0.0310
+ 188 dihedral      O   7   C   6   N   8   C  11      -0.0247   27.6599    0.0362
+ 189 dihedral      C   6   N   8   C   9   N   3       0.0028   38.8652    0.0257
+ 190 dihedral      C   6   N   8   C   9   O  10       3.1405   31.3017    0.0319
+ 191 dihedral      C  11   N   8   C   9   N   3      -3.1106   25.8486    0.0387
+ 192 dihedral      C  11   N   8   C   9   O  10       0.0271   27.3950    0.0365
+ 193 dihedral      C   6   N   8   C  11   H  34       2.5496  122.2213    0.0082
+ 194 dihedral      C   6   N   8   C  11   H  35       0.4826  120.3624    0.0083
+ 195 dihedral      C   6   N   8   C  11   C  12      -1.6221  120.0139    0.0083
+ 196 dihedral      C   9   N   8   C  11   H  34      -0.6173  110.7461    0.0090
+ 197 dihedral      C   9   N   8   C  11   H  35      -2.6843  107.9215    0.0093
+ 198 dihedral      C   9   N   8   C  11   C  12       1.4942  107.8200    0.0093
+ 199 dihedral      N   8   C  11   C  12   H  38       3.1300   53.0597    0.0188
+ 200 dihedral      N   8   C  11   C  12   H  37      -1.0642   49.8837    0.0200
+ 201 dihedral      N   8   C  11   C  12   H  36       1.0394   50.4627    0.0198
+ 202 dihedral      H  34   C  11   C  12   H  38      -1.0715   55.1590    0.0181
+ 203 dihedral      H  34   C  11   C  12   H  37       1.0175   52.1547    0.0192
+ 204 dihedral      H  34   C  11   C  12   H  36       3.1211   52.6909    0.0190
+ 205 dihedral      H  35   C  11   C  12   H  38       1.0645   55.1228    0.0181
+ 206 dihedral      H  35   C  11   C  12   H  37      -3.1297   52.1184    0.0192
+ 207 dihedral      H  35   C  11   C  12   H  36      -1.0261   52.7112    0.0190
+ 208 dihedral      C   5   N  13   C  14   N  15       0.0003    7.7951    0.1283
+ 209 dihedral      C   5   N  13   C  14   C  16       3.1403   15.3461    0.0652
+ 210 dihedral      C  28   N  13   C  14   N  15       3.1382   25.9489    0.0385
+ 211 dihedral      C  28   N  13   C  14   C  16      -0.0050   39.8424    0.0251
+ 212 dihedral      C   5   N  13   C  28   H  52       0.0134  117.4566    0.0085
+ 213 dihedral      C   5   N  13   C  28   H  50       2.0986  122.2112    0.0082
+ 214 dihedral      C   5   N  13   C  28   H  51      -2.0706  122.6112    0.0082
+ 215 dihedral      C  14   N  13   C  28   H  52      -3.1238   97.8792    0.0102
+ 216 dihedral      C  14   N  13   C  28   H  50      -1.0385  103.9440    0.0096
+ 217 dihedral      C  14   N  13   C  28   H  51       1.0755  104.2306    0.0096
+ 218 dihedral      N  13   C  14   N  15   C   4       0.0017    7.0422    0.1420
+ 219 dihedral      C  16   C  14   N  15   C   4      -3.1383   15.3044    0.0653
+ 220 dihedral      N  13   C  14   C  16   H  39      -0.0378   63.0624    0.0159
+ 221 dihedral      N  13   C  14   C  16   C  17       3.0960   62.2074    0.0161
+ 222 dihedral      N  15   C  14   C  16   H  39       3.1020   64.0036    0.0156
+ 223 dihedral      N  15   C  14   C  16   C  17      -0.0473   64.1237    0.0156
+ 224 dihedral      C  14   C  16   C  17   H  40      -0.0116   24.6716    0.0405
+ 225 dihedral      C  14   C  16   C  17   C  18       3.1412   21.8590    0.0457
+ 226 dihedral      H  39   C  16   C  17   H  40       3.1218   22.5108    0.0444
+ 227 dihedral      H  39   C  16   C  17   C  18      -0.0085   29.1651    0.0343
+ 228 dihedral      C  16   C  17   C  18   C  23      -0.1139  147.4525    0.0068
+ 229 dihedral      C  16   C  17   C  18   C  19       3.0313  138.4522    0.0072
+ 230 dihedral      H  40   C  17   C  18   C  23       3.0389  125.8573    0.0079
+ 231 dihedral      H  40   C  17   C  18   C  19      -0.0991  118.0324    0.0085
+ 232 dihedral      C  17   C  18   C  23   C  22      -3.1375   19.1677    0.0522
+ 233 dihedral      C  17   C  18   C  23   H  43      -0.0074   29.0774    0.0344
+ 234 dihedral      C  19   C  18   C  23   C  22       0.0004   16.1891    0.0618
+ 235 dihedral      C  19   C  18   C  23   H  43       3.1305   20.6750    0.0484
+ 236 dihedral      C  17   C  18   C  19   H  41      -0.0025   25.8705    0.0387
+ 237 dihedral      C  17   C  18   C  19   C  20      -3.1375   18.5254    0.0540
+ 238 dihedral      C  23   C  18   C  19   H  41      -3.1407   18.8606    0.0530
+ 239 dihedral      C  23   C  18   C  19   C  20       0.0075   16.9364    0.0590
+ 240 dihedral      C  18   C  19   C  20   O  26       3.1332   16.6212    0.0602
+ 241 dihedral      C  18   C  19   C  20   C  21      -0.0102   18.2630    0.0548
+ 242 dihedral      H  41   C  19   C  20   O  26      -0.0017   26.4008    0.0379
+ 243 dihedral      H  41   C  19   C  20   C  21       3.1381   19.4675    0.0514
+ 244 dihedral      C  19   C  20   O  26   C  27      -0.0128   75.4822    0.0132
+ 245 dihedral      C  21   C  20   O  26   C  27       3.1305   67.3648    0.0148
+ 246 dihedral      C  19   C  20   C  21   O  24      -3.1349   17.2726    0.0579
+ 247 dihedral      C  19   C  20   C  21   C  22       0.0049   18.6916    0.0535
+ 248 dihedral      O  26   C  20   C  21   O  24       0.0050   19.0688    0.0524
+ 249 dihedral      O  26   C  20   C  21   C  22      -3.1383   16.8210    0.0594
+ 250 dihedral      C  20   C  21   O  24   C  25       3.1345   63.5544    0.0157
+ 251 dihedral      C  22   C  21   O  24   C  25      -0.0053   71.8883    0.0139
+ 252 dihedral      C  20   C  21   C  22   H  42      -3.1385   19.5661    0.0511
+ 253 dihedral      C  20   C  21   C  22   C  23       0.0029   17.7194    0.0564
+ 254 dihedral      O  24   C  21   C  22   H  42       0.0012   26.5945    0.0376
+ 255 dihedral      O  24   C  21   C  22   C  23      -3.1407   17.0800    0.0585
+ 256 dihedral      C  21   C  22   C  23   C  18      -0.0055   16.6117    0.0602
+ 257 dihedral      C  21   C  22   C  23   H  43      -3.1358   18.6974    0.0535
+ 258 dihedral      H  42   C  22   C  23   C  18       3.1358   18.3688    0.0544
+ 259 dihedral      H  42   C  22   C  23   H  43       0.0055   27.6433    0.0362
+ 260 dihedral      C  21   O  24   C  25   H  45      -3.1383   73.6783    0.0136
+ 261 dihedral      C  21   O  24   C  25   H  46       1.0749   75.1200    0.0133
+ 262 dihedral      C  21   O  24   C  25   H  44      -1.0685   75.0861    0.0133
+ 263 dihedral      C  20   O  26   C  27   H  48      -3.1314   73.2918    0.0136
+ 264 dihedral      C  20   O  26   C  27   H  47       1.0817   74.4757    0.0134
+ 265 dihedral      C  20   O  26   C  27   H  49      -1.0615   74.5394    0.0134
+---------------------------------------------------------------------------------------------
+
+compliance matrix written to compliance.dat  (265 coordinates)
+
+writing file <hessian>, containing the non-mass-weighted, projected Hessian matrix in atomic units (Eₕ/Bohr²).
+
+ projected vibrational frequencies (cm⁻¹)
+eigval :       -0.00    -0.00    -0.00     0.00     0.00     0.00
+eigval :       11.73    19.79    26.06    33.88    43.55    48.81
+eigval :       69.63    77.15    86.23    88.58   103.86   115.42
+eigval :      139.15   143.61   150.69   161.54   173.30   187.93
+eigval :      199.03   207.51   211.53   216.86   229.84   232.21
+eigval :      250.99   269.07   279.96   298.08   334.79   354.94
+eigval :      361.82   365.81   382.69   407.26   423.08   423.26
+eigval :      437.68   440.52   465.06   482.56   517.11   550.18
+eigval :      572.95   585.96   609.05   621.05   638.14   662.05
+eigval :      668.37   676.81   688.63   709.49   745.20   760.28
+eigval :      781.28   782.68   805.02   810.85   835.55   841.79
+eigval :      874.96   885.54   916.51   965.78   983.97   987.89
+eigval :     1017.06  1020.16  1045.65  1047.36  1072.70  1089.10
+eigval :     1094.92  1098.42  1099.24  1111.35  1113.56  1116.93
+eigval :     1132.27  1140.88  1147.61  1180.94  1187.47  1197.69
+eigval :     1202.92  1215.97  1246.59  1251.81  1257.13  1270.76
+eigval :     1287.78  1293.67  1299.98  1316.94  1324.20  1329.47
+eigval :     1360.55  1385.23  1387.93  1388.10  1394.35  1396.11
+eigval :     1400.12  1411.13  1418.28  1424.00  1428.19  1450.45
+eigval :     1454.80  1456.79  1458.11  1464.26  1468.06  1475.01
+eigval :     1478.68  1481.01  1482.12  1487.17  1487.34  1507.14
+eigval :     1557.02  1559.28  1563.65  1615.80  1624.98  1659.66
+eigval :     2943.36  2947.21  2954.70  2957.66  2987.44  2988.79
+eigval :     2992.96  3001.63  3007.99  3009.45  3035.76  3036.78
+eigval :     3037.00  3040.76  3040.96  3045.71  3048.35  3061.17
+eigval :     3064.41  3079.58  3107.80  3111.65  3112.77  3120.29
+           -------------------------------------------------
+          |                Property Printout                |
+           -------------------------------------------------
+
+    * Orbital Energies and Occupations
+
+         #    Occupation            Energy/Eh            Energy/eV
+      -------------------------------------------------------------
+         1        2.0000           -0.7273399             -19.7919
+       ...           ...                  ...                  ...
+        62        2.0000           -0.4465177             -12.1504
+        63        2.0000           -0.4441260             -12.0853
+        64        2.0000           -0.4395542             -11.9609
+        65        2.0000           -0.4389453             -11.9443
+        66        2.0000           -0.4342856             -11.8175
+        67        2.0000           -0.4272980             -11.6274
+        68        2.0000           -0.4258621             -11.5883
+        69        2.0000           -0.4193557             -11.4112
+        70        2.0000           -0.4161786             -11.3248
+        71        2.0000           -0.4024783             -10.9520
+        72        2.0000           -0.3990919             -10.8598
+        73        2.0000           -0.3848457             -10.4722
+        74        2.0000           -0.3641252              -9.9084 (HOMO)
+        75                         -0.2861606              -7.7868 (LUMO)
+        76                         -0.2457328              -6.6867
+        77                         -0.2260402              -6.1509
+        78                         -0.2194702              -5.9721
+        79                         -0.1979278              -5.3859
+        80                         -0.1433040              -3.8995
+        81                         -0.1237541              -3.3675
+        82                         -0.0773101              -2.1037
+        83                         -0.0483959              -1.3169
+        84                          0.0012902               0.0351
+        85                          0.0149169               0.4059
+       ...                                ...                  ...
+       136                          0.6948339              18.9074
+      -------------------------------------------------------------
+                  HL-Gap            0.0779646 Eh            2.1215 eV
+             Fermi-level           -0.3251429 Eh           -8.8476 eV
+
+     #   Z          covCN         q      C6AA      α(0)
+     1   6 C        3.753    -0.123    22.919     6.827
+     2   6 C        3.749    -0.003    20.701     6.489
+     3   7 N        2.743    -0.081    22.822     7.095
+     4   6 C        3.164     0.129    24.865     8.150
+     5   6 C        3.092    -0.039    28.844     8.803
+     6   6 C        2.767     0.263    22.562     7.779
+     7   8 O        0.858    -0.516    24.143     6.588
+     8   7 N        2.751    -0.127    23.762     7.240
+     9   6 C        2.729     0.320    21.555     7.601
+    10   8 O        0.860    -0.513    24.083     6.580
+    11   6 C        3.754     0.008    20.499     6.456
+    12   6 C        3.752    -0.118    22.814     6.811
+    13   7 N        2.833    -0.014    21.520     6.890
+    14   6 C        3.211     0.133    24.517     8.059
+    15   7 N        1.894    -0.321    29.164     8.006
+    16   6 C        2.896    -0.061    29.520     8.908
+    17   6 C        2.910    -0.023    28.586     8.767
+    18   6 C        2.969     0.005    27.916     8.667
+    19   6 C        2.926    -0.077    29.923     8.971
+    20   6 C        2.860     0.122    25.324     8.248
+    21   6 C        2.864     0.125    25.255     8.237
+    22   6 C        2.914    -0.074    29.847     8.959
+    23   6 C        2.922    -0.048    29.204     8.862
+    24   8 O        1.704    -0.284    18.721     5.842
+    25   6 C        3.643     0.017    20.639     6.531
+    26   8 O        1.704    -0.295    18.902     5.870
+    27   6 C        3.643     0.019    20.603     6.526
+    28   6 C        3.689    -0.074    22.108     6.730
+    29   1 H        0.925     0.049     2.336     2.390
+    30   1 H        0.925     0.058     2.218     2.329
+    31   1 H        0.925     0.074     2.041     2.234
+    32   1 H        0.924     0.077     2.009     2.216
+    33   1 H        0.925     0.091     1.872     2.140
+    34   1 H        0.924     0.071     2.077     2.254
+    35   1 H        0.924     0.075     2.031     2.228
+    36   1 H        0.925     0.050     2.320     2.382
+    37   1 H        0.925     0.051     2.303     2.373
+    38   1 H        0.925     0.068     2.103     2.268
+    39   1 H        0.926     0.065     2.138     2.287
+    40   1 H        0.926     0.071     2.072     2.251
+    41   1 H        0.926     0.061     2.192     2.315
+    42   1 H        0.926     0.061     2.192     2.315
+    43   1 H        0.926     0.058     2.225     2.333
+    44   1 H        0.924     0.060     2.199     2.319
+    45   1 H        0.925     0.084     1.936     2.176
+    46   1 H        0.924     0.060     2.199     2.319
+    47   1 H        0.924     0.057     2.230     2.335
+    48   1 H        0.925     0.082     1.962     2.190
+    49   1 H        0.924     0.057     2.235     2.338
+    50   1 H        0.925     0.089     1.886     2.147
+    51   1 H        0.925     0.089     1.887     2.148
+    52   1 H        0.925     0.093     1.852     2.128
+
+ Mol. C6AA /au·bohr⁶  :      29651.183548
+ Mol. C8AA /au·bohr⁸  :     689574.865454
+ Mol. α(0) /au        :        264.908425
+
+
+Wiberg/Mayer (AO) data.
+largest (>0.10) Wiberg bond orders for each atom
+
+ ---------------------------------------------------------------------------
+     #   Z sym  total        # sym  WBO       # sym  WBO       # sym  WBO
+ ---------------------------------------------------------------------------
+     1   6 C    3.988 --     2 C    1.010    29 H    0.987    30 H    0.986
+                            31 H    0.980
+     2   6 C    3.940 --     1 C    1.010    32 H    0.968    33 H    0.966
+                             3 N    0.954
+     3   7 N    3.571 --     9 C    1.161     4 C    1.135     2 C    0.954
+                            10 O    0.136
+     4   6 C    3.965 --    15 N    1.335     5 C    1.298     3 N    1.135
+     5   6 C    3.935 --     4 C    1.298    13 N    1.160     6 C    1.150
+     6   6 C    3.943 --     7 O    1.571     5 C    1.150     8 N    1.103
+     7   8 O    1.913 --     6 C    1.571     8 N    0.133
+     8   7 N    3.543 --     9 C    1.122     6 C    1.103    11 C    0.960
+                             7 O    0.133    10 O    0.124
+     9   6 C    3.958 --    10 O    1.570     3 N    1.161     8 N    1.122
+    10   8 O    1.914 --     9 C    1.570     3 N    0.136     8 N    0.124
+    11   6 C    3.948 --    12 C    1.010    34 H    0.968    35 H    0.967
+                             8 N    0.960
+    12   6 C    3.990 --    11 C    1.010    36 H    0.987    37 H    0.986
+                            38 H    0.981
+    13   7 N    3.617 --    14 C    1.243     5 C    1.160    28 C    0.991
+    14   6 C    3.947 --    15 N    1.354    13 N    1.243    16 C    1.149
+    15   7 N    2.984 --    14 C    1.354     4 C    1.335
+    16   6 C    3.972 --    17 C    1.699    14 C    1.149    39 H    0.956
+    17   6 C    3.961 --    16 C    1.699    18 C    1.142    40 H    0.959
+    18   6 C    3.988 --    23 C    1.369    19 C    1.318    17 C    1.142
+    19   6 C    3.973 --    20 C    1.440    18 C    1.318    41 H    0.961
+    20   6 C    3.934 --    19 C    1.440    21 C    1.248    26 O    1.058
+    21   6 C    3.919 --    22 C    1.387    20 C    1.248    24 O    1.074
+    22   6 C    3.983 --    23 C    1.439    21 C    1.387    42 H    0.963
+    23   6 C    3.975 --    22 C    1.439    18 C    1.369    43 H    0.964
+    24   8 O    2.219 --    21 C    1.074    25 C    0.968
+    25   6 C    3.926 --    45 H    0.977    46 H    0.975    44 H    0.975
+                            24 O    0.968
+    26   8 O    2.213 --    20 C    1.058    27 C    0.970
+    27   6 C    3.928 --    48 H    0.977    49 H    0.976    47 H    0.976
+                            26 O    0.970
+    28   6 C    3.945 --    13 N    0.991    52 H    0.973    50 H    0.968
+                            51 H    0.967
+    29   1 H    0.998 --     1 C    0.987
+    30   1 H    0.997 --     1 C    0.986
+    31   1 H    0.994 --     1 C    0.980
+    32   1 H    0.993 --     2 C    0.968
+    33   1 H    0.991 --     2 C    0.966
+    34   1 H    0.994 --    11 C    0.968
+    35   1 H    0.994 --    11 C    0.967
+    36   1 H    0.997 --    12 C    0.987
+    37   1 H    0.997 --    12 C    0.986
+    38   1 H    0.995 --    12 C    0.981
+    39   1 H    0.995 --    16 C    0.956
+    40   1 H    0.994 --    17 C    0.959
+    41   1 H    0.996 --    19 C    0.961
+    42   1 H    0.995 --    22 C    0.963
+    43   1 H    0.997 --    23 C    0.964
+    44   1 H    0.995 --    25 C    0.975
+    45   1 H    0.993 --    25 C    0.977
+    46   1 H    0.995 --    25 C    0.975
+    47   1 H    0.997 --    27 C    0.976
+    48   1 H    0.993 --    27 C    0.977
+    49   1 H    0.997 --    27 C    0.976
+    50   1 H    0.991 --    28 C    0.968
+    51   1 H    0.991 --    28 C    0.967
+    52   1 H    0.991 --    28 C    0.973
+ ---------------------------------------------------------------------------
+
+Topologies differ in total number of bonds
+Writing topology from bond orders to xtbtopo.mol
+
+molecular dipole:
+                 x           y           z       tot (Debye)
+ q only:       -3.349       0.288      -0.106
+   full:       -3.099       0.524      -0.353       8.038
+molecular quadrupole (traceless):
+                xx          xy          yy          xz          yz          zz
+ q only:      -22.094      -5.623      11.203      11.228      -8.319      10.891
+  q+dip:      -24.154      -5.760      10.937      10.383      -6.653      13.216
+   full:      -26.632      -5.722      12.508      11.217      -3.833      14.124
+
+           -------------------------------------------------
+          |               Frequency Printout                |
+           -------------------------------------------------
+ projected vibrational frequencies (cm⁻¹)
+eigval :       -0.00    -0.00    -0.00     0.00     0.00     0.00
+eigval :       11.73    19.79    26.06    33.88    43.55    48.81
+eigval :       69.63    77.15    86.23    88.58   103.86   115.42
+eigval :      139.15   143.61   150.69   161.54   173.30   187.93
+eigval :      199.03   207.51   211.53   216.86   229.84   232.21
+eigval :      250.99   269.07   279.96   298.08   334.79   354.94
+eigval :      361.82   365.81   382.69   407.26   423.08   423.26
+eigval :      437.68   440.52   465.06   482.56   517.11   550.18
+eigval :      572.95   585.96   609.05   621.05   638.14   662.05
+eigval :      668.37   676.81   688.63   709.49   745.20   760.28
+eigval :      781.28   782.68   805.02   810.85   835.55   841.79
+eigval :      874.96   885.54   916.51   965.78   983.97   987.89
+eigval :     1017.06  1020.16  1045.65  1047.36  1072.70  1089.10
+eigval :     1094.92  1098.42  1099.24  1111.35  1113.56  1116.93
+eigval :     1132.27  1140.88  1147.61  1180.94  1187.47  1197.69
+eigval :     1202.92  1215.97  1246.59  1251.81  1257.13  1270.76
+eigval :     1287.78  1293.67  1299.98  1316.94  1324.20  1329.47
+eigval :     1360.55  1385.23  1387.93  1388.10  1394.35  1396.11
+eigval :     1400.12  1411.13  1418.28  1424.00  1428.19  1450.45
+eigval :     1454.80  1456.79  1458.11  1464.26  1468.06  1475.01
+eigval :     1478.68  1481.01  1482.12  1487.17  1487.34  1507.14
+eigval :     1557.02  1559.28  1563.65  1615.80  1624.98  1659.66
+eigval :     2943.36  2947.21  2954.70  2957.66  2987.44  2988.79
+eigval :     2992.96  3001.63  3007.99  3009.45  3035.76  3036.78
+eigval :     3037.00  3040.76  3040.96  3045.71  3048.35  3061.17
+eigval :     3064.41  3079.58  3107.80  3111.65  3112.77  3120.29
+ reduced masses (amu)
+    1:      6.42    2:      6.84    3:      6.71    4:      6.46    5:      6.76    6:      5.31
+    7:      4.15    8:      4.44    9:      3.98   10:      3.10   11:      3.04   12:      3.69
+   13:      4.75   14:      4.52   15:      3.35   16:      3.98   17:      3.71   18:      4.36
+   19:      4.38   20:      4.32   21:      2.97   22:      1.20   23:      3.48   24:      4.37
+   25:      1.37   26:      1.55   27:      1.38   28:      3.13   29:      1.37   30:      1.73
+   31:      1.97   32:      3.13   33:      2.82   34:      2.08   35:      4.54   36:      3.36
+   37:      3.24   38:      4.94   39:      4.72   40:      6.28   41:      6.98   42:      7.64
+   43:      6.81   44:      3.63   45:      5.59   46:      5.17   47:      5.17   48:      6.03
+   49:      4.90   50:      4.17   51:      6.16   52:      9.61   53:      5.03   54:      9.46
+   55:     11.10   56:      9.36   57:     10.59   58:      4.62   59:      4.65   60:      4.06
+   61:      1.94   62:      4.39   63:      1.22   64:      1.46   65:      1.46   66:      1.27
+   67:      3.96   68:      1.27   69:      2.94   70:      3.55   71:      1.12   72:      2.24
+   73:      5.25   74:      1.95   75:      2.57   76:      5.06   77:      2.23   78:      2.19
+   79:      2.29   80:      1.31   81:      2.01   82:      1.27   83:      1.27   84:      3.23
+   85:      1.69   86:      1.81   87:      1.48   88:      2.21   89:      1.28   90:      2.36
+   91:      2.18   92:      2.34   93:      2.11   94:      1.66   95:      2.00   96:      2.57
+   97:      2.34   98:      1.80   99:      2.10  100:      1.35  101:      1.45  102:      2.70
+  103:      4.54  104:      1.20  105:      1.36  106:      2.39  107:      1.22  108:      1.24
+  109:      1.66  110:      4.52  111:      1.21  112:      2.63  113:      1.23  114:      1.05
+  115:      1.12  116:      1.05  117:      1.06  118:      1.19  119:      1.11  120:      5.19
+  121:      1.06  122:      1.05  123:      3.29  124:      1.06  125:      1.06  126:      9.43
+  127:      8.07  128:     10.89  129:      7.58  130:      8.22  131:     12.17  132:     11.47
+  133:      1.09  134:      1.09  135:      1.04  136:      1.04  137:      1.06  138:      1.05
+  139:      1.10  140:      1.09  141:      1.08  142:      1.05  143:      1.07  144:      1.08
+  145:      1.07  146:      1.08  147:      1.06  148:      1.07  149:      1.07  150:      1.07
+  151:      1.07  152:      1.08  153:      1.08  154:      1.08  155:      1.08  156:      1.09
+ IR intensities (km·mol⁻¹)
+    1:      0.11    2:      0.15    3:      0.15    4:      0.04    5:      0.21    6:      0.05
+    7:      0.07    8:      0.24    9:      0.27   10:      0.07   11:      0.53   12:      0.37
+   13:      0.43   14:     13.89   15:      3.94   16:      3.47   17:      0.07   18:      1.65
+   19:     16.55   20:      1.80   21:      0.19   22:      0.20   23:      3.29   24:      3.21
+   25:      4.54   26:      2.02   27:      3.52   28:      0.28   29:      1.42   30:      8.88
+   31:      3.10   32:      2.26   33:      0.42   34:      0.31   35:     13.05   36:      3.63
+   37:     11.53   38:     19.02   39:     12.83   40:      7.50   41:     13.37   42:     17.06
+   43:      0.74   44:      1.36   45:      2.20   46:      5.55   47:     28.65   48:     30.90
+   49:      8.93   50:      4.32   51:      2.64   52:      1.53   53:      1.57   54:      0.47
+   55:     25.92   56:     16.93   57:     57.50   58:     28.88   59:      4.15   60:      2.08
+   61:     24.30   62:    169.05   63:     16.47   64:     28.85   65:     16.46   66:      4.29
+   67:     43.64   68:      2.28   69:     27.27   70:     11.10   71:     27.61   72:     25.11
+   73:     56.51   74:     10.41   75:     69.51   76:     18.92   77:    111.49   78:      4.53
+   79:      1.26   80:      0.90   81:     19.98   82:      2.25   83:      4.15   84:    533.59
+   85:     19.52   86:     33.49   87:     31.77   88:     17.56   89:    108.66   90:    114.13
+   91:    139.80   92:      0.97   93:    361.35   94:    535.84   95:    192.49   96:     83.47
+   97:    494.38   98:     76.74   99:    350.82  100:     13.84  101:     10.96  102:     49.69
+Molecule has no symmetry elements
+It seems to be the C1 point group
+  103:    360.49  104:      4.13  105:    174.19  106:    116.66  107:      5.98  108:      3.96
+  109:     81.36  110:    171.76  111:      6.10  112:    112.49  113:     23.27  114:     15.04
+  115:     76.59  116:      6.86  117:      8.85  118:    264.72  119:     95.59  120:     76.64
+  121:      3.56  122:      8.15  123:    895.95  124:      0.56  125:      2.77  126:     82.50
+  127:      7.13  128:    305.33  129:    478.92  130:    437.50  131:   1640.76  132:   2019.88
+  133:     41.82  134:     42.32  135:     51.03  136:     42.42  137:     23.34  138:     35.58
+  139:      7.82  140:      9.68  141:      5.21  142:     21.58  143:     15.39  144:     48.17
+  145:     14.41  146:     50.23  147:     29.08  148:      4.17  149:     30.26  150:     35.94
+  151:     26.60  152:     12.52  153:     31.30  154:      3.88  155:     61.02  156:     62.71
+ Raman intensities (Ä⁴*amu⁻¹)
+    1:      0.00    2:      0.00    3:      0.00    4:      0.00    5:      0.00    6:      0.00
+    7:      0.00    8:      0.00    9:      0.00   10:      0.00   11:      0.00   12:      0.00
+   13:      0.00   14:      0.00   15:      0.00   16:      0.00   17:      0.00   18:      0.00
+   19:      0.00   20:      0.00   21:      0.00   22:      0.00   23:      0.00   24:      0.00
+   25:      0.00   26:      0.00   27:      0.00   28:      0.00   29:      0.00   30:      0.00
+   31:      0.00   32:      0.00   33:      0.00   34:      0.00   35:      0.00   36:      0.00
+   37:      0.00   38:      0.00   39:      0.00   40:      0.00   41:      0.00   42:      0.00
+   43:      0.00   44:      0.00   45:      0.00   46:      0.00   47:      0.00   48:      0.00
+   49:      0.00   50:      0.00   51:      0.00   52:      0.00   53:      0.00   54:      0.00
+   55:      0.00   56:      0.00   57:      0.00   58:      0.00   59:      0.00   60:      0.00
+   61:      0.00   62:      0.00   63:      0.00   64:      0.00   65:      0.00   66:      0.00
+   67:      0.00   68:      0.00   69:      0.00   70:      0.00   71:      0.00   72:      0.00
+   73:      0.00   74:      0.00   75:      0.00   76:      0.00   77:      0.00   78:      0.00
+   79:      0.00   80:      0.00   81:      0.00   82:      0.00   83:      0.00   84:      0.00
+   85:      0.00   86:      0.00   87:      0.00   88:      0.00   89:      0.00   90:      0.00
+   91:      0.00   92:      0.00   93:      0.00   94:      0.00   95:      0.00   96:      0.00
+   97:      0.00   98:      0.00   99:      0.00  100:      0.00  101:      0.00  102:      0.00
+  103:      0.00  104:      0.00  105:      0.00  106:      0.00  107:      0.00  108:      0.00
+  109:      0.00  110:      0.00  111:      0.00  112:      0.00  113:      0.00  114:      0.00
+  115:      0.00  116:      0.00  117:      0.00  118:      0.00  119:      0.00  120:      0.00
+  121:      0.00  122:      0.00  123:      0.00  124:      0.00  125:      0.00  126:      0.00
+  127:      0.00  128:      0.00  129:      0.00  130:      0.00  131:      0.00  132:      0.00
+  133:      0.00  134:      0.00  135:      0.00  136:      0.00  137:      0.00  138:      0.00
+  139:      0.00  140:      0.00  141:      0.00  142:      0.00  143:      0.00  144:      0.00
+  145:      0.00  146:      0.00  147:      0.00  148:      0.00  149:      0.00  150:      0.00
+  151:      0.00  152:      0.00  153:      0.00  154:      0.00  155:      0.00  156:      0.00
+ output can be read by thermo (or use thermo option).
+ writing <g98.out> molden fake output.
+ recommended (thermochemical) frequency scaling factor: 1.0
+           -------------------------------------------------
+          |             Thermodynamic Functions             |
+           -------------------------------------------------
+
+c1  symmetry found (for desy threshold:  0.10E+00) used in thermo
+
+          ...................................................
+          :                      SETUP                      :
+          :.................................................:
+          :  # frequencies                         150      :
+          :  # imaginary freq.                       0      :
+          :  linear?                             false      :
+          :  only rotor calc.                    false      :
+          :  symmetry                               c1      :
+          :  rotational number                       1      :
+          :  scaling factor                  1.0000000      :
+          :  rotor cutoff                   50.0000000 cm⁻¹ :
+          :  entropy treatment                   mRRHO      :
+          :  imag. cutoff                  -20.0000000 cm⁻¹ :
+          :.................................................:
+
+    mode    ω/cm⁻¹     T·S(HO)/kcal·mol⁻¹    T·S(FR)/kcal·mol⁻¹   T·S(vib)
+   ------------------------------------------------------------------------
+       1     11.73    -2.29387 (  0.30%)    -1.48594 ( 99.70%)    -1.48838
+       2     19.79    -1.98413 (  2.40%)    -1.33103 ( 97.60%)    -1.34669
+       3     26.06    -1.82128 (  6.87%)    -1.24953 ( 93.13%)    -1.28884
+       4     33.88    -1.66605 ( 17.42%)    -1.17179 ( 82.58%)    -1.25788
+       5     43.55    -1.51782 ( 36.52%)    -1.09746 ( 63.48%)    -1.25100
+       6     48.81    -1.45053 ( 47.59%)    -1.06368 ( 52.41%)    -1.24778
+       7     69.63    -1.24141 ( 79.00%)    -0.95842 ( 21.00%)    -1.18198
+       8     77.15    -1.18130 ( 85.00%)    -0.92805 ( 15.00%)    -1.14332
+       9     86.23    -1.11625 ( 89.84%)    -0.89511 ( 10.16%)    -1.09379
+      10     88.58    -1.10053 ( 90.78%)    -0.88713 (  9.22%)    -1.08087
+      11    103.86    -1.00789 ( 94.90%)    -0.83997 (  5.10%)    -0.99933
+      12    115.42    -0.94680 ( 96.60%)    -0.80871 (  3.40%)    -0.94210
+      13    139.15    -0.83944 ( 98.36%)    -0.75333 (  1.64%)    -0.83803
+      14    143.61    -0.82146 ( 98.55%)    -0.74398 (  1.45%)    -0.82034
+      15    150.69    -0.79414 ( 98.80%)    -0.72974 (  1.20%)    -0.79336
+      16    161.54    -0.75482 ( 99.09%)    -0.70913 (  0.91%)    -0.75441
+      17    173.30    -0.71539 ( 99.31%)    -0.68832 (  0.69%)    -0.71520
+      18    187.93    -0.67028 ( 99.50%)    -0.66431 (  0.50%)    -0.67025
+      19    199.03    -0.63865 ( 99.60%)    -0.64731 (  0.40%)    -0.63869
+      20    207.51    -0.61581 ( 99.66%)    -0.63494 (  0.34%)    -0.61587
+      21    211.53    -0.60538 ( 99.69%)    -0.62927 (  0.31%)    -0.60546
+      22    216.86    -0.59188 ( 99.72%)    -0.62190 (  0.28%)    -0.59197
+      23    229.84    -0.56057 ( 99.78%)    -0.60467 (  0.22%)    -0.56067
+      24    232.21    -0.55509 ( 99.79%)    -0.60163 (  0.21%)    -0.55519
+      25    250.99    -0.51390 ( 99.84%)    -0.57860 (  0.16%)    -0.51400
+      26    269.07    -0.47770 ( 99.88%)    -0.55799 (  0.12%)    -0.47779
+      27    279.96    -0.45734 ( 99.90%)    -0.54624 (  0.10%)    -0.45743
+      28    298.08    -0.42566 ( 99.92%)    -0.52766 (  0.08%)    -0.42574
+   ------------------------------------------------------------------------
+
+   temp. (K)  partition function   enthalpy   heat capacity  entropy
+                                   cal/mol     cal/K/mol   cal/K/mol   J/K/mol
+ 298.15  VIB  0.584E+13            16150.412     93.977    102.493
+         ROT  0.232E+08              888.727      2.981     36.684
+         INT  0.136E+21            17039.139     96.957    139.178
+         TR   0.231E+27             1481.212      4.968     43.732
+         TOT                       18520.3517   101.9253   182.9096   765.2937
+
+       T/K    H(0)-H(T)+PV         H(T)/Eh          T*S/Eh         G(T)/Eh
+   ------------------------------------------------------------------------
+    298.15    0.295141E-01    0.440729E+00    0.869062E-01    0.353823E+00
+   ------------------------------------------------------------------------
+
+         :::::::::::::::::::::::::::::::::::::::::::::::::::::
+         ::                  THERMODYNAMIC                  ::
+         :::::::::::::::::::::::::::::::::::::::::::::::::::::
+         :: total free energy         -82.795780502630 Eh   ::
+         ::.................................................::
+         :: total energy              -83.149603539243 Eh   ::
+         :: zero point energy           0.411215227189 Eh   ::
+         :: G(RRHO) w/o ZPVE           -0.057392190576 Eh   ::
+         :: G(RRHO) contrib.            0.353823036613 Eh   ::
+         :::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+          Note: G(RRHO) includes mRRHO vibrational treatment.
+                For conventional RRHO, set sthr=0.0 in $thermo in xcontrol.
+                Ref.: S. Grimme, Chem. Eur. J. 2012, 18, 9955-9964.
+                DOI: 10.1002/chem.201200497
+
+           -------------------------------------------------
+          | TOTAL ENERGY              -83.149603539243 Eh   |
+          | TOTAL ENTHALPY            -82.708874252906 Eh   |
+          | TOTAL FREE ENERGY         -82.795780502630 Eh   |
+          | GRADIENT NORM               0.000062642741 Eh/α |
+          | HOMO-LUMO GAP               2.121524080898 eV   |
+           -------------------------------------------------
+
+------------------------------------------------------------------------
+ * finished run on 2026/11/19 at 11:26:33.940     
+------------------------------------------------------------------------
+ total:
+ * wall-time:     0 d,  0 h,  0 min,  6.975 sec
+ *  cpu-time:     0 d,  0 h,  0 min, 11.516 sec
+ * ratio c/w:     1.651 speedup
+ SCF:
+ * wall-time:     0 d,  0 h,  0 min,  0.058 sec
+ *  cpu-time:     0 d,  0 h,  0 min,  0.047 sec
+ * ratio c/w:     0.804 speedup
+ analytical hessian:
+ * wall-time:     0 d,  0 h,  0 min,  6.870 sec
+ *  cpu-time:     0 d,  0 h,  0 min, 11.438 sec
+ * ratio c/w:     1.665 speedup
+

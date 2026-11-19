@@ -46,6 +46,9 @@ def main():
     for id in ['M04-L01','M04-L02']:
         supplementary[id]=('practicuum/evidence/20261119-professional-solubility-windows/summary.json',
                             'practicuum/evidence/20261119-professional-solubility-linux/summary.json')
+    for id in ['M06-L01','M06-L02']:
+        supplementary[id]=('practicuum/evidence/20261119-professional-conformers-reproduced-windows/summary.json',
+                            'practicuum/evidence/20261119-professional-conformers-reproduced-linux/summary.json')
     baseline={}
     for label,path in [('Windows',windows),('Linux/WSL',linux)]:
         for r in read(path)['runs']:baseline[(r['lesson_id'],r['role'],label)]={'status':r['status'],'evidence':path}
@@ -67,6 +70,20 @@ def main():
       'A2A_QSAR':proof('practicuum/evidence/20261119-research-A2A-QSAR/result.json'),
       'A2A_QSAR_audit':proof('practicuum/evidence/20261119-research-A2A-QSAR-audit/result.json'),
       'HMGCR_QSAR':proof('practicuum/evidence/20261119-research-HMGCR-QSAR/result.json')}
+    for name in ['istradefylline','atorvastatin','atorvastatin_anion','atorvastatin_lactone']:
+        key='GFN2_conformers_'+name
+        research[key]=proof('practicuum/evidence/20261119-conformer-GFN2-'+name+'/result.json')
+        research[key]['scientific_acceptance']='LOCAL_GFN2_MINIMA_ONLY: three positive projected Hessians; exhaustive sampling, DFT and solution populations not established'
+    for name in ['istradefylline','atorvastatin']:
+        research['GFN2_numerics_'+name]=proof('practicuum/evidence/20261119-conformer-GFN2-'+name+'-numerics/result.json')
+    research['CAM_TZVP_on_GFN2']=proof('practicuum/evidence/20261119-istradefylline-CAM-TZVP-on-GFN2-water/result.json')
+    research['GFN2_istradefylline_actual_linux']=proof('practicuum/evidence/20261119-conformer-GFN2-istradefylline-linux/result.json')
+    research['GFN2_complete_basin_set_reproduction']=proof('practicuum/evidence/20261119-GFN2-cross-platform-reproduction/result.json')
+    research['GFN2_fixed_geometry_platform_diagnosis']=proof('practicuum/evidence/20261119-GFN2-cross-platform-diagnosis/result.json')
+    research['CAM_TZVP_on_GFN2_failed_attempt']=proof('practicuum/evidence/20261119-istradefylline-CAM-TZVP-on-GFN2-water/failure.json')
+    research['CAM_TZVP_scratch_preflight']=proof('practicuum/evidence/20261119-istradefylline-CAM-TZVP-scratch-preflight/blocked.json')
+    research['refined_DFT_progress_snapshot']=proof('practicuum/evidence/20261119-refined-DFT-progress-snapshot/progress.json')
+    research['CAM_TZVP_on_GFN2']['scientific_acceptance']='REVIEW_REQUIRED: composite geometry; stability, sensitivity and experimental matching remain required'
     research['A2A_redocking']['scientific_acceptance']='FAIL: top-ranked pose recovery 0/9; finding a correct lower-ranked pose does not validate ranking'
     research['coarse_DFT_geometry']['scientific_acceptance']='NOT_ACCEPTED: quadrature gate failed; minimum not confirmed by Hessian'
     research['A2A_QSAR']['scientific_acceptance']='REVIEW_REQUIRED: target-drug chemical domain and independent prospective assay validation'
@@ -74,8 +91,8 @@ def main():
     requirements={
       'M04-L01':['istradefylline_solubility','atorvastatin_kinetic_parameter_audit'],
       'M04-L02':['istradefylline_solubility','atorvastatin_kinetic_parameter_audit'],
-      'M06-L01':['conformer_ensemble_with_identity_and_convergence'],
-      'M06-L02':['DFT_minima_and_conformer_free_energy_uncertainty'],
+      'M06-L01':['GFN2_conformers_istradefylline','GFN2_conformers_atorvastatin','GFN2_conformers_atorvastatin_anion','GFN2_conformers_atorvastatin_lactone','finite_sampling_budget_audit'],
+      'M06-L02':['GFN2_numerics_istradefylline','GFN2_numerics_atorvastatin','low_mode_RRHO_and_subset_population_limitations'],
       'M07-L01':['converged_target_DFT_geometry_and_Hessian'],
       'M07-L02':['quadrature_basis_and_solvent_controls'],
       'M08-L01':['target_TDDFT_and_vibrational_results'],
@@ -131,6 +148,7 @@ def main():
 - Выполнены профессиональные статистические проверки семи HPLC-откликов по 20 опубликованным опытам: pure error, lack-of-fit, исключение целого режима с повторами, условные интервалы и диагностика. M10 использует также реальные UHPLC данные ксантинов: %RSD, условные интервалы, ранг OFAT и неидентифицируемость взаимодействий.
 - Выполнен аудит реальных параметров кинетики/растворимости аторвастатина. M09 использует пять опубликованных кинетических условий кофеина, OLS/остатки/LOOCV и структурную идентифицируемость B; недостающие временные ряды не выдуманы.
 - M04 использует 60 реальных температурных и восемь pH-значений истрадефиллина, визуально сверенные с первичными PDF. Выполнены conditional Van't Hoff fits и аудит согласованности: source acceptance REVIEW_REQUIRED, pKa/intrinsic S0/thermodynamic enthalpy не объявлены измеренными.
+- M06 использует реальные GFN2-xTB/ALPB water расчёты четырёх целых химических форм: 1200 singlepoints, 91 оптимизация, 12 гессианов. Положительные внутренние частоты подтверждают локальные минимумы этой модели. Контроль сетки/шага для A и кислоты выполнен; тонкий порядок двух конформеров A меняется. Независимый Linux-поиск A: ещё 300 singlepoints/19 оптимизаций/3 Hessian. Полное совпадение basin sets REVIEW (7/10 назначений прошли оба допуска); 10 идентичных геометрий на каждой платформе дали max ΔE ≈1.01e-12 Eh. Полнота ансамбля, DFT-минимумы и растворные populations не установлены. Четыре Notebook M06, все 28 преподавательских ориентиров и 47 shared-тестов прошли Windows и Linux/WSL.
 - Выполнен target-specific QSAR A2A на 4546 структурах: nested scaffold CV, отдельная calibration, test 854; RMSE 0.74459 pKi, bootstrap CI95 [0.68720, 0.80377]. Аудит не выявил пересечений каркасов. M12 заново анализирует сохранённые прогнозы и область применения, не выдавая это за новое обучение. HMGCR: 57 структур, обучение BLOCKED по заранее заданному протоколу.
 - Реальный redocking истрадефиллина в 8RW0: девять поисков, независимые начальные конформации, симметрийный RMSD в системе рецептора. **Геометрический критерий top-1 не пройден: 0/9.** M11 заново анализирует координаты/poses и диагностирует HMGCR BLOCKED; сохранённые результаты не объявляются новым docking.
 - Геометрия истрадефиллина B3LYP-D3(BJ)/def2-SVP/C-PCM сошлась; coarse-grid проверка не прошла. Плотная сетка — отдельный новый прогон, не переименование прежнего результата.
@@ -162,6 +180,10 @@ def main():
 | Аторвастатин, опубликованная кинетика | При pH 4.5 отдельно приведённые показатели убыли/образования различаются в 10 раз | Без исходных рядов нельзя выдать совместный fit и новые интервалы параметров |
 | Истpaдефиллин, DFT | B3LYP-D3(BJ)/def2-SVP/C-PCM оптимизация сошлась | До Hessian не подтверждён минимум; coarse surface quadrature изменила E на 2.78e-4 Eh при допуске 1e-4 Eh |
 | SMD-ветвь | Реальные попытки, остановленные недостатком памяти WSL | Нет принятого результата оптимизации; старый STO-3G не подставлен |
+| GFN2-xTB / ALPB water | 4 формы × 300 singlepoints; 19+24+24+24 оптимизаций, 12 гессианов; число различных геометрий 10/24/23/24 | Локальные минимумы в GFN2, не DFT; finite sampling, разные составы/заряды не ранжируются по абсолютной энергии |
+| Численная проверка GFN2 | Для A/кислоты solvent grid 974→2030 и Hessian step 0.005→0.0025 bohr; знаки частот устойчивы | Близкие уровни A меняют порядок; прохождение абсолютного допуска не подтверждает тонкое ранжирование или физическую точность |
+| Независимый Linux GFN2 | Новый полный поиск A: 300 singlepoints/19 оптимизаций/3 Hessian, локальные gates PASS; полное сопоставление 10 бассейнов REVIEW | 20/300 MMFF-refined starting geometries отличаются >0.01 Å; 7/10 назначений прошли geometric/energy допуски. На десяти идентичных XYZ max разность энергий Windows/Linux ≈1.01e-12 Eh: эту воспроизводимость нельзя переносить на полноту поиска |
+| CAM-B3LYP/def2-TZVP//GFN2 | Реальный Windows-запуск остановлен ENOSPC при построении DF/RSH интегралов; незавершённый временный кэш 13.6 GB удалён с receipt, входы/логи сохранены | Спектр не получен. Повторный preflight BLOCKED: свободно ≈17 GiB при консервативном резерве 50 GiB; базис не уменьшен. Геометрия остаётся GFN2, stability/sensitivity/эксперимент ещё требуют проверки |
 | A2A/8RW0 redocking | 9 реальных поисков, exhaustiveness 64, 3 начальные геометрии × 3 seed; top-1 recovery 0/9, средний top-1 RMSD 9.5593 Å | **FAIL ранжирования**; найденные ниже позы с RMSD <2 Å не меняют этот итог |
 | HMGCR/1HWK | Gate остановил подготовку: смещение атомов кармана 2.311 Å и новый OXT на 3.79 Å от лиганда | BLOCKED до проверки структуры/обработки неполных концов; не запускать docking на заведомо неподходящем входе |
 | Кофеин, кинетика | Пять опубликованных k_exp при 100 °C; slope 0.695, origin-constrained k₂ 0.71273 L mol⁻¹ min⁻¹; LOOCV RMSE 0.008266 min⁻¹ | OLS-интервалы условны; сырые временные ряды/ошибки повторов отсутствуют; это не кинетика истрадефиллина |
@@ -186,11 +208,11 @@ def main():
 ''')
     write('STEPIK_RELEASE_REPORT.md','''# Подготовка к Stepik
 
-Локальная черновая сборка `parser/dist/full-course-20261118` содержала 28 уроков, 56 Notebook, 142 текстовых шага и 25 stdlib-проверок ограниченных численных полей. Целостность этой редакции проверена локально. Это **не профессиональный релиз** и не публикация.
+Локальная сборка `parser/dist/professional-conformers-reproduced-20261119` содержит 28 уроков, 56 Notebook, 142 текстовых шага и 25 stdlib-проверок ограниченных численных полей. Целостность проверена локально; оба разбора M06 исполнены из переносимого пакета, включая повторную проекцию исходных гессианов и контроль воспроизводимости. Evidence: `practicuum/evidence/20261119-portable-professional-conformers-reproduced/summary.json`. Предыдущие неизменяемые сборки сохранены. Это **не профессиональный релиз** и не публикация.
 
 Сборщик включает shared/data и закреплённую среду; исключает преподавательские решения, личный workspace и NIST raw cache. Notebook исполняются в локальном Jupyter/WSL, а не предполагаемом RDKit grader Stepik. Права/атрибуция сохраняются.
 
-После интеграции профессиональных вычислений требуется новая неизменяемая сборка и проверка portable-пакета. **NOT_RUN:** загрузка assets/доступность ссылок, API-объекты тестового курса, отображение формул, полный round-trip решений и реальный Stepik grader. Для доказательства платформенной пригодности локального запуска недостаточно.
+После дальнейших изменений M07/M08 потребуется следующая неизменяемая сборка. **NOT_RUN:** загрузка assets/доступность ссылок, API-объекты тестового курса, отображение формул, полный round-trip решений и реальный Stepik grader. Для доказательства платформенной пригодности локального запуска недостаточно.
 
 Выпуск **BLOCKED** научными критериями и отсутствием проверки платформы. Запись в действующий курс и merge в main не выполняются.
 ''')

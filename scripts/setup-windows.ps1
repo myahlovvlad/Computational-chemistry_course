@@ -1,4 +1,4 @@
-﻿param([ValidateSet('base','chem')][string]$Profile = 'base')
+﻿param([ValidateSet('base','chem','quantum-core')][string]$Profile = 'base')
 $ErrorActionPreference = 'Stop'
 $courseRoot = Split-Path -Parent $PSScriptRoot
 $env:PYTHONUTF8 = '1'

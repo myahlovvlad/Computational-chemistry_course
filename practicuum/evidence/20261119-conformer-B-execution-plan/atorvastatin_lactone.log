@@ -1,0 +1,43 @@
+atorvastatin_lactone prepared seed 20261118 embedded 100
+atorvastatin_lactone prepared seed 20261119 embedded 100
+atorvastatin_lactone prepared seed 20261120 embedded 100
+atorvastatin_lactone GFN2/ALPB singlepoints 25 / 300
+atorvastatin_lactone GFN2/ALPB singlepoints 50 / 300
+atorvastatin_lactone GFN2/ALPB singlepoints 75 / 300
+atorvastatin_lactone GFN2/ALPB singlepoints 100 / 300
+atorvastatin_lactone GFN2/ALPB singlepoints 125 / 300
+atorvastatin_lactone GFN2/ALPB singlepoints 150 / 300
+atorvastatin_lactone GFN2/ALPB singlepoints 175 / 300
+atorvastatin_lactone GFN2/ALPB singlepoints 200 / 300
+atorvastatin_lactone GFN2/ALPB singlepoints 225 / 300
+atorvastatin_lactone GFN2/ALPB singlepoints 250 / 300
+atorvastatin_lactone GFN2/ALPB singlepoints 275 / 300
+atorvastatin_lactone GFN2/ALPB singlepoints 300 / 300
+atorvastatin_lactone optimization 265 PASS
+atorvastatin_lactone optimization 199 PASS
+atorvastatin_lactone optimization 276 PASS
+atorvastatin_lactone optimization 101 PASS
+atorvastatin_lactone optimization 111 PASS
+atorvastatin_lactone optimization 182 PASS
+atorvastatin_lactone optimization 77 PASS
+atorvastatin_lactone optimization 119 PASS
+atorvastatin_lactone optimization 49 PASS
+atorvastatin_lactone optimization 213 PASS
+atorvastatin_lactone optimization 100 PASS
+atorvastatin_lactone optimization 162 PASS
+atorvastatin_lactone optimization 81 PASS
+atorvastatin_lactone optimization 14 PASS
+atorvastatin_lactone optimization 16 PASS
+atorvastatin_lactone optimization 247 PASS
+atorvastatin_lactone optimization 242 PASS
+atorvastatin_lactone optimization 69 PASS
+atorvastatin_lactone optimization 160 PASS
+atorvastatin_lactone optimization 241 PASS
+atorvastatin_lactone optimization 150 PASS
+atorvastatin_lactone optimization 249 PASS
+atorvastatin_lactone optimization 181 PASS
+atorvastatin_lactone optimization 202 PASS
+atorvastatin_lactone Hessian 265 PASS
+atorvastatin_lactone Hessian 81 PASS
+atorvastatin_lactone Hessian 199 PASS
+atorvastatin_lactone completed PASS distinct conformers 24

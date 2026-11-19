@@ -1,0 +1,14 @@
+{
+  "processes": [
+    {
+      "pid": 522010,
+      "argv": "scripts/environment/.venv-quantum/bin/python scripts/run_research_quantum.py --name istradefylline --protocol practicuum/protocols/research-quantum-cpcm-refined.json --out practicuum/evidence/research-quantum-istradefylline-cpcm-refined-20261119 --stage all --candidate 0 ",
+      "process_status": "Name:\tpython\nUmask:\t0022\nState:\tR (running)\nTgid:\t522010\nNgid:\t0\nPid:\t522010\nPPid:\t521976\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t64\nGroups:\t27 1000 \nNStgid:\t522010\nNSpid:\t522010\nNSpgid:\t521976\nNSsid:\t521976\nKthread:\t0\nVmPeak:\t 7740388 kB\nVmSize:\t 3697596 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t 5247984 kB\nVmRSS:\t 1192188 kB\nRssAnon:\t 1177436 kB\nRssFile:\t   14752 kB\nRssShmem:\t       0 kB\nVmData:\t 2470016 kB\nVmStk:\t    3212 kB\nVmExe:\t    2956 kB\nVmLib:\t  171356 kB\nVmPTE:\t    3124 kB\nVmSwap:\t   81576 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffffff\nThreads:\t28\nSigQ:\t1/31221\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000001001000\nSigCgt:\t0000000100000002\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t000001ffffffffff\nCapAmb:\t0000000000000000\nNoNewPrivs:\t0\nSeccomp:\t0\nSeccomp_filters:\t0\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tconditional enabled\nCpus_allowed:\tfff\nCpus_allowed_list:\t0-11\nMems_allowed:\t00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t133384\nnonvoluntary_ctxt_switches:\t239787\n"
+    }
+  ],
+  "completed_stage_results": {},
+  "scope": "live process and completed stage inspection; not an accepted DFT minimum",
+  "utc": "2026-11-19T09:07:23.870251+00:00",
+  "status": "IN_PROGRESS",
+  "driver_log_snapshot_sha256": "f7d6412a1b859c7955b9eebbbefb16a73f6c972836952933e2479206558ca8ed"
+}

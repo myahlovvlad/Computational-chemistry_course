@@ -1,0 +1,6 @@
+{
+  "isopropanol_L_per_kg_input": 10.0,
+  "water_L_per_kg_input": 2.5,
+  "PMI": "NOT_CALCULABLE: missing full mass balance",
+  "kind": "calculated"
+}
