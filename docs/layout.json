@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "moved_documents": {
+    "ARCHITECTURE.md": "docs/architecture/ARCHITECTURE.md",
+    "MIGRATION_MATRIX.md": "docs/history/MIGRATION_MATRIX.md",
+    "migration-matrix.json": "docs/history/migration-matrix.json",
+    "CONSOLIDATION_REPORT.md": "docs/history/CONSOLIDATION_REPORT.md",
+    "MAIN_CONTINUATION_REPORT.md": "docs/history/MAIN_CONTINUATION_REPORT.md",
+    "MAIN_UNIFICATION_REPORT.md": "docs/history/MAIN_UNIFICATION_REPORT.md",
+    "practicuum/PRACTICUM_IMPLEMENTATION_REPORT.md": "docs/history/PRACTICUM_IMPLEMENTATION_REPORT.md",
+    "PROJECT_STATUS.md": "docs/status/PROJECT_STATUS.md",
+    "ROADMAP.md": "docs/status/ROADMAP.md",
+    "SCIENTIFIC_VALIDATION_REPORT.md": "docs/status/SCIENTIFIC_VALIDATION_REPORT.md",
+    "PEDAGOGICAL_REVIEW_REPORT.md": "docs/status/PEDAGOGICAL_REVIEW_REPORT.md",
+    "STEPIK_RELEASE_REPORT.md": "docs/status/STEPIK_RELEASE_REPORT.md",
+    "course-status.json": "docs/status/course-status.json",
+    "SYSTEM_PROMPT.md": "docs/maintenance/SYSTEM_PROMPT.md",
+    "WSL_SINGLE_SOURCE.md": "docs/maintenance/WSL_SINGLE_SOURCE.md"
+  },
+  "root_markdown": [
+    "README.md",
+    "INSTRUCTIONS.md",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "protected_history": [
+    "archive/",
+    "practicuum/evidence/"
+  ]
+}

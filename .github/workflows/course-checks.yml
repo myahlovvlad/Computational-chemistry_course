@@ -23,6 +23,7 @@ jobs:
       - run: python scripts/setup_environment.py --profile chem --uv uv
       - run: uv run --project scripts/environment --frozen --group chem python scripts/check_sources.py
       - run: uv run --project scripts/environment --frozen --group chem python scripts/build_notebooks.py
+      - run: uv run --project scripts/environment --frozen --group chem python scripts/check_repository_layout.py
       - run: uv run --project scripts/environment --frozen --group chem python scripts/validate_course.py --out tmp/ci-structure.json
       - run: uv run --project scripts/environment --frozen --group chem python -m unittest discover -s practicuum/shared/tests -p test_*.py -v
       - run: uv run --project scripts/environment --frozen --group chem python scripts/run_course.py --out tmp/ci-course

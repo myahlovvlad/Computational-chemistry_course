@@ -12,7 +12,7 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--git-ref',help='Also verify stored Git blobs, including historically ignored logs')
     args=parser.parse_args()
-    matrix=json.loads((ROOT/'migration-matrix.json').read_text(encoding='utf-8'))
+    matrix=json.loads((ROOT/'docs/history/migration-matrix.json').read_text(encoding='utf-8'))
     count=0
     for record in matrix['components']:
         if 'sha256' not in record:continue

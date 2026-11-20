@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "observed_on": "2026-11-19",
+  "observed_on": "2026-11-20",
   "scope": "draft lesson coverage and actual evidence; professional delivery remains incomplete",
   "program": {
     "modules": 14,
@@ -13,6 +13,7 @@
   "repository": {
     "canonical_branch": "main",
     "canonical_location": "repository root",
+    "documentation": "docs/README.md",
     "dataset_preservation": "archive/branch-datasets/manifest.json"
   },
   "pedagogy": {
@@ -24,8 +25,8 @@
   },
   "current_main_execution": {
     "status": "PASS",
-    "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
-    "sha256": "5ee0920eea63e735d933d01b17dcc34b78a831925e6fcf8f3987ebabcb76584f"
+    "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
+    "sha256": "177d3816c1c496c32f50dc41b1b683c14f58bd8d2e285e1b6b4bc453098af951"
   },
   "quality_requirement": "Professional calculations on target chemical forms; educational toy controls are not accepted substitutes",
   "modules": [
@@ -53,7 +54,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -73,7 +74,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -108,7 +109,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -128,7 +129,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -169,7 +170,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -189,7 +190,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -224,7 +225,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -244,7 +245,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -285,7 +286,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -305,7 +306,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -340,7 +341,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -360,7 +361,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -402,7 +403,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -422,7 +423,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -458,7 +459,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -478,7 +479,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -519,7 +520,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -539,7 +540,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -574,7 +575,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -594,7 +595,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -639,7 +640,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -659,7 +660,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -696,7 +697,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-method-article-final/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -716,7 +717,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-method-article-final/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -757,7 +758,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -777,7 +778,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -812,7 +813,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-method-article-final/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -832,7 +833,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-method-article-final/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -873,7 +874,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -893,7 +894,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -928,7 +929,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -948,7 +949,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -990,7 +991,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1010,7 +1011,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1045,7 +1046,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1065,7 +1066,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1107,7 +1108,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1127,7 +1128,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1163,7 +1164,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1183,7 +1184,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1224,7 +1225,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1244,7 +1245,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1281,7 +1282,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-method-article-final/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1301,7 +1302,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-method-article-final/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1343,7 +1344,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1363,7 +1364,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1398,7 +1399,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-metric-meaning/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1418,7 +1419,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-metric-meaning/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1459,7 +1460,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1479,7 +1480,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1514,7 +1515,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1534,7 +1535,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1575,7 +1576,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1595,7 +1596,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1630,7 +1631,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1650,7 +1651,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261119-main-unification/notebooks/summary.json",
+                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1865,6 +1866,12 @@
     "main_cached_restart_independent_audit": {
       "status": "NOT_RUN",
       "expected_evidence": "practicuum/evidence/20261119-main-CAM-TZVP-restarted-audit/result.json"
+    },
+    "main_cached_restart_scf_snapshot": {
+      "status": "PASS",
+      "evidence": "practicuum/evidence/20261120-refactor-runtime/scf.json",
+      "sha256": "2058c0f5e904f8f145376c6e9d4a9a8b1c756d654c8aa19b262e7005b228a7ac",
+      "scientific_acceptance": "SCF_ONLY: TDDFT spectrum and independent checkpoint audit remain separate gates"
     }
   },
   "global_release_blockers": [

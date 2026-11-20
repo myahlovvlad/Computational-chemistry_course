@@ -77,7 +77,7 @@ def main():
                 errors.append('Неполный паспорт выбранных первичных данных '+reading['lesson'])
         else:errors.append('Неизвестный вид источника статьи '+reading['lesson'])
       except Exception as error:errors.append('Проверка чтения: '+str(error))
-    folders=['programm','skills','scripts','media','web-training','theory','practicuum','parser']
+    folders=['programm','skills','scripts','media','web-training','theory','practicuum','parser','docs']
     for name in folders:
       if not (ROOT/name).is_dir():errors.append('Отсутствует область '+name)
     # Проверяем локальные ссылки действующих текстов, архив сохраняет исторический контекст.

@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "observed_on": "2026-11-20",
+  "scope": "Pinned active quantum code remains unchanged; SCF snapshot is not a completed TDDFT spectrum",
+  "code_hashes_match": {
+    "scripts/run_vertical_tddft.py": true,
+    "scripts/analyze_electronic_checkpoint.py": true,
+    "practicuum/shared/electronic_restart.py": true,
+    "practicuum/shared/lossless_scratch.py": true
+  },
+  "td_result_present": false
+}

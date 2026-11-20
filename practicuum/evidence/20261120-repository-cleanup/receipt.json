@@ -1,0 +1,51 @@
+{
+    "status":  "PASS",
+    "observed_on":  "2026-11-20",
+    "scope":  "Only inactive reproducible environment, verified diagnostic archives and empty directories",
+    "backup":  "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational-chemistry-backup-20261119\\cleanup-20261120",
+    "removed":  [
+                    {
+                        "path":  ".venv-course",
+                        "kind":  "unused_reproducible_python_environment",
+                        "backup":  "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational-chemistry-backup-20261119\\cleanup-20261120\\retired-pyvenv.cfg",
+                        "note":  "Removed in first cleanup stage before diagnostic archive verification"
+                    },
+                    {
+                        "path":  ".playwright-cli",
+                        "kind":  "archived_diagnostic_artifacts",
+                        "backup":  "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational-chemistry-backup-20261119\\cleanup-20261120\\_playwright-cli.zip",
+                        "sha256":  "1C7FB9A026381793FDD551C0FA557F3EBFC66825FC4EBACAC7DB8EAEB5E074A2",
+                        "note":  "SHA-256 verification completed in preceding cleanup stage"
+                    },
+                    {
+                        "path":  "output",
+                        "kind":  "archived_diagnostic_artifacts",
+                        "backup":  "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational-chemistry-backup-20261119\\cleanup-20261120\\output.zip",
+                        "sha256":  "1743D8487947B352AC08828463307B02218AC8E3A3DAB3AE05F743D3CB5CA8C2",
+                        "note":  "SHA-256 verification completed in preceding cleanup stage"
+                    },
+                    {
+                        "path":  "tmp\\course-restructure-20261118",
+                        "kind":  "empty_directory",
+                        "files":  0,
+                        "logical_bytes":  null,
+                        "backup":  null
+                    }
+                ],
+    "protected":  [
+                      "archive",
+                      "Books",
+                      "practicuum/workspace",
+                      "practicuum/evidence",
+                      "tmp/pyscf-scratch",
+                      "scripts/environment",
+                      "tmp/*launcher.log"
+                  ],
+    "wsl_cache":  {
+                      "scope":  "Downloadable uv package cache only; system and editor settings retained",
+                      "status":  "PASS",
+                      "command":  "/home/miakhlov/.local/bin/uv cache clean",
+                      "reported_size":  "1.2 GiB",
+                      "removed_files":  25805
+                  }
+}

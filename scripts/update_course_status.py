@@ -2,14 +2,24 @@
 import argparse
 import hashlib
 import json
+import os
+import re
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
+DOCUMENTS=json.loads((ROOT/'docs/layout.json').read_text(encoding='utf-8'))['moved_documents']
 
 
 def read(path):return json.loads((ROOT/path).read_text(encoding='utf-8'))
 def write(path,value):
-    path=ROOT/path;path.parent.mkdir(parents=True,exist_ok=True)
+    path=ROOT/DOCUMENTS.get(path,path);path.parent.mkdir(parents=True,exist_ok=True)
+    if path.suffix=='.md':
+        # Templates use repository-root targets; emitted links follow the document.
+        def relocate(match):
+            target=match[1]
+            if ':' in target or target.startswith('#'):return match[0]
+            return ']('+os.path.relpath(ROOT/DOCUMENTS.get(target,target),path.parent).replace('\\','/')+')'
+        value=re.sub(r'\]\(([^)]+)\)',relocate,value)
     path.write_text(value.rstrip()+'\n',encoding='utf-8',newline='\n')
 
 
@@ -78,7 +88,8 @@ def main():
     for path in ['practicuum/evidence/20261119-main-unification/notebooks/summary.json',
                  'practicuum/evidence/20261119-main-method-article-reviews/summary.json',
                  'practicuum/evidence/20261119-main-method-article-final/summary.json',
-                 'practicuum/evidence/20261119-main-metric-meaning/summary.json']:
+                 'practicuum/evidence/20261119-main-metric-meaning/summary.json',
+                 'practicuum/evidence/20261120-refactor-course/notebook-summary.json']:
         if (ROOT/path).is_file():
             for r in read(path)['runs']:baseline[(r['lesson_id'],r['role'],'Windows')]=execution_entry(r,path)
     research={
@@ -122,6 +133,8 @@ def main():
     research['main_cached_restart_progress_snapshot']=proof('practicuum/evidence/20261119-main-CAM-restarted-progress/progress.json')
     research['main_cached_restart_spectrum']=proof('practicuum/evidence/20261119-main-CAM-TZVP-restarted/result.json')
     research['main_cached_restart_independent_audit']=proof('practicuum/evidence/20261119-main-CAM-TZVP-restarted-audit/result.json')
+    research['main_cached_restart_scf_snapshot']=proof('practicuum/evidence/20261120-refactor-runtime/scf.json')
+    research['main_cached_restart_scf_snapshot']['scientific_acceptance']='SCF_ONLY: TDDFT spectrum and independent checkpoint audit remain separate gates'
     research['CAM_TZVP_on_GFN2']['scientific_acceptance']='REVIEW_REQUIRED: composite geometry; stability, sensitivity and experimental matching remain required'
     research['A2A_redocking']['scientific_acceptance']='FAIL: top-ranked pose recovery 0/9; finding a correct lower-ranked pose does not validate ranking'
     research['coarse_DFT_geometry']['scientific_acceptance']='NOT_ACCEPTED: quadrature gate failed; minimum not confirmed by Hessian'
@@ -168,10 +181,11 @@ def main():
       'scope':'draft lesson coverage and actual evidence; professional delivery remains incomplete',
       'program':{'modules':14,'lessons':28,'notebooks':56,'text_steps':text_step_count,'projected_hours':122,'hours_validated':False},
       'repository':{'canonical_branch':'main','canonical_location':'repository root',
+        'documentation':'docs/README.md',
         'dataset_preservation':'archive/branch-datasets/manifest.json'},
       'pedagogy':{'narrative_openings':28,'lesson_transitions':28,'article_reviews':14,
         'reading_route':'programm/ARTICLE_READING.md','student_pilot':'NOT_RUN'},
-      'current_main_execution':proof('practicuum/evidence/20261119-main-unification/notebooks/summary.json'),
+      'current_main_execution':proof('practicuum/evidence/20261120-refactor-course/notebook-summary.json'),
       'quality_requirement':'Professional calculations on target chemical forms; educational toy controls are not accepted substitutes',
       'modules':modules,'research':research,
       'global_release_blockers':['uncompleted target QM/IR/UV and numerical convergence',
@@ -243,6 +257,8 @@ def main():
 
 Доказательства и SHA: [реестр](course-status.json), `practicuum/evidence`. Независимая рецензия **NOT_RUN**. Ни SCF-сходимость, ни docking score, ни корреляция не подтверждают эффективность, доставку или экспериментальную точность.
 
+Снимок 20.11.2026: возобновлённый CAM-B3LYP/def2-TZVP/C-PCM SCF истрадефиллина сошёлся (E = −1296.410267893305 Eh; Tr(DS) ≈ 204). Сохранён неизменяемый `practicuum/evidence/20261120-refactor-runtime/scf.json`. Расчёт 30 состояний TDDFT ещё выполняется; итогового спектра и отдельного checkpoint-аудита нет. Геометрия GFN2 не объявляется DFT-минимумом.
+
 Профессиональный протокол требует отдельно назвать химическую форму, заряд/spin, геометрию, solvent model, базис/функционал, дисперсию, сетки и допуски, статус минимумов, исходники, параметры приборного/статистического метода, неопределённость и независимую проверку. C-PCM и SMD не смешиваются как один метод. Газофазные прежние B3LYP/STO-3G результаты остаются историческим учебным контролем.
 ''')
     write('PEDAGOGICAL_REVIEW_REPORT.md','''# Педагогическая проверка
@@ -257,7 +273,7 @@ def main():
 ''')
     write('STEPIK_RELEASE_REPORT.md',f'''# Подготовка к Stepik
 
-Действующая программа main содержит 28 уроков, 56 Notebook и {text_step_count} текстовых шагов, включая переходы и задания по статьям. Сборка `parser/dist/main-research-restart-20261119` проверена локально; 25 stdlib-проверок относятся к ограниченным численным полям. Изменённые восемь Notebook выполнены отдельно: `practicuum/evidence/20261119-main-method-article-final/summary.json`; уточнение смысла безразмерных метрик M12 проверено повтором `20261119-main-metric-meaning`. Прежние переносимые проверки и неизменяемые сборки сохранены. Это **не профессиональный релиз** и не публикация.
+Действующая программа main содержит 28 уроков, 56 Notebook и {text_step_count} текстовых шагов, включая переходы и задания по статьям. Сборка `parser/dist/refactor-20261120` проверена локально (`practicuum/evidence/20261120-refactor-package/check.json`); 25 stdlib-проверок относятся к ограниченным численным полям. Изменённые восемь Notebook выполнены отдельно: `practicuum/evidence/20261119-main-method-article-final/summary.json`; уточнение смысла безразмерных метрик M12 проверено повтором `20261119-main-metric-meaning`. Исторические проверки сохранены как свидетельства прежних запусков. Это **не профессиональный релиз** и не публикация.
 
 Сборщик включает shared/data и закреплённую среду; исключает преподавательские решения, личный workspace и NIST raw cache. Notebook исполняются в локальном Jupyter/WSL, а не предполагаемом RDKit grader Stepik. Права/атрибуция сохраняются.
 
