@@ -1,0 +1,18 @@
+{
+  "lesson_id": "M05-L01",
+  "role": "case",
+  "kernel": "course-v2-chem",
+  "started_utc": "2026-11-20T10:27:28.861852+00:00",
+  "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M05\\lessons\\L01\\Notebooks_cases\\01_case.ipynb",
+  "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+  "scope": "full guided computation",
+  "input_sha256": "cde44eb2465fcea4d23ef6629000f01e3c4f204300f8af800d4c69541ef94ba2",
+  "data_sha256": {
+    "practicuum/shared/data/compounds.json": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267"
+  },
+  "step_sha256": {
+    "practicuum/modules/M05/lessons/L01/steps/01_case.md": "053a3d9b333666c78a7f66d547f5717f3824095957b9472d1e523a33fb4b018e"
+  },
+  "status": "PASS",
+  "seconds": 1.9651661000098102
+}

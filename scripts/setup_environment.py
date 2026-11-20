@@ -11,6 +11,16 @@ import tempfile
 ROOT=Path(__file__).resolve().parents[1]
 PROJECT=ROOT/'scripts/environment'
 
+
+def environment_path(project,profile,platform_name):
+    """Keep an environment installed by the other OS intact in a shared checkout."""
+    environment=Path(project)/('.venv-'+profile)
+    if platform_name=='linux' and (environment/'Scripts/python.exe').is_file():
+        return Path(project)/('.venv-linux-'+profile)
+    if platform_name=='win32' and (environment/'bin/python').exists():
+        return Path(project)/('.venv-windows-'+profile)
+    return environment
+
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--profile',choices=['base','chem','quantum-core','quantum','docking'],default='base')
@@ -22,7 +32,7 @@ def main():
     uv=args.uv or shutil.which('uv')
     if not uv:raise SystemExit('Сначала выполните setup-windows.ps1 или setup-linux.sh для установки uv в локальный bootstrap.')
     # Разные профили используют разные каталоги: вводное ядро не получает RDKit случайно.
-    environment=PROJECT/('.venv-'+args.profile)
+    environment=environment_path(PROJECT,args.profile,sys.platform)
     env=dict(os.environ,UV_PROJECT_ENVIRONMENT=str(environment),PYTHONUTF8='1',PYTHONNOUSERSITE='1')
     groups=[] if args.profile=='base' else ['--group',args.profile]
     if not args.register_only:

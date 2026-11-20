@@ -1,0 +1,174 @@
+{
+  "status": "PASS",
+  "scope": "Execution metadata and text logs retained; verified guided outputs embedded in canonical notebooks; duplicate raw notebooks and input copies stay in ignored tmp, not Git",
+  "records": [
+    {
+      "lesson": "M01-L02",
+      "role": "case",
+      "raw_execution_sha256": "3470b82dde61054bde4f7a843c3c9e3362d601efa7be553cb4066e81f9d438c8",
+      "retained_output_notebook": "practicuum/modules/M01/lessons/L02/Notebooks_cases/01_case.ipynb",
+      "outputs_sha256": "ee06b277425ff7010bcd9a1585e737a7673b3557c73bed8858f6e11d286015dc"
+    },
+    {
+      "lesson": "M01-L02",
+      "role": "lab",
+      "raw_execution_sha256": "14fab1636b1bd8545ec4b921dff0819267fe7319817be65a1f213cc210f7c7db"
+    },
+    {
+      "lesson": "M02-L01",
+      "role": "case",
+      "raw_execution_sha256": "471d0da69bf122d842a47ae1787ec194bb529286ebb4e8b067adab16eab03614",
+      "retained_output_notebook": "practicuum/modules/M02/lessons/L01/Notebooks_cases/01_case.ipynb",
+      "outputs_sha256": "b7c9217b12e931a7bbb7bb8731a835be9e7ae4be710969dcdacc0c50a360922c"
+    },
+    {
+      "lesson": "M02-L01",
+      "role": "lab",
+      "raw_execution_sha256": "73418e8f52db4705a890cc5ce3ebe65affcd78b104226044aeaa66202f66fa7c"
+    },
+    {
+      "lesson": "M02-L02",
+      "role": "case",
+      "raw_execution_sha256": "8fc2975ecdf381f2099653217abea38026e54b5b15189601a9b98ef0c162e37b",
+      "retained_output_notebook": "practicuum/modules/M02/lessons/L02/Notebooks_cases/01_case.ipynb",
+      "outputs_sha256": "809570846182bbf9963a6fe7b68f5bd96029298f49253c00c1555607ed7c2ee7"
+    },
+    {
+      "lesson": "M02-L02",
+      "role": "lab",
+      "raw_execution_sha256": "d47186778c6c55a6277b7db40ba70c5520e5c582410de5c7913db771c75cb984"
+    },
+    {
+      "lesson": "M04-L01",
+      "role": "case",
+      "raw_execution_sha256": "133c44d3b5d7714928daa80abd7460c3d215150a8e5c578b154af79ecd3a4be5",
+      "retained_output_notebook": "practicuum/modules/M04/lessons/L01/Notebooks_cases/01_case.ipynb",
+      "outputs_sha256": "56d3c8dd2798d0e550c57dfe5d9cd78d4eb2d04fd72d20d8c53595e563a24af2"
+    },
+    {
+      "lesson": "M04-L01",
+      "role": "lab",
+      "raw_execution_sha256": "38cfcfc6a64f124ff186fb562da16e2e845c2adf548e5dfea0a0dedffd008cb3"
+    },
+    {
+      "lesson": "M05-L01",
+      "role": "case",
+      "raw_execution_sha256": "c691c5d5d749b51e7acdb964d7b90f1170c8d88261d6dc3ba86f0e1c54346207",
+      "retained_output_notebook": "practicuum/modules/M05/lessons/L01/Notebooks_cases/01_case.ipynb",
+      "outputs_sha256": "1a5d4dd338afef0c62ce724eb6d810ae421dfe6211830dcaac353442f3b44187"
+    },
+    {
+      "lesson": "M05-L01",
+      "role": "lab",
+      "raw_execution_sha256": "5758bda961133ac61995d6d60e0d0e5aff0bbb3e94191e9bda3edd953067a139"
+    },
+    {
+      "lesson": "M05-L02",
+      "role": "case",
+      "raw_execution_sha256": "82959fd568690a856d8197e44461e7ef8571bc0e78c00cd03ec67f59bdd29ae7",
+      "retained_output_notebook": "practicuum/modules/M05/lessons/L02/Notebooks_cases/01_case.ipynb",
+      "outputs_sha256": "9d9c00553355d648627330f2283664841a265f27c7d679448f6df43c60762660"
+    },
+    {
+      "lesson": "M05-L02",
+      "role": "lab",
+      "raw_execution_sha256": "509ba6605a6a39b352de266573f19d07714bdc29c77109b0f770a486ba0afc8f"
+    },
+    {
+      "lesson": "M07-L01",
+      "role": "case",
+      "raw_execution_sha256": "26adcaaa173dffd167a1ef35a1e3283296a6fb226729b8e12386da2696c63e5d",
+      "retained_output_notebook": "practicuum/modules/M07/lessons/L01/Notebooks_cases/01_case.ipynb",
+      "outputs_sha256": "9d37d1dba1f59e32e12509f5c30c7cd50ed459d1b8ec73e6652d6059a34ccd98"
+    },
+    {
+      "lesson": "M07-L01",
+      "role": "lab",
+      "raw_execution_sha256": "db738e4249a60d65201b8575f2e523719ea81f2e2fd1c2560e2dd0e0e3e48bed"
+    },
+    {
+      "lesson": "M07-L02",
+      "role": "case",
+      "raw_execution_sha256": "ec3ae29c1d37078369bca27229eaf32c7e9192aac9a555ce1acaaf94f6e103ca",
+      "retained_output_notebook": "practicuum/modules/M07/lessons/L02/Notebooks_cases/01_case.ipynb",
+      "outputs_sha256": "4c7439942573f68d1bf0f830b682ddc02468f553a9b827941266f00f757d7ac5"
+    },
+    {
+      "lesson": "M07-L02",
+      "role": "lab",
+      "raw_execution_sha256": "632e6ddf67287f42dc0992d8878b80ef847336ebb1a579c6b07206e34d1a9254"
+    },
+    {
+      "lesson": "M08-L01",
+      "role": "case",
+      "raw_execution_sha256": "3ad762b16c367ee2d7642d839bac3d05f78731d5b3a95e1327de42301f76a255",
+      "retained_output_notebook": "practicuum/modules/M08/lessons/L01/Notebooks_cases/01_case.ipynb",
+      "outputs_sha256": "24fafbbd9a8e15841f7ff59946ef219061a4181cef04628e9eeb798a58142753"
+    },
+    {
+      "lesson": "M08-L01",
+      "role": "lab",
+      "raw_execution_sha256": "f0f632f682e0c82db8aaa2b7b3ee076152738368c88e8189cac6d39b06d009fc"
+    },
+    {
+      "lesson": "M08-L02",
+      "role": "case",
+      "raw_execution_sha256": "e184282d30caafbbea70afb30cf76d698b38288355b0e38d038af95bd28f3cc6",
+      "retained_output_notebook": "practicuum/modules/M08/lessons/L02/Notebooks_cases/01_case.ipynb",
+      "outputs_sha256": "fc64963608b7dc7bd62929924c64c16769f3f939f944d8e3ffcf985a83b74be9"
+    },
+    {
+      "lesson": "M08-L02",
+      "role": "lab",
+      "raw_execution_sha256": "ff192dbecfe4ba094823926bacbac08a8098da361d04792d2e1fe7badbbcb866"
+    },
+    {
+      "lesson": "M13-L01",
+      "role": "case",
+      "raw_execution_sha256": "89500a3eb7bc20401986a22ee7352f986841e1e7238540a34947bbb3fa9da733",
+      "retained_output_notebook": "practicuum/modules/M13/lessons/L01/Notebooks_cases/01_case.ipynb",
+      "outputs_sha256": "4c3d0325fa957d044034518751dd6be57de58ec2ed1176b24253ae36d5216212"
+    },
+    {
+      "lesson": "M13-L01",
+      "role": "lab",
+      "raw_execution_sha256": "aad26247de4768b2d3b1c6d29c13bf308cecf57f1a21fc451946a0cf8a1eadd6"
+    },
+    {
+      "lesson": "M13-L02",
+      "role": "case",
+      "raw_execution_sha256": "6f4e6ed66ea3bdb0852fc30bb3321cc3abe3ca21333753c5572f6eca22b05d62",
+      "retained_output_notebook": "practicuum/modules/M13/lessons/L02/Notebooks_cases/01_case.ipynb",
+      "outputs_sha256": "37cb1c9728d8c16f621f32730490469fd3be0f1491481c9bf99a7dcc5c304a64"
+    },
+    {
+      "lesson": "M13-L02",
+      "role": "lab",
+      "raw_execution_sha256": "030db54ae919bf531bd0b7c7aedc0f4be6f1faf2c1af16fc508d9f401765482e"
+    },
+    {
+      "lesson": "M14-L01",
+      "role": "case",
+      "raw_execution_sha256": "2c1b9dda4dc6e1b34e754d7e49fd04640864c668957f74808ef1edbcd13f8420",
+      "retained_output_notebook": "practicuum/modules/M14/lessons/L01/Notebooks_cases/01_case.ipynb",
+      "outputs_sha256": "67ebcb1bdc1351bec83a88978d224a3c122798b69ea17eada4748f21e231fa31"
+    },
+    {
+      "lesson": "M14-L01",
+      "role": "lab",
+      "raw_execution_sha256": "3da1189833631e45f34b1ff29f8ef8c6c9a03ce7f2fbbc31bde2347de926ca88"
+    },
+    {
+      "lesson": "M14-L02",
+      "role": "case",
+      "raw_execution_sha256": "c2fe1e20e5e6861442eeba06203ce9e62439700c29411fe78f9a8ea0f1302255",
+      "retained_output_notebook": "practicuum/modules/M14/lessons/L02/Notebooks_cases/01_case.ipynb",
+      "outputs_sha256": "da95bfb02db598f884851a09fad78ae3b049dde6f12be2a147b1a4281ce49c35"
+    },
+    {
+      "lesson": "M14-L02",
+      "role": "lab",
+      "raw_execution_sha256": "3278a57cc75c2b7ad82a6bfcbfaa9a1c4483a512e13ab5c693ef96a95e679d61"
+    }
+  ]
+}

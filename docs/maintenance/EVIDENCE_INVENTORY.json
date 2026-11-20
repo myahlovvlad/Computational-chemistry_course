@@ -1,0 +1,2493 @@
+{
+  "status": "PASS",
+  "scope": "Read-only size/reference inventory; no scientific acceptance or deletion authorization",
+  "folders": 167,
+  "bytes": 713813869,
+  "bytecode_cache_bytes": 0,
+  "executed_notebook_bytes": 4319259,
+  "inventory": [
+    {
+      "directory": "practicuum/evidence/20261119-main-unification",
+      "bytes": 71513662,
+      "files": 884,
+      "explicit_consumers": [
+        "docs/history/MAIN_UNIFICATION_REPORT.md",
+        "practicuum/modules/M01/lessons/L01/Notebooks_cases/01_case.ipynb",
+        "practicuum/modules/M01/lessons/L02/Notebooks_cases/01_case.ipynb",
+        "practicuum/modules/M02/lessons/L01/Notebooks_cases/01_case.ipynb",
+        "practicuum/modules/M02/lessons/L02/Notebooks_cases/01_case.ipynb",
+        "practicuum/modules/M03/lessons/L01/Notebooks_cases/01_case.ipynb",
+        "practicuum/modules/M03/lessons/L02/Notebooks_cases/01_case.ipynb",
+        "practicuum/modules/M04/lessons/L01/Notebooks_cases/01_case.ipynb",
+        "practicuum/modules/M04/lessons/L02/Notebooks_cases/01_case.ipynb",
+        "practicuum/modules/M05/lessons/L01/Notebooks_cases/01_case.ipynb",
+        "practicuum/modules/M05/lessons/L02/Notebooks_cases/01_case.ipynb",
+        "practicuum/modules/M06/lessons/L01/Notebooks_cases/01_case.ipynb",
+        "practicuum/modules/M07/lessons/L01/Notebooks_cases/01_case.ipynb",
+        "practicuum/modules/M08/lessons/L01/Notebooks_cases/01_case.ipynb",
+        "practicuum/modules/M08/lessons/L02/Notebooks_cases/01_case.ipynb",
+        "practicuum/modules/M09/lessons/L01/Notebooks_cases/01_case.ipynb",
+        "practicuum/modules/M09/lessons/L02/Notebooks_cases/01_case.ipynb",
+        "practicuum/modules/M10/lessons/L01/Notebooks_cases/01_case.ipynb",
+        "practicuum/modules/M10/lessons/L02/Notebooks_cases/01_case.ipynb",
+        "practicuum/modules/M11/lessons/L01/Notebooks_cases/01_case.ipynb",
+        "practicuum/modules/M12/lessons/L01/Notebooks_cases/01_case.ipynb",
+        "practicuum/modules/M13/lessons/L01/Notebooks_cases/01_case.ipynb",
+        "practicuum/modules/M13/lessons/L02/Notebooks_cases/01_case.ipynb",
+        "practicuum/modules/M14/lessons/L01/Notebooks_cases/01_case.ipynb",
+        "practicuum/modules/M14/lessons/L02/Notebooks_cases/01_case.ipynb",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 56,
+      "executed_notebook_bytes": 917423,
+      "checkpoints": 0,
+      "retention": "KEEP: explicit consumer"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-conformer-GFN2-atorvastatin",
+      "bytes": 48951131,
+      "files": 3367,
+      "explicit_consumers": [
+        "docs/status/course-status.json"
+      ],
+      "protected_by_branch_manifest": 2662,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-conformer-GFN2-atorvastatin_lactone",
+      "bytes": 47090751,
+      "files": 3367,
+      "explicit_consumers": [
+        "docs/status/course-status.json"
+      ],
+      "protected_by_branch_manifest": 2661,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-conformer-GFN2-atorvastatin_anion",
+      "bytes": 46826705,
+      "files": 3367,
+      "explicit_consumers": [
+        "docs/status/course-status.json"
+      ],
+      "protected_by_branch_manifest": 2661,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-professional-conformers-reproduced-windows",
+      "bytes": 41522340,
+      "files": 311,
+      "explicit_consumers": [
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 15,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 4,
+      "executed_notebook_bytes": 63950,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-professional-conformers-reproduced-linux",
+      "bytes": 41517296,
+      "files": 311,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 16,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 4,
+      "executed_notebook_bytes": 62392,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-professional-conformers-projected-windows",
+      "bytes": 41477704,
+      "files": 307,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 15,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 4,
+      "executed_notebook_bytes": 60940,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-professional-conformers-projected-linux",
+      "bytes": 41472734,
+      "files": 307,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 18,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 4,
+      "executed_notebook_bytes": 59433,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-conformer-GFN2-istradefylline",
+      "bytes": 38898459,
+      "files": 3302,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "parser/build.py",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 2605,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-conformer-GFN2-istradefylline-linux",
+      "bytes": 37012972,
+      "files": 3303,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "parser/build.py",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 2618,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-research-A2A-QSAR",
+      "bytes": 35299235,
+      "files": 9,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "practicuum/shared/data/target_qsar/manifest.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 6,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-main-method-article-reviews",
+      "bytes": 27552770,
+      "files": 279,
+      "explicit_consumers": [
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 8,
+      "executed_notebook_bytes": 161324,
+      "checkpoints": 0,
+      "retention": "KEEP: explicit consumer"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-main-method-article-final",
+      "bytes": 27551454,
+      "files": 279,
+      "explicit_consumers": [
+        "docs/history/MAIN_CONTINUATION_REPORT.md",
+        "docs/status/STEPIK_RELEASE_REPORT.md",
+        "practicuum/modules/M06/lessons/L02/Notebooks_cases/01_case.ipynb",
+        "practicuum/modules/M07/lessons/L02/Notebooks_cases/01_case.ipynb",
+        "practicuum/modules/M11/lessons/L02/Notebooks_cases/01_case.ipynb",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 8,
+      "executed_notebook_bytes": 160665,
+      "checkpoints": 0,
+      "retention": "KEEP: explicit consumer"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-research-A2A-dataset",
+      "bytes": 23525925,
+      "files": 18,
+      "explicit_consumers": [
+        "parser/validate_package.py",
+        "practicuum/modules/M12/lessons/L01/Notebooks_cases/01_case.ipynb",
+        "practicuum/modules/M12/lessons/L01/steps/01_case.md",
+        "practicuum/shared/data/target_qsar/manifest.json"
+      ],
+      "protected_by_branch_manifest": 16,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-professional-solubility-windows",
+      "bytes": 12473236,
+      "files": 47,
+      "explicit_consumers": [
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 15,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 4,
+      "executed_notebook_bytes": 58830,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-professional-solubility-linux",
+      "bytes": 12468996,
+      "files": 47,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 19,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 4,
+      "executed_notebook_bytes": 57314,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-A2A-target-preparation-repair-audited",
+      "bytes": 10970514,
+      "files": 21,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 18,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-main-CAM-TZVP-restarted",
+      "bytes": 8323572,
+      "files": 11,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 1,
+      "retention": "KEEP: explicit consumer"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-istradefylline-CAM-TZVP-lossless-water",
+      "bytes": 8294137,
+      "files": 8,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 1,
+      "retention": "KEEP: explicit consumer"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-professional-docking-windows",
+      "bytes": 8069967,
+      "files": 103,
+      "explicit_consumers": [
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 15,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 4,
+      "executed_notebook_bytes": 60827,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-professional-docking-linux",
+      "bytes": 8065463,
+      "files": 103,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 20,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 4,
+      "executed_notebook_bytes": 59358,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-professional-conformers-windows",
+      "bytes": 7022766,
+      "files": 259,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 17,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 4,
+      "executed_notebook_bytes": 67590,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-professional-conformers-linux",
+      "bytes": 7022608,
+      "files": 259,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 20,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 4,
+      "executed_notebook_bytes": 66352,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-HMGCR-target-preparation-repair-audited",
+      "bytes": 4997676,
+      "files": 12,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 11,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-professional-QSAR-windows",
+      "bytes": 4944062,
+      "files": 63,
+      "explicit_consumers": [
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 16,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 4,
+      "executed_notebook_bytes": 57907,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-professional-QSAR-linux",
+      "bytes": 4939818,
+      "files": 63,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 29,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 4,
+      "executed_notebook_bytes": 56448,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-conformer-GFN2-atorvastatin-numerics",
+      "bytes": 2705634,
+      "files": 107,
+      "explicit_consumers": [
+        "docs/status/course-status.json"
+      ],
+      "protected_by_branch_manifest": 77,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-full-course-windows",
+      "bytes": 2645551,
+      "files": 353,
+      "explicit_consumers": [
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 173,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 56,
+      "executed_notebook_bytes": 806073,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-full-course-linux",
+      "bytes": 2613515,
+      "files": 355,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 243,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 56,
+      "executed_notebook_bytes": 789567,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-istradefylline-solubility-source",
+      "bytes": 2613291,
+      "files": 3,
+      "explicit_consumers": [
+        "parser/build.py"
+      ],
+      "protected_by_branch_manifest": 3,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-main-metric-meaning",
+      "bytes": 2542714,
+      "files": 49,
+      "explicit_consumers": [
+        "docs/history/MAIN_CONTINUATION_REPORT.md",
+        "docs/status/STEPIK_RELEASE_REPORT.md",
+        "practicuum/modules/M12/lessons/L02/Notebooks_cases/01_case.ipynb",
+        "practicuum/modules/M12/lessons/L02/instructor/rubric.md",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 2,
+      "executed_notebook_bytes": 38522,
+      "checkpoints": 0,
+      "retention": "KEEP: explicit consumer"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-target-structures-research",
+      "bytes": 1990904,
+      "files": 12,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 12,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-professional-kinetics-windows",
+      "bytes": 1722476,
+      "files": 39,
+      "explicit_consumers": [
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 17,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 4,
+      "executed_notebook_bytes": 59775,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-professional-kinetics-windows-corrected",
+      "bytes": 1704917,
+      "files": 39,
+      "explicit_consumers": [
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 15,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 4,
+      "executed_notebook_bytes": 55855,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-professional-kinetics-linux",
+      "bytes": 1700690,
+      "files": 39,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 20,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 4,
+      "executed_notebook_bytes": 54354,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-conformer-GFN2-istradefylline-numerics",
+      "bytes": 1610116,
+      "files": 107,
+      "explicit_consumers": [
+        "docs/status/course-status.json"
+      ],
+      "protected_by_branch_manifest": 60,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-istradefylline-solubility-research-checked",
+      "bytes": 1605127,
+      "files": 8,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 8,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/research-quantum-istradefylline-cpcm-20261118",
+      "bytes": 1408074,
+      "files": 52,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 45,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-istradefylline-solubility-research",
+      "bytes": 1291130,
+      "files": 3,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 1,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-A2A-professional-redocking",
+      "bytes": 1279169,
+      "files": 31,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 31,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-xTB-istradefylline-feasibility",
+      "bytes": 1256695,
+      "files": 13,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 11,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-main-electronic-restart-guarded-calculation",
+      "bytes": 1166736,
+      "files": 6,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 4,
+      "retention": "KEEP: explicit consumer"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-main-electronic-restart-control-calculation",
+      "bytes": 1166698,
+      "files": 6,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 4,
+      "retention": "REVIEW: absence of a literal reference is not proof of non-use"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-research-HMGCR-dataset",
+      "bytes": 1149443,
+      "files": 9,
+      "explicit_consumers": [
+        "practicuum/shared/data/target_qsar/manifest.json"
+      ],
+      "protected_by_branch_manifest": 6,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-xTB-istradefylline-hessian-feasibility",
+      "bytes": 1102562,
+      "files": 15,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 12,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-hplc-research-statistics",
+      "bytes": 756979,
+      "files": 10,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 9,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/research-quantum-atorvastatin-20261118",
+      "bytes": 709408,
+      "files": 10,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 10,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/research-quantum-atorvastatin-anion-20261118",
+      "bytes": 702850,
+      "files": 10,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 8,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/research-quantum-atorvastatin-lactone-20261118",
+      "bytes": 684908,
+      "files": 10,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 8,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-professional-chromatography-windows",
+      "bytes": 581958,
+      "files": 43,
+      "explicit_consumers": [
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 15,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 4,
+      "executed_notebook_bytes": 53738,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-professional-chromatography-linux",
+      "bytes": 577734,
+      "files": 43,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 22,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 4,
+      "executed_notebook_bytes": 52170,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-GFN2-fixed-geometry-windows",
+      "bytes": 564962,
+      "files": 93,
+      "explicit_consumers": [
+        "practicuum/shared/data/conformer_research/cross_platform_reproduction.json"
+      ],
+      "protected_by_branch_manifest": 63,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-GFN2-fixed-geometry-linux",
+      "bytes": 551127,
+      "files": 93,
+      "explicit_consumers": [
+        "practicuum/shared/data/conformer_research/cross_platform_reproduction.json"
+      ],
+      "protected_by_branch_manifest": 65,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/research-quantum-istradefylline-memory-controlled-20261118",
+      "bytes": 549828,
+      "files": 12,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 5,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/research-quantum-istradefylline-20261118",
+      "bytes": 540111,
+      "files": 12,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 10,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-browser-hplc-fixed",
+      "bytes": 521816,
+      "files": 10,
+      "explicit_consumers": [
+        "docs/history/PRACTICUM_IMPLEMENTATION_REPORT.md",
+        "docs/history/migration-matrix.json"
+      ],
+      "protected_by_branch_manifest": 9,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-statin-kinetics-solubility-research",
+      "bytes": 396635,
+      "files": 4,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 4,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-pilot-linux",
+      "bytes": 238785,
+      "files": 41,
+      "explicit_consumers": [
+        "docs/history/PRACTICUM_IMPLEMENTATION_REPORT.md",
+        "docs/history/migration-matrix.json",
+        "programm/course.json"
+      ],
+      "protected_by_branch_manifest": 21,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 6,
+      "executed_notebook_bytes": 119698,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-quantum-core-windows-installation",
+      "bytes": 223264,
+      "files": 8,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 7,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-pilot-windows-final",
+      "bytes": 210343,
+      "files": 33,
+      "explicit_consumers": [
+        "docs/history/PRACTICUM_IMPLEMENTATION_REPORT.md",
+        "docs/history/migration-matrix.json",
+        "programm/course.json"
+      ],
+      "protected_by_branch_manifest": 21,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 6,
+      "executed_notebook_bytes": 122062,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-setup-windows",
+      "bytes": 208457,
+      "files": 6,
+      "explicit_consumers": [
+        "docs/history/PRACTICUM_IMPLEMENTATION_REPORT.md",
+        "docs/history/migration-matrix.json"
+      ],
+      "protected_by_branch_manifest": 4,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-linux-setup-base",
+      "bytes": 207403,
+      "files": 6,
+      "explicit_consumers": [
+        "docs/history/migration-matrix.json"
+      ],
+      "protected_by_branch_manifest": 6,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-linux-setup-chem",
+      "bytes": 207403,
+      "files": 6,
+      "explicit_consumers": [
+        "docs/history/migration-matrix.json"
+      ],
+      "protected_by_branch_manifest": 3,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-caffeine-rate-law-research",
+      "bytes": 197952,
+      "files": 5,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 4,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261120-refactor-course",
+      "bytes": 148384,
+      "files": 4,
+      "explicit_consumers": [
+        "docs/maintenance/REFACTOR_20261120.md",
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: explicit consumer"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-consolidation",
+      "bytes": 142912,
+      "files": 1,
+      "explicit_consumers": [
+        "docs/history/CONSOLIDATION_REPORT.md"
+      ],
+      "protected_by_branch_manifest": 1,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-main-article-package-integrity",
+      "bytes": 127387,
+      "files": 6,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "REVIEW: absence of a literal reference is not proof of non-use"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-process-source-windows",
+      "bytes": 126894,
+      "files": 33,
+      "explicit_consumers": [
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 18,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 4,
+      "executed_notebook_bytes": 56028,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-main-restart-package-check",
+      "bytes": 123347,
+      "files": 5,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "REVIEW: absence of a literal reference is not proof of non-use"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-vertical-slice-windows",
+      "bytes": 123320,
+      "files": 23,
+      "explicit_consumers": [
+        "docs/history/migration-matrix.json"
+      ],
+      "protected_by_branch_manifest": 15,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 4,
+      "executed_notebook_bytes": 60952,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-xanthine-UHPLC-research",
+      "bytes": 119626,
+      "files": 4,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 2,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-caffeine-kinetics-source",
+      "bytes": 114192,
+      "files": 2,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 2,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-electronic-checkpoint-controls",
+      "bytes": 105258,
+      "files": 18,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 2,
+      "retention": "KEEP: explicit consumer"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-conformer-package-integrity",
+      "bytes": 87028,
+      "files": 6,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 3,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-quantum-io-package-integrity",
+      "bytes": 84317,
+      "files": 5,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "REVIEW: absence of a literal reference is not proof of non-use"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-synchronized-cross-platform-checks",
+      "bytes": 73865,
+      "files": 117,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 4,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-ir-distribution-safe-windows",
+      "bytes": 72222,
+      "files": 15,
+      "explicit_consumers": [
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 10,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 2,
+      "executed_notebook_bytes": 31193,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-ir-distribution-safe-linux",
+      "bytes": 71572,
+      "files": 15,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 9,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 2,
+      "executed_notebook_bytes": 30388,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-main-CAM-restarted-progress",
+      "bytes": 69486,
+      "files": 11,
+      "explicit_consumers": [
+        "docs/history/MAIN_CONTINUATION_REPORT.md",
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: explicit consumer"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-professional-references-windows",
+      "bytes": 67809,
+      "files": 113,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 1,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-full-references-source-final-windows",
+      "bytes": 67686,
+      "files": 112,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 58,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-full-references-windows-final",
+      "bytes": 67178,
+      "files": 113,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 5,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-professional-references-chromatography-windows",
+      "bytes": 66800,
+      "files": 113,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 7,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-professional-references-QSAR-windows",
+      "bytes": 66719,
+      "files": 113,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 16,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-professional-references-target-windows",
+      "bytes": 65849,
+      "files": 113,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 1,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-professional-references-solubility-windows",
+      "bytes": 64928,
+      "files": 113,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 1,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-full-references-windows",
+      "bytes": 64714,
+      "files": 109,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 1,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-professional-references-conformers-projected-windows",
+      "bytes": 64690,
+      "files": 113,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 13,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-full-references-linux",
+      "bytes": 64330,
+      "files": 113,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 85,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-professional-references-conformers-windows",
+      "bytes": 64064,
+      "files": 113,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 3,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-professional-references-target-linux",
+      "bytes": 62186,
+      "files": 111,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 3,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-professional-references-solubility-linux",
+      "bytes": 62082,
+      "files": 113,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 1,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-professional-references-conformers-projected-linux",
+      "bytes": 61879,
+      "files": 113,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 4,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-professional-references-conformers-reproduced-linux",
+      "bytes": 61874,
+      "files": 113,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 1,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-main-CAM-cache-preflight",
+      "bytes": 61571,
+      "files": 11,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: explicit consumer"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-professional-references-conformers-linux",
+      "bytes": 61238,
+      "files": 113,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 35,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-portable-professional-conformers-reproduced",
+      "bytes": 59250,
+      "files": 6,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 6,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-portable-professional-conformers",
+      "bytes": 53447,
+      "files": 6,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 6,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-structure",
+      "bytes": 53111,
+      "files": 5,
+      "explicit_consumers": [
+        "docs/history/PRACTICUM_IMPLEMENTATION_REPORT.md",
+        "docs/history/migration-matrix.json"
+      ],
+      "protected_by_branch_manifest": 2,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-release-gate",
+      "bytes": 52917,
+      "files": 5,
+      "explicit_consumers": [
+        "docs/history/PRACTICUM_IMPLEMENTATION_REPORT.md",
+        "docs/history/migration-matrix.json"
+      ],
+      "protected_by_branch_manifest": 4,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-structure-fixed",
+      "bytes": 52872,
+      "files": 5,
+      "explicit_consumers": [
+        "docs/history/PRACTICUM_IMPLEMENTATION_REPORT.md",
+        "docs/history/migration-matrix.json"
+      ],
+      "protected_by_branch_manifest": 2,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-stepik-full",
+      "bytes": 50372,
+      "files": 5,
+      "explicit_consumers": [
+        "docs/history/PRACTICUM_IMPLEMENTATION_REPORT.md",
+        "docs/history/migration-matrix.json"
+      ],
+      "protected_by_branch_manifest": 3,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-stepik-partial",
+      "bytes": 50214,
+      "files": 5,
+      "explicit_consumers": [
+        "docs/history/PRACTICUM_IMPLEMENTATION_REPORT.md",
+        "docs/history/migration-matrix.json"
+      ],
+      "protected_by_branch_manifest": 2,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-portable-professional-notebooks",
+      "bytes": 48202,
+      "files": 5,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 5,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-lossless-TDDFT-progress-snapshot",
+      "bytes": 43654,
+      "files": 8,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: explicit consumer"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-GFN2-fixed-geometry-inputs",
+      "bytes": 42980,
+      "files": 11,
+      "explicit_consumers": [
+        "parser/build.py"
+      ],
+      "protected_by_branch_manifest": 11,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-regressions",
+      "bytes": 41774,
+      "files": 16,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 9,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-istradefylline-CAM-TZVP-on-GFN2-water",
+      "bytes": 38094,
+      "files": 7,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 6,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-docking-regression-collection",
+      "bytes": 37410,
+      "files": 1,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 1,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-conformer-source-bundle-check",
+      "bytes": 36494,
+      "files": 6,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 5,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-main-CAM-TZVP-restart-plan",
+      "bytes": 36201,
+      "files": 6,
+      "explicit_consumers": [
+        "docs/history/MAIN_CONTINUATION_REPORT.md"
+      ],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: explicit consumer"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-main-portable-article-review",
+      "bytes": 36081,
+      "files": 4,
+      "explicit_consumers": [
+        "docs/history/MAIN_CONTINUATION_REPORT.md"
+      ],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 1,
+      "executed_notebook_bytes": 18131,
+      "checkpoints": 0,
+      "retention": "KEEP: explicit consumer"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-browser-hplc",
+      "bytes": 32605,
+      "files": 7,
+      "explicit_consumers": [
+        "docs/history/PRACTICUM_IMPLEMENTATION_REPORT.md",
+        "docs/history/migration-matrix.json"
+      ],
+      "protected_by_branch_manifest": 3,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-research-A2A-dataset",
+      "bytes": 31278,
+      "files": 4,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 2,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-research-HMGCR-dataset",
+      "bytes": 31278,
+      "files": 4,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 1,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-regressions",
+      "bytes": 30427,
+      "files": 10,
+      "explicit_consumers": [
+        "docs/history/PRACTICUM_IMPLEMENTATION_REPORT.md",
+        "docs/history/migration-matrix.json"
+      ],
+      "protected_by_branch_manifest": 7,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-solubility-collection",
+      "bytes": 28081,
+      "files": 1,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 1,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-research-collection",
+      "bytes": 26001,
+      "files": 1,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 1,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-main-research-runtime",
+      "bytes": 25980,
+      "files": 3,
+      "explicit_consumers": [
+        "docs/history/MAIN_CONTINUATION_REPORT.md",
+        "docs/status/SCIENTIFIC_VALIDATION_REPORT.md",
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: explicit consumer"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-main-article-regressions",
+      "bytes": 21946,
+      "files": 5,
+      "explicit_consumers": [
+        "docs/history/MAIN_CONTINUATION_REPORT.md"
+      ],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: explicit consumer"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-source-consistency",
+      "bytes": 21577,
+      "files": 7,
+      "explicit_consumers": [
+        "docs/history/PRACTICUM_IMPLEMENTATION_REPORT.md",
+        "docs/history/migration-matrix.json"
+      ],
+      "protected_by_branch_manifest": 4,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-research-A2A-QSAR-audit",
+      "bytes": 20113,
+      "files": 3,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "practicuum/shared/data/target_qsar/manifest.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 2,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-refined-DFT-progress-snapshot",
+      "bytes": 18390,
+      "files": 3,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 3,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-synchronized-checks-collection",
+      "bytes": 17890,
+      "files": 1,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 1,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-main-electronic-restart-guarded-control",
+      "bytes": 17347,
+      "files": 5,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "REVIEW: absence of a literal reference is not proof of non-use"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-main-electronic-restart-control",
+      "bytes": 17008,
+      "files": 5,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "REVIEW: absence of a literal reference is not proof of non-use"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-GFN2-cross-platform-diagnosis",
+      "bytes": 16004,
+      "files": 2,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 2,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-istradefylline-CAM-TZVP-scratch-preflight",
+      "bytes": 15699,
+      "files": 5,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 4,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-reference-forms",
+      "bytes": 13451,
+      "files": 5,
+      "explicit_consumers": [
+        "docs/history/PRACTICUM_IMPLEMENTATION_REPORT.md",
+        "docs/history/migration-matrix.json"
+      ],
+      "protected_by_branch_manifest": 1,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-unprepared-notebook",
+      "bytes": 13359,
+      "files": 5,
+      "explicit_consumers": [
+        "docs/history/migration-matrix.json"
+      ],
+      "protected_by_branch_manifest": 5,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-QSAR-collection",
+      "bytes": 13192,
+      "files": 1,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 1,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-pyscf-reference",
+      "bytes": 11857,
+      "files": 3,
+      "explicit_consumers": [
+        "docs/history/PRACTICUM_IMPLEMENTATION_REPORT.md",
+        "docs/history/migration-matrix.json",
+        "practicuum/shared/data/quantum/README.md"
+      ],
+      "protected_by_branch_manifest": 2,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-reference-identity",
+      "bytes": 11525,
+      "files": 5,
+      "explicit_consumers": [
+        "docs/history/PRACTICUM_IMPLEMENTATION_REPORT.md",
+        "docs/history/migration-matrix.json"
+      ],
+      "protected_by_branch_manifest": 1,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-conformer-regressions-windows",
+      "bytes": 10825,
+      "files": 3,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 2,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261120-refactor-tests",
+      "bytes": 10813,
+      "files": 3,
+      "explicit_consumers": [
+        "docs/maintenance/REFACTOR_20261120.md"
+      ],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: explicit consumer"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-conformer-regressions-linux",
+      "bytes": 10571,
+      "files": 3,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 2,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-lossless-quantum-control",
+      "bytes": 10468,
+      "files": 5,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: explicit consumer"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-unprepared-notebook-check",
+      "bytes": 10438,
+      "files": 4,
+      "explicit_consumers": [
+        "docs/history/migration-matrix.json"
+      ],
+      "protected_by_branch_manifest": 3,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-main-primary-article-extraction",
+      "bytes": 10358,
+      "files": 5,
+      "explicit_consumers": [
+        "docs/history/MAIN_CONTINUATION_REPORT.md"
+      ],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: explicit consumer"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-lossless-quantum-control-linux",
+      "bytes": 10232,
+      "files": 5,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: explicit consumer"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-lossless-TDDFT-postprocess-plan",
+      "bytes": 10202,
+      "files": 3,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "REVIEW: absence of a literal reference is not proof of non-use"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-regressions-linux",
+      "bytes": 10170,
+      "files": 5,
+      "explicit_consumers": [
+        "docs/history/PRACTICUM_IMPLEMENTATION_REPORT.md",
+        "docs/history/migration-matrix.json"
+      ],
+      "protected_by_branch_manifest": 4,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-chromatography-collection",
+      "bytes": 10162,
+      "files": 1,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 1,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-regressions-solubility-linux",
+      "bytes": 10142,
+      "files": 3,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 2,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261120-refactor-runtime",
+      "bytes": 10010,
+      "files": 2,
+      "explicit_consumers": [
+        "docs/status/SCIENTIFIC_VALIDATION_REPORT.md",
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: explicit consumer"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-stepik-integrity",
+      "bytes": 9976,
+      "files": 5,
+      "explicit_consumers": [
+        "docs/history/PRACTICUM_IMPLEMENTATION_REPORT.md",
+        "docs/history/migration-matrix.json"
+      ],
+      "protected_by_branch_manifest": 4,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-GFN2-cross-platform-reproduction",
+      "bytes": 9481,
+      "files": 3,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "practicuum/shared/data/conformer_research/cross_platform_reproduction.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 3,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-portable-conformer-reproduction-audit",
+      "bytes": 9481,
+      "files": 3,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "REVIEW: absence of a literal reference is not proof of non-use"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-kinetics-collection",
+      "bytes": 9191,
+      "files": 1,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 1,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-lossless-scratch-guards",
+      "bytes": 8843,
+      "files": 5,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: explicit consumer"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-lossless-scratch-guards-linux",
+      "bytes": 8668,
+      "files": 5,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: explicit consumer"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-regressions-target-linux",
+      "bytes": 8307,
+      "files": 3,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 2,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-final-regressions",
+      "bytes": 6586,
+      "files": 3,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 2,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-learning-tools-browser",
+      "bytes": 6565,
+      "files": 1,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 1,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261120-wsl-single-source",
+      "bytes": 5548,
+      "files": 3,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "REVIEW: absence of a literal reference is not proof of non-use"
+    },
+    {
+      "directory": "practicuum/evidence/20261118-archive-integrity",
+      "bytes": 5291,
+      "files": 4,
+      "explicit_consumers": [
+        "docs/history/PRACTICUM_IMPLEMENTATION_REPORT.md",
+        "docs/history/migration-matrix.json"
+      ],
+      "protected_by_branch_manifest": 2,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-conformer-B-execution-plan",
+      "bytes": 4904,
+      "files": 4,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 4,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: branch history"
+    },
+    {
+      "directory": "practicuum/evidence/20261120-refactor-references",
+      "bytes": 4424,
+      "files": 3,
+      "explicit_consumers": [
+        "docs/maintenance/REFACTOR_20261120.md"
+      ],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: explicit consumer"
+    },
+    {
+      "directory": "practicuum/evidence/20261120-refactor-package",
+      "bytes": 4202,
+      "files": 3,
+      "explicit_consumers": [
+        "docs/maintenance/REFACTOR_20261120.md",
+        "docs/status/STEPIK_RELEASE_REPORT.md",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: explicit consumer"
+    },
+    {
+      "directory": "practicuum/evidence/20261120-refactor-archive-check",
+      "bytes": 4189,
+      "files": 3,
+      "explicit_consumers": [
+        "docs/maintenance/REFACTOR_20261120.md"
+      ],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: explicit consumer"
+    },
+    {
+      "directory": "practicuum/evidence/20261120-refactor-package-build",
+      "bytes": 4070,
+      "files": 3,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "REVIEW: absence of a literal reference is not proof of non-use"
+    },
+    {
+      "directory": "practicuum/evidence/20261120-refactor-datasets",
+      "bytes": 4066,
+      "files": 3,
+      "explicit_consumers": [
+        "docs/maintenance/REFACTOR_20261120.md"
+      ],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: explicit consumer"
+    },
+    {
+      "directory": "practicuum/evidence/20261120-refactor-layout",
+      "bytes": 4025,
+      "files": 3,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "REVIEW: absence of a literal reference is not proof of non-use"
+    },
+    {
+      "directory": "practicuum/evidence/20261120-repository-cleanup",
+      "bytes": 2745,
+      "files": 1,
+      "explicit_consumers": [
+        "docs/maintenance/REFACTOR_20261120.md"
+      ],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: explicit consumer"
+    },
+    {
+      "directory": "practicuum/evidence/20261120-refactor-final-structure",
+      "bytes": 802,
+      "files": 1,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "REVIEW: absence of a literal reference is not proof of non-use"
+    },
+    {
+      "directory": "practicuum/evidence/20261120-refactor-structure",
+      "bytes": 802,
+      "files": 1,
+      "explicit_consumers": [],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "REVIEW: absence of a literal reference is not proof of non-use"
+    },
+    {
+      "directory": "practicuum/evidence/20261119-research-HMGCR-QSAR",
+      "bytes": 506,
+      "files": 1,
+      "explicit_consumers": [
+        "docs/status/course-status.json",
+        "practicuum/shared/data/target_qsar/manifest.json",
+        "scripts/update_course_status.py"
+      ],
+      "protected_by_branch_manifest": 0,
+      "bytecode_cache_files": 0,
+      "bytecode_cache_bytes": 0,
+      "executed_notebooks": 0,
+      "executed_notebook_bytes": 0,
+      "checkpoints": 0,
+      "retention": "KEEP: explicit consumer"
+    }
+  ]
+}

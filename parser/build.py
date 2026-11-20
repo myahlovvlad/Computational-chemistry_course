@@ -57,6 +57,7 @@ def main():
     for relative in tracked:
         if relative and (ROOT/relative).is_file():copy_resource(out,relative)
     for relative in ['scripts/environment/pyproject.toml','scripts/environment/uv.lock',
+        '.vscode/settings.json','.vscode/extensions.json',
         'scripts/setup_environment.py','scripts/setup-windows.ps1','scripts/setup-linux.sh',
         'scripts/README.md','THIRD_PARTY_NOTICES.md']:
         copy_resource(out,relative)

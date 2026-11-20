@@ -1,0 +1,19 @@
+{
+  "lesson_id": "M05-L02",
+  "role": "lab",
+  "kernel": "course-v2-chem",
+  "started_utc": "2026-11-20T10:27:34.410468+00:00",
+  "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M05\\lessons\\L02\\Notebooks_labs\\02_lab.ipynb",
+  "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+  "scope": "empty lab scaffold; learner completion NOT_RUN",
+  "input_sha256": "0fac4928542c7fc0c335e905bf1e2e68d94d902147d5540a36f67cba2937841c",
+  "data_sha256": {
+    "practicuum/shared/data/compounds.json": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267"
+  },
+  "step_sha256": {
+    "practicuum/modules/M05/lessons/L02/steps/02_lab.md": "0299883d874f13d78450f145919bd587e8a9c8a8c0fd2cadaaba3485f8a90e63",
+    "practicuum/modules/M05/lessons/L02/steps/03_article_review.md": "9555416bd0229c9c536289c9b081f1316cfd89195041fd48e65eed387b327bbf"
+  },
+  "status": "PASS",
+  "seconds": 1.5451841999893077
+}

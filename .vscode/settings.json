@@ -1,0 +1,6 @@
+{
+    "python.defaultInterpreterPath": "${workspaceFolder}/scripts/environment/.venv-base",
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/practicuum/shared"
+    ]
+}

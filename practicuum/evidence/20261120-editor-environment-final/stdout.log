@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "python": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\scripts\\environment\\.venv-base\\Scripts\\python.exe",
+  "source_modules": {
+    "course_support": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\shared\\course_support.py",
+    "dossier_records": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\shared\\dossier_records.py",
+    "IPython.display": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\scripts\\environment\\.venv-base\\Lib\\site-packages\\IPython\\display.py",
+    "matplotlib": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\scripts\\environment\\.venv-base\\Lib\\site-packages\\matplotlib\\__init__.py",
+    "matplotlib.pyplot": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\scripts\\environment\\.venv-base\\Lib\\site-packages\\matplotlib\\pyplot.py"
+  },
+  "cross_os_environment_selection": "PASS",
+  "scope": "Import discovery and environment isolation; actual VS Code/Pylance UI not exercised"
+}

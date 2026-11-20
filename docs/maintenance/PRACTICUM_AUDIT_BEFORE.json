@@ -1,0 +1,805 @@
+{
+  "scope": "Automated editorial indicators for all 28 lessons; no learner observation, external scientific review or automatic quality score",
+  "revision": "c651dac56635b99e21f94ef4321062dd585d83ba",
+  "lessons": [
+    {
+      "lesson": "M01-L01",
+      "title": "Предметная область",
+      "case_sources": [
+        "practicuum/modules/M01/lessons/L01/steps/01_case.md"
+      ],
+      "lab_sources": [
+        "practicuum/modules/M01/lessons/L01/steps/02_lab.md"
+      ],
+      "normalized_source_sha256": {
+        "practicuum/modules/M01/lessons/L01/steps/01_case.md": "ac15393b60b0f9abab39d39adb2ed26295bed9a95d849f71090b0fa54b8d44de",
+        "practicuum/modules/M01/lessons/L01/steps/02_lab.md": "0292c94d09fdddce01e7afdc23d3b3524bd8408983391c656fe87ada2a8fb011"
+      },
+      "case_prose_words": 295,
+      "code_blocks": 4,
+      "longest_code_lines": 13,
+      "lab_none_placeholders": 0
+    },
+    {
+      "lesson": "M01-L02",
+      "title": "Исследовательский вопрос",
+      "case_sources": [
+        "practicuum/modules/M01/lessons/L02/steps/01_case.md",
+        "practicuum/modules/M01/lessons/L02/steps/03_article_case.md"
+      ],
+      "lab_sources": [
+        "practicuum/modules/M01/lessons/L02/steps/02_lab.md",
+        "practicuum/modules/M01/lessons/L02/steps/03_article_review.md"
+      ],
+      "normalized_source_sha256": {
+        "practicuum/modules/M01/lessons/L02/steps/01_case.md": "e47abf78d6519e770fd4851bda08fdc476545f13bf80d4d4c6f0f60574a43a9f",
+        "practicuum/modules/M01/lessons/L02/steps/03_article_case.md": "1b6641280b3697d4f71d4f68ea2142b6123fff6df217d8b69290abb25d5f8b77",
+        "practicuum/modules/M01/lessons/L02/steps/02_lab.md": "3200b621617c20a98a05dbe1bfd8fb426e4506a10a4dd899a3d43f2f7627e6f6",
+        "practicuum/modules/M01/lessons/L02/steps/03_article_review.md": "2bf5fa2adc74869e6f74f111beca9855037f32ebd8a09487f81a4179f9b38bac"
+      },
+      "case_prose_words": 408,
+      "code_blocks": 5,
+      "longest_code_lines": 14,
+      "lab_none_placeholders": 3
+    },
+    {
+      "lesson": "M02-L01",
+      "title": "Воспроизводимая среда",
+      "case_sources": [
+        "practicuum/modules/M02/lessons/L01/steps/01_case.md"
+      ],
+      "lab_sources": [
+        "practicuum/modules/M02/lessons/L01/steps/02_lab.md"
+      ],
+      "normalized_source_sha256": {
+        "practicuum/modules/M02/lessons/L01/steps/01_case.md": "7271a02992a69c2ca2bbc3582bcc73a5c8f94317e11080b9ec83006c0a91632d",
+        "practicuum/modules/M02/lessons/L01/steps/02_lab.md": "0a4da09e102cab263594a84995ae9d4dbfbf246e2cf70d64fb0e19c1be070117"
+      },
+      "case_prose_words": 209,
+      "code_blocks": 5,
+      "longest_code_lines": 14,
+      "lab_none_placeholders": 3
+    },
+    {
+      "lesson": "M02-L02",
+      "title": "Python как инструмент исследования",
+      "case_sources": [
+        "practicuum/modules/M02/lessons/L02/steps/01_case.md",
+        "practicuum/modules/M02/lessons/L02/steps/03_article_case.md"
+      ],
+      "lab_sources": [
+        "practicuum/modules/M02/lessons/L02/steps/02_lab.md",
+        "practicuum/modules/M02/lessons/L02/steps/03_article_review.md"
+      ],
+      "normalized_source_sha256": {
+        "practicuum/modules/M02/lessons/L02/steps/01_case.md": "23c0c56470ef1483aecba73c5d6377bf8646cb9a1439c62180f982b0ad19e92d",
+        "practicuum/modules/M02/lessons/L02/steps/03_article_case.md": "7d1d83cc6c3235a8e120fb2ce1c8c6c53c3811496017be778ab5e70a4a76c95b",
+        "practicuum/modules/M02/lessons/L02/steps/02_lab.md": "fcb3a3ac3ff4286d93fab5942751bb0110bfbe52e178ce27e7d58b3c2c3a7361",
+        "practicuum/modules/M02/lessons/L02/steps/03_article_review.md": "252a207303f7a806b48f0e142ecf2f9dc92aa9695da48af033a93d9bdd4aeb71"
+      },
+      "case_prose_words": 380,
+      "code_blocks": 5,
+      "longest_code_lines": 14,
+      "lab_none_placeholders": 3
+    },
+    {
+      "lesson": "M03-L01",
+      "title": "Молекулярная идентичность",
+      "case_sources": [
+        "practicuum/modules/M03/lessons/L01/steps/01_case.md"
+      ],
+      "lab_sources": [
+        "practicuum/modules/M03/lessons/L01/steps/02_lab.md"
+      ],
+      "normalized_source_sha256": {
+        "practicuum/modules/M03/lessons/L01/steps/01_case.md": "5916e4fd4d3316178e0a54adab045bfc6fcc02e33414c0735e69798a5e35fb63",
+        "practicuum/modules/M03/lessons/L01/steps/02_lab.md": "161c418449611e47f13b9d016660e19c7161ae54c5165fad133a5ea548a7a305"
+      },
+      "case_prose_words": 141,
+      "code_blocks": 4,
+      "longest_code_lines": 14,
+      "lab_none_placeholders": 0
+    },
+    {
+      "lesson": "M03-L02",
+      "title": "Формы и стереохимия",
+      "case_sources": [
+        "practicuum/modules/M03/lessons/L02/steps/01_case.md",
+        "practicuum/modules/M03/lessons/L02/steps/03_article_case.md"
+      ],
+      "lab_sources": [
+        "practicuum/modules/M03/lessons/L02/steps/02_lab.md",
+        "practicuum/modules/M03/lessons/L02/steps/03_article_review.md"
+      ],
+      "normalized_source_sha256": {
+        "practicuum/modules/M03/lessons/L02/steps/01_case.md": "117d597e72ea7c73140c991a3ea4c63be593c69c8660205e9465c3301ce5777a",
+        "practicuum/modules/M03/lessons/L02/steps/03_article_case.md": "1f8845db94f5598a08100a62572c03a6e9b81747f2748c905efbbc924ffbc6f6",
+        "practicuum/modules/M03/lessons/L02/steps/02_lab.md": "18174180460e1bff928be96ee997d40779b8d8c92a5976ab751a4cdd808f234d",
+        "practicuum/modules/M03/lessons/L02/steps/03_article_review.md": "8c85a718f7c78985c0375a12bd7c6c4b5e0204bc79c1ef8fe3667da87ad93797"
+      },
+      "case_prose_words": 337,
+      "code_blocks": 3,
+      "longest_code_lines": 21,
+      "lab_none_placeholders": 0
+    },
+    {
+      "lesson": "M04-L01",
+      "title": "Свойства и физический смысл",
+      "case_sources": [
+        "practicuum/modules/M04/lessons/L01/steps/01_case.md"
+      ],
+      "lab_sources": [
+        "practicuum/modules/M04/lessons/L01/steps/02_lab.md"
+      ],
+      "normalized_source_sha256": {
+        "practicuum/modules/M04/lessons/L01/steps/01_case.md": "49bdc095cb060df58712914d808bf50f0c3093a08ca847fa7f16f2889b3ccba3",
+        "practicuum/modules/M04/lessons/L01/steps/02_lab.md": "34576ae4c1818e698e2e6af9ac7de8ec50db660450d90fa5dcf3a71dfa16afcd"
+      },
+      "case_prose_words": 221,
+      "code_blocks": 4,
+      "longest_code_lines": 16,
+      "lab_none_placeholders": 3
+    },
+    {
+      "lesson": "M04-L02",
+      "title": "Среда и растворитель",
+      "case_sources": [
+        "practicuum/modules/M04/lessons/L02/steps/01_case.md",
+        "practicuum/modules/M04/lessons/L02/steps/03_article_case.md"
+      ],
+      "lab_sources": [
+        "practicuum/modules/M04/lessons/L02/steps/02_lab.md",
+        "practicuum/modules/M04/lessons/L02/steps/03_article_review.md"
+      ],
+      "normalized_source_sha256": {
+        "practicuum/modules/M04/lessons/L02/steps/01_case.md": "ce02d57ffaea4df79ef6fbd1dc908d95bd5e031d7a786faa4d293b3a5b90d77d",
+        "practicuum/modules/M04/lessons/L02/steps/03_article_case.md": "a3c966a57f408b8da8852813ffb568480091cd1651b372a8e08aa37c2652fa06",
+        "practicuum/modules/M04/lessons/L02/steps/02_lab.md": "3e74eb9046c1ea4f8ef1e86c3146bb86b1b433de62f7916c6afa28ed677b0f47",
+        "practicuum/modules/M04/lessons/L02/steps/03_article_review.md": "c1e4ff544e6246b1b3807d9d4a99fb1e9218c697d6eecc552fcbb78f85127074"
+      },
+      "case_prose_words": 374,
+      "code_blocks": 4,
+      "longest_code_lines": 18,
+      "lab_none_placeholders": 3
+    },
+    {
+      "lesson": "M05-L01",
+      "title": "Структурное сходство",
+      "case_sources": [
+        "practicuum/modules/M05/lessons/L01/steps/01_case.md"
+      ],
+      "lab_sources": [
+        "practicuum/modules/M05/lessons/L01/steps/02_lab.md"
+      ],
+      "normalized_source_sha256": {
+        "practicuum/modules/M05/lessons/L01/steps/01_case.md": "9bb8ce7fb1a4328d48a87eda73a623c57b20dc2732608fd7c933ffe0d6683dbd",
+        "practicuum/modules/M05/lessons/L01/steps/02_lab.md": "8e5638743934c24394f12551443382c1c2f95f116b700b3f384ae07c63f71817"
+      },
+      "case_prose_words": 181,
+      "code_blocks": 5,
+      "longest_code_lines": 14,
+      "lab_none_placeholders": 3
+    },
+    {
+      "lesson": "M05-L02",
+      "title": "Отбор следующего кандидата",
+      "case_sources": [
+        "practicuum/modules/M05/lessons/L02/steps/01_case.md",
+        "practicuum/modules/M05/lessons/L02/steps/03_article_case.md"
+      ],
+      "lab_sources": [
+        "practicuum/modules/M05/lessons/L02/steps/02_lab.md",
+        "practicuum/modules/M05/lessons/L02/steps/03_article_review.md"
+      ],
+      "normalized_source_sha256": {
+        "practicuum/modules/M05/lessons/L02/steps/01_case.md": "80f0031fdd084cab2a0a80a5b8e4a801cac19de97c94d16f046a953b744fae89",
+        "practicuum/modules/M05/lessons/L02/steps/03_article_case.md": "c8435a56b9b89e96499c69372287db1d3ef132528d611ad9ae84125941d505e3",
+        "practicuum/modules/M05/lessons/L02/steps/02_lab.md": "0299883d874f13d78450f145919bd587e8a9c8a8c0fd2cadaaba3485f8a90e63",
+        "practicuum/modules/M05/lessons/L02/steps/03_article_review.md": "1968b38d3d10cf04334c699e73551d0b6ce17cbd41702c12fdeea339a9ea03aa"
+      },
+      "case_prose_words": 358,
+      "code_blocks": 5,
+      "longest_code_lines": 14,
+      "lab_none_placeholders": 3
+    },
+    {
+      "lesson": "M06-L01",
+      "title": "Конформеры и геометрия",
+      "case_sources": [
+        "practicuum/modules/M06/lessons/L01/steps/01_case.md"
+      ],
+      "lab_sources": [
+        "practicuum/modules/M06/lessons/L01/steps/02_lab.md"
+      ],
+      "normalized_source_sha256": {
+        "practicuum/modules/M06/lessons/L01/steps/01_case.md": "38625d5bb93ecd4464ccbd2362b911252f6927012ac5341528c20b9252d85f38",
+        "practicuum/modules/M06/lessons/L01/steps/02_lab.md": "21332c07a9cbaaaa28753398bf4c32520c20303d14391646c4efa0e56103f028"
+      },
+      "case_prose_words": 302,
+      "code_blocks": 5,
+      "longest_code_lines": 19,
+      "lab_none_placeholders": 3
+    },
+    {
+      "lesson": "M06-L02",
+      "title": "Энергии и ограничения",
+      "case_sources": [
+        "practicuum/modules/M06/lessons/L02/steps/01_case.md",
+        "practicuum/modules/M06/lessons/L02/steps/03_article_case.md"
+      ],
+      "lab_sources": [
+        "practicuum/modules/M06/lessons/L02/steps/02_lab.md",
+        "practicuum/modules/M06/lessons/L02/steps/03_article_review.md"
+      ],
+      "normalized_source_sha256": {
+        "practicuum/modules/M06/lessons/L02/steps/01_case.md": "383f0be8006cffd734f5836df6a55cd6da3a7a8f17fed6f976e071598f25142d",
+        "practicuum/modules/M06/lessons/L02/steps/03_article_case.md": "b164c96ab41d26bc8f80c7e61eecb3f6471618dbb3bc03d2e15f990ba6c7e16a",
+        "practicuum/modules/M06/lessons/L02/steps/02_lab.md": "85ce5d7c2ce03893b07a84894476806bf318fae8de32d67351f5fab769b3140b",
+        "practicuum/modules/M06/lessons/L02/steps/03_article_review.md": "1de0f4d438ad818bebb8d5d4c2941ed3771a5e7388347851200cc1d5d87b3c16"
+      },
+      "case_prose_words": 498,
+      "code_blocks": 5,
+      "longest_code_lines": 20,
+      "lab_none_placeholders": 3
+    },
+    {
+      "lesson": "M07-L01",
+      "title": "Электронная модель",
+      "case_sources": [
+        "practicuum/modules/M07/lessons/L01/steps/01_case.md"
+      ],
+      "lab_sources": [
+        "practicuum/modules/M07/lessons/L01/steps/02_lab.md"
+      ],
+      "normalized_source_sha256": {
+        "practicuum/modules/M07/lessons/L01/steps/01_case.md": "69c8ffad6463acab9cc2d8670c93319802b0f575b801291fc2267ffd3e1abbda",
+        "practicuum/modules/M07/lessons/L01/steps/02_lab.md": "c35e3066a0181216bab1b117329487e5b3151fd7b8acf1c8d1b12bd1fac46115"
+      },
+      "case_prose_words": 193,
+      "code_blocks": 5,
+      "longest_code_lines": 14,
+      "lab_none_placeholders": 3
+    },
+    {
+      "lesson": "M07-L02",
+      "title": "От энергии к физическому выводу",
+      "case_sources": [
+        "practicuum/modules/M07/lessons/L02/steps/01_case.md",
+        "practicuum/modules/M07/lessons/L02/steps/03_article_case.md"
+      ],
+      "lab_sources": [
+        "practicuum/modules/M07/lessons/L02/steps/02_lab.md",
+        "practicuum/modules/M07/lessons/L02/steps/03_article_review.md"
+      ],
+      "normalized_source_sha256": {
+        "practicuum/modules/M07/lessons/L02/steps/01_case.md": "30511b300750749e07fdfadcf3612e8dc22df7f5649c79cbc29135cd86764803",
+        "practicuum/modules/M07/lessons/L02/steps/03_article_case.md": "eb56ff9cff9627338a2c479153a9ca010ec5e4fdb195b3afa64291fdcdaec287",
+        "practicuum/modules/M07/lessons/L02/steps/02_lab.md": "c493af2fb968e5cfe85ea6ffa433aefe2d303ad3f4f5533f05180dc1022524f4",
+        "practicuum/modules/M07/lessons/L02/steps/03_article_review.md": "b3380f8636d4a70731844ddba3e974731d422a026bd5b468e2f12215dd9630cc"
+      },
+      "case_prose_words": 505,
+      "code_blocks": 5,
+      "longest_code_lines": 14,
+      "lab_none_placeholders": 3
+    },
+    {
+      "lesson": "M08-L01",
+      "title": "UV–Vis и ИК",
+      "case_sources": [
+        "practicuum/modules/M08/lessons/L01/steps/01_case.md"
+      ],
+      "lab_sources": [
+        "practicuum/modules/M08/lessons/L01/steps/02_lab.md"
+      ],
+      "normalized_source_sha256": {
+        "practicuum/modules/M08/lessons/L01/steps/01_case.md": "b7dfbf3f01f4cc48c4972eca2860022b52386bd7dd62a4dfafa56233d5f952a6",
+        "practicuum/modules/M08/lessons/L01/steps/02_lab.md": "8c618d4d777e6bb3cb1dc002aac0c86afdc525af8bad1658041845a4a1decc5a"
+      },
+      "case_prose_words": 192,
+      "code_blocks": 5,
+      "longest_code_lines": 14,
+      "lab_none_placeholders": 3
+    },
+    {
+      "lesson": "M08-L02",
+      "title": "Прибор и специфичность",
+      "case_sources": [
+        "practicuum/modules/M08/lessons/L02/steps/01_case.md",
+        "practicuum/modules/M08/lessons/L02/steps/03_article_case.md"
+      ],
+      "lab_sources": [
+        "practicuum/modules/M08/lessons/L02/steps/02_lab.md",
+        "practicuum/modules/M08/lessons/L02/steps/03_article_review.md"
+      ],
+      "normalized_source_sha256": {
+        "practicuum/modules/M08/lessons/L02/steps/01_case.md": "93029c8dfbf2678e492846d42a9346c97d0ac18709f6a7fe0f2bb28b9a64fcd9",
+        "practicuum/modules/M08/lessons/L02/steps/03_article_case.md": "fb95d6cafff9db8d1e3d2e17d1b102ce3169686f9526cd72e953efc08db90e1b",
+        "practicuum/modules/M08/lessons/L02/steps/02_lab.md": "63e6883255c9f556aa64bbacb5683a9e78e044086146c8c08c99b57ef2446a46",
+        "practicuum/modules/M08/lessons/L02/steps/03_article_review.md": "d386ace78282e754a738023798d4c7764a1ca569aa9a7d936047b8898fdac6f6"
+      },
+      "case_prose_words": 488,
+      "code_blocks": 7,
+      "longest_code_lines": 15,
+      "lab_none_placeholders": 3
+    },
+    {
+      "lesson": "M09-L01",
+      "title": "Реакция и наблюдение",
+      "case_sources": [
+        "practicuum/modules/M09/lessons/L01/steps/01_case.md"
+      ],
+      "lab_sources": [
+        "practicuum/modules/M09/lessons/L01/steps/02_lab.md"
+      ],
+      "normalized_source_sha256": {
+        "practicuum/modules/M09/lessons/L01/steps/01_case.md": "e1891f26b334bb9697cadd4977ae6b1bcd142520a640ab1f3f27f5f4164cdc32",
+        "practicuum/modules/M09/lessons/L01/steps/02_lab.md": "738a8887b0a47654bd9a802ac0828c7754aeb3900b40ebc6ab168c8e2b16df7e"
+      },
+      "case_prose_words": 210,
+      "code_blocks": 5,
+      "longest_code_lines": 16,
+      "lab_none_placeholders": 3
+    },
+    {
+      "lesson": "M09-L02",
+      "title": "Кинетика и план эксперимента",
+      "case_sources": [
+        "practicuum/modules/M09/lessons/L02/steps/01_case.md",
+        "practicuum/modules/M09/lessons/L02/steps/03_article_case.md"
+      ],
+      "lab_sources": [
+        "practicuum/modules/M09/lessons/L02/steps/02_lab.md",
+        "practicuum/modules/M09/lessons/L02/steps/03_article_review.md"
+      ],
+      "normalized_source_sha256": {
+        "practicuum/modules/M09/lessons/L02/steps/01_case.md": "5493ea871d85699065e01b256d0a0fa2384c8c362990ea2e9f7ddeefe29f58ca",
+        "practicuum/modules/M09/lessons/L02/steps/03_article_case.md": "764049b02d5cf8e9386d0d64706f528bbba824232b0cdbfe6f4ca9bc745cb30f",
+        "practicuum/modules/M09/lessons/L02/steps/02_lab.md": "71071ed3592dacf187196bf36f292b294df8be10074da56394ca3a557330957d",
+        "practicuum/modules/M09/lessons/L02/steps/03_article_review.md": "acac05c882cdb847ee0090473fd0802429a53f9def916c88adb0f2470f89c522"
+      },
+      "case_prose_words": 301,
+      "code_blocks": 5,
+      "longest_code_lines": 23,
+      "lab_none_placeholders": 3
+    },
+    {
+      "lesson": "M10-L01",
+      "title": "Разделение смеси",
+      "case_sources": [
+        "practicuum/modules/M10/lessons/L01/steps/01_case.md"
+      ],
+      "lab_sources": [
+        "practicuum/modules/M10/lessons/L01/steps/02_lab.md"
+      ],
+      "normalized_source_sha256": {
+        "practicuum/modules/M10/lessons/L01/steps/01_case.md": "cb93d2caa529222c1240a883135fe37ecaaea132596f1dbb25cdad35044cd986",
+        "practicuum/modules/M10/lessons/L01/steps/02_lab.md": "afd9771172b3164dd6f7a33d604fa19b39ba1ee0e5d2e7e5afbe9d370e51cb6a"
+      },
+      "case_prose_words": 195,
+      "code_blocks": 5,
+      "longest_code_lines": 14,
+      "lab_none_placeholders": 3
+    },
+    {
+      "lesson": "M10-L02",
+      "title": "Оптимизация и валидация HPLC",
+      "case_sources": [
+        "practicuum/modules/M10/lessons/L02/steps/01_case.md",
+        "practicuum/modules/M10/lessons/L02/steps/03_article_case.md"
+      ],
+      "lab_sources": [
+        "practicuum/modules/M10/lessons/L02/steps/02_lab.md",
+        "practicuum/modules/M10/lessons/L02/steps/03_article_review.md"
+      ],
+      "normalized_source_sha256": {
+        "practicuum/modules/M10/lessons/L02/steps/01_case.md": "c805bb9d3f64b196f1eb0536cae489760aecba8bd90aee39eba5898bfa3c671e",
+        "practicuum/modules/M10/lessons/L02/steps/03_article_case.md": "01d59efeb62d8ed07c799202484efa747fc9cda6037d303f4c65e69da3403953",
+        "practicuum/modules/M10/lessons/L02/steps/02_lab.md": "ba092d6541273586f3874d312ee8ed2779a36699abffea47850f39b7cdbb29a0",
+        "practicuum/modules/M10/lessons/L02/steps/03_article_review.md": "a1f1bb0deb7e1333a1d24c9f2aa61a8033fa4b1ee30dd5ad6f76e7148a3bedce"
+      },
+      "case_prose_words": 340,
+      "code_blocks": 5,
+      "longest_code_lines": 14,
+      "lab_none_placeholders": 3
+    },
+    {
+      "lesson": "M11-L01",
+      "title": "Поиск и проверка мишени",
+      "case_sources": [
+        "practicuum/modules/M11/lessons/L01/steps/01_case.md"
+      ],
+      "lab_sources": [
+        "practicuum/modules/M11/lessons/L01/steps/02_lab.md"
+      ],
+      "normalized_source_sha256": {
+        "practicuum/modules/M11/lessons/L01/steps/01_case.md": "4a244eb16a7c5281060aff9de54d61037a0520abd4bba5d298fb061b07e36c85",
+        "practicuum/modules/M11/lessons/L01/steps/02_lab.md": "e991f38a598edd1498cf207bb8e2681cec9bb0c87088228623989ff52670828c"
+      },
+      "case_prose_words": 168,
+      "code_blocks": 4,
+      "longest_code_lines": 18,
+      "lab_none_placeholders": 3
+    },
+    {
+      "lesson": "M11-L02",
+      "title": "Докинг как проверяемый расчёт",
+      "case_sources": [
+        "practicuum/modules/M11/lessons/L02/steps/01_case.md",
+        "practicuum/modules/M11/lessons/L02/steps/03_article_case.md"
+      ],
+      "lab_sources": [
+        "practicuum/modules/M11/lessons/L02/steps/02_lab.md",
+        "practicuum/modules/M11/lessons/L02/steps/03_article_review.md"
+      ],
+      "normalized_source_sha256": {
+        "practicuum/modules/M11/lessons/L02/steps/01_case.md": "ca292d3a617f92ec36b62fe38b7852d4173c5a64b51f512dfd8aec0abdc4c455",
+        "practicuum/modules/M11/lessons/L02/steps/03_article_case.md": "73d55e91a3f478b831ea0aee1f9c95024ce66859abc72fd0e24a145a99235154",
+        "practicuum/modules/M11/lessons/L02/steps/02_lab.md": "e9b5f0bd3f6f2644376223cf7c96c08fbc10df7d76cfffa27c77efde7910b736",
+        "practicuum/modules/M11/lessons/L02/steps/03_article_review.md": "40f87f3b5b25a1cc087336653b41bef8a427260a5f80e4cbb5f098a132b6707c"
+      },
+      "case_prose_words": 520,
+      "code_blocks": 3,
+      "longest_code_lines": 33,
+      "lab_none_placeholders": 3
+    },
+    {
+      "lesson": "M12-L01",
+      "title": "Модель «структура — свойство»",
+      "case_sources": [
+        "practicuum/modules/M12/lessons/L01/steps/01_case.md"
+      ],
+      "lab_sources": [
+        "practicuum/modules/M12/lessons/L01/steps/02_lab.md"
+      ],
+      "normalized_source_sha256": {
+        "practicuum/modules/M12/lessons/L01/steps/01_case.md": "ce8edc2a1cd1120a8a51f2eafedae1d98383bdaf3485b729e87522ac46452831",
+        "practicuum/modules/M12/lessons/L01/steps/02_lab.md": "a093b26e8a081a98bf59869166e4a96559dc6d31b5ed569c49bb406e5ed75371"
+      },
+      "case_prose_words": 269,
+      "code_blocks": 4,
+      "longest_code_lines": 21,
+      "lab_none_placeholders": 3
+    },
+    {
+      "lesson": "M12-L02",
+      "title": "Область применимости",
+      "case_sources": [
+        "practicuum/modules/M12/lessons/L02/steps/01_case.md",
+        "practicuum/modules/M12/lessons/L02/steps/03_article_case.md"
+      ],
+      "lab_sources": [
+        "practicuum/modules/M12/lessons/L02/steps/02_lab.md",
+        "practicuum/modules/M12/lessons/L02/steps/03_article_review.md"
+      ],
+      "normalized_source_sha256": {
+        "practicuum/modules/M12/lessons/L02/steps/01_case.md": "f5150ce7d96db8e8d75d1b8c0f16f1bab9cf3e6cda7cfb7dc40be402370e1f35",
+        "practicuum/modules/M12/lessons/L02/steps/03_article_case.md": "da47c14dde79c59f364cfc53a5952769de17dfd71e649a140e787e06ee002d86",
+        "practicuum/modules/M12/lessons/L02/steps/02_lab.md": "d0b88ec3bee68e4a2e70045e19a0a02c1300eaa418c277c60931db42dbd60b43",
+        "practicuum/modules/M12/lessons/L02/steps/03_article_review.md": "7136e032e6a0291cdb4442328d7be49d5f375b17d954ef1e8834bc905f03c82a"
+      },
+      "case_prose_words": 382,
+      "code_blocks": 6,
+      "longest_code_lines": 25,
+      "lab_none_placeholders": 3
+    },
+    {
+      "lesson": "M13-L01",
+      "title": "Опубликованный маршрут",
+      "case_sources": [
+        "practicuum/modules/M13/lessons/L01/steps/01_case.md"
+      ],
+      "lab_sources": [
+        "practicuum/modules/M13/lessons/L01/steps/02_lab.md"
+      ],
+      "normalized_source_sha256": {
+        "practicuum/modules/M13/lessons/L01/steps/01_case.md": "1b6a3a48c661b9898f3086d3a01201fec98a826dec36d434aa4016a007dcdccc",
+        "practicuum/modules/M13/lessons/L01/steps/02_lab.md": "21795c49f9f74040a3edb4b16a7dd7a9903859c12aa1bdc7294b12f78667d4bf"
+      },
+      "case_prose_words": 196,
+      "code_blocks": 5,
+      "longest_code_lines": 14,
+      "lab_none_placeholders": 3
+    },
+    {
+      "lesson": "M13-L02",
+      "title": "Технологическое решение",
+      "case_sources": [
+        "practicuum/modules/M13/lessons/L02/steps/01_case.md",
+        "practicuum/modules/M13/lessons/L02/steps/03_article_case.md"
+      ],
+      "lab_sources": [
+        "practicuum/modules/M13/lessons/L02/steps/02_lab.md",
+        "practicuum/modules/M13/lessons/L02/steps/03_article_review.md"
+      ],
+      "normalized_source_sha256": {
+        "practicuum/modules/M13/lessons/L02/steps/01_case.md": "01155aefec96dd79c00a7b2757cd866287aee6fb9dabd96809cd76a7cc142fb7",
+        "practicuum/modules/M13/lessons/L02/steps/03_article_case.md": "b0aa07ab0a7ffbffdf47f2107b0966ad99d512de9ca406515c635e99dac54422",
+        "practicuum/modules/M13/lessons/L02/steps/02_lab.md": "7bb94d7a120fe101abb0a11fe3f20e1320af72ee15da91d13e82cc6a5e54f7c4",
+        "practicuum/modules/M13/lessons/L02/steps/03_article_review.md": "7c95978d0ff92c0c256e91b8e72d76ca835a3c40b16f3c30304d1799c17c5c50"
+      },
+      "case_prose_words": 355,
+      "code_blocks": 5,
+      "longest_code_lines": 14,
+      "lab_none_placeholders": 3
+    },
+    {
+      "lesson": "M14-L01",
+      "title": "Сборка исследовательского досье",
+      "case_sources": [
+        "practicuum/modules/M14/lessons/L01/steps/01_case.md"
+      ],
+      "lab_sources": [
+        "practicuum/modules/M14/lessons/L01/steps/02_lab.md"
+      ],
+      "normalized_source_sha256": {
+        "practicuum/modules/M14/lessons/L01/steps/01_case.md": "5c108776d510dc602baa61b66c0d11cb3694200fc91e61bebc1ef0e2a10a9173",
+        "practicuum/modules/M14/lessons/L01/steps/02_lab.md": "11f4c2346bc59ab972316dde7e4edd7c835ea00f80e823dc4851c7917246a1c6"
+      },
+      "case_prose_words": 206,
+      "code_blocks": 5,
+      "longest_code_lines": 14,
+      "lab_none_placeholders": 3
+    },
+    {
+      "lesson": "M14-L02",
+      "title": "Защита и лабораторная проверка",
+      "case_sources": [
+        "practicuum/modules/M14/lessons/L02/steps/01_case.md",
+        "practicuum/modules/M14/lessons/L02/steps/03_article_case.md"
+      ],
+      "lab_sources": [
+        "practicuum/modules/M14/lessons/L02/steps/02_lab.md",
+        "practicuum/modules/M14/lessons/L02/steps/03_article_review.md"
+      ],
+      "normalized_source_sha256": {
+        "practicuum/modules/M14/lessons/L02/steps/01_case.md": "d07ac9f893104cd63f3b0f60e1b39acd7c7eedff4862b34bfb2948391433f76d",
+        "practicuum/modules/M14/lessons/L02/steps/03_article_case.md": "c4f75de387b4f0c2624531d06b9f77bd6094fb27ee84e86df7bff06c09a9ed06",
+        "practicuum/modules/M14/lessons/L02/steps/02_lab.md": "7ecf35134bb6cf308a2a6ccc8af6135c907d244b518b2a2ae381d35a6d0f7a07",
+        "practicuum/modules/M14/lessons/L02/steps/03_article_review.md": "b6ebd57244284fea46db5317690522c326292762dde4243654402f986e4c3588"
+      },
+      "case_prose_words": 355,
+      "code_blocks": 5,
+      "longest_code_lines": 14,
+      "lab_none_placeholders": 3
+    }
+  ],
+  "repeated_paragraphs": [
+    {
+      "text": "Сначала проверяем входы и единицы. Словари сохраняют названия полей вместе со значениями; список сохраняет соответствие записей. Выведите промежуточный результат перед дальнейшим анализом.",
+      "lesson_count": 13,
+      "lessons": [
+        "M01-L02",
+        "M02-L01",
+        "M02-L02",
+        "M05-L01",
+        "M05-L02",
+        "M07-L01",
+        "M07-L02",
+        "M08-L01",
+        "M08-L02",
+        "M13-L01",
+        "M13-L02",
+        "M14-L01",
+        "M14-L02"
+      ]
+    },
+    {
+      "text": "Теперь сравним модель с контрольным случаем. `assert` останавливает расчёт при нарушении контракта; это защита от ошибочного продолжения, а не оценка научного понимания.",
+      "lesson_count": 13,
+      "lessons": [
+        "M01-L02",
+        "M02-L01",
+        "M02-L02",
+        "M05-L01",
+        "M05-L02",
+        "M07-L01",
+        "M07-L02",
+        "M08-L01",
+        "M08-L02",
+        "M13-L01",
+        "M13-L02",
+        "M14-L01",
+        "M14-L02"
+      ]
+    },
+    {
+      "text": "Сохраним именно полученный результат. Не переносите этот вывод на другую химическую форму, мишень или экспериментальные условия без отдельной проверки.",
+      "lesson_count": 13,
+      "lessons": [
+        "M01-L02",
+        "M02-L01",
+        "M02-L02",
+        "M05-L01",
+        "M05-L02",
+        "M07-L01",
+        "M07-L02",
+        "M08-L01",
+        "M08-L02",
+        "M13-L01",
+        "M13-L02",
+        "M14-L01",
+        "M14-L02"
+      ]
+    },
+    {
+      "text": "Перед переходом ответьте: какие результаты получены вычислением, какие заданы условно, и какая независимая проверка ещё отсутствует?",
+      "lesson_count": 13,
+      "lessons": [
+        "M01-L02",
+        "M02-L01",
+        "M02-L02",
+        "M05-L01",
+        "M05-L02",
+        "M07-L01",
+        "M07-L02",
+        "M08-L01",
+        "M08-L02",
+        "M13-L01",
+        "M13-L02",
+        "M14-L01",
+        "M14-L02"
+      ]
+    },
+    {
+      "text": "Наставник начинает с вопроса «что здесь непосредственно наблюдали?». Найдите одно такое наблюдение и его место в источнике. Затем рядом запишите трактовку авторов и ещё одно возможное объяснение. Это учебный приём чтения, а не реконструкция мыслей авторов. Если численного ряда нет, вывод нельзя усиливать придуманными точками.",
+      "lesson_count": 13,
+      "lessons": [
+        "M01-L02",
+        "M02-L02",
+        "M03-L02",
+        "M04-L02",
+        "M05-L02",
+        "M06-L02",
+        "M07-L02",
+        "M08-L02",
+        "M09-L02",
+        "M10-L02",
+        "M11-L02",
+        "M13-L02",
+        "M14-L02"
+      ]
+    },
+    {
+      "text": "Перед вычислением назовите объект, условия, величину и единицы. После вычисления сравните ответ с исходным утверждением. При расхождении сначала проверьте форму вещества, основу концентрации и преобразования таблицы; только затем обсуждайте модель. Смысл операции — получить проверяемый аргумент для следующего решения досье.",
+      "lesson_count": 13,
+      "lessons": [
+        "M01-L02",
+        "M02-L02",
+        "M03-L02",
+        "M04-L02",
+        "M05-L02",
+        "M06-L02",
+        "M07-L02",
+        "M08-L02",
+        "M09-L02",
+        "M10-L02",
+        "M11-L02",
+        "M13-L02",
+        "M14-L02"
+      ]
+    },
+    {
+      "text": "Сохраните код, таблицу результата и объяснение. Успешность: единицы/форма/условия названы; вычисление воспроизводимо; вывод ограничен полученными данными. На уровне 1 требуется перенос метода на указанный вход.",
+      "lesson_count": 13,
+      "lessons": [
+        "M01-L02",
+        "M02-L01",
+        "M02-L02",
+        "M05-L01",
+        "M05-L02",
+        "M07-L01",
+        "M07-L02",
+        "M08-L01",
+        "M08-L02",
+        "M13-L01",
+        "M13-L02",
+        "M14-L01",
+        "M14-L02"
+      ]
+    },
+    {
+      "text": "Сохраните код, таблицу результата и объяснение. Успешность: единицы/форма/условия названы; вычисление воспроизводимо; вывод ограничен полученными данными. На уровне 2 требуется контрпример и диагностика причины.",
+      "lesson_count": 13,
+      "lessons": [
+        "M01-L02",
+        "M02-L01",
+        "M02-L02",
+        "M05-L01",
+        "M05-L02",
+        "M07-L01",
+        "M07-L02",
+        "M08-L01",
+        "M08-L02",
+        "M13-L01",
+        "M13-L02",
+        "M14-L01",
+        "M14-L02"
+      ]
+    },
+    {
+      "text": "Сохраните код, таблицу результата и объяснение. Успешность: единицы/форма/условия названы; вычисление воспроизводимо; вывод ограничен полученными данными. На уровне 3 требуется самостоятельный выбор и независимая проверка.",
+      "lesson_count": 13,
+      "lessons": [
+        "M01-L02",
+        "M02-L01",
+        "M02-L02",
+        "M05-L01",
+        "M05-L02",
+        "M07-L01",
+        "M07-L02",
+        "M08-L01",
+        "M08-L02",
+        "M13-L01",
+        "M13-L02",
+        "M14-L01",
+        "M14-L02"
+      ]
+    },
+    {
+      "text": "Проверяются только указанные численные/структурные поля. Подготовьте `answer` как словарь; текстовые объяснения оценивает преподаватель по отдельной рубрике. Пустая работа имеет NOT_RUN. Даже полный PASS контракта не оценивает научное решение.",
+      "lesson_count": 13,
+      "lessons": [
+        "M01-L02",
+        "M02-L01",
+        "M02-L02",
+        "M05-L01",
+        "M05-L02",
+        "M07-L01",
+        "M07-L02",
+        "M08-L01",
+        "M08-L02",
+        "M13-L01",
+        "M13-L02",
+        "M14-L01",
+        "M14-L02"
+      ]
+    },
+    {
+      "text": "Выпишите короткое утверждение своими словами, точный раздел/Table/Figure ID, условия и единицы, способ получения данных и допустимый вывод. Помечайте отдельно опубликованные наблюдения, своё вычисление и гипотезу. Если нужных исходных точек, повторов или параметров нет, запишите «не предоставлено» и объясните, какую проверку это блокирует.",
+      "lesson_count": 13,
+      "lessons": [
+        "M01-L02",
+        "M02-L02",
+        "M03-L02",
+        "M04-L02",
+        "M05-L02",
+        "M06-L02",
+        "M07-L02",
+        "M08-L02",
+        "M09-L02",
+        "M10-L02",
+        "M11-L02",
+        "M13-L02",
+        "M14-L02"
+      ]
+    },
+    {
+      "text": "Оценивание — [единая рубрика](../../../../../../programm/ARTICLE_REVIEW_RUBRIC.md). Ответ обсуждается с преподавателем; запуск Notebook и заполнение шаблона не означают принятия научного аргумента.",
+      "lesson_count": 13,
+      "lessons": [
+        "M01-L02",
+        "M02-L02",
+        "M03-L02",
+        "M04-L02",
+        "M05-L02",
+        "M06-L02",
+        "M07-L02",
+        "M08-L02",
+        "M09-L02",
+        "M10-L02",
+        "M11-L02",
+        "M13-L02",
+        "M14-L02"
+      ]
+    },
+    {
+      "text": "Методическая публикация связана с основным исследованием, но не подменяет экспериментальный источник и собственные проверки. Полный текст этих дополнительных работ в пакет не включён; используйте указанную авторскую/издательскую страницу. Если он недоступен или не прочитан, полный разбор статьи отмечается NOT_RUN. Обязательное локальное сравнение ниже остаётся доступным без сети; это сравнение типов свидетельства, а не замена чтения внешней работы.",
+      "lesson_count": 3,
+      "lessons": [
+        "M06-L02",
+        "M07-L02",
+        "M11-L02"
+      ]
+    }
+  ]
+}

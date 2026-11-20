@@ -24,6 +24,10 @@ bash scripts/setup-linux.sh quantum
 
 После установки откройте нужный Notebook в JupyterLab или VS Code. Указанное в нём ядро называется «Курс химии v2 · base · uv» для M01/M02 и «… chem …» для химических уроков. При первом открытии IDE может попросить выбрать уже зарегистрированное ядро; дальнейший запуск использует его. Ни один Notebook не устанавливает зависимости скрыто в середине расчёта.
 
+Откройте в VS Code именно корень курса через **File → Open Folder**. Настройки `.vscode/settings.json` добавляют `practicuum/shared` в пути анализа Pylance. Для M01/M02 выберите **Python: Select Interpreter** → `scripts/environment/.venv-base/Scripts/python.exe` в Windows и соответствующее ядро Notebook. Уже сохранённый выбор интерпретатора VS Code не заменяет автоматически значением `defaultInterpreterPath`. Модули IPython и matplotlib входят в base; устанавливать их в системный Python ради устранения диагностики не нужно. В химических уроках выбирайте chem. Основание настройки — [документация VS Code](https://code.visualstudio.com/docs/python/settings-reference) и [разбор импортов в Notebook](https://github.com/microsoft/pylance-release/blob/main/docs/howto/notebook-troubleshooting.md).
+
+Если Windows и WSL открывают один checkout, установщик сохраняет уже существующую среду другой ОС и создаёт `.venv-linux-<profile>` либо `.venv-windows-<profile>`. Используйте путь, который напечатал установщик, и зарегистрированное им ядро. В WSL нельзя выбирать Windows `Scripts/python.exe` как Linux-интерпретатор. Приведённый ниже путь `.venv-base/bin/python` относится к собственной Linux-среде; при общей папке с Windows замените его на `.venv-linux-base/bin/python`.
+
 Запуск JupyterLab из корня (Windows):
 
 ```powershell

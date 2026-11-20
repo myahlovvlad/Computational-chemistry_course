@@ -14,5 +14,7 @@
 | Сопровождать репозиторий | [Правила очистки](maintenance/REPOSITORY_MAINTENANCE.md), [роль автора](maintenance/SYSTEM_PROMPT.md) |
 | Проверить историю консолидации | [Объединение main](history/MAIN_UNIFICATION_REPORT.md), [продолжение](history/MAIN_CONTINUATION_REPORT.md), [матрица](history/MIGRATION_MATRIX.md) |
 | Проверить этот рефакторинг | [Отчёт](maintenance/REFACTOR_20261120.md) |
+| Разобраться в папке evidence | [Что хранить и что можно сокращать](maintenance/EVIDENCE_RETENTION.md), [инвентарь](maintenance/EVIDENCE_INVENTORY.json) |
+| Оценить подачу практикума | [Редакторская проверка](maintenance/PRACTICUM_EDITORIAL_REVIEW.md), [метрики](maintenance/PRACTICUM_AUDIT.json) |
 
 `status` обновляется генератором `scripts/update_course_status.py`. `history` сохраняет описание прежних этапов и не удостоверяет текущее состояние курса. JSON-пути к научным данным в реестрах считаются от корня репозитория. Перемещение документа не является повторным выполнением проверки.

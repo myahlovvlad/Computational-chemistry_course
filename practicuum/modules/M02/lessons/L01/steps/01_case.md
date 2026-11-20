@@ -1,59 +1,133 @@
-# Разбор A. Воспроизводимая среда
+# Разбор A. Один файл, два отпечатка: где искать расхождение?
 
-Получив результат, коллега запускает Notebook на другой машине и видит другое число. Сначала проверим не формулу, а исходные байты и интерпретатор. Паспорт эксперимента с ксантинами должен переживать перенос на другую ОС. Гипотеза: одинаковые байты входа и документированная программа позволят локализовать источник расхождения. Это необходимое, но недостаточное условие численного совпадения: существуют различия библиотек и аппаратной арифметики.
+Вы готовите Notebook по истрадефиллину для передачи коллеге. В папке лежит `compounds.json`, рядом — рассчитанные результаты. Коллега сможет открыть файл, но как ей установить, что использована именно ваша версия данных? Имя файла этого не гарантирует. И даже совпадение входного файла ещё не обещает совпадения всех численных результатов.
 
-Проверьте profile base, получите sys.version и версии пакетов через importlib.metadata. Прочитайте compounds.json как байты, вычислите digest, затем отдельно декодируйте UTF-8 и проверьте структуру. Создайте копию в новой рабочей папке; добавьте пробел только к копии и сравните хеши. Исходник сохраняется.
+Здесь мы разберём небольшой диагностический случай: добавим пробел в **копию** JSON. Изменятся ли данные? Прежде чем запускать код, запишите два отдельных прогноза: изменится ли SHA-256 и изменится ли объект после чтения JSON. К концу разбора вы объясните, почему ответы могут различаться, и подготовите паспорт передачи расчёта. Химическую идентичность записей будем проверять в M03.
+
+## 1. Сначала определим, с чем работает программа
+
+SHA-256 — отпечаток последовательности байтов. В этом уроке он помогает обнаружить изменение файла. Он не подтверждает правильность источника, химическую форму или добросовестность поставщика данных.
+
+Служебный блок ниже находит корень курса и создаёт рабочую папку. В `sys.path` добавляется каталог общих функций; это путь поиска модулей во время выполнения. Настройка Pylance для редактора задаётся отдельно в `.vscode/settings.json`.
 
 ```python
 from pathlib import Path
-import sys,json,math
+import sys
+import json
+import hashlib
+import platform
+from importlib.metadata import version
 from IPython.display import display
-ROOT=next(p for p in [Path.cwd(),*Path.cwd().parents] if (p/'programm/course.json').is_file())
-sys.path.insert(0,str(ROOT/'practicuum/shared'))
-from course_support import DATA,compound,esol,workspace,write_json,init_dossier
-import matplotlib
-matplotlib.use('Agg')
-import matplotlib.pyplot as plt
-def publish_plot(fig,name):
-    fig.savefig(OUT/name,dpi=120,bbox_inches='tight')
-    display(fig)
-    plt.close(fig)
-OUT=workspace('M02-L01','case')
+
+# Ищем корень по реестру курса, а не по имени папки пользователя.
+ROOT = next(p for p in [Path.cwd(), *Path.cwd().parents]
+            if (p / 'programm/course.json').is_file())
+sys.path.insert(0, str(ROOT / 'practicuum/shared'))
+from course_support import DATA, workspace, write_json, init_dossier
+
+OUT = workspace('M02-L01', 'case')
 ```
 
-Сначала проверяем входы и единицы. Словари сохраняют названия полей вместе со значениями; список сохраняет соответствие записей. Выведите промежуточный результат перед дальнейшим анализом.
+Прочитаем файл сначала как байты. Метод `read_bytes()` ещё ничего не знает о молекулах или формате JSON. Затем явно декодируем UTF-8 и разберём структуру документа. Так мы не смешиваем чтение файла с интерпретацией его содержимого.
 
 ```python
-import platform,importlib.metadata,hashlib
-path=DATA/'compounds.json'
-raw=path.read_bytes();digest=hashlib.sha256(raw).hexdigest()
-print({'bytes':len(raw),'sha256':digest,'python':sys.version,'platform':platform.platform()})
+path = DATA / 'compounds.json'
+raw = path.read_bytes()
+digest = hashlib.sha256(raw).hexdigest()
+records = json.loads(raw.decode('utf-8'))
+
+assert isinstance(records, list) and records
+card = next(row for row in records if row['name'] == 'istradefylline')
+display({'bytes': len(raw), 'sha256': digest,
+         'record_count': len(records), 'selected_name': card['name']})
 ```
 
-Теперь сравним модель с контрольным случаем. `assert` останавливает расчёт при нарушении контракта; это защита от ошибочного продолжения, а не оценка научного понимания.
+`bytes` описывает размер файла, `record_count` — число прочитанных записей. Это разные проверки. Непустой файл может содержать не тот набор данных. Выбранное имя сейчас лишь находит запись: её формулу, граф и стереохимию мы этим не проверили.
+
+## 2. Создадим расхождение, причину которого знаем
+
+Сделаем две рабочие копии: точную и с пробелом после конца документа. Исходник в `shared/data` оставим неизменным. Последовательность `b' '` означает один байт пробела, а не новое поле в JSON.
 
 ```python
-copy=OUT/'compound_copy.json';copy.write_bytes(raw+b' ')
-same_object=json.loads(raw)==json.loads(copy.read_bytes())
-same_bytes=raw==copy.read_bytes()
+exact_copy = OUT / 'compounds_exact.json'
+spaced_copy = OUT / 'compounds_with_space.json'
+exact_copy.write_bytes(raw)
+spaced_copy.write_bytes(raw + b' ')
+
+comparisons = []
+for candidate in [exact_copy, spaced_copy]:
+    payload = candidate.read_bytes()
+    comparisons.append({
+        'file': candidate.name,
+        'bytes': len(payload),
+        'same_sha256': hashlib.sha256(payload).hexdigest() == digest,
+        'same_parsed_object': json.loads(payload.decode('utf-8')) == records,
+    })
+display(comparisons)
+```
+
+Вернитесь к прогнозу. У точной копии оба сравнения должны дать `True`. У копии с пробелом отпечаток отличается, но прочитанный объект равен исходному: конечный пробел не добавляет запись или поле.
+
+Равенство здесь относится к полученным Python-объектам. Это не универсальный критерий химической эквивалентности и не способ игнорировать любое изменение файла. Например, перестановка записей меняет порядок списка; значение этого порядка зависит от последующего алгоритма.
+
+```python
+same_object = comparisons[1]['same_parsed_object']
+same_bytes = raw == spaced_copy.read_bytes()
+assert comparisons[0]['same_sha256']
 assert same_object and not same_bytes
-print({'same_object':same_object,'same_bytes':same_bytes})
+assert path.read_bytes() == raw  # Контрольный опыт не изменил источник.
 ```
 
-Сохраним именно полученный результат. Не переносите этот вывод на другую химическую форму, мишень или экспериментальные условия без отдельной проверки.
+Мы обнаружили байтовое расхождение и объяснили его причину. Из этого нельзя сделать вывод, что все отличающиеся файлы безопасны. При неизвестном изменении сначала выясняют, какие записи и поля затронуты, затем решают, нужно ли повторять последующие расчёты.
+
+## 3. Что передать вместе с данными
+
+Файл и его отпечаток отвечают на вопрос «какие байты?». Для вопроса «какой программой обработали?» нужны интерпретатор, версии библиотек, код и параметры. Сохраним текущую среду и отпечаток файла закреплённых зависимостей. `uv.lock` описывает согласованную установку, а зафиксированные версии показывают фактически доступные пакеты; одно не подменяет другое.
 
 ```python
-result={'input_sha256':digest,'kind':'calculated','semantic_identity':same_object,
-        'packages':{n:importlib.metadata.version(n) for n in ['nbformat','matplotlib']}}
+environment = {
+    'python': sys.version,
+    'executable': sys.executable,
+    'platform': platform.platform(),
+    'packages': {name: version(name) for name in ['nbformat', 'matplotlib']},
+    'uv_lock_sha256': hashlib.sha256(
+        (ROOT / 'scripts/environment/uv.lock').read_bytes()).hexdigest(),
+}
+input_manifest = {
+    'path': 'practicuum/shared/data/compounds.json',
+    'bytes': len(raw), 'sha256': digest, 'encoding': 'utf-8',
+}
+write_json(OUT / 'environment.json', environment)
+write_json(OUT / 'input_manifest.json', input_manifest)
+display({'interpreter': environment['executable'],
+         'packages': environment['packages']})
 ```
 
+Абсолютный путь к интерпретатору на другой машине будет иным — это ожидаемо. Отпечаток исходного файла должен совпасть при передаче точной копии. Для будущих численных результатов потребуется отдельный обоснованный допуск: одинаковый вход сам по себе не устраняет различия алгоритмов, библиотек и арифметики.
+
+## 4. Запишем вывод, который действительно получили
+
+Результат этого опыта — различение байтовой и структурной идентичности. Мы не измеряли свойства вещества. В досье попадёт вычисленный результат с происхождением входа, а не утверждение о проверенной химической форме.
+
 ```python
-write_json(OUT/'result.json',result)
+result = {
+    'kind': 'calculated', 'input_sha256': digest,
+    'semantic_identity': same_object,
+    'same_bytes_after_whitespace_change': same_bytes,
+    'comparisons': comparisons, 'packages': environment['packages'],
+    'chemical_identity': 'NOT_ESTABLISHED_BY_FILE_HASH',
+}
+write_json(OUT / 'result.json', result)
 from dossier_records import append_record
-receipt=append_record(init_dossier(),'M02-L01','A',result,ROOT,inputs=['practicuum/shared/data/compounds.json'])
-print('Versioned evidence:',receipt)
+receipt = append_record(
+    init_dossier(), 'M02-L01', 'A', result, ROOT,
+    inputs=['practicuum/shared/data/compounds.json'],
+    method='SHA-256 of bytes and equality of parsed JSON objects',
+    decision='Explain file differences before comparing downstream calculations',
+)
+print('Сохранена версия записи:', receipt)
 ```
 
-Различие digest у семантически одинакового JSON объясняет, почему паспорт должен различать байтовую и структурную идентичность. Проверка формы аторвастатина всё ещё химическая задача. Далее понадобится прочитать таблицу без утраты единиц и ошибок.
+Выберите действие для трёх ситуаций: отличается только путь к Python; отличается отпечаток входа; совпадает вход, но отличаются результаты расчёта. Для каждой назовите следующую проверку. Если везде ответили «переустановить Python», вернитесь к тому, что именно проверяет каждое сравнение.
 
-Перед переходом ответьте: какие результаты получены вычислением, какие заданы условно, и какая независимая проверка ещё отсутствует?
+Теперь коллега получает два паспорта и объяснение контролируемого расхождения. В лабораторной вы подготовите передачу данных по аторвастатину, а в следующем уроке научитесь читать таблицу так, чтобы типы и единицы не терялись при обработке.

@@ -1,0 +1,543 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "lesson_id": "M01-L02",
+      "role": "case",
+      "kernel": "course-v2-base",
+      "started_utc": "2026-11-20T10:27:13.363328+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M01\\lessons\\L02\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "2349834451e05110c598dc2289209f167458e180af02be981bf9bc8f4ec125cd",
+      "data_sha256": {
+        "practicuum/shared/data/esol.csv": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189"
+      },
+      "step_sha256": {
+        "practicuum/modules/M01/lessons/L02/steps/01_case.md": "a61a1917670f3b79192bac31c4b1e3c50349d8baf939a908531a6dcc535e4876",
+        "practicuum/modules/M01/lessons/L02/steps/03_article_case.md": "6c26dafad54b46170111294a0044a8a3eb4bbee16b59bc4ba3ce0c680e094c25"
+      },
+      "status": "PASS",
+      "seconds": 2.174731899984181
+    },
+    {
+      "lesson_id": "M01-L02",
+      "role": "lab",
+      "kernel": "course-v2-base",
+      "started_utc": "2026-11-20T10:27:15.538295+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M01\\lessons\\L02\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "0458a3708fd25ffd4104fa7fbda627f2e159161aa70065c5fecf4f945d1229f7",
+      "data_sha256": {
+        "practicuum/shared/data/esol.csv": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189"
+      },
+      "step_sha256": {
+        "practicuum/modules/M01/lessons/L02/steps/02_lab.md": "3200b621617c20a98a05dbe1bfd8fb426e4506a10a4dd899a3d43f2f7627e6f6",
+        "practicuum/modules/M01/lessons/L02/steps/03_article_review.md": "0f35af4fab9eb6adcbd181ad1fdc1e113c70ab9ca89c909738e56f3a6e57856c"
+      },
+      "status": "PASS",
+      "seconds": 1.678923700004816
+    },
+    {
+      "lesson_id": "M02-L01",
+      "role": "case",
+      "kernel": "course-v2-base",
+      "started_utc": "2026-11-20T10:27:17.218172+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M02\\lessons\\L01\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "f31582c302639ee159ea648482c1f070fc969c54288dcdaf22ccfed3bf513b6c",
+      "data_sha256": {
+        "practicuum/shared/data/compounds.json": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267"
+      },
+      "step_sha256": {
+        "practicuum/modules/M02/lessons/L01/steps/01_case.md": "70e161b1f02089d99e7ca77614e092aee99ea13e5fa3a7dcaf485b9624579293"
+      },
+      "status": "PASS",
+      "seconds": 1.3148373000440188
+    },
+    {
+      "lesson_id": "M02-L01",
+      "role": "lab",
+      "kernel": "course-v2-base",
+      "started_utc": "2026-11-20T10:27:18.533510+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M02\\lessons\\L01\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "cc47e5797c1998ba7528cd70255e78a325be1418b6d2504e2fa69934554867df",
+      "data_sha256": {
+        "practicuum/shared/data/compounds.json": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267"
+      },
+      "step_sha256": {
+        "practicuum/modules/M02/lessons/L01/steps/02_lab.md": "e368227a66afffe16048c437b0200dff56f40395e45f52b2e6b9b021b83e1e26"
+      },
+      "status": "PASS",
+      "seconds": 1.2280658000381663
+    },
+    {
+      "lesson_id": "M02-L02",
+      "role": "case",
+      "kernel": "course-v2-base",
+      "started_utc": "2026-11-20T10:27:19.762492+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M02\\lessons\\L02\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "45391ec6a26d7c2d865a59bfe307a52def375546763300df322bfd70656f8398",
+      "data_sha256": {
+        "practicuum/shared/data/compounds.json": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267"
+      },
+      "step_sha256": {
+        "practicuum/modules/M02/lessons/L02/steps/01_case.md": "7e2bf763f3dd75b4b678d06a8b02a23ef9a94707ccf2152b0bc08aa7756b5ad2",
+        "practicuum/modules/M02/lessons/L02/steps/03_article_case.md": "95cc79741db2812a55f7e71321766b0ebd21015d1f2d47ef87f9c1d3999bae8b"
+      },
+      "status": "PASS",
+      "seconds": 1.626858000003267
+    },
+    {
+      "lesson_id": "M02-L02",
+      "role": "lab",
+      "kernel": "course-v2-base",
+      "started_utc": "2026-11-20T10:27:21.390103+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M02\\lessons\\L02\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "c5c82c11ea821ad31aba835c997eab752ddda0e432ea35732d2c62995b44faf9",
+      "data_sha256": {
+        "practicuum/shared/data/compounds.json": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267"
+      },
+      "step_sha256": {
+        "practicuum/modules/M02/lessons/L02/steps/02_lab.md": "fcb3a3ac3ff4286d93fab5942751bb0110bfbe52e178ce27e7d58b3c2c3a7361",
+        "practicuum/modules/M02/lessons/L02/steps/03_article_review.md": "e4aa7ed31f55d852e0908eb773641a52c6bd8e5eeab66bb263fe7338dfcc1cdd"
+      },
+      "status": "PASS",
+      "seconds": 1.5570235999766737
+    },
+    {
+      "lesson_id": "M04-L01",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-20T10:27:22.947872+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M04\\lessons\\L01\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "7f8aad0e334d6d6612e186149a8326aa8f5893ebed36dea0150f3224b89d884f",
+      "data_sha256": {
+        "practicuum/shared/data/istradefylline_solubility/istradefylline_solubility_table_S1.csv": "c2415add9b03df58409c67a2e516de2afaf944fb676a06d6cef5091f2d7d63c4",
+        "practicuum/shared/data/istradefylline_solubility/istradefylline_aqueous_pH_table2.csv": "d51455b500f0471b17f9ef290e9668dd84487fcbd8e452cf08b2be7540049f0a",
+        "practicuum/shared/data/istradefylline_solubility/supporting-information.pdf": "0363488f2e61e1903dc5218adfa41e2a91682b3284c4105580d8afde9a5df1c1",
+        "practicuum/shared/data/istradefylline_solubility/primary-article.pdf": "f394d17cb107fead9c6ea042778b156797ffd5c5b543752bdddf4a4e7d54994d",
+        "practicuum/shared/data/istradefylline_solubility/result.json": "7f1839b46f92d2f2cc1e567046289ece1d1dfe713f8db94913886d3709540df0",
+        "practicuum/shared/data/source-responses/statin_stability_verified.xml": "84ffbbd27fdaf85a4b75c480672f5538900ba73dfe21093f49d650fbf1a794ae"
+      },
+      "step_sha256": {
+        "practicuum/modules/M04/lessons/L01/steps/01_case.md": "49bdc095cb060df58712914d808bf50f0c3093a08ca847fa7f16f2889b3ccba3"
+      },
+      "status": "PASS",
+      "seconds": 3.54289169999538
+    },
+    {
+      "lesson_id": "M04-L01",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-20T10:27:26.492072+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M04\\lessons\\L01\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "cc5d6cf9138512bf209785a2c568d2be98a79abdb9ed0e21fc4b1b4bfe214546",
+      "data_sha256": {
+        "practicuum/shared/data/istradefylline_solubility/istradefylline_solubility_table_S1.csv": "c2415add9b03df58409c67a2e516de2afaf944fb676a06d6cef5091f2d7d63c4",
+        "practicuum/shared/data/istradefylline_solubility/istradefylline_aqueous_pH_table2.csv": "d51455b500f0471b17f9ef290e9668dd84487fcbd8e452cf08b2be7540049f0a",
+        "practicuum/shared/data/istradefylline_solubility/supporting-information.pdf": "0363488f2e61e1903dc5218adfa41e2a91682b3284c4105580d8afde9a5df1c1",
+        "practicuum/shared/data/istradefylline_solubility/primary-article.pdf": "f394d17cb107fead9c6ea042778b156797ffd5c5b543752bdddf4a4e7d54994d",
+        "practicuum/shared/data/istradefylline_solubility/result.json": "7f1839b46f92d2f2cc1e567046289ece1d1dfe713f8db94913886d3709540df0",
+        "practicuum/shared/data/source-responses/statin_stability_verified.xml": "84ffbbd27fdaf85a4b75c480672f5538900ba73dfe21093f49d650fbf1a794ae"
+      },
+      "step_sha256": {
+        "practicuum/modules/M04/lessons/L01/steps/02_lab.md": "34576ae4c1818e698e2e6af9ac7de8ec50db660450d90fa5dcf3a71dfa16afcd"
+      },
+      "status": "PASS",
+      "seconds": 2.369410199986305
+    },
+    {
+      "lesson_id": "M05-L01",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-20T10:27:28.861852+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M05\\lessons\\L01\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "cde44eb2465fcea4d23ef6629000f01e3c4f204300f8af800d4c69541ef94ba2",
+      "data_sha256": {
+        "practicuum/shared/data/compounds.json": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267"
+      },
+      "step_sha256": {
+        "practicuum/modules/M05/lessons/L01/steps/01_case.md": "053a3d9b333666c78a7f66d547f5717f3824095957b9472d1e523a33fb4b018e"
+      },
+      "status": "PASS",
+      "seconds": 1.9651661000098102
+    },
+    {
+      "lesson_id": "M05-L01",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-20T10:27:30.827555+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M05\\lessons\\L01\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "b8a92fd572a3bfc6bd65c02fc8dfa74b2471d1860fe8f170937c3bd18f58d952",
+      "data_sha256": {
+        "practicuum/shared/data/compounds.json": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267"
+      },
+      "step_sha256": {
+        "practicuum/modules/M05/lessons/L01/steps/02_lab.md": "8e5638743934c24394f12551443382c1c2f95f116b700b3f384ae07c63f71817"
+      },
+      "status": "PASS",
+      "seconds": 1.6299180000205524
+    },
+    {
+      "lesson_id": "M05-L02",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-20T10:27:32.458343+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M05\\lessons\\L02\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "fcc1bbbf288be981da9f22286d49efe67a7aebc230b30ebd5495aa14270e3755",
+      "data_sha256": {
+        "practicuum/shared/data/compounds.json": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267"
+      },
+      "step_sha256": {
+        "practicuum/modules/M05/lessons/L02/steps/01_case.md": "1d4e4457ae29dd93d8d8bc03dde9c302f324106913a31f65fd113e71af6ab92c",
+        "practicuum/modules/M05/lessons/L02/steps/03_article_case.md": "7994e8332fd911eb5228e4420fffb85041efa7d105a9d24b2e6f4ddda56029b9"
+      },
+      "status": "PASS",
+      "seconds": 1.9518274999572895
+    },
+    {
+      "lesson_id": "M05-L02",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-20T10:27:34.410468+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M05\\lessons\\L02\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "0fac4928542c7fc0c335e905bf1e2e68d94d902147d5540a36f67cba2937841c",
+      "data_sha256": {
+        "practicuum/shared/data/compounds.json": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267"
+      },
+      "step_sha256": {
+        "practicuum/modules/M05/lessons/L02/steps/02_lab.md": "0299883d874f13d78450f145919bd587e8a9c8a8c0fd2cadaaba3485f8a90e63",
+        "practicuum/modules/M05/lessons/L02/steps/03_article_review.md": "9555416bd0229c9c536289c9b081f1316cfd89195041fd48e65eed387b327bbf"
+      },
+      "status": "PASS",
+      "seconds": 1.5451841999893077
+    },
+    {
+      "lesson_id": "M07-L01",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-20T10:27:35.956863+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M07\\lessons\\L01\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "2d5e3ec50cfa877c8fe7c466d5ef7d4c5526692cd56726e455aa7071c846acc5",
+      "data_sha256": {},
+      "step_sha256": {
+        "practicuum/modules/M07/lessons/L01/steps/01_case.md": "a6b818a5f35a1e97a5397db5dff71e78d94b0a9a89a06c35ea75d94b699b055f"
+      },
+      "status": "PASS",
+      "seconds": 1.885074399993755
+    },
+    {
+      "lesson_id": "M07-L01",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-20T10:27:37.842021+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M07\\lessons\\L01\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "dd1d9d381cfeece8fbc48554afab9595da2a8a9325ee3360598fd0e1aabb17a2",
+      "data_sha256": {},
+      "step_sha256": {
+        "practicuum/modules/M07/lessons/L01/steps/02_lab.md": "c35e3066a0181216bab1b117329487e5b3151fd7b8acf1c8d1b12bd1fac46115"
+      },
+      "status": "PASS",
+      "seconds": 1.5227579000056721
+    },
+    {
+      "lesson_id": "M07-L02",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-20T10:27:39.365284+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M07\\lessons\\L02\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "3ad15fb6d098b8d068cddaa1d56c25b3cb2e97a29d4deaa648577347a0f3bff9",
+      "data_sha256": {
+        "practicuum/shared/data/quantum/istradefylline/result.json": "8f56fbf9ccaff067d7e26ad94f9cbadd752c1248dcee439595456d1636fbbbb2",
+        "practicuum/shared/data/quantum/istradefylline/geometry.json": "8b1ec2efb6af4bbf7c984c43eec14553b658ca8cddf2ede549c0d9e45edcfdfa",
+        "practicuum/shared/data/quantum/atorvastatin/result.json": "a365db4fdf5973018f6cb26c372c380bc7dd1f5599528da1c142e7219b8e83c2",
+        "practicuum/shared/data/quantum/atorvastatin/geometry.json": "d0d2d8afc508fd0fa5bab87fcb26256f62f6f13b3743781bb9244abc878f6ee5"
+      },
+      "step_sha256": {
+        "practicuum/modules/M07/lessons/L02/steps/01_case.md": "203aa942744f8da7f0334b439084aa6c8d5719bc91801a4dfca591fd9220883c",
+        "practicuum/modules/M07/lessons/L02/steps/03_article_case.md": "1287784f07361423547f677ffe49f48383d61b9caa1cd0c368023e42ac25c10b"
+      },
+      "status": "PASS",
+      "seconds": 1.6007638999726623
+    },
+    {
+      "lesson_id": "M07-L02",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-20T10:27:40.967516+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M07\\lessons\\L02\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "0e43c4e4318e7817ed85d7702f0540f5172b260f66964c06587026844ad67016",
+      "data_sha256": {
+        "practicuum/shared/data/quantum/istradefylline/result.json": "8f56fbf9ccaff067d7e26ad94f9cbadd752c1248dcee439595456d1636fbbbb2",
+        "practicuum/shared/data/quantum/istradefylline/geometry.json": "8b1ec2efb6af4bbf7c984c43eec14553b658ca8cddf2ede549c0d9e45edcfdfa",
+        "practicuum/shared/data/quantum/atorvastatin/result.json": "a365db4fdf5973018f6cb26c372c380bc7dd1f5599528da1c142e7219b8e83c2",
+        "practicuum/shared/data/quantum/atorvastatin/geometry.json": "d0d2d8afc508fd0fa5bab87fcb26256f62f6f13b3743781bb9244abc878f6ee5"
+      },
+      "step_sha256": {
+        "practicuum/modules/M07/lessons/L02/steps/02_lab.md": "c493af2fb968e5cfe85ea6ffa433aefe2d303ad3f4f5533f05180dc1022524f4",
+        "practicuum/modules/M07/lessons/L02/steps/03_article_review.md": "39c60b604b69fda947167d41d6bfb3eb60485992cd676aa868d0877d4976530c"
+      },
+      "status": "PASS",
+      "seconds": 1.6331483999965712
+    },
+    {
+      "lesson_id": "M08-L01",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-20T10:27:42.601376+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M08\\lessons\\L01\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "998655945abb63384e5c57a55de2381ae050af0403419608726979c3d0088f61",
+      "data_sha256": {
+        "practicuum/shared/data/quantum/istradefylline/result.json": "8f56fbf9ccaff067d7e26ad94f9cbadd752c1248dcee439595456d1636fbbbb2",
+        "practicuum/shared/data/quantum/atorvastatin/result.json": "a365db4fdf5973018f6cb26c372c380bc7dd1f5599528da1c142e7219b8e83c2"
+      },
+      "step_sha256": {
+        "practicuum/modules/M08/lessons/L01/steps/01_case.md": "51ba8aea206c7c731148e99ba22833b2098d25377d5a18f11e209559eec192d6"
+      },
+      "status": "PASS",
+      "seconds": 1.660827700048685
+    },
+    {
+      "lesson_id": "M08-L01",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-20T10:27:44.262677+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M08\\lessons\\L01\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "7c745f5b9848a655900640422043916048f68d5638ca749d05a2bad5ba14a895",
+      "data_sha256": {
+        "practicuum/shared/data/quantum/istradefylline/result.json": "8f56fbf9ccaff067d7e26ad94f9cbadd752c1248dcee439595456d1636fbbbb2",
+        "practicuum/shared/data/quantum/atorvastatin/result.json": "a365db4fdf5973018f6cb26c372c380bc7dd1f5599528da1c142e7219b8e83c2"
+      },
+      "step_sha256": {
+        "practicuum/modules/M08/lessons/L01/steps/02_lab.md": "8c618d4d777e6bb3cb1dc002aac0c86afdc525af8bad1658041845a4a1decc5a"
+      },
+      "status": "PASS",
+      "seconds": 1.6243247000384144
+    },
+    {
+      "lesson_id": "M08-L02",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-20T10:27:45.886946+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M08\\lessons\\L02\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "ed1c3fc5caee8c6922ce42ee516278d2f2812d68c142147674368da06eabb220",
+      "data_sha256": {
+        "practicuum/shared/data/nist_ir_source.json": "2a3a141b49453053d8507c4cf1135ffd351834df5dc2e23b1e63574c459451b3"
+      },
+      "step_sha256": {
+        "practicuum/modules/M08/lessons/L02/steps/01_case.md": "83187410d641727a8b752bb7fc5eca86f757cb92ad5a42dbc52661ab40a69d04",
+        "practicuum/modules/M08/lessons/L02/steps/03_article_case.md": "956edc7ffde4f4c23ca59574a6fe8f42e8bcb55a0c110758c8aa714158514d09"
+      },
+      "status": "PASS",
+      "seconds": 1.7734055000473745
+    },
+    {
+      "lesson_id": "M08-L02",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-20T10:27:47.667278+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M08\\lessons\\L02\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "eb3676628ee9c1c1dafa2761f2f35d01278e439832c0a6b0b1cb0d0b1a3a2148",
+      "data_sha256": {
+        "practicuum/shared/data/nist_ir_source.json": "2a3a141b49453053d8507c4cf1135ffd351834df5dc2e23b1e63574c459451b3"
+      },
+      "step_sha256": {
+        "practicuum/modules/M08/lessons/L02/steps/02_lab.md": "63e6883255c9f556aa64bbacb5683a9e78e044086146c8c08c99b57ef2446a46",
+        "practicuum/modules/M08/lessons/L02/steps/03_article_review.md": "9a658a2294cd2dd49ac8062b444355d23578450587b98b207d3c4ea904427c7d"
+      },
+      "status": "PASS",
+      "seconds": 1.6140675999922678
+    },
+    {
+      "lesson_id": "M13-L01",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-20T10:27:49.282081+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M13\\lessons\\L01\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "60c90468db234c8268233445ee9ba9c2780da54a583bc6b7618df5f3a5621e05",
+      "data_sha256": {
+        "practicuum/shared/data/xanthine_synthesis_table1.csv": "38b1df144284e0da20d90d0f9648ec99da016f84510b1eae3372e561f514bea7",
+        "practicuum/shared/data/xanthine_synthesis_source.json": "b67add0310a67246474bbd04341783f3c6222dde2524c4d0e61f3d46cac71ab6",
+        "practicuum/shared/data/atorvastatin_process_source.json": "41c21e4f05ff11ada6a1f2cb6efe2d5de3d1182c42e05ab971377b661e5547dc"
+      },
+      "step_sha256": {
+        "practicuum/modules/M13/lessons/L01/steps/01_case.md": "27f40bb36d7b93bb00a45143849ef99b75475bf59b434c1619e7db673c1f6b5b"
+      },
+      "status": "PASS",
+      "seconds": 1.6396525000454858
+    },
+    {
+      "lesson_id": "M13-L01",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-20T10:27:50.922676+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M13\\lessons\\L01\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "9798267ee484cd53efdd98224773fe4d0cd681fa31ca458949db1130ba8af969",
+      "data_sha256": {
+        "practicuum/shared/data/xanthine_synthesis_table1.csv": "38b1df144284e0da20d90d0f9648ec99da016f84510b1eae3372e561f514bea7",
+        "practicuum/shared/data/xanthine_synthesis_source.json": "b67add0310a67246474bbd04341783f3c6222dde2524c4d0e61f3d46cac71ab6",
+        "practicuum/shared/data/atorvastatin_process_source.json": "41c21e4f05ff11ada6a1f2cb6efe2d5de3d1182c42e05ab971377b661e5547dc"
+      },
+      "step_sha256": {
+        "practicuum/modules/M13/lessons/L01/steps/02_lab.md": "21795c49f9f74040a3edb4b16a7dd7a9903859c12aa1bdc7294b12f78667d4bf"
+      },
+      "status": "PASS",
+      "seconds": 1.6770253999857232
+    },
+    {
+      "lesson_id": "M13-L02",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-20T10:27:52.599813+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M13\\lessons\\L02\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "6b296148eb0f1f0cbe2483fabeef222867e8d0af968a4f1006aed13de7ccbd0c",
+      "data_sha256": {
+        "practicuum/shared/data/routes.csv": "c3ddf027fcb04b233b0d2c12e7cdc2059028e31982e2a9981acf04644d58244d",
+        "practicuum/shared/data/atorvastatin_process_source.json": "41c21e4f05ff11ada6a1f2cb6efe2d5de3d1182c42e05ab971377b661e5547dc"
+      },
+      "step_sha256": {
+        "practicuum/modules/M13/lessons/L02/steps/01_case.md": "89980ca68b79a17c587e9c466b060c4d139f76b11699aaac6f80de55f2d0f420",
+        "practicuum/modules/M13/lessons/L02/steps/03_article_case.md": "457808f2952569b686b27b38182de9566b83cedd156c3ba883f8cecddb38fec0"
+      },
+      "status": "PASS",
+      "seconds": 1.9305317000253126
+    },
+    {
+      "lesson_id": "M13-L02",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-20T10:27:54.531954+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M13\\lessons\\L02\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "403b32f184d575b7974c3fe1ec2568b6891e14e2c56072a24e6045cfc1f3882b",
+      "data_sha256": {
+        "practicuum/shared/data/routes.csv": "c3ddf027fcb04b233b0d2c12e7cdc2059028e31982e2a9981acf04644d58244d",
+        "practicuum/shared/data/atorvastatin_process_source.json": "41c21e4f05ff11ada6a1f2cb6efe2d5de3d1182c42e05ab971377b661e5547dc"
+      },
+      "step_sha256": {
+        "practicuum/modules/M13/lessons/L02/steps/02_lab.md": "7bb94d7a120fe101abb0a11fe3f20e1320af72ee15da91d13e82cc6a5e54f7c4",
+        "practicuum/modules/M13/lessons/L02/steps/03_article_review.md": "64ce2e684b0e30f656106f418dc8ab37cefa431f1b7799c9b5f02ec4011eb4e6"
+      },
+      "status": "PASS",
+      "seconds": 1.8111309999949299
+    },
+    {
+      "lesson_id": "M14-L01",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-20T10:27:56.344086+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M14\\lessons\\L01\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "5a2f04735921327af53f4e6bc834484ca66a5442ecf14e509d0aa6cdbb388ebe",
+      "data_sha256": {
+        "practicuum/shared/data/compounds.json": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267"
+      },
+      "step_sha256": {
+        "practicuum/modules/M14/lessons/L01/steps/01_case.md": "2435495210998b8cd4a1bb73c42743c38e4badc263d7d31d43bc286b28283e8e"
+      },
+      "status": "PASS",
+      "seconds": 2.326046200003475
+    },
+    {
+      "lesson_id": "M14-L01",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-20T10:27:58.670468+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M14\\lessons\\L01\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "fabd70113fbf342ab86260e72f19f4f2035d0517acd31381aeaca6f61a0c52c9",
+      "data_sha256": {
+        "practicuum/shared/data/compounds.json": "dc2e00bec57f6ec4b3db654a0fb64e48272b091c0dd536e30521cb501ba6c267"
+      },
+      "step_sha256": {
+        "practicuum/modules/M14/lessons/L01/steps/02_lab.md": "11f4c2346bc59ab972316dde7e4edd7c835ea00f80e823dc4851c7917246a1c6"
+      },
+      "status": "PASS",
+      "seconds": 1.573157100006938
+    },
+    {
+      "lesson_id": "M14-L02",
+      "role": "case",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-20T10:28:00.244865+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M14\\lessons\\L02\\Notebooks_cases\\01_case.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "full guided computation",
+      "input_sha256": "3806ff9c1bbcd2f0396ea0e2084359f0486fcecbe6a4b7a60e1c06807e38cfd7",
+      "data_sha256": {},
+      "step_sha256": {
+        "practicuum/modules/M14/lessons/L02/steps/01_case.md": "16e01ccb004e8b8242cc53f449962ac3d8ceb009bfcd068d6a5ad435becfa703",
+        "practicuum/modules/M14/lessons/L02/steps/03_article_case.md": "4cf2b3a98217fe729113981877995cdd036cebc341aa6d7ca967f7a712986236"
+      },
+      "status": "PASS",
+      "seconds": 1.5806596000329591
+    },
+    {
+      "lesson_id": "M14-L02",
+      "role": "lab",
+      "kernel": "course-v2-chem",
+      "started_utc": "2026-11-20T10:28:01.826249+00:00",
+      "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M14\\lessons\\L02\\Notebooks_labs\\02_lab.ipynb",
+      "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+      "scope": "empty lab scaffold; learner completion NOT_RUN",
+      "input_sha256": "fe1646182d4a98e2d4238678943199d9405edb27bffb4b7dedfc0ad341268377",
+      "data_sha256": {},
+      "step_sha256": {
+        "practicuum/modules/M14/lessons/L02/steps/02_lab.md": "7ecf35134bb6cf308a2a6ccc8af6135c907d244b518b2a2ae381d35a6d0f7a07",
+        "practicuum/modules/M14/lessons/L02/steps/03_article_review.md": "94947beb045b4ca50d196f06005f4c1dc42db7bc6a0db67607b410f5727e7089"
+      },
+      "status": "PASS",
+      "seconds": 1.5628954999847338
+    }
+  ],
+  "scope": "technical execution, not scientific or learner certification",
+  "learner_work": "NOT_RUN",
+  "independent_scientific_review": "NOT_RUN",
+  "student_pilot": "NOT_RUN"
+}
