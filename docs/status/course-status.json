@@ -52,8 +52,8 @@
     "guide": "docs/maintenance/STEPIK_API_GUIDE.md",
     "offline_controls": {
       "status": "PASS",
-      "evidence": "practicuum/evidence/20261120-stepik-api-controls/check.json",
-      "sha256": "66442338383257b837029b3c06a88d86ac8077852435685a020514ed537145d9"
+      "evidence": "practicuum/evidence/20261120-stepik-api-controls-final/check.json",
+      "sha256": "9476fda417ea43a8dba9759f4e529f7f8951103b8c6772f187cf1113431a86ea"
     },
     "real_package_plan": {
       "status": "PASS",

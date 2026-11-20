@@ -194,7 +194,7 @@ def main():
       'latest_reader_context_execution':proof('practicuum/evidence/20261120-stepik-context-notebooks/notebook-summary.json'),
       'stepik_api':{'scope':'text and Notebook links; live import and grading NOT_RUN',
         'guide':'docs/maintenance/STEPIK_API_GUIDE.md',
-        'offline_controls':proof('practicuum/evidence/20261120-stepik-api-controls/check.json'),
+        'offline_controls':proof('practicuum/evidence/20261120-stepik-api-controls-final/check.json'),
         'real_package_plan':proof('practicuum/evidence/20261120-stepik-real-plan/check.json'),
         'live_api':'NOT_RUN','public_publication':'NOT_RUN','grader':'NOT_RUN'},
       'quality_requirement':'Professional calculations on target chemical forms; educational toy controls are not accepted substitutes',
@@ -306,7 +306,7 @@ def main():
 
 Сборщик включает shared/data и закреплённую среду; исключает преподавательские решения, личный workspace и NIST raw cache. Notebook исполняются в локальном Jupyter/WSL, а не предполагаемом RDKit grader Stepik. Права/атрибуция сохраняются.
 
-Подготовлены [пошаговый API-маршрут](docs/maintenance/STEPIK_API_GUIDE.md), offline-планировщик и create-only отправщик с журналом ID и GET-сверкой. Проверены шесть локальных сценариев API-клиента, полный план на реальном пакете и переносимый M11-L02. План полного импорта содержит 14 sections, 28 lessons, 28 units и 240 текстовых шагов: 212 исходных плюс 28 шагов скачивания. Реальные URL архива/ресурсов ещё требуется назначить и проверить. OAuth и создание объектов Stepik **NOT_RUN**; probe GET остановлен проверкой TLS-сертификата. Никаких реальных объектов через подготовленные инструменты не создано.
+Подготовлены [пошаговый API-маршрут](docs/maintenance/STEPIK_API_GUIDE.md), offline-планировщик и create-only отправщик с журналом ID и GET-сверкой. Проверены семь локальных сценариев API-клиента, полный план на реальном пакете и переносимый M11-L02. При выборе одного позднего модуля его позиция в пилотном курсе начинается с 1. План полного импорта содержит 14 sections, 28 lessons, 28 units и 240 текстовых шагов: 212 исходных плюс 28 шагов скачивания. Реальные URL архива/ресурсов ещё требуется назначить и проверить. OAuth и создание объектов Stepik **NOT_RUN**; probe GET остановлен проверкой TLS-сертификата. Никаких реальных объектов через подготовленные инструменты не создано.
 
 После дальнейших изменений M07/M08 потребуется следующая неизменяемая сборка. **NOT_RUN:** загрузка assets/доступность ссылок, API-объекты тестового курса, отображение формул, полный round-trip решений и реальный Stepik grader. Для доказательства платформенной пригодности локального запуска недостаточно.
 

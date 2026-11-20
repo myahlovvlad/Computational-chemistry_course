@@ -54,6 +54,16 @@ class StepikPlanTests(unittest.TestCase):
     def test_tampered_package_rejected(self):
         (self.root/'media/plot.svg').write_text('changed')
         with self.assertRaisesRegex(ValueError,'Package changed'):self.ready()
+    def test_pilot_starts_at_first_section_position(self):
+        source=self.root/'programm/course.json'
+        course=json.loads(source.read_text());course['modules'][0]['position']=7
+        source.write_text(json.dumps(course))
+        path=self.root/'package.json';manifest=json.loads(path.read_text())
+        manifest['files_sha256']['programm/course.json']=hashlib.sha256(source.read_bytes()).hexdigest()
+        path.write_text(json.dumps(manifest))
+        plan=make_plan(self.root,only=['M01-L02'],assets={'$bundle':'https://example.org/course.zip'})
+        section=next(o for o in plan['operations'] if o['endpoint']=='sections')
+        self.assertEqual(section['payload']['section']['position'],1)
     def test_resume_does_not_duplicate_posts_and_resolves_links(self):
         plan=self.ready();state=self.root/'state.json';client=FakeClient()
         send(plan,state,course_only=True,course_ready=False,client=client)

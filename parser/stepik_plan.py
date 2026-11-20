@@ -57,10 +57,12 @@ def make_plan(package, *, only=None, assets=None, file_base=None):
         operations.append({'key':key,'method':'POST','endpoint':endpoint,'response_list':endpoint,
                            'payload':{envelope:data}})
     add('course','courses','course',{'title':'[ПРОВЕРКА] '+course['title']})
+    section_position=0
     for module in course['modules']:
         active=[l for l in module['lessons'] if l['id'] in lessons]
         if not active:continue
-        add('section:'+module['id'],'sections','section',{'course':{'$ref':'course'},'title':module['title'],'position':module['position']})
+        section_position+=1
+        add('section:'+module['id'],'sections','section',{'course':{'$ref':'course'},'title':module['title'],'position':section_position})
         for position,local in enumerate(active,1):
             id=local['id']
             add('lesson:'+id,'lessons','lesson',{'title':id+'. '+local['title'],'is_public':False})
