@@ -1,0 +1,112 @@
+{
+  "status": "PASS",
+  "utc": "2026-11-20T09:34:07.595530+00:00",
+  "canonical": "/mnt/c/Users/Miakhlov/Documents/GitHub/Computational chemistry_course",
+  "archive": "/var/backups/computational-chemistry/retired-wsl-20261120/retired-wsl.tar.gz",
+  "archive_sha256": "ca4afe7c7d9b0eecadf99aea37b773d899bf73168a77fae130c4b79a79f3e485",
+  "archive_bytes": 150178696,
+  "verified_entries": 18673,
+  "verified_regular_files": 14143,
+  "retired_folders": [
+    "Computational-chemistry_course",
+    "M01-before-context-20261117-174722",
+    "M01-before-context-20261117-181413",
+    "M01-before-final-20261117-153725",
+    "M01-context-before-public-20261117-175736",
+    "M01-context-before-public-20261117-181731",
+    "course-evidence-linux-01",
+    "course-evidence-linux-02",
+    "course-notebooks",
+    "course-notebooks-before-pairs-20261117-135900",
+    "course-notebooks-before-pairs-20261117-135942",
+    "course-production-final-20261118\r\r",
+    "course-production-verified-20261118",
+    "course-restructured-20261118",
+    "course-v2-quantum-20261118",
+    "m01-issue4-evidence"
+  ],
+  "deleted_folders": [
+    "Computational-chemistry_course",
+    "M01-before-context-20261117-174722",
+    "M01-before-context-20261117-181413",
+    "M01-before-final-20261117-153725",
+    "M01-context-before-public-20261117-175736",
+    "M01-context-before-public-20261117-181731",
+    "course-evidence-linux-01",
+    "course-evidence-linux-02",
+    "course-notebooks",
+    "course-notebooks-before-pairs-20261117-135900",
+    "course-notebooks-before-pairs-20261117-135942",
+    "course-production-final-20261118\r\r",
+    "course-production-verified-20261118",
+    "course-restructured-20261118",
+    "course-v2-quantum-20261118",
+    "m01-issue4-evidence"
+  ],
+  "omitted_reproducible_environments": [
+    {
+      "path": "/home/miakhlov/Computational-chemistry_course/.venv",
+      "kind": "reproducible_python_environment",
+      "entries": 29037,
+      "bytes": 1114577015
+    },
+    {
+      "path": "/home/miakhlov/course-notebooks/.venv",
+      "kind": "reproducible_python_environment",
+      "entries": 29093,
+      "bytes": 1115212779
+    },
+    {
+      "path": "/home/miakhlov/course-notebooks/course_source/modules/M01/.venv",
+      "kind": "reproducible_python_environment",
+      "entries": 16629,
+      "bytes": 289380268
+    },
+    {
+      "path": "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-base",
+      "kind": "reproducible_python_environment",
+      "entries": 16451,
+      "bytes": 291846421
+    },
+    {
+      "path": "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-chem",
+      "kind": "reproducible_python_environment",
+      "entries": 27024,
+      "bytes": 948685307
+    },
+    {
+      "path": "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-docking",
+      "kind": "reproducible_python_environment",
+      "entries": 26363,
+      "bytes": 965278578
+    },
+    {
+      "path": "/home/miakhlov/course-production-verified-20261118/scripts/environment/.venv-quantum",
+      "kind": "reproducible_python_environment",
+      "entries": 28157,
+      "bytes": 1138158467
+    },
+    {
+      "path": "/home/miakhlov/course-restructured-20261118/scripts/environment/.uv-bootstrap",
+      "kind": "reproducible_python_environment",
+      "entries": 1161,
+      "bytes": 52451306
+    },
+    {
+      "path": "/home/miakhlov/course-restructured-20261118/scripts/environment/.venv-base",
+      "kind": "reproducible_python_environment",
+      "entries": 16390,
+      "bytes": 284546191
+    },
+    {
+      "path": "/home/miakhlov/course-restructured-20261118/scripts/environment/.venv-chem",
+      "kind": "reproducible_python_environment",
+      "entries": 25501,
+      "bytes": 916705945
+    }
+  ],
+  "wsl_entry": "/home/miakhlov/Computational-chemistry_course",
+  "remaining_visible_folders": [
+    "Computational-chemistry_course"
+  ]
+}

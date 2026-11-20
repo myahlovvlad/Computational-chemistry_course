@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "backup": "/var/backups/computational-chemistry/retired-wsl-20261120/retired-kernels.json",
+  "retired_kernels": [
+    {
+      "path": "/home/miakhlov/.local/share/jupyter/kernels/chemistry-course-uv",
+      "missing_interpreter": "/home/miakhlov/course-notebooks"
+    },
+    {
+      "path": "/home/miakhlov/.local/share/jupyter/kernels/course-m01-evidence",
+      "missing_interpreter": "/home/miakhlov/course-notebooks/course_source/modules/M01"
+    },
+    {
+      "path": "/home/miakhlov/.local/share/jupyter/kernels/course-v2-base",
+      "missing_interpreter": "/home/miakhlov/course-production-verified-20261118/scripts/environment"
+    },
+    {
+      "path": "/home/miakhlov/.local/share/jupyter/kernels/course-v2-chem",
+      "missing_interpreter": "/home/miakhlov/course-production-verified-20261118/scripts/environment"
+    },
+    {
+      "path": "/home/miakhlov/.local/share/jupyter/kernels/course-v2-docking",
+      "missing_interpreter": "/home/miakhlov/course-production-verified-20261118/scripts/environment"
+    },
+    {
+      "path": "/home/miakhlov/.local/share/jupyter/kernels/course-v2-quantum",
+      "missing_interpreter": "/home/miakhlov/course-production-verified-20261118/scripts/environment"
+    }
+  ]
+}

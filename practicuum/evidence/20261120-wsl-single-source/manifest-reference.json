@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "manifest": "/var/backups/computational-chemistry/retired-wsl-20261120/manifest.json",
+  "sha256": "305d6878b3e089a44f0f8a52924c67cc4f34f1e217f93293fc9c0fa74ba6ba22",
+  "bytes": 4842845,
+  "entries": 18673,
+  "scope": "Every retained file was compared against this SHA-256 manifest before removal of retired source directories."
+}
