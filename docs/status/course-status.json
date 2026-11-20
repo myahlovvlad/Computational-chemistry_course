@@ -20,18 +20,27 @@
     "narrative_openings": 28,
     "lesson_transitions": 28,
     "article_reviews": 14,
+    "reasoned_case_explanations": 28,
+    "deep_reworked_cases": [
+      "M02-L01",
+      "M02-L02",
+      "M03-L01",
+      "M03-L02",
+      "M11-L02",
+      "M12-L01"
+    ],
     "reading_route": "programm/ARTICLE_READING.md",
     "student_pilot": "NOT_RUN"
   },
   "current_main_execution": {
     "status": "PASS",
-    "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
-    "sha256": "177d3816c1c496c32f50dc41b1b683c14f58bd8d2e285e1b6b4bc453098af951"
+    "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
+    "sha256": "c73b006a42bee11a734d4164b1bd72884d8613b8445916483b9b1c9a22724a78"
   },
   "latest_editorial_execution": {
     "status": "PASS",
-    "evidence": "practicuum/evidence/20261120-editorial-execution/notebook-summary.json",
-    "sha256": "c43e2efa9624e00bbd157958ca400e63b9e9eb47396b1a711a1cf7994bf840aa"
+    "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
+    "sha256": "c73b006a42bee11a734d4164b1bd72884d8613b8445916483b9b1c9a22724a78"
   },
   "quality_requirement": "Professional calculations on target chemical forms; educational toy controls are not accepted substitutes",
   "modules": [
@@ -55,18 +64,18 @@
             "case": {
               "path": "practicuum/modules/M01/lessons/L01/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "801a7735c936574a8ab9c8a107d7bf76dad265a9b9c4795d49fefbc0738ef2e9",
+              "current_sha256": "bcec445aff0da16291a030bd4e582eaaf1558fa827b9c055888ca21d5cbd1e81",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
                   "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json",
-                  "current_step_sources_match": true,
+                  "current_step_sources_match": false,
                   "current_declared_inputs_match": true
                 }
               },
@@ -79,7 +88,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -110,11 +119,11 @@
             "case": {
               "path": "practicuum/modules/M01/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "8ac45f5ff3651f748dea539c1b8dc95f09a85a78529cbd492c4e54f9a1420d16",
+              "current_sha256": "43e3970442c22b3a69898dcdd80126c8aa177fc353d52162d3089f3bac847e68",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-editorial-execution/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -134,7 +143,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-editorial-execution/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -171,11 +180,11 @@
             "case": {
               "path": "practicuum/modules/M02/lessons/L01/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "f23d25293c49658a471806be51706ee9797212c8f4bc0d1b305be4885c444a77",
+              "current_sha256": "d46dde3d2a8bcb5413b2cab278a67b6db17002bd96558147351e6ed0e9a2a027",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-editorial-execution/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -195,7 +204,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-editorial-execution/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -226,11 +235,11 @@
             "case": {
               "path": "practicuum/modules/M02/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "b7b30d18d467f3d18388161fead6cd2277ff11c77dd559a2c60df372a92f63df",
+              "current_sha256": "a61b35b4242941e819555f537bd3a02dafb7b173d5394cb4375fe4c995ef1d8f",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-editorial-execution/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -246,11 +255,11 @@
             "lab": {
               "path": "practicuum/modules/M02/lessons/L02/Notebooks_labs/02_lab.ipynb",
               "authored": true,
-              "current_sha256": "c5c82c11ea821ad31aba835c997eab752ddda0e432ea35732d2c62995b44faf9",
+              "current_sha256": "c9155f457be6602b72261d30c3941d0f28be6f69129001f639cc3f4c493e197b",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-editorial-execution/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -287,18 +296,18 @@
             "case": {
               "path": "practicuum/modules/M03/lessons/L01/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "46dd004903c70643f087c5dbd40a9ec6f5e30f870afc90c930d3c843ff3add3f",
+              "current_sha256": "a2414e15705022d9a0967b62652c5759f3a6c68785d4acc8b89868d18acbaf76",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
                 "Linux/WSL": {
                   "status": "PASS",
                   "evidence": "practicuum/evidence/20261118-full-course-linux/summary.json",
-                  "current_step_sources_match": true,
+                  "current_step_sources_match": false,
                   "current_declared_inputs_match": true
                 }
               },
@@ -311,7 +320,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -342,11 +351,11 @@
             "case": {
               "path": "practicuum/modules/M03/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "469fb6d9de4ee3975278f1dcc24d3d210db3fe18060b3baaebd6a79283dcb72a",
+              "current_sha256": "1213b80a7771e59ddcf05c3343cc2a19273482c2f12ad9d617705a82131f5784",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -366,7 +375,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -404,11 +413,11 @@
             "case": {
               "path": "practicuum/modules/M04/lessons/L01/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "456708b68e4533635ea70d67f8f5e4019a079b6807fd7cb259d61ca7f15ec4f9",
+              "current_sha256": "7a703a89f8e29407d5b592e02ef4586ad208891251735c2ec620e796a15ab885",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-editorial-execution/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -428,7 +437,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-editorial-execution/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -460,11 +469,11 @@
             "case": {
               "path": "practicuum/modules/M04/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "ed4771b0daebfc4e5f6ba9fface004355c696513028a6981c96ea0551cdf3aa1",
+              "current_sha256": "f594c49674aa3a45110f7459626ab1579692a1329782755e888a9677ec563d49",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -484,7 +493,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -521,11 +530,11 @@
             "case": {
               "path": "practicuum/modules/M05/lessons/L01/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "755c0514827afe94c01b6d156b004d0e213e1762f2d5e5cb8d9de9b653739c8e",
+              "current_sha256": "4adc6a36374e37cfa6ec4520c2a8417ac2d270ab276b9fb6ab26a6bb8b7659ca",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-editorial-execution/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -545,7 +554,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-editorial-execution/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -576,11 +585,11 @@
             "case": {
               "path": "practicuum/modules/M05/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "d588271aba33768c29fb400174699353cc7ee7b476dd3cfb19c520fceb37a3fe",
+              "current_sha256": "cd16083749dd73a8e47d75822ad96da3d413d943aea398c2f73c9dbb8ad5d826",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-editorial-execution/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -600,7 +609,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-editorial-execution/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -641,11 +650,11 @@
             "case": {
               "path": "practicuum/modules/M06/lessons/L01/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "5f49fe502687c08f9d3bbe3ab626e36aa7680c135bd615f6b6acf47ce799caa5",
+              "current_sha256": "1e2e98fc6d58c568115b24a89e7ddb8a4ed4309f307fa8e47fcfb99eef08271d",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -665,7 +674,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -698,11 +707,11 @@
             "case": {
               "path": "practicuum/modules/M06/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "18a2654ad6024113db7316f1376c180662b23e43d92b69bbc01255c05a103f7b",
+              "current_sha256": "7259a4248d4bb0346452cb1c7f45c55270ba10ae9aff2b7d6315838a7e772194",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -722,7 +731,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -759,11 +768,11 @@
             "case": {
               "path": "practicuum/modules/M07/lessons/L01/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "d30d01a072e5ebed600e9ea66c3956394e4c8a669c46d0869ce3d9f9edaef7ac",
+              "current_sha256": "97204e6e03277036c8ae04727b980da68b757eb7ba88a97610846dabb59ce7fd",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-editorial-execution/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -783,7 +792,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-editorial-execution/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -814,11 +823,11 @@
             "case": {
               "path": "practicuum/modules/M07/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "a0d3e6bc392cacdfac85f385c46b92dee764b74ce5b6aced98d5383b2305f6ef",
+              "current_sha256": "8fdca103c6352f1ea7bec1d3a0e05c5bbc5885f71243c3f4b64784eb8a0b2533",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-editorial-execution/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -838,7 +847,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-editorial-execution/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -875,11 +884,11 @@
             "case": {
               "path": "practicuum/modules/M08/lessons/L01/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "7ff8788e43351ad1ca1ce95c64f731c40002b2fcda42f95066b26313d30da8ce",
+              "current_sha256": "e30ca82508de06a3dca5b6c88dbd07b6bf950ba52c93b90573d73c2901ab1e18",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-editorial-execution/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -899,7 +908,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-editorial-execution/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -930,11 +939,11 @@
             "case": {
               "path": "practicuum/modules/M08/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "f60369161428f427982f3a66235c89f20aaf7bd97177651b9f47820b11b8a265",
+              "current_sha256": "f280f5642b01e8c89948cc4b03bb72fb45ba25ac1383d8bcc8547b258f309df0",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-editorial-execution/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -954,7 +963,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-editorial-execution/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -992,11 +1001,11 @@
             "case": {
               "path": "practicuum/modules/M09/lessons/L01/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "eb243d503f9ef5c2686009f971e88a868a0d33a7cc2411d0f8dd8c30cc1f2018",
+              "current_sha256": "f01d0429f13ea1589f07a7130b24da175a3b0c593b25fb4d9a36dea5cd0e17e3",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1016,7 +1025,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1047,11 +1056,11 @@
             "case": {
               "path": "practicuum/modules/M09/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "d0472d995ab7f4f07a53cc54658df3551ab96c6dfcfcfe3cd2fb5489e98cd6ec",
+              "current_sha256": "7ad6a7594961c59d3f4b0b33f4ff49c6bcecf00523b9a51644256843fa46d69c",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1071,7 +1080,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1109,11 +1118,11 @@
             "case": {
               "path": "practicuum/modules/M10/lessons/L01/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "67aace6fd4869c8ccc3ca12ccfc4fa06c621792adb0f9c17830e486ab00478fe",
+              "current_sha256": "ddd941bc95953145ffed229ab8992dab7838c7f9162a7d6f05c3aa4f8dfa2104",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1133,7 +1142,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1165,11 +1174,11 @@
             "case": {
               "path": "practicuum/modules/M10/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "1a85b499ef3f93587bdaf5d2a922929e835f5f47d1be197cd8bbac7d82c7c029",
+              "current_sha256": "0b76cf97f863219c71440ac324ee9967e91cafae1df08cefb50dd2360f2ee32b",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1189,7 +1198,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1226,11 +1235,11 @@
             "case": {
               "path": "practicuum/modules/M11/lessons/L01/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "0daea6fee279b28d7043432ef238506dd86891f46e61e502284ee481a2a38efc",
+              "current_sha256": "48e8d92f39874ad51e47c727e501132fd72c04e470a4df2da92a9ff674b6195b",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1250,7 +1259,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1283,11 +1292,11 @@
             "case": {
               "path": "practicuum/modules/M11/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "652053cd66530b843b3f01413ff85f63b879f193ba21d70d4423becbda66123a",
+              "current_sha256": "04982e4587415d3aeeb6e68650a715265bf31e6ce9857014e2e9aa07c2d9af02",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1303,11 +1312,11 @@
             "lab": {
               "path": "practicuum/modules/M11/lessons/L02/Notebooks_labs/02_lab.ipynb",
               "authored": true,
-              "current_sha256": "f758249dd25bca2bee8fe9cd846c2ad8e18f926fd26409b27922174ed9b16bb8",
+              "current_sha256": "68dd4d6ad3fe88fcbefd247831d87eaf123dcf9d30717feda48ef6c9c35ccc5c",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1345,11 +1354,11 @@
             "case": {
               "path": "practicuum/modules/M12/lessons/L01/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "da5cff8b339a45590ee6c4161f2da8243163aa089936ea1451774b4aeb8d8380",
+              "current_sha256": "7f697ea063be42a55412769818e15a12a4412808d3cf3804d55592d85e5a7f92",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1365,11 +1374,11 @@
             "lab": {
               "path": "practicuum/modules/M12/lessons/L01/Notebooks_labs/02_lab.ipynb",
               "authored": true,
-              "current_sha256": "1d02a0f96da1418518c38c1f4083e07d6c06e8422033509e8cc3c6db236eadfe",
+              "current_sha256": "b58e60d6eed72469d375508d7d56fa08f3afca0f78e4939576bfe1d26599332a",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1400,11 +1409,11 @@
             "case": {
               "path": "practicuum/modules/M12/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "ca0ff9a702eca34996706fae3b74685156a2be7283c225124f0f8da11f084481",
+              "current_sha256": "68f233dac65ce13c88946ae4a4b67188b10f74b2f662e184afd2740d9322776e",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1424,7 +1433,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-refactor-course/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1461,11 +1470,11 @@
             "case": {
               "path": "practicuum/modules/M13/lessons/L01/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "899c1fa138ef62dd0e376cb19dd8ddea96cccf3970a775e165e3cf2d5d7e6f9c",
+              "current_sha256": "b20bcfad9b6756387b70f045985561d1cc3547e5523f485dd1b24e34a9018b24",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-editorial-execution/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1485,7 +1494,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-editorial-execution/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1516,11 +1525,11 @@
             "case": {
               "path": "practicuum/modules/M13/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "1e38225bdd125777f43c3fc980e37b196ee419ca8fdc91ef65788a055baf9829",
+              "current_sha256": "007682638099cdc3c9919af36ff2868c05d0537b82bf7be9576b5b1dfd687c64",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-editorial-execution/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1540,7 +1549,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-editorial-execution/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1577,11 +1586,11 @@
             "case": {
               "path": "practicuum/modules/M14/lessons/L01/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "473e24b37b21c78ef3617ee1fd8f1708135b01d99a1a9a1039c8ddcf8fc5d20f",
+              "current_sha256": "5ba56453fb71569246be4f82e1375c3dcd1945dbdc96a112b7e1177e5eb2fc21",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-editorial-execution/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1601,7 +1610,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-editorial-execution/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1632,11 +1641,11 @@
             "case": {
               "path": "practicuum/modules/M14/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "02edbdd50b53f18373787f02f66c3a920f9f962456a9b8e12a823f1eb92cafff",
+              "current_sha256": "ae6d5924c790eb6d24c87324ca62abac7958b0827b4447c919761272db675917",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-editorial-execution/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1656,7 +1665,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-editorial-execution/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },

@@ -1,62 +1,139 @@
-# Разбор A. Python как инструмент исследования
+# Разбор A. Как превратить расчёт концентрации в проверяемую процедуру
 
-Паспорт входа есть, но таблица после обработки стала короче. Были ли потеряны неправильные строки или научно важные наблюдения? Исследуем таблицу ксантинов, затем перенесём проверку на формы B. Гипотеза: явная схема и журнал отклонений делают преобразование проверяемым, в отличие от молчаливого dropna. Базовые конструкции Python здесь служат научной прослеживаемости.
+У нас есть структурные карточки кофеина и истрадефиллина. Теперь нужно подготовить расчётные записи для будущего опыта: какую молярную концентрацию даст заданная масса при заданном объёме? В этом уроке массы и объёмы назначены для учебного сценария. Реальный раствор мы не готовим.
 
-Создайте записи расчёта для 1.0 mg вещества в 10.0 mL; массы берём из структурных карточек. Это моделируемая подготовка, не протокол реального раствора. Напишите функцию с проверками конечности и положительности. Добавьте контроль на нулевой объём, сохраните valid и rejected отдельно и проверьте повторное чтение JSON.
+Я начну с практического требования: другой исследователь должен увидеть, какие строки обработаны, какие отклонены и почему. Красивый столбец чисел без исходных единиц и журнала ошибок для передачи недостаточен. Если одна строка исчезнет, коллега должна отличить обоснованный отказ от потери данных.
+
+Сначала разберём смысл формулы на одной записи. Затем оформим правило как функцию, проверим его на нормальных и намеренно ошибочных условиях и только после этого построим таблицу.
 
 ```python
 from pathlib import Path
-import sys,json,math
+import sys
+import json
+import math
 from IPython.display import display
-ROOT=next(p for p in [Path.cwd(),*Path.cwd().parents] if (p/'programm/course.json').is_file())
-sys.path.insert(0,str(ROOT/'practicuum/shared'))
-from course_support import DATA,compound,esol,workspace,write_json,init_dossier
-import matplotlib
-matplotlib.use('Agg')
-import matplotlib.pyplot as plt
-def publish_plot(fig,name):
-    fig.savefig(OUT/name,dpi=120,bbox_inches='tight')
-    display(fig)
-    plt.close(fig)
-OUT=workspace('M02-L02','case')
+ROOT = next(p for p in [Path.cwd(), *Path.cwd().parents]
+            if (p / 'programm/course.json').is_file())
+sys.path.insert(0, str(ROOT / 'practicuum/shared'))
+from course_support import compound, workspace, write_json, init_dossier
+OUT = workspace('M02-L02', 'case')
 ```
 
-Одна и та же масса кофеина и истрадефиллина не означает одинаковое количество молекул. До вычисления предскажите, для какого вещества при одинаковых условных массе и объёме молярная концентрация будет меньше. Затем проследите два перевода единиц в функции: mg → g и mL → L.
+## 1. Выведем преобразование до программирования
+
+Количество вещества n связано с массой m и молярной массой M: n = m/M. Концентрация c = n/V. В карточке M выражена в g/mol, а заданные масса и объём — в mg и mL. Поэтому я явно приведу массу к g, объём к L и получу c в mol/L:
+
+\[
+c=\frac{m_{\mathrm{mg}}/1000}{M_{\mathrm{g/mol}}\,(V_{\mathrm{mL}}/1000)}.
+\]
+
+Зачем писать оба преобразования, если множители 1000 сокращаются? Чтобы сохранить смысл промежуточных величин. Для согласованной пары mg и mL сокращённая формула численно работает. Но если следующий файл задаст массу в g, а объём останется в mL, применять прежнюю запись без пересмотра единиц будет ошибкой. Формулу сокращают после анализа размерностей, а не вместо него.
+
+До запуска сравните кофеин и истрадефиллин при одинаковых массе и объёме. У какого вещества больше молярная масса в наших карточках? Значит, какое количество вещества будет меньше? Этот прогноз проверяет направление результата независимо от программной реализации.
 
 ```python
-def concentration(mass_mg,molar_mass,volume_ml):
-    values=[mass_mg,molar_mass,volume_ml]
-    if not all(math.isfinite(v) and v>0 for v in values):raise ValueError('Positive finite inputs required')
-    return (mass_mg/1000)/molar_mass/(volume_ml/1000)
-rows=[{'name':n,'c_mol_L':concentration(1,compound(n)['molecular_weight_g_mol'],10)} for n in ['caffeine','istradefylline']]
-display(rows)
+mass_mg = 1.0
+volume_ml = 10.0
+molar_mass = compound('istradefylline')['molecular_weight_g_mol']
+mass_g = mass_mg / 1000
+volume_L = volume_ml / 1000
+amount_mol = mass_g / molar_mass
+c_mol_L = amount_mol / volume_L
+display({'mass_g': mass_g, 'volume_L': volume_L,
+         'MW_g_mol': molar_mass, 'amount_mol': amount_mol, 'c_mol_L': c_mol_L})
 ```
 
-Теперь передадим функции нулевой объём. Правильное поведение здесь — отказ с понятной причиной, а не число на графике. После проверки ошибки сравните высоты столбцов со своим прогнозом. Масса и объём в этом упражнении заданы условно; мы не готовили и не измеряли раствор.
+Теперь я читаю результат по цепочке: 1 mg превратился в 0,001 g, 10 mL — в 0,01 L; деление массы на молярную массу дало количество вещества. Концентрация относится к назначенному объёму и выбранной записи вещества. Число знаков в выводе Python отражает вычисление, а точность приготовления придётся обосновывать отдельно.
+
+## 2. Сначала решим, какие входы функция принимает
+
+Функция будет получать числовые значения в явно названных единицах. Я разрешаю положительные конечные массу, молярную массу и объём. Это контракт для нашей задачи подготовки ненулевого раствора: отрицательная масса не имеет принятого смысла, нулевой объём делает формулу неопределённой, NaN и бесконечность не дают пригодной расчётной записи.
+
+Можно было бы вернуть пустое значение и продолжить. Но тогда последующая таблица могла бы скрыть причину отказа. Я выбираю исключение `ValueError`, а обработчик каждой строки сохранит её номер и объяснение. Политика отказа становится частью процедуры, а не случайным поведением деления.
 
 ```python
-try:concentration(1,194.19,0)
-except ValueError as error:print('Rejected control:',str(error))
-else:raise AssertionError('Zero volume was accepted')
-fig,ax=plt.subplots();ax.bar([r['name'] for r in rows],[r['c_mol_L'] for r in rows]);ax.set_ylabel('Simulated c / mol L^-1')
-publish_plot(fig,'concentrations.png')
+def concentration(mass_mg, molar_mass, volume_ml):
+    values = [mass_mg, molar_mass, volume_ml]
+    if not all(math.isfinite(v) and v > 0 for v in values):
+        raise ValueError('Масса, молярная масса и объём должны быть конечными и положительными')
+    mass_g = mass_mg / 1000
+    volume_L = volume_ml / 1000
+    return (mass_g / molar_mass) / volume_L
+
+assert math.isclose(concentration(1.0, molar_mass, 10.0), c_mol_L)
 ```
 
-Сохраняем результат расчётного упражнения вместе с единицами и условиями. Для рабочего раствора B придётся дополнительно установить форму вещества, молярную массу, чистоту и фактический объём.
+Это сравнение связывает функцию с уже разобранным вычислением. Одного такого теста мало: правильный ответ при нормальном входе ничего не говорит о поведении на ошибочной строке. Поэтому следующий шаг проверяет и принятие, и отказ.
+
+## 3. Обработаем таблицу без молчаливого исчезновения строк
+
+Первые две строки ниже — учебные условия для сравнения веществ. Две последние я намеренно делаю ошибочными: нулевой объём и отрицательная масса. Они нужны для проверки процедуры и не описывают реальные измерения.
+
+Для каждой строки сначала извлекаем молярную массу выбранной карточки, затем вызываем одну и ту же функцию. Успех и отказ сохраняем раздельно, оставляя исходные значения в обеих таблицах. Так можно восстановить судьбу каждой записи.
 
 ```python
-write_json(OUT/'table.json',rows)
-assert json.loads((OUT/'table.json').read_text(encoding='utf-8'))==rows
-result={'rows':rows,'kind':'simulation'}
+conditions = [
+    ('caffeine', 1.0, 10.0),
+    ('istradefylline', 1.0, 10.0),
+    ('caffeine', 1.0, 0.0),
+    ('istradefylline', -1.0, 10.0),
+]
+valid, rejected = [], []
+for row_id, (name, mass, volume) in enumerate(conditions, start=1):
+    record = {'row_id': row_id, 'name': name, 'mass_mg': mass, 'volume_ml': volume,
+              'MW_g_mol': compound(name)['molecular_weight_g_mol']}
+    try:
+        value = concentration(mass, record['MW_g_mol'], volume)
+    except ValueError as error:
+        rejected.append({**record, 'reason': str(error)})
+    else:
+        valid.append({**record, 'c_mol_L': value})
+display(valid)
+display(rejected)
+assert len(valid) == 2 and len(rejected) == 2
+assert {r['row_id'] for r in valid + rejected} == set(range(1, len(conditions) + 1))
 ```
 
+Здесь `try/except` не прячет ошибку: он превращает ожидаемый отказ в проверяемую запись. Последние два `assert` показывают, что получено ровно два успеха и два отказа и ни один row_id не исчез. При чтении внешней таблицы понадобилась бы ещё проверка типов и преобразования строк в числа; в нашем явно заданном списке входы уже числовые.
+
+Теперь сравните концентрации двух принятых строк со своим прогнозом. При одинаковых массе и объёме большая молярная масса даёт меньшее количество вещества и меньшую молярную концентрацию. Если бы порядок оказался обратным, я сначала проверил бы выбор карточки и перевод единиц, а затем арифметику функции.
+
+## 4. Почему правдоподобного числа недостаточно
+
+Рассмотрим две ошибки, которые встречаются при переносе формулы. Если забыть только перевод mg в g, результат вырастет в 1000 раз. Если забыть только перевод mL в L, он уменьшится в 1000 раз. Чтобы не запоминать это как заклинание, вычислим оба отношения на тех же исходных значениях.
+
 ```python
-write_json(OUT/'result.json',result)
+correct = concentration(mass_mg, molar_mass, volume_ml)
+mass_conversion_missing = (mass_mg / molar_mass) / (volume_ml / 1000)
+volume_conversion_missing = ((mass_mg / 1000) / molar_mass) / volume_ml
+unit_error_ratio = mass_conversion_missing / correct
+display({'correct_mol_L': correct,
+         'mass_conversion_missing_ratio': unit_error_ratio,
+         'volume_conversion_missing_ratio': volume_conversion_missing / correct,
+         'mg_mL_shortcut_agrees': math.isclose(mass_mg / molar_mass / volume_ml, correct)})
+assert math.isclose(unit_error_ratio, 1000.0)
+assert math.isclose(volume_conversion_missing / correct, 0.001)
+```
+
+Последнее поле особенно важно: сокращённое выражение для согласованных mg и mL совпадает с явным переводом. Совпадение чисел поэтому не доказывает, что автор правильно понимает единицы. Для передачи я оставляю явные обозначения входов и промежуточных величин. Коллега сможет проверить формулу и заметить изменение формата следующего файла.
+
+## 5. Передадим процедуру вместе с результатом
+
+Я сохраняю принятые и отклонённые строки, затем повторно читаю JSON. Эта проверка отвечает на практический вопрос: сохранили ли мы именно ту таблицу, которую только что построили? Для переноса в B дополнительно потребуется установить форму аторвастатина и смысл массы на этикетке: функция получает молярную массу как аргумент и сама её химическую правильность не устанавливает.
+
+```python
+write_json(OUT / 'valid.json', valid)
+write_json(OUT / 'rejected.json', rejected)
+write_json(OUT / 'table.json', valid)
+assert json.loads((OUT / 'valid.json').read_text(encoding='utf-8')) == valid
+assert json.loads((OUT / 'rejected.json').read_text(encoding='utf-8')) == rejected
+result = {'kind': 'simulation', 'rows': valid, 'rejected': rejected,
+          'unit_error_ratio': unit_error_ratio,
+          'decision': 'Передавать входные единицы и журнал отказов вместе с концентрациями'}
+write_json(OUT / 'result.json', result)
 from dossier_records import append_record
-receipt=append_record(init_dossier(),'M02-L02','A',result,ROOT,inputs=['practicuum/shared/data/compounds.json'])
-print('Versioned evidence:',receipt)
+print(append_record(init_dossier(), 'M02-L02', 'A', result, ROOT,
+                    inputs=['practicuum/shared/data/compounds.json']))
 ```
 
-Количество знаков после запятой в выводе не создаёт точность весов. Для B масса безводной кислоты и соли на этикетке имеет разный смысл. Следующий модуль отвечает, какая структура стоит за строкой и формулой.
-
-Почему функция отвергает нулевой объём, но не может сама заметить неверно выбранную химическую форму? Укажите границу между проверкой аргументов программы и проверкой постановки задачи.
+Итак, коллега получит не только концентрации, но и объяснение судьбы каждой строки. В самостоятельной работе изменятся вещество и назначенные условия. Вашей ответственностью останутся политика формы, единицы, правила отказа и обоснование того, какие записи можно передавать дальше.

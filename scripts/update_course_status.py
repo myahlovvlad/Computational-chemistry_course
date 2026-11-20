@@ -90,7 +90,8 @@ def main():
                  'practicuum/evidence/20261119-main-method-article-final/summary.json',
                  'practicuum/evidence/20261119-main-metric-meaning/summary.json',
                  'practicuum/evidence/20261120-refactor-course/notebook-summary.json',
-                 'practicuum/evidence/20261120-editorial-execution/notebook-summary.json']:
+                 'practicuum/evidence/20261120-editorial-execution/notebook-summary.json',
+                 'practicuum/evidence/20261120-reasoning-full/notebook-summary.json']:
         if (ROOT/path).is_file():
             for r in read(path)['runs']:baseline[(r['lesson_id'],r['role'],'Windows')]=execution_entry(r,path)
     research={
@@ -185,9 +186,10 @@ def main():
         'documentation':'docs/README.md',
         'dataset_preservation':'archive/branch-datasets/manifest.json'},
       'pedagogy':{'narrative_openings':28,'lesson_transitions':28,'article_reviews':14,
+        'reasoned_case_explanations':28,'deep_reworked_cases':['M02-L01','M02-L02','M03-L01','M03-L02','M11-L02','M12-L01'],
         'reading_route':'programm/ARTICLE_READING.md','student_pilot':'NOT_RUN'},
-      'current_main_execution':proof('practicuum/evidence/20261120-refactor-course/notebook-summary.json'),
-      'latest_editorial_execution':proof('practicuum/evidence/20261120-editorial-execution/notebook-summary.json'),
+      'current_main_execution':proof('practicuum/evidence/20261120-reasoning-full/notebook-summary.json'),
+      'latest_editorial_execution':proof('practicuum/evidence/20261120-reasoning-full/notebook-summary.json'),
       'quality_requirement':'Professional calculations on target chemical forms; educational toy controls are not accepted substitutes',
       'modules':modules,'research':research,
       'global_release_blockers':['uncompleted target QM/IR/UV and numerical convergence',
@@ -273,17 +275,22 @@ def main():
 
 20.11.2026: выполнен структурный редакторский аудит 28 уроков и подробный ручной разбор шести случаев. Глубоко переработаны A/B и рубрика M02-L01; в 13 других разборах общие переходы заменены пояснениями к конкретным вычислениям. [Редакторский отчёт](docs/maintenance/PRACTICUM_EDITORIAL_REVIEW.md) отделяет выполненную правку от ещё открытых предметных задач. Это не внешний педагогический пилот и не подтверждение научной достаточности контролей M07/M08.
 
+Следующая редакция добавила рассуждения преподавателя во все 28 разборов и глубоко переработала шесть ключевых уроков; исправлен разрыв между обещанным журналом и кодом M02-L02. Полный прогон 56 Notebook сохранён в `practicuum/evidence/20261120-reasoning-full`. [Описание редакции](docs/maintenance/REASONING_REVISION.md). Наблюдение за пониманием студентов и фактическими часами по-прежнему NOT_RUN.
+
 **NOT_RUN:** независимая научно-методическая рецензия, согласование оценок преподавателей, студенческий пилот, фактическая трудоёмкость и измерение переноса навыка. 122 часа — проектный ориентир. Машинная генерация рубрик не является проверкой педагогической эффективности.
 ''')
-    package_proof='practicuum/evidence/20261120-editorial-package/check.json'
+    package_proof='practicuum/evidence/20261120-reasoning-package/check.json'
     if (ROOT/package_proof).is_file() and read(package_proof).get('status')=='PASS':
+        package_name='parser/dist/reasoning-20261120'
+    elif (ROOT/'practicuum/evidence/20261120-editorial-package/check.json').is_file():
+        package_proof='practicuum/evidence/20261120-editorial-package/check.json'
         package_name='parser/dist/editorial-20261120'
     else:
         package_name='parser/dist/refactor-20261120'
         package_proof='practicuum/evidence/20261120-refactor-package/check.json'
     write('STEPIK_RELEASE_REPORT.md',f'''# Подготовка к Stepik
 
-Действующая программа main содержит 28 уроков, 56 Notebook и {text_step_count} текстовых шагов, включая переходы и задания по статьям. Сборка `{package_name}` проверена локально (`{package_proof}`); 25 stdlib-проверок относятся к ограниченным численным полям. Редакторские изменения 14 пар Notebook проверены отдельно (`practicuum/evidence/20261120-editorial-execution/notebook-summary.json`); прежние проверки восьми Notebook и смысла метрик M12 сохранены как исторические свидетельства. Это **не профессиональный релиз** и не публикация.
+Действующая программа main содержит 28 уроков, 56 Notebook и {text_step_count} текстовых шагов, включая переходы и задания по статьям. Сборка `{package_name}` проверена локально (`{package_proof}`); 25 stdlib-проверок относятся к ограниченным численным полям. Текущая редакция всех 28 разборов с углублёнными объяснениями проверена полным прогоном 56 Notebook (`practicuum/evidence/20261120-reasoning-full/notebook-summary.json`); прежние проверки сохранены как исторические свидетельства. Это **не профессиональный релиз** и не публикация.
 
 Сборщик включает shared/data и закреплённую среду; исключает преподавательские решения, личный workspace и NIST raw cache. Notebook исполняются в локальном Jupyter/WSL, а не предполагаемом RDKit grader Stepik. Права/атрибуция сохраняются.
 

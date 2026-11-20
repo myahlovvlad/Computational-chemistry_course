@@ -1,0 +1,20 @@
+{
+  "lesson_id": "M13-L01",
+  "role": "lab",
+  "kernel": "course-v2-chem",
+  "started_utc": "2026-11-20T10:54:45.018896+00:00",
+  "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M13\\lessons\\L01\\Notebooks_labs\\02_lab.ipynb",
+  "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+  "scope": "empty lab scaffold; learner completion NOT_RUN",
+  "input_sha256": "9798267ee484cd53efdd98224773fe4d0cd681fa31ca458949db1130ba8af969",
+  "data_sha256": {
+    "practicuum/shared/data/xanthine_synthesis_table1.csv": "38b1df144284e0da20d90d0f9648ec99da016f84510b1eae3372e561f514bea7",
+    "practicuum/shared/data/xanthine_synthesis_source.json": "b67add0310a67246474bbd04341783f3c6222dde2524c4d0e61f3d46cac71ab6",
+    "practicuum/shared/data/atorvastatin_process_source.json": "41c21e4f05ff11ada6a1f2cb6efe2d5de3d1182c42e05ab971377b661e5547dc"
+  },
+  "step_sha256": {
+    "practicuum/modules/M13/lessons/L01/steps/02_lab.md": "21795c49f9f74040a3edb4b16a7dd7a9903859c12aa1bdc7294b12f78667d4bf"
+  },
+  "status": "PASS",
+  "seconds": 1.549239999963902
+}

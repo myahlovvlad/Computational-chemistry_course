@@ -1,0 +1,38 @@
+{
+  "lesson_id": "M11-L02",
+  "role": "lab",
+  "kernel": "course-v2-chem",
+  "started_utc": "2026-11-20T10:54:22.584440+00:00",
+  "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M11\\lessons\\L02\\Notebooks_labs\\02_lab.ipynb",
+  "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+  "scope": "empty lab scaffold; learner completion NOT_RUN",
+  "input_sha256": "68dd4d6ad3fe88fcbefd247831d87eaf123dcf9d30717feda48ef6c9c35ccc5c",
+  "data_sha256": {
+    "practicuum/shared/data/target_docking/a2a_crystal_reference.sdf": "ebd7061074f84cae2338f900061881a395507d437eb68fdbcd5feaa89bc0fa8d",
+    "practicuum/shared/data/target_docking/a2a_preparation.json": "431d68d3e5dbf8010ec566811b7a776caf7ef84a3d4f96e3541c76d09f691cbf",
+    "practicuum/shared/data/target_docking/a2a_protein_crystal.pdb": "9e064d8b727dd452112141d6f201caefe36e3234a660d78b1beb6759a8760841",
+    "practicuum/shared/data/target_docking/a2a_protocol.json": "55112946db6028b93ae3942ff8d825fb1794b2519131b7732d8ebf386222d19f",
+    "practicuum/shared/data/target_docking/a2a_redocking.json": "11052b074b195eb7b491ccc33fec8279b4f5ac034c31cb916c3a56e3c83ef6e9",
+    "practicuum/shared/data/target_docking/hmgcr_crystal_reference.sdf": "dda7e1d6d60d3acd2103a7921eb70951efd7e2b42dfe7336dbbdd40e9b245d89",
+    "practicuum/shared/data/target_docking/hmgcr_failure.json": "2f6c5d6ed96cc00cdbd11622292309f2f565f38f7def4862af32b114f37252a8",
+    "practicuum/shared/data/target_docking/hmgcr_gap_audit.json": "60b0f9d2dd036b994972b67bbe071fa70ce8d5c3f511216803740c49cbbc6b5d",
+    "practicuum/shared/data/target_docking/hmgcr_protein_crystal.pdb": "41e24477ca5fc9a5b21daa10c83147bd3f08b06a335ce8b7712ab0fb3bfd156e",
+    "practicuum/shared/data/target_docking/hmgcr_repair_audit.json": "bd5bf16a8984e3c704f5e7dd4a3cfb67df87f1a218ed6b2c8dbcf5d38c069f0b",
+    "practicuum/shared/data/target_docking/manifest.json": "fd21ccb22bdbdbcc5e38e4ef53b8771b26eaf78a8e5b0fdf648c4e850363a4dc",
+    "practicuum/shared/data/target_docking/start-13-search-101.sdf": "3030071aa059241f39b3250706fb265c3186df79fbe51f3cba60e909d34e70f2",
+    "practicuum/shared/data/target_docking/start-13-search-202.sdf": "af53c6a4b7940cfdd8efb9aa767e7066b56d2ffd5a57c1545ae8007b84be18e9",
+    "practicuum/shared/data/target_docking/start-13-search-303.sdf": "758054fe84b13154132287de2a6f752f394f4fa4b8dc89d974806eaeebbd14b7",
+    "practicuum/shared/data/target_docking/start-37-search-101.sdf": "4a968144b3e09349c04a13e02b4ac23574123d8e37be7dd07d86d9fc8be169af",
+    "practicuum/shared/data/target_docking/start-37-search-202.sdf": "d1df345a8e4822954e620995fb3921319579319f28c38772e85d54b71fd1a0b4",
+    "practicuum/shared/data/target_docking/start-37-search-303.sdf": "59abf9bdbbfcdd4430f653e6b706573072c2142aa3e1ef0f89c72d77f2f50c1b",
+    "practicuum/shared/data/target_docking/start-73-search-101.sdf": "9f68e5840c24635906d07b68481d0ec3c542db16af2d660669bd0cd3a71a72e5",
+    "practicuum/shared/data/target_docking/start-73-search-202.sdf": "a47b4a56bf384877e67d1422464702f7543493212ba70ee610c8f0411bb7a4d2",
+    "practicuum/shared/data/target_docking/start-73-search-303.sdf": "9ca0bf7613aef2d3bfe65a4a39a84f0b6807b6f4d01bf4e6848a2396e08739b3"
+  },
+  "step_sha256": {
+    "practicuum/modules/M11/lessons/L02/steps/02_lab.md": "577a6b71d5dfcbdc11ce385bea43398d226d15014d397b134d29aeec9dd31f90",
+    "practicuum/modules/M11/lessons/L02/steps/03_article_review.md": "c2dbbdf614e488d7e6a3224f0444e72437cf42ee64fc454dba007d89e151fb1a"
+  },
+  "status": "PASS",
+  "seconds": 1.5797703000134788
+}

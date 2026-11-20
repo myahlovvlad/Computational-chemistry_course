@@ -1,0 +1,20 @@
+{
+  "lesson_id": "M13-L02",
+  "role": "case",
+  "kernel": "course-v2-chem",
+  "started_utc": "2026-11-20T10:54:46.568551+00:00",
+  "source": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course\\practicuum\\modules\\M13\\lessons\\L02\\Notebooks_cases\\01_case.ipynb",
+  "cwd": "C:\\Users\\Miakhlov\\Documents\\GitHub\\Computational chemistry_course",
+  "scope": "full guided computation",
+  "input_sha256": "eff1ed5184e22c3fa818e23657e3583aacd87c095536c4dcb1a3592c8a3d1990",
+  "data_sha256": {
+    "practicuum/shared/data/routes.csv": "c3ddf027fcb04b233b0d2c12e7cdc2059028e31982e2a9981acf04644d58244d",
+    "practicuum/shared/data/atorvastatin_process_source.json": "41c21e4f05ff11ada6a1f2cb6efe2d5de3d1182c42e05ab971377b661e5547dc"
+  },
+  "step_sha256": {
+    "practicuum/modules/M13/lessons/L02/steps/01_case.md": "70d23a79943382b74520eb7011841c72240ca95a845091400e0d267166411cb7",
+    "practicuum/modules/M13/lessons/L02/steps/03_article_case.md": "457808f2952569b686b27b38182de9566b83cedd156c3ba883f8cecddb38fec0"
+  },
+  "status": "PASS",
+  "seconds": 1.6028571000206284
+}

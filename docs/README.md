@@ -16,5 +16,6 @@
 | Проверить этот рефакторинг | [Отчёт](maintenance/REFACTOR_20261120.md) |
 | Разобраться в папке evidence | [Что хранить и что можно сокращать](maintenance/EVIDENCE_RETENTION.md), [инвентарь](maintenance/EVIDENCE_INVENTORY.json) |
 | Оценить подачу практикума | [Редакторская проверка](maintenance/PRACTICUM_EDITORIAL_REVIEW.md), [метрики](maintenance/PRACTICUM_AUDIT.json) |
+| Читать углублённые объяснения | [Новая редакция всех 28 разборов](maintenance/REASONING_REVISION.md) |
 
 `status` обновляется генератором `scripts/update_course_status.py`. `history` сохраняет описание прежних этапов и не удостоверяет текущее состояние курса. JSON-пути к научным данным в реестрах считаются от корня репозитория. Перемещение документа не является повторным выполнением проверки.
