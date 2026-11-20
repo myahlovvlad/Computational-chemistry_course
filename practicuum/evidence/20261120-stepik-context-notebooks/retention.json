@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "scope": "Execution metadata and text logs retained; verified guided outputs embedded in canonical notebooks; duplicate raw notebooks and input copies stay in ignored tmp, not Git",
+  "records": [
+    {
+      "lesson": "M11-L02",
+      "role": "case",
+      "raw_execution_sha256": "fc498f553828ad1610602d0afd8c3467028109fb02f7836b667f884c29bc8f03",
+      "retained_output_notebook": "practicuum/modules/M11/lessons/L02/Notebooks_cases/01_case.ipynb",
+      "outputs_sha256": "45d5559cc533128c652c6153a18138c80729765688e3f6b19006f2e572b6a11f"
+    },
+    {
+      "lesson": "M11-L02",
+      "role": "lab",
+      "raw_execution_sha256": "386d198d32533cd0163e728d2bc4cb5fc8e11be6102cfc21fdea72b69761b765"
+    }
+  ]
+}

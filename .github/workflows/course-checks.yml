@@ -26,6 +26,7 @@ jobs:
       - run: uv run --project scripts/environment --frozen --group chem python scripts/check_repository_layout.py
       - run: uv run --project scripts/environment --frozen --group chem python scripts/validate_course.py --out tmp/ci-structure.json
       - run: uv run --project scripts/environment --frozen --group chem python -m unittest discover -s practicuum/shared/tests -p test_*.py -v
+      - run: uv run --project scripts/environment --frozen --group chem python -m unittest discover -s parser/tests -p test_*.py -v
       - run: uv run --project scripts/environment --frozen --group chem python scripts/run_course.py --out tmp/ci-course
       - run: uv run --project scripts/environment --frozen --group chem python scripts/run_instructor_references.py --out tmp/ci-references
       - run: uv run --project scripts/environment --frozen --group chem python scripts/verify_consolidation.py --git-ref HEAD

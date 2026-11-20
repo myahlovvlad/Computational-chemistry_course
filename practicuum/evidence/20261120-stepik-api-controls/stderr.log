@@ -1,0 +1,11 @@
+test_blocked_assets_and_lesson_links (test_stepik_api.StepikPlanTests.test_blocked_assets_and_lesson_links) ... ok
+test_export_counts_and_private_lessons (test_stepik_api.StepikPlanTests.test_export_counts_and_private_lessons) ... ok
+test_resume_does_not_duplicate_posts_and_resolves_links (test_stepik_api.StepikPlanTests.test_resume_does_not_duplicate_posts_and_resolves_links) ... ok
+test_tampered_package_rejected (test_stepik_api.StepikPlanTests.test_tampered_package_rejected) ... ok
+test_uncertain_post_never_retried (test_stepik_api.StepikPlanTests.test_uncertain_post_never_retried) ... ok
+test_unknown_remote_section_blocks_resume (test_stepik_api.StepikPlanTests.test_unknown_remote_section_blocks_resume) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.078s
+
+OK

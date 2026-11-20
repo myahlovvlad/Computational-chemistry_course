@@ -8,6 +8,7 @@
 | Проверить научные ограничения | [Научный отчёт](status/SCIENTIFIC_VALIDATION_REPORT.md) |
 | Проверить обучение и оценивание | [Педагогическая проверка](status/PEDAGOGICAL_REVIEW_REPORT.md) |
 | Подготовить Stepik | [Состояние экспорта](status/STEPIK_RELEASE_REPORT.md) |
+| Перенести курс через API | [Пошаговая инструкция](maintenance/STEPIK_API_GUIDE.md) |
 | Выбрать следующую работу | [План](status/ROADMAP.md), [реестр долга](maintenance/DEBT_REGISTER.md) |
 | Понять структуру | [Архитектура](architecture/ARCHITECTURE.md), [карта переноса](layout.json) |
 | Открыть курс в WSL | [Единственный источник](maintenance/WSL_SINGLE_SOURCE.md) |

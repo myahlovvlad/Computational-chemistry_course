@@ -42,6 +42,28 @@
     "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
     "sha256": "c73b006a42bee11a734d4164b1bd72884d8613b8445916483b9b1c9a22724a78"
   },
+  "latest_reader_context_execution": {
+    "status": "PASS",
+    "evidence": "practicuum/evidence/20261120-stepik-context-notebooks/notebook-summary.json",
+    "sha256": "6443d2c32c8a949d007a4b40e52b407cdcbf2cbe23d1b3a1e81c0e2c970b62e3"
+  },
+  "stepik_api": {
+    "scope": "text and Notebook links; live import and grading NOT_RUN",
+    "guide": "docs/maintenance/STEPIK_API_GUIDE.md",
+    "offline_controls": {
+      "status": "PASS",
+      "evidence": "practicuum/evidence/20261120-stepik-api-controls/check.json",
+      "sha256": "66442338383257b837029b3c06a88d86ac8077852435685a020514ed537145d9"
+    },
+    "real_package_plan": {
+      "status": "PASS",
+      "evidence": "practicuum/evidence/20261120-stepik-real-plan/check.json",
+      "sha256": "d4645c982f45b63e909b25ba1878e99c236858413c6a0c255849c8a2c5eefe38"
+    },
+    "live_api": "NOT_RUN",
+    "public_publication": "NOT_RUN",
+    "grader": "NOT_RUN"
+  },
   "quality_requirement": "Professional calculations on target chemical forms; educational toy controls are not accepted substitutes",
   "modules": [
     {
@@ -1292,11 +1314,11 @@
             "case": {
               "path": "practicuum/modules/M11/lessons/L02/Notebooks_cases/01_case.ipynb",
               "authored": true,
-              "current_sha256": "04982e4587415d3aeeb6e68650a715265bf31e6ce9857014e2e9aa07c2d9af02",
+              "current_sha256": "a7a65cd49a8393ed68c2403aa8a6c0fd1bfd5d86e7f162b4f18a60a4e28b1db2",
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-stepik-context-notebooks/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1304,7 +1326,7 @@
                   "status": "PASS",
                   "evidence": "practicuum/evidence/20261119-professional-docking-linux/summary.json",
                   "current_step_sources_match": false,
-                  "current_declared_inputs_match": true
+                  "current_declared_inputs_match": false
                 }
               },
               "scope": "guided demonstration"
@@ -1316,7 +1338,7 @@
               "baseline_execution": {
                 "Windows": {
                   "status": "PASS",
-                  "evidence": "practicuum/evidence/20261120-reasoning-full/notebook-summary.json",
+                  "evidence": "practicuum/evidence/20261120-stepik-context-notebooks/notebook-summary.json",
                   "current_step_sources_match": true,
                   "current_declared_inputs_match": true
                 },
@@ -1324,7 +1346,7 @@
                   "status": "PASS",
                   "evidence": "practicuum/evidence/20261119-professional-docking-linux/summary.json",
                   "current_step_sources_match": false,
-                  "current_declared_inputs_match": true
+                  "current_declared_inputs_match": false
                 }
               },
               "scope": "empty student scaffold; student solutions NOT_RUN"

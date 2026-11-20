@@ -432,14 +432,14 @@
         "practicuum/modules/M11/lessons/L02/steps/03_article_review.md"
       ],
       "normalized_source_sha256": {
-        "practicuum/modules/M11/lessons/L02/steps/01_case.md": "e231d41497900feb8b64706e40f6afc1b4ed85ce5bef0f61fec3be2bc6de3217",
+        "practicuum/modules/M11/lessons/L02/steps/01_case.md": "78ed343bebf60f78992a1bee2b8010a0fc1fb60268e759f54190f44778ed4d7f",
         "practicuum/modules/M11/lessons/L02/steps/03_article_case.md": "73d55e91a3f478b831ea0aee1f9c95024ce66859abc72fd0e24a145a99235154",
         "practicuum/modules/M11/lessons/L02/steps/02_lab.md": "577a6b71d5dfcbdc11ce385bea43398d226d15014d397b134d29aeec9dd31f90",
         "practicuum/modules/M11/lessons/L02/steps/03_article_review.md": "40f87f3b5b25a1cc087336653b41bef8a427260a5f80e4cbb5f098a132b6707c"
       },
-      "case_prose_words": 1185,
-      "code_blocks": 7,
-      "longest_code_lines": 18,
+      "case_prose_words": 1555,
+      "code_blocks": 11,
+      "longest_code_lines": 22,
       "lab_none_placeholders": 3
     },
     {

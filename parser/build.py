@@ -46,6 +46,7 @@ def main():
     # Portable notebook distribution retains the same root layout. No instructor,
     # archive, user workspace, ignored cache, or unrelated local downloads included.
     copy_resource(out,'programm/course.json')
+    copy_resource(out,'theory/glossary.md')
     for name in ['ARTICLE_READING.md','ARTICLE_REVIEW_TEMPLATE.md',
                  'ARTICLE_REVIEW_RUBRIC.md','article-reading.json']:
         copy_resource(out,'programm/'+name)
@@ -77,6 +78,7 @@ def main():
     for source in (ROOT/'practicuum/protocols').glob('*.json'):
         copy_resource(out,source.relative_to(ROOT))
     copy_resource(out,'practicuum/protocols/README.md')
+    copy_resource(out,'practicuum/evidence/20261118-A2A-target-preparation-repair-audited/receptor.pdbqt')
     for source in (ROOT/'practicuum/evidence/20261119-GFN2-fixed-geometry-inputs').glob('*'):
         if source.is_file():copy_resource(out,source.relative_to(ROOT))
     for name in ['20261119-conformer-GFN2-istradefylline','20261119-conformer-GFN2-istradefylline-linux']:

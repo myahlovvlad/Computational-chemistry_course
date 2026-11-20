@@ -20,6 +20,11 @@ def main():
             source=root/'sources'/step['source']
             if hashlib.sha256(source.read_bytes()).hexdigest()!=step['source_sha256']:raise ValueError('Source changed')
             ids.append(step['local_id']);count+=1
+            for reference in re.findall(r'(?:href|src)=["\'](.*?)["\']',step['block']['text']):
+                parts=urlsplit(reference)
+                if parts.scheme or not parts.path or reference.startswith('//'):continue
+                target=(root/Path(step['source']).parent/unquote(parts.path)).resolve();target.relative_to(root)
+                if not target.is_file():raise ValueError('Missing portable step link: '+reference)
         for path in lesson['notebooks']:
             if not (root/path).is_file():raise ValueError('Missing notebook: '+path)
         assessment=lesson.get('assessment',{})

@@ -91,7 +91,8 @@ def main():
                  'practicuum/evidence/20261119-main-metric-meaning/summary.json',
                  'practicuum/evidence/20261120-refactor-course/notebook-summary.json',
                  'practicuum/evidence/20261120-editorial-execution/notebook-summary.json',
-                 'practicuum/evidence/20261120-reasoning-full/notebook-summary.json']:
+                 'practicuum/evidence/20261120-reasoning-full/notebook-summary.json',
+                 'practicuum/evidence/20261120-stepik-context-notebooks/notebook-summary.json']:
         if (ROOT/path).is_file():
             for r in read(path)['runs']:baseline[(r['lesson_id'],r['role'],'Windows')]=execution_entry(r,path)
     research={
@@ -190,6 +191,12 @@ def main():
         'reading_route':'programm/ARTICLE_READING.md','student_pilot':'NOT_RUN'},
       'current_main_execution':proof('practicuum/evidence/20261120-reasoning-full/notebook-summary.json'),
       'latest_editorial_execution':proof('practicuum/evidence/20261120-reasoning-full/notebook-summary.json'),
+      'latest_reader_context_execution':proof('practicuum/evidence/20261120-stepik-context-notebooks/notebook-summary.json'),
+      'stepik_api':{'scope':'text and Notebook links; live import and grading NOT_RUN',
+        'guide':'docs/maintenance/STEPIK_API_GUIDE.md',
+        'offline_controls':proof('practicuum/evidence/20261120-stepik-api-controls/check.json'),
+        'real_package_plan':proof('practicuum/evidence/20261120-stepik-real-plan/check.json'),
+        'live_api':'NOT_RUN','public_publication':'NOT_RUN','grader':'NOT_RUN'},
       'quality_requirement':'Professional calculations on target chemical forms; educational toy controls are not accepted substitutes',
       'modules':modules,'research':research,
       'global_release_blockers':['uncompleted target QM/IR/UV and numerical convergence',
@@ -277,10 +284,15 @@ def main():
 
 Следующая редакция добавила рассуждения преподавателя во все 28 разборов и глубоко переработала шесть ключевых уроков; исправлен разрыв между обещанным журналом и кодом M02-L02. Полный прогон 56 Notebook сохранён в `practicuum/evidence/20261120-reasoning-full`. [Описание редакции](docs/maintenance/REASONING_REVISION.md). Наблюдение за пониманием студентов и фактическими часами по-прежнему NOT_RUN.
 
+Дополнительно M11-L02 начинается с практической ситуации и знакомства с объектами, затем вводит две метрики, LaTeX и систему решения. Проверены координаты 109 исходных атомов кармана и порядок сохранённых поз по score. Результаты раскрываются поэтапно в матрицах 3×3; причинное влияние scoring отдельно не объявляется установленным. Проверка A/B и переносимого Notebook сохранена в `20261120-stepik-context-notebooks` и `20261120-stepik-portable-M11`.
+
 **NOT_RUN:** независимая научно-методическая рецензия, согласование оценок преподавателей, студенческий пилот, фактическая трудоёмкость и измерение переноса навыка. 122 часа — проектный ориентир. Машинная генерация рубрик не является проверкой педагогической эффективности.
 ''')
-    package_proof='practicuum/evidence/20261120-reasoning-package/check.json'
+    package_proof='practicuum/evidence/20261120-stepik-api-package-v2/check.json'
     if (ROOT/package_proof).is_file() and read(package_proof).get('status')=='PASS':
+        package_name='parser/dist/stepik-api-20261120-v2'
+    elif (ROOT/'practicuum/evidence/20261120-reasoning-package/check.json').is_file():
+        package_proof='practicuum/evidence/20261120-reasoning-package/check.json'
         package_name='parser/dist/reasoning-20261120'
     elif (ROOT/'practicuum/evidence/20261120-editorial-package/check.json').is_file():
         package_proof='practicuum/evidence/20261120-editorial-package/check.json'
@@ -293,6 +305,8 @@ def main():
 Действующая программа main содержит 28 уроков, 56 Notebook и {text_step_count} текстовых шагов, включая переходы и задания по статьям. Сборка `{package_name}` проверена локально (`{package_proof}`); 25 stdlib-проверок относятся к ограниченным численным полям. Текущая редакция всех 28 разборов с углублёнными объяснениями проверена полным прогоном 56 Notebook (`practicuum/evidence/20261120-reasoning-full/notebook-summary.json`); прежние проверки сохранены как исторические свидетельства. Это **не профессиональный релиз** и не публикация.
 
 Сборщик включает shared/data и закреплённую среду; исключает преподавательские решения, личный workspace и NIST raw cache. Notebook исполняются в локальном Jupyter/WSL, а не предполагаемом RDKit grader Stepik. Права/атрибуция сохраняются.
+
+Подготовлены [пошаговый API-маршрут](docs/maintenance/STEPIK_API_GUIDE.md), offline-планировщик и create-only отправщик с журналом ID и GET-сверкой. Проверены шесть локальных сценариев API-клиента, полный план на реальном пакете и переносимый M11-L02. План полного импорта содержит 14 sections, 28 lessons, 28 units и 240 текстовых шагов: 212 исходных плюс 28 шагов скачивания. Реальные URL архива/ресурсов ещё требуется назначить и проверить. OAuth и создание объектов Stepik **NOT_RUN**; probe GET остановлен проверкой TLS-сертификата. Никаких реальных объектов через подготовленные инструменты не создано.
 
 После дальнейших изменений M07/M08 потребуется следующая неизменяемая сборка. **NOT_RUN:** загрузка assets/доступность ссылок, API-объекты тестового курса, отображение формул, полный round-trip решений и реальный Stepik grader. Для доказательства платформенной пригодности локального запуска недостаточно.
 

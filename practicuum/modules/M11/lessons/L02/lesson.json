@@ -19,7 +19,8 @@
     "practicuum/shared/data/target_docking/start-37-search-303.sdf",
     "practicuum/shared/data/target_docking/start-73-search-101.sdf",
     "practicuum/shared/data/target_docking/start-73-search-202.sdf",
-    "practicuum/shared/data/target_docking/start-73-search-303.sdf"
+    "practicuum/shared/data/target_docking/start-73-search-303.sdf",
+    "practicuum/evidence/20261118-A2A-target-preparation-repair-audited/receptor.pdbqt"
   ],
   "case_steps": [
     "practicuum/modules/M11/lessons/L02/steps/01_case.md",

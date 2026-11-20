@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "applied": true,
+  "scope": "Historical payloads verified against original SHA256 and Git blobs; lineage fields unchanged",
+  "manifest_sha256_before": "5b0c1cd1ccb5a2cdcd0b44a4ecfe1df9b1cbd311f39efe6e465553747bbe150e",
+  "manifest_sha256_after": "5b0c1cd1ccb5a2cdcd0b44a4ecfe1df9b1cbd311f39efe6e465553747bbe150e",
+  "moves": []
+}
